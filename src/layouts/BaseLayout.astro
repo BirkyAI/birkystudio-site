@@ -127,14 +127,27 @@ const { title, description = "Smart Websites For Small Businesses", image = "/im
   <!-- Navigation -->
   <nav style="position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #e2e8f0;">
     <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:72px;">
-      <a href="/" style="font-size:1.5rem;font-weight:800;">
+      <a href={Astro.url.pathname.startsWith('/es') ? '/es/' : '/'} style="font-size:1.5rem;font-weight:800;">
         <span class="gradient-text">Birky Studio</span>
       </a>
-      <div style="display:flex;align-items:center;gap:32px;">
-        <a href="/#services" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Services</a>
-        <a href="/#pricing" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Pricing</a>
-        <a href="/contact" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Contact</a>
-        <a href="/contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.9rem;">Get Started</a>
+      <div style="display:flex;align-items:center;gap:24px;">
+        {Astro.url.pathname.startsWith('/es') ? (
+          <>
+            <a href="/es/#servicios" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Servicios</a>
+            <a href="/es/#precios" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Precios</a>
+            <a href="/es/contacto" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Contacto</a>
+            <a href="/" style="font-size:0.85rem;font-weight:600;padding:6px 14px;border-radius:8px;background:#f1f5f9;color:var(--color-dark);transition:all 0.2s;">EN</a>
+            <a href="/es/contacto" class="btn btn-primary" style="padding:10px 20px;font-size:0.9rem;">Empezar</a>
+          </>
+        ) : (
+          <>
+            <a href="/#services" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Services</a>
+            <a href="/#pricing" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Pricing</a>
+            <a href="/contact" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Contact</a>
+            <a href="/es/" style="font-size:0.85rem;font-weight:600;padding:6px 14px;border-radius:8px;background:#f1f5f9;color:var(--color-dark);transition:all 0.2s;">ES</a>
+            <a href="/contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.9rem;">Get Started</a>
+          </>
+        )}
       </div>
     </div>
   </nav>

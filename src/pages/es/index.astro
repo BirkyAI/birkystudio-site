@@ -1,0 +1,219 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Inicio" description="Sitios web inteligentes para negocios locales. Diseño web profesional, rápido y a precios accesibles.">
+  
+  <!-- Hero Section -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:120px 0 100px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div class="container" style="position:relative;z-index:1;text-align:center;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
+        🚀 Entrega rápida • Diseño profesional • Precios accesibles
+      </div>
+      <h1 style="font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;color:white;margin-bottom:24px;max-width:900px;margin-left:auto;margin-right:auto;">
+        Sitios Web Inteligentes Para<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Negocios Locales</span>
+      </h1>
+      <p style="font-size:1.25rem;color:#cbd5e1;max-width:600px;margin:0 auto 40px;line-height:1.8;">
+        Tu página web profesional en solo 2-3 días. Optimizada para celular, bilingüe y diseñada para atraer más clientes.
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="/es/contacto" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
+          Cotización Gratis →
+        </a>
+        <a href="#precios" class="btn btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
+          Ver Precios
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section style="background:white;padding:48px 0;border-bottom:1px solid #e2e8f0;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;">
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">2-3</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Días de entrega</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">100%</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Optimizado para celular</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">ES/EN</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Bilingüe</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">24/7</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Siempre en línea</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicios" style="padding:100px 0;background:#f8fafc;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <h2 style="font-size:2.5rem;margin-bottom:16px;">Lo Que Incluye</h2>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Todo lo que tu negocio necesita para triunfar en internet, entregado rápido y construido para durar.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;">
+        <div style="background:white;border-radius:20px;padding:40px;border:1px solid #e2e8f0;">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;">📱</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Diseño Mobile-First</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Se ve perfecto en cada dispositivo. La mayoría de tus clientes buscan desde su celular.</p>
+        </div>
+        
+        <div style="background:white;border-radius:20px;padding:40px;border:1px solid #e2e8f0;">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#f472b6,#ec4899);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;">💬</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Botón de WhatsApp</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Un toque y tus clientes te contactan directo. Porque así funciona el negocio aquí.</p>
+        </div>
+        
+        <div style="background:white;border-radius:20px;padding:40px;border:1px solid #e2e8f0;">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#22d3ee,#06b6d4);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;">🌍</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Bilingüe</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Versión en español e inglés de tu sitio. Llega a más clientes en cualquier mercado.</p>
+        </div>
+        
+        <div style="background:white;border-radius:20px;padding:40px;border:1px solid #e2e8f0;">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#a78bfa,#8b5cf6);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;">📍</div>
+          <h3 style="font-size:1.25rem;margin-bottom:2px;">Google Maps</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Mapa interactivo con tu ubicación. Tus clientes llegan con un clic.</p>
+        </div>
+        
+        <div style="background:white;border-radius:20px;padding:40px;border:1px solid #e2e8f0;">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#34d399,#10b981);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;">⚡</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Súper Rápido</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Tecnología moderna que carga en menos de 2 segundos. Los sitios rápidos rankean mejor en Google.</p>
+        </div>
+        
+        <div style="background:white;border-radius:20px;padding:40px;border:1px solid #e2e8f0;">
+          <div style="width:60px;height:60px;background:linear-gradient(135deg,#fb923c,#f97316);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;">🔒</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Seguridad SSL Gratis</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Encriptación HTTPS incluida. Tus clientes ven el candado de seguridad. La confianza importa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section style="padding:100px 0;background:white;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <h2 style="font-size:2.5rem;margin-bottom:16px;">Cómo Funciona</h2>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Tres pasos simples para tu nuevo sitio web.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;">
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">1</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Cuéntanos de Tu Negocio</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Llena un formulario simple con los detalles de tu negocio, fotos y lo que necesitas. Toma 10 minutos.</p>
+        </div>
+        
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;background:var(--gradient-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">2</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Construimos Tu Sitio</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Nuestro proceso impulsado por IA crea tu sitio web profesional en solo 2-3 días. Tú revisas y apruebas.</p>
+        </div>
+        
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">3</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">En Línea y Recibiendo Clientes</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Tu sitio está en vivo. Comparte el enlace, agrégalo a tu perfil de Google y empieza a recibir consultas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="precios" style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Precios Simples y Claros</h2>
+        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Sin costos ocultos. Sin sorpresas. Solo sitios web geniales a precios justos.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1000px;margin:0 auto;">
+        <!-- Starter -->
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Básico</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Perfecto para negocios nuevos</p>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:3rem;font-weight:800;color:white;">Q1,500</span>
+            <span style="color:#94a3b8;"> pago único</span>
+          </div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 1-3 páginas</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Responsivo para celular</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Botón de WhatsApp</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Google Maps</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Formulario de contacto</li>
+          </ul>
+          <a href="/es/contacto" class="btn btn-secondary" style="width:100%;justify-content:center;">Empezar</a>
+        </div>
+        
+        <!-- Professional -->
+        <div style="background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(236,72,153,0.2));border:2px solid rgba(99,102,241,0.5);border-radius:24px;padding:40px;position:relative;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gradient-primary);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Más Popular</div>
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Profesional</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Para negocios en crecimiento</p>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:3rem;font-weight:800;color:white;">Q3,000</span>
+            <span style="color:#94a3b8;"> pago único</span>
+          </div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 5-7 páginas</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Todo lo del plan Básico</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN)</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Galería de fotos</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Optimización SEO</li>
+          </ul>
+          <a href="/es/contacto" class="btn btn-primary" style="width:100%;justify-content:center;">Empezar</a>
+        </div>
+        
+        <!-- Premium -->
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Premium</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Para negocios establecidos</p>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:3rem;font-weight:800;color:white;">Q6,000</span>
+            <span style="color:#94a3b8;"> pago único</span>
+          </div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 10+ páginas</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Todo lo del plan Profesional</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Blog configurado</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Funciones personalizadas</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Soporte prioritario</li>
+          </ul>
+          <a href="/es/contacto" class="btn btn-secondary" style="width:100%;justify-content:center;">Empezar</a>
+        </div>
+      </div>
+      
+      <!-- Optional Add-on -->
+      <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:600px;margin-left:auto;margin-right:auto;">
+        <p style="color:#94a3b8;font-size:0.95rem;">
+          <strong style="color:white;">¿Quieres editar tu sitio tú mismo?</strong> Agrega nuestro editor fácil por solo <strong style="color:#818cf8;">Q1,000</strong> extra. Actualiza texto y fotos cuando quieras, sin saber programar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="padding:100px 0;background:white;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-size:2.5rem;margin-bottom:16px;">¿Listo Para Estar En Línea?</h2>
+      <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto 40px;">Tus competidores ya están en internet. Asegurémonos de que los clientes te encuentren primero a ti.</p>
+      <a href="/es/contacto" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
+        Empezar Tu Proyecto →
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
