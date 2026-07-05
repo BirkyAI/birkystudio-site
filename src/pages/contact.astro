@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact" description="Get in touch to start your website project. Fast response, free quotes.">
+  
+  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+    <div class="container" style="text-align:center;">
+      <h1 style="font-size:clamp(2rem,5vw,3.5rem);color:white;margin-bottom:16px;">Let's Build Something Great</h1>
+      <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Tell us about your business and we'll get back to you within 24 hours with a free quote.</p>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;background:#f8fafc;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:64px;max-width:1000px;margin:0 auto;">
+        <!-- Contact Form -->
+        <div style="background:white;border-radius:24px;padding:48px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+          <h2 style="font-size:1.5rem;margin-bottom:32px;">Send Us a Message</h2>
+          <form name="contact" method="POST" data-netlify="true" style="display:flex;flex-direction:column;gap:20px;">
+            <input type="hidden" name="form-name" value="contact">
+            <div>
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Your Name</label>
+              <input type="text" name="name" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="John Smith">
+            </div>
+            <div>
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Email</label>
+              <input type="email" name="email" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="john@business.com">
+            </div>
+            <div>
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Business Name</label>
+              <input type="text" name="business" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="Your Business Name">
+            </div>
+            <div>
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">What do you need?</label>
+              <select name="service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
+                <option value="starter">Starter Website ($195)</option>
+                <option value="professional">Professional Website ($390)</option>
+                <option value="premium">Premium Website ($780)</option>
+                <option value="notsure">Not sure yet</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Tell us more</label>
+              <textarea name="message" rows="4" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;resize:vertical;" placeholder="What does your business do? Any specific features you need?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1.1rem;padding:16px;">
+              Send Message →
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div style="display:flex;flex-direction:column;gap:32px;">
+          <div>
+            <h3 style="font-size:1.25rem;margin-bottom:16px;">Get in Touch</h3>
+            <p style="color:var(--color-gray);line-height:1.8;margin-bottom:24px;">Prefer to reach out directly? We're available on WhatsApp and email. We typically respond within a few hours.</p>
+          </div>
+          
+          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+            <div style="display:flex;align-items:center;gap:16px;">
+              <div style="width:48px;height:48px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
+                💬
+              </div>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;">WhatsApp</div>
+                <div style="color:var(--color-gray);">+502 XXX XXXX</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+            <div style="display:flex;align-items:center;gap:16px;">
+              <div style="width:48px;height:48px;background:var(--gradient-primary);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
+                📧
+              </div>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;">Email</div>
+                <div style="color:var(--color-gray);">hello@birkystudio.com</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+            <div style="display:flex;align-items:center;gap:16px;">
+              <div style="width:48px;height:48px;background:linear-gradient(135deg,#06b6d4,#0891b2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
+                ⏰
+              </div>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;">Response Time</div>
+                <div style="color:var(--color-gray);">Within 24 hours</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:16px;padding:24px;color:white;">
+            <h4 style="margin-bottom:8px;">Free Quote</h4>
+            <p style="opacity:0.9;line-height:1.6;">Not sure what you need? Tell us about your business and we'll recommend the right package for you. No obligation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

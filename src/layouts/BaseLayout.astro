@@ -1,0 +1,179 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = "Smart Websites For Small Businesses", image = "/images/og-default.jpg" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | Birky Studio</title>
+  <meta name="description" content={description}>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content={`${title} | Birky Studio`}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={new URL(image, Astro.site).href}>
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={`${title} | Birky Studio`}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={new URL(image, Astro.site).href}>
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style is:global>
+    :root {
+      --color-primary: #6366f1;
+      --color-primary-dark: #4f46e5;
+      --color-secondary: #ec4899;
+      --color-accent: #06b6d4;
+      --color-dark: #0f172a;
+      --color-gray: #64748b;
+      --color-light: #f8fafc;
+      --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      --gradient-accent: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--color-dark);
+      line-height: 1.6;
+      background: white;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    h1, h2, h3, h4 {
+      line-height: 1.2;
+      font-weight: 700;
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .btn-primary {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+    }
+    
+    .btn-secondary:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+    
+    .gradient-text {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav style="position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #e2e8f0;">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:72px;">
+      <a href="/" style="font-size:1.5rem;font-weight:800;">
+        <span class="gradient-text">Birky Studio</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:32px;">
+        <a href="/#services" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Services</a>
+        <a href="/#pricing" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Pricing</a>
+        <a href="/contact" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Contact</a>
+        <a href="/contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.9rem;">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer style="background:var(--color-dark);color:white;padding:64px 0 32px;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:48px;margin-bottom:48px;">
+        <div>
+          <div style="font-size:1.5rem;font-weight:800;margin-bottom:16px;">
+            <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Birky Studio</span>
+          </div>
+          <p style="color:#94a3b8;line-height:1.8;">Smart websites for small businesses. Fast, professional, and built to grow with you.</p>
+        </div>
+        <div>
+          <h4 style="font-size:1rem;font-weight:600;margin-bottom:16px;">Services</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <a href="/#services" style="color:#94a3b8;transition:color 0.2s;">Web Design</a>
+            <a href="/#pricing" style="color:#94a3b8;transition:color 0.2s;">Pricing</a>
+            <a href="/contact" style="color:#94a3b8;transition:color 0.2s;">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-size:1rem;font-weight:600;margin-bottom:16px;">Contact</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;color:#94a3b8;">
+            <span>hello@birkystudio.com</span>
+            <span>WhatsApp: +502 XXX XXXX</span>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #1e293b;padding-top:24px;text-align:center;color:#64748b;font-size:0.9rem;">
+        <p>&copy; {new Date().getFullYear()} Birky Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
