@@ -121,6 +121,59 @@ const { title, description = "Smart Websites For Small Businesses", image = "/im
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+    
+    /* Mobile hamburger */
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .mobile-menu-btn span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--color-dark);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu-btn { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: rgba(255,255,255,0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        gap: 0;
+        padding: 16px 24px 24px;
+        border-bottom: 1px solid #e2e8f0;
+        transform: translateY(-120%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        z-index: 99;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      }
+      .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+      .nav-links a {
+        padding: 14px 0;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #f1f5f9;
+      }
+      .nav-links a:last-child { border-bottom: none; }
+      .nav-links .btn { margin-top: 8px; justify-content: center; }
+    }
   </style>
 </head>
 <body>
@@ -130,7 +183,10 @@ const { title, description = "Smart Websites For Small Businesses", image = "/im
       <a href={Astro.url.pathname.startsWith('/es') ? '/es/' : '/'} style="font-size:1.5rem;font-weight:800;">
         <span class="gradient-text">Birky Studio</span>
       </a>
-      <div style="display:flex;align-items:center;gap:24px;">
+      <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" style="display:flex;align-items:center;gap:24px;">
         {Astro.url.pathname.startsWith('/es') ? (
           <>
             <a href="/es/#servicios" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Servicios</a>
