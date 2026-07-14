@@ -84,13 +84,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:40px;max-width:900px;margin:0 auto;">
         <!-- Product 1: Website Design -->
-        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;">
+        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
           <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
             🌐
           </div>
           <h3 style="font-size:1.5rem;margin-bottom:16px;">Website Design</h3>
           <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Professional, mobile-first websites that load fast and convert visitors into customers. Bilingual, SEO-optimized, with WhatsApp integration — delivered in 2-3 days.
+            Professional, mobile-first websites that load fast and convert visitors into customers. Bilingual, SEO-optimized, with WhatsApp integration — everything your business needs to stand out online, delivered in 2-3 days.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
             <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Mobile-First</span>
@@ -99,13 +99,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">WhatsApp</span>
             <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Fast Loading</span>
           </div>
-          <a href="/#pricing-websites" class="btn btn-primary" style="display:inline-flex;">
+          <a href="/#pricing-websites" class="btn btn-primary" style="display:inline-flex;margin-top:auto;">
             View Website Plans →
           </a>
         </div>
         
         <!-- Product 2: AI Agent Setup -->
-        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;">
+        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
           <div style="width:80px;height:80px;background:linear-gradient(135deg,#f472b6,#ec4899);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
             🤖
           </div>
@@ -120,7 +120,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingual</span>
             <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">24/7 Available</span>
           </div>
-          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">
+          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">
             View AI Agent Plans →
           </a>
         </div>
@@ -169,7 +169,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1000px;margin:0 auto;">
         <!-- Starter -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Starter</h3>
           <p style="color:#94a3b8;margin-bottom:24px;">Perfect for new businesses</p>
           <div style="margin-bottom:32px;">
@@ -183,11 +183,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Google Maps</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Contact form</li>
           </ul>
-          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;">Get Started</a>
+          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
         </div>
         
         <!-- Professional -->
-        <div style="background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(236,72,153,0.2));border:2px solid rgba(99,102,241,0.5);border-radius:24px;padding:40px;position:relative;">
+        <div style="background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(236,72,153,0.2));border:2px solid rgba(99,102,241,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
           <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gradient-primary);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Most Popular</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Professional</h3>
           <p style="color:#94a3b8;margin-bottom:24px;">For growing businesses</p>
@@ -202,11 +202,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Photo gallery</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> SEO optimization</li>
           </ul>
-          <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+          <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
         </div>
         
         <!-- Premium -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Premium</h3>
           <p style="color:#94a3b8;margin-bottom:24px;">For established businesses</p>
           <div style="margin-bottom:32px;">
@@ -220,7 +220,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Custom features</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Priority support</li>
           </ul>
-          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;">Get Started</a>
+          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
         </div>
       </div>
       
@@ -244,7 +244,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
         <!-- Starter Agent -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Starter Agent</h3>
           <p style="color:#94a3b8;margin-bottom:24px;">For small businesses getting started</p>
           <div style="margin-bottom:32px;">
@@ -258,11 +258,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES)</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Setup & training included</li>
           </ul>
-          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;">Get Started</a>
+          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
         </div>
         
         <!-- Pro Agent -->
-        <div style="background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(99,102,241,0.2));border:2px solid rgba(236,72,153,0.5);border-radius:24px;padding:40px;position:relative;">
+        <div style="background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(99,102,241,0.2));border:2px solid rgba(236,72,153,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
           <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f472b6,#ec4899);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Most Popular</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Pro Agent</h3>
           <p style="color:#94a3b8;margin-bottom:24px;">For businesses that want full automation</p>
@@ -277,7 +277,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Calendar & task management</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Ongoing support & updates</li>
           </ul>
-          <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">Get Started</a>
+          <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">Get Started</a>
         </div>
       </div>
 
