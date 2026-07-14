@@ -1,0 +1,201 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+  {
+    title: "Antigua Real Estate Development",
+    subtitle: "Real Estate Agency",
+    url: "https://antiguarealestatedevelopment.com",
+    image: "/images/portfolio/ard-screenshot.png",
+    description: "Full real estate website for an expat-focused agency in Antigua Guatemala. Bilingual (EN/ES), property listings, blog with SEO-optimized articles, client reviews, and WhatsApp integration.",
+    tags: ["Real Estate", "Bilingual", "Blog", "SEO", "WhatsApp"],
+    plan: "Professional",
+    testimonial: null,
+  },
+  {
+    title: "Watalam Guatemala",
+    subtitle: "Ecotourism & Community Adventures",
+    url: "https://watalam-site.vercel.app",
+    image: "/images/portfolio/watalam-screenshot.png",
+    description: "Community-based ecotourism website near Antigua Guatemala. Bilingual (EN/ES) with language toggle, adventure tours with pricing in Quetzales, photo gallery, traveler reviews, and WhatsApp booking.",
+    tags: ["Ecotourism", "Bilingual", "Gallery", "WhatsApp", "Community"],
+    plan: "Professional",
+    testimonial: null,
+  },
+  {
+    title: "AI Starter Agent Demo",
+    subtitle: "AI Receptionist for Restaurants & Hotels",
+    url: "/ai-demo.html",
+    image: null,
+    isLiveDemo: true,
+    description: "Interactive demo of an AI receptionist agent for a restaurant — handling menu questions, reservations, hours, location, pricing, delivery, and events. Bilingual (EN/ES) with intent matching and simulated chat. This is what the Starter Agent plan delivers.",
+    tags: ["AI Agent", "Bilingual", "WhatsApp", "24/7 Support", "Restaurant"],
+    plan: "Starter Agent",
+    testimonial: null,
+  },
+];
+---
+
+<BaseLayout title="Portfolio" description="See our recent website projects for small businesses. Real sites, real results — built fast and built to last.">
+
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div class="container" style="position:relative;z-index:1;text-align:center;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
+        🎨 Real projects, real businesses, real results
+      </div>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;">
+        Our <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Portfolio</span>
+      </h1>
+      <p style="font-size:1.2rem;color:#cbd5e1;max-width:600px;margin:0 auto;line-height:1.8;">
+        Websites we've built for real businesses. Every project delivered in 2-3 days, mobile-friendly, and designed to convert visitors into customers.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section style="padding:100px 0;background:#f8fafc;">
+    <div class="container">
+      <div style="display:flex;flex-direction:column;gap:80px;">
+        {projects.map((project, i) => (
+          project.isLiveDemo ? (
+            /* ═══ LIVE DEMO CARD ═══ */
+            <div>
+              <div style="text-align:center;margin-bottom:40px;">
+                <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                  🤖 {project.plan} — Try It Live
+                </div>
+                <h2 style="font-size:2rem;margin-bottom:8px;">{project.title}</h2>
+                <p style="color:var(--color-primary);font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
+                <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
+                  {project.tags.map(tag => (
+                    <span style="padding:6px 14px;background:white;border:1px solid #e2e8f0;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">{tag}</span>
+                  ))}
+                </div>
+              </div>
+              {/* Embedded live demo in browser frame */}
+              <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.15);border:1px solid #e2e8f0;max-width:440px;margin:0 auto;">
+                <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
+                  <div style="display:flex;gap:6px;">
+                    <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
+                    <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
+                    <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
+                  </div>
+                  <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;text-align:center;">
+                    birkystudio.com/ai-demo
+                  </div>
+                </div>
+                <iframe src="/ai-demo.html" style="width:100%;height:520px;border:none;display:block;" title="AI Agent Starter Demo" loading="lazy"></iframe>
+              </div>
+              <div style="text-align:center;margin-top:32px;">
+                <a href="/contact" class="btn btn-primary" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
+                  Get Your Own AI Agent →
+                </a>
+              </div>
+            </div>
+          ) : (
+            <div style={`display:grid;grid-template-columns:${i % 2 === 0 ? '1.2fr 1fr' : '1fr 1.2fr'};gap:48px;align-items:center;`} class="project-row">
+              {/* Screenshot */}
+              <div style={`${i % 2 !== 0 ? 'order:2;' : ''}`}>
+                <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.15);border:1px solid #e2e8f0;transition:transform 0.3s,box-shadow 0.3s;" class="project-image">
+                  <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
+                    <div style="display:flex;gap:6px;">
+                      <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
+                      <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
+                      <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
+                    </div>
+                    <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;">
+                      {project.url.replace('https://', '')}
+                    </div>
+                  </div>
+                  <img src={project.image} alt={`${project.title} website preview`} style="width:100%;height:320px;object-fit:cover;display:block;" loading="lazy" />
+                </a>
+              </div>
+
+              {/* Info */}
+              <div style={`${i % 2 !== 0 ? 'order:1;' : ''}`}>
+                <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                  {project.plan} Plan
+                </div>
+                <h2 style="font-size:2rem;margin-bottom:8px;">{project.title}</h2>
+                <p style="color:var(--color-primary);font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
+                <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
+                
+                {/* Tags */}
+                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
+                  {project.tags.map(tag => (
+                    <span style="padding:6px 14px;background:white;border:1px solid #e2e8f0;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">{tag}</span>
+                  ))}
+                </div>
+
+                <a href={project.url} target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;">
+                  View Live Site →
+                </a>
+              </div>
+            </div>
+          )
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section style="padding:80px 0;background:white;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;">
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">3</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Projects Delivered</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">100%</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Mobile Friendly</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">EN/ES</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Bilingual Ready</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">2-3</div>
+          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Days to Deliver</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);text-align:center;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(99,102,241,0.15),transparent 50%);"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Want a Website Like These?</h2>
+      <p style="color:#cbd5e1;font-size:1.15rem;max-width:550px;margin:0 auto 40px;line-height:1.8;">
+        Let's build something amazing for your business. Fast delivery, professional design, and affordable pricing.
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="/contact" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
+          Start Your Project →
+        </a>
+        <a href="/#pricing" class="btn" style="background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
+          View Pricing
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .project-image:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.2) !important;
+    }
+    @media (max-width: 768px) {
+      .project-row {
+        grid-template-columns: 1fr !important;
+      }
+      .project-row > div {
+        order: unset !important;
+      }
+    }
+  </style>
+</BaseLayout>

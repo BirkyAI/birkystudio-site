@@ -5,7 +5,7 @@ export interface Props {
   image?: string;
 }
 
-const { title, description = "Smart Websites For Small Businesses", image = "/images/birky-mascot.jpg" } = Astro.props;
+const { title, description = "Smart digital solutions for small businesses — professional websites and AI agents, delivered fast and built to grow with you.", image = "/images/birky-mascot.jpg" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -189,16 +189,20 @@ const { title, description = "Smart Websites For Small Businesses", image = "/im
       <div class="nav-links" style="display:flex;align-items:center;gap:24px;">
         {Astro.url.pathname.startsWith('/es') ? (
           <>
-            <a href="/es/#servicios" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Servicios</a>
-            <a href="/es/#precios" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Precios</a>
+            <a href="/es/portafolio" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Portafolio</a>
+            <a href="/es/#productos" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Productos</a>
+            <a href="/blog" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Blog</a>
+            <a href="/es/#precios-sitios" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Precios</a>
             <a href="/es/contacto" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Contacto</a>
             <a href="/" style="font-size:0.85rem;font-weight:600;padding:6px 14px;border-radius:8px;background:#f1f5f9;color:var(--color-dark);transition:all 0.2s;">EN</a>
             <a href="/es/contacto" class="btn btn-primary" style="padding:10px 20px;font-size:0.9rem;">Empezar</a>
           </>
         ) : (
           <>
-            <a href="/#services" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Services</a>
-            <a href="/#pricing" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Pricing</a>
+            <a href="/portfolio" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Portfolio</a>
+            <a href="/#products" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Products</a>
+            <a href="/blog" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Blog</a>
+            <a href="/#pricing-websites" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Pricing</a>
             <a href="/contact" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Contact</a>
             <a href="/es/" style="font-size:0.85rem;font-weight:600;padding:6px 14px;border-radius:8px;background:#f1f5f9;color:var(--color-dark);transition:all 0.2s;">ES</a>
             <a href="/contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.9rem;">Get Started</a>
@@ -221,13 +225,15 @@ const { title, description = "Smart Websites For Small Businesses", image = "/im
           <div style="font-size:1.5rem;font-weight:800;margin-bottom:16px;">
             <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Birky Studio</span>
           </div>
-          <p style="color:#94a3b8;line-height:1.8;">Smart websites for small businesses. Fast, professional, and built to grow with you.</p>
+          <p style="color:#94a3b8;line-height:1.8;">Smart digital solutions for small businesses. Websites, AI agents, and everything you need to grow online.</p>
         </div>
         <div>
-          <h4 style="font-size:1rem;font-weight:600;margin-bottom:16px;">Services</h4>
+          <h4 style="font-size:1rem;font-weight:600;margin-bottom:16px;">Products</h4>
           <div style="display:flex;flex-direction:column;gap:12px;">
-            <a href="/#services" style="color:#94a3b8;transition:color 0.2s;">Web Design</a>
-            <a href="/#pricing" style="color:#94a3b8;transition:color 0.2s;">Pricing</a>
+            <a href="/portfolio" style="color:#94a3b8;transition:color 0.2s;">Portfolio</a>
+            <a href="/#products" style="color:#94a3b8;transition:color 0.2s;">Products</a>
+            <a href="/blog" style="color:#94a3b8;transition:color 0.2s;">Blog</a>
+            <a href="/#pricing-websites" style="color:#94a3b8;transition:color 0.2s;">Pricing</a>
             <a href="/contact" style="color:#94a3b8;transition:color 0.2s;">Contact</a>
           </div>
         </div>
@@ -244,5 +250,9 @@ const { title, description = "Smart Websites For Small Businesses", image = "/im
       </div>
     </div>
   </footer>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
