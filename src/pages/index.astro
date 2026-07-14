@@ -5,29 +5,47 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="Home" description="Smart digital solutions for small businesses — professional websites and AI agents, delivered fast and built to grow with you.">
   
   <!-- Hero Section -->
-  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:120px 0 100px;position:relative;overflow:hidden;">
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
     <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
-    <div class="container" style="position:relative;z-index:1;text-align:center;">
-      <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.2);margin:0 auto 20px;box-shadow:0 0 40px rgba(99,102,241,0.3);">
-        <img src="/images/birky-mascot.jpg" alt="Birky - Birky Studio mascot" style="width:100%;height:100%;object-fit:cover;">
+    <div class="container hero-grid" style="position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+      <!-- Left: Text -->
+      <div>
+        <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,0.2);margin-bottom:20px;box-shadow:0 0 30px rgba(99,102,241,0.3);">
+          <img src="/images/birky-mascot.jpg" alt="Birky - Birky Studio mascot" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+          🚀 Websites + AI Agents • Fast delivery • Affordable pricing
+        </div>
+        <h1 style="font-size:clamp(2rem,4vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+          Smart Digital Solutions For<br>
+          <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Small Businesses</span>
+        </h1>
+        <p style="font-size:1.15rem;color:#cbd5e1;margin-bottom:32px;line-height:1.8;max-width:500px;">
+          Professional websites that bring you customers, and AI agents that handle the rest. Built fast, built to last.
+        </p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="/contact" class="btn btn-primary" style="font-size:1.05rem;padding:16px 32px;">
+            Get Started →
+          </a>
+          <a href="/#products" class="btn btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.3);font-size:1.05rem;padding:16px 32px;">
+            View Products
+          </a>
+        </div>
       </div>
-      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
-        🚀 Websites + AI Agents • Fast delivery • Affordable pricing
-      </div>
-      <h1 style="font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;color:white;margin-bottom:24px;max-width:900px;margin-left:auto;margin-right:auto;">
-        Smart Digital Solutions For<br>
-        <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Small Businesses</span>
-      </h1>
-      <p style="font-size:1.25rem;color:#cbd5e1;max-width:600px;margin:0 auto 40px;line-height:1.8;">
-        Professional websites that bring you customers, and AI agents that handle the rest. Built fast, built to last.
-      </p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="/contact" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
-          Get Started →
-        </a>
-        <a href="/#products" class="btn btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
-          View Products
-        </a>
+
+      <!-- Right: AI Demo -->
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.1);">
+        <div style="background:#1e293b;padding:10px 16px;display:flex;align-items:center;gap:8px;">
+          <div style="display:flex;gap:5px;">
+            <div style="width:9px;height:9px;border-radius:50%;background:#ef4444;"></div>
+            <div style="width:9px;height:9px;border-radius:50%;background:#eab308;"></div>
+            <div style="width:9px;height:9px;border-radius:50%;background:#22c55e;"></div>
+          </div>
+          <div style="flex:1;background:#334155;border-radius:6px;padding:3px 10px;color:#94a3b8;font-size:0.7rem;font-family:monospace;text-align:center;">
+            AI Agent — Live Demo
+          </div>
+        </div>
+        <iframe src="/ai-demo.html" style="width:100%;height:480px;border:none;display:block;" title="AI Agent Demo" loading="eager"></iframe>
       </div>
     </div>
   </section>
@@ -282,5 +300,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </a>
     </div>
   </section>
+
+  <style>
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .hero-grid > div:last-child {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  </style>
 
 </BaseLayout>
