@@ -6,21 +6,42 @@ export interface Props {
 }
 
 const { title, description = "Smart digital solutions for small businesses — professional websites and AI agents, delivered fast and built to grow with you.", image = "/images/birky-mascot.jpg" } = Astro.props;
+
+const isSpanish = Astro.url.pathname.startsWith('/es');
+const lang = isSpanish ? 'es' : 'en';
+
+// Canonical: use the current page URL
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+
+// Hreflang URLs
+const pathWithoutLang = Astro.url.pathname.replace(/^\/es\/?/, '/');
+const enURL = new URL(pathWithoutLang === '/' ? '/' : pathWithoutLang, Astro.site).href;
+const esPath = pathWithoutLang === '/' ? '/es/' : `/es${pathWithoutLang}`;
+const esURL = new URL(esPath, Astro.site).href;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | Birky Studio</title>
   <meta name="description" content={description}>
   
+  <!-- Canonical -->
+  <link rel="canonical" href={canonicalURL} />
+  
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="en" href={enURL} />
+  <link rel="alternate" hreflang="es" href={esURL} />
+  <link rel="alternate" hreflang="x-default" href={enURL} />
+  
   <!-- Open Graph -->
   <meta property="og:title" content={`${title} | Birky Studio`}>
   <meta property="og:description" content={description}>
   <meta property="og:image" content={new URL(image, Astro.site).href}>
   <meta property="og:type" content="website">
+  <meta property="og:url" content={canonicalURL}>
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
