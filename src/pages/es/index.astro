@@ -61,10 +61,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;margin-bottom:16px;">Nuestros Productos</h2>
-        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Dos soluciones poderosas para hacer crecer tu negocio — una presencia profesional en línea y automatización inteligente.</p>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Tres soluciones poderosas para hacer crecer tu negocio — una presencia profesional en línea, automatización inteligente y atención de llamadas 24/7.</p>
       </div>
       
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:40px;max-width:900px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;max-width:1200px;margin:0 auto;">
         <!-- Product 1: Website Design -->
         <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
           <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
@@ -104,6 +104,27 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           </div>
           <a href="#precios-ia" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">
             Ver Planes de IA →
+          </a>
+        </div>
+        
+        <!-- Product 3: AI Receptionist -->
+        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            📞
+          </div>
+          <h3 style="font-size:1.5rem;margin-bottom:16px;">Recepcionista IA</h3>
+          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+            Nunca pierdas una llamada. Nuestro recepcionista IA contesta tu teléfono 24/7 con voz natural, habla español e inglés, toma mensajes y transfiere llamadas urgentes — incluso fuera de horario y fines de semana.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Llamadas 24/7</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Voz IA</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingüe</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Toma Mensajes</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Urgentes</span>
+          </div>
+          <a href="#precios-recepcionista" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+            Ver Planes de Recepción →
           </a>
         </div>
       </div>
@@ -267,6 +288,67 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
         <p style="color:#94a3b8;font-size:0.95rem;">
           <strong style="color:white;">¿Necesitas algo personalizado?</strong> Cada negocio es diferente. <a href="/es/contacto" style="color:#f9a8d4;text-decoration:underline;">Contáctanos</a> para una solución de agente IA diseñada específicamente para tu flujo de trabajo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing: AI Receptionist -->
+  <section id="precios-recepcionista" style="padding:100px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <div style="display:inline-block;padding:6px 16px;background:rgba(16,185,129,0.2);border-radius:100px;color:#6ee7b7;font-size:0.85rem;font-weight:600;margin-bottom:16px;">📞 Recepcionista IA</div>
+        <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Planes de Recepcionista</h2>
+        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Tu recepcionista IA contesta llamadas y mensajes 24/7 — para que nunca pierdas un cliente.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
+        <!-- Text Receptionist -->
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Recepción por Texto</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Mensajería WhatsApp con IA</p>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:2rem;font-weight:800;color:white;">Q2,000</span>
+            <span style="color:#94a3b8;"> pago único</span>
+          </div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Respuestas automáticas WhatsApp 24/7</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Responde preguntas y toma mensajes</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN)</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Funciona fuera de horario y fines de semana</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Configuración y entrenamiento incluido</li>
+          </ul>
+          <a href="/es/contacto" class="btn btn-secondary" style="width:100%;justify-content:center;">Empezar</a>
+        </div>
+        
+        <!-- Voice Receptionist Bundle -->
+        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.2));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:40px;position:relative;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#059669);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Mejor Valor</div>
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Recepción por Voz</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Recepcionista IA completo — voz + texto</p>
+          <div style="margin-bottom:8px;">
+            <span style="font-size:2rem;font-weight:800;color:white;">Q4,250</span>
+            <span style="color:#94a3b8;"> configuración</span>
+          </div>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:1.5rem;font-weight:700;color:#6ee7b7;">Q1,000</span>
+            <span style="color:#94a3b8;">/mes</span>
+          </div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Todo lo del plan de Texto</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> IA contesta llamadas telefónicas 24/7</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Voz IA natural (ES/EN)</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Toma mensajes y transfiere llamadas urgentes</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Cubre fuera de horario y fines de semana</li>
+          </ul>
+          <a href="/es/contacto" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Empezar</a>
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
+        <p style="color:#94a3b8;font-size:0.95rem;">
+          <strong style="color:white;">¡Combina ambos productos!</strong> Agrega un Sitio Web + Recepcionista IA para la configuración completa de tu negocio. <a href="/es/contacto" style="color:#6ee7b7;text-decoration:underline;">Contáctanos</a> para un paquete personalizado.
         </p>
       </div>
     </div>

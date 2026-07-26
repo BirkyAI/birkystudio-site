@@ -11,7 +11,7 @@ const organizationLD = JSON.stringify({
   "email": "birky.ai@proton.me",
   "telephone": "+50235716181",
   "areaServed": "Worldwide",
-  "serviceType": ["Web Design", "AI Agent Setup"],
+  "serviceType": ["Web Design", "AI Agent Setup", "AI Voice Receptionist"],
   "sameAs": [],
   "offers": [
     {
@@ -30,6 +30,18 @@ const organizationLD = JSON.stringify({
       "@type": "Offer",
       "name": "Premium Website",
       "price": "780",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Text Receptionist",
+      "price": "250",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Voice Receptionist Bundle",
+      "price": "550",
       "priceCurrency": "USD"
     }
   ]
@@ -114,10 +126,10 @@ const organizationLD = JSON.stringify({
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;margin-bottom:16px;">Our Products</h2>
-        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Two powerful solutions to help your business grow — a professional online presence and smart automation.</p>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Three powerful solutions to help your business grow — a professional online presence, smart automation, and 24/7 call answering.</p>
       </div>
       
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:40px;max-width:900px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;max-width:1200px;margin:0 auto;">
         <!-- Product 1: Website Design -->
         <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
           <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
@@ -157,6 +169,27 @@ const organizationLD = JSON.stringify({
           </div>
           <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">
             View AI Agent Plans →
+          </a>
+        </div>
+        
+        <!-- Product 3: AI Receptionist -->
+        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            📞
+          </div>
+          <h3 style="font-size:1.5rem;margin-bottom:16px;">AI Receptionist</h3>
+          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+            Never miss a call again. Our AI receptionist answers your phone 24/7 with a natural voice, speaks English and Spanish, takes messages, and forwards urgent calls — even after hours and weekends.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">24/7 Calls</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">AI Voice</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingual</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Takes Messages</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Urgent Forwarding</span>
+          </div>
+          <a href="/#pricing-receptionist" class="btn btn-primary" style="display:inline-flex;margin-top:auto;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+            View Receptionist Plans →
           </a>
         </div>
       </div>
@@ -320,6 +353,67 @@ const organizationLD = JSON.stringify({
       <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
         <p style="color:#94a3b8;font-size:0.95rem;">
           <strong style="color:white;">Need something custom?</strong> Every business is different. <a href="/contact" style="color:#f9a8d4;text-decoration:underline;">Contact us</a> for a tailored AI agent solution built around your specific workflow.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing: AI Receptionist -->
+  <section id="pricing-receptionist" style="padding:100px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <div style="display:inline-block;padding:6px 16px;background:rgba(16,185,129,0.2);border-radius:100px;color:#6ee7b7;font-size:0.85rem;font-weight:600;margin-bottom:16px;">📞 AI Receptionist</div>
+        <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Receptionist Plans</h2>
+        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Your AI receptionist answers calls and messages 24/7 — so you never miss a customer.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
+        <!-- Text Receptionist -->
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Text Receptionist</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">WhatsApp messaging, handled by AI</p>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:3rem;font-weight:800;color:white;">$250</span>
+            <span style="color:#94a3b8;"> one-time</span>
+          </div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> WhatsApp auto-replies 24/7</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Answers FAQs & takes messages</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES)</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Works after hours & weekends</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Setup & training included</li>
+          </ul>
+          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
+        </div>
+        
+        <!-- Voice Receptionist Bundle -->
+        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.2));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#059669);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Best Value</div>
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Voice Receptionist</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Full AI phone + text receptionist</p>
+          <div style="margin-bottom:8px;">
+            <span style="font-size:3rem;font-weight:800;color:white;">$550</span>
+            <span style="color:#94a3b8;"> setup</span>
+          </div>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:1.5rem;font-weight:700;color:#6ee7b7;">$125</span>
+            <span style="color:#94a3b8;">/month</span>
+          </div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Everything in Text Receptionist</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> AI answers phone calls 24/7</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Natural AI voice (EN/ES)</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Takes messages & forwards urgent calls</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> After hours & weekends covered</li>
+          </ul>
+          <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
+        <p style="color:#94a3b8;font-size:0.95rem;">
+          <strong style="color:white;">Bundle both products!</strong> Add a Website + AI Receptionist for the ultimate business setup. <a href="/contact" style="color:#6ee7b7;text-decoration:underline;">Contact us</a> for a custom package.
         </p>
       </div>
     </div>
