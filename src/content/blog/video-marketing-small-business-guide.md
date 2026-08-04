@@ -1,7 +1,7 @@
 ---
 title: "Video Marketing for Small Businesses: A Simple Guide"
 description: "Video marketing is not just for big brands. Here is how small businesses can create effective videos without a huge budget or production crew."
-image: "/images/blog/ai-generated/video-marketing-hero.jpg"
+image: "/images/blog/ai-generated/video-marketing-hero-v2.jpg"
 date: 2026-07-27
 tags: ["video marketing", "small business", "digital marketing", "content marketing"]
 ---

@@ -6,6 +6,10 @@ const allPosts = (await getCollection('blog'))
   .filter(post => post.data.lang === 'en')
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
+const POSTS_PER_PAGE = 12;
+const initialPosts = allPosts.slice(0, POSTS_PER_PAGE);
+const hasMore = allPosts.length > POSTS_PER_PAGE;
+
 function formatDate(date: Date): string {
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
@@ -32,34 +36,42 @@ function formatDate(date: Date): string {
   <!-- Blog Grid -->
   <section style="padding:80px 0;background:#f8fafc;">
     <div class="container">
-      {allPosts.length === 0 ? (
+      {initialPosts.length === 0 ? (
         <div style="text-align:center;padding:80px 0;">
           <p style="color:var(--color-gray);font-size:1.1rem;">Blog posts coming soon! Check back later.</p>
         </div>
       ) : (
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:32px;">
-          {allPosts.map((post) => (
-            <a href={`/blog/${post.id}`} style="display:block;background:white;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0;transition:all 0.3s;text-decoration:none;color:inherit;" class="blog-card">
-              {post.data.image && (
-                <div style="height:200px;overflow:hidden;">
-                  <img src={post.data.image} alt={post.data.title} style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s;" loading="lazy" />
+        <>
+          <div id="blog-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:32px;">
+            {initialPosts.map((post) => (
+              <a href={`/blog/${post.id}`} style="display:block;background:white;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0;transition:all 0.3s;text-decoration:none;color:inherit;" class="blog-card">
+                {post.data.image && (
+                  <div style="height:200px;overflow:hidden;">
+                    <img src={post.data.image} alt={post.data.title} style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s;" loading="lazy" />
+                  </div>
+                )}
+                <div style="padding:28px;">
+                  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                    <time style="color:var(--color-gray);font-size:0.85rem;">{formatDate(post.data.date)}</time>
+                    {post.data.tags.length > 0 && (
+                      <span style="padding:4px 10px;background:var(--color-light);border-radius:100px;font-size:0.75rem;font-weight:600;color:var(--color-primary);">
+                        {post.data.tags[0]}
+                      </span>
+                    )}
+                  </div>
+                  <h2 style="font-size:1.25rem;margin-bottom:12px;line-height:1.4;">{post.data.title}</h2>
+                  <p style="color:var(--color-gray);font-size:0.95rem;line-height:1.7;">{post.data.description}</p>
                 </div>
-              )}
-              <div style="padding:28px;">
-                <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                  <time style="color:var(--color-gray);font-size:0.85rem;">{formatDate(post.data.date)}</time>
-                  {post.data.tags.length > 0 && (
-                    <span style="padding:4px 10px;background:var(--color-light);border-radius:100px;font-size:0.75rem;font-weight:600;color:var(--color-primary);">
-                      {post.data.tags[0]}
-                    </span>
-                  )}
-                </div>
-                <h2 style="font-size:1.25rem;margin-bottom:12px;line-height:1.4;">{post.data.title}</h2>
-                <p style="color:var(--color-gray);font-size:0.95rem;line-height:1.7;">{post.data.description}</p>
-              </div>
-            </a>
-          ))}
-        </div>
+              </a>
+            ))}
+          </div>
+          {hasMore && (
+            <div style="text-align:center;margin-top:48px;">
+              <button id="load-more-btn" class="btn btn-primary" style="min-width:200px;">Load More Posts</button>
+              <p id="post-count" style="font-size:13px;color:var(--color-gray);margin-top:12px;">Showing {POSTS_PER_PAGE} of {allPosts.length} posts</p>
+            </div>
+          )}
+        </>
       )}
     </div>
   </section>
@@ -83,3 +95,48 @@ function formatDate(date: Date): string {
     }
   </style>
 </BaseLayout>
+
+<script define:vars={{ allPostsData: allPosts.map(p => ({ id: p.id, image: p.data.image || '', title: p.data.title, description: p.data.description, date: new Date(p.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }), tags: p.data.tags })), POSTS_PER_PAGE }}>
+  let currentPage = 1;
+  const btn = document.getElementById('load-more-btn');
+  const grid = document.getElementById('blog-grid');
+  const countEl = document.getElementById('post-count');
+
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const start = currentPage * POSTS_PER_PAGE;
+      const end = start + POSTS_PER_PAGE;
+      const nextPosts = allPostsData.slice(start, end);
+
+      nextPosts.forEach(post => {
+        const card = document.createElement('a');
+        card.href = `/blog/${post.id}`;
+        card.className = 'blog-card';
+        card.style.cssText = 'display:block;background:white;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0;transition:all 0.3s;text-decoration:none;color:inherit;';
+        const imageHtml = post.image ? `<div style="height:200px;overflow:hidden;"><img src="${post.image}" alt="${post.title}" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s;" loading="lazy" /></div>` : '';
+        const tagHtml = post.tags.length > 0 ? `<span style="padding:4px 10px;background:var(--color-light);border-radius:100px;font-size:0.75rem;font-weight:600;color:var(--color-primary);">${post.tags[0]}</span>` : '';
+        card.innerHTML = `
+          ${imageHtml}
+          <div style="padding:28px;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+              <time style="color:var(--color-gray);font-size:0.85rem;">${post.date}</time>
+              ${tagHtml}
+            </div>
+            <h2 style="font-size:1.25rem;margin-bottom:12px;line-height:1.4;">${post.title}</h2>
+            <p style="color:var(--color-gray);font-size:0.95rem;line-height:1.7;">${post.description}</p>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      currentPage++;
+      const totalShown = Math.min(currentPage * POSTS_PER_PAGE, allPostsData.length);
+      countEl.textContent = `Showing ${totalShown} of ${allPostsData.length} posts`;
+
+      if (totalShown >= allPostsData.length) {
+        btn.style.display = 'none';
+        countEl.style.display = 'none';
+      }
+    });
+  }
+</script>

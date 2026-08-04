@@ -60,6 +60,20 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <p style="color:var(--color-gray);line-height:1.8;margin-bottom:24px;">¿Prefieres escribirnos directo? Estamos disponibles en WhatsApp y correo. Normalmente respondemos en unas horas.</p>
           </div>
           
+          <!-- Calendly Booking Widget -->
+          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+            <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+              <div style="width:48px;height:48px;background:linear-gradient(135deg,#006bff,#0050cc);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
+                📅
+              </div>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;">Agenda una Llamada Demo</div>
+                <div style="color:var(--color-gray);">Elige un horario que te funcione</div>
+              </div>
+            </div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/birky-ai-proton/ai-agent-demo-call?month=2026-07" style="min-width:100%;height:600px;border-radius:12px;overflow:hidden;"></div>
+          </div>
+          
           <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
             <div style="display:flex;align-items:center;gap:16px;">
               <div style="width:48px;height:48px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">💬</div>
@@ -99,4 +113,5 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </BaseLayout>
