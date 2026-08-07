@@ -10,7 +10,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <img src="/images/birky-mascot.jpg" alt="Luna - fundadora de Birky Studio" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <h1 style="font-size:clamp(2rem,5vw,3.5rem);color:white;margin-bottom:16px;">Construyamos Algo Genial</h1>
-      <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Cuéntanos sobre tu negocio y te responderemos en menos de 24 horas con una cotización gratis.</p>
+      <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Cuéntanos sobre tu negocio y te responderemos en menos de una hora con una cotización gratis.</p>
     </div>
   </section>
 
@@ -37,9 +37,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">¿Qué necesitas?</label>
               <select name="service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
-                <option value="basico">Sitio Básico (Q1,500)</option>
-                <option value="profesional">Sitio Profesional (Q3,000)</option>
-                <option value="premium">Sitio Premium (Q6,000)</option>
+                <option value="basico">Sitio Básico (Q2,000)</option>
+                <option value="profesional">Sitio Profesional (Q3,900)</option>
+                <option value="premium">Sitio Premium (Q8,000)</option>
+                <option value="agente-bienes-raices">Agente IA para Bienes Raíces (Q4,200)</option>
+                <option value="agente-negocios">Agente IA para Negocios (Q4,200)</option>
+                <option value="recepcionista-texto">Recepcionista de Texto (Q2,000)</option>
+                <option value="recepcionista-voz">Recepcionista por Voz (Q4,250)</option>
                 <option value="nosure">No estoy seguro/a</option>
               </select>
             </div>
@@ -57,7 +61,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div style="display:flex;flex-direction:column;gap:32px;">
           <div>
             <h3 style="font-size:1.25rem;margin-bottom:16px;">Contáctanos Directo</h3>
-            <p style="color:var(--color-gray);line-height:1.8;margin-bottom:24px;">¿Prefieres escribirnos directo? Estamos disponibles en WhatsApp y correo. Normalmente respondemos en unas horas.</p>
+            <p style="color:var(--color-gray);line-height:1.8;margin-bottom:24px;">¿Prefieres escribirnos directo? Estamos disponibles en WhatsApp y correo. Normalmente respondemos en menos de una hora.</p>
           </div>
           
           <!-- Calendly Booking Widget -->
@@ -74,7 +78,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="calendly-inline-widget" data-url="https://calendly.com/birky-ai-proton/ai-agent-demo-call?month=2026-07" style="min-width:100%;height:600px;border-radius:12px;overflow:hidden;"></div>
           </div>
           
-          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+          <a href="https://wa.me/50235716181" target="_blank" rel="noopener noreferrer" style="display:block;background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='#25d366'" onmouseout="this.style.borderColor='#e2e8f0'">
             <div style="display:flex;align-items:center;gap:16px;">
               <div style="width:48px;height:48px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">💬</div>
               <div>
@@ -82,7 +86,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 <div style="color:var(--color-gray);">+502 3571 6181</div>
               </div>
             </div>
-          </div>
+          </a>
           
           <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
             <div style="display:flex;align-items:center;gap:16px;">
@@ -99,7 +103,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
               <div style="width:48px;height:48px;background:linear-gradient(135deg,#06b6d4,#0891b2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">⏰</div>
               <div>
                 <div style="font-weight:600;margin-bottom:4px;">Tiempo de Respuesta</div>
-                <div style="color:var(--color-gray);">Menos de 24 horas</div>
+                <div style="color:var(--color-gray);">Menos de una hora</div>
               </div>
             </div>
           </div>
