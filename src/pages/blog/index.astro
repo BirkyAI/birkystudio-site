@@ -34,11 +34,11 @@ function formatDate(date: Date): string {
   </section>
 
   <!-- Blog Grid -->
-  <section style="padding:80px 0;background:#f8fafc;">
+  <section style="padding:80px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
     <div class="container">
       {initialPosts.length === 0 ? (
         <div style="text-align:center;padding:80px 0;">
-          <p style="color:var(--color-gray);font-size:1.1rem;">Blog posts coming soon! Check back later.</p>
+          <p style="color:#94a3b8;font-size:1.1rem;">Blog posts coming soon! Check back later.</p>
         </div>
       ) : (
         <>
@@ -68,7 +68,7 @@ function formatDate(date: Date): string {
           {hasMore && (
             <div style="text-align:center;margin-top:48px;">
               <button id="load-more-btn" class="btn btn-primary" style="min-width:200px;">Load More Posts</button>
-              <p id="post-count" style="font-size:13px;color:var(--color-gray);margin-top:12px;">Showing {POSTS_PER_PAGE} of {allPosts.length} posts</p>
+              <p id="post-count" style="font-size:13px;color:#94a3b8;margin-top:12px;">Showing {POSTS_PER_PAGE} of {allPosts.length} posts</p>
             </div>
           )}
         </>
@@ -88,7 +88,7 @@ function formatDate(date: Date): string {
   <style>
     .blog-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
     }
     .blog-card:hover img {
       transform: scale(1.05);
