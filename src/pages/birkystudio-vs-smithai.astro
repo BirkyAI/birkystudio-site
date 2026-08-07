@@ -1,0 +1,402 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or Smith.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is significantly cheaper upfront. You pay $550 one-time setup for a voice receptionist, then the voice provider directly (~$30-50/mo). Smith.ai starts at $150/month for 75 AI calls, or $300/month for 30 human-staffed calls. Over 12 months, BirkyStudio costs roughly $910-$1,150/year vs Smith.ai's $1,800-$3,600+/year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio offer human backup like Smith.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. BirkyStudio is pure AI with personal support from the builder (Luna). Smith.ai offers live human agents as a backup or primary option. If you need a human safety net for complex calls, Smith.ai is the better choice. If you're comfortable with AI handling your calls and want to save money, go with BirkyStudio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio or Smith.ai integrate with WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio includes WhatsApp AI alongside phone reception in every setup. Smith.ai does not offer native WhatsApp integration. For agents working with international buyers or in markets where WhatsApp is the primary communication tool, BirkyStudio is the clear winner."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I try Smith.ai or BirkyStudio before committing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smith.ai offers a free plan with 25 calls per month, letting you test before upgrading. BirkyStudio doesn't have a free plan but offers a 30-day satisfaction guarantee. Custom AI setups take 48-72 hours to build, so a free trial isn't practical — but you get personal support from the person who built it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a solo real estate agent: BirkyStudio or Smith.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most solo agents, BirkyStudio offers better value. You get a custom AI built for your specific listings and processes, WhatsApp integration, and bilingual support — all for roughly $910-$1,150/year. Smith.ai is better if you need live human backup or prefer an established company with a free trial option."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Smith.ai (2026 Comparison) — Which AI Receptionist Wins?",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Smith.ai. Real prices, real pros and cons. Find out which AI receptionist fits your real estate business.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-08-06",
+  "dateModified": "2026-08-06"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Smith.ai (2026 Comparison)"
+  description="BirkyStudio vs Smith.ai head-to-head comparison. Real prices, features, WhatsApp support, and which one is better for real estate agents."
+  image="/images/birky-mascot.jpg"
+>
+  <script type="application/ld+json" set:html={faqLD} />
+  <script type="application/ld+json" set:html={articleLD} />
+
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated August 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Smith.ai<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Which AI Receptionist Wins?</span>
+      </h1>
+      <p style="font-size:1.1rem;color:#cbd5e1;line-height:1.8;max-width:700px;">
+        Two different approaches to AI receptionists. BirkyStudio builds custom AI trained on your business. Smith.ai gives you AI with live human backup. Here's how they really compare — pricing, features, and which one actually fits a real estate agent's workflow.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want a custom AI built for your specific real estate business, need WhatsApp integration, and prefer a low one-time cost over monthly subscriptions. Best for solo agents and small teams on a budget.<br><br>
+          <strong style="color:white;">Choose Smith.ai if:</strong> You want a free trial to test before committing, need live human backup for complex calls, or run a larger team that needs enterprise features. Best for agents who prefer established platforms with human safety nets.
+        </p>
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Smith.ai?</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        If you're shopping for an AI receptionist, you've probably seen both names. BirkyStudio is the newer, custom-built option. Smith.ai has been around since 2015 and handles over 1 million calls per month. They take opposite approaches: BirkyStudio gives you a dedicated AI trained on your business, while Smith.ai offers AI with a team of live human agents as backup.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:40px;">
+        Both can answer calls 24/7, qualify leads, and book appointments. But the differences in pricing, setup, and features matter — especially for real estate agents. Here's the breakdown.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Smith.ai — Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Smith.ai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">$550 setup + ~$30-50/mo</td>
+              <td style="padding:14px 12px;color:#f59e0b;font-weight:600;">$150/mo (AI) or $300/mo (human)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">48-72 hours (custom-built)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">15-30 min (AI) or ~1 week (human)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp Integration</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:#ef4444;font-weight:600;">❌ Not available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Human Backup</td>
+              <td style="padding:14px 12px;color:#ef4444;font-weight:600;">❌ AI only</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Live agents available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Spanish line add-on ($1/call)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Custom AI Training</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Trained on your listings & process</td>
+              <td style="padding:14px 12px;color:#f59e0b;font-weight:600;">⚠️ Limited to AI prompting</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:#ef4444;font-weight:600;">❌ 30-day guarantee</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Free plan (25 calls/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Integrations</td>
+              <td style="padding:14px 12px;color:#f59e0b;font-weight:600;">⚠️ Basic (coming soon)</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Clio, Salesforce, Zapier, more</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Call Recording & Transcripts</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">✅ Included ($0.25/call add-on)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Company History</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Founded 2024, smaller team</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Since 2015, 5,000+ businesses</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Review</h2>
+
+      <div id="birky-studio" style="background:rgba(129,140,248,0.08);border:1px solid rgba(129,140,248,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:#818cf8;color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">BEST VALUE</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          BirkyStudio builds custom AI receptionists for real estate agents. Your AI is trained on your actual listings, your specific process, and your brand voice. It handles calls and WhatsApp messages 24/7, qualifies leads, books appointments, and transfers urgent calls — all in English or Spanish.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          What sets BirkyStudio apart is the personal touch. The same person who builds your AI (Luna) is also a licensed real estate agent who owns Antigua Real Estate Development. She knows the business from the inside and builds AI that actually understands how agents work.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:#10b981;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Custom-built for your specific business</li>
+              <li>WhatsApp + phone in one setup</li>
+              <li>Trained on your listings and processes</li>
+              <li>Low one-time cost, no ongoing subscription</li>
+              <li>Bilingual (EN/ES) included</li>
+              <li>Built by a realtor who knows the industry</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:#f59e0b;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>48-72 hour setup time (not instant)</li>
+              <li>No free trial (30-day satisfaction guarantee)</li>
+              <li>Smaller company with less brand recognition</li>
+              <li>No native CRM integration yet</li>
+              <li>No live human backup</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: $250 text-only (WhatsApp) · $550 voice + text bundle (client pays Vapi directly ~$30-50/mo) · Optional support: $29/month
+        </p>
+      </div>
+
+      <!-- Detailed Review: Smith.ai -->
+      <div id="smith-ai" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Smith.ai</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Smith.ai is an established call answering service used by over 5,000 businesses. They offer two tracks: an AI-first option (intelligent AI call handling) and a human-first option (live US-based receptionists). The AI option starts at $150/month for 75 calls, while the human-staffed option starts at $300/month for 30 calls.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Smith.ai's strength is its flexibility. You can start with AI and add human backup as needed. Their free plan (25 calls/month) lets you test before committing. They also integrate with major CRMs like Clio, Salesforce, and Zapier — a big plus for agents who already use these tools.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:#10b981;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Free plan available — test before paying</li>
+              <li>AI + live human backup option</li>
+              <li>Established company with proven track record</li>
+              <li>CRM integrations (Clio, Salesforce, Zapier)</li>
+              <li>Enterprise features for larger teams</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:#f59e0b;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Expensive — $150-$2,100/month depending on plan</li>
+              <li>No WhatsApp integration</li>
+              <li>Not customized to your specific listings</li>
+              <li>Per-call add-ons add up fast</li>
+              <li>Spanish line costs extra ($1/call)</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: AI-first from $150/month (75 calls) · Human-first from $300/month (30 calls) · Enterprise custom · Free plan available
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison — 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Smith.ai (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, light usage</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">~$910</td>
+              <td style="padding:14px 12px;color:#f59e0b;font-weight:600;">$1,800 (AI Pro 75 calls/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, heavy usage</td>
+              <td style="padding:14px 12px;color:#10b981;font-weight:600;">~$1,150</td>
+              <td style="padding:14px 12px;color:#f59e0b;font-weight:600;">$3,240 (AI Pro 150 calls/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Agent who wants human backup</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">N/A (AI only)</td>
+              <td style="padding:14px 12px;color:#f59e0b;font-weight:600;">$3,600+ (Human Starter)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">How to choose between BirkyStudio and Smith.ai</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+        Your decision comes down to three things: budget, WhatsApp, and whether you need human backup.
+      </p>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">💰 \"I want the most affordable option\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — $550 setup + ~$30-50/mo is roughly 2-3x cheaper than Smith.ai over 12 months.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">💬 \"My clients reach me on WhatsApp\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — it's the only option with WhatsApp AI built in. Smith.ai doesn't offer it.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🤝 \"I want the safety net of human agents\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Smith.ai</strong> — their human-first plans give you live US-based receptionists as backup.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🔬 \"I want to try before I buy\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Smith.ai</strong> — their free plan with 25 calls/month lets you test the AI before paying anything.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🏠 \"I want an AI that understands real estate\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — trained on your actual listings and built by a realtor. Smith.ai's AI is generic.</p>
+        </div>
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:40px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.4rem;margin-bottom:16px;">The Bottom Line</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          For most solo real estate agents and small teams, <strong style="color:white;">BirkyStudio</strong> offers better value. You get a custom AI trained on your business, WhatsApp integration, and bilingual support — all for roughly $910-$1,150 in your first year. That's less than what Smith.ai charges in three months.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+          Choose <strong style="color:white;">Smith.ai</strong> if you need live human backup, want to test with a free plan first, or run a larger team that needs enterprise CRM integrations. Their AI-first plans are solid, and their human-first plans give you peace of mind.
+        </p>
+        <p style="color:white;font-weight:600;margin-bottom:24px;">Both are good products. They serve different needs and budgets.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;">
+            Get Your AI Receptionist →
+          </a>
+          <a href="https://smith.ai/pricing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);">
+            Try Smith.ai Free →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Frequently Asked Questions</h2>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is cheaper: BirkyStudio or Smith.ai?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          BirkyStudio is significantly cheaper upfront. You pay $550 one-time for a voice receptionist, then the voice provider directly (~$30-50/mo). Smith.ai starts at $150/month for 75 AI calls. Over 12 months, BirkyStudio costs roughly $910-$1,150 vs Smith.ai's $1,800-$3,600+.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Does Smith.ai offer WhatsApp integration?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          No. Smith.ai focuses on phone calls and does not offer native WhatsApp integration. If WhatsApp is important for your business — especially if you work with international buyers or in Latin American markets — BirkyStudio is the better choice.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Can I get human backup with BirkyStudio?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          BirkyStudio is pure AI with personal support from the person who built it. If a call is too complex for the AI, it transfers to you directly. Smith.ai offers live human agents as a primary or backup option. If having a human safety net is essential, Smith.ai is the right choice.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Does BirkyStudio or Smith.ai integrate with my CRM?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          Smith.ai has mature CRM integrations with Clio, Salesforce, Zapier, and more. BirkyStudio's CRM integration is basic and coming soon. If CRM integration is critical, Smith.ai has the edge for now.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is better for a bilingual real estate agent?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          BirkyStudio includes bilingual (EN/ES) support at no extra cost. Smith.ai has a dedicated Spanish line, but it costs an additional $1 per call. For agents who handle bilingual calls regularly, BirkyStudio is more cost-effective.
+        </p>
+      </details>
+
+      <!-- Sources -->
+      <div style="margin-top:64px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#64748b;font-size:0.85rem;line-height:1.8;">
+          <strong style="color:#94a3b8;">How we evaluated:</strong> Prices verified on each company's pricing page in August 2026. BirkyStudio pricing reflects current published rates. Smith.ai pricing from smith.ai/pricing (AI-first and human-first plans). Features based on public documentation and our own testing.
+          <br><br>
+          Prices and features change. Always verify current pricing on the provider's website before purchasing.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    summary { list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: '▸ '; color: #818cf8; }
+    details[open] summary::before { content: '▾ '; }
+    table { min-width: 600px; }
+    @media (max-width: 768px) {
+      table { font-size: 0.8rem; }
+      th, td { padding: 10px 8px !important; }
+    }
+  </style>
+</BaseLayout>
