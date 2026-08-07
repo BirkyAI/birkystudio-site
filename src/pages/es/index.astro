@@ -63,107 +63,61 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Products Section -->
-  <section id="productos" style="padding:100px 0;background:#f8fafc;">
+  <!-- Pricing: AI Agent -->
+  <section id="precios-ia" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
-        <h2 style="font-size:2.5rem;margin-bottom:16px;">Nuestros Productos</h2>
-        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Tres soluciones poderosas para hacer crecer tu negocio — una presencia profesional en línea, automatización inteligente y atención de llamadas 24/7.</p>
+        <div style="display:inline-block;padding:6px 16px;background:rgba(236,72,153,0.2);border-radius:100px;color:#f9a8d4;font-size:0.85rem;font-weight:600;margin-bottom:16px;">🤖 Agente de IA</div>
+        <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Planes de Agente IA</h2>
+        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Un asistente de IA instalado en tu computadora — trabaja con tu correo, archivos y CRM. Bilingüe ES/EN, 24/7.</p>
       </div>
       
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;max-width:1200px;margin:0 auto;">
-        <!-- Product 1: Website Design -->
-        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🌐
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
+        <!-- Real Estate AI Agent -->
+        <div style="background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(99,102,241,0.2));border:2px solid rgba(236,72,153,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f472b6,#ec4899);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Más Popular</div>
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Agente IA para Bienes Raíces</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Automatización completa para corredores</p>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:2rem;font-weight:800;color:white;">Q6,250</span>
+            <span style="color:#94a3b8;"> configuración única</span>
           </div>
-          <h3 style="font-size:1.5rem;margin-bottom:16px;">Diseño de Sitios Web</h3>
-          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Sitios web profesionales, optimizados para celular, que cargan rápido y convierten visitantes en clientes. Bilingües, con SEO e integración de WhatsApp — entregados en 2-3 días.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Mobile-First</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingüe</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">SEO</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">WhatsApp</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Rápido</span>
-          </div>
-          <a href="#precios-sitios" class="btn btn-primary" style="display:inline-flex;">
-            Ver Planes de Sitios →
-          </a>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> <strong style="color:white;">Sistema Notion de Bienes Raíces</strong> — CRM, comisiones, planificador</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Búsqueda de propiedades y generador de descripciones</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Gestión de correo y seguimientos automáticos</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automatización de contenido para Google Business</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Multi-plataforma (WhatsApp + Telegram + Email)</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN) + integración CRM</li>
+          </ul>
+          <a href="/es/contacto" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">Empezar</a>
         </div>
         
-        <!-- Product 2: AI Agent Setup -->
-        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#f472b6,#ec4899);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🤖
+        <!-- Business AI Agent -->
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Agente IA para Negocios</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Asistente inteligente para cualquier negocio</p>
+          <div style="margin-bottom:32px;">
+            <span style="font-size:2rem;font-weight:800;color:white;">Q4,250</span>
+            <span style="color:#94a3b8;"> configuración única</span>
           </div>
-          <h3 style="font-size:1.5rem;margin-bottom:16px;">Agente de IA</h3>
-          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Un asistente de IA dedicado a tu negocio — responde preguntas de clientes, gestiona tareas, automatiza trabajo repetitivo y te ayuda a mantener todo organizado. Funciona en WhatsApp, Telegram, correo y más.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Atención al Cliente</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Automatización</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Multi-Plataforma</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingüe</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">24/7</span>
-          </div>
-          <a href="#precios-ia" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">
-            Ver Planes de IA →
-          </a>
-        </div>
-        
-        <!-- Product 3: AI Receptionist -->
-        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            📞
-          </div>
-          <h3 style="font-size:1.5rem;margin-bottom:16px;">Recepcionista IA</h3>
-          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Nunca pierdas una llamada. Nuestro recepcionista IA contesta tu teléfono 24/7 con voz natural, habla español e inglés, toma mensajes y transfiere llamadas urgentes — incluso fuera de horario y fines de semana.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Llamadas 24/7</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Voz IA</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingüe</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Toma Mensajes</span>
-            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Urgentes</span>
-          </div>
-          <a href="#precios-recepcionista" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
-            Ver Planes de Recepción →
-          </a>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Base de conocimiento personalizada</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automatización de FAQ y atención al cliente</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Integración WhatsApp + Telegram</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automatización de tareas y borradores de correo</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN)</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Configuración y entrenamiento incluido</li>
+          </ul>
+          <a href="/es/contacto" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Empezar</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- How It Works -->
-  <section style="padding:100px 0;background:white;">
-    <div class="container">
-      <div style="text-align:center;margin-bottom:64px;">
-        <h2 style="font-size:2.5rem;margin-bottom:16px;">Cómo Funciona</h2>
-        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Tres pasos simples — sin importar qué producto elijas.</p>
-      </div>
-      
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;">
-        <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">1</div>
-          <h3 style="font-size:1.25rem;margin-bottom:12px;">Cuéntanos Lo Que Necesitas</h3>
-          <p style="color:var(--color-gray);line-height:1.8;">Comparte los detalles y objetivos de tu negocio. Ya sea un sitio web, un asistente de IA, o ambos — te recomendaremos la solución correcta.</p>
-        </div>
-        
-        <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:var(--gradient-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">2</div>
-          <h3 style="font-size:1.25rem;margin-bottom:12px;">Lo Construimos Para Ti</h3>
-          <p style="color:var(--color-gray);line-height:1.8;">Nuestro proceso impulsado por IA crea tu solución en solo 2-3 días. Tú revisas, das feedback y apruebas.</p>
-        </div>
-        
-        <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">3</div>
-          <h3 style="font-size:1.25rem;margin-bottom:12px;">En Línea y Creciendo</h3>
-          <p style="color:var(--color-gray);line-height:1.8;">Tu sitio está en vivo o tu agente de IA empieza a trabajar. Comparte el enlace, automatiza tareas y empieza a ver resultados.</p>
-        </div>
+      <!-- Note -->
+      <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
+        <p style="color:#94a3b8;font-size:0.95rem;">
+          <strong style="color:white;">Soporte y entrenamiento opcional:</strong> Q380/mes — incluye mantenimiento, ajustes y revisión mensual. Sin contrato, cancela cuando quieras.
+        </p>
       </div>
     </div>
   </section>
@@ -243,65 +197,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Pricing: AI Agent -->
-  <section id="precios-ia" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
-    <div class="container">
-      <div style="text-align:center;margin-bottom:64px;">
-        <div style="display:inline-block;padding:6px 16px;background:rgba(236,72,153,0.2);border-radius:100px;color:#f9a8d4;font-size:0.85rem;font-weight:600;margin-bottom:16px;">🤖 Agente de IA</div>
-        <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Planes de Agente IA</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Un asistente de IA instalado en tu computadora — trabaja con tu correo, archivos y CRM. Bilingüe ES/EN, 24/7.</p>
-      </div>
-      
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
-        <!-- Real Estate AI Agent -->
-        <div style="background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(99,102,241,0.2));border:2px solid rgba(236,72,153,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
-          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f472b6,#ec4899);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Más Popular</div>
-          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Agente IA para Bienes Raíces</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Automatización completa para corredores</p>
-          <div style="margin-bottom:32px;">
-            <span style="font-size:2rem;font-weight:800;color:white;">Q6,250</span>
-            <span style="color:#94a3b8;"> configuración única</span>
-          </div>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> <strong style="color:white;">Sistema Notion de Bienes Raíces</strong> — CRM, comisiones, planificador</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Búsqueda de propiedades y generador de descripciones</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Gestión de correo y seguimientos automáticos</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automatización de contenido para Google Business</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Multi-plataforma (WhatsApp + Telegram + Email)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN) + integración CRM</li>
-          </ul>
-          <a href="/es/contacto" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">Empezar</a>
-        </div>
-        
-        <!-- Business AI Agent -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
-          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Agente IA para Negocios</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Asistente inteligente para cualquier negocio</p>
-          <div style="margin-bottom:32px;">
-            <span style="font-size:2rem;font-weight:800;color:white;">Q4,250</span>
-            <span style="color:#94a3b8;"> configuración única</span>
-          </div>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Base de conocimiento personalizada</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automatización de FAQ y atención al cliente</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Integración WhatsApp + Telegram</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automatización de tareas y borradores de correo</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Configuración y entrenamiento incluido</li>
-          </ul>
-          <a href="/es/contacto" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Empezar</a>
-        </div>
-      </div>
-
-      <!-- Note -->
-      <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
-        <p style="color:#94a3b8;font-size:0.95rem;">
-          <strong style="color:white;">Soporte y entrenamiento opcional:</strong> Q380/mes — incluye mantenimiento, ajustes y revisión mensual. Sin contrato, cancela cuando quieras.
-        </p>
-      </div>
-    </div>
-  </section>
-
   <!-- Pricing: AI Receptionist -->
   <section id="precios-recepcionista" style="padding:100px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
     <div class="container">
@@ -366,7 +261,181 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- How It Works -->
+  <section style="padding:100px 0;background:white;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <h2 style="font-size:2.5rem;margin-bottom:16px;">Cómo Funciona</h2>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Tres pasos simples — sin importar qué producto elijas.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;">
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">1</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Cuéntanos Lo Que Necesitas</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Comparte los detalles y objetivos de tu negocio. Ya sea un sitio web, un asistente de IA, o ambos — te recomendaremos la solución correcta.</p>
+        </div>
+        
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;background:var(--gradient-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">2</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Lo Construimos Para Ti</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Nuestro proceso impulsado por IA crea tu solución en solo 2-3 días. Tú revisas, das feedback y apruebas.</p>
+        </div>
+        
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">3</div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">En Línea y Creciendo</h3>
+          <p style="color:var(--color-gray);line-height:1.8;">Tu sitio está en vivo o tu agente de IA empieza a trabajar. Comparte el enlace, automatiza tareas y empieza a ver resultados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="productos" style="padding:100px 0;background:#f8fafc;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <h2 style="font-size:2.5rem;margin-bottom:16px;">Nuestros Productos</h2>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Tres soluciones poderosas para hacer crecer tu negocio — una presencia profesional en línea, automatización inteligente y atención de llamadas 24/7.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;max-width:1200px;margin:0 auto;">
+        <!-- Product 1: Website Design -->
+        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            🌐
+          </div>
+          <h3 style="font-size:1.5rem;margin-bottom:16px;">Diseño de Sitios Web</h3>
+          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+            Sitios web profesionales, optimizados para celular, que cargan rápido y convierten visitantes en clientes. Bilingües, con SEO e integración de WhatsApp — entregados en 2-3 días.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Mobile-First</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingüe</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">SEO</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">WhatsApp</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Rápido</span>
+          </div>
+          <a href="#precios-sitios" class="btn btn-primary" style="display:inline-flex;">
+            Ver Planes de Sitios →
+          </a>
+        </div>
+        
+        <!-- Product 2: AI Agent Setup -->
+        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#f472b6,#ec4899);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            🤖
+          </div>
+          <h3 style="font-size:1.5rem;margin-bottom:16px;">Agente de IA</h3>
+          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+            Un asistente de IA dedicado a tu negocio — responde preguntas de clientes, gestiona tareas, automatiza trabajo repetitivo y te ayuda a mantener todo organizado. Funciona en WhatsApp, Telegram, correo y más.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Atención al Cliente</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Automatización</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Multi-Plataforma</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingüe</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">24/7</span>
+          </div>
+          <a href="#precios-ia" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">
+            Ver Planes de IA →
+          </a>
+        </div>
+        
+        <!-- Product 3: AI Receptionist -->
+        <div style="background:white;border-radius:24px;padding:48px;border:1px solid #e2e8f0;text-align:center;">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            📞
+          </div>
+          <h3 style="font-size:1.5rem;margin-bottom:16px;">Recepcionista IA</h3>
+          <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+            Nunca pierdas una llamada. Nuestro recepcionista IA contesta tu teléfono 24/7 con voz natural, habla español e inglés, toma mensajes y transfiere llamadas urgentes — incluso fuera de horario y fines de semana.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Llamadas 24/7</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Voz IA</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Bilingüe</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Toma Mensajes</span>
+            <span style="padding:6px 14px;background:#f1f5f9;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">Urgentes</span>
+          </div>
+          <a href="#precios-recepcionista" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+            Ver Planes de Recepción →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Sobre Mí -->
+  <section style="padding:100px 0;background:#f8fafc;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <h2 style="font-size:2.5rem;margin-bottom:16px;">Conoce a Tu Instaladora de IA</h2>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Soy Luna — instalo agentes de IA para pequeños negocios. Así nació Birky Studio.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:48px;align-items:center;max-width:900px;margin:0 auto;">
+        <div>
+          <img src="/images/luna-about.jpg" alt="Luna — Birky Studio" style="width:100%;border-radius:24px;box-shadow:0 8px 30px rgba(0,0,0,0.1);">
+        </div>
+        <div>
+          <p style="color:var(--color-gray);font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
+            Soy agente de bienes raíces en Antigua Guatemala y me cansé del trabajo administrativo manual — búsquedas de propiedades, descripciones, correos, seguimientos, actualizaciones de CRM. Así que construí mi propio asistente de IA para encargarse de todo.
+          </p>
+          <p style="color:var(--color-gray);font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
+            Funcionó tan bien que otros agentes empezaron a pedirme que les instalara uno también. Así nació Birky Studio — no una empresa de tecnología, solo alguien que encontró una mejor manera y quiere compartirla.
+          </p>
+          <p style="color:var(--color-gray);font-size:1.05rem;line-height:1.8;">
+            Cada agente de IA que instalo es el mismo que uso yo misma. Ha sido probado en batalla, funciona, y lo configuro personalmente para ti mediante compartición de pantalla. Sin intermediarios, sin tickets de soporte anónimos — solo yo, tu computadora y 2-3 horas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonios + Garantía -->
+  <section style="padding:100px 0;background:white;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:64px;">
+        <h2 style="font-size:2.5rem;margin-bottom:16px;">Dueños de Negocios Confían en Nosotros</h2>
+        <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto;">Resultados reales de clientes reales. Sin reseñas falsas, sin rodeos.</p>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1000px;margin:0 auto 64px;">
+        <div style="background:#f8fafc;border-radius:24px;padding:32px;border:1px solid #e2e8f0;">
+          <div style="display:flex;gap:4px;margin-bottom:16px;">
+            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
+          </div>
+          <p style="color:var(--color-gray);font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"Tuve mi sitio web en vivo en 3 días y es hermoso. La configuración bilingüe significa que mis clientes de habla inglesa y española reciben la misma gran experiencia. Muy recomendado."</p>
+          <div style="font-weight:600;color:var(--color-dark);font-size:0.9rem;">— María G., Agente de Bienes Raíces</div>
+        </div>
+        
+        <div style="background:#f8fafc;border-radius:24px;padding:32px;border:1px solid #e2e8f0;">
+          <div style="display:flex;gap:4px;margin-bottom:16px;">
+            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
+          </div>
+          <p style="color:var(--color-gray);font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"El agente IA maneja mis mensajes de WhatsApp, búsquedas de propiedades y descripciones. Estoy ahorrando como 8 horas a la semana. La mejor inversión que he hecho para mi negocio."</p>
+          <div style="font-weight:600;color:var(--color-dark);font-size:0.9rem;">— Carlos R., Corredor</div>
+        </div>
+        
+        <div style="background:#f8fafc;border-radius:24px;padding:32px;border:1px solid #e2e8f0;">
+          <div style="display:flex;gap:4px;margin-bottom:16px;">
+            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
+          </div>
+          <p style="color:var(--color-gray);font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"Era escéptica sobre los recepcionistas IA, pero contesta mis llamadas mejor que mi último asistente. Nunca pierdo un cliente potencial, ni siquiera a las 2am."</p>
+          <div style="font-weight:600;color:var(--color-dark);font-size:0.9rem;">— Ana S., Dueña de Hotel</div>
+        </div>
+      </div>
+      
+      <!-- Garantía Banner -->
+      <div style="text-align:center;padding:40px;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);border-radius:24px;max-width:800px;margin:0 auto;">
+        <div style="font-size:2.5rem;margin-bottom:16px;">🛡️</div>
+        <h3 style="font-size:1.5rem;color:white;margin-bottom:12px;">Garantía de Satisfacción de 30 Días</h3>
+        <p style="color:#94a3b8;font-size:1.05rem;max-width:550px;margin:0 auto;line-height:1.7;">
+          Si algo no funciona durante la instalación, lo arreglamos o te devolvemos tu dinero. Sin preguntas. Cada proyecto incluye 30 días de soporte y revisiones gratuitas.
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- CTA Section -->
   <section style="padding:100px 0;background:white;">
     <div class="container" style="text-align:center;">
       <h2 style="font-size:2.5rem;margin-bottom:16px;">¿Listo Para Trabajar Más Inteligente?</h2>
