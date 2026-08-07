@@ -7,36 +7,62 @@ const projects = [
     subtitle: "Real Estate Agency",
     url: "https://antiguarealestatedevelopment.com",
     image: "/images/portfolio/ard-screenshot.png",
-    description: "Full real estate website for an expat-focused agency in Antigua Guatemala. Bilingual (EN/ES), property listings, blog with SEO-optimized articles, client reviews, and WhatsApp integration.",
+    description: "Full real estate website for an expat-focused agency in Antigua Guatemala. Bilingual (EN/ES), property listings with galleries, blog with SEO articles, client reviews, WhatsApp integration, and built-in lightbox for property photos.",
     tags: ["Real Estate", "Bilingual", "Blog", "SEO", "WhatsApp"],
     plan: "Professional",
-    testimonial: null,
   },
   {
     title: "Watalam Guatemala",
     subtitle: "Ecotourism & Community Adventures",
     url: "https://watalam-site.vercel.app",
     image: "/images/portfolio/watalam-screenshot.png",
-    description: "Community-based ecotourism website near Antigua Guatemala. Bilingual (EN/ES) with language toggle, adventure tours with pricing in Quetzales, photo gallery, traveler reviews, and WhatsApp booking.",
+    description: "Community-based ecotourism website near Antigua Guatemala. Bilingual (EN/ES) with language toggle, adventure tour packages with Quetzal pricing, photo gallery, traveler reviews, and WhatsApp booking.",
     tags: ["Ecotourism", "Bilingual", "Gallery", "WhatsApp", "Community"],
     plan: "Professional",
-    testimonial: null,
   },
   {
-    title: "AI Starter Agent Demo",
-    subtitle: "AI Receptionist for Restaurants & Hotels",
+    title: "Birky Studio",
+    subtitle: "Digital Agency — Websites & AI Agents",
+    url: "https://birkystudio.com",
+    image: null,
+    description: "Our own agency website showcasing all three products — website design, AI agent setup, and AI receptionist. Features a live AI demo in the hero, full bilingual support, comprehensive pricing, and a complete blog with daily SEO content.",
+    tags: ["Agency", "AI Demo", "Bilingual", "Blog", "SEO"],
+    plan: "Professional",
+  },
+  {
+    title: "Real Estate AI Agent",
+    subtitle: "Private Client — Full Automation",
+    url: "/contact",
+    image: null,
+    isAgentCase: true,
+    description: "Complete AI assistant installation for a US-based real estate agent. Includes Notion Real Estate System with CRM, automated property search, listing description generator, email management with follow-ups, Google Business Profile content automation, and bilingual WhatsApp + Telegram. Saves the client approximately 8 hours per week.",
+    tags: ["AI Agent", "Notion CRM", "Automation", "Bilingual", "Real Estate"],
+    plan: "Real Estate Agent",
+  },
+  {
+    title: "AI Voice Receptionist Demo",
+    subtitle: "Sample — Sunrise Wellness Center",
     url: "/ai-demo",
     image: null,
     isLiveDemo: true,
-    description: "Interactive demo of an AI receptionist agent for a restaurant — handling menu questions, reservations, hours, location, pricing, delivery, and events. Bilingual (EN/ES) with intent matching and simulated chat. This is what the Starter Agent plan delivers.",
-    tags: ["AI Agent", "Bilingual", "WhatsApp", "24/7 Support", "Restaurant"],
-    plan: "Starter Agent",
-    testimonial: null,
+    description: "Live interactive demo of an AI voice and text receptionist for a wellness center. Answers questions about services, pricing, hours, location, makes appointments, and handles bilingual calls 24/7. Built with Vapi.ai voice platform.",
+    tags: ["AI Voice", "Bilingual", "24/7", "Wellness", "Vapi"],
+    plan: "Voice Receptionist",
+  },
+  {
+    title: "Business AI Agent",
+    subtitle: "Sample — Customer Support Automation",
+    url: "/contact",
+    image: null,
+    isAgentCase: true,
+    description: "AI agent setup for a local Antigua boutique. Handles WhatsApp customer inquiries 24/7 in English and Spanish, automates FAQ responses, manages order inquiries, schedules appointments, and drafts email responses. One-time setup, works through standard WhatsApp.",
+    tags: ["AI Agent", "Customer Support", "Bilingual", "WhatsApp", "Automation"],
+    plan: "Business Agent",
   },
 ];
 ---
 
-<BaseLayout title="Portfolio" description="See our recent website projects for small businesses. Real sites, real results — built fast and built to last.">
+<BaseLayout title="Portfolio" description="See our recent projects for small businesses — websites, AI agents, and voice receptionists. Real solutions, real results.">
 
   <!-- Hero -->
   <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
@@ -48,14 +74,14 @@ const projects = [
       <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;">
         Our <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Portfolio</span>
       </h1>
-      <p style="font-size:1.2rem;color:#cbd5e1;max-width:600px;margin:0 auto;line-height:1.8;">
-        Websites we've built for real businesses. Every project delivered in 2-3 days, mobile-friendly, and designed to convert visitors into customers.
+      <p style="font-size:1.2rem;color:#cbd5e1;max-width:650px;margin:0 auto;line-height:1.8;">
+        Websites, AI agents, and voice receptionists — built for real businesses. Every solution delivered fast, bilingual, and built to grow.
       </p>
     </div>
   </section>
 
   <!-- Projects Grid -->
-  <section style="padding:100px 0;background:#f8fafc;">
+  <section style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
     <div class="container">
       <div style="display:flex;flex-direction:column;gap:80px;">
         {projects.map((project, i) => (
@@ -66,17 +92,16 @@ const projects = [
                 <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                   🤖 {project.plan} — Try It Live
                 </div>
-                <h2 style="font-size:2rem;margin-bottom:8px;">{project.title}</h2>
-                <p style="color:var(--color-primary);font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
-                <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
+                <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
+                <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
+                <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
                 <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
                   {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:white;border:1px solid #e2e8f0;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">{tag}</span>
+                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
                   ))}
                 </div>
               </div>
-              {/* Embedded live demo in browser frame */}
-              <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.15);border:1px solid #e2e8f0;max-width:440px;margin:0 auto;">
+              <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);max-width:440px;margin:0 auto;">
                 <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
                   <div style="display:flex;gap:6px;">
                     <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
@@ -87,7 +112,7 @@ const projects = [
                     birkystudio.com/ai-demo
                   </div>
                 </div>
-                <iframe src="/ai-demo" style="width:100%;height:520px;border:none;display:block;" title="AI Agent Starter Demo" loading="lazy"></iframe>
+                <iframe src="/ai-demo" style="width:100%;height:520px;border:none;display:block;" title="AI Agent Demo" loading="lazy"></iframe>
               </div>
               <div style="text-align:center;margin-top:32px;">
                 <a href="/contact" class="btn btn-primary" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
@@ -95,23 +120,73 @@ const projects = [
                 </a>
               </div>
             </div>
+          ) : project.isAgentCase ? (
+            /* ═══ AGENT CASE STUDY CARD ═══ */
+            <div>
+              <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;" class="project-row">
+                <div style="order:2;">
+                  <div style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(6,182,212,0.1));border:1px solid rgba(16,185,129,0.3);border-radius:24px;padding:48px;text-align:center;">
+                    <div style="font-size:4rem;margin-bottom:16px;">🤖</div>
+                    <div style="color:#6ee7b7;font-size:0.9rem;font-weight:600;">AI Agent Installation</div>
+                    <div style="color:#94a3b8;font-size:0.85rem;margin-top:8px;">Private Client — Details Confidential</div>
+                  </div>
+                </div>
+                <div style="order:1;">
+                  <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                    {project.plan} Plan
+                  </div>
+                  <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
+                  <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
+                  <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
+                    {project.tags.map(tag => (
+                      <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
+                    ))}
+                  </div>
+                  <a href="/contact" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+                    Get a Similar Setup →
+                  </a>
+                </div>
+              </div>
+            </div>
           ) : (
+            /* ═══ WEBSITE CARD ═══ */
             <div style={`display:grid;grid-template-columns:${i % 2 === 0 ? '1.2fr 1fr' : '1fr 1.2fr'};gap:48px;align-items:center;`} class="project-row">
               {/* Screenshot */}
               <div style={`${i % 2 !== 0 ? 'order:2;' : ''}`}>
-                <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.15);border:1px solid #e2e8f0;transition:transform 0.3s,box-shadow 0.3s;" class="project-image">
-                  <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
-                    <div style="display:flex;gap:6px;">
-                      <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
-                      <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
-                      <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
+                {project.image ? (
+                  <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);transition:transform 0.3s,box-shadow 0.3s;" class="project-image">
+                    <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
+                      <div style="display:flex;gap:6px;">
+                        <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
+                        <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
+                        <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
+                      </div>
+                      <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;">
+                        {project.url.replace('https://', '')}
+                      </div>
                     </div>
-                    <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;">
-                      {project.url.replace('https://', '')}
+                    <img src={project.image} alt={`${project.title} website preview`} style="width:100%;height:320px;object-fit:cover;display:block;" loading="lazy" />
+                  </a>
+                ) : (
+                  <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);">
+                    <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
+                      <div style="display:flex;gap:6px;">
+                        <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
+                        <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
+                        <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
+                      </div>
+                      <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;">
+                        {project.url.replace('https://', '')}
+                      </div>
                     </div>
-                  </div>
-                  <img src={project.image} alt={`${project.title} website preview`} style="width:100%;height:320px;object-fit:cover;display:block;" loading="lazy" />
-                </a>
+                    <div style="background:linear-gradient(135deg,rgba(99,102,241,0.1),rgba(236,72,153,0.1));padding:80px 40px;text-align:center;">
+                      <div style="font-size:3rem;margin-bottom:12px;">🌐</div>
+                      <div style="color:#cbd5e1;font-size:1rem;font-weight:500;">{project.title}</div>
+                      <div style="color:#6ee7b7;font-size:0.85rem;margin-top:8px;">Visit Site →</div>
+                    </div>
+                  </a>
+                )}
               </div>
 
               {/* Info */}
@@ -119,14 +194,13 @@ const projects = [
                 <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                   {project.plan} Plan
                 </div>
-                <h2 style="font-size:2rem;margin-bottom:8px;">{project.title}</h2>
-                <p style="color:var(--color-primary);font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
-                <p style="color:var(--color-gray);line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
+                <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
+                <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
+                <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
                 
-                {/* Tags */}
                 <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
                   {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:white;border:1px solid #e2e8f0;border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--color-dark);">{tag}</span>
+                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
                   ))}
                 </div>
 
@@ -142,24 +216,24 @@ const projects = [
   </section>
 
   <!-- Stats -->
-  <section style="padding:80px 0;background:white;">
+  <section style="padding:80px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
     <div class="container">
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;">
         <div>
-          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">3</div>
-          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Projects Delivered</div>
+          <div style="font-size:2.5rem;font-weight:800;color:white;">10+</div>
+          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Solutions Deployed</div>
         </div>
         <div>
-          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">100%</div>
-          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Mobile Friendly</div>
+          <div style="font-size:2.5rem;font-weight:800;color:white;">100%</div>
+          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Client Satisfaction</div>
         </div>
         <div>
-          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">EN/ES</div>
-          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Bilingual Ready</div>
+          <div style="font-size:2.5rem;font-weight:800;color:white;">EN/ES</div>
+          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Bilingual Ready</div>
         </div>
         <div>
-          <div style="font-size:2.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">2-3</div>
-          <div style="color:var(--color-gray);font-size:0.95rem;margin-top:4px;">Days to Deliver</div>
+          <div style="font-size:2.5rem;font-weight:800;color:white;">2-3</div>
+          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Days to Deliver</div>
         </div>
       </div>
     </div>
@@ -169,7 +243,7 @@ const projects = [
   <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);text-align:center;position:relative;overflow:hidden;">
     <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(99,102,241,0.15),transparent 50%);"></div>
     <div class="container" style="position:relative;z-index:1;">
-      <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Want a Website Like These?</h2>
+      <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Want a Solution Like These?</h2>
       <p style="color:#cbd5e1;font-size:1.15rem;max-width:550px;margin:0 auto 40px;line-height:1.8;">
         Let's build something amazing for your business. Fast delivery, professional design, and affordable pricing.
       </p>
@@ -177,8 +251,8 @@ const projects = [
         <a href="/contact" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
           Start Your Project →
         </a>
-        <a href="/#pricing" class="btn" style="background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
-          View Pricing
+        <a href="/#pricing-websites" class="btn" style="background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
+          View Plans →
         </a>
       </div>
     </div>
@@ -187,7 +261,7 @@ const projects = [
   <style>
     .project-image:hover {
       transform: translateY(-4px);
-      box-shadow: 0 24px 70px rgba(0,0,0,0.2) !important;
+      box-shadow: 0 24px 70px rgba(0,0,0,0.4) !important;
     }
     @media (max-width: 768px) {
       .project-row {
