@@ -1,0 +1,415 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or Goodcall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your usage. Goodcall's Starter plan is $66/month (annual) for 100 unique customers — that's $792/year. BirkyStudio's voice receptionist is $550 one-time plus ~$30-50/month for the voice provider (~$910-$1,150/year). For a solo agent, BirkyStudio is comparable or slightly more expensive year one, but cheaper in years 2+. Goodcall is cheaper if you need just basic call handling without custom training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Goodcall offer WhatsApp integration like BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Goodcall is phone-only. BirkyStudio includes WhatsApp AI alongside phone reception in every voice setup. For agents in markets where WhatsApp is the primary communication channel — especially Latin America, Europe, and parts of Asia — BirkyStudio is the only option that covers both channels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need technical skills to set up Goodcall or BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Goodcall is self-serve — you configure it yourself through a dashboard. You design your own logic flows and forms. BirkyStudio handles all the setup for you. You tell them about your business, and they build a custom AI trained on your listings and processes. No technical skills needed for either, but BirkyStudio requires no setup effort on your part."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I try Goodcall or BirkyStudio before committing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Goodcall offers a free trial so you can test the platform before paying. BirkyStudio doesn't have a free trial — instead they offer a 30-day satisfaction guarantee. Custom AI setups take 48-72 hours to build, which makes a free trial impractical, but you get personal support from the person who built it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a real estate agent: BirkyStudio or Goodcall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most real estate agents, BirkyStudio is the better fit. Goodcall is a general-purpose platform for any business — you configure it yourself and it doesn't understand real estate terminology. BirkyStudio builds AI specifically for real estate agents, trained on your actual property listings, showing schedules, and qualification criteria. The AI understands what a 'showing' is, what 'pre-approval' means, and how to handle multiple property inquiries without needing you to design a logic flow for every scenario."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Goodcall (2026 Comparison) — Which AI Receptionist Wins?",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Goodcall. Real prices, real pros and cons. Find out which AI receptionist fits your real estate business.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-08-11",
+  "dateModified": "2026-08-11"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Goodcall (2026 Comparison)"
+  description="BirkyStudio vs Goodcall head-to-head comparison. Real prices, real pros and cons, WhatsApp support, custom AI training, and which one is better for real estate agents."
+  image="/images/birky-mascot.jpg"
+>
+  <script type="application/ld+json" set:html={faqLD} />
+  <script type="application/ld+json" set:html={articleLD} />
+
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated August 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Goodcall<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Which AI Receptionist Wins?</span>
+      </h1>
+      <p style="font-size:1.1rem;color:#cbd5e1;line-height:1.8;max-width:700px;">
+        Two different approaches to AI receptionists. Goodcall is a self-serve platform where you build your own AI agent. BirkyStudio builds a custom AI trained on your specific business. Here's how they really compare — pricing, features, and which one actually fits a real estate agent's workflow.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want a custom AI built for your specific real estate business, need WhatsApp integration, and prefer a hands-off setup where someone else builds it for you. Best for agents who want a done-for-you solution trained on their actual listings.<br><br>
+          <strong style="color:white;">Choose Goodcall if:</strong> You prefer a self-serve platform with a free trial, want to configure your own AI agent through a dashboard, need a simple phone answering service without real estate-specific features, or run a non-real-estate business entirely.
+        </p>
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Goodcall?</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        Goodcall is a rising name in the AI receptionist space — a self-serve platform that lets businesses build their own voice AI agents. Their pitch is simple: unlimited minutes and tokens, priced per unique customer served rather than per call. It's flexible and affordable, especially for small businesses that want to DIY their AI setup.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:40px;">
+        BirkyStudio takes the opposite approach: instead of giving you a dashboard to configure yourself, they build a custom AI trained on your actual business — your property listings, your qualification process, your brand voice. You don't design logic flows; Luna designs them for you based on how you actually work. Here's how they stack up.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Goodcall — Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Goodcall</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 setup + ~$30-50/mo</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$66/mo (annual) - $79/mo (monthly)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">48-72 hours (we build it for you)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">15-30 min (you configure it yourself)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp Integration</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Human Backup</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ AI only (personal support from builder)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ AI only (email support)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Depends on configuration</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Custom AI Training</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Trained on your listings & process</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ You configure prompts & flows yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ 30-day satisfaction guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free trial available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Integrations</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Basic (coming soon)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Limited (Zapier via API)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Call Recording & Transcripts</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (30 days on Growth)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">One-time setup + monthly provider fee</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Monthly subscription per unique customer</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Real Estate Focus</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Built by a realtor, for agents</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ General-purpose, no RE specialization</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Review</h2>
+
+      <div id="birky-studio" style="background:rgba(129,140,248,0.08);border:1px solid rgba(129,140,248,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:#818cf8;color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">BEST FOR REAL ESTATE</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          BirkyStudio builds custom AI receptionists specifically for real estate agents. Unlike Goodcall's self-serve model, BirkyStudio handles everything: you describe how you work, and they build an AI trained on your actual property listings, showing schedule, and lead qualification criteria. The AI handles calls and WhatsApp messages 24/7, qualifies leads, books showings, and transfers urgent calls — all in English or Spanish.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          The key difference is that BirkyStudio is run by someone who actually knows real estate. Luna, the founder, is a licensed real estate agent who owns Antigua Real Estate Development. She builds AIs that understand the terminology, the urgency, and the workflows that matter to agents. You don't need to design logic flows or write prompts — she does that based on how you actually run your business.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Custom-built for your specific real estate business</li>
+              <li>WhatsApp + phone in one setup</li>
+              <li>No setup work — Luna builds it for you</li>
+              <li>Trained on your actual listings and processes</li>
+              <li>Bilingual (EN/ES) included</li>
+              <li>Built by a realtor who knows the industry</li>
+              <li>Low one-time cost, predictable monthly fees</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>48-72 hour setup time (not instant)</li>
+              <li>No free trial (30-day satisfaction guarantee)</li>
+              <li>Smaller company with less brand recognition</li>
+              <li>No native CRM integration yet</li>
+              <li>No live human backup (AI only)</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: $250 text-only (WhatsApp) · $550 voice + text bundle (client pays Vapi directly ~$30-50/mo) · Optional support: $29/month
+        </p>
+      </div>
+
+      <!-- Detailed Review: Goodcall -->
+      <div id="goodcall" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Goodcall</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Goodcall is a self-serve AI receptionist platform that lets businesses build their own voice AI agents. Instead of paying per minute or per call, you pay per "unique customer" served each month — a model that makes costs predictable if you have steady call volumes. Their Starter plan at $66/month (annual) includes unlimited minutes and tokens, with overages at $0.50 per customer beyond the allowance.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Goodcall's strength is simplicity and affordability. If you're comfortable configuring your own logic flows and prompts, you can get an AI agent up and running in under 30 minutes. The platform is general-purpose — it works for any business type — but it doesn't come pre-trained on real estate terminology or workflows. You'd need to build those flows yourself.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Free trial available — test before paying</li>
+              <li>Fast setup — configure in minutes</li>
+              <li>Unlimited minutes and tokens on all plans</li>
+              <li>Predictable pricing per unique customer</li>
+              <li>No long-term commitment</li>
+              <li>Scales to any business type</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>No WhatsApp integration — phone only</li>
+              <li>You configure everything yourself</li>
+              <li>No real estate specialization</li>
+              <li>Not trained on your specific listings</li>
+              <li>No built-in human backup</li>
+              <li>Bilingual support is DIY</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Starter $66/mo (100 unique customers) · Growth $108/mo (250 customers) · Scale $208/mo (500 customers) · Enterprise custom · $0.50/customer overage
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison — 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Goodcall (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, low call volume</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$910</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$792 (Starter annual)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, medium volume</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$1,150</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,296 (Growth annual)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Small team (3-5 agents)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$1,150</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$2,496 (Scale annual)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Agent who needs WhatsApp</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$910</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">N/A (no WhatsApp)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">How to choose between BirkyStudio and Goodcall</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+        The choice comes down to how much hands-on work you want to do and whether you need real estate-specific features.
+      </p>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🏠 "I'm a real estate agent who wants a done-for-you solution"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — You describe your business, they build the AI. No logic flows, no prompts, no config. It's trained on your actual listings.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">💬 "My clients reach me on WhatsApp"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — It's the only option with WhatsApp AI built in. Goodcall is phone-only.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🔧 "I want to configure my own AI agent"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Goodcall</strong> — Their self-serve platform lets you design logic flows and forms. You're in control of every detail.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🔬 "I want to try before I buy"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Goodcall</strong> — Their free trial lets you test the platform before paying anything. BirkyStudio offers a 30-day satisfaction guarantee instead.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">💰 "I just want the cheapest option"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Goodcall</strong> — At $66/month, Goodcall's Starter plan is the cheapest entry point. But you give up WhatsApp, custom training, and real estate expertise. For many agents, the savings aren't worth the lost functionality.</p>
+        </div>
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:40px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.4rem;margin-bottom:16px;">The Bottom Line</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          For most real estate agents, <strong style="color:white;">BirkyStudio</strong> is the better fit. Goodcall is a capable general-purpose platform, but it's designed for businesses that want to DIY their AI setup. You configure everything yourself, it doesn't understand real estate, and it doesn't support WhatsApp — a dealbreaker for many agents working with international buyers or in Latin American markets.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+          Choose <strong style="color:white;">Goodcall</strong> if you enjoy tinkering with AI configurations, run a non-real-estate business, or want the absolute lowest monthly price and don't need WhatsApp. Their free trial makes it easy to test. But if you want an AI that actually understands what a "showing appointment" is and can hit the ground running without you building it yourself, BirkyStudio wins.
+        </p>
+        <p style="color:white;font-weight:600;margin-bottom:24px;">Two different products for two different types of buyers. Pick the one that matches your style.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;">
+            Get Your AI Receptionist →
+          </a>
+          <a href="https://www.goodcall.com/pricing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);">
+            Try Goodcall Free →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Frequently Asked Questions</h2>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is cheaper: BirkyStudio or Goodcall?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          Goodcall's Starter plan at $66/month ($792/year) is the cheapest entry point. BirkyStudio costs roughly $910-$1,150 in year one depending on usage. However, BirkyStudio includes WhatsApp, custom AI training, and real estate expertise — features Goodcall doesn't offer at any price. In year two and beyond, BirkyStudio costs less because there's no setup fee to repeat.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Does Goodcall offer WhatsApp integration?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          No. Goodcall is a phone-only platform. BirkyStudio includes WhatsApp AI alongside phone reception in every voice setup. For agents who handle leads through WhatsApp — common in Latin America, Europe, and among international buyers — BirkyStudio is the only option that covers both channels.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is easier to set up: BirkyStudio or Goodcall?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          BirkyStudio is easier if you don't want to do the work yourself — you describe your business and Luna builds the AI for you in 48-72 hours. Goodcall is faster to start (15-30 minutes) but you have to configure everything yourself: logic flows, prompts, forms, and responses. For non-technical agents, BirkyStudio's hands-off approach is significantly easier.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Does BirkyStudio or Goodcall integrate with my CRM?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          Neither has mature native CRM integrations yet. Goodcall offers Zapier connectivity via API for limited integrations. BirkyStudio's CRM integration is basic and coming soon with more robust options. If Zapier-based CRM integration is critical, Goodcall has a slight edge for now.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is better for a non-real-estate business?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          Goodcall is the better choice for non-real-estate businesses. It's a general-purpose platform that works for any industry — restaurants, service businesses, retail, etc. BirkyStudio is purpose-built for real estate agents, and most of its value comes from industry-specific training. If you don't work in real estate, Goodcall is likely a better fit.
+        </p>
+      </details>
+
+      <!-- Sources -->
+      <div style="margin-top:64px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#64748b;font-size:0.85rem;line-height:1.8;">
+          <strong style="color:#94a3b8;">How we evaluated:</strong> Prices verified on each company's pricing page in August 2026. BirkyStudio pricing reflects current published rates. Goodcall pricing from goodcall.com/pricing (Starter, Growth, Scale, and Enterprise plans). Features based on public documentation and our own testing.
+          <br><br>
+          Prices and features change. Always verify current pricing on the provider's website before purchasing.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    summary { list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: '▸ '; color: #818cf8; }
+    details[open] summary::before { content: '▾ '; }
+    table { min-width: 600px; }
+    @media (max-width: 768px) {
+      table { font-size: 0.8rem; }
+      th, td { padding: 10px 8px !important; }
+    }
+  </style>
+</BaseLayout>
