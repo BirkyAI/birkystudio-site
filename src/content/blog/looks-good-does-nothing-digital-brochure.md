@@ -1,7 +1,7 @@
 ---
 title: "A Website That Looks Good But Does Nothing is Just a Digital Brochure"
 description: "A pretty website that does not capture leads, answer questions, or book appointments is not a business asset. It is a billboard nobody reads. Here is how Birky Studio turns your site into a revenue machine."
-image: "https://ard-site.vercel.app/images/ai-gen/looks-good-does-nothing-digital-brochure.png"
+image: "https://ard-site.vercel.app/images/ai-gen/digital-brochure-landscape.png"
 date: 2026-08-14
 tags: ["Birky Studio", "Web Design", "AI Agents", "Lead Generation", "Small Business"]
 lang: "en"

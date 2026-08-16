@@ -1,7 +1,7 @@
 ---
 title: "Wix vs WordPress vs Custom Website: What Guatemalan Businesses Need in 2026"
 description: "Should you build with Wix, WordPress, or hire a custom web studio? We break down the real costs, capabilities, and long-term value for small businesses in Guatemala."
-image: "https://ard-site.vercel.app/images/ai-gen/wix-vs-wordpress-vs-custom-2026.png"
+image: "https://ard-site.vercel.app/images/ai-gen/wix-vs-wordpress-landscape.png"
 date: 2026-08-13
 tags: ["Birky Studio", "Web Design", "Website Builders", "WordPress", "Guatemala"]
 lang: "en"
