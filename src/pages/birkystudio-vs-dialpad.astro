@@ -1,0 +1,425 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or Dialpad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is dramatically cheaper for a solo agent or small team. A voice receptionist costs $550 one-time setup plus ~$30-50/mo for the voice provider. Dialpad starts at $23/user/mo (Standard) but requires multiple users and a monthly commitment, with no AI receptionist equivalent at that tier. Over 12 months, BirkyStudio costs ~$910-$1,150 vs. Dialpad's $276+/user/year — and Dialpad's AI Agent features require Support or Enterprise plans at $75+/user/mo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Dialpad offer WhatsApp integration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dialpad does not offer native WhatsApp AI integration. It supports SMS, MMS, and team messaging, but not WhatsApp. BirkyStudio includes WhatsApp AI alongside phone reception in every setup, making it the better choice for agents working with international buyers or in markets where WhatsApp is the primary communication tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can BirkyStudio replace Dialpad for a real estate agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — for a solo agent or small real estate team, BirkyStudio is a better fit. You get a custom AI trained on your listings and processes, bilingual support, and WhatsApp integration for a fraction of Dialpad's cost. Dialpad is better suited for larger teams (5+ users) that need a full business phone system with multiple extensions, departments, and enterprise CRM integrations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio or Dialpad offer bilingual support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio includes bilingual English/Spanish support at no extra cost. Dialpad's AI features are primarily English-focused, though the platform supports international calling. For agents who handle bilingual calls regularly, BirkyStudio is more cost-effective and purpose-built for the need."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a team of 5+ agents: BirkyStudio or Dialpad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a team of 5+ agents, Dialpad's per-user pricing becomes more competitive. At $23/user/mo (Standard) or $35/user/mo (Pro), a team of 5 costs $115-$175/month and gets a full business phone system with extensions, ring groups, and CRM integrations. BirkyStudio is better for 1-3 person teams where the custom AI receptionist replaces the need for a full phone system."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Dialpad (2026 Comparison) — AI Receptionist vs Enterprise Phone System",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Dialpad. Real prices, features, WhatsApp, bilingual support, and which one fits your real estate business.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-08-18",
+  "dateModified": "2026-08-18"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Dialpad (2026 Comparison)"
+  description="BirkyStudio vs Dialpad head-to-head comparison. Real prices, features, WhatsApp support, bilingual AI, and which is better for real estate agents and small businesses."
+  image="/images/birky-mascot.jpg"
+>
+  <script type="application/ld+json" set:html={faqLD} />
+  <script type="application/ld+json" set:html={articleLD} />
+
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated August 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Dialpad<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Custom AI Receptionist vs Enterprise Phone System</span>
+      </h1>
+      <p style="font-size:1.1rem;color:#cbd5e1;line-height:1.8;max-width:700px;">
+        Dialpad is a powerful enterprise communications platform with AI features. BirkyStudio builds custom AI receptionists for real estate agents. They serve very different customers — but if you're a solo agent or small business, you need to know which one actually fits your budget and workflow.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You're a solo agent or small team who wants a custom AI receptionist trained on your specific listings and processes. You need WhatsApp integration, bilingual support, and a low one-time cost rather than per-user monthly fees. Best for 1-3 person real estate teams.<br><br>
+          <strong style="color:white;">Choose Dialpad if:</strong> You run a team of 5+ people and need a full business phone system with extensions, ring groups, and enterprise CRM integrations. You want per-user pricing that scales with headcount, and you need features like HD voice, video meetings, and team messaging built into one platform.
+        </p>
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Dialpad?</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        At first glance, BirkyStudio and Dialpad seem like completely different products — and in many ways, they are. Dialpad is an enterprise-grade communications platform (founded 2011, $400M+ funding, 5,000+ business customers) that includes phone, messaging, video, and AI features. BirkyStudio is a boutique AI receptionist service built specifically for real estate agents.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:40px;">
+        But if you're a real estate agent or small business owner evaluating AI call handling, you'll run into both. The question is: should you pay for a full enterprise phone system with AI add-ons, or get a custom AI receptionist that handles calls and WhatsApp for a fraction of the cost? Here's the breakdown.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Dialpad — Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Dialpad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 setup + ~$30-50/mo</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$23/user/mo (annual) - $27/user/mo (monthly)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Agent Features</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Custom AI receptionist included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ AI Agent add-on, custom pricing</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">48-72 hours (custom-built)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">15-30 min (self-setup)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp Integration</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Limited (English-focused)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Custom AI Training</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Trained on your listings & process</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Needs Agent Studio (no-code, custom pricing)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ 30-day satisfaction guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 14-day free trial</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Integrations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Basic (coming soon)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Salesforce, HubSpot, Zendesk, Zapier, more</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Call Recording & Transcripts</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (real-time transcription)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Business Phone System</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">❌ AI receptionist only (no extensions)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full system: extensions, ring groups, auto attendant</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Video Meetings</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included with HD video</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">HIPAA Compliance</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Available on request</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (Pro and up)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Company History</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Founded 2024, niche real estate focus</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Founded 2011, 5,000+ businesses</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Review</h2>
+
+      <div id="birky-studio" style="background:rgba(129,140,248,0.08);border:1px solid rgba(129,140,248,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:#818cf8;color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">BEST FOR SOLO AGENTS</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          BirkyStudio builds custom AI receptionists for real estate agents. Your AI is trained on your actual listings, your specific process, and your brand voice. It handles calls and WhatsApp messages 24/7, qualifies leads, books appointments, and transfers urgent calls — all in English or Spanish.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          What sets BirkyStudio apart is the personal touch. The same person who builds your AI (Luna) is also a licensed real estate agent who owns Antigua Real Estate Development. She knows the business from the inside and builds AI that actually understands how agents work — not a generic enterprise phone system with AI features bolted on.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Custom-built for your specific real estate business</li>
+              <li>WhatsApp + phone in one setup</li>
+              <li>Low one-time cost, no monthly per-user fees</li>
+              <li>Bilingual (EN/ES) included at no extra cost</li>
+              <li>Built by a realtor who understands the industry</li>
+              <li>No minimum seat requirements</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>48-72 hour setup time (not instant)</li>
+              <li>No free trial (30-day satisfaction guarantee)</li>
+              <li>No extensions or multi-user phone system</li>
+              <li>No video meetings or team messaging</li>
+              <li>No native CRM integration yet</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: $250 text-only (WhatsApp) · $550 voice + text bundle (client pays Vapi directly ~$30-50/mo) · Optional support: $29/month
+        </p>
+      </div>
+
+      <!-- Detailed Review: Dialpad -->
+      <div id="dialpad" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Dialpad</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Dialpad is a cloud-based enterprise communications platform serving over 5,000 businesses. Founded in 2011 and headquartered in San Francisco, it offers a full stack of phone, messaging, video, and AI features. Dialpad Connect (their business phone system) starts at $23/user/mo billed annually, while their AI Agent features are available as add-ons with custom pricing.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Dialpad's strength is its all-in-one approach. You get a business phone system with extensions, auto attendant, ring groups, HD voice, video meetings, team messaging, and AI-powered call transcription. Their AI Agents (powered by Agent Studio) can handle customer conversations autonomously, but require the Support plan ($75+/user/mo) or custom enterprise pricing — making it expensive for solo operators.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Full business phone system with extensions and ring groups</li>
+              <li>14-day free trial to test before paying</li>
+              <li>Mature CRM integrations (Salesforce, HubSpot, Zapier, more)</li>
+              <li>Real-time AI transcription and call summaries</li>
+              <li>Video meetings and team messaging included</li>
+              <li>HIPAA/BAA compliance available</li>
+              <li>Established company with proven track record</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Per-user pricing — expensive for 1-2 person teams</li>
+              <li>AI Agent features require pricier Support plans ($75+/user/mo)</li>
+              <li>No WhatsApp integration</li>
+              <li>No custom AI trained on your specific business</li>
+              <li>Not purpose-built for real estate</li>
+              <li>Enterprise-focused — may be overkill for solo agents</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Connect Standard $23/user/mo (annual) · Pro $35/user/mo · Support $75+/user/mo · AI Agents custom pricing · 14-day free trial
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison — 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Dialpad (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, basic AI call handling</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$910</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$276 (1 user, Standard — no AI agent)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, with AI receptionist features</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$910-$1,150</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$900+ (1 user, Support Standard — AI features)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Small team (3 people)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$1,150 (1 AI + WhatsApp for team)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$828 (3 users, Standard) — $2,700+ (3 users, Support)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team of 5+ with full phone system</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">N/A (no multi-user phone system)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,380 (5 users, Standard) — $4,500+ (5 users, Support)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">How to choose between BirkyStudio and Dialpad</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+        These are fundamentally different products for different stages of business. Here's how to decide.
+      </p>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">💰 "I'm a solo agent with a tight budget"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — $550 setup + ~$30-50/mo is far cheaper than Dialpad's per-user pricing when you factor in AI features. Dialpad's Standard plan ($23/mo) doesn't include AI agent capabilities.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">💬 "My clients use WhatsApp to reach me"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — it's the only option with WhatsApp AI built in. Dialpad doesn't offer WhatsApp integration at all.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🏢 "I run a team of 5+ and need a full phone system"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Dialpad</strong> — extensions, ring groups, auto attendant, video meetings, and team messaging. BirkyStudio doesn't replace a multi-user phone system.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🔬 "I want to try before I buy"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Dialpad</strong> — their 14-day free trial lets you test the full platform before committing. BirkyStudio offers a 30-day satisfaction guarantee instead.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🏠 "I want an AI that understands real estate"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — trained on your actual listings, built by a realtor. Dialpad's AI is generic and enterprise-focused.</p>
+        </div>
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:40px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.4rem;margin-bottom:16px;">The Bottom Line</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          For most solo real estate agents and small teams (1-3 people), <strong style="color:white;">BirkyStudio</strong> is the better choice. You get a custom AI receptionist trained on your specific listings and processes, WhatsApp integration, and bilingual support — all for $910-$1,150 in your first year. Dialpad's AI features would cost you $900+ per year for a single user, without the custom training or WhatsApp support.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+          Choose <strong style="color:white;">Dialpad</strong> if you run a team of 5+ people and need a full business phone system with extensions, CRM integrations, and enterprise features. Their per-user pricing scales well for larger teams, and their 14-day free trial lets you test the platform risk-free. But for a solo agent who just needs AI to handle calls and WhatsApp messages, BirkyStudio delivers more value at a fraction of the cost.
+        </p>
+        <p style="color:white;font-weight:600;margin-bottom:24px;">Different tools for different stages. Pick the one that fits where you are now.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;">
+            Get Your AI Receptionist →
+          </a>
+          <a href="https://www.dialpad.com/pricing/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);">
+            Try Dialpad Free →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Frequently Asked Questions</h2>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is cheaper: BirkyStudio or Dialpad?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          For a solo agent, BirkyStudio is cheaper. At $550 setup + ~$30-50/mo, your first year costs ~$910-$1,150. Dialpad's Standard plan is $23/user/mo ($276/year) but doesn't include AI receptionist features — you'd need their Support plan at $75+/user/mo ($900+/year). For teams of 5+, Dialpad's per-user pricing becomes more competitive, but BirkyStudio doesn't scale to multi-user phone systems.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Does Dialpad offer WhatsApp integration?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          No. Dialpad supports SMS, MMS, and team messaging, but does not offer native WhatsApp integration. If WhatsApp is important for your business — especially if you work with international buyers or in Latin American markets — BirkyStudio is the clear choice.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Can BirkyStudio replace Dialpad for a real estate team?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          For a solo agent or small team, yes. BirkyStudio handles 24/7 call answering, lead qualification, and WhatsApp messaging — the core needs of a real estate agent. For teams of 5+ that need extensions, ring groups, and a full phone system, Dialpad is the better fit. They're complementary tools for different business sizes.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Does BirkyStudio or Dialpad have better AI features?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          It depends on what you need. BirkyStudio's AI is purpose-built for real estate — trained on your listings, your process, and your brand voice. Dialpad's AI is more general-purpose: real-time transcription, call summaries, and AI Agents that handle customer service workflows. For a real estate agent, BirkyStudio's custom training is more useful. For a broader business, Dialpad's AI suite is more versatile.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is better for a bilingual real estate agent?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          BirkyStudio includes bilingual (EN/ES) support at no extra cost, and the AI is trained on real estate terminology in both languages. Dialpad's AI features are primarily English-focused and not designed for bilingual real estate workflows. For agents serving Spanish-speaking clients, BirkyStudio is the better option.
+        </p>
+      </details>
+
+      <!-- Sources -->
+      <div style="margin-top:64px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#64748b;font-size:0.85rem;line-height:1.8;">
+          <strong style="color:#94a3b8;">How we evaluated:</strong> Prices verified on each company's pricing page in August 2026. BirkyStudio pricing reflects current published rates. Dialpad pricing from dialpad.com/pricing (Connect Standard $23/user/mo annual, Pro $35/user/mo annual, Support Standard $75/user/mo). AI Agent features based on public documentation and dialpad.com/ai-agent/. Features based on public documentation and our own testing.
+          <br><br>
+          Prices and features change. Always verify current pricing on the provider's website before purchasing.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    summary { list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: '▸ '; color: #818cf8; }
+    details[open] summary::before { content: '▾ '; }
+    table { min-width: 600px; }
+    @media (max-width: 768px) {
+      table { font-size: 0.8rem; }
+      th, td { padding: 10px 8px !important; }
+    }
+  </style>
+</BaseLayout>
