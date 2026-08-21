@@ -9,13 +9,6 @@
 			"status": 301
 		},
 		{
-			"src": "^/es/portfolio$",
-			"headers": {
-				"Location": "/es/portafolio"
-			},
-			"status": 301
-		},
-		{
 			"handle": "filesystem"
 		},
 		{

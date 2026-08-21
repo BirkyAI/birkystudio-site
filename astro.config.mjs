@@ -9,6 +9,5 @@ export default defineConfig({
   integrations: [sitemap()],
   redirects: {
     '/es/portfolio': '/es/portafolio',
-    '/es/portfolio/': '/es/portafolio',
   },
 });
