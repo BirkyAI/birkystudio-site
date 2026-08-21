@@ -7,6 +7,7 @@ export default defineConfig({
   adapter: vercel(),
   site: 'https://birkystudio.com',
   integrations: [sitemap()],
+  trailingSlash: 'ignore',
   redirects: {
     '/es/portfolio': '/es/portafolio',
   },
