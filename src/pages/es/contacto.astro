@@ -20,36 +20,35 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <!-- Contact Form -->
         <div style="background:white;border-radius:24px;padding:48px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
           <h2 style="font-size:1.5rem;margin-bottom:32px;">Envíanos un Mensaje</h2>
-          <form name="contact-es" method="POST" data-netlify="true" style="display:flex;flex-direction:column;gap:20px;">
-            <input type="hidden" name="form-name" value="contact-es">
+          <form id="contacto-es-form" style="display:flex;flex-direction:column;gap:20px;">
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Tu Nombre</label>
-              <input type="text" name="name" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;" placeholder="Juan Pérez">
+              <input type="text" id="ces-name" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;" placeholder="Juan Pérez">
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Correo Electrónico</label>
-              <input type="email" name="email" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;" placeholder="juan@negocio.com">
+              <input type="email" id="ces-email" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;" placeholder="juan@negocio.com">
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Nombre del Negocio</label>
-              <input type="text" name="business" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;" placeholder="Tu Negocio">
+              <input type="text" id="ces-business" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;" placeholder="Tu Negocio">
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">¿Qué necesitas?</label>
-              <select name="service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
-                <option value="basico">Sitio Básico (Q2,000)</option>
-                <option value="profesional">Sitio Profesional (Q3,900)</option>
-                <option value="premium">Sitio Premium (Q8,000)</option>
-                <option value="agente-bienes-raices">Agente IA para Bienes Raíces (Q6,200)</option>
-                <option value="agente-negocios">Agente IA para Negocios (Q4,200)</option>
-                <option value="recepcionista-texto">Recepcionista de Texto (Q2,000)</option>
-                <option value="recepcionista-voz">Recepcionista por Voz (Q4,250)</option>
+              <select id="ces-service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
+                <option value="basico">Sitio Básico ($250)</option>
+                <option value="profesional">Sitio Profesional ($500)</option>
+                <option value="premium">Sitio Premium ($999)</option>
+                <option value="agente-bienes-raices">Agente IA para Bienes Raíces ($799)</option>
+                <option value="agente-negocios">Agente IA para Negocios ($549)</option>
+                <option value="recepcionista-texto">Recepcionista de Texto ($250)</option>
+                <option value="recepcionista-voz">Recepcionista por Voz ($550)</option>
                 <option value="nosure">No estoy seguro/a</option>
               </select>
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Cuéntanos más</label>
-              <textarea name="message" rows="4" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;resize:vertical;" placeholder="¿A qué se dedica tu negocio? ¿Alguna función específica que necesites?"></textarea>
+              <textarea id="ces-message" rows="4" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;resize:vertical;" placeholder="¿A qué se dedica tu negocio? ¿Alguna función específica que necesites?"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1.1rem;padding:16px;">
               Enviar Mensaje →
@@ -78,12 +77,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="calendly-inline-widget" data-url="https://calendly.com/birky-ai-proton/ai-agent-demo-call?month=2026-07" style="min-width:100%;height:600px;border-radius:12px;overflow:hidden;"></div>
           </div>
           
-          <a href="https://wa.me/50235716181" target="_blank" rel="noopener noreferrer" style="display:block;background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='#25d366'" onmouseout="this.style.borderColor='#e2e8f0'">
+          <a href="https://wa.me/50234775110" target="_blank" rel="noopener noreferrer" style="display:block;background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='#25d366'" onmousout="this.style.borderColor='#e2e8f0'">
             <div style="display:flex;align-items:center;gap:16px;">
               <div style="width:48px;height:48px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">💬</div>
               <div>
                 <div style="font-weight:600;margin-bottom:4px;">WhatsApp</div>
-                <div style="color:var(--color-gray);">+502 3571 6181</div>
+                <div style="color:var(--color-gray);">+502 3477 5110</div>
               </div>
             </div>
           </a>
@@ -116,6 +115,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+
+<script is:inline>
+  document.getElementById('contacto-es-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('ces-name').value;
+    const email = document.getElementById('ces-email').value;
+    const business = document.getElementById('ces-business').value;
+    const service = document.getElementById('ces-service').value;
+    const message = document.getElementById('ces-message').value;
+    
+    const serviceLabels = {
+      'basico': 'Sitio Básico ($250)',
+      'profesional': 'Sitio Profesional ($500)',
+      'premium': 'Sitio Premium ($999)',
+      'agente-bienes-raices': 'Agente IA para Bienes Raíces ($799)',
+      'agente-negocios': 'Agente IA para Negocios ($549)',
+      'recepcionista-texto': 'Recepcionista de Texto ($250)',
+      'recepcionista-voz': 'Recepcionista por Voz ($550)',
+      'nosure': 'No estoy seguro/a'
+    };
+    
+    const text = `Hola! Me gustaría contactarlos.\n\nNombre: ${name}\nCorreo: ${email}\nNegocio: ${business}\nServicio: ${serviceLabels[service] || service}\n\nMensaje: ${message}`;
+    
+    window.open(`https://wa.me/50234775110?text=${encodeURIComponent(text)}`, '_blank');
+  });
+</script>
 
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </BaseLayout>
