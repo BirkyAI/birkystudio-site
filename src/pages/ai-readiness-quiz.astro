@@ -1,0 +1,436 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="AI Readiness Quiz | Birky Studio" description="Answer 5 quick questions and find out which AI tools your business actually needs. Free, no sign-up required." image="/images/birky-mascot.jpg">
+  <script is:inline>
+    const questions = [
+      {
+        q: "What type of business do you run?",
+        key: "business",
+        options: [
+          { value: "real_estate", label: "🏘️ Real Estate Agent or Agency" },
+          { value: "retail", label: "🏪 Local Retail / Service Business" },
+          { value: "hospitality", label: "🍽️ Restaurant / Hotel / Hospitality" },
+          { value: "professional", label: "💼 Professional Services (Law, Medical, Consulting)" },
+          { value: "other", label: "🔧 Other Small Business" },
+        ]
+      },
+      {
+        q: "What's your biggest challenge right now?",
+        key: "challenge",
+        options: [
+          { value: "leads", label: "📉 Missing leads after hours / weekends" },
+          { value: "admin", label: "📋 Too much admin work — emails, follow-ups, CRM" },
+          { value: "website", label: "🌐 My website looks outdated or doesn't convert" },
+          { value: "phone", label: "📞 Can't answer calls 24/7 — losing customers" },
+          { value: "content", label: "✍️ No time for social media / blog content" },
+        ]
+      },
+      {
+        q: "How many customer inquiries do you get per week?",
+        key: "volume",
+        options: [
+          { value: "0-10", label: "0-10 inquiries per week" },
+          { value: "10-30", label: "10-30 inquiries per week" },
+          { value: "30-100", label: "30-100 inquiries per week" },
+          { value: "100+", label: "100+ — we're busy!" },
+        ]
+      },
+      {
+        q: "What's your current website situation?",
+        key: "website",
+        options: [
+          { value: "no_site", label: "❌ Don't have a website yet" },
+          { value: "outdated", label: "🕸️ Have one but it's outdated / slow / not mobile" },
+          { value: "good_but", label: "👍 It's okay but doesn't bring in leads" },
+          { value: "happy", label: "✅ Happy with my site, just need automation" },
+        ]
+      },
+      {
+        q: "What's your budget range?",
+        key: "budget",
+        options: [
+          { value: "250-500", label: "$250 — $500 (website or basic setup)" },
+          { value: "500-999", label: "$500 — $999 (full website + automation)" },
+          { value: "1500", label: "$1,500+ (the complete package)" },
+          { value: "unsure", label: "Not sure — want advice first" },
+        ]
+      },
+    ];
+
+    const recommendations = {
+      // Real estate + leads
+      "real_estate+leads": {
+        title: "Real Estate AI Agent + Voice Receptionist",
+        description: "You need a full AI assistant that handles lead follow-ups, property searches, and after-hours inquiries — plus a voice receptionist to never miss a call.",
+        cta: "Get Your AI Agent →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🤖", name: "Real Estate AI Agent", price: "$799 one-time" },
+          { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup + usage" },
+          { emoji: "🌐", name: "Website + Blog SEO", price: "from $500" },
+        ],
+        urgency: "High — realtors lose 40% of leads after hours."
+      },
+      // Real estate + website
+      "real_estate+website": {
+        title: "Website + AI Agent Combo",
+        description: "A bilingual real estate website with property listings, blog SEO, and WhatsApp integration — paired with an AI agent that manages your email and CRM.",
+        cta: "Start Your Project →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🌐", name: "Professional Website", price: "$500 one-time" },
+          { emoji: "🤖", name: "Real Estate AI Agent", price: "$799 one-time" },
+        ],
+        urgency: "Your website is your #1 sales tool — make it work for you 24/7."
+      },
+      // Real estate + phone
+      "real_estate+phone": {
+        title: "AI Voice Receptionist",
+        description: "Never miss a property inquiry again. AI answers calls 24/7 in English and Spanish, qualifies leads, and forwards urgent ones to you.",
+        cta: "Get Your Voice Receptionist →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "📞", name: "AI Voice Receptionist Bundle", price: "$550 setup" },
+          { emoji: "💬", name: "AI Text Receptionist (WhatsApp)", price: "$250 one-time" },
+        ],
+        urgency: "Every missed call is a missed sale."
+      },
+      // Real estate + admin
+      "real_estate+admin": {
+        title: "Real Estate AI Agent",
+        description: "You need a dedicated AI assistant on your computer that handles email, CRM, property descriptions, follow-ups, and content — so you can focus on closing deals.",
+        cta: "Get Your AI Agent →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🤖", name: "Real Estate AI Agent", price: "$799 one-time" },
+          { emoji: "📋", name: "Notion Real Estate System", price: "FREE included" },
+        ],
+        urgency: "Save 8+ hours a week on admin work."
+      },
+      // General business + leads/phone
+      "retail+leads": {
+        title: "AI Voice + Text Receptionist",
+        description: "Never miss a customer inquiry. Your AI receptionist answers calls and WhatsApp messages 24/7, even after hours and weekends.",
+        cta: "Get Started →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup" },
+          { emoji: "💬", name: "AI Text Receptionist", price: "$250 one-time" },
+        ],
+        urgency: "Customers expect instant answers — even at 9 PM."
+      },
+      "retail+phone": {
+        title: "AI Voice + Text Receptionist",
+        description: "Stop losing customers to voicemail. AI answers your calls naturally in EN/ES, takes messages, and forwards urgent ones.",
+        cta: "Get Started →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "📞", name: "AI Voice Receptionist Bundle", price: "$550 setup" },
+        ],
+        urgency: "75% of callers hang up on voicemail."
+      },
+      // Website-related
+      "retail+website": {
+        title: "Professional Website",
+        description: "A modern, mobile-first website with WhatsApp integration, bilingual support, and SEO — built in 3 days.",
+        cta: "View Website Plans →",
+        ctaLink: "/#pricing-websites",
+        products: [
+          { emoji: "🌐", name: "Website Design", price: "from $250 one-time" },
+          { emoji: "📱", name: "WhatsApp Integration", price: "included" },
+        ],
+        urgency: "Your website is running before you've paid for coffee."
+      },
+      "retail+admin": {
+        title: "Business AI Agent",
+        description: "An AI assistant that handles customer inquiries on WhatsApp, automates FAQ responses, and helps with daily admin tasks.",
+        cta: "Get Your AI Agent →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🤖", name: "Business AI Agent", price: "$549 one-time" },
+          { emoji: "💬", name: "WhatsApp Automation", price: "included" },
+        ],
+        urgency: "Automate before you hire."
+      },
+      // Hospitality
+      "hospitality+leads": {
+        title: "AI Voice Receptionist + Website",
+        description: "A professional website with online booking + AI receptionist that answers calls about reservations, hours, and menus 24/7.",
+        cta: "Get Started →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🌐", name: "Website with Booking", price: "from $500" },
+          { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup" },
+        ],
+        urgency: "Guests book at 2 AM — your AI is awake."
+      },
+      "hospitality+phone": {
+        title: "AI Voice Receptionist for Hospitality",
+        description: "AI answers calls about reservations, pricing, hours, and locations — in English and Spanish, 24/7.",
+        cta: "Get Started →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup" },
+        ],
+        urgency: "Every ring is a potential booking."
+      },
+      // Professional services
+      "professional+leads": {
+        title: "AI Voice Receptionist + Website",
+        description: "A polished professional website + AI voice receptionist that books consultations and answers client questions after hours.",
+        cta: "View Plans →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🌐", name: "Professional Website", price: "$500 one-time" },
+          { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup" },
+        ],
+        urgency: "First impressions matter — be professional everywhere."
+      },
+      "professional+admin": {
+        title: "Business AI Agent",
+        description: "An AI assistant that drafts emails, manages your calendar, automates client follow-ups, and organizes your Notion workspace.",
+        cta: "Get Your AI Agent →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🤖", name: "Business AI Agent", price: "$549 one-time" },
+        ],
+        urgency: "Focus on billable hours, not admin."
+      },
+      // Content
+      "real_estate+content": {
+        title: "Real Estate AI Agent — Content Automation",
+        description: "Your AI agent writes blog posts, social media captions, property descriptions, and manages your Google Business Profile — all from voice commands.",
+        cta: "Get Started →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🤖", name: "Real Estate AI Agent", price: "$799 one-time" },
+        ],
+        urgency: "Content that writes itself while you sleep."
+      },
+      "retail+content": {
+        title: "Business AI Agent + Website Blog",
+        description: "A bilingual website with automated blog content + AI agent that drafts your social posts and email newsletters.",
+        cta: "View Plans →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🌐", name: "Premium Website + Blog", price: "$999 one-time" },
+          { emoji: "🤖", name: "Business AI Agent", price: "$549 one-time" },
+        ],
+        urgency: "Stop staring at a blank page."
+      },
+      "hospitality+content": {
+        title: "Website with Automated Content",
+        description: "A bilingual website with blog, events page, and automated social media content to keep your online presence fresh.",
+        cta: "Get Started →",
+        ctaLink: "/contact/",
+        products: [
+          { emoji: "🌐", name: "Professional Website", price: "$500 one-time" },
+        ],
+        urgency: "A great menu needs a great website."
+      },
+      "professional+content": {
+        title: "Website + SEO Blog",
+        description: "A professional bilingual website with SEO-optimized blog content that positions you as an authority and brings in clients from Google.",
+        cta: "View Plans →",
+        ctaLink: "/#pricing-websites",
+        products: [
+          { emoji: "🌐", name: "Professional Website", price: "$500 one-time" },
+        ],
+        urgency: "Your expertise deserves to be found."
+      },
+    };
+
+    // Fallbacks — try to find a good match even if the exact combo doesn't exist
+    function getRecommendation(biz, challenge) {
+      const key = `${biz}+${challenge}`;
+      if (recommendations[key]) return recommendations[key];
+      
+      // Try broader matches
+      if (challenge === "leads" || challenge === "phone") {
+        // Check hospitality fallbacks
+        if (recommendations[`${biz}+phone`]) return recommendations[`${biz}+phone`];
+        // Any business with voice/leads
+        for (const [k, v] of Object.entries(recommendations)) {
+          if (k.startsWith(biz) && (k.includes("leads") || k.includes("phone"))) return v;
+        }
+      }
+      if (challenge === "website") {
+        for (const [k, v] of Object.entries(recommendations)) {
+          if (k.startsWith(biz) && k.includes("website")) return v;
+        }
+      }
+      if (challenge === "admin" || challenge === "content") {
+        for (const [k, v] of Object.entries(recommendations)) {
+          if (k.startsWith(biz) && (k.includes("admin") || k.includes("content"))) return v;
+        }
+      }
+      
+      // Default fallbacks by business type
+      const defaults = {
+        real_estate: recommendations["real_estate+leads"],
+        retail: recommendations["retail+leads"],
+        hospitality: recommendations["hospitality+leads"],
+        professional: recommendations["professional+leads"],
+        other: { title: "Let's Figure It Out Together", description: "Every business is different. Tell us about yours and we'll recommend the right solution.", cta: "Get Free Advice →", ctaLink: "/contact/", products: [{emoji:"💡", name:"Free Consultation", price:"No obligation"}], urgency: "We respond within an hour." }
+      };
+      return defaults[biz] || defaults.other;
+    }
+
+    let currentStep = 0;
+    let answers = {};
+
+    function renderStep(step) {
+      const container = document.getElementById('quiz-container');
+      if (!container) return;
+      
+      if (step >= questions.length) {
+        showResults();
+        return;
+      }
+      
+      const q = questions[step];
+      let html = `<div class="quiz-step">`;
+      html += `<div class="quiz-progress"><div class="quiz-progress-bar" style="width:${((step+1)/questions.length)*100}%"></div></div>`;
+      html += `<div class="quiz-step-counter">Question ${step+1} of ${questions.length}</div>`;
+      html += `<h2 class="quiz-question">${q.q}</h2>`;
+      html += `<div class="quiz-options">`;
+      
+      q.options.forEach(opt => {
+        const selected = answers[q.key] === opt.value ? 'selected' : '';
+        html += `<button class="quiz-option ${selected}" onclick="selectAnswer('${q.key}', '${opt.value}', this)">${opt.label}</button>`;
+      });
+      
+      html += `</div></div>`;
+      container.innerHTML = html;
+    }
+
+    function selectAnswer(key, value, el) {
+      answers[key] = value;
+      document.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+      el.classList.add('selected');
+      setTimeout(() => {
+        currentStep++;
+        renderStep(currentStep);
+      }, 400);
+    }
+
+    function showResults() {
+      const container = document.getElementById('quiz-container');
+      if (!container) return;
+      
+      const biz = answers.business || 'other';
+      const challenge = answers.challenge || 'leads';
+      const rec = getRecommendation(biz, challenge);
+      
+      let html = `<div class="quiz-step" style="text-align:center;">`;
+      html += `<div class="quiz-progress"><div class="quiz-progress-bar" style="width:100%;background:#10b981;"></div></div>`;
+      html += `<div style="font-size:3rem;margin:12px 0;">🎯</div>`;
+      html += `<h2 style="font-size:24px;font-weight:700;margin-bottom:8px;">Your Recommendation</h2>`;
+      html += `<div style="font-size:15px;color:var(--color-text-secondary);margin-bottom:4px;">For ${biz === 'real_estate' ? 'a Real Estate business' : biz === 'retail' ? 'a Retail/Service business' : biz === 'hospitality' ? 'a Hospitality business' : biz === 'professional' ? 'a Professional Service' : 'your business'} with a focus on <strong>${answers.challenge === 'leads' ? 'missing leads' : answers.challenge === 'admin' ? 'admin overload' : answers.challenge === 'website' ? 'website needs' : answers.challenge === 'phone' ? 'phone coverage' : 'content creation'}</strong></div>`;
+      html += `<div style="margin:32px 0;padding:32px;background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;color:white;">`;
+      html += `<h3 style="font-size:20px;margin-bottom:8px;">${rec.title}</h3>`;
+      html += `<p style="font-size:14px;opacity:0.85;line-height:1.7;margin-bottom:20px;max-width:450px;margin-left:auto;margin-right:auto;">${rec.description}</p>`;
+      html += `<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:20px;">`;
+      rec.products.forEach(p => {
+        html += `<div style="padding:14px 18px;background:rgba(255,255,255,0.1);border-radius:10px;border:1px solid rgba(255,255,255,0.2);"><div style="font-size:18px;">${p.emoji}</div><div style="font-weight:600;font-size:14px;">${p.name}</div><div style="font-size:12px;opacity:0.7;">${p.price}</div></div>`;
+      });
+      html += `</div>`;
+      html += `<div style="font-size:13px;opacity:0.7;margin-bottom:20px;font-style:italic;">💡 ${rec.urgency}</div>`;
+      html += `<a href="${rec.ctaLink}" class="btn btn--primary" style="font-size:16px;padding:14px 32px;display:inline-block;">${rec.cta}</a>`;
+      html += `</div>`;
+      
+      // Email capture
+      html += `<div style="max-width:400px;margin:0 auto;padding:24px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">`;
+      html += `<h3 style="font-size:16px;font-weight:600;margin-bottom:8px;">Save Your Results</h3>`;
+      html += `<p style="font-size:13px;color:#64748b;margin-bottom:16px;">Enter your email and we'll send you a full breakdown of the recommended solutions.</p>`;
+      html += `<div style="display:flex;gap:8px;">`;
+      html += `<input type="email" id="quiz-email" placeholder="your@email.com" style="flex:1;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:14px;">`;
+      html += `<button onclick="saveQuizResults()" style="padding:12px 20px;background:#6366f1;color:white;border:none;border-radius:10px;font-weight:600;cursor:pointer;">Send →</button>`;
+      html += `</div>`;
+      html += `<div style="margin-top:12px;"><a href="${rec.ctaLink}" style="font-size:14px;color:#6366f1;text-decoration:none;">Skip — contact me directly →</a></div>`;
+      html += `</div>`;
+      
+      html += `<div style="margin-top:24px;">`;
+      html += `<button onclick="resetQuiz()" style="background:none;border:none;color:#94a3b8;font-size:13px;cursor:pointer;">← Retake Quiz</button>`;
+      html += `</div>`;
+      html += `</div>`;
+      
+      container.innerHTML = html;
+      
+      // Scroll to top of results
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function saveQuizResults() {
+      const email = document.getElementById('quiz-email')?.value;
+      if (!email) return;
+      
+      const biz = answers.business || 'other';
+      const challenge = answers.challenge || 'leads';
+      const rec = getRecommendation(biz, challenge);
+      
+      const bizLabels = {
+        real_estate: 'Real Estate',
+        retail: 'Retail/Service', 
+        hospitality: 'Hospitality',
+        professional: 'Professional Services',
+        other: 'Other'
+      };
+      
+      const text = `🎯 Quiz result!\n\nBusiness: ${bizLabels[biz] || biz}\nChallenge: ${challenge}\nVolume: ${answers.volume}\nWebsite: ${answers.website}\nBudget: ${answers.budget}\nRecommendation: ${rec.title}\n\nEmail: ${email}`;
+      
+      window.open(`https://wa.me/50235716181?text=${encodeURIComponent(text)}`, '_blank');
+      
+      // Show thank you
+      const btn = event.target;
+      btn.textContent = '✅ Sent!';
+      btn.style.background = '#10b981';
+    }
+
+    function resetQuiz() {
+      currentStep = 0;
+      answers = {};
+      renderStep(0);
+    }
+  </script>
+
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div class="container" style="position:relative;z-index:1;text-align:center;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
+        🎯 2-Minute Quiz
+      </div>
+      <h1 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:16px;">
+        What Does Your Business<br><span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Actually Need?</span>
+      </h1>
+      <p style="font-size:1.15rem;color:#cbd5e1;max-width:550px;margin:0 auto 8px;line-height:1.8;">
+        Not sure which AI tool or website package is right for you? Answer 5 quick questions and get a personalized recommendation.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div class="container">
+      <div id="quiz-container" style="max-width:640px;margin:0 auto;"></div>
+    </div>
+  </section>
+
+  <style>
+    .quiz-step { animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .quiz-progress { height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin-bottom: 24px; overflow: hidden; }
+    .quiz-progress-bar { height: 100%; background: linear-gradient(135deg,#818cf8,#f472b6); border-radius: 3px; transition: width 0.4s ease; }
+    .quiz-step-counter { font-size: 0.85rem; color: #94a3b8; margin-bottom: 16px; }
+    .quiz-question { font-size: 1.4rem; font-weight: 700; color: white; margin-bottom: 28px; line-height: 1.3; }
+    .quiz-options { display: flex; flex-direction: column; gap: 12px; }
+    .quiz-option { padding: 18px 24px; background: rgba(255,255,255,0.05); border: 2px solid rgba(255,255,255,0.15); border-radius: 14px; color: #cbd5e1; font-size: 1.05rem; cursor: pointer; transition: all 0.2s; text-align: left; }
+    .quiz-option:hover { background: rgba(255,255,255,0.1); border-color: rgba(129,140,248,0.5); transform: translateX(4px); }
+    .quiz-option.selected { background: rgba(129,140,248,0.2); border-color: #818cf8; color: white; font-weight: 600; }
+  </style>
+
+  <script is:inline>
+    // Need to wrap in DOMContentLoaded since Astro's is:inline runs in head
+    document.addEventListener('DOMContentLoaded', () => renderStep(0));
+  </script>
+</BaseLayout>
