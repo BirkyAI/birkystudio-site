@@ -27,7 +27,10 @@ const esSlugMap = {
   '/contact': '/es/contacto',
 };
 
-const currentPathForCheck = isSpanish ? pathWithoutLang : Astro.url.pathname;
+const currentPathRaw = isSpanish ? pathWithoutLang : Astro.url.pathname;
+// Normalize trailing slash for matching
+const currentPathForCheck = currentPathRaw.endsWith('/') && currentPathRaw !== '/' 
+  ? currentPathRaw.slice(0, -1) : currentPathRaw;
 const hasTranslation = currentPathForCheck === '/' || esSlugMap.hasOwnProperty(currentPathForCheck);
 // Override esURL for pages that have different slugs in Spanish
 const correctedEsURL = currentPathForCheck === '/' ? esURL : 
