@@ -20,23 +20,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- Contact Form -->
         <div style="background:white;border-radius:24px;padding:48px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
           <h2 style="font-size:1.5rem;margin-bottom:32px;">Send Us a Message</h2>
-          <form name="contact" method="POST" data-netlify="true" style="display:flex;flex-direction:column;gap:20px;">
-            <input type="hidden" name="form-name" value="contact">
+          <form id="birky-contact-form" style="display:flex;flex-direction:column;gap:20px;">
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Your Name</label>
-              <input type="text" name="name" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="John Smith">
+              <input type="text" id="bs-name" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="John Smith">
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Email</label>
-              <input type="email" name="email" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="john@business.com">
+              <input type="email" id="bs-email" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="john@business.com">
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Business Name</label>
-              <input type="text" name="business" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="Your Business Name">
+              <input type="text" id="bs-business" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="Your Business Name">
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">What do you need?</label>
-              <select name="service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
+              <select id="bs-service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
                 <option value="starter">Starter Website ($250)</option>
                 <option value="professional">Professional Website ($500)</option>
                 <option value="premium">Premium Website ($999)</option>
@@ -49,7 +48,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Tell us more</label>
-              <textarea name="message" rows="4" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;resize:vertical;" placeholder="What does your business do? Any specific features you need?"></textarea>
+              <textarea id="bs-message" rows="4" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;resize:vertical;" placeholder="What does your business do? Any specific features you need?"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1.1rem;padding:16px;">
               Send Message →
@@ -122,6 +121,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+
+<script is:inline>
+  document.getElementById('birky-contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('bs-name').value;
+    const email = document.getElementById('bs-email').value;
+    const business = document.getElementById('bs-business').value;
+    const service = document.getElementById('bs-service').value;
+    const message = document.getElementById('bs-message').value;
+    
+    const serviceLabels = {
+      'starter': 'Starter Website ($250)',
+      'professional': 'Professional Website ($500)',
+      'premium': 'Premium Website ($999)',
+      'real-estate-agent': 'Real Estate AI Agent ($799)',
+      'business-agent': 'Business AI Agent ($549)',
+      'text-receptionist': 'AI Text Receptionist ($250)',
+      'voice-receptionist': 'AI Voice Receptionist ($550)',
+      'notsure': 'Not sure yet'
+    };
+    
+    const text = `Hi Luna! I'd like to get in touch.\n\nName: ${name}\nEmail: ${email}\nBusiness: ${business}\nService: ${serviceLabels[service] || service}\n\nMessage: ${message}`;
+    
+    window.open(`https://wa.me/50235716181?text=${encodeURIComponent(text)}`, '_blank');
+  });
+</script>
 
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </BaseLayout>
