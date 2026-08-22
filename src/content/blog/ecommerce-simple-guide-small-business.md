@@ -2,7 +2,7 @@
 title: "How to Start Selling Online: A Simple E-Commerce Guide for Small Businesses"
 slug: ecommerce-simple-guide-small-business
 description: "Learn how to set up your first online store without the tech headache. A step-by-step guide for small business owners who want to start selling online in 2026."
-image: "/images/blog/ai-generated/ecommerce-small-business-guide.png"
+image: "/images/blog/ai-generated/ecommerce-small-business-guide.jpg"
 date: 2026-07-18
 author: "Birky Studio"
 tags: ["e-commerce", "small business", "online store", "selling online"]

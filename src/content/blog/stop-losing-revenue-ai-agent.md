@@ -1,7 +1,7 @@
 ---
 title: "Stop Losing Revenue: The Real Cost of Not Having an AI Agent"
 description: "Every missed call and after-hours inquiry costs your business money. Here is exactly how much you are losing, and how Birky Studio's AI agents turn those losses into closed deals."
-image: "https://ard-site.vercel.app/images/ai-gen/stop-losing-revenue-ai-agent.png"
+image: "/images/blog/ai-generated/stop-losing-revenue-ai-agent.jpg"
 date: 2026-08-15
 tags: ["Birky Studio", "AI Agents", "ROI", "Lead Generation", "Small Business"]
 lang: "en"

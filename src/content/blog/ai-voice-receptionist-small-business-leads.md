@@ -2,7 +2,7 @@
 title: "How an AI Voice Receptionist Can Double Your Small Business Leads"
 description: "Missed calls are lost revenue. An AI voice receptionist answers every call 24/7, books appointments automatically, and never puts a customer on hold. Here is how it works and why small businesses in Guatemala are adopting it."
 date: 2026-08-10
-image: "https://ard-site.vercel.app/images/ai-gen/ai-voice-receptionist-landscape.png"
+image: "/images/blog/ai-generated/ai-voice-receptionist-landscape.jpg"
 tags: ["AI Agents", "Voice AI", "Small Business", "Automation"]
 lang: "en"
 author: "Birky Studio"

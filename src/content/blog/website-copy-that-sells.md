@@ -2,7 +2,7 @@
 title: "How to Write Website Copy That Actually Sells"
 description: "Learn how to write website copy that turns visitors into customers. Practical tips for small business owners who aren't professional writers."
 date: 2026-07-21
-image: "/images/blog/ai-generated/website-copy-that-sells.png"
+image: "/images/blog/ai-generated/website-copy-that-sells.jpg"
 tags: ["Web Design", "Small Business Tips", "Copywriting"]
 lang: "en"
 ---

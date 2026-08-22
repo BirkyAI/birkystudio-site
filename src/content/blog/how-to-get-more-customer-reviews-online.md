@@ -2,7 +2,7 @@
 title: "How to Get More Customer Reviews Online (And Why They Matter)"
 description: "Customer reviews are the most powerful free marketing tool for small businesses. Here is how to get more of them and turn them into new customers."
 date: 2026-07-20
-image: "/images/blog/ai-generated/customer-reviews-online.png"
+image: "/images/blog/ai-generated/customer-reviews-online.jpg"
 tags: ["Small Business", "Local SEO", "Customer Reviews"]
 lang: "en"
 author: "Birky Studio"
