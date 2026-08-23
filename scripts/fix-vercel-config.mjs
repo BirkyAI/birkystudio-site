@@ -5,10 +5,19 @@ import path from 'path';
 const configPath = path.join(process.cwd(), '.vercel', 'output', 'config.json');
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
-// Find the portfolio redirect and fix its regex to match both /es/portfolio and /es/portfolio/
+// Find redirect routes and fix their regex to match both with/without trailing slash
+const redirects_to_fix = [
+  '^/es/portfolio$',
+  '^/es/about$',
+  '^/portafolio$',
+  '^/sobre-mi$',
+];
+
 for (const route of config.routes) {
-  if (route.src === '^/es/portfolio$' && route.status === 301) {
-    route.src = '^/es/portfolio/?$';
+  if (redirects_to_fix.includes(route.src) && route.status === 301) {
+    const new_src = route.src.replace(/\$$/, '/?$');
+    console.log(`  Fixed: ${route.src} -> ${new_src}`);
+    route.src = new_src;
   }
 }
 
