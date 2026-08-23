@@ -10,5 +10,8 @@ export default defineConfig({
   trailingSlash: 'ignore',
   redirects: {
     '/es/portfolio': '/es/portafolio',
+    '/es/about': '/es/sobre-mi',
+    '/portafolio': '/portfolio',
+    '/sobre-mi': '/about',
   },
 });
