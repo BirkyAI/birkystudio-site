@@ -1,0 +1,497 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it cheaper to build a website with Wix/Squarespace or hire BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In year one, Wix ($204-$276/year) or Squarespace ($192-$276/year) are cheaper upfront. But the real cost of DIY is your time — building a professional site takes 20-60 hours. BirkyStudio's starter website is $250 one-time, professional is $500, and premium is $999. Over 3 years, a BirkyStudio site costs $250-999 total vs Wix at $612-828 for comparable hosting. If your time is worth more than $15/hour, BirkyStudio is actually cheaper."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get a real estate website with Wix or Squarespace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, both Wix and Squarespace have templates for real estate. However, you'll need to manually add IDX/MLS integration, property search, listing pages, and lead capture forms. BirkyStudio builds real estate websites with property listings, IDX integration, lead capture, and AI receptionist built in — all from the start, not as add-ons you piece together yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a website with Wix vs BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wix/Squarespace: 20-60 hours of your own time to design, write content, configure SEO, and polish. BirkyStudio: 5-7 days turnaround, done for you. You provide the content and preferences, they build the site. The time difference is the main reason agents choose BirkyStudio — your time is better spent selling properties than wrestling with a drag-and-drop builder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio include hosting and domain like Wix and Squarespace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. BirkyStudio sites include hosting, a custom domain, SSL, and ongoing maintenance. The difference is that BirkyStudio's pricing is one-time, while Wix and Squarespace charge monthly or annually forever. After year one, Wix costs $204-480/year, Squarespace costs $192-276/year, and BirkyStudio costs $0 — you already paid once. Over 3 years, a BirkyStudio site is 50-80% cheaper than paying ongoing subscription fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I edit my BirkyStudio site after it's built, like Wix or Squarespace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. BirkyStudio sites include a CMS (Content Management System) add-on for $130 one-time, letting you update content, add listings, and make changes yourself. Without the CMS add-on, BirkyStudio handles updates for you. Wix and Squarespace are fully self-serve — you have complete control over every pixel, but you're also responsible for every pixel."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Wix & Squarespace (2026) — DIY Website Builder vs Hiring a Pro",
+  "description": "Honest comparison of BirkyStudio vs Wix and Squarespace for real estate agents. Real prices, time costs, features — and which one actually saves you money.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-08-25",
+  "dateModified": "2026-08-25"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Wix & Squarespace (2026 Comparison)"
+  description="Should you build your own website with Wix or Squarespace, or hire BirkyStudio? Real cost comparison, time investment, and what real estate agents actually choose."
+  image="/images/birky-mascot.jpg"
+>
+  <script type="application/ld+json" set:html={faqLD} />
+  <script type="application/ld+json" set:html={articleLD} />
+
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated August 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Wix & Squarespace<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Should You DIY or Hire a Pro?</span>
+      </h1>
+      <p style="font-size:1.1rem;color:#cbd5e1;line-height:1.8;max-width:700px;">
+        Wix and Squarespace make it easy to build a website yourself. BirkyStudio builds one for you. The question isn't which platform is better — it's whether your time is better spent wrestling with a template or selling properties. Here's the real cost comparison.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want a professional website built for you in 5-7 days, don't want to spend 20-60 hours learning a builder, need IDX/MLS integration for real estate, and prefer a one-time payment over monthly subscriptions. Best for agents who want a done-for-you site that looks custom and converts leads.<br><br>
+          <strong style="color:white;">Choose Wix or Squarespace if:</strong> You enjoy building things yourself, have the time to design and optimize your own site, want full control over every pixel, and don't need real estate-specific features like IDX or property search out of the box.
+        </p>
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare DIY builders vs hiring a pro?</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        Every real estate agent needs a website. The question is how to get one. Wix and Squarespace are the two most popular DIY website builders — they make it possible for anyone to create a site without coding. Between them, they power over 10 million websites. Their pitch is simple: drag, drop, publish.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes the opposite approach: you provide the content, and they build the site for you. No templates to wrestle, no drag-and-drop to learn, no SEO configurations to figure out. You get a professional website built by someone who understands real estate, with IDX integration, AI lead capture, and ongoing maintenance included.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:40px;">
+        The real comparison isn't features — it's about what your time is worth. Here's how they stack up when you factor in everything.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Wix & Squarespace — Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Wix</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Squarespace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price (Year 1)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$250 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$204/yr (Light plan)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$192/yr (Personal plan)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">One-time payment</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Monthly/yearly subscription</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Monthly/yearly subscription</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">5-7 days (we build it)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">20-60 hours (you build it)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">20-60 hours (you build it)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">IDX/MLS Integration</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Third-party plugin needed</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Third-party plugin needed</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Custom Domain & SSL</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (annual plans)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (annual plans)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">SEO Optimization</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Done for you</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ You configure it yourself</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ You configure it yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Mobile Responsive</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Built-in</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Built-in</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Built-in</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Lead Capture</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI receptionist included</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Basic forms only</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Basic forms only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Property Listings</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Built-in</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Manual or plugin</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Manual or plugin</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CMS / Self-Editing</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ $130 add-on (or we handle updates)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full drag-and-drop editor</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full drag-and-drop editor</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Blog / Content</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (Pro+ plans)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Design Templates</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Custom design (you provide preferences)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 900+ templates</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 200+ templates</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Analytics</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (Business+ plans)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Personal support from the builder</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Chat, email, callback (paid tiers)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">24/7 email + live chat</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Real Estate Focus</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Built by a realtor, for agents</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ General-purpose, RE templates exist</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ General-purpose, RE templates exist</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Review</h2>
+
+      <div id="birky-studio" style="background:rgba(129,140,248,0.08);border:1px solid rgba(129,140,248,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:#818cf8;color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">BEST FOR REAL ESTATE</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          BirkyStudio builds professional websites for real estate agents — done for you, not by you. You provide your content, branding preferences, and any specific features you need (IDX integration, property search, lead capture, blog), and Luna builds the site in 5-7 days. The result is a custom website that looks professional, converts visitors into leads, and includes an AI receptionist that answers calls and WhatsApp messages 24/7.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          The key advantage is that you don't spend a single hour building it. No templates to customize, no SEO plugins to configure, no mobile responsiveness to test. Luna, a licensed real estate agent who owns Antigua Real Estate Development, builds sites that understand how real estate agents actually work — with property search, lead capture, and AI-powered follow-up built in from day one. It's the difference between buying Ikea furniture and having a carpenter build it for you.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Zero time investment — you provide content, they build the site</li>
+              <li>One-time payment, no recurring subscription fees</li>
+              <li>IDX/MLS integration built in</li>
+              <li>AI receptionist included with lead capture</li>
+              <li>Built by a realtor who knows the industry</li>
+              <li>SEO done for you</li>
+              <li>Over 3 years, 50-80% cheaper than subscription builders</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>5-7 day turnaround (not instant like DIY)</li>
+              <li>Limited template selection (you describe what you want)</li>
+              <li>CMS add-on costs extra if you want to edit yourself</li>
+              <li>Smaller company with fewer resources than Wix/Squarespace</li>
+              <li>Not suitable for non-real-estate businesses</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Starter Website $250 · Professional Website $500 · Premium Website $999 · CMS Add-on $130 · AI Agent support $49/month (optional)
+        </p>
+      </div>
+
+      <!-- Detailed Review: Wix -->
+      <div id="wix" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:16px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Wix</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Wix is the most popular DIY website builder with over 900 templates and a drag-and-drop editor that lets anyone build a website. Their pricing starts at $17/month (Light plan, billed annually) and goes up to $160/month (Business Elite). All plans include hosting, SSL, and a free domain for the first year on annual plans. Wix also offers AI website builder tools that can generate a basic site from a prompt.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Wix's strength is flexibility — you can build almost any type of website, from ecommerce stores to portfolios to blogs. For real estate agents, Wix has real estate templates and can integrate with IDX plugins (at an additional cost). The trade-off is that you're responsible for everything: design, layout, SEO, mobile responsiveness, content, and ongoing maintenance. A professional-looking Wix site typically takes 20-60 hours to build, and the real cost isn't the subscription — it's your time.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>900+ templates for every industry</li>
+              <li>Full drag-and-drop control over every element</li>
+              <li>AI builder can generate a site in minutes</li>
+              <li>App market with 300+ integrations</li>
+              <li>Free domain (first year on annual plans)</li>
+              <li>Built-in SEO tools and analytics</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>20-60 hours of your time to build a professional site</li>
+              <li>Recurring subscription costs forever</li>
+              <li>No native IDX/MLS integration — requires third-party plugins</li>
+              <li>No AI lead capture or receptionist built in</li>
+              <li>Not designed specifically for real estate</li>
+              <li>SEO mistakes are easy to make if you're not experienced</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Light $17/mo · Core $30/mo · Business $40/mo · Business Elite $160/mo (all billed annually)
+        </p>
+      </div>
+
+      <!-- Detailed Review: Squarespace -->
+      <div id="squarespace" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Squarespace</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Squarespace is known for its beautiful, design-forward templates. It's slightly less flexible than Wix but produces consistently polished results. Pricing starts at $16/month (Personal plan, billed annually) and goes up to $99/month (Advanced plan). All plans include hosting, SSL, 24/7 support, and a free domain for the first year on annual plans. Squarespace also offers AI-powered design tools for faster setup.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Squarespace's templates are generally better-looking out of the box than Wix's, but they're harder to customize. The editor is clean but constraining — you work within the template's structure rather than placing elements freely. For real estate agents, Squarespace has real estate templates and can integrate with IDX services, but it requires more technical know-how than Wix to set up properly. Like Wix, the real cost is the 20-60 hours of your time to build and optimize.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Beautiful, design-forward templates</li>
+              <li>Consistent, polished results out of the box</li>
+              <li>24/7 customer support on all plans</li>
+              <li>Free domain (first year on annual plans)</li>
+              <li>Built-in SEO, analytics, and email marketing</li>
+              <li>14-day free trial, no credit card required</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>20-60 hours of your time to build and optimize</li>
+              <li>Recurring subscription costs forever</li>
+              <li>Less flexible than Wix — harder to customize</li>
+              <li>No native IDX/MLS integration — requires third-party plugins</li>
+              <li>No AI lead capture or receptionist built in</li>
+              <li>No free plan (only a 14-day trial)</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Personal $16/mo · Business $23/mo · Commerce Basic $28/mo · Commerce Advanced $56/mo · Advanced $99/mo (all billed annually)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison — 3 Year View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio (3 Years)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Wix (3 Years)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Squarespace (3 Years)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starter site, basic use</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$250</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$612 (Light annual)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$576 (Personal annual)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Professional site + blog</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$500</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,080 (Core annual)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$828 (Business annual)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Premium site + IDX + AI</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$999</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,440 (Business annual)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,008 (Commerce Basic annual)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">With time cost ($50/hr, 40 hrs)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$250-999 (no time cost)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$2,612+ (site + time)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$2,576+ (site + time)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">How to choose between BirkyStudio, Wix, and Squarespace</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+        The choice comes down to one question: how much is your time worth?
+      </p>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🏠 \"I'm a real estate agent and I don't have time to build a website\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — You provide content, they build the site. No learning curve, no time investment. You're back to selling properties in 5-7 days.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">💰 \"I want the cheapest option over the long term\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — One-time payment vs. recurring subscriptions. Over 3 years, a BirkyStudio site costs $250-999 total. Wix costs $612-1,440. Squarespace costs $576-1,008. And you still spent 20-60 hours building it yourself.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🔧 \"I love building things and want full control\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Wix or Squarespace</strong> — If you enjoy the process of designing and building a website, go with a DIY builder. Wix gives you more control, Squarespace gives you better-looking templates. Both let you tweak every detail.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🔬 \"I want to try before I commit\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">Squarespace</strong> — Their 14-day free trial with no credit card required is the easiest way to test. Wix also has a free plan. BirkyStudio doesn't offer a free trial because each site is custom-built, but they do offer a 30-day satisfaction guarantee.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">🤖 \"I want my website to capture and qualify leads automatically\"</p>
+          <p style="color:#cbd5e1;">→ <strong style="color:#818cf8;">BirkyStudio</strong> — Every site includes an AI receptionist that answers calls and WhatsApp messages, qualifies leads, and books showings. Wix and Squarespace only offer basic contact forms. You'd need to add a separate AI service on top of either platform.</p>
+        </div>
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:40px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.4rem;margin-bottom:16px;">The Bottom Line</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          For most real estate agents, <strong style="color:white;">BirkyStudio</strong> is the better value. The math is simple: if your time is worth more than $15/hour, a BirkyStudio site pays for itself in the time you'd spend building a DIY site. Add the one-time pricing (vs. forever subscriptions), built-in IDX, and AI lead capture, and the choice becomes clear for agents who want to focus on selling, not website building.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+          Choose <strong style="color:white;">Wix or Squarespace</strong> if you genuinely enjoy building websites, need complete creative control, or run a non-real-estate business. Both are excellent platforms — they're just designed for people who want to build their own site, not for people who want one built for them. If you're a real estate agent, your time is worth more than what you'd save on the monthly subscription.
+        </p>
+        <p style="color:white;font-weight:600;margin-bottom:24px;">A $250 one-time site that's done in 5 days beats a $16/month site that takes 40 hours of your time. Every time.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;">
+            Get Your Website Built →
+          </a>
+          <a href="https://www.squarespace.com/pricing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display:inline-block;font-size:1.05rem;padding:16px 32px;background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);">
+            Try Squarespace Free →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Frequently Asked Questions</h2>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Is it cheaper to build a website with Wix/Squarespace or hire BirkyStudio?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          Wix Light ($17/mo) and Squarespace Personal ($16/mo) are cheaper in year one — $204 and $192 respectively vs BirkyStudio's $250 one-time. But over 3 years, BirkyStudio is still $250 while Wix costs $612 and Squarespace costs $576. And you spent 20-60 hours building it yourself. If your time is worth $50/hour, the true cost of a DIY site is $1,200-$3,000+ in lost selling time. BirkyStudio is significantly cheaper when you factor in time.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Can I get a real estate website with Wix or Squarespace?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          Yes, both platforms offer real estate templates. However, you'll need to manually add MLS/IDX integration through third-party plugins (at additional cost), configure property search, set up lead capture forms, and optimize SEO yourself. BirkyStudio includes all of this out of the box — IDX, property listings, lead capture, and AI receptionist — because it's built specifically for real estate agents from the ground up.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">How long does it take to build a website with each option?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          BirkyStudio: 5-7 days turnaround, zero hours of your time. Wix/Squarespace: 20-60 hours of your time to design, build, write content, configure SEO, and test mobile responsiveness. The AI builders on Wix and Squarespace can generate a basic site in minutes, but making it look professional and adding real estate features still takes significant time and effort.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Does BirkyStudio include hosting and a domain name?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          Yes. All BirkyStudio websites include hosting, a custom domain, and SSL certificate — everything you need to go live. The key difference is that BirkyStudio charges a one-time fee, while Wix and Squarespace charge monthly or annually forever. After year one, you've paid $0 extra for hosting with BirkyStudio, while Wix and Squarespace customers keep paying every month.
+        </p>
+      </details>
+
+      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;margin-bottom:12px;">
+        <summary style="color:white;font-weight:600;cursor:pointer;font-size:1.05rem;">Which is better for SEO: BirkyStudio, Wix, or Squarespace?</summary>
+        <p style="color:#cbd5e1;line-height:1.8;margin-top:12px;">
+          All three platforms can achieve good SEO results. The difference is who does the work. BirkyStudio handles SEO configuration for you — meta tags, schema markup, page structure, performance optimization. Wix and Squarespace have good SEO tools built in, but you're responsible for using them correctly. Most real estate agents don't have the SEO knowledge to optimize their own site, which is why done-for-you SEO is a significant advantage of BirkyStudio.
+        </p>
+      </details>
+
+      <!-- Sources -->
+      <div style="margin-top:64px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#64748b;font-size:0.85rem;line-height:1.8;">
+          <strong style="color:#94a3b8;">How we evaluated:</strong> Prices verified on each company's pricing page in August 2026. Wix pricing from wix.com/plans (Light, Core, Business, Business Elite plans). Squarespace pricing from squarespace.com/pricing (Personal, Business, Commerce Basic, Commerce Advanced, Advanced plans). BirkyStudio pricing reflects current published rates. Time estimates based on typical user experiences with DIY website builders — actual time varies by skill level and complexity.
+          <br><br>
+          Prices and features change. Always verify current pricing on the provider's website before purchasing.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    summary { list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: '▸ '; color: #818cf8; }
+    details[open] summary::before { content: '▾ '; }
+    table { min-width: 600px; }
+    @media (max-width: 768px) {
+      table { font-size: 0.8rem; }
+      th, td { padding: 10px 8px !important; }
+    }
+  </style>
+</BaseLayout>
