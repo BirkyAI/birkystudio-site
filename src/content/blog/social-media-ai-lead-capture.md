@@ -66,7 +66,7 @@ Every Birky Studio website includes the AI agent system from day one. It is not 
 
 **For phone calls:** The AI Voice Receptionist answers calls in natural Spanish or English. It screens callers, books appointments, and sends you a summary of every conversation.
 
-The cost for a full system including a custom website plus AI agent starts at $250 for the text receptionist or $799 for a business AI agent with a custom website. Compare that to the $2,000 to $8,000 per month in recovered revenue I showed above. The system pays for itself in the first week.
+The cost for a full system including a custom website plus AI agent starts at $297 for the text receptionist or $1,297 for a business AI agent with a custom website. Compare that to the $2,000 to $8,000 per month in recovered revenue I showed above. The system pays for itself in the first week.
 
 ## Why Social Media Alone Is Not Enough
 

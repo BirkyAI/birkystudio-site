@@ -16,7 +16,7 @@ author: "Birky Studio"
 
 You do not need a complex enterprise system or a six-figure IT budget. You need three things that work together:
 
-### 1. A Professional Website ($250-$999)
+### 1. A Professional Website ($499-$1,999)
 
 Your website is your digital storefront. It is open 24/7, never takes a day off, and costs a fraction of rent. But not all websites are built equal.
 
@@ -26,11 +26,11 @@ Your website is your digital storefront. It is open 24/7, never takes a day off,
 - Fast loading speeds (Google punishes slow sites)
 - A clear path for visitors to contact you or buy from you
 
-**Birky Studio's Starter Website ($250)** gives you a professional, mobile-optimized site with up to 5 pages, contact forms, and basic SEO. The **Professional ($500)** adds custom branding, a blog, and advanced features. The **Premium ($999)** is a full custom build with everything included.
+**Birky Studio's Starter Website ($499)** gives you a professional, mobile-optimized site with up to 5 pages, contact forms, and basic SEO. The **Professional ($999)** adds custom branding, a blog, and advanced features. The **Premium ($1,999)** is a full custom build with everything included.
 
 **The alternative:** Paying a traditional agency Q15,000-Q30,000 ($2,000-$4,000) for the same result, plus monthly retainers. Or worse — a DIY template that looks like every other business and ranks nowhere on Google.
 
-### 2. A Business AI Agent ($549)
+### 2. A Business AI Agent ($1,297)
 
 A website that just sits there is a digital brochure. An AI agent turns it into a 24/7 salesperson.
 
@@ -41,7 +41,7 @@ A website that just sits there is a digital brochure. An AI agent turns it into 
 - Learns your business inside and out so it sounds like you, not a robot
 - Works in both English and Spanish
 
-**Birky Studio's Business AI Agent ($549, one-time setup)** is a custom-trained AI that lives on your website. It knows your products, your pricing, your hours, and your policies. When a visitor lands on your site at 11 PM and asks about pricing, the AI agent answers immediately and schedules a call for the next morning.
+**Birky Studio's Business AI Agent ($1,297, one-time setup)** is a custom-trained AI that lives on your website. It knows your products, your pricing, your hours, and your policies. When a visitor lands on your site at 11 PM and asks about pricing, the AI agent answers immediately and schedules a call for the next morning.
 
 **The alternative:** Building a custom AI assistant costs $5,000-$20,000 with a development agency. And you would still need to train it yourself.
 
@@ -66,10 +66,10 @@ Here is where it gets interesting. When you build all three separately through d
 
 | Tool | Done Right (Birky Studio) | DIY / Agency Route |
 |------|--------------------------|-------------------|
-| Professional Website | $500 | $2,000-$4,000 |
-| Business AI Agent | $549 | $5,000-$20,000 |
+| Professional Website | $999 | $2,000-$4,000 |
+| Business AI Agent | $1,297 | $5,000-$20,000 |
 | AI Voice Receptionist | $550 | Custom development |
-| **Total** | **$1,599** | **$7,000-$24,000+** |
+| **Total** | **$2,846** | **$7,000-$24,000+** |
 
 And here is the hidden cost of going the DIY route: none of those pieces work together. Your website has a chat widget from one company, a booking system from another, and a phone system from a third. They do not share data. You end up managing five different logins.
 

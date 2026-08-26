@@ -36,19 +36,19 @@ Here is what we built for him:
 **1. A Custom Real Estate Website**
 A professional, mobile-friendly property listing site with image galleries, property pages, neighborhood guides, and a contact form. Built in 4 days, not 8 weeks.
 
-Price: **$500 (Professional tier)**
+Price: **$999 (Professional tier)**
 
 **2. An AI Agent for Lead Capture**
 We deployed a Birky Studio AI Agent on his website and WhatsApp that answers inquiries 24/7. When a prospect asks "Is this property still available?" at 9 PM, the AI responds instantly with the status, schedule options, and a link to book a viewing.
 
-Price: **$799 (Real Estate AI Agent with Notion CRM)**
+Price: **$1,297 (Real Estate AI Agent with Notion CRM)**
 
 **3. A Voice Receptionist**
 We added an AI voice receptionist that forwards to Miguel's phone during business hours and handles calls independently after hours. No more missed calls.
 
 Price: **$550 setup + Vapi usage (~$30-50/mo)**
 
-**Total investment: ~$1,850 one-time + minimal monthly costs.**
+**Total investment: ~$2,846 one-time + minimal monthly costs.**
 
 Compare that to a year of a part-time assistant at $500/month ($6,000/year) who still goes home at 6 PM.
 
@@ -87,7 +87,7 @@ At Birky Studio, we do not sell templates or generic packages. We build what you
 Here is what sets us apart from the $3,000 agencies and the $20 DIY website builders:
 
 - **Built in days, not months.** Most websites are live in 3-4 days.
-- **One-time pricing.** $250-$999 for a website. No monthly retainers.
+- **One-time pricing.** $499-$1,999 for a website. No monthly retainers.
 - **Full setup included.** We write the copy, optimize for SEO, handle the images, and configure the AI agent.
 - **Real support.** You can message us and get a human who actually knows your setup.
 - **Bilingual by default.** All sites and agents handle English and Spanish.

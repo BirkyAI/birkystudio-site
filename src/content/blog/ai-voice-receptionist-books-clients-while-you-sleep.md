@@ -48,9 +48,9 @@ Here is where it gets interesting.
 - **Human receptionist:** $520-$780/month + benefits + equipment
 - **Subscription AI receptionist (competitors):** $150-$300/month
 - **Birky Studio AI Voice Receptionist:** **$550 setup** + Vapi usage (~$30-50/month)
-- **Birky Studio AI Text Receptionist (WhatsApp):** **$250 one-time**
+- **Birky Studio AI Text Receptionist (WhatsApp):** **$297 one-time**
 
-If you need the voice and text combo, that is $800 total — less than what some services charge for a single month of subscription fees.
+If you need the voice and text combo, that is $847 total — less than what some services charge for a single month of subscription fees.
 
 And if you want ongoing support, troubleshooting, and updates, that is $29/month optional. Not required — the system works on its own. Most clients do not need it after the first month.
 

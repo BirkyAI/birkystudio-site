@@ -36,12 +36,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div>
               <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">¿Qué necesitas?</label>
               <select id="ces-service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
-                <option value="basico">Sitio Básico ($250)</option>
-                <option value="profesional">Sitio Profesional ($500)</option>
-                <option value="premium">Sitio Premium ($999)</option>
-                <option value="agente-bienes-raices">Agente IA para Bienes Raíces ($799)</option>
-                <option value="agente-negocios">Agente IA para Negocios ($549)</option>
-                <option value="recepcionista-texto">Recepcionista de Texto ($250)</option>
+                <option value="basico">Sitio Básico ($499)</option>
+                <option value="profesional">Sitio Profesional ($999)</option>
+                <option value="premium">Sitio Premium ($1,999)</option>
+                <option value="agente-ia">Configuración de Agente IA ($1,297)</option>
+                <option value="recepcionista-texto">Recepcionista de Texto ($297)</option>
                 <option value="recepcionista-voz">Recepcionista por Voz ($550)</option>
                 <option value="nosure">No estoy seguro/a</option>
               </select>
@@ -126,12 +125,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     const message = document.getElementById('ces-message').value;
     
     const serviceLabels = {
-      'basico': 'Sitio Básico ($250)',
-      'profesional': 'Sitio Profesional ($500)',
-      'premium': 'Sitio Premium ($999)',
-      'agente-bienes-raices': 'Agente IA para Bienes Raíces ($799)',
-      'agente-negocios': 'Agente IA para Negocios ($549)',
-      'recepcionista-texto': 'Recepcionista de Texto ($250)',
+      'basico': 'Sitio Básico ($499)',
+      'profesional': 'Sitio Profesional ($999)',
+      'premium': 'Sitio Premium ($1,999)',
+      'agente-ia': 'Configuración de Agente IA ($1,297)',
+      'recepcionista-texto': 'Recepcionista de Texto ($297)',
       'recepcionista-voz': 'Recepcionista por Voz ($550)',
       'nosure': 'No estoy seguro/a'
     };

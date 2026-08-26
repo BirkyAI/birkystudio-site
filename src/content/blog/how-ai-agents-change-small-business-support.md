@@ -52,7 +52,7 @@ Here's what we set up for our clients:
 
 ## How Much Does It Cost?
 
-Our Starter Agent plan starts at $250 one-time setup. That includes:
+Our Starter Agent plan starts at $297 one-time setup. That includes:
 
 - One platform (WhatsApp or Telegram)
 - Custom FAQ responses trained on your business

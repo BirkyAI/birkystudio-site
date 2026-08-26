@@ -48,7 +48,7 @@ Let's be honest about the numbers. A front desk agent in the US costs $28,000 to
 
 In Latin America, staffing costs are lower, but the challenge remains the same. You still need coverage during nights, weekends, and holidays.
 
-An AI receptionist costs a fraction of that. At Birky Studio, our AI Agent setup starts at $250 for the initial configuration. After that, your monthly operating costs are minimal. You're looking at roughly 90% savings compared to a full-time hire.
+An AI receptionist costs a fraction of that. At Birky Studio, our AI Agent setup starts at $297 for the initial configuration. After that, your monthly operating costs are minimal. You're looking at roughly 90% savings compared to a full-time hire.
 
 ## How It Works
 

@@ -1,6 +1,6 @@
 ---
 title: "Your Business Is Open 24 Hours. Why Is Your Phone Not?"
-description: "Every missed call after hours is a lead that calls your competitor tomorrow morning. Here is how Birky Studio's AI text receptionist captures those leads for a one-time $250."
+description: "Every missed call after hours is a lead that calls your competitor tomorrow morning. Here is how Birky Studio's AI text receptionist captures those leads for a one-time $297."
 image: "/images/blog/ai-generated/missed-leads-after-hours.jpg"
 date: 2026-08-17
 tags: ["Birky Studio", "AI Receptionist", "Lead Generation", "Small Business", "WhatsApp", "Automation"]
@@ -30,9 +30,9 @@ An automated email autoresponder is too slow. A voicemail box is a black hole. A
 
 You need something that responds instantly, answers questions accurately, and books the lead while the prospect is still interested.
 
-## The $250 Fix That Works While You Sleep
+## The $297 Fix That Works While You Sleep
 
-Birky Studio's AI Text Receptionist runs on WhatsApp and Telegram. It costs $250 one-time setup. That is it. No monthly subscription for the software. No commitment. No contract.
+Birky Studio's AI Text Receptionist runs on WhatsApp and Telegram. It costs $297 one-time setup. That is it. No monthly subscription for the software. No commitment. No contract.
 
 Here is what it does:
 
@@ -44,7 +44,7 @@ Here is what it does:
 
 The result is that you never miss a lead again. Your phone keeps working even when you are sleeping, driving, or spending time with your family.
 
-I have a client who runs a small hotel in Antigua. Before the AI receptionist, they were losing an average of 12 booking inquiries per week to slow response times. After setup, their response rate went from 3 hours to under 3 seconds. Their booking conversion rate doubled within the first month. They paid $250 once. That is less than what one single weekend booking is worth.
+I have a client who runs a small hotel in Antigua. Before the AI receptionist, they were losing an average of 12 booking inquiries per week to slow response times. After setup, their response rate went from 3 hours to under 3 seconds. Their booking conversion rate doubled within the first month. They paid $297 once. That is less than what one single weekend booking is worth.
 
 ## Voice Receptionist for Phone Calls
 
@@ -52,7 +52,7 @@ Of course, not all leads come through text. Some people still pick up the phone.
 
 For most businesses, the text receptionist covers 80 percent of after-hours inquiries. The voice receptionist covers the rest. Many of my clients start with one and add the other later.
 
-> "We installed the AI text receptionist on a Friday afternoon. By Saturday morning, it had already booked 3 showings while we were asleep. Best $250 we ever spent." - Property manager in Antigua Guatemala
+> "We installed the AI text receptionist on a Friday afternoon. By Saturday morning, it had already booked 3 showings while we were asleep. Best $297 we ever spent." - Property manager in Antigua Guatemala
 
 ## What Makes This Different From ChatGPT or a Chatbot?
 
@@ -66,7 +66,7 @@ There is no app to install, no complicated dashboard to learn. We set it up on y
 
 Every night your phone goes unanswered, you are paying an invisible cost. A cost that shows up in next month's revenue report as flat or declining numbers.
 
-The fix is $250. One time. Less than what a single dinner reservation or one night in a hotel room is worth. And it starts working the same day we set it up.
+The fix is $297. One time. Less than what a single dinner reservation or one night in a hotel room is worth. And it starts working the same day we set it up.
 
 If you run a service business in Guatemala and you get even three to five WhatsApp inquiries after hours per week, the AI text receptionist pays for itself in the first week.
 
