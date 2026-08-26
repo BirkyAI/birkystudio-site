@@ -1,0 +1,247 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const calculatorLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "AI Savings Calculator — Birky Studio",
+  "url": "https://birkystudio.com/tools/ai-savings-calculator/",
+  "description": "Calculate how much your business could save in time and money by automating repetitive tasks with AI.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "All"
+});
+---
+
+<BaseLayout title="AI Savings Calculator — See Your ROI | Birky Studio" description="Calculate how much your business could save in time and money by automating repetitive tasks with AI agents, receptionists, and automation.">
+  <script type="application/ld+json" set:html={calculatorLD}></script>
+
+  <main style="max-width:900px;margin:0 auto;padding:40px 24px 80px;">
+    <!-- Header -->
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:#818cf8;margin-bottom:12px;">📊 Free Tool</div>
+      <h1 style="font-size:clamp(32px,6vw,48px);font-weight:700;line-height:1.15;letter-spacing:-1px;margin-bottom:16px;">
+        What Would AI Save <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Your Business?</span>
+      </h1>
+      <p style="font-size:17px;line-height:1.7;color:#94a3b8;max-width:600px;margin:0 auto;">
+        Move the sliders to match your situation. See exactly how much time and money AI automation can put back in your pocket.
+      </p>
+    </div>
+
+    <!-- Calculator -->
+    <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:20px;padding:36px 32px;margin-bottom:40px;">
+      <!-- Slider 1: Hours -->
+      <div style="margin-bottom:32px;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
+          <label for="hoursSlider" style="font-size:15px;font-weight:500;color:#e2e8f0;">
+            ⏱️ Hours of manual work per week <span style="color:#94a3b8;font-weight:400;">(whole team — data entry, follow-ups, scheduling, reporting)</span>
+          </label>
+          <span id="hoursDisplay" style="font-size:28px;font-weight:700;color:#818cf8;">20</span>
+        </div>
+        <input type="range" id="hoursSlider" min="2" max="80" value="20" step="1" style="width:100%;height:8px;border-radius:4px;background:#2a2a3e;outline:none;-webkit-appearance:none;accent-color:#818cf8;" />
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#64748b;margin-top:4px;">
+          <span>2 hrs/wk</span>
+          <span>80 hrs/wk</span>
+        </div>
+      </div>
+
+      <!-- Slider 2: Hourly Rate -->
+      <div style="margin-bottom:32px;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
+          <label for="rateSlider" style="font-size:15px;font-weight:500;color:#e2e8f0;">
+            💰 Average hourly cost <span style="color:#94a3b8;font-weight:400;">(salary + taxes + benefits ÷ hours. Owner time = 2-4× this)</span>
+          </label>
+          <span style="font-size:28px;font-weight:700;color:#818cf8;">$<span id="rateDisplay">35</span></span>
+        </div>
+        <input type="range" id="rateSlider" min="10" max="150" value="35" step="5" style="width:100%;height:8px;border-radius:4px;background:#2a2a3e;outline:none;-webkit-appearance:none;accent-color:#818cf8;" />
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#64748b;margin-top:4px;">
+          <span>$10/hr</span>
+          <span>$150/hr</span>
+        </div>
+      </div>
+
+      <!-- Slider 3: Automation % -->
+      <div style="margin-bottom:40px;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
+          <label for="autoSlider" style="font-size:15px;font-weight:500;color:#e2e8f0;">
+            🤖 How much of that work can AI handle? <span style="color:#94a3b8;font-weight:400;">(60–80% of admin tasks is realistic)</span>
+          </label>
+          <span style="font-size:28px;font-weight:700;color:#818cf8;"><span id="autoDisplay">70</span>%</span>
+        </div>
+        <input type="range" id="autoSlider" min="20" max="95" value="70" step="5" style="width:100%;height:8px;border-radius:4px;background:#2a2a3e;outline:none;-webkit-appearance:none;accent-color:#818cf8;" />
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#64748b;margin-top:4px;">
+          <span>20%</span>
+          <span>95%</span>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div style="background:#151520;border-radius:16px;padding:32px;text-align:center;border:1px solid #2a2a3e;">
+        <div style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:#94a3b8;margin-bottom:24px;">📈 Estimated Annual Savings</div>
+        
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;">
+          <div style="background:#1e1e30;border-radius:12px;padding:20px 12px;">
+            <div style="font-size:clamp(28px,4vw,36px);font-weight:700;color:#818cf8;" id="annualSavings">$0</div>
+            <div style="font-size:13px;color:#94a3b8;margin-top:4px;">Recovered cost / year</div>
+          </div>
+          <div style="background:#1e1e30;border-radius:12px;padding:20px 12px;">
+            <div style="font-size:clamp(28px,4vw,36px);font-weight:700;color:#f472b6;" id="hoursReclaimed">0</div>
+            <div style="font-size:13px;color:#94a3b8;margin-top:4px;">Hours reclaimed / year</div>
+          </div>
+          <div style="background:#1e1e30;border-radius:12px;padding:20px 12px;">
+            <div style="font-size:clamp(28px,4vw,36px);font-weight:700;color:#22d3ee;" id="weeksReclaimed">0</div>
+            <div style="font-size:13px;color:#94a3b8;margin-top:4px;">Work weeks regained</div>
+          </div>
+        </div>
+
+        <div style="font-size:14px;color:#64748b;margin-bottom:28px;">
+          <span id="perMonth" style="color:#e2e8f0;font-weight:600;">$0</span> saved per month · 
+          <span id="perWeek" style="color:#e2e8f0;font-weight:600;">0 hrs</span> freed up every week
+        </div>
+
+        <a href="/contact" style="display:inline-block;background:linear-gradient(135deg,#818cf8,#6366f1);color:white;padding:16px 36px;border-radius:12px;font-size:16px;font-weight:600;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+          Get My Setup → Let's Automate These Tasks
+        </a>
+      </div>
+    </div>
+
+    <!-- How It Works -->
+    <div style="margin-bottom:48px;">
+      <h2 style="font-size:22px;font-weight:600;margin-bottom:20px;">🧮 What This Calculator Tells You</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:12px;padding:20px;">
+          <div style="font-size:20px;margin-bottom:6px;">⏱️</div>
+          <div style="font-weight:600;margin-bottom:4px;">Time Back</div>
+          <div style="font-size:14px;color:#94a3b8;">Recover hours spent on manual admin. Use them on growth, clients, or literally anything else.</div>
+        </div>
+        <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:12px;padding:20px;">
+          <div style="font-size:20px;margin-bottom:6px;">💰</div>
+          <div style="font-weight:600;margin-bottom:4px;">Money Saved</div>
+          <div style="font-size:14px;color:#94a3b8;">Eliminate the hidden cost of manual work via a fraction worth of AI agent one-time cost.</div>
+        </div>
+        <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:12px;padding:20px;">
+          <div style="font-size:20px;margin-bottom:6px;">📞</div>
+          <div style="font-weight:600;margin-bottom:4px;">Missed Leads Caught</div>
+          <div style="font-size:14px;color:#94a3b8;">Most businesses lose 60-80% of after-hours leads. AI responds in seconds, not hours.</div>
+        </div>
+        <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:12px;padding:20px;">
+          <div style="font-size:20px;margin-bottom:6px;">📈</div>
+          <div style="font-weight:600;margin-bottom:4px;">5-Year Value</div>
+          <div style="font-size:14px;color:#94a3b8;">Unlike a salary, AI agents are a one-time setup. The savings compound every single year.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What You Get -->
+    <div style="margin-bottom:48px;">
+      <h2 style="font-size:22px;font-weight:600;margin-bottom:20px;">🔧 What BirkyStudio Automates For You</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+        <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:12px;padding:20px;">
+          <div style="font-size:20px;margin-bottom:6px;">🤖</div>
+          <div style="font-weight:600;margin-bottom:4px;">AI Agent</div>
+          <div style="font-size:14px;color:#94a3b8;$1,297">Drafts emails, manages CRM, searches properties, writes listings, posts to GBP, and more. Installed on your Mac. 24/7.</div>
+        </div>
+        <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:12px;padding:20px;">
+          <div style="font-size:20px;margin-bottom:6px;">📞</div>
+          <div style="font-weight:600;margin-bottom:4px;">AI Receptionist</div>
+          <div style="font-size:14px;color:#94a3b8;">Handles WhatsApp texts ($297) or voice calls ($550) 24/7. Books appointments, answers FAQs, captures leads.</div>
+        </div>
+        <div style="background:#1e1e2e;border:1px solid #2a2a3e;border-radius:12px;padding:20px;">
+          <div style="font-size:20px;margin-bottom:6px;">🌐</div>
+          <div style="font-weight:600;margin-bottom:4px;">Website + Automation</div>
+          <div style="font-size:14px;color:#94a3b8;">Professional website ($499-$1,999) with built-in lead capture, contact forms, and AI chat widget. No monthly fees.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center;background:#1e1e2e;border:1px solid #2a2a3e;border-radius:20px;padding:40px 24px;">
+      <h2 style="font-size:24px;font-weight:600;margin-bottom:12px;">Ready to Claim Those Savings?</h2>
+      <p style="font-size:15px;color:#94a3b8;max-width:500px;margin:0 auto 24px;">
+        Most clients recover their full setup cost within the first month. Book a free 15-minute demo call and we'll map out exactly what AI can do for your business.
+      </p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="/contact" style="display:inline-block;background:linear-gradient(135deg,#818cf8,#6366f1);color:white;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;">Book a Free Demo Call →</a>
+        <a href="https://wa.me/50234775110" style="display:inline-block;background:#25d366;color:white;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;" target="_blank">💬 Ask on WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const hoursSlider = document.getElementById('hoursSlider');
+    const rateSlider = document.getElementById('rateSlider');
+    const autoSlider = document.getElementById('autoSlider');
+    const hoursDisplay = document.getElementById('hoursDisplay');
+    const rateDisplay = document.getElementById('rateDisplay');
+    const autoDisplay = document.getElementById('autoDisplay');
+    const annualSavings = document.getElementById('annualSavings');
+    const hoursReclaimed = document.getElementById('hoursReclaimed');
+    const weeksReclaimed = document.getElementById('weeksReclaimed');
+    const perMonth = document.getElementById('perMonth');
+    const perWeek = document.getElementById('perWeek');
+
+    function calculate() {
+      const hours = parseInt(hoursSlider.value);
+      const rate = parseInt(rateSlider.value);
+      const percent = parseInt(autoSlider.value) / 100;
+
+      const weeklyHours = Math.round(hours * percent);
+      const weeklyCost = Math.round(weeklyHours * rate);
+      const annualCost = weeklyCost * 48; // 48 working weeks (vacation/breaks)
+      const annualHours = weeklyHours * 48;
+      const workWeeks = Math.round(annualHours / 40);
+      const monthlyCost = Math.round(annualCost / 12);
+
+      // Update displays
+      hoursDisplay.textContent = hours;
+      rateDisplay.textContent = rate;
+      autoDisplay.textContent = Math.round(percent * 100);
+
+      annualSavings.textContent = '$' + annualCost.toLocaleString();
+      hoursReclaimed.textContent = annualHours.toLocaleString();
+      weeksReclaimed.textContent = workWeeks;
+      perMonth.textContent = '$' + monthlyCost.toLocaleString();
+      perWeek.textContent = weeklyHours + ' hrs';
+    }
+
+    hoursSlider.addEventListener('input', calculate);
+    rateSlider.addEventListener('input', calculate);
+    autoSlider.addEventListener('input', calculate);
+
+    // Run on load
+    calculate();
+  </script>
+
+  <style>
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 8px;
+      border-radius: 4px;
+      background: #2a2a3e;
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #818cf8, #6366f1);
+      cursor: pointer;
+      border: 3px solid #1e1e2e;
+      box-shadow: 0 0 0 2px #818cf8;
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #818cf8, #6366f1);
+      cursor: pointer;
+      border: 3px solid #1e1e2e;
+      box-shadow: 0 0 0 2px #818cf8;
+    }
+    @media (max-width: 600px) {
+      .results-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</BaseLayout>
