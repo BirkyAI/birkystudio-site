@@ -1,5 +1,5 @@
 ---
-// AI Agent Demo — Birky Studio sales bot, standalone page
+// AI Agent Demo — Birky Studio sales bot, real WhatsApp CTA
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -14,184 +14,72 @@
     body { font-family: 'Inter', sans-serif; background: #0f172a; color: #fff; min-height: 100vh; display: flex; flex-direction: column; }
     .demo-bar { background: linear-gradient(135deg, #6366f1, #ec4899); padding: 10px 20px; text-align: center; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.5px; }
     .demo-bar span { opacity: 0.9; }
-    .header { background: #1e293b; padding: 16px 20px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #334155; flex-wrap: wrap; }
-    .avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #6366f1, #ec4899); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
-    .header-info { flex: 1; min-width: 0; }
-    .header-info h1 { font-size: 1rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .header-info p { font-size: 0.75rem; color: #10b981; margin-top: 2px; }
-    .lang-toggle { flex-shrink: 0; display: flex; background: #334155; border-radius: 8px; overflow: hidden; }
-    .lang-btn { padding: 6px 12px; border: none; background: transparent; color: #94a3b8; font-size: 0.78rem; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; }
-    .lang-btn.active { background: #6366f1; color: #fff; }
-    .chat { flex: 1; overflow-y: auto; padding: 20px 16px; display: flex; flex-direction: column; gap: 12px; max-height: calc(100vh - 220px); }
-    .msg { max-width: 82%; padding: 12px 16px; border-radius: 18px; font-size: 0.92rem; line-height: 1.6; animation: fadeIn 0.3s ease; }
-    .msg.bot { background: #1e293b; color: #e2e8f0; border-bottom-left-radius: 6px; align-self: flex-start; }
-    .msg.user { background: #6366f1; color: #fff; border-bottom-right-radius: 6px; align-self: flex-end; }
-    .msg .time { display: block; font-size: 0.68rem; color: #64748b; margin-top: 6px; text-align: right; }
-    .msg.user .time { color: rgba(255,255,255,0.6); }
-    .typing { background: #1e293b; color: #64748b; border-bottom-left-radius: 6px; align-self: flex-start; padding: 12px 16px; border-radius: 18px; font-size: 0.92rem; }
-    .typing span { display: inline-block; width: 6px; height: 6px; background: #64748b; border-radius: 50%; margin: 0 2px; animation: bounce 1.4s infinite; }
-    .typing span:nth-child(2) { animation-delay: 0.2s; }
-    .typing span:nth-child(3) { animation-delay: 0.4s; }
+    .content { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px 20px 24px; gap: 18px; justify-content: space-between; }
+    .phone-mockup { width: 100%; max-width: 380px; background: #1e293b; border-radius: 24px; padding: 18px; border: 1px solid #334155; display: flex; flex-direction: column; gap: 10px; flex: 1; justify-content: center; }
+    .chat-bubble { max-width: 88%; padding: 10px 14px; border-radius: 16px; font-size: 0.85rem; line-height: 1.55; animation: fadeIn 0.4s ease; }
+    .chat-bubble.bot { background: #334155; color: #e2e8f0; border-bottom-left-radius: 4px; align-self: flex-start; }
+    .chat-bubble.user { background: #6366f1; color: #fff; border-bottom-right-radius: 4px; align-self: flex-end; }
+    .chat-bubble .time { display: block; font-size: 0.65rem; color: #64748b; margin-top: 4px; text-align: right; }
+    .chat-bubble.user .time { color: rgba(255,255,255,0.5); }
+    .typing-dots { align-self: flex-start; padding: 8px 16px; background: #334155; border-radius: 16px; border-bottom-left-radius: 4px; display: flex; gap: 4px; }
+    .typing-dots span { width: 6px; height: 6px; background: #64748b; border-radius: 50%; animation: bounce 1.4s infinite; }
+    .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+    .try-btn { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 14px 32px; border-radius: 100px; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.2s; border: none; cursor: pointer; }
+    .try-btn:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(37,211,102,0.4); }
+    .try-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+    .qr-section { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .qr-section img { width: 120px; height: 120px; border-radius: 12px; border: 2px solid #334155; }
+    .qr-section p { font-size: 0.75rem; color: #64748b; }
     @keyframes bounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-6px); } }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @media (min-height: 700px) { .content { gap: 28px; } }
   </style>
 </head>
 <body>
 
 <div class="demo-bar">
-  <span>🤖 Ask me about Birky Studio — websites, AI agents, pricing, anything!</span>
+  <span>🤖 This demo goes live on WhatsApp — try the real thing below 👇</span>
 </div>
 
-<div class="header">
-  <div class="avatar">🤖</div>
-  <div class="header-info">
-    <h1>Birky Studio</h1>
-    <p>● online — Your AI Sales Assistant</p>
+<div class="content">
+  <!-- Live Conversation Preview -->
+  <div class="phone-mockup">
+    <div class="chat-bubble bot">
+      👋 Hey! I'm Birky Studio's AI assistant. I can tell you about our websites, AI agents, and receptionist plans. What's your business type?
+      <span class="time">10:02 AM</span>
+    </div>
+    <div class="chat-bubble user">
+      I'm a real estate agent in Antigua
+      <span class="time">10:02 AM</span>
+    </div>
+    <div class="typing-dots"><span></span><span></span><span></span></div>
+    <div class="chat-bubble bot" style="animation-delay: 0.2s;">
+      Great, I work with lots of agents here! 🏠 For real estate, I'd recommend our <strong>AI Agent Setup at $1,297</strong> — it comes with a Notion CRM system, property search, email automation, and WhatsApp integration. Want me to walk you through what's included?
+      <span class="time">10:02 AM</span>
+    </div>
+    <div class="chat-bubble user">
+      Yeah tell me more
+      <span class="time">10:03 AM</span>
+    </div>
+    <div class="typing-dots"><span></span><span></span><span></span></div>
+    <div class="chat-bubble bot" style="animation-delay: 0.4s;">
+      Sure! Here's what you get: 🤖 A dedicated AI trained on YOUR business — it learns your listings, your pricing, your process. It handles WhatsApp messages, qualifies leads, drafts emails, and even writes listing descriptions. All bilingual EN/ES. Setup takes one 2-3 hour remote session and you can text it like you're texting me now. Want to see a sample listing description I can write?
+      <span class="time">10:03 AM</span>
+    </div>
   </div>
-  <div class="lang-toggle">
-    <button class="lang-btn active" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('es')">ES</button>
+
+  <!-- CTA -->
+  <a href="https://wa.me/50234775110?text=Hi%20Birky%20Studio!%20I%20saw%20the%20demo%20on%20your%20website%20and%20want%20to%20try%20the%20real%20AI." target="_blank" rel="noopener" class="try-btn">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Try the Real AI on WhatsApp
+  </a>
+
+  <div class="qr-section">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://wa.me/50234775110?text=Hi%20Birky%20Studio!%20I%20saw%20the%20demo%20on%20your%20website" alt="QR Code to try BirkyStudio on WhatsApp" loading="lazy">
+    <p>Scan to try it now ✨</p>
   </div>
 </div>
-
-<div class="chat" id="chat"></div>
-
-<div class="typing" id="typing" style="display:none;"><span></span><span></span><span></span></div>
-
-<div class="quick-replies" id="quickReplies" style="padding:0 16px 12px;display:flex;flex-wrap:wrap;gap:8px;"></div>
-
-<div style="background:#1e293b;padding:12px 16px;display:flex;gap:10px;align-items:center;border-top:1px solid #334155;">
-  <input type="text" id="userInput" placeholder="Ask about Birky Studio..." autocomplete="off" style="flex:1;background:#0f172a;border:1px solid #334155;border-radius:24px;padding:12px 18px;color:#e2e8f0;font-size:0.92rem;font-family:'Inter',sans-serif;outline:none;">
-  <button onclick="sendMessage()" style="width:44px;height:44px;border-radius:50%;background:#6366f1;border:none;color:#fff;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;">➤</button>
-</div>
-
-<div style="text-align:center;padding:12px;font-size:0.72rem;color:#475569;border-top:1px solid #1e293b;">
-  <a href="/contact" style="color:#818cf8;text-decoration:none;font-weight:600;">Get a Free Quote →</a>
-</div>
-
-<script is:inline>
-let currentLang = 'en';
-
-const knowledge = {
-  en: {
-    greeting: "👋 Hey! I'm Birky Studio's AI assistant. I can tell you about:\n\n🌐 **Website Design** — from $499\n🤖 **AI Agent Setup** — $1,297\n📞 **AI Receptionist** — from $297\n\nTry me! Ask about pricing, timelines, what's included, or anything else. Or hit one of the buttons below 👇",
-    responses: {
-      pricing: "💰 Here's a quick overview of our pricing:\n\n**Websites**\n• Starter (1-3 pages): $499 one-time\n• Professional (4-7 pages): $999 one-time\n• Premium (10+ pages): $1,999 one-time\n• Add self-editing CMS: $130\n\n**AI Agents**\n• AI Agent (with Notion CRM): $1,297\n• Optional support: from $49/mo\n\n**AI Receptionist**\n• Text (WhatsApp): $297 one-time\n• Voice (phone + text): $550 setup + Vapi costs (~$30-50/mo)\n• Optional support: $29/mo\n\nAll prices are one-time setup fees. No hidden costs!",
-      websites: "🌐 **Website Design Plans**\n\nAll sites are:\n• Mobile-first & fast loading\n• Bilingual (EN/ES)\n• SEO optimized\n• WhatsApp integrated\n• Delivered in 2-3 days\n\n**Starter — $499** (1-3 pages)\nPerfect for new businesses. Includes: Google Maps, contact form, mobile responsive.\n\n**Professional — $999** (4-7 pages)\nFor growing businesses. Adds: bilingual support, photo gallery, full SEO.\n\n**Premium — $1,999** (10+ pages)\nFor established businesses. Adds: blog setup, custom features, priority support.\n\n➕ Add self-editing CMS for $130 — update text & photos anytime.",
-      aiAgent: "🤖 **AI Agent Setup**\n\nA dedicated AI assistant installed on YOUR computer. Works with your email, files, CRM, and all your business tools. Bilingual, 24/7.\n\n**AI Agent — $1,297**\nIncludes:\n• Notion Real Estate System (CRM, commissions, content planner)\n• Property search & listing generator\n• Email management & automated follow-ups\n• Google Business Profile automation\n• WhatsApp + Telegram + Email\n\n🔄 Optional support from $49/mo — maintenance, prompt tweaks, monthly check-in.",
-      receptionist: "📞 **AI Receptionist Plans**\n\n**Text Receptionist — $297 one-time**\nWhatsApp auto-replies 24/7. Answers FAQs, takes messages, bilingual EN/ES. Setup & training included.\n\n**Voice Receptionist — $550 setup**\nFull AI phone + text. Includes everything in Text PLUS:\n• AI answers phone calls 24/7\n• Natural AI voice (EN/ES)\n• Takes messages & forwards urgent calls\n• Client pays Vapi directly (~$30-50/mo)\n\nOptional support: $29/mo — maintenance & prompt tweaks.",
-      timeline: "⏱️ **How fast does it work?**\n\n• **Websites:** 2-3 days from start to launch\n• **AI Agents:** 2-3 hours setup (remote session)\n• **AI Receptionist (text):** 1-2 days\n• **AI Receptionist (voice):** 2-3 days\n\nWe work fast because our AI-powered process handles the heavy lifting. You review, give feedback, and we go live.",
-      process: "📋 **How It Works**\n\n1️⃣ **Tell Us What You Need**\nShare your business details and goals. We'll recommend the right solution.\n\n2️⃣ **We Build It For You**\nOur AI-powered process creates your solution in 2-3 days. You review, give feedback, and approve.\n\n3️⃣ **Go Live & Grow**\nYour website goes live or your AI agent starts working. 30 days free support included!\n\nThat's it. No complicated onboarding, no hidden steps.",
-      support: "🔧 **Support & Training**\n\nEvery product includes **30 days free support** after setup.\n\n**Optional plans:**\n• AI Agent support: $49/mo — maintenance, prompt tweaks, monthly check-in\n• AI Receptionist support: $29/mo — maintenance & tweaks\n• No contract, cancel anytime\n\nYou're never locked in. If you don't need support, you don't pay.",
-      guarantee: "✅ **Risk-Free**\n\nWe're confident in what we build. If something doesn't work during setup, we'll make it right.\n\nEvery project comes with:\n• 30 days free support\n• Free revisions during setup\n• No lock-in contracts\n\nThousands of small businesses trust us. We're in this for your success.",
-      compare: "📊 **BirkyStudio vs DIY**\n\n**DIY (Wix/Squarespace):** $15-40/mo × 3 years = $540-1,440. Plus 20-40 hours of your time.\n\n**BirkyStudio:** $499-1,999 ONE-TIME. Built in 3 days. No monthly fees. Bilingual, SEO, WhatsApp — all included.\n\n**vs Hiring a Traditional Agency:**\nMost agencies charge $3,000-10,000 for a custom site and take 4-8 weeks. We do it in 3 days for a fraction of the cost.\n\n**vs Hiring a Human Receptionist:**\n$28,000-35,000/year vs our AI Voice Receptionist at $550 setup + $30-50/mo Vapi costs. 90%+ savings.",
-      contact: "📩 **Ready to get started?**\n\nYou have options:\n• 📞 WhatsApp: +502 3477 5110\n• 📧 Email: birky.ai@proton.me\n• 📋 Or fill out our contact form: https://birkystudio.com/contact\n\nWe typically respond within 1 hour. Let's build something great for your business! 🚀",
-      realEstate: "🏠 **AI Agent — $1,297**\n\nBuilt specifically for real estate agents. Comes with:\n\n📋 **Notion Real Estate System**\n• Full CRM — leads, clients, follow-ups\n• Commission tracking with auto-calculations\n• Content planner for social media\n\n🤖 **AI Skills Included**\n• Property search across listing sites\n• Listing description generator (MLS, social, print)\n• Email drafting & automated follow-ups\n• Google Business Profile post automation\n• Lead qualification & nurturing\n\nWorks on WhatsApp, Telegram, Email, and more. Bilingual EN/ES.\n\nMost agents save 10+ hours/week. One-time $1,297. Support from $49/mo.",
-      default: "I can help with:\n\n🌐 **Website Plans** — from $499\n🤖 **AI Agent** — $1,297\n📞 **AI Receptionist** — from $297\n⏱️ **Timeline & Process**\n🔧 **Support & Training**\n✅ **Risk-Free Guarantee**\n📊 **Compare vs DIY**\n📩 **Contact & Get Started**\n\nJust ask! Or click one of the buttons below ⬇️"
-    },
-    quickReplies: ["What's the pricing?", "Tell me about websites", "AI Agent for Real Estate", "How fast do you deliver?"],
-    inputPlaceholder: "Ask about Birky Studio..."
-  },
-  es: {
-    greeting: "👋 ¡Hola! Soy el asistente de IA de Birky Studio. Puedo contarte sobre:\n\n🌐 **Diseño de Sitios Web** — desde Q3,900\n🤖 **Agentes de IA** — Q10,000\n📞 **Recepcionista IA** — desde Q2,500\n\n¡Pruébame! Pregunta sobre precios, tiempos, lo que incluye o lo que quieras. O usa los botones de abajo 👇",
-    responses: {
-      pricing: "💰 Aquí tienes un resumen de precios:\n\n**Sitios Web**\n• Básico (1-3 págs): Q3,900 pago único\n• Profesional (4-7 págs): Q7,800 pago único\n• Premium (10+ págs): Q15,600 pago único\n• Editor CMS: Q1,000\n\n**Agentes IA**\n• Agente IA (con CRM Notion): Q10,000\n• Soporte opcional: desde Q380/mes\n\n**Recepcionista IA**\n• Texto (WhatsApp): Q2,500 pago único\n• Voz (teléfono + texto): Q4,250 config + Vapi (~Q230-390/mes)\n• Soporte opcional: Q225/mes\n\n¡Todos son pago único! Sin costos ocultos.",
-      websites: "🌐 **Planes de Sitios Web**\n\nTodos incluyen:\n• Optimizado para celular\n• Bilingüe (ES/EN)\n• SEO optimizado\n• Integración WhatsApp\n• Entrega en 2-3 días\n\n**Básico — Q3,900** (1-3 págs)\nPerfecto para negocios nuevos. Google Maps, formulario de contacto.\n\n**Profesional — Q7,800** (4-7 págs)\nPara negocios en crecimiento. Bilingüe, galería de fotos, SEO.\n\n**Premium — Q15,600** (10+ págs)\nPara negocios establecidos. Blog, funciones personalizadas, soporte prioritario.\n\n➕ Editor CMS: Q1,000 extra — actualiza texto y fotos sin programar.",
-      aiAgent: "🤖 **Agente de IA**\n\nUn asistente instalado en TU computadora que trabaja con tu correo, archivos y CRM. Bilingüe, 24/7.\n\n**Agente IA — Q10,000**\nIncluye:\n• Sistema Notion (CRM, comisiones, planificador)\n• Búsqueda de propiedades y descripciones\n• Gestión de correo y seguimientos\n• Automatización Google Business\n• WhatsApp + Telegram + Email\n\n🔄 Soporte opcional desde Q380/mes.",
-      receptionist: "📞 **Planes de Recepcionista IA**\n\n**Recepción por Texto — Q2,500**\nWhatsApp 24/7. Responde preguntas, toma mensajes, bilingüe.\n\n**Recepción por Voz — Q4,250**\nIA contesta llamadas 24/7 + todo lo de texto. Voz natural ES/EN. Cliente paga Vapi (~Q230-390/mes).\n\nSoporte opcional: Q225/mes.",
-      timeline: "⏱️ **¿Qué tan rápido?**\n\n• **Sitios web:** 2-3 días\n• **Agentes IA:** 2-3 horas (sesión remota)\n• **Recepcionista (texto):** 1-2 días\n• **Recepcionista (voz):** 2-3 días\n\nTrabajamos rápido gracias a nuestro proceso potenciado por IA.",
-      process: "📋 **¿Cómo funciona?**\n\n1️⃣ Cuéntanos lo que necesitas\n2️⃣ Lo construimos en 2-3 días\n3️⃣ Tú revisas, apruebas, ¡y listo!\n\nIncluye 30 días de soporte gratis.",
-      support: "🔧 **Soporte y Entrenamiento**\n\nCada producto incluye **30 días de soporte gratis**.\n\n**Planes opcionales:**\n• Agente IA: Q380/mes — mantenimiento y ajustes\n• Recepcionista IA: Q225/mes\n• Sin contrato, cancela cuando quieras",
-      guarantee: "✅ **Sin Riesgo**\n\nSi algo no funciona durante la configuración, lo arreglamos.\n\nIncluye:\n• 30 días de soporte gratis\n• Revisiones gratuitas durante la instalación\n• Sin contratos obligatorios",
-      compare: "📊 **BirkyStudio vs Hacerlo Tú Mismo**\n\n**Wix/Squarespace:** Q120-310/mes × 3 años = Q4,300-11,200 + 20-40 horas de tu tiempo.\n\n**BirkyStudio:** Q3,900-15,600 PAGO ÚNICO. Entregado en 3 días.\n\n**vs Agencia Tradicional:**\nLa mayoría cobra Q23,000-78,000 y tarda 4-8 semanas.\n\n**vs Recepcionista Humano:**\nQ5,000-8,000/mes vs Q4,250 + Q230-390/mes de Vapi. ¡90% de ahorro!",
-      contact: "📩 **¿Listo para empezar?**\n\n📞 WhatsApp: +502 3477 5110\n📧 Email: birky.ai@proton.me\n📋 Formulario: https://birkystudio.com/es/contacto\n\n¡Respondemos en menos de 1 hora! 🚀",
-      realEstate: "🏠 **Agente IA — Q10,000**\n\nDiseñado específicamente para corredores. Incluye:\n\n📋 **Sistema Notion de Bienes Raíces**\n• CRM completo\n• Seguimiento de comisiones\n• Planificador de contenido\n\n🤖 **Habilidades de IA**\n• Búsqueda de propiedades\n• Generador de descripciones\n• Correos y seguimientos automáticos\n• Automatización Google Business\n• Calificación de leads\n\nFunciona en WhatsApp, Telegram, Email. Bilingüe ES/EN.\n\nLa mayoría ahorra 10+ horas/semana. Pago único Q10,000. Soporte desde Q380/mes.",
-      default: "Puedo ayudarte con:\n\n🌐 **Sitios Web** — desde Q3,900\n🤖 **Agente IA** — Q10,000\n📞 **Recepcionista IA** — desde Q2,500\n⏱️ **Tiempos y Proceso**\n🔧 **Soporte**\n✅ **Garantía**\n📊 **Comparativa**\n📩 **Contacto**\n\n¡Pregunta lo que quieras! ⬇️"
-    },
-    quickReplies: ["¿Cuáles son los precios?", "Sitios web", "Agente IA para Bienes Raíces", "¿Qué tan rápido entregan?"],
-    inputPlaceholder: "Pregunta sobre Birky Studio..."
-  }
-};
-
-function matchIntent(text) {
-  const t = text.toLowerCase();
-  if (/pric(e|ing)|precio|cuest|cost|cuánto|cuanto|how much|budget|presupuesto|rates?|tarif/.test(t)) return 'pricing';
-  if (/websit(e|es)|site|web|págin|sitio|starter|basic|basico|profesional|premium/i.test(t)) return 'websites';
-  if (/agent(e|s)?|ia|ai\b|ai agent|asistente|real estate|bienes raíces|corredor|realtor|real estate agent/i.test(t) && !/receptionist|recepcion/i.test(t)) return 'aiAgent';
-  if (/real estate|bienes raíce|realtor|corredor|property|propiedad(es)?|listing/i.test(t) && /agent|ia|ai\b/i.test(t)) return 'realEstate';
-  if (/receptionist|recepcion|recepcionista|voice|voz|phone|teléfono|telefono|llamad|call/i.test(t)) return 'receptionist';
-  if (/timeline|tiempo|how long|cuánto tard|fast|rápid|delivery|entrega|day|días?/i.test(t)) return 'timeline';
-  if (/process|proceso|cómo funcion|how.works|steps?|pasos?/i.test(t)) return 'process';
-  if (/support|soporte|manten|maintenance|help|ayuda|training|entrenam/i.test(t)) return 'support';
-  if (/guarantee|garant|risk|riesg|refund|reembol|safe|segur/i.test(t)) return 'guarantee';
-  if (/vs\b|compared?|compar|different|versus|wix|squarespace|diferenc/i.test(t)) return 'compare';
-  if (/contact|contacto|whatsapp|email|correo|message|mensaj|start|empezar|get started/i.test(t)) return 'contact';
-  return 'default';
-}
-
-function getTime() {
-  return new Date().toLocaleTimeString(currentLang === 'en' ? 'en-US' : 'es-GT', { hour: '2-digit', minute: '2-digit' });
-}
-
-function addMessage(text, sender) {
-  const chat = document.getElementById('chat');
-  const msg = document.createElement('div');
-  msg.className = 'msg ' + sender;
-  msg.innerHTML = text.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') + '<span class="time">' + getTime() + '</span>';
-  chat.appendChild(msg);
-  chat.scrollTop = chat.scrollHeight;
-}
-
-function showTyping() {
-  document.getElementById('typing').style.display = '';
-}
-
-function hideTyping() {
-  document.getElementById('typing').style.display = 'none';
-}
-
-function sendMessage(text) {
-  const input = document.getElementById('userInput');
-  const message = text || input.value.trim();
-  if (!message) return;
-  if (!text) input.value = '';
-  addMessage(message, 'user');
-  document.getElementById('quickReplies').innerHTML = '';
-  showTyping();
-  setTimeout(() => {
-    hideTyping();
-    const intent = matchIntent(message);
-    const response = knowledge[currentLang].responses[intent];
-    addMessage(response, 'bot');
-    setTimeout(() => showQuickReplies(), 500);
-  }, 600 + Math.random() * 800);
-}
-
-function showQuickReplies() {
-  const container = document.getElementById('quickReplies');
-  const replies = knowledge[currentLang].quickReplies;
-  container.innerHTML = replies.map(r =>
-    '<button style="padding:8px 16px;border:1px solid #334155;border-radius:100px;background:#1e293b;color:#a5b4fc;font-size:0.82rem;font-weight:500;cursor:pointer;font-family:\'Inter\',sans-serif;" onclick="sendMessage(\'' + r.replace(/'/g, "\\'") + '\')">' + r + '</button>'
-  ).join('');
-}
-
-function setLang(lang) {
-  currentLang = lang;
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.textContent.trim() === lang.toUpperCase());
-  });
-  document.getElementById('userInput').placeholder = knowledge[lang].inputPlaceholder;
-  document.getElementById('chat').innerHTML = '';
-  addMessage(knowledge[lang].greeting, 'bot');
-  showQuickReplies();
-}
-
-document.getElementById('userInput').addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') sendMessage();
-});
-
-setLang('en');
-</script>
 
 </body>
 </html>

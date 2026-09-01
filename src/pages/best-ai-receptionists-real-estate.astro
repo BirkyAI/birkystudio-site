@@ -115,6 +115,18 @@ const articleLD = JSON.stringify({
         </p>
       </div>
 
+      <!-- Sticky lead magnet prompt -->
+      <div style="background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.25);border-radius:12px;padding:20px 24px;margin-bottom:48px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between;">
+        <div>
+          <p style="color:#cbd5e1;font-size:0.9rem;">
+            📋 <strong style="color:white;">Not sure which one is right for you?</strong> Get our free 5-question buyer's guide.
+          </p>
+        </div>
+        <a href="#lead-form" style="background:linear-gradient(135deg,#6366f1,#818cf8);color:white;padding:10px 24px;border-radius:10px;font-weight:600;font-size:0.9rem;text-decoration:none;white-space:nowrap;flex-shrink:0;">
+          Get the Free Guide
+        </a>
+      </div>
+
       <!-- Why This Matters -->
       <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why do real estate agents need an AI receptionist?</h2>
       <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
@@ -539,6 +551,77 @@ const articleLD = JSON.stringify({
 
     </div>
   </section>
+
+  <!-- Lead Magnet -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+    <div class="container" style="max-width:700px;">
+      <div id="lead-form" style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:20px;padding:48px 40px;border:1px solid rgba(129,140,248,0.3);text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">📋</div>
+        <h2 style="color:white;font-size:1.6rem;margin-bottom:12px;">
+          Get Our Free AI Receptionist Buyer's Guide
+        </h2>
+        <p style="color:#cbd5e1;line-height:1.7;margin-bottom:8px;font-size:0.95rem;">
+          <strong style="color:white;">5 Questions to Ask Before You Buy.</strong> Stop guessing. This short guide walks you through exactly what to look for, what to avoid, and which solution fits your business.
+        </p>
+        <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:28px;">
+          Includes a cost comparison checklist so you don't overpay.
+        </p>
+
+        <form id="lead-form" style="display:flex;flex-direction:column;gap:14px;max-width:420px;margin:0 auto;">
+          <input type="text" id="lf-name" placeholder="Your name" required
+            style="padding:14px 18px;border-radius:12px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-size:0.95rem;font-family:'Inter',sans-serif;outline:none;backdrop-filter:blur(4px);">
+          <input type="email" id="lf-email" placeholder="Your email" required
+            style="padding:14px 18px;border-radius:12px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-size:0.95rem;font-family:'Inter',sans-serif;outline:none;backdrop-filter:blur(4px);">
+          <input type="tel" id="lf-phone" placeholder="Your phone (optional)"
+            style="padding:14px 18px;border-radius:12px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-size:0.95rem;font-family:'Inter',sans-serif;outline:none;backdrop-filter:blur(4px);">
+          <select id="lf-interest" required
+            style="padding:14px 18px;border-radius:12px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-size:0.95rem;font-family:'Inter',sans-serif;outline:none;backdrop-filter:blur(4px);">
+            <option value="" disabled selected style="color:#94a3b8;background:#1e1b4b;">I'm interested in...</option>
+            <option value="text" style="color:white;background:#1e1b4b;">WhatsApp AI Receptionist (Text)</option>
+            <option value="voice" style="color:white;background:#1e1b4b;">AI Voice Receptionist (Phone + Text)</option>
+            <option value="both" style="color:white;background:#1e1b4b;">Both Text & Voice</option>
+            <option value="not_sure" style="color:white;background:#1e1b4b;">Just browsing / Not sure yet</option>
+          </select>
+          <button type="submit"
+            class="btn btn-primary"
+            style="font-size:1.05rem;padding:16px 32px;border:none;cursor:pointer;margin-top:6px;">
+            📥 Get Instant Access →
+          </button>
+        </form>
+        <p style="color:#64748b;font-size:0.78rem;margin-top:16px;">
+          You'll get the guide instantly. We'll reach out if you have questions — no spam, no pressure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    document.getElementById('lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('lf-name').value.trim();
+      const email = document.getElementById('lf-email').value.trim();
+      const phone = document.getElementById('lf-phone').value.trim();
+      const interest = document.getElementById('lf-interest').value;
+      const interestLabels = { text: 'WhatsApp AI (Text)', voice: 'Voice (Phone+Text)', both: 'Both Text & Voice', not_sure: 'Just browsing' };
+      
+      // Send lead silently to Google Apps Script
+      fetch('https://script.google.com/macros/s/AKfycbyY6p6a7Mpve8MsSBx5R6RU1JbuNctGJHWC827dpbjpMeQOwXZlW8Bu01RXk8N0mvHr/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone,
+          interest: interestLabels[interest] || interest,
+          source: 'Best AI Receptionists page'
+        })
+      });
+      
+      // Redirect straight to the guide
+      window.location.href = '/ai-receptionist-buyers-guide/';
+    });
+  </script>
 
   <style>
     summary { list-style: none; }

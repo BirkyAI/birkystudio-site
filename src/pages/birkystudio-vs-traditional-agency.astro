@@ -1,0 +1,418 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a traditional agency charge vs BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A traditional web or marketing agency charges $3,000-$15,000 for a website and $2,000-$10,000/month for ongoing marketing, SEO, or phone answering services. BirkyStudio charges $297 one-time for a text receptionist, $550 one-time for a voice+text receptionist, $499-$1,999 one-time for a website, and $549-$799 one-time for a custom AI agent. Over 12 months, a traditional agency costs $5,000-$70,000+ while BirkyStudio costs $297-$3,797 total."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a traditional agency build an AI receptionist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most traditional agencies do not build AI receptionists or voice agents. They focus on web design, branding, and advertising. Some digital agencies offer phone answering services through outsourced human call centers, but these cost $500-$2,500/month per line. BirkyStudio specializes specifically in AI voice and text receptionists that answer calls 24/7, qualify leads, and handle WhatsApp messages — which most agencies can't do at any price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is hiring a traditional agency faster than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A traditional agency takes 4-12 weeks to design and launch a website, and 2-4 weeks to set up a marketing campaign. BirkyStudio delivers a professional website in 5-7 days, an AI text receptionist in 48-72 hours, and a custom AI agent in 3-5 days. The difference is BirkyStudio uses AI-powered workflows with pre-built components rather than starting from scratch on every project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need both a traditional agency and BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most real estate agents and small business owners, BirkyStudio replaces 80% of what they would hire a traditional agency for: professional website, AI phone answering, WhatsApp automation, and custom AI workflows. A traditional agency is still useful for large-scale branding campaigns, TV/radio advertising, and enterprise-level marketing strategy. But for day-to-day digital presence and lead handling, BirkyStudio is faster and more affordable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a traditional phone answering service cost per month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Traditional human answering services cost $500-$2,500/month depending on call volume and hours of coverage. They cover only set business hours, require contracts, and every call is staffed by a human operator. BirkyStudio's AI voice receptionist costs $550 one-time setup plus $30-50/month for the voice provider — roughly 90% cheaper in year one, and it answers calls 24/7 with no breaks, overtime, or scheduling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of ongoing costs come with a traditional agency vs BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Traditional agencies charge monthly retainers of $1,000-$10,000+ for website maintenance, SEO, content updates, and support. BirkyStudio's optional support is $29/month for receptionists and $49/month for AI agents — both optional and cancellable any time. Websites are one-time payments with a CMS add-on ($130) if you want to edit content yourself. There are no ongoing retainers or contracts."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Traditional Agency (2026) — Cost & Speed Comparison",
+  "description": "Honest head-to-head comparison of hiring a traditional marketing or web agency vs using BirkyStudio's AI automation services. Real prices, timelines, and what you actually get for your money.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Traditional Agency (2026 Cost Comparison)"
+  description="BirkyStudio vs hiring a traditional agency — real cost comparison, delivery speeds, and what you actually get. Websites, AI receptionists, and custom agents vs agency retainers."
+  image="/images/birky-mascot.jpg"
+>
+  <script type="application/ld+json" set:html={faqLD} />
+  <script type="application/ld+json" set:html={articleLD} />
+
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated September 2026 • Honest comparison, real prices
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Traditional Agency<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Should You Hire an Agency or Go AI?</span>
+      </h1>
+      <p style="font-size:1.1rem;color:#cbd5e1;line-height:1.8;max-width:700px;">
+        Traditional agencies charge $3k-$15k for a website and $2k-$10k/month for marketing. BirkyStudio does the same work — websites, AI receptionists, custom AI agents — for a fraction of the cost and in days, not months. Here's exactly how they compare.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You're a real estate agent or small business owner who needs a professional website, AI phone answering, WhatsApp automation, or custom AI workflows — and you want it done in days at transparent one-time prices. Best if you're spending under $50k/year on agency services and want 5-10x more output for your money.<br><br>
+          <strong style="color:white;">Choose a traditional agency if:</strong> You need a full-scale branding overhaul, TV or radio advertising campaign, enterprise-level marketing strategy, or a large multi-location rollout. Agencies excel at high-budget, long-term brand building where strategy depth matters more than speed or cost efficiency.
+        </p>
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare a traditional agency vs BirkyStudio?</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        Every business needs a website, a way to answer calls, and a system to handle leads. The traditional approach is to hire an agency — an expensive, slow, relationship-driven process that delivers quality but costs a fortune and takes months.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        BirkyStudio flips the model: AI-powered automation replaces the agency's team overhead, custom-built components replace months of scoping and development, and one-time pricing replaces monthly retainers. The output is comparable — a professional website, 24/7 phone answering, lead capture — but delivered in days at a fraction of the cost.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:40px;">
+        This comparison breaks down the real numbers so you can decide which model actually fits your business.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Traditional Agency — Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Traditional Agency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499-$1,999 one-time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$3,000-$15,000 one-time</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Delivery Time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">5-7 days</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">4-12 weeks</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Phone Answering (24/7)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">✅ $550 one-time + ~$30-50/mo</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ $500-$2,500/mo (human service)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp AI Automation</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">✅ $297 one-time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">❌ Most agencies don't offer this</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Custom AI Agent</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">✅ $549-$799 one-time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">❌ Rarely offered; requires dev team</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">One-time + optional support</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Monthly retainer ($1k-$10k+/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Ongoing Maintenance Cost</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$0 or $29-$49/mo optional</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$1,000-$10,000+/mo retainer</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">✅ Included</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Extra cost (+$500-$2,000)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead Capture System</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">✅ Built into every setup</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Separate setup, extra cost</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Integration</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">✅ Built-in Notion CRM</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ Additional cost + setup time</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time (All Services)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">48 hours - 7 days</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">4-12 weeks</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Do-It-Yourself vs Done-For-You</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Fully done-for-you</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Done-for-you (but slow + expensive)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Length</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">None — pay per service</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">3-12 month contracts common</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">⚠️ 30-day satisfaction guarantee</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">❌ Free trial not standard</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 id="cost-comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison — 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Traditional Agency (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website only</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499-$1,999 one-time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$3,000-$15,000</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website + AI phone answering</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,049-$2,549 + ~$360-$600 voice cost</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$9,000-$45,000 (website + answering service)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website + AI phone + custom AI agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,598-$3,348 + ~$360-$600 voice cost</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$15,000-$60,000 (agency + answering service + dev)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Full suite + ongoing support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$2,245-$3,995 + ~$360-$600 voice cost</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">$20,000-$85,000+ (agency retainer for 12 months)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <div id="birkystudio" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">BirkyStudio</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is an AI automation service for real estate agents and small business owners. Unlike a traditional agency that charges retainers and takes months, BirkyStudio delivers one-time priced services — professional websites, AI voice receptionists, WhatsApp text agents, and custom AI workflows — in days. Every setup is done-for-you: Luna builds your website, trains your AI on your specific business, and integrates everything so it works out of the box.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          The key advantage is pricing transparency. A traditional agency's $5,000 website comes with a $2,000/month maintenance retainer. BirkyStudio's $999 professional website is a one-time payment — optional support at $49/month if you want it, nothing if you don't. Same output, radically different cost structure.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          The tradeoff is scope. A large agency with 10+ people can handle brand strategy, TV commercials, PR campaigns, and enterprise-level design systems. BirkyStudio focuses on the core digital presence that 95% of small businesses actually need — website, phone answering, lead capture, automation — and doesn't try to be a full-service ad agency.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>90% cheaper than traditional agency for comparable output</li>
+              <li>5-7 day delivery vs 4-12 weeks</li>
+              <li>One-time pricing — no retainers or contracts</li>
+              <li>AI receptionist + website + WhatsApp in one setup</li>
+              <li>Bilingual English/Spanish included at no extra cost</li>
+              <li>Built-in CRM and lead capture system</li>
+              <li>Easy to add services later without renegotiating a contract</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Not suitable for enterprise-level brand campaigns</li>
+              <li>No TV, radio, or print advertising capability</li>
+              <li>No dedicated account manager or weekly strategy calls</li>
+              <li>Limited to digital presence — website, phone, automation</li>
+              <li>Best for businesses with clear needs, not exploratory strategy</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Websites $499-$1,999 one-time · Text Receptionist $297 one-time · Voice Receptionist $550 one-time (Vapi ~$30-50/mo) · AI Agent $549-$799 one-time · Optional support $29-$49/mo
+        </p>
+      </div>
+
+      <!-- Detailed Review: Traditional Agency -->
+      <div id="traditional-agency" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Traditional Agency</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          A traditional agency provides professional services — web design, marketing, branding, advertising — through a team of humans. You pay for expertise, strategy, and execution delivered by designers, developers, copywriters, and account managers. The output is high quality, the process is thorough, and the cost reflects the team size and time involved.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Agencies shine when the project is complex and high-budget. A full brand launch, multi-channel campaign, or enterprise website with custom integrations is exactly what agencies are built for. They bring strategy depth, creative firepower, and project management that a solo operator or AI service can't match.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          The tradeoff is cost and speed. A typical agency website costs $5,000-$15,000 and takes 2-3 months. Ongoing retainers run $2,000-$10,000/month. For a small business or real estate agent, that investment only makes sense if the expected return justifies 5-10x the cost of a BirkyStudio setup. Most agents never need the depth an agency provides — they just need a professional site and a way to answer calls.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Full-service strategy — branding, design, copy, development</li>
+              <li>Dedicated account manager and point of contact</li>
+              <li>Enterprise-grade design and development quality</li>
+              <li>Multi-channel campaigns (web, social, print, TV, radio)</li>
+              <li>Scalable for large organizations with complex needs</li>
+              <li>Long-term brand building expertise</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>5-20x more expensive than AI automation</li>
+              <li>4-12 week delivery vs 5-7 days</li>
+              <li>Monthly retainers with 3-12 month contracts</li>
+              <li>No 24/7 phone answering (outsourced call centers extra)</li>
+              <li>No AI or WhatsApp automation capability built-in</li>
+              <li>Changes and updates billed hourly ($100-$250/hr)</li>
+              <li>Oversold for small businesses that just need basics</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Website $3k-$15k one-time · Ongoing retainer $2k-$10k+/mo · Phone answering $500-$2,500/mo · Hourly changes $100-$250/hr
+        </p>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to choose between BirkyStudio and a traditional agency</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:32px;">
+        Honest scenarios based on the kind of business you run and what you actually need.
+      </p>
+
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;margin-bottom:24px;">
+        <p style="color:white;font-weight:700;margin-bottom:8px;">🏠 Scenario 1: You're a real estate agent who needs a website + phone answering</p>
+        <p style="color:#cbd5e1;line-height:1.8;">BirkyStudio is the clear winner here. A $999 professional website with AI voice receptionist comes to ~$1,549 + voice costs — delivered in 7 days. A traditional agency would charge $5k-$10k for the same site and $500-$2,500/month for a human answering service. You'd spend $11,000-$40,000 in year one for the same capability. <strong style="color:white;">→ Choose BirkyStudio.</strong></p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;margin-bottom:24px;">
+        <p style="color:white;font-weight:700;margin-bottom:8px;">🏢 Scenario 2: You run a multi-location business with 5+ offices</p>
+        <p style="color:#cbd5e1;line-height:1.8;">A traditional agency might be better for a unified brand strategy across locations. They can design a cohesive system that works across all sites, manage a full brand guide, and coordinate with local marketing efforts. That said, you could still use BirkyStudio for the AI phone systems at each location and save $30k+/year. <strong style="color:white;">→ Use agency for brand, BirkyStudio for operations.</strong></p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;margin-bottom:24px;">
+        <p style="color:white;font-weight:700;margin-bottom:8px;">💰 Scenario 3: You have a limited budget ($500-$2,000 total)</p>
+        <p style="color:#cbd5e1;line-height:1.8;">An agency won't even take your call at this budget. Most charge $5k+ minimum for any project. BirkyStudio can build a starter website ($499), an AI text receptionist ($297), or both ($796) — all professional quality, all done for you. This is BirkyStudio's sweet spot. <strong style="color:white;">→ Choose BirkyStudio.</strong></p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;margin-bottom:24px;">
+        <p style="color:white;font-weight:700;margin-bottom:8px;">🎯 Scenario 4: You need a full brand launch with TV/radio/print</p>
+        <p style="color:#cbd5e1;line-height:1.8;">BirkyStudio doesn't do broadcast media, print design, or PR campaigns. An agency with media buying capabilities, creative directors, and campaign strategists is the right call here. Use BirkyStudio for your digital foundation (website + phone) and the agency for the campaign. <strong style="color:white;">→ Use both — each for their specialty.</strong></p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;margin-bottom:24px;">
+        <p style="color:white;font-weight:700;margin-bottom:8px;">⚡ Scenario 5: You need everything live this week</p>
+        <p style="color:#cbd5e1;line-height:1.8;">Agencies work on 4-12 week timelines. BirkyStudio delivers in 5-7 days for websites and 48-72 hours for AI receptionists. If you need to be up and running this week and can't wait two months, BirkyStudio is your only real option. <strong style="color:white;">→ Choose BirkyStudio.</strong></p>
+      </div>
+
+      <!-- Bottom Line -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:40px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.6rem;margin-bottom:16px;">🏁 The Bottom Line</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          If you're a real estate agent or small business owner who needs a professional digital presence — website, 24/7 phone answering, lead capture, automation — <strong style="color:white;">BirkyStudio delivers 90% of what an agency would at 10-20% of the cost, in days instead of months.</strong>
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Traditional agencies remain the better choice for high-budget, multi-channel brand campaigns that require a team of strategists, creatives, and media buyers. But for the overwhelming majority of small businesses — especially real estate agents — the agency model is overkill. You don't need a $15,000 website and a $5,000/month retainer to answer calls and capture leads. You need a setup that works, delivered fast, at a price that makes sense.
+        </p>
+        <p style="color:white;font-weight:600;font-size:1.1rem;text-align:center;margin-top:24px;">
+          A $999 professional website, $550 AI voice receptionist, and $0/month in retainers beats a $15,000 website and $5,000/month retainer. Every time.
+        </p>
+        <div style="text-align:center;margin-top:24px;">
+          <a href="/contact" style="display:inline-block;padding:14px 36px;background:linear-gradient(135deg,#818cf8,#6366f1);color:white;font-weight:600;border-radius:12px;text-decoration:none;font-size:1rem;">Talk to BirkyStudio →</a>
+          <p style="color:#cbd5e1;font-size:0.85rem;margin-top:12px;">No pressure, no sales pitch — just a conversation about what you actually need.</p>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:64px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin-bottom:12px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">What's the biggest cost difference between an agency and BirkyStudio?</p>
+          <p style="color:#cbd5e1;line-height:1.8;">The pricing model. Agencies charge ongoing monthly retainers ($1,000-$10,000+ per month) that never end. BirkyStudio charges one-time prices — you pay once and own the result. Over 12 months, a typical agency engagement costs $10,000-$70,000+. BirkyStudio costs $297-$3,797 total for the same core services. The difference is the team overhead: agencies pay designers, developers, account managers, and sales people. BirkyStudio uses AI automation and streamlined delivery to eliminate that overhead.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin-bottom:12px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">Can BirkyStudio handle complex web development like custom APIs or databases?</p>
+          <p style="color:#cbd5e1;line-height:1.8;">BirkyStudio builds professional sites with lead capture, contact forms, blog/CMS, IDX integration for real estate, and bilingual capability. For custom API integrations, database-driven applications, or complex e-commerce — think a custom booking platform with payment processing — a development agency is still the better choice. BirkyStudio excels at the 80% of business websites that need to look professional, capture leads, and work reliably without custom engineering.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin-bottom:12px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">Does BirkyStudio offer ongoing marketing like an agency would?</p>
+          <p style="color:#cbd5e1;line-height:1.8;">BirkyStudio's core focus is setup and automation — building the website, AI receptionist, and workflows that run your business. Ongoing support ($29-$49/month) covers maintenance and minor updates. For ongoing content marketing, SEO campaigns, and advertising management, BirkyStudio is best paired with a freelancer or specialist — you don't need a full agency retainer for bi-weekly blog posts and ad tweaks.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin-bottom:12px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">What happens if I need changes after BirkyStudio builds my site?</p>
+          <p style="color:#cbd5e1;line-height:1.8;">Minor updates are included with the optional support plan ($29-$49/month). Larger changes — new pages, new features, redesigns — are billed as service upgrades. There's no retainer lock-in and no hourly rate negotiation. You request what you need, get a flat price, and decide. With an agency, changes are billed at $100-$250/hour under the retainer, and they often require a contract amendment for anything outside scope.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin-bottom:12px;">
+          <p style="color:white;font-weight:600;margin-bottom:8px;">Is BirkyStudio suitable for a business that's pre-revenue or just starting out?</p>
+          <p style="color:#cbd5e1;line-height:1.8;">Absolutely. BirkyStudio's $499 starter website and $297 text receptionist are designed for businesses that need a professional presence without spending their entire startup budget. A traditional agency won't take a project under $5,000 and typically requires a 3-month minimum commitment. For a pre-revenue business, BirkyStudio is the only option that makes financial sense.</p>
+        </div>
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.02);border-radius:16px;padding:24px;margin-bottom:64px;">
+        <h3 style="color:#818cf8;font-size:1rem;margin-bottom:12px;">📋 Sources</h3>
+        <p style="color:#64748b;font-size:0.85rem;line-height:1.8;">
+          Prices verified on each company's pricing page in September 2026. Agency pricing based on industry averages from Clutch.co, GoodFirms, and WebFX 2026 reports. Answering service pricing from Ruby Receptionists, AnswerConnect, and Smith.ai published rates. All prices in USD. Actual agency quotes may vary by location, scope, and agency size.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
