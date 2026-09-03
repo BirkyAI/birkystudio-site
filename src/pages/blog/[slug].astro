@@ -112,7 +112,59 @@ const jsonLD = JSON.stringify({
     .prose code { background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; }
     .prose pre { background: #0f172a; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; overflow-x: auto; margin: 1.5rem 0; }
     .prose pre code { background: none; padding: 0; color: inherit; }
+    /* Tables — room to breathe (Sep 2026) */
+    .prose table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 1.75rem 0;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .prose thead {
+      background: #f8fafc;
+    }
+    .prose th {
+      text-align: left;
+      font-weight: 700;
+      color: #0f172a;
+      padding: 16px 24px;
+      border-bottom: 2px solid #e2e8f0;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+    }
+    .prose td {
+      padding: 14px 24px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+      vertical-align: top;
+    }
+    .prose tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .prose tbody tr:nth-child(even) {
+      background: #fafbfc;
+    }
+    .prose tbody tr:hover {
+      background: #f8fafc;
+    }
+    .prose tbody tr:last-child td {
+      font-weight: 600;
+      background: #f8fafc;
+    }
     @media (max-width: 640px) {
+      .prose table {
+        font-size: 0.85rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      .prose th, .prose td { padding: 12px 16px; }
       .quiz-lead { grid-template-columns: 1fr !important; text-align: center; }
       .quiz-lead a { width: 100%; }
     }
