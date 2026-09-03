@@ -12,7 +12,11 @@ const organizationLD = JSON.stringify({
   "telephone": "+50234775110",
   "areaServed": "Worldwide",
   "serviceType": ["Web Design", "AI Agent Setup", "AI Voice Receptionist"],
-  "sameAs": [],
+  "sameAs": [
+    "https://www.facebook.com/Birky.Studio",
+    "https://www.instagram.com/birky.studio/",
+    "https://www.tiktok.com/@birky_studio"
+  ],
   "offers": [
     {
       "@type": "Offer",
@@ -48,6 +52,24 @@ const organizationLD = JSON.stringify({
       "@type": "Offer",
       "name": "Voice Receptionist Bundle",
       "price": "550",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Self-Editing CMS",
+      "price": "130",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Content Booster (Monthly)",
+      "price": "149",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Content Pro (Monthly)",
+      "price": "199",
       "priceCurrency": "USD"
     }
   ]
@@ -168,7 +190,7 @@ const faqLD = JSON.stringify({
         <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">A dedicated AI assistant installed on your computer — works with your email, files, and CRM. Bilingual EN/ES, 24/7.</p>
       </div>
       
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:500px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
         <!-- AI Agent Setup -->
         <div style="background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(99,102,241,0.2));border:2px solid rgba(236,72,153,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
           <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f472b6,#ec4899);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Most Popular</div>
@@ -179,22 +201,35 @@ const faqLD = JSON.stringify({
             <span style="color:#94a3b8;"> one-time setup</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> <strong style="color:white;">Notion Real Estate System</strong> — CRM, commissions, content planner</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Property search & listing description generator</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Answers customer questions & takes messages 24/7</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Email management & automated follow-ups</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Google Business Profile content automation</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Multi-platform (WhatsApp + Telegram + Email)</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES) + CRM integration</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> <strong style="color:white;">Notion Real Estate System</strong> — CRM, commissions, content planner</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Property search & listing description generator</li>
           </ul>
           <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">Get Started</a>
         </div>
-      </div>
 
-      <!-- Note -->
-      <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
-        <p style="color:#94a3b8;font-size:0.95rem;">
-          <strong style="color:white;">Business AI Partner Retainer:</strong> $197/month — includes monthly optimization call, performance report, prompt tweaks, maintenance, and priority support. No contract, cancel anytime.
-        </p>
+        <!-- Business AI Partner Retainer -->
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
+          <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Business AI Partner Retainer</h3>
+          <p style="color:#94a3b8;margin-bottom:24px;">Ongoing optimization & priority support</p>
+          <div style="margin-bottom:8px;">
+            <span style="font-size:3rem;font-weight:800;color:white;">$197</span>
+            <span style="color:#94a3b8;">/month</span>
+          </div>
+          <p style="color:#f472b6;font-size:0.85rem;font-weight:500;margin-bottom:24px;">No contract — cancel anytime</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Monthly optimization call</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Monthly performance report</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Prompt tweaks & improvements</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Ongoing maintenance & updates</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Priority support — no waiting</li>
+          </ul>
+          <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
+        </div>
       </div>
     </div>
   </section>
@@ -241,7 +276,7 @@ const faqLD = JSON.stringify({
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Everything in Starter</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES)</li>
             <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Photo gallery</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> SEO optimization</li>
+            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> SEO &amp; AEO optimization</li>
           </ul>
           <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
         </div>
@@ -265,11 +300,68 @@ const faqLD = JSON.stringify({
         </div>
       </div>
       
-      <!-- Optional Add-on -->
-      <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:600px;margin-left:auto;margin-right:auto;">
-        <p style="color:#94a3b8;font-size:0.95rem;">
-          <strong style="color:white;">Need to edit your site yourself?</strong> Add our self-editing CMS for just <strong style="color:#818cf8;">$130</strong> one-time. Update text and photos anytime without coding.
-        </p>
+      <!-- Add-on Services -->
+      <div style="margin-top:48px;">
+        <div style="text-align:center;margin-bottom:32px;">
+          <p style="color:#94a3b8;font-size:0.95rem;">Add these services to any website plan — monthly or one-time.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;max-width:1000px;margin:0 auto;">
+        
+          <!-- CMS Add-on -->
+          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
+            <div style="font-size:2rem;margin-bottom:10px;">🖥️</div>
+            <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Self-Editing CMS</h3>
+            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">Update text &amp; photos anytime</p>
+            <div style="margin-bottom:16px;">
+              <span style="font-size:2rem;font-weight:800;color:white;">$130</span>
+              <span style="color:#94a3b8;font-size:0.9rem;"> one-time</span>
+            </div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Edit text &amp; images yourself</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> No coding required</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Add new pages anytime</li>
+            </ul>
+            <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;">Add to Website →</a>
+          </div>
+
+          <!-- Content Booster - $149 -->
+          <div style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(6,182,212,0.15));border:2px solid rgba(99,102,241,0.4);border-radius:20px;padding:28px;position:relative;display:flex;flex-direction:column;">
+            <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#818cf8,#06b6d4);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Best Seller</div>
+            <div style="font-size:2rem;margin-bottom:10px;">📝</div>
+            <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Content Booster</h3>
+            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">Daily blog + weekly GBP posts</p>
+            <div style="margin-bottom:8px;">
+              <span style="font-size:2rem;font-weight:800;color:white;">$149</span>
+              <span style="color:#94a3b8;font-size:0.9rem;">/month</span>
+            </div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Daily blog posts written &amp; published</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> 3x weekly GBP posts</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> SEO &amp; AEO-optimized content</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES)</li>
+            </ul>
+            <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;background:linear-gradient(135deg,#818cf8,#6366f1);box-shadow:0 4px 15px rgba(99,102,241,0.3);">Get Started</a>
+          </div>
+
+          <!-- Content Pro - $199 -->
+          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
+            <div style="font-size:2rem;margin-bottom:10px;">🚀</div>
+            <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Content Pro</h3>
+            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">All content + monthly updates</p>
+            <div style="margin-bottom:8px;">
+              <span style="font-size:2rem;font-weight:800;color:white;">$199</span>
+              <span style="color:#94a3b8;font-size:0.9rem;">/month</span>
+            </div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Everything in Content Booster</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Up to 5 monthly page changes</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Priority support</li>
+              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Monthly performance report</li>
+            </ul>
+            <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;">Get Started</a>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -384,12 +476,12 @@ const faqLD = JSON.stringify({
           </div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Website Design</h3>
           <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Professional, mobile-first websites that load fast and convert visitors into customers. Bilingual, SEO-optimized, with WhatsApp integration — everything your business needs to stand out online, delivered in 2-3 days.
+            Professional, mobile-first websites that load fast and convert visitors into customers. Bilingual, SEO &amp; AEO-optimized, with WhatsApp integration — everything your business needs to stand out online, delivered in 2-3 days.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
             <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Mobile-First</span>
             <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Bilingual</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">SEO</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">SEO &amp; AEO</span>
             <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">WhatsApp</span>
             <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Fast Loading</span>
           </div>
