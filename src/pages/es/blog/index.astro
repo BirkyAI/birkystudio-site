@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('blog'))
+  .filter(post => post.data.lang === 'en')
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const POSTS_PER_PAGE = 12;
+const initialPosts = allPosts.slice(0, POSTS_PER_PAGE);
+const hasMore = allPosts.length > POSTS_PER_PAGE;
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('es-GT', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+
+<BaseLayout title="Blog" description="Consejos, guías e ideas sobre diseño web, automatización con IA y cómo hacer crecer tu negocio en línea." image="/images/blog/ai-generated/blog-featured-hero.jpg">
+
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div class="container" style="position:relative;z-index:1;text-align:center;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
+        📝 Consejos, guías e ideas para tu negocio
+      </div>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;">
+        Blog de <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Birky Studio</span>
+      </h1>
+      <p style="font-size:1.2rem;color:#cbd5e1;max-width:600px;margin:0 auto;line-height:1.8;">
+        Consejos prácticos sobre sitios web, automatización con IA y marketing digital — todo lo que necesitas para hacer crecer tu negocio en línea.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+    <div class="container">
+      {initialPosts.length === 0 ? (
+        <div style="text-align:center;padding:80px 0;">
+          <p style="color:#94a3b8;font-size:1.1rem;">¡Pronto habrá artículos! Vuelve más tarde.</p>
+        </div>
+      ) : (
+        <>
+          <div id="blog-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:32px;">
+            {initialPosts.map((post) => (
+              <a href={`/es/blog/${post.id}`} style="display:block;background:white;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0;transition:all 0.3s;text-decoration:none;color:inherit;" class="blog-card">
+                {post.data.image && (
+                  <div style="height:200px;overflow:hidden;">
+                    <img src={post.data.image} alt={post.data.title} style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s;" loading="lazy" />
+                  </div>
+                )}
+                <div style="padding:28px;">
+                  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                    <time style="color:var(--color-gray);font-size:0.85rem;">{formatDate(post.data.date)}</time>
+                    {post.data.tags.length > 0 && (
+                      <span style="padding:4px 10px;background:var(--color-light);border-radius:100px;font-size:0.75rem;font-weight:600;color:var(--color-primary);">
+                        {post.data.tags[0]}
+                      </span>
+                    )}
+                  </div>
+                  <h2 style="font-size:1.25rem;margin-bottom:12px;line-height:1.4;">{post.data.title}</h2>
+                  <p style="color:var(--color-gray);font-size:0.95rem;line-height:1.7;">{post.data.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+          {hasMore && (
+            <div style="text-align:center;margin-top:48px;">
+              <button id="load-more-btn" class="btn btn-primary" style="min-width:200px;">Ver más artículos</button>
+              <p id="post-count" style="font-size:13px;color:#94a3b8;margin-top:12px;">Mostrando {POSTS_PER_PAGE} de {allPosts.length} artículos</p>
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding:80px 0;background:white;text-align:center;">
+    <div class="container">
+      <h2 style="font-size:2rem;margin-bottom:16px;">¿Listo para empezar?</h2>
+      <p style="color:var(--color-gray);font-size:1.05rem;max-width:500px;margin:0 auto 32px;">Construyamos algo grande para tu negocio — un sitio web, un agente de IA, o ambos.</p>
+      <a href="/es/contacto" class="btn btn-primary" style="font-size:1.1rem;padding:16px 32px;">Empieza tu proyecto →</a>
+    </div>
+  </section>
+
+  <style>
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    .blog-card:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</BaseLayout>
+
+<script define:vars={{ allPostsData: allPosts.map(p => ({ id: p.id, image: p.data.image || '', title: p.data.title, description: p.data.description, date: new Date(p.data.date).toLocaleDateString('es-GT', { year: 'numeric', month: 'long', day: 'numeric' }), tags: p.data.tags })), POSTS_PER_PAGE }}>
+  let currentPage = 1;
+  const btn = document.getElementById('load-more-btn');
+  const grid = document.getElementById('blog-grid');
+  const countEl = document.getElementById('post-count');
+
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const start = currentPage * POSTS_PER_PAGE;
+      const end = start + POSTS_PER_PAGE;
+      const nextPosts = allPostsData.slice(start, end);
+
+      nextPosts.forEach(post => {
+        const card = document.createElement('a');
+        card.href = `/es/blog/${post.id}`;
+        card.className = 'blog-card';
+        card.style.cssText = 'display:block;background:white;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0;transition:all 0.3s;text-decoration:none;color:inherit;';
+        const imageHtml = post.image ? `<div style="height:200px;overflow:hidden;"><img src="${post.image}" alt="${post.title}" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s;" loading="lazy" /></div>` : '';
+        const tagHtml = post.tags.length > 0 ? `<span style="padding:4px 10px;background:var(--color-light);border-radius:100px;font-size:0.75rem;font-weight:600;color:var(--color-primary);">${post.tags[0]}</span>` : '';
+        card.innerHTML = `
+          ${imageHtml}
+          <div style="padding:28px;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+              <time style="color:var(--color-gray);font-size:0.85rem;">${post.date}</time>
+              ${tagHtml}
+            </div>
+            <h2 style="font-size:1.25rem;margin-bottom:12px;line-height:1.4;">${post.title}</h2>
+            <p style="color:var(--color-gray);font-size:0.95rem;line-height:1.7;">${post.description}</p>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      currentPage++;
+      const totalShown = Math.min(currentPage * POSTS_PER_PAGE, allPostsData.length);
+      countEl.textContent = `Mostrando ${totalShown} de ${allPostsData.length} artículos`;
+
+      if (totalShown >= allPostsData.length) {
+        btn.style.display = 'none';
+        countEl.style.display = 'none';
+      }
+    });
+  }
+</script>

@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts
+    .filter(post => post.data.lang === 'en')
+    .map(post => ({
+      params: { slug: post.id },
+      props: post,
+    }));
+}
+
+const post = Astro.props;
+const { Content } = await render(post);
+
+const formatDate = (date: Date) => date.toLocaleDateString('es-GT', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const jsonLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "datePublished": post.data.date.toISOString(),
+  "author": { "@type": "Organization", "name": "Birky Studio" },
+  "publisher": { "@type": "Organization", "name": "Birky Studio" },
+  ...(post.data.image && { "image": post.data.image }),
+});
+---
+
+<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image}>
+  <script type="application/ld+json" set:html={jsonLD} />
+
+  <!-- Article Header -->
+  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 60px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%);"></div>
+    <div class="container" style="position:relative;z-index:1;max-width:800px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+        <a href="/es/blog" style="color:#a5b4fc;font-size:0.85rem;text-decoration:none;">← Volver al Blog</a>
+        <span style="color:#475569;">·</span>
+        <time style="color:#94a3b8;font-size:0.85rem;">{formatDate(post.data.date)}</time>
+        {post.data.tags.length > 0 && (
+          <>
+            <span style="color:#475569;">·</span>
+            <span style="color:#a5b4fc;font-size:0.85rem;">{post.data.tags[0]}</span>
+          </>
+        )}
+      </div>
+      <h1 style="font-size:clamp(2rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.2;">
+        {post.data.title}
+      </h1>
+      <p style="font-size:1.15rem;color:#cbd5e1;line-height:1.7;">
+        {post.data.description}
+      </p>
+    </div>
+  </section>
+
+  {post.data.image && (
+    <div style="max-width:900px;margin:-30px auto 0;padding:0 24px;position:relative;z-index:2;">
+      <img src={post.data.image} alt={post.data.title} style="width:100%;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.3);" />
+    </div>
+  )}
+
+  <!-- Article Content -->
+  <article style="padding:60px 0 80px;background:white;">
+    <div class="container" style="max-width:740px;">
+      <div style="font-size:1.08rem;line-height:1.9;color:#334155;" class="prose">
+        <Content />
+      </div>
+
+      <!-- Lead Magnet -->
+      <div style="margin-top:48px;margin-bottom:48px;padding:32px;background:linear-gradient(135deg, rgba(99,102,241,0.12), rgba(236,72,153,0.08));border:1.5px solid rgba(129,140,248,0.3);border-radius:16px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;" class="quiz-lead">
+        <div style="font-size:2.5rem;">🎯</div>
+        <div>
+          <div style="font-weight:700;color:#1e1b4b;font-size:1rem;margin-bottom:4px;">¿No sabes qué necesita tu negocio?</div>
+          <div style="font-size:0.85rem;color:#64748b;line-height:1.5;">Responde nuestro cuestionario de 2 minutos y recibe una recomendación personalizada — agente de IA, sitio web o recepcionista de voz. Gratis, sin registro.</div>
+        </div>
+        <a href="/ai-readiness-quiz/" class="btn btn-primary" style="white-space:nowrap;font-size:0.9rem;padding:12px 24px;flex-shrink:0;">Hacer el cuestionario →</a>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- CTA -->
+  <section style="padding:60px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);text-align:center;">
+    <div class="container">
+      <h2 style="font-size:1.8rem;color:white;margin-bottom:12px;">¿Necesitas ayuda con tu negocio?</h2>
+      <p style="color:#94a3b8;font-size:1rem;max-width:500px;margin:0 auto 28px;">Ya sea un sitio web o un agente de IA — lo construimos en 2-3 días.</p>
+      <a href="/es/contacto" class="btn btn-primary" style="font-size:1rem;padding:14px 28px;">Empieza ahora →</a>
+    </div>
+  </section>
+
+  <style is:global>
+    .prose h2 { font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 1rem; color: #0f172a; }
+    .prose h3 { font-size: 1.3rem; font-weight: 700; margin: 2rem 0 0.8rem; color: #1e293b; }
+    .prose p { margin-bottom: 1.2rem; }
+    .prose ul, .prose ol { margin: 1rem 0 1.5rem 1.5rem; }
+    .prose li { margin-bottom: 0.5rem; }
+    .prose strong { font-weight: 700; color: #0f172a; }
+    .prose a { color: #6366f1; text-decoration: underline; }
+    .prose blockquote {
+      border-left: 4px solid #6366f1;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      font-style: italic;
+      color: #475569;
+    }
+    .prose img { border-radius: 12px; margin: 1.5rem 0; }
+    .prose code { background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; }
+    .prose pre { background: #0f172a; color: #e2e8f0; padding: 1.5rem; border-radius: 12px; overflow-x: auto; margin: 1.5rem 0; }
+    .prose pre code { background: none; padding: 0; color: inherit; }
+    .prose table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 1.75rem 0;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .prose thead { background: #f8fafc; }
+    .prose th {
+      text-align: left;
+      font-weight: 700;
+      color: #0f172a;
+      padding: 16px 24px;
+      border-bottom: 2px solid #e2e8f0;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+    }
+    .prose td {
+      padding: 14px 24px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+      vertical-align: top;
+    }
+    .prose tbody tr:last-child td { border-bottom: none; }
+    .prose tbody tr:nth-child(even) { background: #fafbfc; }
+    .prose tbody tr:hover { background: #f8fafc; }
+    .prose tbody tr:last-child td { font-weight: 600; background: #f8fafc; }
+    @media (max-width: 640px) {
+      .prose table {
+        font-size: 0.85rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      .prose th, .prose td { padding: 12px 16px; }
+      .quiz-lead { grid-template-columns: 1fr !important; text-align: center; }
+      .quiz-lead a { width: 100%; }
+    }
+  </style>
+</BaseLayout>
