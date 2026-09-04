@@ -34,7 +34,7 @@ I was that human API too. I started noticing the pattern when I was repeating th
 
 Here's what finally broke the cycle: I stopped adding more tools and started connecting the ones I already had.
 
-An [AI agent](https://birkystudio.com/ai-demo/) sits on top of your existing stack — CRM, MLS, calendar, messaging — and pulls everything about a property into one conversation. Client asks a question? The AI agent knows the answer because it has access to the listing data, the showing schedule, the client's conversation history, and the latest update from the lender.
+An [AI agent](https://wa.me/50234775110) sits on top of your existing stack — CRM, MLS, calendar, messaging — and pulls everything about a property into one conversation. Client asks a question? The AI agent knows the answer because it has access to the listing data, the showing schedule, the client's conversation history, and the latest update from the lender.
 
 Not a dashboard you have to check. Not another login. A conversation. The same way you talk to your clients — but backed by everything you'd normally hunt across 8 tabs to find.
 
@@ -58,8 +58,8 @@ The agents winning in 2026 aren't the ones with the most tools — they're the o
 
 I built Birky Studio because I hit this wall myself. An AI agent setup starts at **$1,297** (or **$297** for a standalone text receptionist) and plugs into what you already use. No rip-and-replace. No migration project. Just one place for everything.
 
-**[Book a free 15-minute call →](https://birkystudio.com/ai-demo/)**
-I'll show you what it looks like with your actual tools.
+**[Text me on WhatsApp →](https://wa.me/50234775110)**
+Send me any question you have about your real estate workflow — I'll show you exactly what an AI agent would do with it.
 
 ## Try It Before You Buy It
 
