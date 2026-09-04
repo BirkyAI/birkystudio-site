@@ -41,12 +41,12 @@ const projects = [
   },
   {
     title: "AI Voice Receptionist Demo",
-    subtitle: "Sample — Sunrise Wellness Center",
-    url: "/ai-demo",
+    subtitle: "Try Elliot — Birky Studio Voice Agent",
+    url: "/voice-demo",
     image: null,
     isLiveDemo: true,
-    description: "Live interactive demo of an AI voice and text receptionist for a wellness center. Answers questions about services, pricing, hours, location, makes appointments, and handles bilingual calls 24/7. Built with Vapi.ai voice platform.",
-    tags: ["AI Voice", "Bilingual", "24/7", "Wellness", "Vapi"],
+    description: "Live interactive demo of Elliot, an AI voice agent for real estate and small business. Answers questions about Birky Studio's services, handles property inquiries, books demos, and handles bilingual calls 24/7. Built with Vapi.ai — 92% humanness.",
+    tags: ["AI Voice", "Bilingual", "24/7", "Real Estate", "Vapi", "Elliot"],
     plan: "Voice Receptionist",
   },
   {
@@ -86,40 +86,35 @@ const projects = [
       <div style="display:flex;flex-direction:column;gap:80px;">
         {projects.map((project, i) => (
           project.isLiveDemo ? (
-            /* ═══ LIVE DEMO CARD ═══ */
-            <div>
-              <div style="text-align:center;margin-bottom:40px;">
-                <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
-                  🤖 {project.plan} — Try It Live
-                </div>
-                <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
-                <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
-                <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
-                <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
-                  {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
-                  ))}
-                </div>
-              </div>
-              <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);max-width:440px;margin:0 auto;">
-                <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
-                  <div style="display:flex;gap:6px;">
-                    <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
-                    <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
-                    <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
-                  </div>
-                  <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;text-align:center;">
-                    birkystudio.com/ai-demo
-                  </div>
-                </div>
-                <iframe src="/ai-demo" style="width:100%;height:520px;border:none;display:block;" title="AI Agent Demo" loading="lazy"></iframe>
-              </div>
-              <div style="text-align:center;margin-top:32px;">
-                <a href="/contact" class="btn btn-primary" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
-                  Get Your Own AI Agent →
-                </a>
-              </div>
-            </div>
+                      /* ═══ LIVE DEMO CARD ═══ */
+                      <div>
+                        <div style="text-align:center;margin-bottom:40px;">
+                          <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                            🤖 {project.plan} — Try It Live
+                          </div>
+                          <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
+                          <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
+                          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
+                          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
+                            {project.tags.map(tag => (
+                              <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
+                            ))}
+                          </div>
+                        </div>
+                        <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(16,185,129,0.3);max-width:500px;margin:0 auto;padding:60px 40px;text-align:center;background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(5,150,105,0.05));">
+                          <div style="font-size:5rem;margin-bottom:20px;">🎧</div>
+                          <h3 style="font-size:1.5rem;color:white;margin-bottom:12px;">Call Elliot Right Now</h3>
+                          <p style="color:#94a3b8;margin-bottom:32px;line-height:1.7;">No login, no signup, no download. One click and Elliot picks up. Try asking about properties, pricing, or just test it with something weird — it handles it.</p>
+                          <a href={project.url} target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;font-size:1.2rem;padding:18px 36px;background:linear-gradient(135deg,#10b981,#059669);">
+                            🎧 Call the Voice Agent →
+                          </a>
+                        </div>
+                        <div style="text-align:center;margin-top:32px;">
+                          <a href="/contact" class="btn btn-primary" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
+                            Get Your Own AI Agent →
+                          </a>
+                        </div>
+                      </div>
           ) : project.isAgentCase ? (
             /* ═══ AGENT CASE STUDY CARD ═══ */
             <div>
