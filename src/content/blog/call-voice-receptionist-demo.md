@@ -1,6 +1,6 @@
 ---
-title: "Call an AI Voice Receptionist Right Now — See It for Yourself"
-description: "No signup, no sales call. Click and hear an AI voice receptionist pick up, answer questions, book appointments, and handle the unexpected. Try it now."
+title: "Call Elliot — The AI Voice Agent That Answers Your Calls 24/7 (Try It)"
+description: "No signup, no sales call. One click and Elliot the AI voice agent picks up — answers questions, books appointments, handles the unexpected. Try it now."
 date: 2026-09-03
 image: "/images/blog/ai-generated/call-voice-receptionist-demo.jpg"
 tags: ["Birky Studio", "AI Voice Receptionist", "Small Business"]
@@ -30,9 +30,9 @@ I built an AI voice receptionist that answers calls 24/7 in your business's voic
 
 But don't take my word for it.
 
-**[→ Click here to call the AI Voice Receptionist right now](https://birkystudio.com/voice-demo/)**
+**[→ Click here to call Elliot, the AI Voice Agent, right now](https://birkystudio.com/voice-demo/)**
 
-No download. No login. No signup. One click and it answers. Talk to it like you're a customer. Try sending it somewhere unexpected — ask about pricing, ask about hours, ask something weird. It handles it.
+No download. No login. No signup. One click and Elliot picks up. Talk to it like you're a customer. Try sending it somewhere unexpected — ask about pricing, ask about properties, ask something weird. It handles it.
 
 ## What You'll Experience
 
@@ -56,7 +56,7 @@ It connects to your existing phone number or gets a new one. Works with your cal
 
 You can read case studies and ROI breakdowns all day, but nothing beats hearing it work with your own ears.
 
-**[Call the AI Voice Receptionist →](https://birkystudio.com/voice-demo/)**
+**[Call Elliot, the AI Voice Agent →](https://birkystudio.com/voice-demo/)**
 
 One click. It answers. Try to stump it.
 
