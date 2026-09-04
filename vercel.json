@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/ai-demo/",
+      "destination": "https://wa.me/50234775110",
+      "permanent": false
+    },
+    {
+      "source": "/ai-demo",
+      "destination": "https://wa.me/50234775110",
+      "permanent": false
+    }
+  ]
+}
