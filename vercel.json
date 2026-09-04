@@ -9,6 +9,16 @@
       "source": "/ai-demo",
       "destination": "https://wa.me/50234775110",
       "permanent": false
+    },
+    {
+      "source": "/voice-demo/",
+      "destination": "https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1",
+      "permanent": false
+    },
+    {
+      "source": "/voice-demo",
+      "destination": "https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1",
+      "permanent": false
     }
   ]
 }

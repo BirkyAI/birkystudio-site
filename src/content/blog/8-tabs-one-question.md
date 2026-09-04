@@ -63,6 +63,8 @@ Send me any question you have about your real estate workflow — I'll show you 
 
 ## Try It Before You Buy It
 
-Want to feel the difference right now without a sales call? Grab the **[Quick Log template](https://birkystudio.com/quick-log-template/)** — the free 30-second post-call note system that started it all. It's the single field that got me out of tab hell while I was still a one-person operation.
+Want to feel the difference right now without a sales call? Grab the **[Quick Log template](https://birkystudio.com/quick-log-template/)** — the free 30-second post-call note system that started it all.
+
+Want to *hear* the difference? **[Call the AI Voice Receptionist](https://birkystudio.com/voice-demo/)** — one click, no login, it picks up and talks to you in seconds. Try saying something weird, it handles it.
 
 If you want the full thing — buyer vs seller tracks, appointment-to-prospecting handoff, property hub, the lot — **[THE REAL ESTATE SYSTEM](https://notionforrealestate.gumroad.com/l/ocuwss)** is the complete Notion setup I run everything on, up for grabs.
