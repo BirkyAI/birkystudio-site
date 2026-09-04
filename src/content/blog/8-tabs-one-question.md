@@ -60,3 +60,9 @@ I built Birky Studio because I hit this wall myself. An AI agent setup starts at
 
 **[Book a free 15-minute call →](https://birkystudio.com/ai-demo/)**
 I'll show you what it looks like with your actual tools.
+
+## Try It Before You Buy It
+
+Want to feel the difference right now without a sales call? Grab the **[Quick Log template](https://birkystudio.com/quick-log-template/)** — the free 30-second post-call note system that started it all. It's the single field that got me out of tab hell while I was still a one-person operation.
+
+If you want the full thing — buyer vs seller tracks, appointment-to-prospecting handoff, property hub, the lot — **[THE REAL ESTATE SYSTEM](https://notionforrealestate.gumroad.com/l/ocuwss)** is the complete Notion setup I run everything on, up for grabs.
