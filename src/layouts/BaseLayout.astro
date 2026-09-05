@@ -5,7 +5,7 @@ export interface Props {
   image?: string;
 }
 
-const { title, description = "Smart digital solutions for small businesses — professional websites and AI agents, delivered fast and built to grow with you.", image = "/images/birky-mascot.jpg" } = Astro.props;
+const { title, description = "Smart digital solutions for small businesses — professional websites and AI agents, delivered fast and built to grow with you.", image = "/images/comparison/comparison-hero.jpg" } = Astro.props;
 
 const isSpanish = Astro.url.pathname.startsWith('/es');
 const lang = isSpanish ? 'es' : 'en';
@@ -240,6 +240,7 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
             <a href="/es/sobre-mi" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Sobre Mí</a>
             <a href="/es/#productos" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Productos</a>
             <a href="/es/blog" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Blog</a>
+            <a href="/es/partners" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Socios</a>
             <a href="/es/#precios-sitios" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Precios</a>
             <a href="/es/contacto" style="font-weight:500;color:var(--color-gray);transition:color 0.2s;">Contacto</a>
             <a href="/" style="font-size:0.85rem;font-weight:600;padding:6px 14px;border-radius:8px;background:#f1f5f9;color:var(--color-dark);transition:all 0.2s;">EN</a>
