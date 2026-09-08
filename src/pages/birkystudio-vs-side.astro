@@ -1,0 +1,508 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Side cheaper than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is significantly cheaper upfront. A custom AI agent costs $1,297 one-time setup (includes Notion Real Estate System), with optional support from $29/month. Side does not publish pricing — it's a consultation-based partnership tied to your production volume. Side's model involves creating a new brokerage entity, and costs are based on commission splits. BirkyStudio works with your existing brokerage and charges a fixed one-time fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Side offer an AI receptionist or AI agent for leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Side AI focuses on transaction-level busywork — documents, signatures, compliance checks, and back-office automation within their SideOS platform. It does not answer incoming phone calls, handle WhatsApp messages, or engage with leads. BirkyStudio's AI is purpose-built for lead conversations: answering calls on Vapi, responding on WhatsApp, qualifying prospects, scheduling showings, and following up — all in English and Spanish."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use BirkyStudio if I'm already a Side partner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. BirkyStudio works alongside Side. Side handles your back office (transaction management, compliance, payments) and BirkyStudio handles your front office (lead conversations, WhatsApp, phone calls, follow-ups). They address different parts of your business and don't conflict."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should choose Side over BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose Side if you're a top-producing agent ($2M+ annual volume) who wants to own your own brokerage company, keep your brand, and have a dedicated back office handling compliance, payments, and transaction coordination. Side is ideal for agents who want to build a real estate company, not just automate their workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should choose BirkyStudio over Side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose BirkyStudio if you're a solo agent or small team who wants AI to handle lead conversations, calls, WhatsApp messages, and daily admin — without restructuring your business or meeting a minimum production threshold. BirkyStudio works with any brokerage, costs a fixed one-time fee, and is set up in 2-3 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Side or BirkyStudio offer WhatsApp integration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio includes WhatsApp AI as standard in every setup — full AI-powered conversations in English and Spanish. Side does not offer WhatsApp integration as part of its platform. SideOS focuses on transaction management, compliance, and brokerage operations, not lead communication channels."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Side (2026 Comparison) — Brand Ownership vs AI Automation for Realtors",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Side. Real prices, pros and cons, and which one fits your real estate business stage. Side helps top agents own their brokerage; BirkyStudio automates lead response.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-09-08",
+  "dateModified": "2026-09-08"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Side (2026 Comparison)"
+  description="BirkyStudio vs Side honest comparison for real estate agents. Side helps top producers own their own brokerage. BirkyStudio automates lead response, WhatsApp, and calls. Real pricing, real pros and cons."
+  image="/images/comparison/side.jpg"
+  >
+    <script type="application/ld+json" set:html={faqLD} />
+    <script type="application/ld+json" set:html={articleLD} />
+
+    <!-- Hero -->
+    <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated September 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Side<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Brand Ownership vs AI Automation</span>
+      </h1>
+      <p style="font-size:1.1rem;color:#cbd5e1;line-height:1.8;max-width:700px;">
+        Side helps top-producing real estate agents launch their own brokerage companies. BirkyStudio gives agents AI that handles lead conversations, WhatsApp, and phone calls. One is about owning your brand and infrastructure. The other is about automating your daily workload. Here's how they compare — and why you might need both, not one or the other.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You're a solo agent or small team that wants AI to handle lead conversations, WhatsApp messages, phone calls, and daily admin — without restructuring your business or meeting a minimum production threshold. Best for agents who want AI labor, not a new brokerage.<br><br>
+          <strong style="color:white;">Choose Side if:</strong> You're a top-producing agent ($2M+ annual volume) who wants to own your own brokerage company, keep your brand, and have a dedicated back office handling compliance, payments, and transactions. Best for agents ready to build a real estate company, not just work in one.<br><br>
+          <strong style="color:white;">Better together:</strong> Many Side partners could benefit from BirkyStudio's AI receptionist handling their front desk while Side handles the back office. They don't compete — they serve different layers of the business.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/side-article-1.jpg" alt="Modern real estate office with glass walls, plants, and natural light, showing a professional workspace" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Side?</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        Side is one of the most recognized names in real estate technology. They've helped over 600 top-producing agents launch their own boutique brokerage companies — handling back-office operations, compliance, payments, and transaction management so agents can focus on growing their brand. Their platform (SideOS) powers companies that collectively do $135B+ in annual volume.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes a different approach. Instead of changing your business structure, it gives you an AI agent that handles the front-desk work — answering calls, responding on WhatsApp, following up with leads, managing your inbox, and handling daily admin tasks. You keep your current brokerage, your current brand, and your current setup. You just add an AI that does the work you'd rather not do.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:40px;">
+        While Side and BirkyStudio serve different layers of a real estate business, they're both competing for the same thing: your time and attention. Side wants you to invest in owning your own company. BirkyStudio wants you to invest in AI that handles the work. Both can be right — depending on where you are in your career.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Side — Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Side</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Not published — consultation only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">2-3 hours (guided screen share)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Weeks to months (onboarding + compliance)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Lead Conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI trained on your business</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No lead AI — focuses on transaction back office</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp Integration</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (full AI conversations)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Phone Call Answering</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Voice receptionist on Vapi</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Limited (US-based platform)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Custom AI Training</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Trained on your listings & process</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Side AI handles transaction busywork, not custom training</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Transaction Management</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full contract-to-close pipeline</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Compliance & Legal</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Dedicated compliance team reviews every file</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Own Your Own Brokerage</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Works with your existing brokerage</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ You launch your own branded company</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Same-Day Agent Payments</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 85% same-day payment on close</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Minimum Production Required</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None — works for any agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Top producers only ($2M+ volume)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Free consultation, no trial</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Dedicated Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Dedicated partner success team</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">No Contract</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Month-to-month support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Long-term partnership, not a subscription</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/side-article-2.jpg" alt="Top real estate agent reviewing documents at a modern desk with smartphone, coffee, and natural lighting" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(129,140,248,0.08);border:1px solid rgba(129,140,248,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:#818cf8;color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">BEST VALUE</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          BirkyStudio installs a custom AI agent that handles the front-desk work of your real estate business. It answers phone calls through Vapi, runs full AI-powered conversations on WhatsApp, qualifies leads, schedules showings, searches properties, manages your email inbox, drafts listing descriptions, and follows up with past clients — all in English and Spanish. You don't manage a platform; you just tell the AI what you need and it does the work.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          The key difference from Side: BirkyStudio doesn't change your business structure. You keep your current brokerage, your current brand, and your current commission split. You just add an AI that handles the conversations you're missing. Setup takes 2-3 hours in a guided screen share session, and the AI is trained on your specific listings, your process, and your lead types.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Because BirkyStudio is a fixed-cost service ($1,297 one-time plus optional $29/month support), it works for agents at any production level — from brand-new agents to top producers who just want to stop answering the same questions all day. There's no minimum volume, no commission split, and no restructuring.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>No learning curve — AI does the work, you don't manage it</li>
+              <li>Custom-trained on your listings and processes</li>
+              <li>WhatsApp + phone + email in one setup</li>
+              <li>Bilingual (EN/ES) included by default</li>
+              <li>Fixed one-time cost, no commission split</li>
+              <li>Works with any brokerage — no restructuring needed</li>
+              <li>No minimum production threshold</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>No transaction management or compliance support</li>
+              <li>No payments, back office, or brokerage infrastructure</li>
+              <li>No brand ownership — you remain under your current brokerage</li>
+              <li>Smaller team, less brand recognition</li>
+              <li>Not designed for building a multi-agent company</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: AI Agent Setup $1,297 one-time · WhatsApp Receptionist $297 · Voice Receptionist $550 + Vapi (~$30-50/mo) · Optional support from $29/month
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/side-article-3.jpg" alt="Real estate agent working remotely with laptop and smartphone at a coffee shop, warm lighting" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: Side -->
+      <div id="side" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Side</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Side is a real estate brokerage platform that lets top-producing agents own their own companies. Rather than joining a traditional brokerage or franchise, Side partners become the broker of their own boutique brand — Side handles all the back-office operations: compliance, payments, transaction coordination, agent support, and the technology platform (SideOS) that runs it all.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          What makes Side unique is the depth of its infrastructure. Over 600 partner companies run on Side, collectively doing $135B+ in annual volume. Side's compliance team reviews every file. 85% of agents get paid the same day they close. The Side App puts the entire brokerage in every agent's pocket — offers, documents, signatures, payments, and live reporting. Side AI handles repetitive transaction-level work behind the scenes. The result: agents save 4-6 hours per transaction, and partners grow 44% on average after switching.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          However, Side is not for every agent. The platform targets top producers — their lead form starts at "Less than $2M" annual volume and goes up to $50M+. They don't publish pricing; it's a consultation-based partnership with a fee structure tied to your production. You also need to be a licensed real estate agent in the US, and you're essentially launching a new brokerage — which comes with real responsibility, even with Side handling the back office. And critically, Side does not offer AI for lead conversations, WhatsApp, or phone calls — that's where BirkyStudio fills the gap.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>You own your own brokerage company and brand</li>
+              <li>Full transaction management — contract to close</li>
+              <li>Dedicated compliance team reviews every file</li>
+              <li>85% of agents paid same-day on close</li>
+              <li>SideOS app + Side AI for transaction automation</li>
+              <li>44% average volume growth after switching</li>
+              <li>Community of 600+ top-producing companies</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>No public pricing — consultation-based, tied to production</li>
+              <li>Requires top-producing agent status ($2M+ volume)</li>
+              <li>No AI for lead conversations, WhatsApp, or phone calls</li>
+              <li>Weeks to months to set up (compliance + onboarding)</li>
+              <li>You must be a licensed US real estate agent</li>
+              <li>Launching a brokerage carries legal and regulatory responsibility</li>
+              <li>Not available for agents who want to stay at their current brokerage</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Not published — consultation only · Requires $2M+ annual production · Fee structure based on commission splits · Free initial consultation
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison — 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Side (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, basic setup</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 (one-time, no support)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not published — consultation only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent with AI support + WhatsApp</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$1,645 (setup + $29/mo support)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not published — consultation only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Agent with full AI + voice receptionist</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$2,435 (setup + voice + $29/mo + Vapi ~$40/mo)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not published — consultation only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Agent with full setup + Business Partner retainer</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$3,661 (setup + $197/mo Business Partner)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not published — consultation only</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You want AI that handles your leads, calls, and WhatsApp</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Side does not offer AI for lead conversations, phone calls, or WhatsApp. If your primary need is automating the front desk — answering "Is this available?" on WhatsApp, following up with leads, scheduling showings — BirkyStudio is the only option here.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏢 You want to own your own brokerage company</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">Side</strong>. If you're a top producer ready to launch your own brand, keep 100% of your business's equity, and have a dedicated team handling compliance, payments, and transactions, Side is the proven choice. BirkyStudio doesn't help you build a brokerage — it helps you automate your daily work.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💰 You want predictable, fixed pricing</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. $1,297 one-time setup, optional $29/month support. No surprises, no percentage of your commission, no "book a consultation to find out." Side's pricing is tied to your production volume and requires a consultation — you won't know the cost until you apply.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📊 You need transaction management and compliance</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">Side</strong>. Side's full-stack platform handles everything from offer to close to payment. Compliance review, transaction coordination, same-day payments — Side is a full brokerage back office. BirkyStudio doesn't touch this layer at all.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🔄 You want both — front office automation + back office infrastructure</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">Use both</strong>. Side handles your back office (compliance, payments, transactions, brokerage operations). BirkyStudio handles your front office (AI lead conversations, WhatsApp, phone calls, follow-ups, email management). They address different layers and work perfectly together. Several Side partners are already using AI receptionists alongside their Side platform.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          Side and BirkyStudio are not direct competitors — they serve different layers of your real estate business. <strong style="color:white;">Side is for building a company</strong> (ownership, infrastructure, compliance, transactions). <strong style="color:white;">BirkyStudio is for automating the work</strong> (AI lead conversations, calls, WhatsApp, daily admin). One is a long-term investment in your business structure. The other is a fixed-cost tool that handles your workload starting tomorrow.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          For most agents — especially solo agents and small teams — <strong style="color:white;">BirkyStudio is the more practical choice</strong>. You don't need to restructure your business. You don't need to meet a production minimum. You just need AI that handles the conversations you're missing. At $1,297 one-time, it's accessible to virtually any agent, and the ROI is immediate: one extra deal pays for it.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+          <strong style="color:white;">Choose Side if:</strong> You're a top producer ($2M+ annual volume) ready to launch your own brokerage, keep your brand, and have a dedicated back office handling operations. The 44% average growth after switching speaks for itself — but it's a commitment, not a purchase.<br><br>
+          <strong style="color:white;">Best of both worlds:</strong> Many Side partners add BirkyStudio's AI receptionist to handle their front desk while Side manages the back office. They don't overlap — they complete each other.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/#ai-agents" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your AI Agent →
+          </a>
+          <a href="https://www.side.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore Side →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is Side cheaper than BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            BirkyStudio is significantly cheaper upfront — $1,297 one-time setup vs Side's undisclosed pricing. Side doesn't publish prices; their model is a consultation-based partnership tied to your production volume, involving commission splits within a new brokerage entity you own. The real question isn't which is cheaper — it's whether you want to invest in AI labor ($1,297) or build a brokerage company (Side).
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Side have an AI receptionist like BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            No. Side AI is designed for transaction-level busywork — documents, signatures, compliance checks, and back-office automation within SideOS. It does not answer phone calls, handle WhatsApp messages, or engage with leads. BirkyStudio's AI is built specifically for lead conversations: answering calls via Vapi, responding on WhatsApp, qualifying prospects, and scheduling showings.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Can I use BirkyStudio alongside Side?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            Absolutely. They address different parts of your business. Side handles back-office operations (transaction management, compliance, payments, brokerage infrastructure). BirkyStudio handles front-office automation (AI lead conversations, WhatsApp, phone calls, email management, follow-ups). They don't conflict — they complement each other. Many Side partners could benefit from adding BirkyStudio's AI receptionist.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much production volume do I need for Side?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            Side's partner application form asks for your annual production volume with options starting at "Less than $2M" and going up to $50M+. While there's no explicit minimum, Side is designed for top-producing agents — the platform's value proposition centers on agents who are already doing significant volume and ready to own their own company. BirkyStudio has no minimum production requirement and works for agents at any level.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does BirkyStudio help me start my own brokerage?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            No. BirkyStudio is an AI automation service — it installs an AI agent that handles lead conversations, calls, and admin tasks. It works with your existing brokerage and doesn't change your business structure. If you want to own your own brokerage company, Side is the solution for that. If you want to keep your current setup and add AI that handles the work, that's BirkyStudio.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>What's the setup time for Side vs BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            BirkyStudio takes 2-3 hours in a guided screen share session. Your AI is trained on your specific listings and processes in one afternoon. Side's onboarding takes weeks to months — there's a consultation process, compliance setup, broker licensing verification, agent onboarding, and technology implementation across your new company. Side is a structural change to your business; BirkyStudio is an add-on.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#94a3b8;font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> Side information sourced from side.com — including their SideOS platform page, technology page, partner application form, and about page — as of September 8, 2026. Pricing and features verified from Side's official website and partner application process. BirkyStudio pricing from birkystudio.com as of September 8, 2026. Customer review data compiled from publicly available sources. Prices and features may change. This is an honest comparison based on publicly available information — not a sponsored post.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
