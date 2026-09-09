@@ -1,0 +1,473 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or GoHighLevel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is dramatically cheaper. A BirkyStudio AI Agent costs $1,297 one-time setup (includes Notion Real Estate System), with optional support from $29/month. GoHighLevel starts at $97/month and quickly reaches $297-$497/month as you need features — plus add-ons like WhatsApp ($10/mo), AI ($50-97/mo), and premium support ($500/mo) pile up fast. Over 12 months, BirkyStudio costs roughly $1,297-$1,645/year. GoHighLevel costs $1,164-$5,964+/year depending on your plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio offer CRM like GoHighLevel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. GoHighLevel is a full CRM with marketing automation, pipelines, funnels, email/SMS campaigns, and reporting. BirkyStudio is an AI agent that handles lead conversations, property searches, follow-ups, and task automation — but uses Notion as a lightweight CRM layer. If you need a full sales pipeline dashboard with attribution reports, GoHighLevel wins. If you want AI that actually talks to leads and automates daily tasks, BirkyStudio wins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is GoHighLevel or BirkyStudio easier to set up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is dramatically easier. Setup takes 2-3 hours with Luna guiding you via screen share. Your AI agent is trained on your specific business, listings, and processes. GoHighLevel has a notoriously steep learning curve — users report spending months figuring out funnels, automations, and the interface. You don't get a dedicated person to help; you get documentation and a help desk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can GoHighLevel handle WhatsApp calls and messages like BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GoHighLevel offers WhatsApp integration, but it's a $10/month add-on per sub-account, and it's limited to marketing messages — not AI-powered conversations. BirkyStudio includes WhatsApp AI as standard in every setup. Your AI agent can have full, context-aware conversations with leads on WhatsApp, answer property questions, schedule showings, and follow up — all in English and Spanish."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a solo real estate agent: BirkyStudio or GoHighLevel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most solo real estate agents, BirkyStudio offers better value. You get an AI that handles lead conversations, property searches, follow-ups, email management, and task automation — all in one setup. GoHighLevel is built for marketing agencies managing multiple clients, not individual agents. It's complex, requires constant configuration, and its features (funnels, email campaigns, attribution) are overkill for someone who just wants leads handled. Choose GoHighLevel if you're running an agency or need a full marketing automation suite."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs GoHighLevel (2026 Comparison) — Which One Actually Helps Realtors?",
+  "description": "Honest head-to-head comparison of BirkyStudio vs GoHighLevel. Real prices, real pros and cons. Find out which one fits a solo real estate agent's workflow.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-09-07",
+  "dateModified": "2026-09-07"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs GoHighLevel (2026 Comparison)"
+  description="BirkyStudio vs GoHighLevel honest comparison for real estate agents. Real pricing, setup time, WhatsApp support, and which one actually saves you time."
+  image="/images/comparison/gohighlevel.jpg"
+  >
+    <script type="application/ld+json" set:html={faqLD} />
+    <script type="application/ld+json" set:html={articleLD} />
+
+    <!-- Hero -->
+    <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated September 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs GoHighLevel<br>
+        <span style="background:linear-gradient(135deg,#818cf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Which One Actually Helps Realtors?</span>
+      </h1>
+      <p style="font-size:1.1rem;color:#cbd5e1;line-height:1.8;max-width:700px;">
+        GoHighLevel is a powerful all-in-one marketing platform. BirkyStudio is a custom AI agent that handles your daily workflow. One is built for agencies, the other is built for agents. Here's how they really compare — pricing, complexity, and which one you'll actually use.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You're a solo agent or small team that wants AI to handle lead conversations, property searches, email follow-ups, and daily task automation — without spending weeks learning a complex platform. Best for agents who want results, not a dashboard.<br><br>
+          <strong style="color:white;">Choose GoHighLevel if:</strong> You run a real estate team or agency managing multiple agents, need full marketing automation (email campaigns, funnels, SMS blasts), or require detailed attribution reporting. Best for organizations, not individual agents.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/gohighlevel-article-1.jpg" alt="Modern desk with dual monitors showing CRM dashboard" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and GoHighLevel?</h2>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+        GoHighLevel is one of the most popular platforms in the real estate space — thousands of agents and agencies use it for CRM, marketing automation, funnel building, and client management. It's powerful, but it's also complex, expensive, and built for agencies managing multiple clients, not individual agents trying to sell houses.
+      </p>
+      <p style="color:#cbd5e1;line-height:1.8;margin-bottom:40px;">
+        BirkyStudio takes a different approach. Instead of giving you a platform you need to learn and configure, it gives you an AI agent that already knows your business and handles the work for you. No dashboards to master, no funnels to build, no automations to debug. Just results.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs GoHighLevel — Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">GoHighLevel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$97-$497/month</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">2-3 hours (guided screen share)</td>
+              <td style="padding:14px 12px;color:#cbd5e1;">Weeks to months (self-taught)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Lead Conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI trained on your business</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No native AI conversations</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp Integration</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included (full AI conversations)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ $10/mo add-on (marketing only)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Limited</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Custom AI Training</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Trained on your listings & process</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM / Pipeline</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Notion-based (lightweight)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full CRM + pipelines + reporting</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Email Automation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI manages inbox + follow-ups</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Campaign builder + sequences</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Funnel Builder</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Drag-and-drop funnel builder</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Property Search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI can search listings</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not available</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Task Automation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI handles daily tasks</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Workflow builder (complex)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Dedicated Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Help desk ($500/mo for priority)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Learning Curve</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None — it's set up for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Steep — months to master</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">No Contract</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Month-to-month</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Annual discounts lock you in</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/gohighlevel-article-2.jpg" alt="Real estate agent on phone with laptop showing property listings" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(129,140,248,0.08);border:1px solid rgba(129,140,248,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:#818cf8;color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">BEST VALUE</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          BirkyStudio installs a custom AI agent that works for your real estate business. It handles lead conversations on WhatsApp and Telegram, automates property searches, manages your email inbox, drafts listing descriptions, follows up with past clients, and handles daily admin tasks — all without you spending hours configuring a platform.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          The key difference from GoHighLevel: you don't manage BirkyStudio. You just tell it what you need and it does the work. There's no dashboard to learn, no funnels to build, no automations to debug. The AI is trained on your specific listings, your process, and your lead types — set up in a single 2-3 hour screen share session.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>No learning curve — AI does the work, you don't manage it</li>
+              <li>Custom-trained on your listings and processes</li>
+              <li>WhatsApp + Telegram + email in one setup</li>
+              <li>Bilingual (EN/ES) included by default</li>
+              <li>Low one-time cost, month-to-month support optional</li>
+              <li>Built by a realtor who understands agent workflows</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>No full CRM dashboard (Notion-based lightweight system)</li>
+              <li>No funnel builder or email campaign tools</li>
+              <li>No attribution reporting or advanced analytics</li>
+              <li>Smaller team, less brand recognition</li>
+              <li>Not suitable for agencies managing multiple clients</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: AI Agent Setup $1,297 one-time · Optional support from $29/month
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/gohighlevel-article-3.jpg" alt="Minimalist desk setup with notebook and pen, no computer needed" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: GoHighLevel -->
+      <div id="gohighlevel" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">GoHighLevel</h3>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          GoHighLevel is an all-in-one marketing and CRM platform designed primarily for marketing agencies that manage multiple clients. It offers a complete suite: CRM pipelines, email/SMS marketing, funnel building, website builder, reputation management, membership sites, and more. It's powerful — arguably the most capable platform in its category.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          But here's what nobody tells you: GoHighLevel was built for agencies managing dozens of clients, not individual agents trying to sell houses. The learning curve is punishing — users report spending months just figuring out basic workflows. And the pricing can surprise you: the $97/month plan lacks essential features, and add-ons (WhatsApp, AI, SEO, priority support) push you toward the $297-$497/month range fast.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          That said, if you run a real estate team or agency with multiple agents, GoHighLevel's marketing automation and reporting are genuinely useful. It can manage email campaigns, track lead sources, build landing pages, and attribute closed deals to specific campaigns — something BirkyStudio doesn't do.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">✅ Pros</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Full marketing automation — email, SMS, funnels, landing pages</li>
+              <li>CRM with pipelines, deals, and attribution reporting</li>
+              <li>Powerful for agencies managing multiple clients</li>
+              <li>Integrates with hundreds of third-party tools</li>
+              <li>14-day free trial available</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">⚠️ Cons</p>
+            <ul style="color:#cbd5e1;line-height:1.8;padding-left:20px;">
+              <li>Steep learning curve — months to master</li>
+              <li>Expensive — $97-$497/month, add-ons stack up</li>
+              <li>Overkill for solo agents — 80% of features go unused</li>
+              <li>Automations break silently, no proactive alerts</li>
+              <li>Data export is painful — locked in once you build on it</li>
+              <li>Support quality dropped as company grew</li>
+              <li>No native AI for lead conversations</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:#818cf8;font-weight:600;">
+          Pricing: Starter $97/mo · Pro $297/mo · Pro+ $497/mo · Add-ons: WhatsApp $10/mo, AI Employee $50-97/mo, SEO $79/mo, Priority Support $500/mo
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison — 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #818cf8;">
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:#818cf8;font-weight:600;">GoHighLevel (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent, basic setup</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 (one-time, no support)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,164 (Starter, annual)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agent with support + WhatsApp</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$1,645 (setup + $29/mo support)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,284 (Starter + WhatsApp add-on)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Agent with full setup + all features</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">~$3,661 (setup + $197/mo Business Partner)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$5,964 (Pro + AI + WhatsApp + SEO)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You want AI that talks to leads so you don't have to</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. GoHighLevel has no native AI conversation capability. This alone makes the decision easy if you're tired of answering the same questions all day.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💰 You want the most affordable option</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. $1,297 one-time vs $1,164+/year. Even with ongoing support, BirkyStudio comes out ahead for the first several years. And you don't get surprise price hikes at renewal.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">👥 You run a team or agency</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">GoHighLevel</strong>. Its multi-client management, attribution reporting, and campaign tools are genuinely useful for teams. BirkyStudio is built for individuals.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">⚡ You want zero learning curve</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. A 2-3 hour setup session and you're done. No documentation to study, no YouTube tutorials to watch, no automations to debug. The AI just works.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📊 You need attribution reporting</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">GoHighLevel</strong>. If you need to know exactly which campaign generated each lead and track ROI across channels, GHL's reporting is the better choice. BirkyStudio doesn't offer campaign attribution.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">⚠️ You want predictable pricing</h3>
+          <p style="color:#cbd5e1;line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. GHL's $97 plan quickly becomes $297+ as you add WhatsApp, AI, SEO, and other add-ons. BirkyStudio's pricing is fixed — you know exactly what you're paying from day one.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(129,140,248,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:16px;">
+          For most solo real estate agents, <strong style="color:white;">BirkyStudio is the better choice</strong>. You get an AI that actually handles the work — conversations, property searches, email management, task automation — for a fraction of GoHighLevel's cost. No learning curve, no surprise price hikes, no features you'll never use.
+        </p>
+        <p style="color:#cbd5e1;line-height:1.8;margin-bottom:24px;">
+          <strong style="color:white;">Choose GoHighLevel if:</strong> You run a team or agency, need full marketing automation with attribution reporting, or require a multi-client CRM. GHL is genuinely powerful — it's just built for a different customer than a solo agent.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/#ai-agents" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your AI Agent →
+          </a>
+          <a href="https://www.gohighlevel.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Try GoHighLevel →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Can BirkyStudio replace my GoHighLevel subscription entirely?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            It depends. If you use GoHighLevel primarily for CRM and lead management, BirkyStudio's AI agent can handle most of that — conversations, follow-ups, task management — through a simpler Notion-based system. But if you rely on GHL's marketing automation (email campaigns, funnels, attribution), you'd lose those capabilities. Many agents keep a basic GHL subscription for reporting while adding BirkyStudio for the AI that does the daily work.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does GoHighLevel have AI like BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            GoHighLevel offers an "AI Employee" add-on ($50-97/month per sub-account), but it's focused on marketing content generation — writing emails, social posts, and SMS. It does NOT handle lead conversations, answer customer questions, or automate daily tasks like BirkyStudio's AI does. The two products complement rather than compete on AI.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Can I use BirkyStudio with my existing GoHighLevel account?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            Yes. BirkyStudio works alongside GoHighLevel. The AI agent handles lead conversations, property searches, and follow-ups, while GoHighLevel handles campaign reporting and attribution. They don't conflict — BirkyStudio adds the AI layer that GHL is missing.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is GoHighLevel or BirkyStudio better for a new agent?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            For new agents, BirkyStudio is the clear winner. You don't have time to learn a complex CRM platform — you need to be out meeting clients and closing deals. BirkyStudio handles the admin work for you from day one, set up in a single afternoon. GoHighLevel would take weeks to configure and months to master.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Can I cancel either service at any time?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:#cbd5e1;line-height:1.8;">
+            BirkyStudio is month-to-month with no contracts. You pay for setup once, and optional support can be cancelled anytime. GoHighLevel offers month-to-month pricing but at higher rates — annual plans lock you in. Users report difficulty cancelling and surprise charges after attempting to cancel. BirkyStudio has flexible, transparent cancellation.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:#94a3b8;font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> Pricing and features were verified from GoHighLevel's official website (gohighlevel.com/pricing) as of September 7, 2026. Customer review data compiled from Trustpilot, G2, Capterra, and Reddit user discussions. BirkyStudio pricing from birkystudio.com/pricing. Prices and features may change. This is an honest comparison based on publicly available information — not a sponsored post.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>

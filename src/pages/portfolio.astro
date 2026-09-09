@@ -42,10 +42,10 @@ const projects = [
   {
     title: "AI Voice Receptionist Demo",
     subtitle: "Try Elliot — Birky Studio Voice Agent",
-    url: "/voice-demo",
+    url: "https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1",
     image: null,
     isLiveDemo: true,
-    description: "Live interactive demo of Elliot, an AI voice agent for real estate and small business. Answers questions about Birky Studio's services, handles property inquiries, books demos, and handles bilingual calls 24/7. Built with Vapi.ai — 92% humanness.",
+    description: "Live interactive demo of Elliot, an AI voice agent for real estate and small business. Answers questions about Birky Studio's services, handles service inquiries, books demos, and handles bilingual calls 24/7. Built with Vapi.ai — 92% humanness.",
     tags: ["AI Voice", "Bilingual", "24/7", "Real Estate", "Vapi", "Elliot"],
     plan: "Voice Receptionist",
   },
@@ -77,6 +77,29 @@ const projects = [
       <p style="font-size:1.2rem;color:#cbd5e1;max-width:650px;margin:0 auto;line-height:1.8;">
         Websites, AI agents, and voice receptionists — built for real businesses. Every solution delivered fast, bilingual, and built to grow.
       </p>
+    </div>
+  </section>
+
+  <!-- Try Elliot Banner -->
+  <section style="padding:60px 0;background:linear-gradient(135deg,#064e3b 0%,#065f46 50%,#047857 100%);position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(16,185,129,0.2),transparent 50%),radial-gradient(circle at 70% 50%,rgba(5,150,105,0.15),transparent 50%);"></div>
+    <div class="container" style="position:relative;z-index:1;text-align:center;">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a7f3d0;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#34d399;animation:pulse 2s infinite;"></span>
+        Live Demo — Try It Now
+      </div>
+      <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:white;margin-bottom:16px;">
+        🎧 Call Elliot — Your AI Voice Agent
+      </h2>
+      <p style="font-size:1.1rem;color:#a7f3d0;max-width:600px;margin:0 auto 32px;line-height:1.8;">
+        No login, no signup. One click and Elliot picks up. Ask about properties, pricing, or just test it — it handles everything.
+      </p>
+      <a href="https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1" target="_blank" rel="noopener" class="btn" style="display:inline-flex;align-items:center;gap:12px;font-size:1.2rem;padding:18px 40px;background:white;color:#065f46;border-radius:100px;font-weight:700;box-shadow:0 8px 30px rgba(0,0,0,0.3);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.4)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.3)'">
+        <span style="font-size:1.5rem;">🎧</span>
+        Call Elliot Now
+        <span style="font-size:0.85rem;color:#065f46;opacity:0.7;">(free, 2 min call)</span>
+      </a>
+      <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;margin-top:16px;">92% humanness · Bilingual EN/ES · 24/7 available</p>
     </div>
   </section>
 
@@ -257,6 +280,10 @@ const projects = [
     .project-image:hover {
       transform: translateY(-4px);
       box-shadow: 0 24px 70px rgba(0,0,0,0.4) !important;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
     }
     @media (max-width: 768px) {
       .project-row {
