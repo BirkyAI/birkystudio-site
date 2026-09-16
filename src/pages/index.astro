@@ -1,6 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+// WebSite structured data — per Google's "Site Names in Google Search" docs this
+// is "the most important signal" for the site name shown above results. Without
+// it Google guesses the brand from other on-page signals.
+const websiteLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Birky Studio",
+  "alternateName": "Birky",
+  "url": "https://birkystudio.com/"
+});
+
 const organizationLD = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
@@ -132,6 +143,7 @@ const faqLD = JSON.stringify({
 ---
 
 <BaseLayout title="AI Agents & Websites for Small Businesses" description="Custom AI agents with Notion CRM that save you 8+ hours a week. Plus professional websites and voice receptionists, bilingual EN/ES, delivered in 3 days. Affordable pricing." image="/images/birky-mascot.jpg">
+  <script type="application/ld+json" set:html={websiteLD} />
   <script type="application/ld+json" set:html={organizationLD} />
   <script type="application/ld+json" set:html={faqLD} />
 
