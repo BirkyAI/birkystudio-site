@@ -1,5 +1,5 @@
 ---
-title: "How to Write an About Page That Builds Trust With Customers"
+title: "Write an About Page That Builds Trust"
 description: "Your About page is one of the most visited pages on your site. Here's how to write one that turns curious visitors into paying customers."
 date: 2026-07-30
 image: "/images/blog/ai-generated/about-page-trust.jpg"

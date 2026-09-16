@@ -1,5 +1,5 @@
 ---
-title: "Why Your Small Business Needs a Professional Business Email Address"
+title: "Why You Need a Professional Business Email"
 description: "Using a free Gmail or Hotmail address for your business hurts your credibility. Here is how to set up a professional email with your own domain and why it matters."
 date: 2026-08-06
 image: "/images/blog/ai-generated/professional-business-email.jpg"

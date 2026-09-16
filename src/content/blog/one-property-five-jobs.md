@@ -1,5 +1,5 @@
 ---
-title: "One Property, Five Jobs — The Hidden Cost of Listing Marketing Fragmentation"
+title: "One Property, Five Jobs"
 description: "Real estate agents on Reddit say one property means five separate jobs. Here's what listing marketing fragmentation costs in time and money — and how AI automation fixes it."
 date: 2026-09-06
 image: "/images/blog/ai-generated/one-property-five-jobs.jpg"

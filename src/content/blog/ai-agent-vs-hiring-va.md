@@ -1,5 +1,5 @@
 ---
-title: "Hire an AI Agent Instead of a VA: Save $2,000/Month and Never Miss a Lead"
+title: "AI Agent vs Hiring a VA: Save $2,000/Month"
 description: "Compare the real cost of hiring a virtual assistant vs a one-time AI agent setup from Birky Studio. $1,297 vs $2,400+/month — the math speaks for itself."
 date: 2026-08-29
 image: "/images/blog/ai-generated/ai-agent-vs-hiring-va.jpg"

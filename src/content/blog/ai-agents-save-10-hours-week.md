@@ -1,5 +1,5 @@
 ---
-title: "How AI Agents Save Small Businesses 10+ Hours Every Week"
+title: "How AI Agents Save 10+ Hours a Week"
 description: "Where exactly do 10+ hours go every week? An AI agent automates lead follow-up, client context recall, and phone notes — so you get real hours back."
 date: 2026-09-15
 image: "/images/blog/ai-generated/ai-agents-save-10-hours-week.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "Why a Website Without an AI Agent Is Leaving Money on the Table"
+title: "A Website Without an AI Agent"
 description: "Your website works 24/7, but without an AI agent, it lets leads slip through the cracks. Learn how Birky Studio combines custom web design with AI automation to capture every inquiry."
 image: "/images/blog/ai-generated/website-without-ai-agent-landscape.jpg"
 date: 2026-08-11

@@ -1,5 +1,5 @@
 ---
-title: "AI Voice vs AI Text Receptionist: Which One Does Your Business Need (And When You Need Both)"
+title: "AI Voice vs AI Text Receptionist"
 description: "Voice receptionist ($550) answers calls. Text receptionist ($297/mo) handles WhatsApp and website chat. Here is when to use each — and why combining both costs less than one human employee."
 date: 2026-09-01
 image: "/images/blog/ai-generated/ai-voice-text-receptionist-combo.jpg"

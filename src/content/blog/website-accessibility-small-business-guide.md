@@ -1,5 +1,5 @@
 ---
-title: "Website Accessibility for Small Businesses: A Simple Guide"
+title: "Website Accessibility for Small Business"
 description: "Making your website accessible is not just the right thing to do — it protects your business from lawsuits, expands your audience, and improves SEO. Here is what small business owners need to know."
 date: 2026-08-02
 image: "/images/blog/ai-generated/website-accessibility-hero.jpg"

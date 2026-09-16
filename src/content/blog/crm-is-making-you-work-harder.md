@@ -1,5 +1,5 @@
 ---
-title: "Your CRM Is Packed With Features You Don't Use — Here's the One You Actually Need"
+title: "Your CRM Has Features You Don't Use"
 description: "Real estate agents say CRMs solve the wrong problem: too many features, not enough auto-logging. Here's how Birky Studio's AI Agent captures every call, every note, every follow-up automatically."
 date: 2026-09-04
 image: "/images/blog/ai-generated/crm-is-making-you-work-harder.jpg"

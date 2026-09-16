@@ -1,5 +1,5 @@
 ---
-title: "Google Ads vs SEO: Where Should Your Small Business Invest?"
+title: "Google Ads vs SEO for Small Business"
 description: "Google Ads and SEO both drive traffic, but they work very differently. Here's an honest comparison to help small business owners decide where to put their budget."
 date: 2026-07-25
 image: "/images/blog/ai-generated/google-ads-vs-seo.jpg"

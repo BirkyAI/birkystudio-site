@@ -1,5 +1,5 @@
 ---
-title: "How to Choose the Right Website Hosting for Your Small Business"
+title: "Choosing Website Hosting for Small Business"
 description: "Confused by website hosting options? This simple guide breaks down shared, VPS, and managed hosting so you can pick the right plan for your business."
 date: 2026-07-31
 image: "/images/blog/ai-generated/website-hosting-guide.jpg"

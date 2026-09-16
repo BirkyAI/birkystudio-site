@@ -1,5 +1,5 @@
 ---
-title: "How to Add Live Chat to Your Small Business Website"
+title: "Add Live Chat to Your Website"
 description: "Live chat turns casual visitors into paying customers. Here's how to add it to your website without any technical skills."
 date: 2026-08-01
 image: "/images/blog/ai-generated/live-chat-small-business.jpg"

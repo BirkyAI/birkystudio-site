@@ -1,5 +1,5 @@
 ---
-title: "How AI Agents Automate Your Entire Client Intake Process"
+title: "Automate Your Client Intake Process"
 description: "Stop manually managing inquiries. AI agents can qualify, respond, schedule, and onboard new clients 24/7 without extra staff. Here is how it works."
 date: 2026-08-25
 image: "/images/blog/ai-generated/website-client-intake-automation.jpg"

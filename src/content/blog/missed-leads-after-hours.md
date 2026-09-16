@@ -1,5 +1,5 @@
 ---
-title: "Your Business Is Open 24 Hours. Why Is Your Phone Not?"
+title: "Your Business Is Open 24/7. Is Your Phone?"
 description: "Every missed call after hours is a lead that calls your competitor tomorrow morning. Here is how Birky Studio's AI text receptionist captures those leads for a one-time $297."
 image: "/images/blog/ai-generated/missed-leads-after-hours.jpg"
 date: 2026-08-17

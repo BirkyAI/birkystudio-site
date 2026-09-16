@@ -1,5 +1,5 @@
 ---
-title: "How to Take Great Photos for Your Small Business Website"
+title: "Great Photos for Your Business Website"
 description: "Your website photos are the first thing visitors notice. Here is a simple guide to taking professional-looking photos for your small business website, even with just a smartphone."
 date: 2026-07-26
 author: "Birky Studio"

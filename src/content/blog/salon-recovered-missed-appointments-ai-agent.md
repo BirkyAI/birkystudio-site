@@ -1,5 +1,5 @@
 ---
-title: "How a Hair Salon Recovered $1,800/Month in Missed Appointments with an AI Agent"
+title: "Salon Recovered $1,800 With an AI Agent"
 description: "A hair salon was losing 35+ calls per week to voicemail. An AI voice receptionist captured every one. Here is the exact ROI breakdown and what happened in month one."
 date: 2026-09-03
 image: "/images/blog/ai-generated/salon-recovered-missed-appointments-ai-agent.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "The Analytics Tab Chase: What Pulling 'Just One Comps Check' Really Costs You"
+title: "The Real Cost of One Comps Check"
 description: "Agents juggle 3-4 analytics tools just to answer 'what's my property worth?' Here's the real cost of the data-source shuffle — and what happens when an AI Agent pulls it all in one place."
 date: 2026-09-14
 image: "/images/blog/ai-generated/market-data-comps-on-demand.jpg"

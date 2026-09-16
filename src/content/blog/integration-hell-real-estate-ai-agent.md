@@ -1,5 +1,5 @@
 ---
-title: "I Am the Integration Between Two Products: The Unpaid Job Eating Your Commission"
+title: "The Unpaid Job Eating Your Commission"
 description: "Agents are secretly working as the data pipeline between 5 tools that never talk to each other. Here's the real cost of being the integration — and what replaces it."
 date: 2026-09-13
 image: "/images/blog/ai-generated/integration-hell-real-estate-ai-agent.jpg"

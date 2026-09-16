@@ -1,5 +1,5 @@
 ---
-title: "Bilingual Website Design for Small Businesses in Guatemala"
+title: "Bilingual Website Design in Guatemala"
 description: "Reaching customers in both English and Spanish opens up your market significantly. Here's why bilingual website design matters and how to get it right."
 date: 2026-07-18
 image: "/images/blog/ai-generated/bilingual-website-design-guatemala.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "The Handoff Problem: Why Deals Break After They're Signed (Not Before)"
+title: "Why Deals Break After They're Signed"
 description: "Agents lose deals after signing, not before. The listing-agent-to-TC handoff destroys context in a rushed phone call. Here's how an AI Agent fixes it."
 date: 2026-09-15
 image: "/images/blog/ai-generated/agent-tc-handoff-context-loss.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "The Note You Didn't Write Is Costing You Deals"
+title: "The Note You Didn't Write Is Costing Deals"
 description: "Lender calls with a rate change, the inspector calls with a finding, title calls with a new date — and none of it gets logged. Here's how agents stop losing the thread."
 date: 2026-09-10
 image: "/images/blog/ai-generated/phone-note-chaos-transaction-calls.jpg"

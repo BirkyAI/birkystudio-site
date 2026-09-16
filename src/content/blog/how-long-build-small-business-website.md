@@ -1,5 +1,5 @@
 ---
-title: "How Long Does It Take to Build a Small Business Website?"
+title: "How Long Does a Website Take to Build?"
 description: "Find out exactly how long it takes to build a small business website, from a simple one-page site to a full e-commerce store, with realistic timelines."
 date: 2026-07-18
 image: "/images/blog/ai-generated/website-timeline-hero.jpg"

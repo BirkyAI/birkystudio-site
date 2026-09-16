@@ -1,5 +1,5 @@
 ---
-title: "How to Choose the Right Web Designer for Your Small Business"
+title: "How to Choose a Web Designer"
 description: "Not all web designers are equal. Here's what to look for, what to avoid, and how to find the perfect fit for your small business website."
 date: 2026-07-15
 image: "/images/blog/ai-generated/web-design-hero.jpg"

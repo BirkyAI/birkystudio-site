@@ -1,5 +1,5 @@
 ---
-title: "Conversion Rate Optimization for Small Business Websites: Turn Visitors Into Customers"
+title: "Conversion Optimization for Small Business"
 description: "Learn practical conversion rate optimization (CRO) tips for your small business website. Simple changes to CTAs, forms, and page layout that turn more visitors into paying customers without spending more on ads."
 date: 2026-08-07
 image: "/images/blog/ai-generated/cro-website-conversion-tips_00001_.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "5 Website Automations That Save Small Business Owners 10+ Hours a Week"
+title: "5 Website Automations That Save 10 Hours"
 description: "Stop wasting time on manual tasks. Learn five website automations that handle lead capture, follow ups, scheduling, and reviews while you focus on growing your business."
 image: "/images/blog/ai-generated/website-automations-save-time.jpg"
 date: 2026-08-23

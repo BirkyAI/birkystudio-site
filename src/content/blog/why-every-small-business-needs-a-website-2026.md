@@ -1,5 +1,5 @@
 ---
-title: "Why Every Small Business Needs a Website in 2026"
+title: "Why Your Business Needs a Website (2026)"
 description: "Still relying on social media alone? Here's why a professional website is the single best investment for your small business — and how it pays for itself."
 date: 2026-07-12
 image: "/images/blog/ai-generated/website-2026-hero.jpg"

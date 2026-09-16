@@ -1,5 +1,5 @@
 ---
-title: "Email Marketing for Small Businesses: A Simple Guide to Getting Started"
+title: "Email Marketing for Small Business"
 description: "Email marketing has the highest ROI of any digital channel. Here is how small business owners can start building a list and sending emails that actually get opened."
 date: 2026-07-19
 image: "/images/blog/ai-generated/email-marketing-hero.jpg"

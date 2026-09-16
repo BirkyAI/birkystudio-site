@@ -1,5 +1,5 @@
 ---
-title: "Social Media vs. a Website: Why You Need Both (But Your Website Comes First)"
+title: "Social Media vs a Website: You Need Both"
 description: "A Facebook page is not a website. Learn why your small business needs its own site — and how to use social media to drive traffic to it."
 date: 2026-07-14
 image: "/images/blog/ai-generated/social-media-vs-website-hero.jpg"

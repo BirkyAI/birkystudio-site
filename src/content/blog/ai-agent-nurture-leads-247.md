@@ -1,5 +1,5 @@
 ---
-title: "The 24/7 Sales Funnel: How AI Agents Turn Strangers Into Booked Consultations"
+title: "How AI Agents Turn Leads Into Bookings"
 description: "Most website visitors leave without buying. An AI agent follows up automatically, qualifies leads, and books calls while you sleep. Here is how the pipeline works."
 date: 2026-08-31
 image: "/images/blog/ai-generated/ai-agent-nurture-leads-247.jpg"

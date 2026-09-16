@@ -1,5 +1,5 @@
 ---
-title: "The 5-Minute Rule: How Much Money Real Estate Agents Lose By Responding Slowly"
+title: "The 5-Minute Rule for Lead Response"
 description: "First responder wins — but agents can't be at their desk 24/7. Here's what slow response costs, why the appointment handoff kills most deals, and how AI agents fix both."
 date: 2026-09-05
 image: "/images/blog/ai-generated/lead-response-speed-5min.jpg"

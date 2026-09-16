@@ -1,5 +1,5 @@
 ---
-title: "Stop Losing Leads at 5 PM: How an AI Voice Receptionist Books Clients While You Sleep"
+title: "AI Voice Receptionist Books Clients 24/7"
 description: "Missed calls after hours cost small businesses thousands. See how Birky Studio's AI Voice Receptionist captures leads, books appointments, and never sleeps — for a fraction of the cost."
 image: "/images/blog/ai-generated/voice-receptionist-leads.jpg"
 date: 2026-08-08

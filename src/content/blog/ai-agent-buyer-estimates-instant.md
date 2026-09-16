@@ -1,5 +1,5 @@
 ---
-title: "Stop Saying 'Let Me Check': How One AI Agent Answers Buyer Estimates and Market Data Instantly"
+title: "AI Agent Answers Buyer Estimates Instantly"
 description: "Agents on Reddit are tired of juggling lender calls for every buyer estimate and switching between three analytics tools for one comp. Here's the fix that's already closing deals."
 date: 2026-09-08
 image: "/images/blog/ai-generated/ai-agent-buyer-estimates-instant.jpg"

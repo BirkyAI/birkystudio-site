@@ -1,5 +1,5 @@
 ---
-title: "AI Chatbot vs AI Agent: What Small Business Owners Need to Know"
+title: "AI Chatbot vs AI Agent: What to Know"
 description: "Not all AI is the same. Learn the difference between chatbots and AI agents, and which one actually helps your small business capture leads and save time."
 image: "/images/blog/ai-generated/ai-chatbot-vs-agent.jpg"
 date: 2026-08-22

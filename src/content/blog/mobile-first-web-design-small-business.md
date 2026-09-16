@@ -1,5 +1,5 @@
 ---
-title: "Why Mobile-First Web Design Matters for Small Business"
+title: "Why Mobile-First Design Matters"
 description: "Discover why mobile-first web design is essential for small business websites. Learn practical tips to reach more customers on their phones."
 date: 2026-08-01
 image: "/images/blog/ai-generated/mobile-first-web-design-small-business.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "How to Use AI Chatbots to Qualify Leads on Your Website"
+title: "Using AI Chatbots to Qualify Leads"
 description: "Learn how AI chatbots can automatically qualify leads on your website, saving your small business time and converting more visitors into customers."
 tags: ["AI Agents", "Web Design", "Small Business Tips"]
 date: 2026-08-04

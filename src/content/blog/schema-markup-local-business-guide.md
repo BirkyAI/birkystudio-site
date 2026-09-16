@@ -1,5 +1,5 @@
 ---
-title: "Schema Markup for Local Businesses: How to Stand Out on Google"
+title: "Schema Markup for Local Businesses"
 description: "Schema markup helps your business show up with rich results on Google. Here is a plain-English guide to the structured data every local business needs."
 date: 2026-08-05
 image: "/images/blog/ai-generated/schema-markup-hero.jpg"

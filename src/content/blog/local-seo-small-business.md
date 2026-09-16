@@ -1,5 +1,5 @@
 ---
-title: "Local SEO: How Small Businesses Get Found Online"
+title: "Local SEO for Small Business"
 description: "Local SEO helps your business show up when nearby customers search online. Here's a practical guide to getting found without hiring an agency."
 date: 2026-07-24
 image: "/images/blog/ai-generated/local-seo-small-business_00001_.png"

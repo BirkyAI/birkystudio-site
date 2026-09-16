@@ -1,5 +1,5 @@
 ---
-title: "AI Receptionist for Hotels and Restaurants: Complete Guide"
+title: "AI Receptionist for Hotels & Restaurants"
 description: "An AI receptionist handles calls, reservations, and guest questions around the clock. Here's how hotels and restaurants are using this technology to save time and money."
 date: 2026-07-18
 image: "/images/blog/ai-generated/ai-receptionist-hotels-restaurants-guide.jpg"

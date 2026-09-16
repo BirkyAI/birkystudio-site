@@ -1,5 +1,5 @@
 ---
-title: "How an AI Voice Receptionist Can Double Your Small Business Leads"
+title: "AI Voice Receptionist: Double Your Leads"
 description: "Missed calls are lost revenue. An AI voice receptionist answers every call 24/7, books appointments automatically, and never puts a customer on hold. Here is how it works and why small businesses in Guatemala are adopting it."
 date: 2026-08-10
 image: "/images/blog/ai-generated/ai-voice-receptionist-landscape.jpg"

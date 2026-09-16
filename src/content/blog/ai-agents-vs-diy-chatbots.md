@@ -1,5 +1,5 @@
 ---
-title: "AI Agents vs DIY Chatbots: What Actually Gets You More Leads"
+title: "AI Agents vs DIY Chatbots"
 description: "DIY chatbot builders sound great until they don't work. Here's why small businesses that upgrade to a real AI agent capture up to 3x more leads — and exactly what the difference costs."
 date: 2026-08-28
 image: "/images/blog/ai-generated/ai-agents-vs-diy-chatbots.jpg"

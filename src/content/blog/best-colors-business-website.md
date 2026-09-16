@@ -1,5 +1,5 @@
 ---
-title: "Best Colors for a Business Website: A Practical Guide"
+title: "Best Colors for a Business Website"
 description: "Choosing the right colors for your business website affects trust, readability, and conversions. Here is a simple framework for picking colors that work."
 date: 2026-08-15
 image: "/images/blog/ai-generated/web-design-hero.jpg"

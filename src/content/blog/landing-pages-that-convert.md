@@ -1,5 +1,5 @@
 ---
-title: "How to Create a Landing Page That Actually Converts Visitors Into Customers"
+title: "Landing Pages That Actually Convert"
 description: "Learn what makes a landing page convert. Practical tips for small business owners on layout, copy, calls-to-action, and trust signals that turn visitors into paying customers."
 date: 2026-07-23
 author: "Birky Studio"

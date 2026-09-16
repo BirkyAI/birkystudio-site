@@ -1,5 +1,5 @@
 ---
-title: "Website Security for Small Business: What You Need"
+title: "Website Security for Small Business"
 description: "Learn essential website security for small business owners. Simple steps to protect your site, customer data, and reputation from cyber threats."
 date: 2026-08-01
 image: "/images/blog/ai-generated/website-security-small-business-guide.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "Why Your Small Business Website Needs Monthly Maintenance"
+title: "Why Your Website Needs Monthly Maintenance"
 description: "Your website is not a set-it-and-forget-it tool. Learn why monthly website maintenance matters and what happens when small businesses skip it."
 date: 2026-07-28
 image: "/images/blog/ai-generated/website-maintenance-guide-blog.jpg"

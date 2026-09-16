@@ -1,5 +1,5 @@
 ---
-title: "From Zero Web Presence to 30+ Leads a Month: A Digital Transformation Story"
+title: "From Zero Web Presence to 30 Leads/Month"
 description: "A real estate agent in Antigua had no website, no online presence, and was losing leads nightly. After partnering with Birky Studio for a custom website and AI agent, they went from $0 in online leads to 30+ qualified inquiries per month."
 image: "/images/blog/ai-generated/digital-marketing-hero.jpg"
 date: 2026-08-09

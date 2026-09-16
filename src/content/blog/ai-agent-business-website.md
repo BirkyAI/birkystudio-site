@@ -1,5 +1,5 @@
 ---
-title: "What Happens When You Add an AI Agent to Your Business Website"
+title: "Adding an AI Agent to Your Website"
 description: "Still answering the same questions every day? An AI agent on your website handles FAQs, books appointments, and captures leads 24/7. Here is exactly what Birky Studio's AI agent setup does for your business."
 image: "/images/blog/ai-generated/ai-agent-business-website.jpg"
 date: 2026-08-19

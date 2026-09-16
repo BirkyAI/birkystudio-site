@@ -1,5 +1,5 @@
 ---
-title: "The $297 Monthly Text Receptionist That Handled 143 Customer Questions in Week One"
+title: "Text Receptionist: 143 Questions, Week One"
 description: "A Guatemala accounting firm added an AI text receptionist to their website. 143 conversations in seven days. Here is the exact ROI breakdown and why text beats voicemail."
 date: 2026-08-26
 image: "/images/blog/ai-generated/text-receptionist-leads-first-week.jpg"

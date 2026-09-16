@@ -1,5 +1,5 @@
 ---
-title: "AI Home Valuations Look Precise. That Confidence Is Often Fabricated."
+title: "AI Home Valuations Look Precise"
 description: "Agents on Reddit are calling out AI valuation tools that quote '2-3% accuracy' while quietly hiding 15%+ swings on unique homes. Here's the fix that protects your credibility."
 date: 2026-09-09
 image: "/images/blog/ai-generated/ai-valuation-confidence-intervals.jpg"

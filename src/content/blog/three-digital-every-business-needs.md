@@ -1,5 +1,5 @@
 ---
-title: "Three Digital Tools Every Small Business in Guatemala Needs Right Now"
+title: "Three Digital Tools Every Business Needs"
 description: "A website, an AI agent, and a voice receptionist. Here is exactly what each does for your business and why bundling them with Birky Studio costs less than building one service alone."
 image: "/images/blog/ai-generated/three-digital-tools-landscape.jpg"
 date: 2026-08-12

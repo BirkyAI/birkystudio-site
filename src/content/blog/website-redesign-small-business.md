@@ -1,5 +1,5 @@
 ---
-title: "Website Redesign: When and Why Your Small Business Needs One"
+title: "When Your Small Business Needs a Redesign"
 description: "Your website might be hurting your business without you realizing it. Here are the clear signs it's time for a redesign and what to expect from the process."
 date: 2026-07-18
 image: "/images/blog/ai-generated/website-redesign-small-business.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "A Website That Looks Good But Does Nothing is Just a Digital Brochure"
+title: "A Website That Looks Good But Does Nothing"
 description: "A pretty website that does not capture leads, answer questions, or book appointments is not a business asset. It is a billboard nobody reads. Here is how Birky Studio turns your site into a revenue machine."
 image: "/images/blog/ai-generated/digital-brochure-landscape.jpg"
 date: 2026-08-14

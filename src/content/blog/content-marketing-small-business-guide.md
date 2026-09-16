@@ -1,5 +1,5 @@
 ---
-title: "Content Marketing for Small Business: Get Customers Without Paying for Ads"
+title: "Content Marketing for Small Business"
 description: "Learn how content marketing helps small businesses attract customers for free. A practical guide to blogs, social media, and email content that actually works."
 author: "Birky Studio"
 date: 2026-08-03

@@ -1,5 +1,5 @@
 ---
-title: "8 Tabs for One Question — The Real Cost of Fragmented Real Estate Tools"
+title: "8 Tabs for One Question"
 description: "Real estate agents on Reddit are calling out the #1 tech pain in 2026: juggling 8 tools to answer one client question. Here's how AI agents fix that."
 date: 2026-09-04
 image: "/images/blog/ai-generated/8-tabs-one-question.jpg"

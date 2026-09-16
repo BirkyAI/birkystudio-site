@@ -1,5 +1,5 @@
 ---
-title: "Google Search Console for Small Business: The Free Tool You're Ignoring"
+title: "Google Search Console for Small Business"
 description: "Google Search Console shows how your website appears in search results, and it is completely free. Here is how to set it up and use it to grow your business."
 date: 2026-08-15
 image: "/images/blog/ai-generated/google-analytics-small-business-2026.jpg"

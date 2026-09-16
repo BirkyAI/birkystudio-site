@@ -1,5 +1,5 @@
 ---
-title: "What $1,297 Actually Buys You — A Line-Item Look at an AI Agent Setup"
+title: "What $1,297 Buys: An AI Agent Setup"
 description: "After agents got burned by ISA contracts they couldn't see into, one question keeps coming up: what exactly am I paying for? Here is the honest line-item receipt."
 date: 2026-09-16
 image: "/images/blog/ai-generated/what-1297-buys-ai-agent-setup.jpg"

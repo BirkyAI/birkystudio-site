@@ -1,5 +1,5 @@
 ---
-title: "Website Speed Optimization for Small Business: A Simple Guide"
+title: "Website Speed for Small Business"
 description: "Slow websites lose customers. Learn how to speed up your small business website with these practical tips that do not require a developer."
 date: 2026-07-18
 image: "/images/blog/ai-generated/website-speed-hero.jpg"

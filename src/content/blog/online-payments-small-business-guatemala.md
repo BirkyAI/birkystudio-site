@@ -1,5 +1,5 @@
 ---
-title: "How to Accept Online Payments for Your Small Business in Guatemala"
+title: "Online Payments for Small Business"
 description: "A practical guide for small business owners in Guatemala on setting up online payment processing, from bank transfers and QR payments to international gateways."
 date: 2026-08-07
 image: "/images/blog/ai-generated/online-payments-small-business.jpg"

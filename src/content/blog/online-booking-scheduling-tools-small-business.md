@@ -1,5 +1,5 @@
 ---
-title: "Online Booking Tools Every Small Business Should Know About"
+title: "Online Booking Tools for Small Business"
 description: "Missed calls and back-and-forth emails cost you customers. Here are the best online booking tools for small businesses and how to pick the right one."
 date: 2026-07-29
 image: "/images/blog/ai-generated/online-booking-tools-blog.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "Call Elliot — The AI Voice Agent That Answers Your Calls 24/7 (Try It)"
+title: "Call Elliot — Our AI Voice Agent"
 description: "No signup, no sales call. One click and Elliot the AI voice agent picks up — answers questions, books appointments, handles the unexpected. Try it now."
 date: 2026-09-03
 image: "/images/blog/ai-generated/call-voice-receptionist-demo.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "The Memory Gap: What Happens When Clients Remember Things You Forgot"
+title: "The Memory Gap: What Clients Remember"
 description: "Real estate agents spend longer on appointments because they can't recall past conversations. Here's what that memory gap costs in time, trust, and revenue — and how AI agents fix it."
 date: 2026-09-07
 image: "/images/blog/ai-generated/memory-gap-client-trust.jpg"

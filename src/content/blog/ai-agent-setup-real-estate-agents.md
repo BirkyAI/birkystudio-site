@@ -1,5 +1,5 @@
 ---
-title: "AI Agent Setup for Real Estate Agents: What It Automates (And What It Doesn't)"
+title: "AI Agent Setup for Real Estate Agents"
 description: "An AI agent handles lead capture, qualification, scheduling, and follow-ups for $1,297 one-time. Here's exactly what a real estate AI agent does — and the three things only a human agent should do."
 date: 2026-09-01
 image: "/images/blog/ai-generated/ai-agent-setup-real-estate-agents.jpg"

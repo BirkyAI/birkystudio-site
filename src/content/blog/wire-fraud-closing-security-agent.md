@@ -1,5 +1,5 @@
 ---
-title: "The $60,000 Email: Wire Fraud Is Quietly Eating Closings — And Almost Nobody Talks About It"
+title: "Wire Fraud Is Quietly Eating Closings"
 description: "A fraudster spoofs an email before closing and your buyer wires six figures to the wrong account. It happens constantly, most agents have no process for it, and here's how to close the gap."
 date: 2026-09-12
 image: "/images/blog/ai-generated/wire-fraud-closing-security-agent.jpg"

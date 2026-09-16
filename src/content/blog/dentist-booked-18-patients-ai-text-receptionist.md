@@ -1,5 +1,5 @@
 ---
-title: "How a Local Dentist Booked 18 New Patients in One Week with an AI Text Receptionist"
+title: "Dentist Booked 18 Patients With AI Texts"
 description: "A $297 investment booked 18 new patients in 7 days. Here is the exact breakdown of how a dental practice used an AI text receptionist to capture WhatsApp leads, schedule appointments, and never miss another after-hours inquiry."
 date: 2026-09-02
 image: "/images/blog/ai-generated/dentist-booked-18-patients-ai-text-receptionist.jpg"

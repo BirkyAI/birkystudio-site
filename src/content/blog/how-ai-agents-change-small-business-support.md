@@ -1,5 +1,5 @@
 ---
-title: "How AI Agents Are Changing Small Business Customer Support"
+title: "How AI Agents Change Customer Support"
 description: "Tired of answering the same questions over and over? An AI agent handles customer inquiries 24/7 so you can focus on growing your business."
 date: 2026-07-11
 image: "/images/blog/ai-generated/ai-agents-hero.jpg"
