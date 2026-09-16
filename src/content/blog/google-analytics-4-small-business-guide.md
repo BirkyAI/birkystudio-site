@@ -1,5 +1,5 @@
 ---
-title: "Google Analytics 4 for Small Business: A Simple Setup Guide"
+title: "Google Analytics 4 for Small Business"
 description: "Google Analytics 4 can feel overwhelming, but it does not have to be. Here is how to set it up and use the data that actually matters for your small business."
 date: 2026-07-22
 image: "/images/blog/ai-generated/google-analytics-small-business-2026.jpg"

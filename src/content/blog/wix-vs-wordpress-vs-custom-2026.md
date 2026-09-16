@@ -1,5 +1,5 @@
 ---
-title: "Wix vs WordPress vs Custom Website: What Guatemalan Businesses Need in 2026"
+title: "Wix vs WordPress vs Custom Website (2026)"
 description: "Should you build with Wix, WordPress, or hire a custom web studio? We break down the real costs, capabilities, and long-term value for small businesses in Guatemala."
 image: "/images/blog/ai-generated/wix-vs-wordpress-vs-custom-2026.jpg"
 date: 2026-08-13

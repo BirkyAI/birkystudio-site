@@ -1,5 +1,5 @@
 ---
-title: "How an AI Voice Receptionist Paid for Itself in One Month"
+title: "AI Voice Receptionist Paid for Itself"
 description: "A small business case study: $550 setup paid back in under 30 days. Here is how one missed call turned into a recurring revenue stream, and why your business should be next."
 date: 2026-08-24
 image: "/images/blog/ai-generated/ai-voice-receptionist-paid-for-itself.jpg"

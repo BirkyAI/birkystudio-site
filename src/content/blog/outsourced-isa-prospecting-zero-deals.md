@@ -1,5 +1,5 @@
 ---
-title: "11,216 Dials, One Lead, Zero Deals: The ISA Contract That Almost Broke a Realtor"
+title: "Outsourced ISA: Why Prospecting Fails"
 description: "A realtor paid an outsourced call center for six months of cold calling. The result: 11,216 dials, 54 connections, one lead, zero closings. Here's what actually works instead."
 date: 2026-09-11
 image: "/images/blog/ai-generated/outsourced-isa-prospecting-zero-deals.jpg"

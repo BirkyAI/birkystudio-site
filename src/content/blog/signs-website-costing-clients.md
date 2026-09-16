@@ -1,5 +1,5 @@
 ---
-title: "5 Signs Your Small Business Website Is Costing You Clients (And How We Fix Each One)"
+title: "5 Signs Your Website Is Costing You Clients"
 description: "Most small business websites lose more clients than they attract. Here are five warning signs and exactly how Birky Studio fixes them."
 image: "/images/blog/ai-generated/signs-website-costing-clients.jpg"
 date: 2026-08-20

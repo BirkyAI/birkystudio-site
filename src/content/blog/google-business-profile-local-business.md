@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile: The Free Tool Every Local Business Needs"
+title: "Google Business Profile for Local Business"
 description: "Your Google Business Profile is the first thing people see when they search for your business. Here's how to set it up and optimize it — step by step."
 date: 2026-07-16
 image: "/images/blog/ai-generated/google-business-profile-hero.jpg"

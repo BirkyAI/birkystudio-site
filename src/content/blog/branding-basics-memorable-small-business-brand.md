@@ -1,5 +1,5 @@
 ---
-title: "Branding Basics: How to Build a Memorable Small Business Brand"
+title: "Branding Basics for Small Businesses"
 description: "Learn the essential branding basics every small business owner needs — from logo design to brand voice — to stand out and attract loyal customers."
 author: "Birky Studio"
 date: 2026-07-17

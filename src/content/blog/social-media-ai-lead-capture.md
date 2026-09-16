@@ -1,5 +1,5 @@
 ---
-title: "Stop Posting Into the Void: How AI Agents Turn Social Media Into Sales"
+title: "Turn Social Media Into Sales With AI Agents"
 description: "You post every day but nobody books. An AI agent on your website and WhatsApp captures the leads your social media drives. Here is how it works."
 image: "/images/blog/ai-generated/social-media-ai-leads.jpg"
 date: 2026-08-18

@@ -1,5 +1,5 @@
 ---
-title: "How an AI Agent Can Run Your Social Media (And Free Up 15 Hours a Week)"
+title: "How an AI Agent Runs Your Social Media"
 description: "Social media takes 15+ hours a week for most business owners. An AI agent creates, schedules, replies, and captures leads automatically. Here is the exact ROI breakdown."
 date: 2026-08-30
 image: "/images/blog/ai-generated/social-media-ai-agent-automation.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "How to Choose the Right Web Designer for Your Small Business: A No-Nonsense Guide"
+title: "Choosing a Web Designer for Small Business"
 description: "Not all web designers are the same. Here is exactly what to look for, what to avoid, and why the cheapest quote usually costs the most."
 date: 2026-08-27
 image: "/images/blog/ai-generated/how-to-choose-right-web-designer-small-business.jpg"

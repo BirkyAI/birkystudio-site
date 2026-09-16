@@ -1,5 +1,5 @@
 ---
-title: "AI Voice Receptionist vs Monthly Services: Why Pay $150 When You Can Pay Once?"
+title: "AI Voice Receptionist vs Monthly Services"
 description: "Stop bleeding $150+/month on AI receptionist subscriptions. Birky Studio's voice receptionist is a one-time $550 setup. Here is the real cost comparison."
 image: "/images/blog/ai-generated/ai-voice-receptionist-vs-monthly.jpg"
 date: 2026-08-16

@@ -1,5 +1,5 @@
 ---
-title: "AI-Powered Web Design: How Small Businesses Can Get a Professional Website in 2026"
+title: "AI-Powered Web Design for Small Business"
 description: "AI is changing how small businesses build websites. Learn how to use AI tools and AI agents to create a professional, custom site without hiring a full development team."
 date: 2026-08-06
 image: "/images/blog/ai-generated/web-design-hero.jpg"

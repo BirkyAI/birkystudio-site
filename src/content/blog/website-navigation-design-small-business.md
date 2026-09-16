@@ -1,5 +1,5 @@
 ---
-title: "Website Navigation Design for Small Business: How to Build a Site That Guides Customers"
+title: "Website Navigation Design for Small Business"
 description: "Bad navigation costs you customers. Learn the simple rules for designing a website menu that helps visitors find what they need fast, reduces bounce rate, and turns browsers into buyers."
 image: "/images/blog/ai-generated/website-navigation-small-business.jpg"
 date: 2026-08-21

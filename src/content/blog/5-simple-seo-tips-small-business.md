@@ -1,5 +1,5 @@
 ---
-title: "5 Simple SEO Tips to Get Your Small Business Found on Google"
+title: "5 Simple SEO Tips for Small Business"
 description: "You don't need to be a tech expert to show up on Google. Here are 5 straightforward SEO tips that any small business owner can start using today."
 date: 2026-07-12
 image: "/images/blog/ai-generated/seo-tips-hero.jpg"
