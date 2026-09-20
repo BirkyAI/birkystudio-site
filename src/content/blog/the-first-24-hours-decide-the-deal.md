@@ -26,7 +26,7 @@ And it lands while you're having dinner with your family.
 
 ## Hour 1: The Response Speed Math
 
-The research here isn't subtle. Respond within five minutes and conversion jumps dramatically. Wait an hour and it roughly halves. Wait twelve and you are the back-up option, not the option.
+The research here isn't subtle — we covered the actual numbers in our [five-minute lead response](https://birkystudio.com/blog/lead-response-speed-5min/) break-down. Respond within five minutes and conversion jumps dramatically. Wait an hour and it roughly halves. Wait twelve and you are the back-up option, not the option.
 
 But here's the part agents actually understand viscerally: **a pre-approved buyer who reached out at night is comparing you in real time.** They didn't send you an email to read tomorrow. They sent a message to get an answer *tonight*. Every minute you're dark, another agent is lit.
 
