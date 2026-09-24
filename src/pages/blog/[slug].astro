@@ -24,7 +24,7 @@ const jsonLD = JSON.stringify({
   "description": post.data.description,
   "datePublished": post.data.date.toISOString(),
   "author": { "@type": "Person", "name": "Luna Jerney", "url": "https://birkystudio.com/about/" },
-  "publisher": { "@type": "Organization", "name": "Birky Studio" },
+  "publisher": { "@type": "Organization", "name": "Birky Studio", "logo": { "@type": "ImageObject", "url": "https://birkystudio.com/images/birky-logo.jpg" } },
   ...(post.data.image && { "image": post.data.image }),
 });
 ---
