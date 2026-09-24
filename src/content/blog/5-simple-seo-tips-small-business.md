@@ -8,7 +8,7 @@ lang: "en"
 author: "Birky Studio"
 ---
 
-You built a website for your business. Great! But if nobody can find it on Google, did it really matter? SEO — Search Engine Optimization — sounds complicated, but the basics are surprisingly simple. Here are five things you can do right now to help your business show up when customers search online.
+You built a website for your business. Great! But if nobody can find it on Google, did it really matter? SEO. Search Engine Optimization, sounds complicated, but the basics are surprisingly simple. Here are five things you can do right now to help your business show up when customers search online.
 
 ## 1. Claim and Complete Your Google Business Profile
 
@@ -22,13 +22,13 @@ If you do nothing else on this list, do this one. Your [Google Business Profile]
 - At least 5 photos of your business, products, or services
 - Your website link
 
-Why does this matter so much? Because Google trusts its own platform first. A complete profile can show up in the map pack — those top three local results that appear before any website links. That's prime real estate, and it's completely free.
+Why does this matter so much? Because Google trusts its own platform first. A complete profile can show up in the map pack, those top three local results that appear before any website links. That's prime real estate, and it's completely free.
 
 ## 2. Use Words Your Customers Actually Search For
 
 This is where most small businesses go wrong. You might call your service "premium residential cleaning solutions," but your customers are typing "house cleaning near me" into Google.
 
-Think about how a real person would search for what you offer. Then use those exact phrases on your website — in your page titles, headings, and body text. If you're a bakery in Guatemala City, your homepage title should say something like "Fresh Bread and Pastries in Guatemala City" — not just "Welcome to Our Bakery."
+Think about how a real person would search for what you offer. Then use those exact phrases on your website, in your page titles, headings, and body text. If you're a bakery in Guatemala City, your homepage title should say something like "Fresh Bread and Pastries in Guatemala City", not just "Welcome to Our Bakery."
 
 **Quick exercise:** Ask five friends or customers how they would search for your business on Google. Use their words on your site.
 
@@ -52,12 +52,12 @@ When you try to cram everything onto one page, Google gets confused about what t
 
 **Structure your pages like this:**
 
-- **H1 heading** — The main topic (one per page)
-- **H2 headings** — Supporting sections
-- **Body text** — Natural, helpful content that answers questions
-- **Meta description** — The short summary that appears in search results
+- **H1 heading**. The main topic (one per page)
+- **H2 headings**. Supporting sections
+- **Body text**. Natural, helpful content that answers questions
+- **Meta description**. The short summary that appears in search results
 
-This isn't just good for Google — it's good for your visitors too. People scan pages quickly, and clear headings help them find what they need.
+This isn't just good for Google, it's good for your visitors too. People scan pages quickly, and clear headings help them find what they need.
 
 ## 5. Get Other Websites to Link to You
 
@@ -74,8 +74,8 @@ You don't need hundreds of links. Even five or ten from relevant, local websites
 
 ## The Bottom Line
 
-SEO isn't a mystery — it's about making it easy for Google to understand what you do and who you serve. Start with your Google Business Profile, use real words your customers search for, keep your site fast, organize your content clearly, and build a few quality links.
+SEO isn't a mystery, it's about making it easy for Google to understand what you do and who you serve. Start with your Google Business Profile, use real words your customers search for, keep your site fast, organize your content clearly, and build a few quality links.
 
 You don't need to do everything at once. Pick one tip from this list and work on it this week. Small, consistent improvements add up over time.
 
-If you'd like help making your website more visible on Google, [get in touch with us](/contact). We build fast, SEO-friendly websites for small businesses — and we'd love to help yours get found.
+If you'd like help making your website more visible on Google, [get in touch with us](/contact). We build fast, SEO-friendly websites for small businesses, and we'd love to help yours get found.

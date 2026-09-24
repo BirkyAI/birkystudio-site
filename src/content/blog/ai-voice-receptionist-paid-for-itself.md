@@ -28,9 +28,9 @@ The AI went live on a Tuesday. By Friday, it had answered seventeen calls.
 
 Here is the breakdown:
 
-- **9 calls during business hours** — the human receptionist was busy with patients or on lunch. The AI handled every one. Six booked appointments.
-- **6 calls after hours** — evening inquiries about teeth whitening, emergency appointments, and new patient registration. The AI took messages and scheduled appointments.
-- **2 calls on Saturday** — the clinic is closed on weekends. The AI handled both. One booked a Monday appointment.
+- **9 calls during business hours**, the human receptionist was busy with patients or on lunch. The AI handled every one. Six booked appointments.
+- **6 calls after hours**, evening inquiries about teeth whitening, emergency appointments, and new patient registration. The AI took messages and scheduled appointments.
+- **2 calls on Saturday**, the clinic is closed on weekends. The AI handled both. One booked a Monday appointment.
 
 Total captured in week one: **17 calls, 9 scheduled appointments**.
 
@@ -50,7 +50,7 @@ After thirty days, the numbers were clear:
 | One month voice provider cost | $30 |
 | **Net gain in month one** | **$1,580** |
 
-The system paid for itself in under a month. Actually, it paid for itself in **less than seven calls** — the first full day of captured appointments covered the setup cost.
+The system paid for itself in under a month. Actually, it paid for itself in **less than seven calls**, the first full day of captured appointments covered the setup cost.
 
 By the end of the first month, the clinic had generated $1,580 in net additional revenue from calls they would have missed entirely before the AI was installed.
 
@@ -60,10 +60,10 @@ The human receptionist was good at her job. But she was one person with working 
 
 Here is what was happening before the AI:
 
-- **11 missed calls per week** on average — calls that hit voicemail and never called back
-- **Zero after-hours coverage** — evening inquiries (the most motivated buyers) went to silence
-- **No weekend coverage** — Saturday is a high-intent calling day, but nobody was answering
-- **Voicemail abandon rate of 85%** — out of every 20 voicemails left, only 3 would get a return call that same day
+- **11 missed calls per week** on average, calls that hit voicemail and never called back
+- **Zero after-hours coverage**, evening inquiries (the most motivated buyers) went to silence
+- **No weekend coverage**. Saturday is a high-intent calling day, but nobody was answering
+- **Voicemail abandon rate of 85%**, out of every 20 voicemails left, only 3 would get a return call that same day
 
 The clinic was not losing a few calls here and there. They were losing an entire revenue stream.
 
@@ -73,13 +73,13 @@ This is the part most business owners get wrong. They think an AI receptionist e
 
 The AI handles:
 
-- **Appointment scheduling and rescheduling** — full conversation, calendar access, confirmation texts
-- **Hours and location questions** — instant answers without putting anyone on hold
-- **Insurance and payment questions** — the AI knows accepted plans, pricing, and financing options
-- **New patient intake** — collects name, contact info, reason for visit, and insurance details
-- **Emergency triage** — identifies urgent cases and immediately forwards to the doctor's mobile
+- **Appointment scheduling and rescheduling**, full conversation, calendar access, confirmation texts
+- **Hours and location questions**, instant answers without putting anyone on hold
+- **Insurance and payment questions**, the AI knows accepted plans, pricing, and financing options
+- **New patient intake**, collects name, contact info, reason for visit, and insurance details
+- **Emergency triage**, identifies urgent cases and immediately forwards to the doctor's mobile
 
-When the AI cannot handle something, it transfers to the human receptionist with full conversation context. The human never has to ask "what did they want?" — it is all right there in the transcript.
+When the AI cannot handle something, it transfers to the human receptionist with full conversation context. The human never has to ask "what did they want?", it is all right there in the transcript.
 
 The result: the human receptionist now handles fewer interruptions and spends more time on actual patient care. The clinic actually kept their part-time receptionist. Her job just got easier.
 

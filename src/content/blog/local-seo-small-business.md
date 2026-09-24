@@ -16,8 +16,8 @@ Local SEO is how your business appears in search results when people nearby are 
 
 There are two places your business can show up:
 
-1. **The map pack** — those three businesses with the map at the top of Google results
-2. **The organic results** — regular website listings below the map
+1. **The map pack**, those three businesses with the map at the top of Google results
+2. **The organic results**, regular website listings below the map
 
 Getting into the map pack is where most of the action is. Studies show that 42% of searchers click on one of those three map results. If you're not there, you're invisible to a huge chunk of potential customers.
 
@@ -27,13 +27,13 @@ Your Google Business Profile is the foundation of everything. If you haven't cla
 
 Once it's live, fill out every single field. Not just the basics. Everything.
 
-- **Business name** — exactly as it appears on your sign, no keyword stuffing
-- **Address** — precise, matching what's on your website
-- **Phone number** — a local number, not a toll-free one
-- **Hours** — including special hours for holidays
-- **Categories** — pick the most specific primary category, then add secondary ones
-- **Services or products** — list everything you offer
-- **Photos** — at least 10 high-quality photos of your location, team, and work
+- **Business name**, exactly as it appears on your sign, no keyword stuffing
+- **Address**, precise, matching what's on your website
+- **Phone number**, a local number, not a toll-free one
+- **Hours**, including special hours for holidays
+- **Categories**, pick the most specific primary category, then add secondary ones
+- **Services or products**, list everything you offer
+- **Photos**, at least 10 high-quality photos of your location, team, and work
 
 The businesses that show up in the map pack are almost always the ones with complete, active profiles. Google rewards effort.
 
@@ -101,9 +101,9 @@ Test your site on your own phone right now. Can you find the address in under th
 
 You can't improve what you don't measure. Check these monthly:
 
-- **Google Business Profile insights** — how many people found you, called you, or asked for directions
-- **Search Console** — which search terms bring people to your site
-- **Review count and rating** — are you growing steadily?
+- **Google Business Profile insights**, how many people found you, called you, or asked for directions
+- **Search Console**, which search terms bring people to your site
+- **Review count and rating**, are you growing steadily?
 
 Don't obsess over daily changes. Local SEO is a slow burn. You'll start seeing results in two to three months, and they compound over time.
 

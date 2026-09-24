@@ -8,7 +8,7 @@ lang: "en"
 author: "Birky Studio"
 ---
 
-You've decided your business needs a website — great call. But now comes the tricky part: finding someone to actually build it.
+You've decided your business needs a website, great call. But now comes the tricky part: finding someone to actually build it.
 
 Google "web designer near me" and you'll get thousands of results. Freelancers charging $200. Agencies quoting $20,000. Website builders promising you can do it yourself in an afternoon. So how do you cut through the noise and find the right fit?
 
@@ -46,7 +46,7 @@ A beautiful website that nobody can find is worthless. Your designer should know
 
 ### 4. They Offer Ongoing Support
 
-Websites aren't "set it and forget it." They need updates, security patches, and occasional changes. Ask what happens after launch — do they offer maintenance? How much does it cost?
+Websites aren't "set it and forget it." They need updates, security patches, and occasional changes. Ask what happens after launch, do they offer maintenance? How much does it cost?
 
 ### 5. They Have Real Client Examples
 
@@ -58,7 +58,7 @@ Look for actual business websites in their portfolio, not just demo sites. Bette
 
 **🚩 No contract or scope document.** Always get the deliverables, timeline, and costs in writing before you pay anything.
 
-**🚩 They can't explain things simply.** If a designer can't explain what they're doing in plain language, they may not understand it themselves — or they're hiding complexity that will cost you later.
+**🚩 They can't explain things simply.** If a designer can't explain what they're doing in plain language, they may not understand it themselves, or they're hiding complexity that will cost you later.
 
 **🚩 They lock you in.** Your website should be yours. Make sure you own your domain, hosting, and content. If a designer insists on hosting everything under their account, walk away.
 
@@ -73,7 +73,7 @@ Look for actual business websites in their portfolio, not just demo sites. Bette
 | **Communication** | Direct with the builder | Account managers, more structure |
 | **Best for** | Simple sites, tight budgets | Complex projects, ongoing needs |
 
-For most small businesses, a skilled freelancer or a small studio (like us!) hits the sweet spot — personal attention without enterprise pricing.
+For most small businesses, a skilled freelancer or a small studio (like us!) hits the sweet spot, personal attention without enterprise pricing.
 
 ## The Right Questions to Ask Before Hiring
 
@@ -90,7 +90,7 @@ Here's a quick checklist for your first conversation:
 
 ## DIY vs. Professional: When It Makes Sense to Hire
 
-Let's be honest — tools like Wix and Squarespace have gotten pretty good. If you're a brand-new business with zero budget, a DIY site is better than no site at all.
+Let's be honest, tools like Wix and Squarespace have gotten pretty good. If you're a brand-new business with zero budget, a DIY site is better than no site at all.
 
 **But consider hiring a professional when:**
 
@@ -106,6 +106,6 @@ A professional site pays for itself when it brings in even one or two extra cust
 
 Choosing a web designer is a big decision, but it doesn't have to be stressful. Focus on finding someone who listens to your needs, builds fast and mobile-friendly sites, and will be there after launch.
 
-If you're looking for a partner who understands small businesses, [check out our products](/#products) to see what we offer — from professional websites to AI agents that handle customer inquiries for you.
+If you're looking for a partner who understands small businesses, [check out our products](/#products) to see what we offer, from professional websites to AI agents that handle customer inquiries for you.
 
-Have questions? [Get in touch with us](/contact) — we're always happy to chat about what's right for your business.
+Have questions? [Get in touch with us](/contact), we're always happy to chat about what's right for your business.

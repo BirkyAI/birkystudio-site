@@ -18,11 +18,11 @@ Think about the last time you shopped online. If you had a question and couldn't
 
 Live chat catches those visitors at the exact moment they're interested. Here's what it does for your business:
 
-- **Instant answers** — visitors don't have to wait hours for an email reply or sit on hold
-- **Higher conversion rates** — businesses with live chat see 20-40% more leads than those without
-- **Builds trust** — a real-time conversation feels more personal than a contact form
-- **Saves time** — you can handle multiple chats at once, unlike phone calls
-- **Works after hours** — with the right setup, chat can capture leads even when you're sleeping
+- **Instant answers**, visitors don't have to wait hours for an email reply or sit on hold
+- **Higher conversion rates**, businesses with live chat see 20-40% more leads than those without
+- **Builds trust**, a real-time conversation feels more personal than a contact form
+- **Saves time**, you can handle multiple chats at once, unlike phone calls
+- **Works after hours**, with the right setup, chat can capture leads even when you're sleeping
 
 ## Your Live Chat Options (From Simple to Advanced)
 

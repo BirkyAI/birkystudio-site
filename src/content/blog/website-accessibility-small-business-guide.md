@@ -1,6 +1,6 @@
 ---
 title: "Website Accessibility for Small Business"
-description: "Making your website accessible is not just the right thing to do — it protects your business from lawsuits, expands your audience, and improves SEO. Here is what small business owners need to know."
+description: "Making your website accessible is not just the right thing to do, it protects your business from lawsuits, expands your audience, and improves SEO. Here is what small business owners need to know."
 date: 2026-08-02
 image: "/images/blog/ai-generated/website-accessibility-hero.jpg"
 tags: ["Web Design", "Small Business"]
@@ -8,7 +8,7 @@ lang: "en"
 author: "Birky Studio"
 ---
 
-You have probably heard the term "website accessibility" but assumed it was something only big corporations needed to worry about. That assumption could cost you customers — and in some countries, it could land you in legal trouble.
+You have probably heard the term "website accessibility" but assumed it was something only big corporations needed to worry about. That assumption could cost you customers, and in some countries, it could land you in legal trouble.
 
 The truth is that website accessibility matters for every business with a website, no matter how small. And making your site more accessible is simpler than you think.
 
@@ -16,13 +16,13 @@ The truth is that website accessibility matters for every business with a websit
 
 Website accessibility means designing your site so that everyone can use it, including people with disabilities. This includes:
 
-- **People who are blind or have low vision** — they use screen readers to hear your website content
-- **People who are deaf or hard of hearing** — they need captions on videos and transcripts for audio
-- **People with motor disabilities** — they may navigate using only a keyboard, not a mouse
-- **People with cognitive disabilities** — they benefit from clear language and simple layouts
-- **People with temporary disabilities** — like a broken arm or eye strain from bright screens
+- **People who are blind or have low vision**, they use screen readers to hear your website content
+- **People who are deaf or hard of hearing**, they need captions on videos and transcripts for audio
+- **People with motor disabilities**, they may navigate using only a keyboard, not a mouse
+- **People with cognitive disabilities**, they benefit from clear language and simple layouts
+- **People with temporary disabilities**, like a broken arm or eye strain from bright screens
 
-Globally, about 1.3 billion people — roughly 16 percent of the world population — live with some form of disability. When your website is not accessible, you are shutting the door on a significant number of potential customers.
+Globally, about 1.3 billion people, roughly 16 percent of the world population, live with some form of disability. When your website is not accessible, you are shutting the door on a significant number of potential customers.
 
 ## Why Should a Small Business Care?
 
@@ -55,13 +55,13 @@ Write alt text that describes what the image actually shows and why it matters o
 
 ### 2. Use Proper Heading Structure
 
-Headings (H1, H2, H3) are not just for visual styling. Screen reader users navigate by jumping between headings. If you skip heading levels — jumping from H1 to H3 without an H2 — it breaks the navigation.
+Headings (H1, H2, H3) are not just for visual styling. Screen reader users navigate by jumping between headings. If you skip heading levels, jumping from H1 to H3 without an H2, it breaks the navigation.
 
 Your page title should be H1. Major sections should be H2. Subsections under those should be H3. Never use a heading tag just to make text bigger or bolder.
 
 ### 3. Make Sure Your Site Works Without a Mouse
 
-Many people navigate websites using only a keyboard — the Tab key moves between links and buttons, and Enter activates them. Test your site by putting your mouse away and trying to navigate with only your keyboard. Can you reach every link? Can you fill out your contact form? Can you close pop-ups?
+Many people navigate websites using only a keyboard, the Tab key moves between links and buttons, and Enter activates them. Test your site by putting your mouse away and trying to navigate with only your keyboard. Can you reach every link? Can you fill out your contact form? Can you close pop-ups?
 
 If you get stuck anywhere, that is an accessibility problem that needs fixing.
 
@@ -73,7 +73,7 @@ Free tools like the WebAIM Contrast Checker let you test your color combinations
 
 ### 5. Add Captions to Videos and Transcripts to Audio
 
-If your website has video content — a property tour, a service walkthrough, a customer testimonial — it needs captions. Not auto-generated captions with errors, but accurate captions that deaf and hard-of-hearing visitors can rely on.
+If your website has video content, a property tour, a service walkthrough, a customer testimonial, it needs captions. Not auto-generated captions with errors, but accurate captions that deaf and hard-of-hearing visitors can rely on.
 
 For audio-only content like podcast episodes, provide a written transcript on the same page.
 
@@ -81,9 +81,9 @@ For audio-only content like podcast episodes, provide a written transcript on th
 
 You do not need to hire a consultant to find your most obvious accessibility problems. These free tools will get you started:
 
-- **Google Lighthouse** — built into Chrome DevTools (press F12, go to the Lighthouse tab, select Accessibility)
-- **WAVE** (wave.webaim.org) — paste your URL and get a visual report of errors
-- **axe DevTools** — a browser extension that finds accessibility issues on any page
+- **Google Lighthouse**, built into Chrome DevTools (press F12, go to the Lighthouse tab, select Accessibility)
+- **WAVE** (wave.webaim.org), paste your URL and get a visual report of errors
+- **axe DevTools**, a browser extension that finds accessibility issues on any page
 
 Run these tools on your homepage and your most important pages. Fix the errors they report, and you will have solved the majority of your accessibility problems.
 
@@ -97,6 +97,6 @@ This is where having a web design partner who understands accessibility saves yo
 
 Website accessibility is not a nice-to-have. It expands your audience, improves your search rankings, and protects your business from legal risk. The five fixes above cover most of what you need, and free tools make it easy to find and fix problems.
 
-If you are not sure where to start, run a free accessibility audit on your website today. The results might surprise you — and the fixes are usually straightforward.
+If you are not sure where to start, run a free accessibility audit on your website today. The results might surprise you, and the fixes are usually straightforward.
 
 Need help making your website accessible? At Birky Studio, we build every website with accessibility in mind from day one. Get in touch and we will audit your current site and fix what needs fixing.

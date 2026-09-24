@@ -1,6 +1,6 @@
 ---
 title: "AI Voice Receptionist Books Clients 24/7"
-description: "Missed calls after hours cost small businesses thousands. See how Birky Studio's AI Voice Receptionist captures leads, books appointments, and never sleeps — for a fraction of the cost."
+description: "Missed calls after hours cost small businesses thousands. See how Birky Studio's AI Voice Receptionist captures leads, books appointments, and never sleeps, for a fraction of the cost."
 image: "/images/blog/ai-generated/voice-receptionist-leads.jpg"
 date: 2026-08-08
 tags: ["Birky Studio", "AI Voice Receptionist", "Lead Generation", "Small Business"]
@@ -10,11 +10,11 @@ author: "Birky Studio"
 
 # Stop Losing Leads at 5 PM: How an AI Voice Receptionist Books Clients While You Sleep
 
-**Every missed call after hours is a lead that goes to your competitor. A real human receptionist costs $2,000+ a month. Birky Studio's AI Voice Receptionist costs $550 — one time — and answers every call in your brand's voice, 24/7, without overtime or sick days.**
+**Every missed call after hours is a lead that goes to your competitor. A real human receptionist costs $2,000+ a month. Birky Studio's AI Voice Receptionist costs $550, one time, and answers every call in your brand's voice, 24/7, without overtime or sick days.**
 
 ### The Problem: Small Businesses Bleed Leads After Hours
 
-If you run a real estate agency, a hotel, a restaurant, or any business in Guatemala, you know the pattern. A prospect calls at 7 PM after work. Your office is closed. They leave a voicemail — maybe. By 9 AM the next day, they have already contacted two other businesses that picked up.
+If you run a real estate agency, a hotel, a restaurant, or any business in Guatemala, you know the pattern. A prospect calls at 7 PM after work. Your office is closed. They leave a voicemail, maybe. By 9 AM the next day, they have already contacted two other businesses that picked up.
 
 Here is what the math actually looks like:
 
@@ -25,7 +25,7 @@ Here is what the math actually looks like:
 
 At 20 missed calls a week and even a modest 15% conversion rate, you are losing 3 clients a week. Three clients a week. That is 12+ people a month who wanted to talk to you but could not.
 
-The traditional fix is a human receptionist — but in Guatemala, that is Q4,000-Q6,000/month ($520-$780) plus social security, plus vacation, plus the fact that they still go home at 6 PM.
+The traditional fix is a human receptionist, but in Guatemala, that is Q4,000-Q6,000/month ($520-$780) plus social security, plus vacation, plus the fact that they still go home at 6 PM.
 
 ### How Birky Studio's AI Voice Receptionist Changes the Game
 
@@ -33,7 +33,7 @@ We built an AI voice receptionist specifically for Guatemalan small businesses. 
 
 **Answers every call, every time.** No busy signals, no voicemail limbo, no "we are sorry we missed your call." The AI picks up in your brand's voice, greets callers by name if available, and handles the conversation naturally.
 
-**Books appointments automatically.** The receptionist checks your calendar, finds available slots, and schedules the appointment without you lifting a finger. The prospect hangs up with a confirmed time — they do not wait for a callback.
+**Books appointments automatically.** The receptionist checks your calendar, finds available slots, and schedules the appointment without you lifting a finger. The prospect hangs up with a confirmed time, they do not wait for a callback.
 
 **Qualifies leads on the spot.** The AI asks the right questions: what they are looking for, their budget, their timeline. You get a clean lead report every morning with the details you actually need.
 
@@ -50,11 +50,11 @@ Here is where it gets interesting.
 - **Birky Studio AI Voice Receptionist:** **$550 setup** + Vapi usage (~$30-50/month)
 - **Birky Studio AI Text Receptionist (WhatsApp):** **$297 one-time**
 
-If you need the voice and text combo, that is $847 total — less than what some services charge for a single month of subscription fees.
+If you need the voice and text combo, that is $847 total, less than what some services charge for a single month of subscription fees.
 
-And if you want ongoing support, troubleshooting, and updates, that is $29/month optional. Not required — the system works on its own. Most clients do not need it after the first month.
+And if you want ongoing support, troubleshooting, and updates, that is $29/month optional. Not required, the system works on its own. Most clients do not need it after the first month.
 
-> "Set it up and forget it. I answer my morning lead report and the rest handles itself." — Birky Studio client
+> "Set it up and forget it. I answer my morning lead report and the rest handles itself.". Birky Studio client
 
 ### Real Numbers: The ROI
 
@@ -86,7 +86,7 @@ We work with real estate agents, hotels, restaurants, property managers, clinics
 
 ### Ready to Stop Missing Calls?
 
-Every day you wait is another 3-5 leads that go to voicemail — or worse, to your competitor.
+Every day you wait is another 3-5 leads that go to voicemail, or worse, to your competitor.
 
 Stop losing business after hours. Get an AI voice receptionist that actually works, for a price that makes sense.
 

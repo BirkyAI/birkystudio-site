@@ -14,7 +14,7 @@ author: "Birky Studio"
 
 ## The Problem: You Are Missing Half Your Calls
 
-Let's be honest. When you are busy running your business — serving customers, managing staff, handling deliveries — you cannot answer every phone call. And when you are closed for the night, the phone rings unanswered.
+Let's be honest. When you are busy running your business, serving customers, managing staff, handling deliveries, you cannot answer every phone call. And when you are closed for the night, the phone rings unanswered.
 
 Here is what happens to those calls:
 
@@ -48,7 +48,7 @@ After we set up an AI voice receptionist, the numbers changed immediately:
 
 - **7 after-hours calls captured in the first week**
 - **3 of those turned into booked viewings**
-- **1 closed in under two weeks** — a $285,000 property sale
+- **1 closed in under two weeks**, a $285,000 property sale
 
 The customer called at 7:30 PM on a Tuesday. The AI answered, confirmed the property was still available, answered questions about the neighborhood, and booked a viewing for Thursday. The agent woke up to a confirmed appointment, not a missed opportunity.
 
@@ -60,7 +60,7 @@ Setting up an AI voice receptionist is simpler than most business owners expect:
 
 **Step 1: Choose your number.** You can forward your existing business phone number to the AI, or get a new local number with area code.
 
-**Step 2: Train the AI.** We configure the AI with your business details — what you do, your hours, your services, pricing, and the questions customers typically ask. This takes about an hour and you never have to do it again.
+**Step 2: Train the AI.** We configure the AI with your business details, what you do, your hours, your services, pricing, and the questions customers typically ask. This takes about an hour and you never have to do it again.
 
 **Step 3: Define the scenarios.** Tell the AI what to do in different situations:
 - New inquiry → ask questions, book appointment, send details via SMS
@@ -72,7 +72,7 @@ Setting up an AI voice receptionist is simpler than most business owners expect:
 
 ## When Does a Human Take Over?
 
-The AI knows its limits. When a conversation requires a human touch — a complex negotiation, an angry customer, a technical question — it seamlessly transfers the call to your phone. You get a warm transfer with the context of what has already been discussed.
+The AI knows its limits. When a conversation requires a human touch, a complex negotiation, an angry customer, a technical question, it seamlessly transfers the call to your phone. You get a warm transfer with the context of what has already been discussed.
 
 Think of it as a smart filter. The AI handles the 80% of calls that are routine (hours, pricing, availability, booking), and you handle the 20% that need your expertise. You get fewer interruptions and more meaningful conversations.
 
@@ -92,13 +92,13 @@ For less than the cost of a single dinner out, you can have a professional voice
 
 The AI voice receptionist works especially well for:
 
-- **Real estate agents** — capture those after-hours property inquiries
-- **Restaurants and cafes** — take reservations, answer menu questions, handle takeout orders
-- **Medical and dental offices** — schedule appointments, answer insurance questions
-- **Salons and spas** — manage bookings, check availability, confirm appointments
-- **Contractors and tradespeople** — quote requests, schedule estimates, answer service questions
-- **Hotels and Airbnbs** — take reservations, answer guest questions, handle check-in details
-- **Delivery and logistics** — track orders, provide ETAs, handle customer queries
+- **Real estate agents**, capture those after-hours property inquiries
+- **Restaurants and cafes**, take reservations, answer menu questions, handle takeout orders
+- **Medical and dental offices**, schedule appointments, answer insurance questions
+- **Salons and spas**, manage bookings, check availability, confirm appointments
+- **Contractors and tradespeople**, quote requests, schedule estimates, answer service questions
+- **Hotels and Airbnbs**, take reservations, answer guest questions, handle check-in details
+- **Delivery and logistics**, track orders, provide ETAs, handle customer queries
 
 Any business that gets phone calls and cannot answer them all is leaving money on the table.
 
@@ -106,7 +106,7 @@ Any business that gets phone calls and cannot answer them all is leaving money o
 
 **"Will my customers be annoyed by an AI?"**
 
-No. Modern AI voices are virtually indistinguishable from humans. Customers usually say "that was the fastest I have ever gotten through to a business." The alternative is a busy signal, voicemail, or no answer at all — all much worse experiences.
+No. Modern AI voices are virtually indistinguishable from humans. Customers usually say "that was the fastest I have ever gotten through to a business." The alternative is a busy signal, voicemail, or no answer at all, all much worse experiences.
 
 **"What about privacy?"**
 

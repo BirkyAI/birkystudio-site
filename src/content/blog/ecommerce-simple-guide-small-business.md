@@ -15,11 +15,11 @@ You've got a great product. Your customers love you. But every week, someone ask
 
 If you're still taking orders through WhatsApp messages and handwritten notes, you're leaving money on the table. The good news? Setting up an online store is easier and cheaper than you think.
 
-Here's a straightforward guide to getting your small business selling online — no tech degree required.
+Here's a straightforward guide to getting your small business selling online, no tech degree required.
 
 ## Why Every Small Business Needs an Online Store in 2026
 
-Let's be real: the way people buy has changed. Even in Guatemala, customers expect to browse products, compare prices, and order from their phone — at 11pm on a Sunday.
+Let's be real: the way people buy has changed. Even in Guatemala, customers expect to browse products, compare prices, and order from their phone, at 11pm on a Sunday.
 
 Here's what an online store gives you:
 
@@ -35,11 +35,11 @@ The best part? You don't need a massive budget or a team of developers to get st
 
 Before you pick a platform, get clear on your products:
 
-**Physical products** — Things you ship or deliver locally (clothing, food, crafts, electronics). You'll need to think about shipping costs and delivery zones.
+**Physical products**. Things you ship or deliver locally (clothing, food, crafts, electronics). You'll need to think about shipping costs and delivery zones.
 
-**Digital products** — Downloads like PDFs, templates, courses, or software. No shipping headaches — customers get instant access.
+**Digital products**. Downloads like PDFs, templates, courses, or software. No shipping headaches, customers get instant access.
 
-**Services** — Consultations, classes, bookings. You might need a scheduling tool integrated with your store.
+**Services**. Consultations, classes, bookings. You might need a scheduling tool integrated with your store.
 
 **Pro tip:** Start with your 5-10 best sellers. You don't need your entire catalog online on day one. Add more products as you get comfortable with the process.
 
@@ -51,7 +51,7 @@ There are dozens of e-commerce platforms. Here's what actually matters for small
 The most popular option globally. Easy to set up, handles payments and shipping for you. Monthly fee starts around $29/month. Good if you want everything in one place and don't mind paying a monthly fee.
 
 ### WooCommerce (WordPress)
-Free plugin, but you need hosting and some technical comfort. Very flexible — you can customize almost anything. Best if you already have a WordPress site.
+Free plugin, but you need hosting and some technical comfort. Very flexible, you can customize almost anything. Best if you already have a WordPress site.
 
 ### Standalone Website with Payment Links
 For many small businesses, the simplest approach is a clean website with product pages and WhatsApp or payment links. No monthly platform fees. You keep more of each sale.
@@ -65,15 +65,15 @@ The key is: **your customers should be able to find a product, see the price, an
 
 Each product page needs these basics:
 
-**A clear photo.** Good product photography sells. Use natural light, a clean background, and show the product from multiple angles. Your phone camera is fine — just make sure the image is sharp and well-lit.
+**A clear photo.** Good product photography sells. Use natural light, a clean background, and show the product from multiple angles. Your phone camera is fine, just make sure the image is sharp and well-lit.
 
 **A honest description.** Write like you're explaining the product to a friend. What is it? What problem does it solve? What makes yours special? Keep it under 200 words.
 
-**The price.** Visible, in Quetzales. No hidden fees or "contact for pricing" — that kills sales instantly.
+**The price.** Visible, in Quetzales. No hidden fees or "contact for pricing", that kills sales instantly.
 
-**A clear call-to-action.** "Add to Cart," "Buy Now," "Order on WhatsApp" — make it obvious what to do next.
+**A clear call-to-action.** "Add to Cart," "Buy Now," "Order on WhatsApp", make it obvious what to do next.
 
-**Product details.** Size, weight, materials, ingredients — whatever your customer needs to make a decision without messaging you.
+**Product details.** Size, weight, materials, ingredients, whatever your customer needs to make a decision without messaging you.
 
 ## Step 4: Set Up Payments
 
@@ -145,8 +145,8 @@ The biggest myth about e-commerce is that you need to be "good with technology" 
 
 Start with 5 products. Take good photos. Write clear descriptions. Share the link. That's it. You can always improve and expand later.
 
-The businesses that win online aren't the ones with the fanciest technology — they're the ones that actually show up and make it easy for customers to buy.
+The businesses that win online aren't the ones with the fanciest technology, they're the ones that actually show up and make it easy for customers to buy.
 
 ---
 
-**Ready to start selling online?** At Birky Studio, we build fast, mobile-friendly online stores for small businesses in Guatemala. No complicated platforms, no monthly fees — just a clean website that works on every phone. [Contact us on WhatsApp](https://wa.me/502XXXXXXXX?text=Hola%21%20Quiero%20una%20tienda%20en%20línea) to get started.
+**Ready to start selling online?** At Birky Studio, we build fast, mobile-friendly online stores for small businesses in Guatemala. No complicated platforms, no monthly fees, just a clean website that works on every phone. [Contact us on WhatsApp](https://wa.me/502XXXXXXXX?text=Hola%21%20Quiero%20una%20tienda%20en%20línea) to get started.

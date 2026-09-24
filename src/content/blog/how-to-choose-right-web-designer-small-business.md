@@ -16,7 +16,7 @@ I have been on both sides of this equation. I have hired designers for my real e
 
 Every web designer falls into one of three categories. Knowing which one you are talking to saves you thousands.
 
-### 1. The Template Flipper — $200 to $500
+### 1. The Template Flipper, $200 to $500
 
 This person buys a premium WordPress or Wix template, changes the logo and text, and calls it a custom website. Your site will look fine on the surface. But it will load slowly, score poorly on Google, and break on mobile in ways you will not notice until a customer complains.
 
@@ -24,7 +24,7 @@ The template flipper does not ask about your business model, your target custome
 
 **Who this is for:** A proof-of-concept landing page. Not your actual business website.
 
-### 2. The Agency with the Ferrari Overhead — $5,000 to $15,000
+### 2. The Agency with the Ferrari Overhead, $5,000 to $15,000
 
 At the other extreme, the big agencies charge enough to cover their corner office, account managers, and the three layers of approval they need to change a button color.
 
@@ -32,7 +32,7 @@ You will sit through three discovery sessions, two design reviews, and a wirefra
 
 **Who this is for:** Enterprise companies with dedicated marketing departments. Not a local service business.
 
-### 3. The Partner Who Actually Cares — $999 to $1,999
+### 3. The Partner Who Actually Cares, $999 to $1,999
 
 This is the sweet spot. A designer who builds custom websites for small businesses, understands your industry, and cares about whether your site actually brings in customers.
 
@@ -44,13 +44,13 @@ They ask the right questions before they write a line of code:
 
 They build on a platform that lets you make changes easily. They optimize for speed, mobile, and search engines by default. And when your business grows, they scale with you instead of starting over.
 
-**This is who you want.** At Birky Studio, this is exactly what we do — [custom websites starting at $999](https://birkystudio.com/contact/).
+**This is who you want.** At Birky Studio, this is exactly what we do, [custom websites starting at $999](https://birkystudio.com/contact/).
 
 ## What to Look for in a Web Designer
 
 ### Real Portfolio, Not Mockups
 
-Ask to see actual live websites for businesses like yours. Not screenshots, not Behance mockups — live URLs. Visit them on your phone. Check the load speed. See if the contact form works.
+Ask to see actual live websites for businesses like yours. Not screenshots, not Behance mockups, live URLs. Visit them on your phone. Check the load speed. See if the contact form works.
 
 A designer who shows you mockups may never have launched a real site. A designer who shows you live sites has delivered results.
 
@@ -74,7 +74,7 @@ We cover all of this in every Birky Studio build. [Learn more about our web desi
 
 A restaurant needs an online menu, reservation system, and Google Maps integration. A law firm needs case type descriptions, consultation booking, and trust signals. A construction company needs project galleries and quote request forms.
 
-If the designer's first question is "what template do you like?" instead of "what does your business do?" — run.
+If the designer's first question is "what template do you like?" instead of "what does your business do?", run.
 
 ## What to Avoid
 
@@ -86,7 +86,7 @@ A real small business website costs $499 to $999 minimum. That covers custom des
 
 ### "You Need Everything Right Now"
 
-Some designers pitch every feature under the sun on day one. An AI chatbot, a members-only portal, an e-commerce store, a booking system, a blog, a live feed — all for a flat fee. They are selling you complexity you do not need.
+Some designers pitch every feature under the sun on day one. An AI chatbot, a members-only portal, an e-commerce store, a booking system, a blog, a live feed, all for a flat fee. They are selling you complexity you do not need.
 
 Start with what drives revenue. For most small businesses, that is: a clean homepage, an about page, a services page, a contact page, and maybe a blog. Add features as your business grows. A good designer builds for scale but launches lean.
 
@@ -100,7 +100,7 @@ A website without an AI agent is like a store with nobody behind the counter. Vi
 
 Your website works 24 hours a day. Your inbox does not. An AI agent on your site responds to inquiries instantly, qualifies leads, answers questions, and books appointments while you sleep. It turns your website from a digital brochure into a 24/7 sales team.
 
-The businesses that add AI agents to their websites see 2x to 3x more booked consultations — without spending a dollar more on ads. [See how it works](https://birkystudio.com/ai-demo/).
+The businesses that add AI agents to their websites see 2x to 3x more booked consultations, without spending a dollar more on ads. [See how it works](https://birkystudio.com/ai-demo/).
 
 At Birky Studio, every website we build can be integrated with an AI agent. You pay $1,297 for the agent setup, and it handles unlimited conversations. The voice receptionist is an additional $550 setup with $30 per month for the provider. Your website becomes a lead generation machine that never sleeps.
 

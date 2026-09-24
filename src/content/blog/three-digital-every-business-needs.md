@@ -10,7 +10,7 @@ author: "Birky Studio"
 
 # Three Digital Tools Every Small Business in Guatemala Needs Right Now
 
-**Most small business owners in Guatemala are leaving money on the table. Not because their service is bad, but because their digital setup stops working at 5 PM. A website without an AI agent is a brochure you have to hand-deliver. An AI agent without a voice receptionist misses the calls that come in while you are driving home. Here is the exact stack Birky Studio recommends for any serious business — and what it actually costs.**
+**Most small business owners in Guatemala are leaving money on the table. Not because their service is bad, but because their digital setup stops working at 5 PM. A website without an AI agent is a brochure you have to hand-deliver. An AI agent without a voice receptionist misses the calls that come in while you are driving home. Here is the exact stack Birky Studio recommends for any serious business, and what it actually costs.**
 
 ### The Three Pillars of a Modern Small Business
 
@@ -28,14 +28,14 @@ Your website is your digital storefront. It is open 24/7, never takes a day off,
 
 **Birky Studio's Starter Website ($499)** gives you a professional, mobile-optimized site with up to 5 pages, contact forms, and basic SEO. The **Professional ($999)** adds custom branding, a blog, and advanced features. The **Premium ($1,999)** is a full custom build with everything included.
 
-**The alternative:** Paying a traditional agency Q15,000-Q30,000 ($2,000-$4,000) for the same result, plus monthly retainers. Or worse — a DIY template that looks like every other business and ranks nowhere on Google.
+**The alternative:** Paying a traditional agency Q15,000-Q30,000 ($2,000-$4,000) for the same result, plus monthly retainers. Or worse, a DIY template that looks like every other business and ranks nowhere on Google.
 
 ### 2. A Business AI Agent ($1,297)
 
 A website that just sits there is a digital brochure. An AI agent turns it into a 24/7 salesperson.
 
 **What an AI agent does for your business:**
-- Answers customer questions instantly — no waiting, no "I will get back to you"
+- Answers customer questions instantly, no waiting, no "I will get back to you"
 - Qualifies leads by asking the right questions before you ever pick up the phone
 - Books appointments directly into your calendar
 - Learns your business inside and out so it sounds like you, not a robot
@@ -47,7 +47,7 @@ A website that just sits there is a digital brochure. An AI agent turns it into 
 
 ### 3. An AI Voice Receptionist ($550)
 
-This is the piece most businesses forget. You spend money on ads and SEO to get calls coming in — then let half of them go to voicemail.
+This is the piece most businesses forget. You spend money on ads and SEO to get calls coming in, then let half of them go to voicemail.
 
 **What an AI Voice Receptionist handles:**
 - Answers every inbound call, every time, no hold music
@@ -85,6 +85,6 @@ These are not hypothetical numbers. This is what happens when you stop patching 
 
 You do not need a big budget. You need the right three tools, built to work together, at a price that makes sense for a small business.
 
-[Contact Birky Studio today](https://birkystudio.com/contact/) for a free consultation. We will walk through exactly what your business needs — no pressure, no upsells, just honest advice from people who build this stuff every day.
+[Contact Birky Studio today](https://birkystudio.com/contact/) for a free consultation. We will walk through exactly what your business needs, no pressure, no upsells, just honest advice from people who build this stuff every day.
 
 **Pay once, own it forever.** Your website, your AI agent, your voice receptionist. One team, one price, one system that actually works.

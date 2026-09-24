@@ -45,7 +45,7 @@ WordPress powers 43 percent of the web. It is flexible, open-source, and has a p
 **The real cost is your time.**
 - Initial setup takes 20 to 40 hours for a basic business site
 - Ongoing updates (plugins update constantly) take 2 to 4 hours per month
-- Security patches are not optional — outdated WordPress sites are the most hacked platform on the web
+- Security patches are not optional, outdated WordPress sites are the most hacked platform on the web
 - If something breaks (a plugin update conflicts, a theme stops working), you either fix it yourself or pay a developer
 
 **What you do not get:**
@@ -67,7 +67,7 @@ A custom website from a professional studio like Birky Studio costs more upfront
 
 **What you get:**
 - A site built with modern technology (Astro, Tailwind CSS, or the best framework for your needs). It loads in under one second. It scores 95+ on Google PageSpeed. Google prioritizes fast sites in search results.
-- Real SEO. Custom schema markup, proper hreflang for bilingual audiences, canonical tags, optimized Open Graph images — every technical SEO detail handled correctly.
+- Real SEO. Custom schema markup, proper hreflang for bilingual audiences, canonical tags, optimized Open Graph images, every technical SEO detail handled correctly.
 - AI agent integration from day one. Your site does not just display information. It answers questions, qualifies leads, and books appointments. That capability is built into the architecture, not bolted on as an afterthought.
 - Full ownership. You own the code. You can move hosts, add features, or hand it to another developer. There is no platform lock-in.
 - A design that matches your brand exactly, not a template that thousands of other businesses use.

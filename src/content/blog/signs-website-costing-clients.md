@@ -22,7 +22,7 @@ Here are the five most common signs that your website is costing you real busine
 
 ### The Problem
 
-If your website only generates leads when you are at your desk, you are leaving money on the table. Studies show that **46% of all website visitors browse after 5 PM** — the exact hours when most small business owners are offline, having dinner, or asleep.
+If your website only generates leads when you are at your desk, you are leaving money on the table. Studies show that **46% of all website visitors browse after 5 PM**, the exact hours when most small business owners are offline, having dinner, or asleep.
 
 Every missed call is a missed client. And most of those callers never try again.
 
@@ -73,7 +73,7 @@ The result? Sites that load in under 2 seconds, rank higher on Google, and keep 
 
 ### The Problem
 
-If you cannot answer basic questions about your website traffic — how many visitors per day, which pages they visit, where they come from — you are flying blind. Marketing without data is guessing. And guessing is expensive.
+If you cannot answer basic questions about your website traffic, how many visitors per day, which pages they visit, where they come from, you are flying blind. Marketing without data is guessing. And guessing is expensive.
 
 Many small business owners have no analytics installed, or they set up Google Analytics years ago and never looked at it again. Meanwhile, their competitors are refining their content, targeting the right keywords, and converting more visitors.
 
@@ -116,6 +116,6 @@ And the best part? After the initial setup, it costs a fraction of what a single
 
 Your website should be your hardest-working employee. It should generate leads 24 hours a day, answer questions instantly, and never take a day off. If it is not doing those things, it is costing you more than you realize.
 
-At Birky Studio, we build websites that do the heavy lifting. Custom design, AI-powered lead generation, voice receptionist integration, and performance optimization — all in one package.
+At Birky Studio, we build websites that do the heavy lifting. Custom design, AI-powered lead generation, voice receptionist integration, and performance optimization, all in one package.
 
 **Ready to stop losing clients to a website that underperforms?** [Contact us today](https://birkystudio.com/contact/) for a free consultation. We will audit your current site and show you exactly where the leaks are.

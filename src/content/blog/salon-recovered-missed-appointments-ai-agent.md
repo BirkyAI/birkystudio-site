@@ -16,7 +16,7 @@ author: "Birky Studio"
 
 The salon had six stylists, two receptionists, and a solid walk-in clientele. But there was a problem nobody noticed until we actually measured it.
 
-The phone rang constantly — during haircuts, during color treatments, during the lunch rush when the receptionist stepped away. And on Mondays, when the salon was closed, the phone rang straight into voicemail.
+The phone rang constantly, during haircuts, during color treatments, during the lunch rush when the receptionist stepped away. And on Mondays, when the salon was closed, the phone rang straight into voicemail.
 
 The owner told me: "I thought voicemail was fine. People leave a message, and we call them back the next day."
 
@@ -33,7 +33,7 @@ Over a two-week audit, we tracked every single incoming call. The numbers were w
 
 Half their calls were going unanswered. And of the 75 missed calls, only 8 people left a voicemail. Four of those got a call back. Zero booked an appointment.
 
-The salon was spending good money on Instagram ads and Google Maps visibility, driving people to call — and then sending half of them straight to silence.
+The salon was spending good money on Instagram ads and Google Maps visibility, driving people to call, and then sending half of them straight to silence.
 
 ## The Fix: An AI Voice Receptionist ($550, One-Time)
 
@@ -43,9 +43,9 @@ The AI was live by Wednesday. By Friday, it had already answered 19 calls that w
 
 Here is the breakdown of that first weekend:
 
-- **3 calls during Monday closure** — the salon is closed on Mondays. All three callers wanted to book for Tuesday. The AI handled every one, checked the calendar, and scheduled appointments. Three confirmed bookings generated while the salon was locked.
-- **6 calls after 6 PM** — evening inquiries about pricing, availability for Saturday, and a last-minute birthday gift certificate. The AI answered instantly, answered every question, and booked two appointments. By 8 AM the next day, the receptionist opened her system and saw appointments already on the calendar.
-- **4 calls during the lunch rush** — the human receptionist was at lunch. Normally these callers would hit voicemail and vanish. Instead, the AI captured name, phone number, and reason for the call. Two booked immediately.
+- **3 calls during Monday closure**, the salon is closed on Mondays. All three callers wanted to book for Tuesday. The AI handled every one, checked the calendar, and scheduled appointments. Three confirmed bookings generated while the salon was locked.
+- **6 calls after 6 PM**, evening inquiries about pricing, availability for Saturday, and a last-minute birthday gift certificate. The AI answered instantly, answered every question, and booked two appointments. By 8 AM the next day, the receptionist opened her system and saw appointments already on the calendar.
+- **4 calls during the lunch rush**, the human receptionist was at lunch. Normally these callers would hit voicemail and vanish. Instead, the AI captured name, phone number, and reason for the call. Two booked immediately.
 
 ## The One-Month Math
 
@@ -63,7 +63,7 @@ After thirty days, here is what the numbers looked like:
 
 The salon paid for the setup cost in under ten days. The remaining twenty days generated pure profit.
 
-Month two looks even better. With the setup cost already recovered, the AI voice receptionist costs exactly **$30 per month** — less than what a single haircut costs — and it generated $1,824 in additional revenue.
+Month two looks even better. With the setup cost already recovered, the AI voice receptionist costs exactly **$30 per month**, less than what a single haircut costs, and it generated $1,824 in additional revenue.
 
 That is a **60x monthly return**.
 
@@ -73,14 +73,14 @@ A common concern salon owners raise is that the AI will feel robotic or miss the
 
 The AI handles everything that does not require a stylist's personal judgment:
 
-- **Appointment booking and rescheduling** — "I need a haircut next Tuesday at 3 PM" → booked in seconds
-- **Service pricing questions** — "How much is a balayage with a trim?" → answered instantly
-- **Hours and availability** — "Are you open this Saturday?" → immediate response
-- **Location and directions** — sent via WhatsApp link
-- **Cancellation and rebooking** — moves appointments, opens the slot for someone else
-- **First-time client intake** — collects name, phone, and what service they want
+- **Appointment booking and rescheduling**. "I need a haircut next Tuesday at 3 PM" → booked in seconds
+- **Service pricing questions**. "How much is a balayage with a trim?" → answered instantly
+- **Hours and availability**. "Are you open this Saturday?" → immediate response
+- **Location and directions**, sent via WhatsApp link
+- **Cancellation and rebooking**, moves appointments, opens the slot for someone else
+- **First-time client intake**, collects name, phone, and what service they want
 
-When a caller asks something nuanced — "My color came out darker than I wanted, can I come in tomorrow?" — the AI recognizes the complexity and transfers to the human receptionist with full context. The human picks up knowing exactly who is calling, what they want, and what has already been discussed.
+When a caller asks something nuanced. "My color came out darker than I wanted, can I come in tomorrow?", the AI recognizes the complexity and transfers to the human receptionist with full context. The human picks up knowing exactly who is calling, what they want, and what has already been discussed.
 
 The receptionist told me: "At first I thought it would take my job. Now I wonder how we survived without it. I actually get to focus on the clients in the chair instead of answering the phone every three minutes."
 
@@ -111,7 +111,7 @@ The $30 per month is not an expense. It is an efficiency investment that returns
 
 Not every business loses half their calls like this salon did. But most businesses I talk to are losing more than they realize.
 
-A quick test: count how many calls you missed last week. Not guessed — actually checked your call log. If you missed more than five, multiply that by your average booking value. That number is what you are leaving on the table every single week.
+A quick test: count how many calls you missed last week. Not guessed, actually checked your call log. If you missed more than five, multiply that by your average booking value. That number is what you are leaving on the table every single week.
 
 [Read how a dental clinic paid for their AI voice receptionist in one month.](/blog/ai-voice-receptionist-paid-for-itself/)
 

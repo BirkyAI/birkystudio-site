@@ -12,13 +12,13 @@ author: "Birky Studio"
 
 **You spent money on a beautiful website. It loads fast, the photos are stunning, and the color scheme matches your brand. But here is the uncomfortable question: does it actually do anything for your business?**
 
-If your website is just a digital version of a printed brochure, it is not a business asset. It is an expense. And every day it sits there quietly, you are paying for hosting, domain, and design — while getting zero return.
+If your website is just a digital version of a printed brochure, it is not a business asset. It is an expense. And every day it sits there quietly, you are paying for hosting, domain, and design, while getting zero return.
 
 Here is how Birky Studio transforms a static site into a lead-generating machine that works 24/7.
 
 ## The Problem: Pretty Pages That Collect Dust
 
-Most small business websites in Guatemala share the same pattern. A homepage with a hero image, an about section, a services page, and a contact form that gets maybe one submission a month. The site gets traffic — Google Analytics shows 200 visitors this month — but none of them turn into leads.
+Most small business websites in Guatemala share the same pattern. A homepage with a hero image, an about section, a services page, and a contact form that gets maybe one submission a month. The site gets traffic. Google Analytics shows 200 visitors this month, but none of them turn into leads.
 
 Why? Because the site is passive. It shows information and waits for the visitor to act. And most visitors do not act. They browse. They compare. They leave.
 
@@ -32,7 +32,7 @@ A modern small business website should do three things automatically, without an
 An AI chatbot pops up after a visitor has been browsing for 15 seconds. It asks a simple question: "What service are you looking for?" Within three messages, you know their name, their need, and how to reach them. That lead lands in your inbox before they even click away.
 
 **2. Answer questions at 2 AM.**
-Prospects do not work 9-to-5. They browse on nights and weekends. An AI agent on your site answers their questions instantly — pricing, availability, location, whatever they need. The visitor gets the information they want, and you get a qualified lead without lifting a finger.
+Prospects do not work 9-to-5. They browse on nights and weekends. An AI agent on your site answers their questions instantly, pricing, availability, location, whatever they need. The visitor gets the information they want, and you get a qualified lead without lifting a finger.
 
 **3. Book appointments without back-and-forth.**
 No more email ping-pong trying to find a time. An AI booking agent checks your calendar, suggests available slots, and confirms the appointment. Your prospect books in 60 seconds. You get a calendar entry and a reminder. Done.
@@ -59,7 +59,7 @@ Now add an AI agent:
 Birky Studio builds every client website with these active features baked in from day one:
 
 **Custom-built, not templated.**
-We build on Astro — modern, fast, SEO-optimized. Your site loads in under two seconds and ranks better on Google. No WordPress bloat, no Wix limitations.
+We build on Astro, modern, fast, SEO-optimized. Your site loads in under two seconds and ranks better on Google. No WordPress bloat, no Wix limitations.
 
 **AI chatbot for lead qualification.**
 Not a generic script bot that frustrates visitors. A trained AI agent that knows your business, your pricing, your hours, and your unique value. It sounds like a real human who works at your company.
@@ -68,7 +68,7 @@ Not a generic script bot that frustrates visitors. A trained AI agent that knows
 In Guatemala, people do not email first. They call or WhatsApp. Your site connects directly to your WhatsApp with one tap, and an AI voice receptionist answers calls after hours.
 
 **Google Business Profile sync.**
-Your site and your Google listing work together. Reviews, hours, directions — all connected, all consistent.
+Your site and your Google listing work together. Reviews, hours, directions, all connected, all consistent.
 
 ## The Alternative: DIY and Hope
 
@@ -96,6 +96,6 @@ Look at your analytics. Open your contact form. Check how many messages you rece
 
 If the number is embarrassingly low, your site is not working for you. It is just sitting there, looking pretty, while your competitors answer the leads you are missing.
 
-**Birky Studio can audit your current site in 30 minutes and show you exactly what is missing.** No pressure, no hard sell — just a honest assessment of what is costing you customers.
+**Birky Studio can audit your current site in 30 minutes and show you exactly what is missing.** No pressure, no hard sell, just a honest assessment of what is costing you customers.
 
 [Book your free website audit](https://birkystudio.com/contact/) and find out what your site is really worth.

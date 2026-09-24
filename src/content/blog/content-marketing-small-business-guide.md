@@ -62,10 +62,10 @@ If you run a restaurant, your customers might care about dietary options, local 
 
 Don't try to be everywhere. Pick the two channels where your audience actually spends time:
 
-- **Blog + Google** — if your customers search for solutions (best for service businesses, consultants, health professionals)
-- **Instagram + Stories** — if your product is visual (restaurants, retail, fitness, beauty)
-- **Email + WhatsApp** — if you rely on repeat customers (salons, clinics, local services)
-- **YouTube + Blog** — if your topic needs explanation (tutorials, how-tos, reviews)
+- **Blog + Google**, if your customers search for solutions (best for service businesses, consultants, health professionals)
+- **Instagram + Stories**, if your product is visual (restaurants, retail, fitness, beauty)
+- **Email + WhatsApp**, if you rely on repeat customers (salons, clinics, local services)
+- **YouTube + Blog**, if your topic needs explanation (tutorials, how-tos, reviews)
 
 Start with two. Master them. Then consider adding a third.
 

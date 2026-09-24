@@ -14,7 +14,7 @@ if (!product) {
 }
 
 const title = product.name;
-const description = `${product.tagline} — ${product.price} ${product.priceNote}. See exactly what's included and what isn't.`;
+const description = `${product.tagline}, ${product.price} ${product.priceNote}. See exactly what's included and what isn't.`;
 
 const productSchema = JSON.stringify({
   '@context': 'https://schema.org',
@@ -145,7 +145,7 @@ const faqSchema = product.faqs?.length
     <div class="container">
       <h2 style="font-size:2rem;margin-bottom:16px;">Ready to get started?</h2>
       <p style="color:var(--color-gray);font-size:1.05rem;max-width:520px;margin:0 auto 32px;">
-        Tell us what you need and we'll take it from there — delivered fast, no lock-in.
+        Tell us what you need and we'll take it from there, delivered fast, no lock-in.
       </p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
         <a href="/contact" class="btn btn-primary" style="font-size:1.05rem;padding:16px 32px;">Get Started →</a>

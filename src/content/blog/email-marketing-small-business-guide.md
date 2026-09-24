@@ -27,9 +27,9 @@ Here is why email works so well for small businesses:
 
 You do not need to overthink this. Here are three solid options for small businesses:
 
-- **Mailchimp** — The most popular choice. Free up to 500 contacts. Easy drag-and-drop editor.
-- **Brevo (formerly Sendinblue)** — Free up to 300 emails per day. Good for businesses that send more frequently.
-- **MailerLite** — Free up to 1,000 subscribers. Clean interface, great for beginners.
+- **Mailchimp**. The most popular choice. Free up to 500 contacts. Easy drag-and-drop editor.
+- **Brevo (formerly Sendinblue)**. Free up to 300 emails per day. Good for businesses that send more frequently.
+- **MailerLite**. Free up to 1,000 subscribers. Clean interface, great for beginners.
 
 Pick one, create an account, and move on. You can always switch later.
 
@@ -86,10 +86,10 @@ Pick a schedule you can actually stick to. If that means one email every two wee
 
 Some businesses do well with automated emails that go out based on customer actions:
 
-- **Welcome email** — Sent automatically when someone joins your list
-- **Abandoned cart email** — Reminds customers about items they left in their online cart
-- **Birthday or anniversary email** — A simple message with a small discount
-- **Follow-up email** — Sent a few days after a purchase asking for a review
+- **Welcome email**. Sent automatically when someone joins your list
+- **Abandoned cart email**. Reminds customers about items they left in their online cart
+- **Birthday or anniversary email**. A simple message with a small discount
+- **Follow-up email**. Sent a few days after a purchase asking for a review
 
 Most email platforms let you set up these automations for free. They run in the background while you focus on your business.
 
@@ -97,8 +97,8 @@ Most email platforms let you set up these automations for free. They run in the 
 
 After a few emails, check your numbers. The two most important metrics are:
 
-- **Open rate** — The percentage of people who opened your email. Aim for 20% or higher.
-- **Click rate** — The percentage who clicked a link inside. Aim for 2% or higher.
+- **Open rate**. The percentage of people who opened your email. Aim for 20% or higher.
+- **Click rate**. The percentage who clicked a link inside. Aim for 2% or higher.
 
 If your open rates are low, try different subject lines. If your click rates are low, make your call-to-action clearer and more specific.
 

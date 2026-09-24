@@ -45,10 +45,10 @@ You don't need to hire a developer or spend thousands of dollars. Here's a pract
 
 Several platforms make AI chatbots accessible to non-technical users:
 
-- **Tidio** — Great for e-commerce and service businesses. Free tier available. Combines live chat with AI automation.
-- **ManyChat** — Best if your audience lives on WhatsApp, Instagram, or Messenger. Strong automation builder.
-- **Chatfuel** — Simple drag-and-drop builder for Facebook and Instagram chatbots.
-- **Custom AI Agent** — For businesses that want full control and a chatbot trained on their specific services and knowledge base. This is what we build at Birky Studio.
+- **Tidio**. Great for e-commerce and service businesses. Free tier available. Combines live chat with AI automation.
+- **ManyChat**. Best if your audience lives on WhatsApp, Instagram, or Messenger. Strong automation builder.
+- **Chatfuel**. Simple drag-and-drop builder for Facebook and Instagram chatbots.
+- **Custom AI Agent**. For businesses that want full control and a chatbot trained on their specific services and knowledge base. This is what we build at Birky Studio.
 
 ### Define Your Qualification Criteria
 
@@ -86,9 +86,9 @@ Before going live, run through the chatbot as if you were a customer. Ask a frie
 Small businesses that add an AI chatbot to their website typically see:
 
 - **30-50% more leads captured** compared to a contact form alone
-- **Faster response times** — leads get answers in seconds, not hours
-- **Better lead quality** — by the time you follow up, you already know what they need
-- **Less time wasted** — the chatbot filters out visitors who aren't a good fit
+- **Faster response times**, leads get answers in seconds, not hours
+- **Better lead quality**, by the time you follow up, you already know what they need
+- **Less time wasted**, the chatbot filters out visitors who aren't a good fit
 
 The key is that chatbots work while you sleep. A visitor at 11 PM on a Sunday gets the same experience as someone at 10 AM on a Tuesday. No lead goes unnoticed.
 

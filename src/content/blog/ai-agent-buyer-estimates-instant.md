@@ -12,7 +12,7 @@ Every real estate agent knows the script. A buyer asks, "What would my monthly p
 
 The buyer's enthusiasm cools by a few degrees. They wait. You make a call. The lender doesn't answer. You email. They reply two hours later. By then, the buyer has messaged three other agents.
 
-It's the dead zone no one talks about — and it costs deals.
+It's the dead zone no one talks about, and it costs deals.
 
 ## The Two Pain Points That Kill Buyer Momentum
 
@@ -24,7 +24,7 @@ Clients can't get quick affordability estimates without calling a lender. Every 
 
 **Data Source Switching**
 
-Want a comp? Open one tool. Want neighborhood trends? Switch to another. Want average days on market? A third platform. One simple question about property value requires cycling through three or four analytics tools — and the answer you give is only as good as which dashboard you had open last.
+Want a comp? Open one tool. Want neighborhood trends? Switch to another. Want average days on market? A third platform. One simple question about property value requires cycling through three or four analytics tools, and the answer you give is only as good as which dashboard you had open last.
 
 Both problems trace back to the same root: your tools don't talk to each other, and the buyer is the one who pays for it.
 
@@ -32,9 +32,9 @@ Both problems trace back to the same root: your tools don't talk to each other, 
 
 Here's what happens when you put a Birky Studio AI Agent on the front line:
 
-A buyer messages your website at 9 PM. "Hey, just browsing — what would my payment look like on a $400K home with 10% down?"
+A buyer messages your website at 9 PM. "Hey, just browsing, what would my payment look like on a $400K home with 10% down?"
 
-Instead of a generic "Thanks for your interest! Let me connect you with our lender," the AI Agent runs the numbers. It pulls market data from recent sales in your area. It knows local property tax rates and typical insurance costs. Inside thirty seconds, the buyer gets a realistic estimate — plus a link to book a showing if they're serious.
+Instead of a generic "Thanks for your interest! Let me connect you with our lender," the AI Agent runs the numbers. It pulls market data from recent sales in your area. It knows local property tax rates and typical insurance costs. Inside thirty seconds, the buyer gets a realistic estimate, plus a link to book a showing if they're serious.
 
 The agent logs everything: the estimate provided, the questions asked, the buyer's price range. You wake up to a full transcript and a warm lead already pre-qualified in conversation.
 
@@ -46,13 +46,13 @@ If you want the full breakdown of how response speed converts leads, check out o
 
 A single minute of response delay reduces conversion by 15–20%. Multiply that across every buyer inquiry this month and you're leaving serious money on the table.
 
-Birky Studio's AI Agent setups start at **$297/mo** for the text receptionist tier — which handles SMS, WhatsApp, and web chat — and **$1,297/mo** for the full Business AI Agent with CRM integration, live market data, and automated follow-up sequences.
+Birky Studio's AI Agent setups start at **$297/mo** for the text receptionist tier, which handles SMS, WhatsApp, and web chat, and **$1,297/mo** for the full Business AI Agent with CRM integration, live market data, and automated follow-up sequences.
 
 Compare that to the cost of one missed deal. If your average commission is $8,000–$12,000, the AI Agent pays for itself the moment it captures one buyer you would have lost to the dead zone.
 
-## Not Just Estimates — Market Intelligence On Demand
+## Not Just Estimates. Market Intelligence On Demand
 
-The same AI Agent that handles buyer estimates also pulls market comps, neighborhood stats, days-on-market trends, and recent sale prices — all in a single conversation.
+The same AI Agent that handles buyer estimates also pulls market comps, neighborhood stats, days-on-market trends, and recent sale prices, all in a single conversation.
 
 An agent in Florida who deployed Birky Studio's voice-and-text combo told us: "I used to have four bookmarks open just to answer 'Is this neighborhood appreciating?' on a listing appointment. Now I ask the AI Agent while I'm walking the property. I look prepared because I actually am."
 
@@ -62,7 +62,7 @@ Want to see how other agents are using AI to win back hours every week? Read our
 
 ## Built for the Real World, Not a Demo
 
-The AI Agent doesn't sit in a sandbox. It connects to your existing workflow — CRM, MLS, calendar, DocuSign — and it doesn't require anyone on your team to learn a new system. Your buyers interact with it naturally through WhatsApp, SMS, or web chat. You get a clean transcript and a qualified lead without lifting a finger.
+The AI Agent doesn't sit in a sandbox. It connects to your existing workflow. CRM, MLS, calendar, DocuSign, and it doesn't require anyone on your team to learn a new system. Your buyers interact with it naturally through WhatsApp, SMS, or web chat. You get a clean transcript and a qualified lead without lifting a finger.
 
 [Talk to our team about setting up your AI Agent →](https://birkystudio.com/contact/)
 
@@ -72,10 +72,10 @@ The AI Agent doesn't sit in a sandbox. It connects to your existing workflow —
 
 Want to feel the difference without a sales pitch?
 
-**Start with the free Quick Log template** — a simple system to capture every lead interaction without opening your CRM: [https://birkystudio.com/quick-log-template/](https://birkystudio.com/quick-log-template/)
+**Start with the free Quick Log template**, a simple system to capture every lead interaction without opening your CRM: [https://birkystudio.com/quick-log-template/](https://birkystudio.com/quick-log-template/)
 
-**Then call the AI Agent live.** No signup, no login — just pick up your phone and hear how Elliot answers property questions in real time: [https://birkystudio.com/voice-demo/](https://birkystudio.com/voice-demo/)
+**Then call the AI Agent live.** No signup, no login, just pick up your phone and hear how Elliot answers property questions in real time: [https://birkystudio.com/voice-demo/](https://birkystudio.com/voice-demo/)
 
-**Or test the WhatsApp chatbot** — send a message and see how it handles buyer questions, schedules showings, and qualifies leads in seconds: [https://wa.me/50234775110](https://wa.me/50234775110)
+**Or test the WhatsApp chatbot**, send a message and see how it handles buyer questions, schedules showings, and qualifies leads in seconds: [https://wa.me/50234775110](https://wa.me/50234775110)
 
 Real leads, real responses, no dead zone.

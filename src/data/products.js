@@ -1,4 +1,4 @@
-// Product catalog — drives /products/[slug] detail pages and the pricing tiles.
+// Product catalog, drives /products/[slug] detail pages and the pricing tiles.
 // Each product: what it IS, what they GET for the price, and its LIMITS (boundaries).
 // Keep prices in sync with src/pages/index.astro tiles.
 
@@ -11,34 +11,34 @@ export const products = [
     accent: 'linear-gradient(135deg,#f472b6,#ec4899)',
     badge: 'Most Popular',
     name: 'AI Agent Setup',
-    tagline: 'Dedicated AI assistant for any business — includes Notion CRM',
+    tagline: 'Dedicated AI assistant for any business, includes Notion CRM',
     price: '$1,297',
     priceNote: 'one-time setup',
     whatItIs:
-      'A dedicated AI assistant installed on your own computer. It connects to your real email, files, and CRM — and works through WhatsApp or Telegram like a normal chat. Bilingual (EN/ES), available 24/7. Luna personally installs and configures it for you in one 2–3 hour screen-sharing session, including full training.',
+      'A dedicated AI assistant installed on your own computer. It connects to your real email, files, and CRM, and works through WhatsApp or Telegram like a normal chat. Bilingual (EN/ES), available 24/7. Luna personally installs and configures it for you in one 2–3 hour screen-sharing session, including full training.',
     included: [
       'Answers customer questions & takes messages 24/7',
       'Email management & automated follow-ups',
       'Google Business Profile content automation',
       'Works across WhatsApp + Telegram + Email',
       'Bilingual (EN/ES) with CRM integration',
-      'Notion Real Estate System — CRM, commissions, content planner',
+      'Notion Real Estate System. CRM, commissions, content planner',
       'Property search & listing description generator',
       '2–3 hour live install + training, plus 30 days of free support',
     ],
     boundaries: [
-      'Runs on your machine — currently Mac and Linux only (no Windows)',
+      'Runs on your machine, currently Mac and Linux only (no Windows)',
       'This is a setup fee, not a hosted service; the agent lives on your computer',
       'AI model usage runs on your own provider account/credits (we help you set it up)',
       'Custom third-party API integrations beyond the listed tools are quoted separately',
-      'You get the agent and its configuration — we do not manage it daily (that is the Partner Retainer)',
+      'You get the agent and its configuration, we do not manage it daily (that is the Partner Retainer)',
     ],
     delivery: 'One 2–3 hour remote session, live within 2–3 days.',
     bestFor: 'Realtors and small businesses drowning in email, messages, and repetitive admin.',
     faqs: [
       { q: 'Do I need technical skills?', a: 'No. Luna installs and configures everything for you over a screen-sharing session, then trains you. Afterwards you just chat with it on WhatsApp or Telegram.' },
       { q: 'Which computers are supported?', a: 'Mac and Linux. Windows is not supported yet.' },
-      { q: 'What does it cost to run after setup?', a: 'The $1,297 is the one-time setup. AI model usage runs on your own provider credits — we set that up with you and keep it low-cost.' },
+      { q: 'What does it cost to run after setup?', a: 'The $1,297 is the one-time setup. AI model usage runs on your own provider credits, we set that up with you and keep it low-cost.' },
     ],
   },
   {
@@ -49,18 +49,18 @@ export const products = [
     name: 'Business AI Partner Retainer',
     tagline: 'Ongoing optimization & priority support',
     price: '$197',
-    priceNote: '/month — no contract, cancel anytime',
+    priceNote: '/month, no contract, cancel anytime',
     whatItIs:
-      'A monthly partnership that keeps your AI working at its best. Each month we review performance, tune prompts, and ship improvements — with priority support so you are never stuck waiting.',
+      'A monthly partnership that keeps your AI working at its best. Each month we review performance, tune prompts, and ship improvements, with priority support so you are never stuck waiting.',
     included: [
       'Monthly optimization call',
       'Monthly performance report',
       'Prompt tweaks & improvements',
       'Ongoing maintenance & updates',
-      'Priority support — no waiting in a queue',
+      'Priority support, no waiting in a queue',
     ],
     boundaries: [
-      'Covers your EXISTING setup — it is not a way to add new products for free',
+      'Covers your EXISTING setup, it is not a way to add new products for free',
       'New products, new agents, or major rebuilds are quoted separately',
       'Does not include paid third-party tool subscriptions or usage credits',
       'Requests are handled within our monthly cycle; this is not unlimited same-hour support',
@@ -69,7 +69,7 @@ export const products = [
     bestFor: 'Clients who want their AI actively improved every month without lifting a finger.',
     faqs: [
       { q: 'Is there a contract?', a: 'No. It is month-to-month and you can cancel anytime.' },
-      { q: 'What counts as an optimization?', a: 'Prompt tuning, fixing weak responses, adding to the knowledge base, and improving workflows — anything that makes your existing setup perform better.' },
+      { q: 'What counts as an optimization?', a: 'Prompt tuning, fixing weak responses, adding to the knowledge base, and improving workflows, anything that makes your existing setup perform better.' },
       { q: 'Can I get new features on this plan?', a: 'Small improvements yes; new products or major additions are quoted separately so pricing stays fair.' },
     ],
   },
@@ -84,28 +84,28 @@ export const products = [
     name: 'Lead Generation Pack',
     tagline: 'Verified prospects + AI that follows them up',
     price: '$1,997',
-    priceNote: 'one-time — you own it forever',
+    priceNote: 'one-time, you own it forever',
     whatItIs:
-      'The full lead-generation system. We build you a verified, enriched, scored prospect list you own forever — then set up the automated outreach and the AI agent + receptionist that catch and qualify replies 24/7. The moat is that replies never go cold.',
+      'The full lead-generation system. We build you a verified, enriched, scored prospect list you own forever, then set up the automated outreach and the AI agent + receptionist that catch and qualify replies 24/7. The moat is that replies never go cold.',
     included: [
-      'Verified prospect list — real, enriched, scored (any niche)',
+      'Verified prospect list, real, enriched, scored (any niche)',
       'Automated outreach setup (compliant, email-first)',
       'AI agent trained on your niche & pitch',
       'AI receptionist catches & qualifies replies 24/7',
-      'You own the list and data forever — no subscription, no lock-in',
+      'You own the list and data forever, no subscription, no lock-in',
     ],
     boundaries: [
-      'We deliver a verified, qualified list and the follow-up system — we never promise leads, deals, or revenue (nobody honestly can)',
+      'We deliver a verified, qualified list and the follow-up system, we never promise leads, deals, or revenue (nobody honestly can)',
       'No volume promises: we sell verified, scored contacts, not "X leads per month"',
-      'Cold WhatsApp and AI cold-calling are NOT included — they are restricted by platform rules and law',
+      'Cold WhatsApp and AI cold-calling are NOT included, they are restricted by platform rules and law',
       'The outreach runs through your own email/accounts; you are the sender of record',
-      'List size is scoped up front with you — this is not an unlimited list',
+      'List size is scoped up front with you, this is not an unlimited list',
     ],
     delivery: 'List delivered in 3–7 business days; outreach + AI setup after scoping.',
-    bestFor: 'Realtors and agencies who want a repeatable pipeline they own — not a rented subscription.',
+    bestFor: 'Realtors and agencies who want a repeatable pipeline they own, not a rented subscription.',
     faqs: [
-      { q: 'Do you guarantee a certain number of leads?', a: 'No — and be wary of anyone who does. We deliver a verified, scored list and the follow-up machine. Whether contacts convert depends on your offer and follow-through.' },
-      { q: 'Is the outreach legal?', a: 'The included channel is compliant email outreach (CAN-SPAM-ready: accurate sender, opt-out, etc.). Channels that need prior written consent — cold WhatsApp, cold AI calls, cold SMS — are deliberately excluded.' },
+      { q: 'Do you guarantee a certain number of leads?', a: 'No, and be wary of anyone who does. We deliver a verified, scored list and the follow-up machine. Whether contacts convert depends on your offer and follow-through.' },
+      { q: 'Is the outreach legal?', a: 'The included channel is compliant email outreach (CAN-SPAM-ready: accurate sender, opt-out, etc.). Channels that need prior written consent, cold WhatsApp, cold AI calls, cold SMS, are deliberately excluded.' },
       { q: 'Do I own the list?', a: 'Yes. It is a delivered file you keep forever. Nothing to cancel.' },
     ],
   },
@@ -119,7 +119,7 @@ export const products = [
     price: '$497',
     priceNote: 'one-time',
     whatItIs:
-      'A standalone, hand-verified prospect list for one niche and area — for people who already have an AI agent or an outreach process and just need the raw, real contacts.',
+      'A standalone, hand-verified prospect list for one niche and area, for people who already have an AI agent or an outreach process and just need the raw, real contacts.',
     included: [
       'Up to ~25 real, verified, enriched contacts',
       'Scored & opportunity-tagged',
@@ -129,7 +129,7 @@ export const products = [
     ],
     boundaries: [
       'One niche and one geography per list',
-      'Up to ~25 prospects — this is a starter size, not a bulk list',
+      'Up to ~25 prospects, this is a starter size, not a bulk list',
       'No outreach setup or AI included (that is the Pack)',
       'We verify contact details exist and are accurate; we do not guarantee they will buy',
     ],
@@ -138,7 +138,7 @@ export const products = [
     faqs: [
       { q: 'Who is this for?', a: 'Businesses that already have an AI agent or outreach system and just want real, verified prospects to feed it.' },
       { q: 'What is in the file?', a: 'Name, type, rating, address, phone, website, city, niche, and a scored opportunity tag telling you how best to approach each one.' },
-      { q: 'Can I get more than 25?', a: 'Yes — the Pro List covers up to ~100 with deeper enrichment, or pick the Pack for the full system.' },
+      { q: 'Can I get more than 25?', a: 'Yes, the Pro List covers up to ~100 with deeper enrichment, or pick the Pack for the full system.' },
     ],
   },
   {
@@ -163,7 +163,7 @@ export const products = [
     boundaries: [
       'Up to ~100 prospects, one niche/geography',
       'No automated outreach or AI included (that is the Pack)',
-      'Templates are starting points — you still send from your own accounts',
+      'Templates are starting points, you still send from your own accounts',
       'No guarantee of response or conversion',
     ],
     delivery: '3–7 business days.',
@@ -185,7 +185,7 @@ export const products = [
     price: '$497',
     priceNote: 'setup + $97/month',
     whatItIs:
-      'A done-for-you system that turns the customers you already have into a steady flow of Google reviews. We contact your past clients and ask for a review — properly, and completely inside Google policy. Separately, we win back your quiet customers with a return offer.',
+      'A done-for-you system that turns the customers you already have into a steady flow of Google reviews. We contact your past clients and ask for a review, properly, and completely inside Google policy. Separately, we win back your quiet customers with a return offer.',
     included: [
       'Your client list cleaned & segmented (active vs lapsed)',
       'Personalized review-request sequence, sent over time',
@@ -195,19 +195,19 @@ export const products = [
       'A compliance one-pager showing exactly what we did',
     ],
     boundaries: [
-      'We never buy reviews or offer rewards for leaving one — Google deletes those, and it can hurt your profile. The incentive-free ask IS the product',
-      'We cannot promise a number of reviews — we promise a system that asks every past client, consistently',
+      'We never buy reviews or offer rewards for leaving one. Google deletes those, and it can hurt your profile. The incentive-free ask IS the product',
+      'We cannot promise a number of reviews, we promise a system that asks every past client, consistently',
       'We do not ask only happy customers, and we never ask for a positive review specifically (both are prohibited)',
-      'Discounts go to the separate win-back track — never tied to a review',
+      'Discounts go to the separate win-back track, never tied to a review',
       'You must have a Google Business Profile already set up',
       'SMS asks require documented customer consent; email-first is the default',
     ],
     delivery: 'Live in ~48 hours after your list and access are ready.',
     bestFor: 'Businesses sitting on years of happy customers but only a handful of reviews.',
     faqs: [
-      { q: 'Can you offer a discount in exchange for a review?', a: 'No. Google strictly prohibits incentivized reviews and deletes them — it backfires. The discount goes to winning back quiet customers instead, where it is allowed.' },
+      { q: 'Can you offer a discount in exchange for a review?', a: 'No. Google strictly prohibits incentivized reviews and deletes them, it backfires. The discount goes to winning back quiet customers instead, where it is allowed.' },
       { q: 'How many reviews will we get?', a: 'We will not promise a number; nobody honestly can. We promise a system that asks every past client, the right way, consistently.' },
-      { q: 'Will this put us on the wrong side of Google?', a: 'The opposite. The system is built to stay inside Google policy — that is why it works long-term. You get a one-pager documenting exactly what was done.' },
+      { q: 'Will this put us on the wrong side of Google?', a: 'The opposite. The system is built to stay inside Google policy, that is why it works long-term. You get a one-pager documenting exactly what was done.' },
     ],
   },
 
@@ -221,7 +221,7 @@ export const products = [
     tagline: 'Perfect for new businesses',
     price: '$499',
     priceNote: 'one-time',
-    whatItIs: 'A clean, fast, mobile-first website to get your business online — delivered in 2–3 days.',
+    whatItIs: 'A clean, fast, mobile-first website to get your business online, delivered in 2–3 days.',
     included: [
       '1–3 pages',
       'Mobile responsive',
@@ -232,7 +232,7 @@ export const products = [
     ],
     boundaries: [
       'Up to 3 pages only (extra pages are quoted separately)',
-      'Single language — bilingual is part of Professional',
+      'Single language, bilingual is part of Professional',
       'You provide the content, logo, and photos',
       'Domain and hosting fees are not included (we help you set them up)',
       'No e-commerce or custom functionality',
@@ -240,9 +240,9 @@ export const products = [
     delivery: '2–3 days.',
     bestFor: 'New businesses that need a simple, credible presence fast.',
     faqs: [
-      { q: 'Do I need to provide content?', a: 'Yes — your text, logo, and photos. We assemble and design it into a professional site.' },
+      { q: 'Do I need to provide content?', a: 'Yes, your text, logo, and photos. We assemble and design it into a professional site.' },
       { q: 'Is hosting included?', a: 'Hosting and domain are separate (we set you up on a free/low-cost setup wherever possible).' },
-      { q: 'Can I edit it myself later?', a: 'Yes — add the Self-Editing CMS add-on ($130 one-time) to update text and images yourself.' },
+      { q: 'Can I edit it myself later?', a: 'Yes, add the Self-Editing CMS add-on ($130 one-time) to update text and images yourself.' },
     ],
   },
   {
@@ -255,7 +255,7 @@ export const products = [
     tagline: 'For growing businesses',
     price: '$999',
     priceNote: 'one-time',
-    whatItIs: 'A bilingual, SEO & AEO-optimized website that ranks and converts — with room to showcase your work.',
+    whatItIs: 'A bilingual, SEO & AEO-optimized website that ranks and converts, with room to showcase your work.',
     included: [
       '4–7 pages',
       'Everything in Starter',
@@ -266,7 +266,7 @@ export const products = [
     ],
     boundaries: [
       'Up to 7 pages (extra pages quoted separately)',
-      'Two languages (EN/ES) — additional languages quoted separately',
+      'Two languages (EN/ES), additional languages quoted separately',
       'You provide copy, logo, and photos',
       'Domain and hosting fees not included',
       'No e-commerce or custom app functionality',
@@ -274,9 +274,9 @@ export const products = [
     delivery: '2–3 days.',
     bestFor: 'Growing businesses serving both English- and Spanish-speaking customers.',
     faqs: [
-      { q: 'What does "AEO optimization" mean?', a: 'Answer Engine Optimization — structuring your content so AI tools like ChatGPT and Google AI Overviews can cite your business in their answers.' },
+      { q: 'What does "AEO optimization" mean?', a: 'Answer Engine Optimization, structuring your content so AI tools like ChatGPT and Google AI Overviews can cite your business in their answers.' },
       { q: 'How many pages can I have?', a: '4–7. Need more? The Premium plan covers 10+.' },
-      { q: 'Can I update it myself?', a: 'Yes — add the Self-Editing CMS add-on.' },
+      { q: 'Can I update it myself?', a: 'Yes, add the Self-Editing CMS add-on.' },
     ],
   },
   {
@@ -285,7 +285,7 @@ export const products = [
     icon: '🌐',
     accent: 'rgba(255,255,255,0.05)',
     name: 'Premium Website',
-    tagline: 'For established businesses — 10+ pages',
+    tagline: 'For established businesses, 10+ pages',
     price: '$1,999',
     priceNote: 'one-time',
     whatItIs: 'A large, feature-rich bilingual site with a blog and custom functionality for established businesses.',
@@ -298,17 +298,17 @@ export const products = [
       '30 days of free support after launch',
     ],
     boundaries: [
-      'Custom features are scoped up front — anything unusual is quoted before we start',
+      'Custom features are scoped up front, anything unusual is quoted before we start',
       'You provide copy, logo, and photos',
       'Domain and hosting fees not included',
-      'E-commerce (payments, carts) is not included by default — ask for a quote',
+      'E-commerce (payments, carts) is not included by default, ask for a quote',
       'Blog content itself is not included (Content Booster can provide it monthly)',
     ],
     delivery: '3–5 days depending on scope.',
     bestFor: 'Established businesses that need a substantial, custom online presence.',
     faqs: [
-      { q: 'What counts as a "custom feature"?', a: 'Anything beyond standard pages — booking systems, calculators, custom forms. We scope it and confirm before building.' },
-      { q: 'Does it include blog content?', a: 'The blog is set up, but writing posts is separate — the Content Booster plan covers daily posts.' },
+      { q: 'What counts as a "custom feature"?', a: 'Anything beyond standard pages, booking systems, calculators, custom forms. We scope it and confirm before building.' },
+      { q: 'Does it include blog content?', a: 'The blog is set up, but writing posts is separate, the Content Booster plan covers daily posts.' },
       { q: 'How long does it take?', a: '3–5 days depending on how custom the features are.' },
     ],
   },
@@ -323,7 +323,7 @@ export const products = [
     tagline: 'Update text & photos anytime',
     price: '$130',
     priceNote: 'one-time add-on',
-    whatItIs: 'A simple editing layer added to your website so you can change text and swap photos yourself — no coding, no waiting on us.',
+    whatItIs: 'A simple editing layer added to your website so you can change text and swap photos yourself, no coding, no waiting on us.',
     included: [
       'Edit text & images yourself',
       'No coding required',
@@ -331,15 +331,15 @@ export const products = [
       'Works with any website plan',
     ],
     boundaries: [
-      'Add-on only — requires a website from us',
+      'Add-on only, requires a website from us',
       'One-time fee covers the setup; it is not an ongoing content service',
-      'Lets you edit existing structure — redesigns and new features are separate',
+      'Lets you edit existing structure, redesigns and new features are separate',
     ],
     delivery: 'Added during your website build.',
     bestFor: 'Anyone who wants to make small updates without hiring a developer.',
     faqs: [
-      { q: 'Do I need a website from you?', a: 'Yes — this is an add-on to one of our website plans.' },
-      { q: 'Can I break the design?', a: 'No. It is constrained editing — you can safely change text and images within the existing layout.' },
+      { q: 'Do I need a website from you?', a: 'Yes, this is an add-on to one of our website plans.' },
+      { q: 'Can I break the design?', a: 'No. It is constrained editing, you can safely change text and images within the existing layout.' },
     ],
   },
   {
@@ -352,7 +352,7 @@ export const products = [
     tagline: 'Daily blog + weekly GBP posts',
     price: '$149',
     priceNote: '/month',
-    whatItIs: 'We keep your online presence fresh and search-friendly by writing and publishing content for you every day — bilingual, SEO & AEO-optimized.',
+    whatItIs: 'We keep your online presence fresh and search-friendly by writing and publishing content for you every day, bilingual, SEO & AEO-optimized.',
     included: [
       'Daily blog posts written & published',
       '3x weekly Google Business Profile posts',
@@ -362,13 +362,13 @@ export const products = [
     boundaries: [
       'Content is generated and published from your profiles with the access you provide',
       'Requires a website from us (posts publish to your site)',
-      'Covers blog posts and GBP posts — not paid ads or social video',
+      'Covers blog posts and GBP posts, not paid ads or social video',
       'You review and can request adjustments within the monthly cycle',
     ],
     delivery: 'Ongoing monthly.',
     bestFor: 'Businesses that want consistent content without doing it themselves.',
     faqs: [
-      { q: 'Do I have to approve every post?', a: 'No — we work within agreed topics and tone. You can request changes any time.' },
+      { q: 'Do I have to approve every post?', a: 'No, we work within agreed topics and tone. You can request changes any time.' },
       { q: 'Which platforms are covered?', a: 'Your website blog and your Google Business Profile.' },
     ],
   },
@@ -381,7 +381,7 @@ export const products = [
     tagline: 'All content + monthly updates',
     price: '$199',
     priceNote: '/month',
-    whatItIs: 'Everything in Content Booster, plus monthly website updates and a performance report — a fully managed online presence.',
+    whatItIs: 'Everything in Content Booster, plus monthly website updates and a performance report, a fully managed online presence.',
     included: [
       'Everything in Content Booster',
       'Up to 5 monthly page changes',
@@ -391,14 +391,14 @@ export const products = [
     boundaries: [
       'Up to 5 page changes per month (more is quoted separately)',
       'Requires a website from us',
-      'Content + light updates only — new features or redesigns are separate',
+      'Content + light updates only, new features or redesigns are separate',
       'Reporting covers your site and GBP, not paid-ad performance',
     ],
     delivery: 'Ongoing monthly.',
     bestFor: 'Businesses that want their site maintained and growing without managing it.',
     faqs: [
       { q: 'How is this different from Content Booster?', a: 'It adds up to 5 monthly page edits, priority support, and a monthly performance report on top of all the content.' },
-      { q: 'What if I need more than 5 changes?', a: 'Extra changes are quoted separately — no surprise fees.' },
+      { q: 'What if I need more than 5 changes?', a: 'Extra changes are quoted separately, no surprise fees.' },
     ],
   },
 
@@ -412,7 +412,7 @@ export const products = [
     tagline: 'WhatsApp messaging, handled by AI',
     price: '$297',
     priceNote: 'one-time · optional support $29/month',
-    whatItIs: 'An AI that answers your WhatsApp messages 24/7 — replying to FAQs, taking details, and never leaving a customer on read.',
+    whatItIs: 'An AI that answers your WhatsApp messages 24/7, replying to FAQs, taking details, and never leaving a customer on read.',
     included: [
       'WhatsApp auto-replies 24/7',
       'Answers FAQs & takes messages',
@@ -421,7 +421,7 @@ export const products = [
       'Setup & training included',
     ],
     boundaries: [
-      'WhatsApp text only — no phone calls (that is the Voice Receptionist)',
+      'WhatsApp text only, no phone calls (that is the Voice Receptionist)',
       'Runs on your WhatsApp Business number; you provide access',
       'Optional $29/month for ongoing support and tweaks (not required)',
       'Does not make outbound marketing messages (WhatsApp rules require opt-in)',
@@ -429,7 +429,7 @@ export const products = [
     delivery: 'Live in 1–2 days.',
     bestFor: 'Businesses whose customers mostly message rather than call.',
     faqs: [
-      { q: 'Does it handle voice calls?', a: 'No — this is WhatsApp text. For phone calls choose the Voice Receptionist.' },
+      { q: 'Does it handle voice calls?', a: 'No, this is WhatsApp text. For phone calls choose the Voice Receptionist.' },
       { q: 'Do I need the support plan?', a: 'No, it is optional at $29/month for ongoing tweaks and priority help.' },
     ],
   },
@@ -443,7 +443,7 @@ export const products = [
     tagline: 'Full AI phone + text receptionist',
     price: '$550',
     priceNote: 'setup · optional support $49/month',
-    whatItIs: 'A natural-sounding AI that answers your phone calls 24/7 in English and Spanish — taking messages and forwarding urgent calls, so you never miss a customer again.',
+    whatItIs: 'A natural-sounding AI that answers your phone calls 24/7 in English and Spanish, taking messages and forwarding urgent calls, so you never miss a customer again.',
     included: [
       'Everything in Text Receptionist',
       'AI answers phone calls 24/7',
@@ -453,18 +453,18 @@ export const products = [
       'Setup & training included',
     ],
     boundaries: [
-      'You pay Vapi directly for call usage (~$30–50/month) — we set it up at cost',
+      'You pay Vapi directly for call usage (~$30–50/month), we set it up at cost',
       'Optional $49/month for ongoing maintenance and prompt tweaks',
-      'Handles inbound calls — no cold outbound calling (restricted by law)',
+      'Handles inbound calls, no cold outbound calling (restricted by law)',
       'Requires a phone number you control and can forward',
       'Replaces answering, not your whole phone system or CRM',
     ],
     delivery: 'Live in 2–3 days.',
     bestFor: 'Any business that loses calls after hours or while busy.',
     faqs: [
-      { q: 'What are the running costs?', a: 'You pay Vapi directly ~$30–50/month for call usage. That is at cost — no markup. Optional support is $49/month.' },
-      { q: 'Does it sound like a robot?', a: 'No — it uses a natural AI voice and speaks both English and Spanish.' },
-      { q: 'Can it make outbound calls?', a: 'No. Inbound only — cold AI calling is restricted by law.' },
+      { q: 'What are the running costs?', a: 'You pay Vapi directly ~$30–50/month for call usage. That is at cost, no markup. Optional support is $49/month.' },
+      { q: 'Does it sound like a robot?', a: 'No, it uses a natural AI voice and speaks both English and Spanish.' },
+      { q: 'Can it make outbound calls?', a: 'No. Inbound only, cold AI calling is restricted by law.' },
     ],
   },
 ];

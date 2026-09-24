@@ -10,7 +10,7 @@ author: "Birky Studio"
 
 # From Zero Web Presence to 30+ Leads a Month: A Real Estate Agent's Digital Transformation Story
 
-**A real estate agent in Antigua was relying entirely on word-of-mouth and a WhatsApp number that went silent after 6 PM. They had no website, no booking system, and no way to capture the 7 PM calls that never came. After working with Birky Studio for a custom website and AI agent, they went from zero online leads to over 30 qualified inquiries per month — and closed three deals they would have otherwise missed.**
+**A real estate agent in Antigua was relying entirely on word-of-mouth and a WhatsApp number that went silent after 6 PM. They had no website, no booking system, and no way to capture the 7 PM calls that never came. After working with Birky Studio for a custom website and AI agent, they went from zero online leads to over 30 qualified inquiries per month, and closed three deals they would have otherwise missed.**
 
 ### The Before: Missing the Digital Boat
 
@@ -20,8 +20,8 @@ His setup was minimal:
 
 - **WhatsApp number** shared with family and friends
 - **Facebook page** updated twice a year
-- **Email** — but he rarely checked it
-- **No website** — prospects who wanted to see his listings had to ask him to email photos
+- **Email**, but he rarely checked it
+- **No website**, prospects who wanted to see his listings had to ask him to email photos
 
 Every month, Miguel estimated he was losing 10-15 potential leads. Prospects would call or message after hours. He would reply the next morning. By then, they had already connected with two other agents who had websites, online listings, and automated follow-ups.
 
@@ -64,11 +64,11 @@ After 60 days with the full Birky Studio setup:
 | Booked viewings per month | 2-3 | 8-12 |
 | Deals closed (in 2 months) | 1 | 4 |
 
-The voice receptionist alone captured 7 after-hours calls in the first week. Three of those turned into booked viewings. One of them closed in under two weeks — a $285,000 property in Ciudad Vieja that the buyer had almost given up searching for.
+The voice receptionist alone captured 7 after-hours calls in the first week. Three of those turned into booked viewings. One of them closed in under two weeks, a $285,000 property in Ciudad Vieja that the buyer had almost given up searching for.
 
 Miguel's exact words: "I did not know how many leads I was losing until I saw them all in one place. The AI agent catches things I was just missing."
 
-> "I did not know how many leads I was losing until I saw them all in one place. The AI agent catches things I was just missing." — Miguel, real estate agent, Antigua Guatemala
+> "I did not know how many leads I was losing until I saw them all in one place. The AI agent catches things I was just missing.". Miguel, real estate agent, Antigua Guatemala
 
 ### What This Means for Your Business
 
@@ -80,7 +80,7 @@ Here is what the numbers actually look like:
 - **Average deal value for a realtor:** $500-$5,000+ in commission per closing
 - **Cost of doing nothing:** $30,000-$100,000+ in missed revenue per year
 
-At Birky Studio, we do not sell templates or generic packages. We build what your specific business needs — a website that actually looks like your brand, an AI agent that actually answers your clients' questions, and a system that works while you sleep.
+At Birky Studio, we do not sell templates or generic packages. We build what your specific business needs, a website that actually looks like your brand, an AI agent that actually answers your clients' questions, and a system that works while you sleep.
 
 ### The Birky Studio Difference
 

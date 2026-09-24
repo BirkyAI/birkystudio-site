@@ -20,9 +20,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         key: "challenge",
         options: [
           { value: "leads", label: "📉 Missing leads after hours / weekends" },
-          { value: "admin", label: "📋 Too much admin work — emails, follow-ups, CRM" },
+          { value: "admin", label: "📋 Too much admin work, emails, follow-ups, CRM" },
           { value: "website", label: "🌐 My website looks outdated or doesn't convert" },
-          { value: "phone", label: "📞 Can't answer calls 24/7 — losing customers" },
+          { value: "phone", label: "📞 Can't answer calls 24/7, losing customers" },
           { value: "content", label: "✍️ No time for social media / blog content" },
         ]
       },
@@ -33,7 +33,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           { value: "0-10", label: "0-10 inquiries per week" },
           { value: "10-30", label: "10-30 inquiries per week" },
           { value: "30-100", label: "30-100 inquiries per week" },
-          { value: "100+", label: "100+ — we're busy!" },
+          { value: "100+", label: "100+, we're busy!" },
         ]
       },
       {
@@ -50,10 +50,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         q: "What's your budget range?",
         key: "budget",
         options: [
-          { value: "499-999", label: "$499 — $999 (website or basic setup)" },
-          { value: "999-1999", label: "$999 — $1,999 (full website + automation)" },
+          { value: "499-999", label: "$499, $999 (website or basic setup)" },
+          { value: "999-1999", label: "$999, $1,999 (full website + automation)" },
           { value: "1500", label: "$1,500+ (the complete package)" },
-          { value: "unsure", label: "Not sure — want advice first" },
+          { value: "unsure", label: "Not sure, want advice first" },
         ]
       },
     ];
@@ -62,7 +62,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       // Real estate + leads
       "real_estate+leads": {
         title: "Real Estate AI Agent + Voice Receptionist",
-        description: "You need a full AI assistant that handles lead follow-ups, property searches, and after-hours inquiries — plus a voice receptionist to never miss a call.",
+        description: "You need a full AI assistant that handles lead follow-ups, property searches, and after-hours inquiries, plus a voice receptionist to never miss a call.",
         cta: "Get Your AI Agent →",
         ctaLink: "/contact/",
         products: [
@@ -70,19 +70,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup + usage" },
           { emoji: "🌐", name: "Website + Blog SEO", price: "from $999" },
         ],
-        urgency: "High — realtors lose 40% of leads after hours."
+        urgency: "High, realtors lose 40% of leads after hours."
       },
       // Real estate + website
       "real_estate+website": {
         title: "Website + AI Agent Combo",
-        description: "A bilingual real estate website with property listings, blog SEO, and WhatsApp integration — paired with an AI agent that manages your email and CRM.",
+        description: "A bilingual real estate website with property listings, blog SEO, and WhatsApp integration, paired with an AI agent that manages your email and CRM.",
         cta: "Start Your Project →",
         ctaLink: "/contact/",
         products: [
           { emoji: "🌐", name: "Professional Website", price: "$999 one-time" },
           { emoji: "🤖", name: "Real Estate AI Agent", price: "$1,297 one-time" },
         ],
-        urgency: "Your website is your #1 sales tool — make it work for you 24/7."
+        urgency: "Your website is your #1 sales tool, make it work for you 24/7."
       },
       // Real estate + phone
       "real_estate+phone": {
@@ -99,7 +99,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       // Real estate + admin
       "real_estate+admin": {
         title: "Real Estate AI Agent",
-        description: "You need a dedicated AI assistant on your computer that handles email, CRM, property descriptions, follow-ups, and content — so you can focus on closing deals.",
+        description: "You need a dedicated AI assistant on your computer that handles email, CRM, property descriptions, follow-ups, and content, so you can focus on closing deals.",
         cta: "Get Your AI Agent →",
         ctaLink: "/contact/",
         products: [
@@ -118,7 +118,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup" },
           { emoji: "💬", name: "AI Text Receptionist", price: "$297 one-time" },
         ],
-        urgency: "Customers expect instant answers — even at 9 PM."
+        urgency: "Customers expect instant answers, even at 9 PM."
       },
       "retail+phone": {
         title: "AI Voice + Text Receptionist",
@@ -133,7 +133,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       // Website-related
       "retail+website": {
         title: "Professional Website",
-        description: "A modern, mobile-first website with WhatsApp integration, bilingual support, and SEO — built in 3 days.",
+        description: "A modern, mobile-first website with WhatsApp integration, bilingual support, and SEO, built in 3 days.",
         cta: "View Website Plans →",
         ctaLink: "/#pricing-websites",
         products: [
@@ -163,11 +163,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           { emoji: "🌐", name: "Website with Booking", price: "from $999" },
           { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup" },
         ],
-        urgency: "Guests book at 2 AM — your AI is awake."
+        urgency: "Guests book at 2 AM, your AI is awake."
       },
       "hospitality+phone": {
         title: "AI Voice Receptionist for Hospitality",
-        description: "AI answers calls about reservations, pricing, hours, and locations — in English and Spanish, 24/7.",
+        description: "AI answers calls about reservations, pricing, hours, and locations, in English and Spanish, 24/7.",
         cta: "Get Started →",
         ctaLink: "/contact/",
         products: [
@@ -185,7 +185,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           { emoji: "🌐", name: "Professional Website", price: "$999 one-time" },
           { emoji: "📞", name: "AI Voice Receptionist", price: "$550 setup" },
         ],
-        urgency: "First impressions matter — be professional everywhere."
+        urgency: "First impressions matter, be professional everywhere."
       },
       "professional+admin": {
         title: "AI Agent",
@@ -199,8 +199,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       },
       // Content
       "real_estate+content": {
-        title: "Real Estate AI Agent — Content Automation",
-        description: "Your AI agent writes blog posts, social media captions, property descriptions, and manages your Google Business Profile — all from voice commands.",
+        title: "Real Estate AI Agent. Content Automation",
+        description: "Your AI agent writes blog posts, social media captions, property descriptions, and manages your Google Business Profile, all from voice commands.",
         cta: "Get Started →",
         ctaLink: "/contact/",
         products: [
@@ -241,7 +241,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       },
     };
 
-    // Fallbacks — try to find a good match even if the exact combo doesn't exist
+    // Fallbacks, try to find a good match even if the exact combo doesn't exist
     function getRecommendation(biz, challenge) {
       const key = `${biz}+${challenge}`;
       if (recommendations[key]) return recommendations[key];
@@ -348,7 +348,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       html += `<input type="email" id="quiz-email" placeholder="your@email.com" style="flex:1;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:14px;">`;
       html += `<button onclick="saveQuizResults()" style="padding:12px 20px;background:linear-gradient(135deg,#818cf8,#f472b6);color:white;border:none;border-radius:10px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(129,140,248,0.3);">Send →</button>`;
       html += `</div>`;
-      html += `<div style="margin-top:12px;"><a href="${rec.ctaLink}" style="font-size:14px;color:#6366f1;text-decoration:none;">Skip — contact me directly →</a></div>`;
+      html += `<div style="margin-top:12px;"><a href="${rec.ctaLink}" style="font-size:14px;color:#6366f1;text-decoration:none;">Skip, contact me directly →</a></div>`;
       html += `</div>`;
       
       html += `<div style="margin-top:24px;">`;

@@ -1,4 +1,4 @@
-// Catálogo de productos — alimenta las páginas de detalle /products/[slug] y los bloques de precios.
+// Catálogo de productos, alimenta las páginas de detalle /products/[slug] y los bloques de precios.
 // Cada producto: qué ES, qué RECIBE por el precio, y sus LÍMITES (fronteras).
 // Mantener los precios en sincronía con los bloques de src/pages/index.astro.
 
@@ -11,34 +11,34 @@ export const products = [
     accent: 'linear-gradient(135deg,#f472b6,#ec4899)',
     badge: 'Más Popular',
     name: 'Configuración de Agente de IA',
-    tagline: 'Asistente de IA dedicado para cualquier negocio — incluye CRM en Notion',
+    tagline: 'Asistente de IA dedicado para cualquier negocio, incluye CRM en Notion',
     price: 'Q9,900',
     priceNote: 'configuración única',
     whatItIs:
-      'Un asistente de IA dedicado instalado en tu propia computadora. Se conecta a tu correo real, tus archivos y tu CRM — y trabaja por WhatsApp o Telegram como un chat normal. Bilingüe (EN/ES), disponible 24/7. Luna lo instala y lo configura personalmente para ti en una sola sesión de 2–3 horas compartiendo pantalla, incluido el entrenamiento completo.',
+      'Un asistente de IA dedicado instalado en tu propia computadora. Se conecta a tu correo real, tus archivos y tu CRM, y trabaja por WhatsApp o Telegram como un chat normal. Bilingüe (EN/ES), disponible 24/7. Luna lo instala y lo configura personalmente para ti en una sola sesión de 2–3 horas compartiendo pantalla, incluido el entrenamiento completo.',
     included: [
       'Responde preguntas de clientes y toma mensajes 24/7',
       'Gestión de correo y seguimientos automatizados',
       'Automatización de contenido para el Perfil de Empresa de Google',
       'Funciona con WhatsApp + Telegram + Correo',
       'Bilingüe (EN/ES) con integración de CRM',
-      'Sistema de Bienes Raíces en Notion — CRM, comisiones, planificador de contenido',
+      'Sistema de Bienes Raíces en Notion. CRM, comisiones, planificador de contenido',
       'Buscador de propiedades y generador de descripciones de listados',
       'Instalación en vivo de 2–3 horas + entrenamiento, más 30 días de soporte gratis',
     ],
     boundaries: [
-      'Corre en tu máquina — por ahora solo Mac y Linux (no Windows)',
+      'Corre en tu máquina, por ahora solo Mac y Linux (no Windows)',
       'Es una tarifa de configuración, no un servicio alojado; el agente vive en tu computadora',
       'El uso del modelo de IA corre por tu propia cuenta y créditos del proveedor (te ayudamos a configurarlo)',
       'Las integraciones personalizadas con APIs de terceros fuera de las herramientas listadas se cotizan aparte',
-      'Recibes el agente y su configuración — no lo administramos día a día (eso es la Retención de Socio)',
+      'Recibes el agente y su configuración, no lo administramos día a día (eso es la Retención de Socio)',
     ],
     delivery: 'Una sesión remota de 2–3 horas, en vivo en 2–3 días.',
     bestFor: 'Agentes inmobiliarios y negocios pequeños ahogados en correos, mensajes y administración repetitiva.',
     faqs: [
       { q: '¿Necesito conocimientos técnicos?', a: 'No. Luna lo instala y configura todo por ti en una sesión compartiendo pantalla, y luego te entrena. Después solo chateas con él por WhatsApp o Telegram.' },
       { q: '¿Qué computadoras son compatibles?', a: 'Mac y Linux. Windows todavía no es compatible.' },
-      { q: '¿Cuánto cuesta mantenerlo después de la configuración?', a: 'Los $1,297 son la configuración de pago único. El uso del modelo de IA corre con tus propios créditos del proveedor — lo configuramos contigo y lo mantenemos económico.' },
+      { q: '¿Cuánto cuesta mantenerlo después de la configuración?', a: 'Los $1,297 son la configuración de pago único. El uso del modelo de IA corre con tus propios créditos del proveedor, lo configuramos contigo y lo mantenemos económico.' },
     ],
   },
   {
@@ -49,18 +49,18 @@ export const products = [
     name: 'Retención de Socio de IA para tu Negocio',
     tagline: 'Optimización continua y soporte prioritario',
     price: 'Q1,500',
-    priceNote: '/mes — sin contrato, cancela cuando quieras',
+    priceNote: '/mes, sin contrato, cancela cuando quieras',
     whatItIs:
-      'Una alianza mensual que mantiene tu IA trabajando al máximo. Cada mes revisamos el rendimiento, ajustamos los prompts e implementamos mejoras — con soporte prioritario para que nunca te quedes esperando.',
+      'Una alianza mensual que mantiene tu IA trabajando al máximo. Cada mes revisamos el rendimiento, ajustamos los prompts e implementamos mejoras, con soporte prioritario para que nunca te quedes esperando.',
     included: [
       'Llamada mensual de optimización',
       'Reporte mensual de rendimiento',
       'Ajustes y mejoras de prompts',
       'Mantenimiento y actualizaciones continuas',
-      'Soporte prioritario — sin hacer fila',
+      'Soporte prioritario, sin hacer fila',
     ],
     boundaries: [
-      'Cubre tu configuración EXISTENTE — no es una forma de agregar productos nuevos gratis',
+      'Cubre tu configuración EXISTENTE, no es una forma de agregar productos nuevos gratis',
       'Los productos nuevos, agentes nuevos o reconstrucciones grandes se cotizan aparte',
       'No incluye suscripciones a herramientas de terceros ni créditos de uso',
       'Las solicitudes se atienden dentro de nuestro ciclo mensual; no es soporte ilimitado en la misma hora',
@@ -69,7 +69,7 @@ export const products = [
     bestFor: 'Clientes que quieren que su IA mejore activamente cada mes sin mover un dedo.',
     faqs: [
       { q: '¿Hay contrato?', a: 'No. Es mes a mes y puedes cancelar cuando quieras.' },
-      { q: '¿Qué cuenta como una optimización?', a: 'Ajustar prompts, corregir respuestas débiles, ampliar la base de conocimiento y mejorar los flujos de trabajo — todo lo que haga rendir mejor tu configuración actual.' },
+      { q: '¿Qué cuenta como una optimización?', a: 'Ajustar prompts, corregir respuestas débiles, ampliar la base de conocimiento y mejorar los flujos de trabajo, todo lo que haga rendir mejor tu configuración actual.' },
       { q: '¿Puedo obtener funciones nuevas con este plan?', a: 'Mejoras pequeñas sí; los productos nuevos o adiciones grandes se cotizan aparte para que el precio siga siendo justo.' },
     ],
   },
@@ -84,28 +84,28 @@ export const products = [
     name: 'Paquete de Generación de Prospectos',
     tagline: 'Prospectos verificados + IA que les da seguimiento',
     price: 'Q15,200',
-    priceNote: 'pago único — es tuyo para siempre',
+    priceNote: 'pago único, es tuyo para siempre',
     whatItIs:
-      'El sistema completo de generación de prospectos. Te armamos una lista de prospectos verificada, enriquecida y con puntaje que es tuya para siempre — y luego montamos el contacto automatizado y el agente de IA + recepcionista que atrapan y califican las respuestas 24/7. La ventaja es que las respuestas nunca se enfrían.',
+      'El sistema completo de generación de prospectos. Te armamos una lista de prospectos verificada, enriquecida y con puntaje que es tuya para siempre, y luego montamos el contacto automatizado y el agente de IA + recepcionista que atrapan y califican las respuestas 24/7. La ventaja es que las respuestas nunca se enfrían.',
     included: [
-      'Lista de prospectos verificada — real, enriquecida, con puntaje (cualquier nicho)',
+      'Lista de prospectos verificada, real, enriquecida, con puntaje (cualquier nicho)',
       'Configuración de contacto automatizado (cumple normas, primero por correo)',
       'Agente de IA entrenado con tu nicho y tu propuesta',
       'Recepcionista de IA atrapa y califica respuestas 24/7',
-      'La lista y los datos son tuyos para siempre — sin suscripción, sin ataduras',
+      'La lista y los datos son tuyos para siempre, sin suscripción, sin ataduras',
     ],
     boundaries: [
-      'Entregamos una lista verificada y calificada más el sistema de seguimiento — nunca prometemos prospectos, negocios cerrados ni ingresos (nadie puede hacerlo con honestidad)',
+      'Entregamos una lista verificada y calificada más el sistema de seguimiento, nunca prometemos prospectos, negocios cerrados ni ingresos (nadie puede hacerlo con honestidad)',
       'Sin promesas de volumen: vendemos contactos verificados y con puntaje, no "X prospectos al mes"',
-      'El WhatsApp en frío y las llamadas de IA en frío NO están incluidos — están restringidos por las reglas de las plataformas y por la ley',
+      'El WhatsApp en frío y las llamadas de IA en frío NO están incluidos, están restringidos por las reglas de las plataformas y por la ley',
       'El contacto corre por tu propio correo y tus cuentas; tú eres el remitente responsable',
-      'El tamaño de la lista se define desde el inicio contigo — no es una lista ilimitada',
+      'El tamaño de la lista se define desde el inicio contigo, no es una lista ilimitada',
     ],
     delivery: 'La lista se entrega en 3–7 días hábiles; el contacto y la configuración de IA van después de definir el alcance.',
-    bestFor: 'Agentes inmobiliarios y agencias que quieren un flujo constante que sea suyo — no una suscripción rentada.',
+    bestFor: 'Agentes inmobiliarios y agencias que quieren un flujo constante que sea suyo, no una suscripción rentada.',
     faqs: [
-      { q: '¿Garantizan cierta cantidad de prospectos?', a: 'No — y desconfía de quien lo haga. Entregamos una lista verificada y con puntaje más la máquina de seguimiento. Que los contactos conviertan depende de tu oferta y de tu constancia.' },
-      { q: '¿El contacto es legal?', a: 'El canal incluido es correo electrónico que cumple las normas (listo para CAN-SPAM: remitente real, opción de baja, etc.). Los canales que requieren consentimiento previo por escrito — WhatsApp en frío, llamadas de IA en frío, SMS en frío — se excluyen a propósito.' },
+      { q: '¿Garantizan cierta cantidad de prospectos?', a: 'No, y desconfía de quien lo haga. Entregamos una lista verificada y con puntaje más la máquina de seguimiento. Que los contactos conviertan depende de tu oferta y de tu constancia.' },
+      { q: '¿El contacto es legal?', a: 'El canal incluido es correo electrónico que cumple las normas (listo para CAN-SPAM: remitente real, opción de baja, etc.). Los canales que requieren consentimiento previo por escrito. WhatsApp en frío, llamadas de IA en frío, SMS en frío, se excluyen a propósito.' },
       { q: '¿La lista es mía?', a: 'Sí. Es un archivo que se te entrega y conservas para siempre. No hay nada que cancelar.' },
     ],
   },
@@ -119,7 +119,7 @@ export const products = [
     price: 'Q3,800',
     priceNote: 'pago único',
     whatItIs:
-      'Una lista de prospectos independiente y verificada a mano para un nicho y una zona — para quienes ya tienen un agente de IA o un proceso de contacto y solo necesitan los contactos reales.',
+      'Una lista de prospectos independiente y verificada a mano para un nicho y una zona, para quienes ya tienen un agente de IA o un proceso de contacto y solo necesitan los contactos reales.',
     included: [
       'Hasta ~25 contactos reales, verificados y enriquecidos',
       'Con puntaje y etiquetados por oportunidad',
@@ -129,7 +129,7 @@ export const products = [
     ],
     boundaries: [
       'Un nicho y una ubicación por lista',
-      'Hasta ~25 prospectos — es un tamaño inicial, no una lista masiva',
+      'Hasta ~25 prospectos, es un tamaño inicial, no una lista masiva',
       'No incluye la configuración de contacto ni IA (eso es el Paquete)',
       'Verificamos que los datos de contacto existan y sean correctos; no garantizamos que vayan a comprar',
     ],
@@ -138,7 +138,7 @@ export const products = [
     faqs: [
       { q: '¿Para quién es esto?', a: 'Para negocios que ya tienen un agente de IA o un sistema de contacto y solo quieren prospectos reales y verificados para alimentarlo.' },
       { q: '¿Qué trae el archivo?', a: 'Nombre, tipo, calificación, dirección, teléfono, sitio web, ciudad, nicho y una etiqueta de oportunidad con puntaje que te dice cómo abordar mejor a cada uno.' },
-      { q: '¿Puedo obtener más de 25?', a: 'Sí — la Lista Pro cubre hasta ~100 con enriquecimiento más profundo, o elige el Paquete para el sistema completo.' },
+      { q: '¿Puedo obtener más de 25?', a: 'Sí, la Lista Pro cubre hasta ~100 con enriquecimiento más profundo, o elige el Paquete para el sistema completo.' },
     ],
   },
   {
@@ -163,7 +163,7 @@ export const products = [
     boundaries: [
       'Hasta ~100 prospectos, un nicho/ubicación',
       'No incluye contacto automatizado ni IA (eso es el Paquete)',
-      'Las plantillas son un punto de partida — tú sigues enviando desde tus propias cuentas',
+      'Las plantillas son un punto de partida, tú sigues enviando desde tus propias cuentas',
       'Sin garantía de respuesta ni de conversión',
     ],
     delivery: '3–7 días hábiles.',
@@ -185,7 +185,7 @@ export const products = [
     price: 'Q3,800',
     priceNote: 'configuración + Q740/mes',
     whatItIs:
-      'Un sistema llave en mano que convierte a los clientes que ya tienes en un flujo constante de reseñas de Google. Contactamos a tus clientes anteriores y les pedimos una reseña — bien hecho y totalmente dentro de las políticas de Google. Aparte, recuperamos a tus clientes callados con una oferta de regreso.',
+      'Un sistema llave en mano que convierte a los clientes que ya tienes en un flujo constante de reseñas de Google. Contactamos a tus clientes anteriores y les pedimos una reseña, bien hecho y totalmente dentro de las políticas de Google. Aparte, recuperamos a tus clientes callados con una oferta de regreso.',
     included: [
       'Tu lista de clientes limpia y segmentada (activos vs. inactivos)',
       'Secuencia personalizada de solicitud de reseña, enviada a lo largo del tiempo',
@@ -195,19 +195,19 @@ export const products = [
       'Una hoja de una página sobre cumplimiento que muestra exactamente lo que hicimos',
     ],
     boundaries: [
-      'Nunca compramos reseñas ni ofrecemos recompensas por dejarlas — Google las borra y puede dañar tu perfil. La solicitud sin incentivo ES el producto',
-      'No podemos prometer un número de reseñas — prometemos un sistema que le pide a cada cliente anterior, de forma constante',
+      'Nunca compramos reseñas ni ofrecemos recompensas por dejarlas. Google las borra y puede dañar tu perfil. La solicitud sin incentivo ES el producto',
+      'No podemos prometer un número de reseñas, prometemos un sistema que le pide a cada cliente anterior, de forma constante',
       'No le pedimos solo a los clientes contentos, y nunca pedimos específicamente una reseña positiva (ambas cosas están prohibidas)',
-      'Los descuentos van en la ruta aparte de recuperación — nunca ligados a una reseña',
+      'Los descuentos van en la ruta aparte de recuperación, nunca ligados a una reseña',
       'Ya debes tener un Perfil de Empresa de Google configurado',
       'Las solicitudes por SMS requieren consentimiento documentado del cliente; el correo es lo predeterminado',
     ],
     delivery: 'En vivo en ~48 horas después de que tu lista y los accesos estén listos.',
     bestFor: 'Negocios con años de clientes contentos pero solo un puñado de reseñas.',
     faqs: [
-      { q: '¿Pueden ofrecer un descuento a cambio de una reseña?', a: 'No. Google prohíbe estrictamente las reseñas incentivadas y las borra — sale contraproducente. El descuento va mejor a recuperar clientes callados, donde sí está permitido.' },
+      { q: '¿Pueden ofrecer un descuento a cambio de una reseña?', a: 'No. Google prohíbe estrictamente las reseñas incentivadas y las borra, sale contraproducente. El descuento va mejor a recuperar clientes callados, donde sí está permitido.' },
       { q: '¿Cuántas reseñas vamos a recibir?', a: 'No prometemos un número; nadie puede hacerlo con honestidad. Prometemos un sistema que le pide a cada cliente anterior, de la forma correcta y de manera constante.' },
-      { q: '¿Esto nos pondrá en malos términos con Google?', a: 'Al contrario. El sistema está construido para mantenerse dentro de las políticas de Google — por eso funciona a largo plazo. Recibes una hoja de una página que documenta exactamente lo que se hizo.' },
+      { q: '¿Esto nos pondrá en malos términos con Google?', a: 'Al contrario. El sistema está construido para mantenerse dentro de las políticas de Google, por eso funciona a largo plazo. Recibes una hoja de una página que documenta exactamente lo que se hizo.' },
     ],
   },
 
@@ -221,7 +221,7 @@ export const products = [
     tagline: 'Perfecto para negocios nuevos',
     price: 'Q3,800',
     priceNote: 'pago único',
-    whatItIs: 'Un sitio web limpio, rápido y pensado primero para celular para poner tu negocio en línea — entregado en 2–3 días.',
+    whatItIs: 'Un sitio web limpio, rápido y pensado primero para celular para poner tu negocio en línea, entregado en 2–3 días.',
     included: [
       '1–3 páginas',
       'Adaptado a celular',
@@ -232,7 +232,7 @@ export const products = [
     ],
     boundaries: [
       'Solo hasta 3 páginas (las páginas extra se cotizan aparte)',
-      'Un solo idioma — el bilingüe es parte del Profesional',
+      'Un solo idioma, el bilingüe es parte del Profesional',
       'Tú aportas el contenido, el logo y las fotos',
       'Las tarifas de dominio y hosting no están incluidas (te ayudamos a configurarlos)',
       'Sin comercio electrónico ni funciones personalizadas',
@@ -240,9 +240,9 @@ export const products = [
     delivery: '2–3 días.',
     bestFor: 'Negocios nuevos que necesitan una presencia simple y creíble rápido.',
     faqs: [
-      { q: '¿Tengo que dar el contenido?', a: 'Sí — tu texto, logo y fotos. Nosotros lo armamos y lo diseñamos en un sitio profesional.' },
+      { q: '¿Tengo que dar el contenido?', a: 'Sí, tu texto, logo y fotos. Nosotros lo armamos y lo diseñamos en un sitio profesional.' },
       { q: '¿El hosting está incluido?', a: 'El hosting y el dominio van aparte (te configuramos con una opción gratis o de bajo costo siempre que sea posible).' },
-      { q: '¿Puedo editarlo yo mismo después?', a: 'Sí — agrega el complemento de CMS Auto-Editable ($130 pago único) para actualizar textos e imágenes tú mismo.' },
+      { q: '¿Puedo editarlo yo mismo después?', a: 'Sí, agrega el complemento de CMS Auto-Editable ($130 pago único) para actualizar textos e imágenes tú mismo.' },
     ],
   },
   {
@@ -255,7 +255,7 @@ export const products = [
     tagline: 'Para negocios en crecimiento',
     price: 'Q7,600',
     priceNote: 'pago único',
-    whatItIs: 'Un sitio web bilingüe, optimizado para SEO y AEO, que posiciona y convierte — con espacio para mostrar tu trabajo.',
+    whatItIs: 'Un sitio web bilingüe, optimizado para SEO y AEO, que posiciona y convierte, con espacio para mostrar tu trabajo.',
     included: [
       '4–7 páginas',
       'Todo lo del Inicial',
@@ -266,7 +266,7 @@ export const products = [
     ],
     boundaries: [
       'Hasta 7 páginas (las páginas extra se cotizan aparte)',
-      'Dos idiomas (EN/ES) — idiomas adicionales se cotizan aparte',
+      'Dos idiomas (EN/ES), idiomas adicionales se cotizan aparte',
       'Tú aportas los textos, el logo y las fotos',
       'Las tarifas de dominio y hosting no están incluidas',
       'Sin comercio electrónico ni funciones de app personalizadas',
@@ -274,9 +274,9 @@ export const products = [
     delivery: '2–3 días.',
     bestFor: 'Negocios en crecimiento que atienden a clientes que hablan inglés y español.',
     faqs: [
-      { q: '¿Qué significa "optimización de AEO"?', a: 'Answer Engine Optimization (optimización para motores de respuestas) — estructurar tu contenido para que herramientas de IA como ChatGPT y los Resúmenes de IA de Google puedan citar tu negocio en sus respuestas.' },
+      { q: '¿Qué significa "optimización de AEO"?', a: 'Answer Engine Optimization (optimización para motores de respuestas), estructurar tu contenido para que herramientas de IA como ChatGPT y los Resúmenes de IA de Google puedan citar tu negocio en sus respuestas.' },
       { q: '¿Cuántas páginas puedo tener?', a: '4–7. ¿Necesitas más? El plan Premium cubre 10 o más.' },
-      { q: '¿Puedo actualizarlo yo mismo?', a: 'Sí — agrega el complemento de CMS Auto-Editable.' },
+      { q: '¿Puedo actualizarlo yo mismo?', a: 'Sí, agrega el complemento de CMS Auto-Editable.' },
     ],
   },
   {
@@ -285,7 +285,7 @@ export const products = [
     icon: '🌐',
     accent: 'rgba(255,255,255,0.05)',
     name: 'Sitio Web Premium',
-    tagline: 'Para negocios establecidos — 10+ páginas',
+    tagline: 'Para negocios establecidos, 10+ páginas',
     price: 'Q15,300',
     priceNote: 'pago único',
     whatItIs: 'Un sitio bilingüe grande y lleno de funciones, con blog y funcionalidad personalizada para negocios establecidos.',
@@ -298,17 +298,17 @@ export const products = [
       '30 días de soporte gratis después del lanzamiento',
     ],
     boundaries: [
-      'Las funciones personalizadas se definen desde el inicio — cualquier cosa fuera de lo común se cotiza antes de empezar',
+      'Las funciones personalizadas se definen desde el inicio, cualquier cosa fuera de lo común se cotiza antes de empezar',
       'Tú aportas los textos, el logo y las fotos',
       'Las tarifas de dominio y hosting no están incluidas',
-      'El comercio electrónico (pagos, carritos) no está incluido por defecto — pide una cotización',
+      'El comercio electrónico (pagos, carritos) no está incluido por defecto, pide una cotización',
       'El contenido del blog como tal no está incluido (el Impulsor de Contenido puede darlo cada mes)',
     ],
     delivery: '3–5 días según el alcance.',
     bestFor: 'Negocios establecidos que necesitan una presencia en línea sólida y personalizada.',
     faqs: [
-      { q: '¿Qué cuenta como una "función personalizada"?', a: 'Todo lo que va más allá de páginas estándar — sistemas de reservas, calculadoras, formularios personalizados. Definimos el alcance y lo confirmamos antes de construir.' },
-      { q: '¿Incluye el contenido del blog?', a: 'El blog se configura, pero escribir los artículos va aparte — el plan Impulsor de Contenido cubre publicaciones diarias.' },
+      { q: '¿Qué cuenta como una "función personalizada"?', a: 'Todo lo que va más allá de páginas estándar, sistemas de reservas, calculadoras, formularios personalizados. Definimos el alcance y lo confirmamos antes de construir.' },
+      { q: '¿Incluye el contenido del blog?', a: 'El blog se configura, pero escribir los artículos va aparte, el plan Impulsor de Contenido cubre publicaciones diarias.' },
       { q: '¿Cuánto tarda?', a: '3–5 días según qué tan personalizadas sean las funciones.' },
     ],
   },
@@ -323,7 +323,7 @@ export const products = [
     tagline: 'Actualiza textos y fotos cuando quieras',
     price: 'Q1,000',
     priceNote: 'pago único (complemento)',
-    whatItIs: 'Una capa de edición sencilla que se agrega a tu sitio web para que puedas cambiar textos y reemplazar fotos tú mismo — sin programar y sin esperarnos a nosotros.',
+    whatItIs: 'Una capa de edición sencilla que se agrega a tu sitio web para que puedas cambiar textos y reemplazar fotos tú mismo, sin programar y sin esperarnos a nosotros.',
     included: [
       'Edita textos e imágenes tú mismo',
       'No se necesita programar',
@@ -331,15 +331,15 @@ export const products = [
       'Funciona con cualquier plan de sitio web',
     ],
     boundaries: [
-      'Solo complemento — requiere un sitio web nuestro',
+      'Solo complemento, requiere un sitio web nuestro',
       'La tarifa de pago único cubre la configuración; no es un servicio de contenido continuo',
-      'Te deja editar la estructura existente — los rediseños y las funciones nuevas van aparte',
+      'Te deja editar la estructura existente, los rediseños y las funciones nuevas van aparte',
     ],
     delivery: 'Se agrega durante la construcción de tu sitio web.',
     bestFor: 'Cualquiera que quiera hacer cambios pequeños sin contratar a un desarrollador.',
     faqs: [
-      { q: '¿Necesito un sitio web de ustedes?', a: 'Sí — es un complemento para uno de nuestros planes de sitio web.' },
-      { q: '¿Puedo arruinar el diseño?', a: 'No. Es edición limitada — puedes cambiar textos e imágenes con seguridad dentro del diseño existente.' },
+      { q: '¿Necesito un sitio web de ustedes?', a: 'Sí, es un complemento para uno de nuestros planes de sitio web.' },
+      { q: '¿Puedo arruinar el diseño?', a: 'No. Es edición limitada, puedes cambiar textos e imágenes con seguridad dentro del diseño existente.' },
     ],
   },
   {
@@ -352,7 +352,7 @@ export const products = [
     tagline: 'Blog diario + publicaciones semanales en el Perfil de Google',
     price: 'Q1,140',
     priceNote: '/mes',
-    whatItIs: 'Mantenemos tu presencia en línea fresca y amigable para las búsquedas escribiendo y publicando contenido por ti todos los días — bilingüe, optimizado para SEO y AEO.',
+    whatItIs: 'Mantenemos tu presencia en línea fresca y amigable para las búsquedas escribiendo y publicando contenido por ti todos los días, bilingüe, optimizado para SEO y AEO.',
     included: [
       'Publicaciones de blog diarias escritas y publicadas',
       '3 publicaciones semanales en el Perfil de Empresa de Google',
@@ -362,13 +362,13 @@ export const products = [
     boundaries: [
       'El contenido se genera y publica desde tus perfiles con el acceso que nos des',
       'Requiere un sitio web nuestro (las publicaciones se suben a tu sitio)',
-      'Cubre publicaciones de blog y del Perfil de Empresa de Google — no anuncios pagados ni video para redes',
+      'Cubre publicaciones de blog y del Perfil de Empresa de Google, no anuncios pagados ni video para redes',
       'Tú revisas y puedes pedir ajustes dentro del ciclo mensual',
     ],
     delivery: 'Mensual continuo.',
     bestFor: 'Negocios que quieren contenido constante sin tener que hacerlo ellos mismos.',
     faqs: [
-      { q: '¿Tengo que aprobar cada publicación?', a: 'No — trabajamos dentro de temas y tono acordados. Puedes pedir cambios cuando quieras.' },
+      { q: '¿Tengo que aprobar cada publicación?', a: 'No, trabajamos dentro de temas y tono acordados. Puedes pedir cambios cuando quieras.' },
       { q: '¿Qué plataformas están cubiertas?', a: 'El blog de tu sitio web y tu Perfil de Empresa de Google.' },
     ],
   },
@@ -381,7 +381,7 @@ export const products = [
     tagline: 'Todo el contenido + actualizaciones mensuales',
     price: 'Q1,520',
     priceNote: '/mes',
-    whatItIs: 'Todo lo del Impulsor de Contenido, más actualizaciones mensuales del sitio web y un reporte de rendimiento — una presencia en línea totalmente gestionada.',
+    whatItIs: 'Todo lo del Impulsor de Contenido, más actualizaciones mensuales del sitio web y un reporte de rendimiento, una presencia en línea totalmente gestionada.',
     included: [
       'Todo lo del Impulsor de Contenido',
       'Hasta 5 cambios de página al mes',
@@ -391,14 +391,14 @@ export const products = [
     boundaries: [
       'Hasta 5 cambios de página al mes (más se cotiza aparte)',
       'Requiere un sitio web nuestro',
-      'Solo contenido y actualizaciones ligeras — las funciones nuevas o los rediseños van aparte',
+      'Solo contenido y actualizaciones ligeras, las funciones nuevas o los rediseños van aparte',
       'El reporte cubre tu sitio y el Perfil de Empresa de Google, no el rendimiento de anuncios pagados',
     ],
     delivery: 'Mensual continuo.',
     bestFor: 'Negocios que quieren su sitio mantenido y creciendo sin administrarlo.',
     faqs: [
       { q: '¿En qué se diferencia del Impulsor de Contenido?', a: 'Agrega hasta 5 ediciones de página al mes, soporte prioritario y un reporte mensual de rendimiento sobre todo el contenido.' },
-      { q: '¿Y si necesito más de 5 cambios?', a: 'Los cambios extra se cotizan aparte — sin cargos sorpresa.' },
+      { q: '¿Y si necesito más de 5 cambios?', a: 'Los cambios extra se cotizan aparte, sin cargos sorpresa.' },
     ],
   },
 
@@ -412,7 +412,7 @@ export const products = [
     tagline: 'Mensajes de WhatsApp, atendidos por IA',
     price: 'Q2,300',
     priceNote: 'pago único · soporte opcional Q220/mes',
-    whatItIs: 'Una IA que responde tus mensajes de WhatsApp 24/7 — contestando preguntas frecuentes, tomando datos y sin dejar nunca a un cliente en visto.',
+    whatItIs: 'Una IA que responde tus mensajes de WhatsApp 24/7, contestando preguntas frecuentes, tomando datos y sin dejar nunca a un cliente en visto.',
     included: [
       'Respuestas automáticas de WhatsApp 24/7',
       'Responde preguntas frecuentes y toma mensajes',
@@ -421,7 +421,7 @@ export const products = [
       'Configuración y entrenamiento incluidos',
     ],
     boundaries: [
-      'Solo texto por WhatsApp — sin llamadas telefónicas (eso es la Recepcionista de Voz)',
+      'Solo texto por WhatsApp, sin llamadas telefónicas (eso es la Recepcionista de Voz)',
       'Corre en tu número de WhatsApp Business; tú das el acceso',
       'Soporte y ajustes continuos opcionales por $29/mes (no obligatorio)',
       'No envía mensajes de marketing salientes (las reglas de WhatsApp exigen consentimiento previo)',
@@ -429,7 +429,7 @@ export const products = [
     delivery: 'En vivo en 1–2 días.',
     bestFor: 'Negocios cuyos clientes escriben más de lo que llaman.',
     faqs: [
-      { q: '¿Atiende llamadas de voz?', a: 'No — esto es texto por WhatsApp. Para llamadas telefónicas elige la Recepcionista de Voz.' },
+      { q: '¿Atiende llamadas de voz?', a: 'No, esto es texto por WhatsApp. Para llamadas telefónicas elige la Recepcionista de Voz.' },
       { q: '¿Necesito el plan de soporte?', a: 'No, es opcional por $29/mes para ajustes continuos y ayuda prioritaria.' },
     ],
   },
@@ -443,7 +443,7 @@ export const products = [
     tagline: 'Recepcionista de IA completo por teléfono y texto',
     price: 'Q4,200',
     priceNote: 'configuración · soporte opcional Q220/mes',
-    whatItIs: 'Una IA de voz natural que contesta tus llamadas 24/7 en inglés y español — tomando mensajes y pasando las llamadas urgentes, para que nunca vuelvas a perder un cliente.',
+    whatItIs: 'Una IA de voz natural que contesta tus llamadas 24/7 en inglés y español, tomando mensajes y pasando las llamadas urgentes, para que nunca vuelvas a perder un cliente.',
     included: [
       'Todo lo de la Recepcionista de Texto',
       'La IA contesta llamadas telefónicas 24/7',
@@ -453,18 +453,18 @@ export const products = [
       'Configuración y entrenamiento incluidos',
     ],
     boundaries: [
-      'Le pagas a Vapi directamente por el uso de llamadas (~$30–50/mes) — lo configuramos a costo',
+      'Le pagas a Vapi directamente por el uso de llamadas (~$30–50/mes), lo configuramos a costo',
       'Mantenimiento y ajustes de prompts continuos opcionales por $49/mes',
-      'Atiende llamadas entrantes — sin llamadas salientes en frío (restringidas por ley)',
+      'Atiende llamadas entrantes, sin llamadas salientes en frío (restringidas por ley)',
       'Requiere un número telefónico que controles y puedas desviar',
       'Reemplaza la recepción de llamadas, no todo tu sistema telefónico ni tu CRM',
     ],
     delivery: 'En vivo en 2–3 días.',
     bestFor: 'Cualquier negocio que pierde llamadas fuera de horario o cuando está ocupado.',
     faqs: [
-      { q: '¿Cuáles son los costos de operación?', a: 'Le pagas a Vapi directamente ~$30–50/mes por el uso de llamadas. Eso es a costo — sin margen. El soporte opcional es de $49/mes.' },
-      { q: '¿Suena como un robot?', a: 'No — usa una voz de IA natural y habla inglés y español.' },
-      { q: '¿Puede hacer llamadas salientes?', a: 'No. Solo entrantes — las llamadas de IA en frío están restringidas por ley.' },
+      { q: '¿Cuáles son los costos de operación?', a: 'Le pagas a Vapi directamente ~$30–50/mes por el uso de llamadas. Eso es a costo, sin margen. El soporte opcional es de $49/mes.' },
+      { q: '¿Suena como un robot?', a: 'No, usa una voz de IA natural y habla inglés y español.' },
+      { q: '¿Puede hacer llamadas salientes?', a: 'No. Solo entrantes, las llamadas de IA en frío están restringidas por ley.' },
     ],
   },
 ];

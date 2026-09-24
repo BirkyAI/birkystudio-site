@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const calculatorLD = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "AI Savings Calculator — Birky Studio",
+  "name": "AI Savings Calculator. Birky Studio",
   "url": "https://birkystudio.com/tools/ai-savings-calculator/",
   "description": "Calculate how much your business could save in time and money by automating repetitive tasks with AI.",
   "applicationCategory": "BusinessApplication",
@@ -12,7 +12,7 @@ const calculatorLD = JSON.stringify({
 });
 ---
 
-<BaseLayout title="AI Savings Calculator — See Your ROI" description="Calculate how much your business could save in time and money by automating repetitive tasks with AI agents, receptionists, and automation.">
+<BaseLayout title="AI Savings Calculator. See Your ROI" description="Calculate how much your business could save in time and money by automating repetitive tasks with AI agents, receptionists, and automation.">
   <script type="application/ld+json" set:html={calculatorLD}></script>
 
   <main style="max-width:900px;margin:0 auto;padding:40px 24px 80px;">
@@ -33,7 +33,7 @@ const calculatorLD = JSON.stringify({
       <div style="margin-bottom:32px;">
         <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
           <label for="hoursSlider" style="font-size:15px;font-weight:500;color:#e2e8f0;">
-            ⏱️ Hours of manual work per week <span style="color:#94a3b8;font-weight:400;">(whole team — data entry, follow-ups, scheduling, reporting)</span>
+            ⏱️ Hours of manual work per week <span style="color:#94a3b8;font-weight:400;">(whole team, data entry, follow-ups, scheduling, reporting)</span>
           </label>
           <span id="hoursDisplay" style="font-size:28px;font-weight:700;color:#818cf8;">20</span>
         </div>

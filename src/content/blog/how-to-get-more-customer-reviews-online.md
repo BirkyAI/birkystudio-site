@@ -26,10 +26,10 @@ Online reviews affect your business in three big ways:
 
 Not all review sites are equal. Focus your energy where it counts:
 
-1. **Google Business Profile** — This is the big one. Google reviews show up directly in search results and on Google Maps. If you only focus on one platform, make it this one.
-2. **Facebook** — Still important, especially for service businesses and restaurants. Facebook reviews also show up in search results.
-3. **Industry-specific sites** — If you are in hospitality, TripAdvisor matters. For home services, Yelp or Houzz might be relevant. Figure out where your customers look.
-4. **Your website** — Collect testimonials and display them on your site. You control the narrative and can showcase your best feedback.
+1. **Google Business Profile**. This is the big one. Google reviews show up directly in search results and on Google Maps. If you only focus on one platform, make it this one.
+2. **Facebook**. Still important, especially for service businesses and restaurants. Facebook reviews also show up in search results.
+3. **Industry-specific sites**. If you are in hospitality, TripAdvisor matters. For home services, Yelp or Houzz might be relevant. Figure out where your customers look.
+4. **Your website**. Collect testimonials and display them on your site. You control the narrative and can showcase your best feedback.
 
 ## 7 Ways to Get More Reviews
 
@@ -51,9 +51,9 @@ If leaving a review takes more than two clicks, most people will not bother. Her
 
 Set up a simple follow-up system so you never forget to ask:
 
-- **WhatsApp Business** — Create a message template that sends automatically after a service is completed. Something like: "Thanks for choosing us! If you have a minute, we would love your feedback: [review link]"
-- **Email follow-up** — Send a short email 24 to 48 hours after purchase with a clear call to action.
-- **CRM tools** — If you use a CRM, most have automated review request features built in.
+- **WhatsApp Business**. Create a message template that sends automatically after a service is completed. Something like: "Thanks for choosing us! If you have a minute, we would love your feedback: [review link]"
+- **Email follow-up**. Send a short email 24 to 48 hours after purchase with a clear call to action.
+- **CRM tools**. If you use a CRM, most have automated review request features built in.
 
 ### 4. Respond to Every Review
 
@@ -84,10 +84,10 @@ A thoughtful response to a negative review can actually build more trust than a 
 
 There is no magic number, but here are some benchmarks:
 
-- **10+ reviews** — You start to look legitimate to new customers.
-- **50+ reviews** — Google starts to trust your business more for local rankings.
-- **100+ reviews** — You are in the top tier for most local businesses.
-- **Recent reviews** — Google cares about recency. A steady stream of new reviews matters more than a big total from years ago.
+- **10+ reviews**. You start to look legitimate to new customers.
+- **50+ reviews**. Google starts to trust your business more for local rankings.
+- **100+ reviews**. You are in the top tier for most local businesses.
+- **Recent reviews**. Google cares about recency. A steady stream of new reviews matters more than a big total from years ago.
 
 Aim to get at least 2 to 4 new reviews per month. Consistency beats volume.
 
