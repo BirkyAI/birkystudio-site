@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { products } from '../../../data/products-es.js';
+
+const title = 'Todos los Productos';
+const description = 'Todos los productos de Birky Studio en un solo lugar — sitios web, agentes de IA, recepcionistas y generación de prospectos. Ve exactamente qué incluye cada uno y cuánto cuesta.';
+
+const categories = [];
+for (const p of products) {
+  let c = categories.find((x) => x.name === p.category);
+  if (!c) {
+    c = { name: p.category, items: [] };
+    categories.push(c);
+  }
+  c.items.push(p);
+}
+---
+
+<BaseLayout title={title} description={description} image="/images/birky-logo.jpg">
+  <section style="padding:80px 0 48px;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+    <div class="container" style="max-width:1000px;text-align:center;">
+      <h1 style="font-size:2.8rem;color:white;margin-bottom:16px;">Todos los Productos</h1>
+      <p style="color:#94a3b8;font-size:1.15rem;max-width:620px;margin:0 auto;line-height:1.7;">
+        Todo lo que construimos, en un solo lugar — con exactamente qué incluye, cuánto cuesta y qué no viene en la caja.
+      </p>
+    </div>
+  </section>
+
+  {categories.map((cat) => (
+    <section style="padding:48px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+      <div class="container" style="max-width:1100px;">
+        <h2 style="font-size:1.6rem;color:white;margin-bottom:28px;">{cat.name}</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;">
+          {cat.items.map((p) => (
+            <a href={`/es/products/${p.slug}`} style="text-decoration:none;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:32px;display:flex;flex-direction:column;transition:all 0.2s;">
+              <div style="font-size:2rem;margin-bottom:16px;">{p.icon}</div>
+              <h3 style="color:white;font-size:1.3rem;margin-bottom:8px;">{p.name}</h3>
+              <p style="color:#94a3b8;font-size:0.95rem;line-height:1.7;margin-bottom:20px;flex-grow:1;">{p.tagline}</p>
+              <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:20px;">
+                <span style="font-size:1.5rem;font-weight:800;color:white;">{p.price}</span>
+                <span style="color:#94a3b8;font-size:0.85rem;">{p.priceNote}</span>
+              </div>
+              <span style="color:#6ee7b7;font-weight:600;font-size:0.95rem;">Más Información →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section style="padding:80px 0;background:white;text-align:center;">
+    <div class="container">
+      <h2 style="font-size:2rem;margin-bottom:16px;">¿No sabes cuál te conviene?</h2>
+      <p style="color:var(--color-gray);font-size:1.05rem;max-width:520px;margin:0 auto 32px;">
+        Cuéntanos qué quieres resolver y te decimos cuál es el indicado.
+      </p>
+      <a href="/es/contacto" class="btn btn-primary" style="font-size:1.05rem;padding:16px 32px;">Empezar →</a>
+    </div>
+  </section>
+</BaseLayout>
