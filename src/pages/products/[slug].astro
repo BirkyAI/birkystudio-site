@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { products, getProduct } from '../../data/products.js';
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const product = getProduct(slug);
+
+if (!product) {
+  return Astro.redirect('/products/');
+}
+
+const title = product.name;
+const description = `${product.tagline} — ${product.price} ${product.priceNote}. See exactly what's included and what isn't.`;
+
+const productSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  description: product.tagline,
+  brand: { '@type': 'Brand', name: 'Birky Studio' },
+  image: 'https://birkystudio.com/images/birky-logo.jpg',
+  offers: {
+    '@type': 'Offer',
+    url: `https://birkystudio.com/products/${product.slug}/`,
+    priceCurrency: 'USD',
+    price: product.price.replace(/[^0-9.]/g, '') || undefined,
+    availability: 'https://schema.org/InStock',
+  },
+});
+
+const faqSchema = product.faqs?.length
+  ? JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: product.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    })
+  : null;
+---
+
+<BaseLayout title={title} description={description} image="/images/birky-logo.jpg">
+  <script type="application/ld+json" set:html={productSchema} />
+  {faqSchema && <script type="application/ld+json" set:html={faqSchema} />}
+
+  <!-- Hero -->
+  <section style="padding:80px 0 60px;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+    <div class="container" style="max-width:900px;">
+      <a href="/products" style="color:#94a3b8;font-size:0.9rem;font-weight:500;display:inline-block;margin-bottom:24px;">← All products</a>
+      <div style="display:inline-block;padding:6px 16px;background:rgba(16,185,129,0.2);border-radius:100px;color:#6ee7b7;font-size:0.82rem;font-weight:600;margin-bottom:20px;">
+        {product.icon} {product.category}
+      </div>
+      {product.badge && (
+        <div style={`display:inline-block;padding:6px 16px;margin-left:8px;background:${product.accent};border-radius:100px;color:white;font-size:0.82rem;font-weight:600;margin-bottom:20px;`}>
+          {product.badge}
+        </div>
+      )}
+      <h1 style="font-size:2.8rem;color:white;margin-bottom:16px;line-height:1.15;">{product.name}</h1>
+      <p style="color:#94a3b8;font-size:1.25rem;line-height:1.7;max-width:680px;margin-bottom:32px;">{product.tagline}</p>
+
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:32px;">
+        <span style="font-size:3rem;font-weight:800;color:white;">{product.price}</span>
+        <span style="color:#94a3b8;font-size:1.1rem;">{product.priceNote}</span>
+      </div>
+
+      <a href="/contact" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Get Started →</a>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section style="padding:64px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+    <div class="container" style="max-width:900px;">
+      <h2 style="font-size:1.8rem;color:white;margin-bottom:20px;">What it is</h2>
+      <p style="color:#cbd5e1;font-size:1.08rem;line-height:1.9;">{product.whatItIs}</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:40px;">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <div style="font-size:0.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#6ee7b7;margin-bottom:8px;">Delivery</div>
+          <p style="color:#cbd5e1;font-size:0.98rem;line-height:1.7;margin:0;">{product.delivery}</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <div style="font-size:0.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#f9a8d4;margin-bottom:8px;">Best for</div>
+          <p style="color:#cbd5e1;font-size:0.98rem;line-height:1.7;margin:0;">{product.bestFor}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What you get + Boundaries -->
+  <section style="padding:64px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+    <div class="container" style="max-width:900px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;">
+      <!-- Included -->
+      <div>
+        <h2 style="font-size:1.6rem;color:white;margin-bottom:24px;">What you get</h2>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;">
+          {product.included.map((item) => (
+            <li style="color:#cbd5e1;display:flex;align-items:flex-start;gap:12px;font-size:1.02rem;line-height:1.7;">
+              <span style="color:#10b981;flex-shrink:0;font-weight:700;">✓</span>
+              <span set:html={item} />
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Boundaries -->
+      <div>
+        <h2 style="font-size:1.6rem;color:white;margin-bottom:24px;">What it doesn't include</h2>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;">
+          {product.boundaries.map((item) => (
+            <li style="color:#94a3b8;display:flex;align-items:flex-start;gap:12px;font-size:1.02rem;line-height:1.7;">
+              <span style="color:#f472b6;flex-shrink:0;font-weight:700;">✕</span>
+              <span set:html={item} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  {product.faqs?.length && (
+    <section style="padding:64px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+      <div class="container" style="max-width:820px;">
+        <h2 style="font-size:1.8rem;color:white;margin-bottom:32px;">Questions about {product.name}</h2>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          {product.faqs.map((f) => (
+            <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+              <h3 style="color:white;font-size:1.05rem;font-weight:600;margin:0 0 12px;">{f.q}</h3>
+              <p style="color:#94a3b8;font-size:0.98rem;line-height:1.8;margin:0;">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  <section style="padding:80px 0;background:white;text-align:center;">
+    <div class="container">
+      <h2 style="font-size:2rem;margin-bottom:16px;">Ready to get started?</h2>
+      <p style="color:var(--color-gray);font-size:1.05rem;max-width:520px;margin:0 auto 32px;">
+        Tell us what you need and we'll take it from there — delivered fast, no lock-in.
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="/contact" class="btn btn-primary" style="font-size:1.05rem;padding:16px 32px;">Get Started →</a>
+        <a href="/products" class="btn btn-outline" style="font-size:1.05rem;padding:16px 32px;border:2px solid #818cf8;color:#818cf8;border-radius:12px;text-decoration:none;font-weight:600;">Browse All Products</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

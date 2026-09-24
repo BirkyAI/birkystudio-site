@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { products } from '../../data/products.js';
+
+const title = 'All Products';
+const description = 'Every Birky Studio product in one place — websites, AI agents, receptionists, and lead generation. See exactly what each includes and what it costs.';
+
+// group by category, preserving catalogue order
+const categories = [];
+for (const p of products) {
+  let c = categories.find((x) => x.name === p.category);
+  if (!c) {
+    c = { name: p.category, items: [] };
+    categories.push(c);
+  }
+  c.items.push(p);
+}
+---
+
+<BaseLayout title={title} description={description} image="/images/birky-logo.jpg">
+  <section style="padding:80px 0 48px;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+    <div class="container" style="max-width:1000px;text-align:center;">
+      <h1 style="font-size:2.8rem;color:white;margin-bottom:16px;">All Products</h1>
+      <p style="color:#94a3b8;font-size:1.15rem;max-width:620px;margin:0 auto;line-height:1.7;">
+        Everything we build, in one place — with exactly what's included, what it costs, and what isn't in the box.
+      </p>
+    </div>
+  </section>
+
+  {categories.map((cat) => (
+    <section style="padding:48px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+      <div class="container" style="max-width:1100px;">
+        <h2 style="font-size:1.6rem;color:white;margin-bottom:28px;">{cat.name}</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;">
+          {cat.items.map((p) => (
+            <a href={`/products/${p.slug}`} style="text-decoration:none;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:32px;display:flex;flex-direction:column;transition:all 0.2s;">
+              <div style="font-size:2rem;margin-bottom:16px;">{p.icon}</div>
+              <h3 style="color:white;font-size:1.3rem;margin-bottom:8px;">{p.name}</h3>
+              <p style="color:#94a3b8;font-size:0.95rem;line-height:1.7;margin-bottom:20px;flex-grow:1;">{p.tagline}</p>
+              <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:20px;">
+                <span style="font-size:1.5rem;font-weight:800;color:white;">{p.price}</span>
+                <span style="color:#94a3b8;font-size:0.85rem;">{p.priceNote}</span>
+              </div>
+              <span style="color:#6ee7b7;font-weight:600;font-size:0.95rem;">More Information →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section style="padding:80px 0;background:white;text-align:center;">
+    <div class="container">
+      <h2 style="font-size:2rem;margin-bottom:16px;">Not sure which fits?</h2>
+      <p style="color:var(--color-gray);font-size:1.05rem;max-width:520px;margin:0 auto 32px;">
+        Tell us what you're trying to fix and we'll point you to the right one.
+      </p>
+      <a href="/contact" class="btn btn-primary" style="font-size:1.05rem;padding:16px 32px;">Get Started →</a>
+    </div>
+  </section>
+</BaseLayout>
