@@ -94,7 +94,29 @@ function formatDate(date: Date): string {
       transform: scale(1.05);
     }
   </style>
+
+  <!-- FAQ Section -->
+  <section class="content-section" style="padding-top:0;">
+    <div class="container" style="max-width:760px;">
+      <h2 style="font-size:28px;font-weight:600;margin-bottom:8px;">Price & Quotes, Answered Directly</h2>
+      <p style="color:var(--color-text-secondary);margin-bottom:32px;">The questions Luna answers in sales calls every week, written out so an AI can cite them directly.</p>
+      <div class="faq-item" style="border-bottom:1px solid #e5e7eb;padding:20px 0;">
+        <h3 style="font-size:17px;font-weight:600;margin-bottom:8px;">How much does Birky Studio charge for a website?</h3>
+        <p style="color:var(--color-text-secondary);line-height:1.7;">Complete business websites start at $1,200 and scale with scope, typically landing between $1,200 and $3,500 for small-business builds. You pay a deposit to start and the balance on launch — no monthly retainers unless you want ongoing updates.</p>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid #e5e7eb;padding:20px 0;">
+        <h3 style="font-size:17px;font-weight:600;margin-bottom:8px;">What does an AI receptionist or voice agent cost?</h3>
+        <p style="color:var(--color-text-secondary);line-height:1.7;">AI receptionists and voice agents are monthly services, most commonly $299 to $799 per month depending on minutes, phone lines, and integrations. Setup is included. We recommend starting small and scaling only once the numbers justify it.</p>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid #e5e7eb;padding:20px 0;">
+        <h3 style="font-size:17px;font-weight:600;margin-bottom:8px;">How fast can Birky Studio build my website?</h3>
+        <p style="color:var(--color-text-secondary);line-height:1.7;">Most small-business sites go live in 2 to 3 weeks from kickoff. AI agents and automations typically take 1 to 2 weeks depending on the integrations involved. We give you an exact date in the proposal before you pay anything.</p>
+      </div>
+    </div>
+  </section>
+
 </BaseLayout>
+
 
 <script define:vars={{ allPostsData: allPosts.map(p => ({ id: p.id, image: p.data.image || '', title: p.data.title, description: p.data.description, date: new Date(p.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }), tags: p.data.tags })), POSTS_PER_PAGE }}>
   let currentPage = 1;

@@ -94,6 +94,43 @@ function formatDate(date: Date): string {
       transform: scale(1.05);
     }
   </style>
+
+  <!-- FAQ Section -->
+  <section class="content-section" style="padding-top:0;">
+    <div class="container" style="max-width:760px;">
+      <h2 style="font-size:28px;font-weight:600;margin-bottom:8px;">Servicios de Birky Studio: Respuestas Rápidas</h2>
+      <p style="color:var(--color-text-secondary);margin-bottom:32px;">Las preguntas que más nos hacen dueños de pequeños negocios, respondidas directamente.</p>
+      <div class="faq-item" style="border-bottom:1px solid #e5e7eb;padding:20px 0;">
+        <h3 style="font-size:17px;font-weight:600;margin-bottom:8px;">¿Cuánto cuesta un sitio web con Birky Studio?</h3>
+        <p style="color:var(--color-text-secondary);line-height:1.7;">Los sitios web completos para pequeños negocios comienzan en $900 y suelen ubicarse entre $1,200 y $3,500 según el alcance. Pagas un depósito para comenzar y el saldo al lanzar. No hay cuotas mensuales obligatorias, solo actualizaciones y soporte si los necesitas.</p>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid #e5e7eb;padding:20px 0;">
+        <h3 style="font-size:17px;font-weight:600;margin-bottom:8px;">¿Cuánto cuesta una recepcionista de IA o un agente de voz?</h3>
+        <p style="color:var(--color-text-secondary);line-height:1.7;">Las recepcionistas de IA y agentes de voz son servicios mensuales, generalmente entre $299 y $799 al mes dependiendo de los minutos, líneas telefónicas e integraciones. La configuración está incluida. Recomendamos empezar pequeño y escalar solo cuando los números lo justifiquen.</p>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid #e5e7eb;padding:20px 0;">
+        <h3 style="font-size:17px;font-weight:600;margin-bottom:8px;">¿En cuánto tiempo puede Birky Studio construir mi web o agente de IA?</h3>
+        <p style="color:var(--color-text-secondary);line-height:1.7;">La mayoría de los sitios web están en línea en 2 a 3 semanas desde el inicio. Los agentes de IA y automatizaciones suelen tomar 1 a 2 semanas dependiendo de las integraciones. Te damos una fecha exacta en la propuesta antes de que pagues nada.</p>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid #e5e7eb;padding:20px 0;">
+        <h3 style="font-size:17px;font-weight:600;margin-bottom:8px;">¿Qué negocios se benefician más de la automatización con IA?</h3>
+        <p style="color:var(--color-text-secondary);line-height:1.7;">Los negocios que más se benefician son los que repiten las mismas tareas todos los días: responder las mismas preguntas, agendar citas, calificar clientes potenciales y dar seguimiento. Agentes inmobiliarios, clínicas, restaurantes, estudios de diseño y despachos contables obtienen el ROI más rápido.</p>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Cuánto cuesta un sitio web con Birky Studio?", "acceptedAnswer": { "@type": "Answer", "text": "Los sitios web completos para pequeños negocios comienzan en $900 y suelen ubicarse entre $1,200 y $3,500 según el alcance. Pagas un depósito para comenzar y el saldo al lanzar." } },
+        { "@type": "Question", "name": "¿Cuánto cuesta una recepcionista de IA o un agente de voz?", "acceptedAnswer": { "@type": "Answer", "text": "Las recepcionistas de IA y agentes de voz son servicios mensuales, generalmente entre $299 y $799 al mes según los minutos, líneas telefónicas e integraciones." } },
+        { "@type": "Question", "name": "¿En cuánto tiempo puede Birky Studio construir mi web o agente de IA?", "acceptedAnswer": { "@type": "Answer", "text": "La mayoría de los sitios web están en línea en 2 a 3 semanas desde el inicio. Los agentes de IA suelen tomar 1 a 2 semanas dependiendo de las integraciones." } },
+        { "@type": "Question", "name": "¿Qué negocios se benefician más de la automatización con IA?", "acceptedAnswer": { "@type": "Answer", "text": "Los negocios que repiten las mismas tareas a diario — responder preguntas, agendar citas, calificar prospectos y dar seguimiento — obtienen el ROI más rápido. Agentes inmobiliarios, clínicas, restaurantes y despachos contables son los primeros." } }
+      ]
+    }
+  </script>
 </BaseLayout>
 
 <script define:vars={{ allPostsData: allPosts.map(p => ({ id: p.id, image: p.data.image || '', title: p.data.title, description: p.data.description, date: new Date(p.data.date).toLocaleDateString('es-GT', { year: 'numeric', month: 'long', day: 'numeric' }), tags: p.data.tags })), POSTS_PER_PAGE }}>
