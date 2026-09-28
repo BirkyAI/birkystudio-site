@@ -36,7 +36,7 @@ Here is what that number actually covers:
 | CRM / Notion system wired in | Every conversation written into a record you can read in 60 seconds | The CRM you pay for and do not use |
 | 3 months of support | Real humans, real fixes, included in the price | "Contact your account manager" |
 
-And if you want it narrower, you do not have to buy the whole thing. The **AI Text Receptionist is $297**, the WhatsApp agent alone, catching every inbound message and structuring it into your workflow. The **AI Voice Receptionist is $550**, and both are also available as a bundle. Optional support after the first three months is $49/month for voice, $29/month for text. You pay the voice provider directly, roughly $30-50/month at typical volume.
+And if you want it narrower, you do not have to buy the whole thing. The **AI Text Receptionist is $297**, the WhatsApp agent alone, catching every inbound message and structuring it into your workflow. The **AI Voice Receptionist is $550**, and both are also available as a bundle. Optional support after the first 30 days is $97/month (Care & Maintenance) or $197/month (Business AI Partner). You pay the voice provider directly, roughly $30-50/month at typical volume.
 
 That is the entire pricing structure. No tiers designed to push you upward. No enterprise quote.
 

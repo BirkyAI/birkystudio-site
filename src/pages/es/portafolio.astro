@@ -35,7 +35,7 @@ const projects = [
     url: "/es/contacto",
     image: null,
     isAgentCase: true,
-    description: "Instalación completa de asistente IA para un agente de bienes raíces en EE.UU. Incluye Sistema Notion de Bienes Raíces con CRM, búsqueda automatizada de propiedades, generador de descripciones, gestión de correo con seguimientos, automatización de Google Business Profile y WhatsApp + Telegram bilingüe. Ahorra aproximadamente 8 horas por semana.",
+    description: "Instalación completa de asistente IA para un agente de bienes raíces en EE.UU. Incluye un CRM de Notion hecho para agentes, gestión de correo con seguimientos, automatización de Google Business Profile y WhatsApp + Telegram bilingüe. Ahorra aproximadamente 8 horas por semana.",
     tags: ["Agente IA", "CRM Notion", "Automatización", "Bilingüe", "Bienes Raíces"],
     plan: "Agente de Bienes Raíces",
   },
@@ -65,23 +65,23 @@ const projects = [
 <BaseLayout title="Portafolio" description="Mira nuestros proyectos recientes, sitios web, agentes IA y recepcionistas virtuales. Soluciones reales, resultados reales." image="/images/portfolio/birkystudio-screenshot.png">
 
   <!-- Hero -->
-  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+  <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,45,149,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,45,149,0.1),transparent 50%);"></div>
     <div class="container" style="position:relative;z-index:1;text-align:center;">
-      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:var(--bs-accent);font-size:0.9rem;font-weight:500;margin-bottom:24px;">
         🎨 Proyectos reales, negocios reales, resultados reales
       </div>
       <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;">
-        Nuestro <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Portafolio</span>
+        Nuestro <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Portafolio</span>
       </h1>
-      <p style="font-size:1.2rem;color:#cbd5e1;max-width:650px;margin:0 auto;line-height:1.8;">
+      <p style="font-size:1.2rem;color:var(--bs-text);max-width:650px;margin:0 auto;line-height:1.8;">
         Sitios web, agentes IA y recepcionistas virtuales, construidos para negocios reales. Cada solución entregada rápido, bilingüe y diseñada para crecer.
       </p>
     </div>
   </section>
 
   <!-- Projects Grid -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section style="padding:100px 0">
     <div class="container">
       <div style="display:flex;flex-direction:column;gap:80px;">
         {projects.map((project, i) => (
@@ -94,21 +94,21 @@ const projects = [
                 </div>
                 <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
                 <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
-                <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
+                <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
                 <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
                   {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
+                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
                   ))}
                 </div>
               </div>
               <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);max-width:440px;margin:0 auto;">
-                <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
+                <div style="background:var(--bs-bg-raised);padding:12px 16px;display:flex;align-items:center;gap:8px;">
                   <div style="display:flex;gap:6px;">
                     <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
                     <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
                     <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
                   </div>
-                  <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;text-align:center;">
+                  <div style="flex:1;background:var(--bs-bg-raised);border-radius:6px;padding:4px 12px;color:var(--bs-text-muted);font-size:0.75rem;font-family:monospace;text-align:center;">
                     birkystudio.com/ai-demo
                   </div>
                 </div>
@@ -128,7 +128,7 @@ const projects = [
                   <div style="background:linear-gradient(rgba(2,6,23,0.55),rgba(2,6,23,0.55)),url('/images/portfolio/luna-portrait.jpg');background-size:cover;background-position:center;border:1px solid rgba(16,185,129,0.3);border-radius:24px;padding:48px;text-align:center;">
                     <div style="font-size:4rem;margin-bottom:16px;">🤖</div>
                     <div style="color:#6ee7b7;font-size:0.9rem;font-weight:600;">Instalación de Agente IA</div>
-                    <div style="color:#cbd5e1;font-size:0.85rem;margin-top:8px;">Cliente Privado. Detalles Confidenciales</div>
+                    <div style="color:var(--bs-text);font-size:0.85rem;margin-top:8px;">Cliente Privado. Detalles Confidenciales</div>
                   </div>
                 </div>
                 <div style="order:1;">
@@ -137,10 +137,10 @@ const projects = [
                   </div>
                   <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
                   <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
-                  <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
+                  <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
                   <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
                     {project.tags.map(tag => (
-                      <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
+                      <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
                     ))}
                   </div>
                   <a href="/es/contacto" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
@@ -155,13 +155,13 @@ const projects = [
               <div style={`${i % 2 !== 0 ? 'order:2;' : ''}`}>
                 {project.image ? (
                   <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);transition:transform 0.3s,box-shadow 0.3s;" class="project-image">
-                    <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
+                    <div style="background:var(--bs-bg-raised);padding:12px 16px;display:flex;align-items:center;gap:8px;">
                       <div style="display:flex;gap:6px;">
                         <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
                         <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
                         <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
                       </div>
-                      <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;">
+                      <div style="flex:1;background:var(--bs-bg-raised);border-radius:6px;padding:4px 12px;color:var(--bs-text-muted);font-size:0.75rem;font-family:monospace;">
                         {project.url.replace('https://', '')}
                       </div>
                     </div>
@@ -169,19 +169,19 @@ const projects = [
                   </a>
                 ) : (
                   <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);">
-                    <div style="background:#1e293b;padding:12px 16px;display:flex;align-items:center;gap:8px;">
+                    <div style="background:var(--bs-bg-raised);padding:12px 16px;display:flex;align-items:center;gap:8px;">
                       <div style="display:flex;gap:6px;">
                         <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
                         <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
                         <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
                       </div>
-                      <div style="flex:1;background:#334155;border-radius:6px;padding:4px 12px;color:#94a3b8;font-size:0.75rem;font-family:monospace;">
+                      <div style="flex:1;background:var(--bs-bg-raised);border-radius:6px;padding:4px 12px;color:var(--bs-text-muted);font-size:0.75rem;font-family:monospace;">
                         {project.url.replace('https://', '')}
                       </div>
                     </div>
-                    <div style="background:linear-gradient(135deg,rgba(99,102,241,0.1),rgba(236,72,153,0.1));padding:80px 40px;text-align:center;">
+                    <div style="background:linear-gradient(135deg,rgba(255,45,149,0.1),rgba(255,45,149,0.1));padding:80px 40px;text-align:center;">
                       <div style="font-size:3rem;margin-bottom:12px;">🌐</div>
-                      <div style="color:#cbd5e1;font-size:1rem;font-weight:500;">{project.title}</div>
+                      <div style="color:var(--bs-text);font-size:1rem;font-weight:500;">{project.title}</div>
                       <div style="color:#6ee7b7;font-size:0.85rem;margin-top:8px;">Visitar Sitio →</div>
                     </div>
                   </a>
@@ -189,16 +189,16 @@ const projects = [
               </div>
 
               <div style={`${i % 2 !== 0 ? 'order:1;' : ''}`}>
-                <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                   Plan {project.plan}
                 </div>
                 <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
                 <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
-                <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
+                <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
                 
                 <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
                   {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">{tag}</span>
+                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
                   ))}
                 </div>
 
@@ -214,35 +214,35 @@ const projects = [
   </section>
 
   <!-- Stats -->
-  <section style="padding:80px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section style="padding:80px 0">
     <div class="container">
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;">
         <div>
           <div style="font-size:2.5rem;font-weight:800;color:white;">10+</div>
-          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Soluciones Implementadas</div>
+          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Soluciones Implementadas</div>
         </div>
         <div>
           <div style="font-size:2.5rem;font-weight:800;color:white;">100%</div>
-          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Satisfacción del Cliente</div>
+          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Satisfacción del Cliente</div>
         </div>
         <div>
           <div style="font-size:2.5rem;font-weight:800;color:white;">ES/EN</div>
-          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Bilingüe</div>
+          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Bilingüe</div>
         </div>
         <div>
           <div style="font-size:2.5rem;font-weight:800;color:white;">2-3</div>
-          <div style="color:#94a3b8;font-size:0.95rem;margin-top:4px;">Días de Entrega</div>
+          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Días de Entrega</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);text-align:center;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(99,102,241,0.15),transparent 50%);"></div>
+  <section style="padding:100px 0;text-align:center;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(255,45,149,0.15),transparent 50%);"></div>
     <div class="container" style="position:relative;z-index:1;">
       <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">¿Quieres una Solución Como Estas?</h2>
-      <p style="color:#cbd5e1;font-size:1.15rem;max-width:550px;margin:0 auto 40px;line-height:1.8;">
+      <p style="color:var(--bs-text);font-size:1.15rem;max-width:550px;margin:0 auto 40px;line-height:1.8;">
         Construyamos algo increíble para tu negocio. Entrega rápida, diseño profesional y precios accesibles.
       </p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">

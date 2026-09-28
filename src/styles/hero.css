@@ -1,0 +1,340 @@
+/* ============================================================
+   Birky Studio: hero + design tokens (Design Direction v1, Doc 5)
+   Shared by the EN and ES homepages. Global, not scoped, so both
+   pages use one source of truth for the hero.
+   ============================================================ */
+
+:root {
+  /* design tokens (Doc 5 §3.1) */
+  --bs-bg-deep: #150b26;
+  --bs-bg: #150b26;        /* collapsed onto the backdrop: no more section banding */
+  --bs-bg-raised: #241340;
+  --bs-border: rgba(255, 255, 255, .08);
+  --bs-text: #f5f3f7;
+  --bs-text-muted: #a79fbb;
+  --bs-accent: #ff2d95;
+  --bs-accent-glow: rgba(255, 45, 149, .35);
+  --bs-accent-2: #10b981;
+}
+
+/* ---------- one backdrop and one grid for the whole site ----------
+   Luna, 27 Sep 2026: every page should look like the top section, with
+   the grid, and the grid should run from the top of the page to the
+   bottom. So there is exactly ONE page colour and ONE grid, painted once
+   behind all content. Sections must stay transparent so it shows through,
+   instead of each section painting its own colour band.
+   The grid is fixed, so it covers the viewport everywhere on every page.
+   Strength raised from 3% to 6% on 27 Sep 2026: at 3% the lines were
+   measurably present but only readable in the hero, where the glow orbs
+   give the eye something to compare against. Luna asked for more depth. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* ---------- comparison-table status marks ----------
+   Luna, 27 Sep 2026: the check can stay (it carries meaning, and it is
+   the positive), but the bright yellow warning triangle and the red cross
+   were too loud. Both are now a neutral cross instead: the caveat/partial
+   mark is muted (--bs-text-muted) so it recedes, the hard "not available"
+   mark stays white. Plain text glyph (U+2715), not an emoji, so it takes
+   the cell's colour and cannot render in colour on any platform. */
+.mark-soft { color: var(--bs-text-muted); }
+
+/* sections carry no background of their own any more; the page does */
+main section,
+main > div > section {
+  background-color: transparent;
+}
+
+/* ---------- hero shell ---------- */
+.hero-sec {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid var(--bs-border);
+}
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: .55;
+  pointer-events: none;
+}
+.hero-orb.o1 { width: 520px; height: 520px; background: var(--bs-accent-glow); top: -140px; right: 6%; }
+.hero-orb.o2 { width: 420px; height: 420px; background: rgba(99, 102, 241, .28); bottom: -120px; left: -80px; }
+
+.hero-wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 88px 48px 110px;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 56px;
+  align-items: center;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--bs-accent);
+  border: 1px solid rgba(255, 45, 149, .35);
+  background: rgba(255, 45, 149, .07);
+  border-radius: 999px;
+  padding: 7px 15px;
+  margin-bottom: 26px;
+}
+.hero-h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.04;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+  color: var(--bs-text);
+  margin-bottom: 22px;
+}
+.hero-h1 em { font-style: normal; color: var(--bs-accent); }
+.hero-sub {
+  color: var(--bs-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+.hero-tags {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.hero-tags span {
+  color: var(--bs-text-muted);
+  font-size: .85rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-btn-primary {
+  background: linear-gradient(90deg, var(--bs-accent-2), var(--bs-accent));
+  /* Luna, 27 Sep 2026: all buttons are white text on the pink CTA. No dark on pink. */
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  padding: 16px 30px;
+  box-shadow: 0 10px 30px rgba(255, 45, 149, .22);
+}
+.hero-btn-primary:hover { transform: translateY(-2px); }
+.hero-btn-ghost {
+  background: var(--bs-bg-raised);
+  color: var(--bs-text);
+  border: 1px solid var(--bs-border);
+  padding: 16px 30px;
+}
+.hero-btn-ghost:hover { transform: translateY(-2px); }
+
+/* ---------- the six building blocks ---------- */
+.mod-stage { position: relative; height: 520px; }
+.mod {
+  position: absolute;
+  width: 232px;
+  padding: 15px 17px;
+  border-radius: 14px;
+  background: var(--bs-bg-raised);
+  border: 1px solid var(--bs-border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .45);
+  animation: modfloat 12s ease-in-out infinite;
+  will-change: transform;
+}
+.mod-ic {
+  width: 34px; height: 34px; flex: 0 0 34px;
+  border-radius: 9px;
+  display: grid; place-items: center;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .05);
+}
+.mod-ic svg {
+  width: 17px; height: 17px;
+  fill: none; stroke-width: 1.7;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.mod-label { display: block; font-size: 13.5px; font-weight: 600; color: var(--bs-text); letter-spacing: -.01em; }
+.mod-meta {
+  display: block; margin-top: 3px;
+  font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--bs-text-muted);
+}
+.mod.m1 .mod-ic { background: rgba(129, 140, 248, .16); border-color: rgba(129, 140, 248, .45); }
+.mod.m1 .mod-ic svg { stroke: #818cf8; }
+.mod.m2 .mod-ic { background: rgba(34, 211, 238, .16); border-color: rgba(34, 211, 238, .45); }
+.mod.m2 .mod-ic svg { stroke: #22d3ee; }
+.mod.m3 .mod-ic { background: rgba(16, 185, 129, .16); border-color: rgba(16, 185, 129, .45); }
+.mod.m3 .mod-ic svg { stroke: #10b981; }
+.mod.m5 .mod-ic { background: rgba(245, 158, 11, .16); border-color: rgba(245, 158, 11, .45); }
+.mod.m5 .mod-ic svg { stroke: #f59e0b; }
+.mod.m6 .mod-ic { background: rgba(167, 139, 250, .16); border-color: rgba(167, 139, 250, .45); }
+.mod.m6 .mod-ic svg { stroke: #a78bfa; }
+.mod.is-key {
+  border-color: rgba(255, 45, 149, .5);
+  box-shadow: 0 22px 60px rgba(255, 45, 149, .28), 0 0 0 1px rgba(255, 45, 149, .18);
+}
+.mod.is-key .mod-ic { background: rgba(255, 45, 149, .16); border-color: rgba(255, 45, 149, .4); }
+.mod.is-key .mod-ic svg { stroke: var(--bs-accent); }
+
+.mod.m1 { top: 6px;   left: 2%;  animation-delay: 0s; }
+.mod.m2 { top: 96px;  left: 30%; animation-delay: -2s; }
+.mod.m3 { top: 186px; left: 0%;  animation-delay: -4s; }
+.mod.m4 { top: 262px; left: 32%; animation-delay: -6s; }
+.mod.m5 { top: 352px; left: 4%;  animation-delay: -8s; }
+.mod.m6 { top: 428px; left: 33%; animation-delay: -10s; }
+
+@keyframes modfloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+
+/* ---------- demo section ---------- */
+.demo-sec {
+  background: var(--bs-bg);
+  padding: 80px 24px 96px;
+  border-bottom: 1px solid var(--bs-border);
+}
+.demo-inner { max-width: 720px; margin: 0 auto; }
+.demo-lead {
+  text-align: center;
+  color: var(--bs-text-muted);
+  font-size: .8rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.demo-frame {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--bs-border);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .45);
+}
+.demo-chrome {
+  background: var(--bs-bg-raised);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--bs-border);
+}
+.demo-dots { display: flex; gap: 5px; }
+.demo-dots .d { width: 9px; height: 9px; border-radius: 50%; }
+.demo-url {
+  flex: 1;
+  background: rgba(255, 255, 255, .06);
+  border-radius: 6px;
+  padding: 4px 10px;
+  color: var(--bs-text-muted);
+  font-size: .7rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  text-align: center;
+}
+.demo-iframe { width: 100%; height: 520px; border: none; display: block; }
+
+/* ---------- site header / nav (matches variant B) ---------- */
+.bs-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bs-bg-deep);
+  border-bottom: 1px solid var(--bs-border);
+}
+.bs-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 clamp(16px, 5vw, 48px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.bs-brand {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: var(--bs-text);
+}
+.bs-brand span { color: var(--bs-accent); }
+.bs-link {
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--bs-text-muted);
+  transition: color .2s;
+}
+.bs-link:hover { color: var(--bs-text); }
+.bs-lang {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--bs-border);
+  background: var(--bs-bg-raised);
+  color: var(--bs-text);
+}
+.bs-cta {
+  background: var(--bs-bg-raised);
+  color: var(--bs-text);
+  border: 1px solid var(--bs-border);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: transform .2s cubic-bezier(.16, 1, .3, 1);
+}
+.bs-cta:hover { transform: translateY(-1px); }
+
+@media (max-width: 768px) {
+  .nav-links {
+    background: var(--bs-bg-deep) !important;
+    border-bottom: 1px solid var(--bs-border) !important;
+  }
+  .nav-links a { font-size: .95rem !important; }
+}
+
+/* ---------- motion + responsive ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .mod { animation: none; }
+}
+
+@media (max-width: 900px) {
+  .hero-wrap {
+    grid-template-columns: 1fr !important;
+    padding: 56px 24px 64px;
+    gap: 40px;
+  }
+  .mod-stage {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mod {
+    position: static;
+    width: 100%;
+    max-width: 320px;
+    animation: none;
+  }
+  .demo-iframe { height: 460px; }
+}

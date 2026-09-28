@@ -40,7 +40,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         q: "What's your current website situation?",
         key: "website",
         options: [
-          { value: "no_site", label: "❌ Don't have a website yet" },
+          { value: "no_site", label: "✕ Don't have a website yet" },
           { value: "outdated", label: "🕸️ Have one but it's outdated / slow / not mobile" },
           { value: "good_but", label: "👍 It's okay but doesn't bring in leads" },
           { value: "happy", label: "✅ Happy with my site, just need automation" },
@@ -62,7 +62,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       // Real estate + leads
       "real_estate+leads": {
         title: "Real Estate AI Agent + Voice Receptionist",
-        description: "You need a full AI assistant that handles lead follow-ups, property searches, and after-hours inquiries, plus a voice receptionist to never miss a call.",
+        description: "You need a full AI assistant that handles lead follow-ups and after-hours inquiries, plus a voice receptionist to never miss a call.",
         cta: "Get Your AI Agent →",
         ctaLink: "/contact/",
         products: [
@@ -104,7 +104,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         ctaLink: "/contact/",
         products: [
           { emoji: "🤖", name: "Real Estate AI Agent", price: "$1,297 one-time" },
-          { emoji: "📋", name: "Notion Real Estate System", price: "FREE included" },
+          { emoji: "📋", name: "Notion CRM, built for agents", price: "FREE included" },
         ],
         urgency: "Save 8+ hours a week on admin work."
       },
@@ -327,8 +327,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       html += `<div class="quiz-progress"><div class="quiz-progress-bar" style="width:100%;background:#10b981;"></div></div>`;
       html += `<div style="font-size:3rem;margin:12px 0;">🎯</div>`;
       html += `<h2 style="font-size:24px;font-weight:700;margin-bottom:8px;color:white;">Your Recommendation</h2>`;
-      html += `<div style="font-size:15px;color:#cbd5e1;margin-bottom:4px;">For ${biz === 'real_estate' ? 'a Real Estate business' : biz === 'retail' ? 'a Retail/Service business' : biz === 'hospitality' ? 'a Hospitality business' : biz === 'professional' ? 'a Professional Service' : 'your business'} with a focus on <strong style="color:white;">${answers.challenge === 'leads' ? 'missing leads' : answers.challenge === 'admin' ? 'admin overload' : answers.challenge === 'website' ? 'website needs' : answers.challenge === 'phone' ? 'phone coverage' : 'content creation'}</strong></div>`;
-      html += `<div style="margin:32px 0;padding:32px;background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;color:white;">`;
+      html += `<div style="font-size:15px;color:var(--bs-text);margin-bottom:4px;">For ${biz === 'real_estate' ? 'a Real Estate business' : biz === 'retail' ? 'a Retail/Service business' : biz === 'hospitality' ? 'a Hospitality business' : biz === 'professional' ? 'a Professional Service' : 'your business'} with a focus on <strong style="color:white;">${answers.challenge === 'leads' ? 'missing leads' : answers.challenge === 'admin' ? 'admin overload' : answers.challenge === 'website' ? 'website needs' : answers.challenge === 'phone' ? 'phone coverage' : 'content creation'}</strong></div>`;
+      html += `<div style="margin:32px 0;padding:32px;background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;color:white;">`;
       html += `<h3 style="font-size:20px;margin-bottom:8px;">${rec.title}</h3>`;
       html += `<p style="font-size:14px;opacity:0.85;line-height:1.7;margin-bottom:20px;max-width:450px;margin-left:auto;margin-right:auto;">${rec.description}</p>`;
       html += `<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:20px;">`;
@@ -337,22 +337,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       });
       html += `</div>`;
       html += `<div style="font-size:13px;opacity:0.7;margin-bottom:20px;font-style:italic;">💡 ${rec.urgency}</div>`;
-      html += `<a href="${rec.ctaLink}" class="btn btn--primary" style="font-size:16px;padding:14px 32px;display:inline-block;background:linear-gradient(135deg,#818cf8,#f472b6);box-shadow:0 4px 20px rgba(129,140,248,0.4);border-radius:12px;color:white;font-weight:600;text-decoration:none;">${rec.cta}</a>`;
+      html += `<a href="${rec.ctaLink}" class="btn btn--primary" style="font-size:16px;padding:14px 32px;display:inline-block;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));box-shadow:0 4px 20px rgba(255,45,149,0.4);border-radius:12px;color:white;font-weight:600;text-decoration:none;">${rec.cta}</a>`;
       html += `</div>`;
       
       // Email capture
-      html += `<div style="max-width:400px;margin:0 auto;padding:24px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">`;
+      html += `<div style="max-width:400px;margin:0 auto;padding:24px;background:var(--bs-bg-raised);border-radius:12px;border:1px solid var(--bs-border);">`;
       html += `<h3 style="font-size:16px;font-weight:600;margin-bottom:8px;">Save Your Results</h3>`;
-      html += `<p style="font-size:13px;color:#64748b;margin-bottom:16px;">Enter your email and we'll send you a full breakdown of the recommended solutions.</p>`;
+      html += `<p style="font-size:13px;color:var(--bs-text-muted);margin-bottom:16px;">Enter your email and we'll send you a full breakdown of the recommended solutions.</p>`;
       html += `<div style="display:flex;gap:8px;">`;
-      html += `<input type="email" id="quiz-email" placeholder="your@email.com" style="flex:1;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:14px;">`;
-      html += `<button onclick="saveQuizResults()" style="padding:12px 20px;background:linear-gradient(135deg,#818cf8,#f472b6);color:white;border:none;border-radius:10px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(129,140,248,0.3);">Send →</button>`;
+      html += `<input type="email" id="quiz-email" placeholder="your@email.com" style="flex:1;padding:12px 14px;border:2px solid var(--bs-border);border-radius:10px;font-size:14px;">`;
+      html += `<button onclick="saveQuizResults()" style="padding:12px 20px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));color:white;border:none;border-radius:10px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(255,45,149,0.3);">Send →</button>`;
       html += `</div>`;
-      html += `<div style="margin-top:12px;"><a href="${rec.ctaLink}" style="font-size:14px;color:#6366f1;text-decoration:none;">Skip, contact me directly →</a></div>`;
+      html += `<div style="margin-top:12px;"><a href="${rec.ctaLink}" style="font-size:14px;color:var(--bs-accent);text-decoration:none;">Skip, contact me directly →</a></div>`;
       html += `</div>`;
       
       html += `<div style="margin-top:24px;">`;
-      html += `<button onclick="resetQuiz()" style="background:none;border:none;color:#94a3b8;font-size:13px;cursor:pointer;">← Retake Quiz</button>`;
+      html += `<button onclick="resetQuiz()" style="background:none;border:none;color:var(--bs-text-muted);font-size:13px;cursor:pointer;">← Retake Quiz</button>`;
       html += `</div>`;
       html += `</div>`;
       
@@ -395,22 +395,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
   </script>
 
-  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:100px 0 80px;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
+  <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,45,149,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,45,149,0.1),transparent 50%);"></div>
     <div class="container" style="position:relative;z-index:1;text-align:center;">
-      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:var(--bs-accent);font-size:0.9rem;font-weight:500;margin-bottom:24px;">
         🎯 2-Minute Quiz
       </div>
       <h1 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:16px;">
-        What Does Your Business<br><span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Actually Need?</span>
+        What Does Your Business<br><span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Actually Need?</span>
       </h1>
-      <p style="font-size:1.15rem;color:#cbd5e1;max-width:550px;margin:0 auto 8px;line-height:1.8;">
+      <p style="font-size:1.15rem;color:var(--bs-text);max-width:550px;margin:0 auto 8px;line-height:1.8;">
         Not sure which AI tool or website package is right for you? Answer 5 quick questions and get a personalized recommendation.
       </p>
     </div>
   </section>
 
-  <section style="padding:80px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section style="padding:80px 0">
     <div class="container">
       <div id="quiz-container" style="max-width:640px;margin:0 auto;"></div>
     </div>
@@ -420,13 +420,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .quiz-step { animation: fadeIn 0.3s ease; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     .quiz-progress { height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin-bottom: 24px; overflow: hidden; }
-    .quiz-progress-bar { height: 100%; background: linear-gradient(135deg,#818cf8,#f472b6); border-radius: 3px; transition: width 0.4s ease; }
-    .quiz-step-counter { font-size: 0.85rem; color: #cbd5e1 !important; margin-bottom: 16px; }
+    .quiz-progress-bar { height: 100%; background: linear-gradient(135deg,var(--bs-accent),var(--bs-accent)); border-radius: 3px; transition: width 0.4s ease; }
+    .quiz-step-counter { font-size: 0.85rem; color:var(--bs-text) !important; margin-bottom: 16px; }
     .quiz-question { font-size: 1.4rem; font-weight: 700; color: white !important; margin-bottom: 28px; line-height: 1.3; }
     .quiz-options { display: flex; flex-direction: column; gap: 12px; }
-    .quiz-option { padding: 18px 24px; background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(236,72,153,0.08)); border: 1.5px solid rgba(255,255,255,0.12); border-radius: 14px; color: #e2e8f0 !important; font-size: 1.05rem; cursor: pointer; transition: all 0.25s ease; text-align: left; backdrop-filter: blur(4px); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
-    .quiz-option:hover { background: linear-gradient(135deg, rgba(99,102,241,0.25), rgba(236,72,153,0.18)); border-color: rgba(129,140,248,0.6); transform: translateX(6px); box-shadow: 0 4px 16px rgba(99,102,241,0.2); }
-    .quiz-option.selected { background: linear-gradient(135deg, rgba(99,102,241,0.35), rgba(236,72,153,0.25)); border-color: #818cf8; color: white !important; font-weight: 600; box-shadow: 0 0 20px rgba(99,102,241,0.25), inset 0 0 20px rgba(99,102,241,0.05); }
+    .quiz-option { padding: 18px 24px; background: linear-gradient(135deg, rgba(255,45,149,0.12), rgba(255,45,149,0.08)); border: 1.5px solid rgba(255,255,255,0.12); border-radius: 14px; color:var(--bs-text) !important; font-size: 1.05rem; cursor: pointer; transition: all 0.25s ease; text-align: left; backdrop-filter: blur(4px); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    .quiz-option:hover { background: linear-gradient(135deg, rgba(255,45,149,0.25), rgba(255,45,149,0.18)); border-color: rgba(255,45,149,0.6); transform: translateX(6px); box-shadow: 0 4px 16px rgba(255,45,149,0.2); }
+    .quiz-option.selected { background: linear-gradient(135deg, rgba(255,45,149,0.35), rgba(255,45,149,0.25)); border-color: var(--bs-accent); color: white !important; font-weight: 600; box-shadow: 0 0 20px rgba(255,45,149,0.25), inset 0 0 20px rgba(255,45,149,0.05); }
   </style>
 
   <script is:inline>

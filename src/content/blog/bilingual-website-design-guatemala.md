@@ -42,7 +42,7 @@ A bilingual site isn't just your existing pages run through Google Translate. Pr
 
 A bilingual website costs more than a single-language site, but not as much as you might think. The main added cost is content creation and translation for the second language.
 
-At Birky Studio, our websites are built with bilingual support from the start. Our Professional plan at $390 includes responsive design, SEO optimization, and the structure needed to support two languages. Adding the Spanish (or English) content layer is something we handle as part of the process.
+At Birky Studio, our websites are built with bilingual support from the start. Our Professional plan at $999 includes responsive design, SEO optimization, and the structure needed to support two languages. Adding the Spanish (or English) content layer is something we handle as part of the process.
 
 Compare that to running two separate websites, which doubles your hosting, maintenance, and management work. A single bilingual site is smarter and more cost-effective.
 

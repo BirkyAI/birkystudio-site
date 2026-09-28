@@ -24,7 +24,7 @@ This gets you a clean, professional single-page or small multi-page site. Think 
 
 This is perfect for a small business that just needs an online presence. A local plumber, a barber shop, a freelance photographer. You don't need 50 pages, you need something that looks professional and tells people how to reach you.
 
-At Birky Studio, our Starter plan at $195 fits right here.
+At Birky Studio, our Starter plan at $499 fits right here.
 
 ### Tier 2: Professional Website ($400 to $1,000)
 
@@ -39,7 +39,7 @@ This is where most growing small businesses should be. You get everything in Tie
 
 This level works well for businesses that want to actively attract customers through Google, not just have a website for reference. Restaurants, law firms, medical offices, and agencies typically fall into this range.
 
-Our Professional plan at $390 covers this with room to spare.
+Our Professional plan at $999 covers this with room to spare.
 
 ### Tier 3: Advanced Website ($1,000 to $3,000+)
 
@@ -51,8 +51,6 @@ For businesses that need more functionality:
 - Custom integrations (CRM, inventory, accounting)
 - Multi-language support
 - Advanced SEO and content strategy
-
-Our E-commerce plan at $780 includes online store setup, payment integration, and product management.
 
 ## Hidden Costs to Watch Out For
 
@@ -84,7 +82,7 @@ A professional build often costs less over time and performs better.
 
 The right question isn't "how much does a website cost?" It's "how much revenue can a good website generate?"
 
-If a $390 website brings in even one new customer per month who spends $100, it pays for itself in four months. Most businesses see much more than that. A well-designed, fast-loading website with proper SEO can become your most profitable marketing channel.
+If a $999 website brings in even one new customer per month who spends $100, it pays for itself in four months. Most businesses see much more than that. A well-designed, fast-loading website with proper SEO can become your most profitable marketing channel.
 
 ## What to Budget For
 

@@ -103,7 +103,7 @@ const faqLD = JSON.stringify({
       "name": "What is an AI agent and what can it do for my business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An AI agent is a dedicated AI assistant installed on your computer that connects to your email, files, and CRM. It answers customer questions, automates tasks, drafts emails, manages your calendar, and works 24/7 in English and Spanish. For realtors, the AI Agent Setup at $1,297 includes the Notion Real Estate System for CRM and content planning."
+        "text": "An AI agent is a dedicated AI assistant installed on your computer that connects to your email, files, and CRM. It answers customer questions, automates tasks, drafts emails, manages your calendar, and works 24/7 in English and Spanish. For realtors, the AI Agent Setup at $1,297 includes a Notion CRM built for agents."
       }
     },
     {
@@ -111,7 +111,7 @@ const faqLD = JSON.stringify({
       "name": "How much does an AI receptionist cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The AI Text Receptionist for WhatsApp is $297 one-time with optional support at $29/month. The AI Voice Receptionist, which answers phone calls 24/7, is $550 setup with the client paying Vapi directly about $30-50/month for call usage, and optional support at $49/month."
+        "text": "The AI Text Receptionist for WhatsApp is $297 one-time. The AI Voice Receptionist, which answers phone calls 24/7, is $550 setup, with the client paying Vapi directly about $30-50/month for call usage. Ongoing support is $97/month (Care & Maintenance) or $197/month (Business AI Partner)."
       }
     },
     {
@@ -119,7 +119,7 @@ const faqLD = JSON.stringify({
       "name": "Do I need technical skills to use an AI agent?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No technical skills are needed. Luna personally installs and configures everything via a screen-sharing session that takes 2-3 hours, including full training. After setup you use it through WhatsApp or Telegram like a normal chat."
+        "text": "No technical skills are needed. Luna personally installs and configures everything with you on a screen-sharing call. The build takes about 15 minutes on her side, and the call covers connecting your accounts and a full walkthrough. After setup you use it through WhatsApp or Telegram like a normal chat."
       }
     },
     {
@@ -127,7 +127,7 @@ const faqLD = JSON.stringify({
       "name": "How long does it take to get a website or AI agent?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Websites are delivered in 2-3 days. AI agent setup takes one 2-3 hour remote session. Text receptionists are live in 1-2 days, and voice receptionists in 2-3 days. Every project includes 30 days of free support."
+        "text": "Websites are delivered in 2-3 days. AI agent setup is about 15 minutes of build plus a call to connect your accounts. Text receptionists are live in 1-2 days, and voice receptionists in 2-3 days. Every project includes 30 days of free support."
       }
     },
     {
@@ -149,229 +149,235 @@ const faqLD = JSON.stringify({
 
 
 <!-- Hero Section -->
-  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:120px 0 100px;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
-    <div style="max-width:1400px;margin:0 auto;padding:0 48px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" class="hero-grid">
-      <!-- Left: Text -->
+  <section class="hero-sec">
+    <div class="hero-orb o1"></div>
+    <div class="hero-orb o2"></div>
+
+    <div class="hero-wrap hero-grid">
+      <!-- Left: copy (text preserved verbatim for SEO) -->
       <div>
-        <div style="width:100px;height:100px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.2);margin-bottom:20px;box-shadow:0 0 30px rgba(99,102,241,0.3);">
-          <img src="/images/birky-mascot.jpg" alt="Luna - founder of Birky Studio" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-        <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
-          ⏰ Get Hours Back Every Week
-        </div>
-        <h1 style="font-size:clamp(2rem,4vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        <span class="hero-eyebrow">Get Hours Back Every Week</span>
+        <h1 class="hero-h1">
           Take Back Your<br>
-          <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Time</span>
+          <em>Time</em>
         </h1>
-        <p style="font-size:1.15rem;color:#cbd5e1;margin-bottom:32px;line-height:1.8;max-width:500px;">
+        <p class="hero-sub">
           Automate repetitive tasks that eat up your workweek. Spend your days running the business, not chasing it.
         </p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px;">
-          <div style="display:flex;gap:20px;flex-wrap:wrap;">
-            <span style="color:#94a3b8;font-size:0.9rem;">📍 For Realtors</span>
-            <span style="color:#94a3b8;font-size:0.9rem;">🏪 For Local Business</span>
-            <span style="color:#94a3b8;font-size:0.9rem;">🍽️ Restaurants & Hotels</span>
-
-          </div>
+        <div class="hero-tags">
+          <span>For Realtors</span>
+          <span>For Local Business</span>
+          <span>Restaurants &amp; Hotels</span>
         </div>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <a href="/contact" class="btn btn-primary" style="font-size:1.05rem;padding:16px 32px;">
-            Get My Time Back →
-          </a>
-          <a href="/#products" class="btn btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.3);font-size:1.05rem;padding:16px 32px;">
-            See How It Works
-          </a>
+        <div class="hero-ctas">
+          <a href="/contact" class="btn hero-btn-primary">Get My Time Back →</a>
+          <a href="/#products" class="btn hero-btn-ghost">See How It Works</a>
         </div>
       </div>
-      <!-- Right: AI Demo -->
-      <div style="border-radius:16px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.1);">
-        <div style="background:#1e293b;padding:10px 16px;display:flex;align-items:center;gap:8px;">
-          <div style="display:flex;gap:5px;">
-            <div style="width:9px;height:9px;border-radius:50%;background:#ef4444;"></div>
-            <div style="width:9px;height:9px;border-radius:50%;background:#eab308;"></div>
-            <div style="width:9px;height:9px;border-radius:50%;background:#22c55e;"></div>
-          </div>
-          <div style="flex:1;background:#334155;border-radius:6px;padding:3px 10px;color:#94a3b8;font-size:0.7rem;font-family:monospace;text-align:center;">
-            AI. Try It Free on WhatsApp
-          </div>
+
+      <!-- Right: the six building blocks of the base agent -->
+      <div class="mod-stage">
+        <div class="mod m1">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <span><span class="mod-label">Catch enquiries</span><span class="mod-meta">Web + WhatsApp</span></span>
         </div>
-        <iframe src="/ai-demo" style="width:100%;height:560px;border:none;display:block;" title="AI Agent Demo" loading="eager"></iframe>
+        <div class="mod m2">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+          <span><span class="mod-label">Qualify the lead</span><span class="mod-meta">Asks the right things</span></span>
+        </div>
+        <div class="mod m3">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/></svg></span>
+          <span><span class="mod-label">Save to CRM</span><span class="mod-meta">Notion, built in</span></span>
+        </div>
+        <div class="mod m4 is-key">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+          <span><span class="mod-label">Alert you with a reply</span><span class="mod-meta">Summary + draft</span></span>
+        </div>
+        <div class="mod m5">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1a8.4 8.4 0 0 1-.9-3.9 8.4 8.4 0 0 1 8.4-8.4 8.4 8.4 0 0 1 8.6 8.4z"/></svg></span>
+          <span><span class="mod-label">Auto-reply</span><span class="mod-meta">Instant, EN/ES</span></span>
+        </div>
+        <div class="mod m6">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <span><span class="mod-label">Follow up in 2 days</span><span class="mod-meta">Nothing goes cold</span></span>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- AI demo lives on the portfolio page only (Luna, 27 Sep 2026) -->
+
   <!-- Pricing: AI Agent -->
-  <section id="pricing-ai" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section id="pricing-ai" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
-        <div style="display:inline-block;padding:6px 16px;background:rgba(236,72,153,0.2);border-radius:100px;color:#f9a8d4;font-size:0.85rem;font-weight:600;margin-bottom:16px;">🤖 Assistant Setup</div>
+        <div style="display:inline-block;padding:6px 16px;background:rgba(255,45,149,0.16);border-radius:100px;color:var(--bs-accent);font-size:0.85rem;font-weight:600;margin-bottom:16px;">Assistant Setup</div>
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Assistant Plans</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">A dedicated AI assistant installed on your computer, works with your email, files, and CRM. Bilingual EN/ES, 24/7.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">A dedicated AI assistant installed on your computer, works with your email, files, and CRM. Bilingual EN/ES, 24/7.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1200px;margin:0 auto;">
         <!-- AI Agent Setup -->
-        <div style="background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(99,102,241,0.2));border:2px solid rgba(236,72,153,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
-          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f472b6,#ec4899);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Most Popular</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.16),rgba(255,45,149,0.16));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--bs-accent);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Most Popular</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Assistant Setup</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Dedicated AI assistant for any business, includes Notion CRM</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Dedicated AI assistant for any business, includes Notion CRM</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$1,297</span>
-            <span style="color:#94a3b8;"> one-time setup</span>
+            <span style="color:var(--bs-text-muted);"> one-time setup</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Answers customer questions & takes messages 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Email management & automated follow-ups</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Google Business Profile content automation</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Multi-platform (WhatsApp + Telegram + Email)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES) + CRM integration</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> <strong style="color:white;">Notion Real Estate System</strong>. CRM, commissions, content planner</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Property search & listing description generator</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Answers customer questions & takes messages 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Email management & automated follow-ups</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Google Business Profile content automation</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Multi-platform (WhatsApp + Telegram + Email)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Bilingual (EN/ES) + CRM integration</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> <strong style="color:white;">Notion CRM</strong>, built for agents. Clients, listings, appointments, commissions</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Catch, qualify and follow up every lead automatically</li>
           </ul>
-          <a href="/products/ai-agent-setup" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">More Information</a>
+          <a href="/products/ai-agent-setup" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
         </div>
 
         <!-- Support & Maintenance -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Support &amp; Maintenance</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Ongoing optimization & priority support</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Ongoing optimization & priority support</p>
           <div style="margin-bottom:8px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$197</span>
-            <span style="color:#94a3b8;">/month</span>
+            <span style="color:var(--bs-text-muted);">/month</span>
           </div>
-          <p style="color:#f472b6;font-size:0.85rem;font-weight:500;margin-bottom:24px;">No contract, cancel anytime</p>
+          <p style="color:var(--bs-accent);font-size:0.85rem;font-weight:500;margin-bottom:24px;">No contract, cancel anytime</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Monthly optimization call</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Monthly performance report</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Prompt tweaks & improvements</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Ongoing maintenance & updates</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Priority support, no waiting</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Monthly optimization call</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Monthly performance report</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Prompt tweaks & improvements</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Ongoing maintenance & updates</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Priority support, no waiting</li>
           </ul>
           <a href="/products/business-ai-partner" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">More Information</a>
         </div>
 
         <!-- Lead Generation Pack -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(99,102,241,0.2));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
-          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#6366f1);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">New</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(255,45,149,0.16));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--bs-bg-raised);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">New</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Lead Generation Pack</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Verified prospects + AI that follows them up. <strong style="color:white;">Own your leads. Own your code. Own your sanity.</strong></p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Verified prospects + AI that follows them up. <strong style="color:white;">Own your leads. Own your code. Own your sanity.</strong></p>
           <div style="margin-bottom:32px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$1,997</span>
-            <span style="color:#94a3b8;"> one-time, you own it forever</span>
+            <span style="color:var(--bs-text-muted);"> one-time, you own it forever</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Verified prospect list, real, enriched, scored (any niche)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automated outreach setup</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> AI agent trained on your niche &amp; pitch</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> AI receptionist catches &amp; qualifies replies 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> No subscription, no lock-in, nothing to cancel</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Verified prospect list, real, enriched, scored (any niche)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Automated outreach setup</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> AI agent trained on your niche &amp; pitch</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> AI receptionist catches &amp; qualifies replies 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> No subscription, no lock-in, nothing to cancel</li>
           </ul>
-          <a href="/products/lead-generation-pack" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">More Information</a>
+          <a href="/products/lead-generation-pack" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
         </div>
       </div>
 
       <!-- Lead List Second Row (square tiles) -->
       <div style="text-align:center;margin:56px 0 28px;padding-top:40px;border-top:1px solid rgba(255,255,255,0.1);">
-        <p style="color:#94a3b8;font-size:1rem;margin:0;">Already have an AI agent or outreach? <strong style="color:white;">Add the fuel</strong>, a verified prospect list you own, or a system that turns your past clients into reviews.</p>
+        <p style="color:var(--bs-text-muted);font-size:1rem;margin:0;">Already have an AI agent or outreach? <strong style="color:white;">Add the fuel</strong>, a verified prospect list you own, or a system that turns your past clients into reviews.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1140px;margin:0 auto;">
         <!-- Lead Generation Starter List -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(16,185,129,0.04));border:2px solid rgba(16,185,129,0.4);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;">
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.10),rgba(255,45,149,0.04));border:2px solid rgba(255,45,149,0.35);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;">
           <h3 style="color:white;font-size:1.2rem;margin-bottom:6px;">Lead Generation Starter List</h3>
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:16px;">Up to ~25 verified prospects, one niche/area</p>
+          <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:16px;">Up to ~25 verified prospects, one niche/area</p>
           <div style="margin-bottom:12px;">
             <span style="font-size:2.4rem;font-weight:800;color:white;">$497</span>
-            <span style="color:#94a3b8;"> one-time</span>
+            <span style="color:var(--bs-text-muted);"> one-time</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;text-align:left;align-self:stretch;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Real, verified, enriched contacts</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Scored &amp; opportunity-tagged</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> You own it forever</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Real, verified, enriched contacts</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Scored &amp; opportunity-tagged</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> You own it forever</li>
           </ul>
-          <a href="/products/lead-generation-starter-list" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">More Information</a>
+          <a href="/products/lead-generation-starter-list" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
         </div>
 
         <!-- Lead Generation Pro List -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(99,102,241,0.15));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
-          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#6366f1);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Best Value</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(255,45,149,0.12));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
+          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--bs-bg-raised);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Best Value</div>
           <h3 style="color:white;font-size:1.2rem;margin-bottom:6px;">Lead Generation Pro List</h3>
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:16px;">Up to ~100 prospects + outreach templates</p>
+          <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:16px;">Up to ~100 prospects + outreach templates</p>
           <div style="margin-bottom:12px;">
             <span style="font-size:2.4rem;font-weight:800;color:white;">$997</span>
-            <span style="color:#94a3b8;"> one-time</span>
+            <span style="color:var(--bs-text-muted);"> one-time</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;text-align:left;align-self:stretch;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Everything in Starter, 4x more leads</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Deeper enrichment</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Outreach message templates included</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Everything in Starter, 4x more leads</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Deeper enrichment</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Outreach message templates included</li>
           </ul>
-          <a href="/products/lead-generation-pro-list" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">More Information</a>
+          <a href="/products/lead-generation-pro-list" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
         </div>
 
         <!-- Review Engine -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(99,102,241,0.15));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
-          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#6366f1);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">New</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(255,45,149,0.12));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
+          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--bs-bg-raised);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">New</div>
           <h3 style="color:white;font-size:1.2rem;margin-bottom:6px;">Review Engine</h3>
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:16px;">We turn your past clients into your review pipeline</p>
+          <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:16px;">We turn your past clients into your review pipeline</p>
           <div style="margin-bottom:12px;">
             <span style="font-size:2.4rem;font-weight:800;color:white;">$497</span>
-            <span style="color:#94a3b8;"> setup + $97/mo</span>
+            <span style="color:var(--bs-text-muted);"> setup + $97/mo</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;text-align:left;align-self:stretch;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Asks every past client, no buying reviews</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Win back quiet customers</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Monthly reviews &amp; rating report</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Asks every past client, no buying reviews</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Win back quiet customers</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Monthly reviews &amp; rating report</li>
           </ul>
-          <a href="/products/review-engine" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">More Information</a>
+          <a href="/products/review-engine" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing: Websites -->
-  <section id="pricing-websites" style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section id="pricing-websites" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
-        <div style="display:inline-block;padding:6px 16px;background:rgba(99,102,241,0.2);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:600;margin-bottom:16px;">🌐 Website Design</div>
+        <div style="display:inline-block;padding:6px 16px;background:rgba(255,45,149,0.16);border-radius:100px;color:var(--bs-text-muted);font-size:0.85rem;font-weight:600;margin-bottom:16px;">Website Design</div>
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Website Plans</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Professional websites at fair prices. No hidden fees, no surprises.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Professional websites at fair prices. No hidden fees, no surprises.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1000px;margin:0 auto;">
         <!-- Starter -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Starter</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Perfect for new businesses</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Perfect for new businesses</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$499</span>
-            <span style="color:#94a3b8;"> one-time</span>
+            <span style="color:var(--bs-text-muted);"> one-time</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 1-3 pages</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Mobile responsive</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> WhatsApp button</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Google Maps</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Contact form</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> 1-3 pages</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Mobile responsive</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> WhatsApp button</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Google Maps</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Contact form</li>
           </ul>
           <a href="/products/website-starter" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">More Information</a>
         </div>
         
         <!-- Professional -->
-        <div style="background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(236,72,153,0.2));border:2px solid rgba(99,102,241,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.16),rgba(255,45,149,0.16));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
           <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gradient-primary);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Most Popular</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Professional</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">For growing businesses</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">For growing businesses</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$999</span>
-            <span style="color:#94a3b8;"> one-time</span>
+            <span style="color:var(--bs-text-muted);"> one-time</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 4-7 pages</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Everything in Starter</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Photo gallery</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> SEO &amp; AEO optimization</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> 4-7 pages</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Everything in Starter</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Bilingual (EN/ES)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Photo gallery</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> SEO &amp; AEO optimization</li>
           </ul>
           <a href="/products/website-professional" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;">More Information</a>
         </div>
@@ -379,78 +385,78 @@ const faqLD = JSON.stringify({
         <!-- Premium -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Premium</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">For established businesses, 10+ pages</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">For established businesses, 10+ pages</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$1,999</span>
-            <span style="color:#94a3b8;"> one-time</span>
+            <span style="color:var(--bs-text-muted);"> one-time</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 10+ pages</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Everything in Professional</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Blog setup</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Custom features</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Priority support</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> 10+ pages</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Everything in Professional</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Blog setup</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Custom features</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Priority support</li>
           </ul>
-          <a href="/products/website-premium" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">More Information</a>
+          <a href="/products/website-premium" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
         </div>
       </div>
       
       <!-- Add-on Services -->
       <div style="margin-top:48px;">
         <div style="text-align:center;margin-bottom:32px;">
-          <p style="color:#94a3b8;font-size:0.95rem;">Add these services to any website plan, monthly or one-time.</p>
+          <p style="color:var(--bs-text-muted);font-size:0.95rem;">Add these services to any website plan, monthly or one-time.</p>
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;max-width:1000px;margin:0 auto;">
         
           <!-- CMS Add-on -->
           <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
             <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Self-Editing CMS</h3>
-            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">Update text &amp; photos anytime</p>
+            <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:20px;">Update text &amp; photos anytime</p>
             <div style="margin-bottom:16px;">
               <span style="font-size:2rem;font-weight:800;color:white;">$130</span>
-              <span style="color:#94a3b8;font-size:0.9rem;"> one-time</span>
+              <span style="color:var(--bs-text-muted);font-size:0.9rem;"> one-time</span>
             </div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Edit text &amp; images yourself</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> No coding required</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Add new pages anytime</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Edit text &amp; images yourself</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> No coding required</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Add new pages anytime</li>
             </ul>
             <a href="/contact" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;">Add to Website →</a>
           </div>
 
           <!-- Content Booster - $149 -->
-          <div style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(6,182,212,0.15));border:2px solid rgba(99,102,241,0.4);border-radius:20px;padding:28px;position:relative;display:flex;flex-direction:column;">
-            <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#818cf8,#06b6d4);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Best Seller</div>
+          <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(6,182,212,0.15));border:2px solid rgba(255,45,149,0.35);border-radius:20px;padding:28px;position:relative;display:flex;flex-direction:column;">
+            <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--bs-accent);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Best Seller</div>
             <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Content Booster</h3>
-            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">Daily blog + weekly GBP posts</p>
+            <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:20px;">Daily blog + weekly GBP posts</p>
             <div style="margin-bottom:8px;">
               <span style="font-size:2rem;font-weight:800;color:white;">$149</span>
-              <span style="color:#94a3b8;font-size:0.9rem;">/month</span>
+              <span style="color:var(--bs-text-muted);font-size:0.9rem;">/month</span>
             </div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Daily blog posts written &amp; published</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> 3x weekly GBP posts</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> SEO &amp; AEO-optimized content</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES)</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Daily blog posts written &amp; published</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> 3x weekly GBP posts</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> SEO &amp; AEO-optimized content</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Bilingual (EN/ES)</li>
             </ul>
-            <a href="/products/content-booster" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;background:linear-gradient(135deg,#818cf8,#6366f1);box-shadow:0 4px 15px rgba(99,102,241,0.3);">More Information</a>
+            <a href="/products/content-booster" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.28);">More Information</a>
           </div>
 
           <!-- Content Pro - $199 -->
           <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
             <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Content Pro</h3>
-            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">All content + monthly updates</p>
+            <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:20px;">All content + monthly updates</p>
             <div style="margin-bottom:8px;">
               <span style="font-size:2rem;font-weight:800;color:white;">$199</span>
-              <span style="color:#94a3b8;font-size:0.9rem;">/month</span>
+              <span style="color:var(--bs-text-muted);font-size:0.9rem;">/month</span>
             </div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Everything in Content Booster</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Up to 5 monthly page changes</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Priority support</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Monthly performance report</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Everything in Content Booster</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Up to 5 monthly page changes</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Priority support</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Monthly performance report</li>
             </ul>
-            <a href="/products/content-pro" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">More Information</a>
+            <a href="/products/content-pro" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
           </div>
 
         </div>
@@ -459,68 +465,68 @@ const faqLD = JSON.stringify({
   </section>
 
   <!-- Pricing: AI Receptionist -->
-  <section id="pricing-receptionist" style="padding:100px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+  <section id="pricing-receptionist" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
-        <div style="display:inline-block;padding:6px 16px;background:rgba(16,185,129,0.2);border-radius:100px;color:#6ee7b7;font-size:0.85rem;font-weight:600;margin-bottom:16px;">📞 Receptionist</div>
+        <div style="display:inline-block;padding:6px 16px;background:rgba(255,45,149,0.16);border-radius:100px;color:var(--bs-accent);font-size:0.85rem;font-weight:600;margin-bottom:16px;">Receptionist</div>
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Receptionist Plans</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Your AI receptionist answers calls and messages 24/7, so you never miss a customer.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Your AI receptionist answers calls and messages 24/7, so you never miss a customer.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
         <!-- Text Receptionist -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Text Receptionist</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">WhatsApp messaging, handled by AI</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">WhatsApp messaging, handled by AI</p>
           <div style="margin-bottom:8px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$297</span>
-            <span style="color:#94a3b8;"> one-time</span>
+            <span style="color:var(--bs-text-muted);"> one-time</span>
           </div>
           <div style="margin-bottom:32px;">
-            <span style="font-size:1.25rem;font-weight:700;color:#10b981;">Optional support:</span>
-            <span style="color:#cbd5e1;font-weight:600;"> $29</span>
-            <span style="color:#94a3b8;">/month</span>
+            <span style="font-size:1.25rem;font-weight:700;color:var(--bs-text);">Optional support:</span>
+            <span style="color:var(--bs-text-muted);font-weight:600;"> $97</span>
+            <span style="color:var(--bs-text-muted);">/month</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> WhatsApp auto-replies 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Answers FAQs & takes messages</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingual (EN/ES)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Works after hours & weekends</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Setup & training included</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> WhatsApp auto-replies 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Answers FAQs & takes messages</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Bilingual (EN/ES)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Works after hours & weekends</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Setup & training included</li>
           </ul>
           <a href="/products/text-receptionist" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">More Information</a>
         </div>
         
         <!-- Voice Receptionist Bundle -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.2));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
-          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#059669);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Best Value</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.16),rgba(255,45,149,0.16));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--bs-accent);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Best Value</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Voice Receptionist</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Full AI phone + text receptionist</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Full AI phone + text receptionist</p>
           <div style="margin-bottom:8px;">
             <span style="font-size:3rem;font-weight:800;color:white;">$550</span>
-            <span style="color:#94a3b8;"> setup</span>
+            <span style="color:var(--bs-text-muted);"> setup</span>
           </div>
-          <p style="color:#94a3b8;font-size:0.95rem;margin-bottom:8px;">Client pays Vapi directly (~$30-50/mo)</p>
+          <p style="color:var(--bs-text-muted);font-size:0.95rem;margin-bottom:8px;">Client pays Vapi directly (~$30-50/mo)</p>
           <div style="margin-bottom:32px;">
-            <span style="font-size:1.25rem;font-weight:700;color:#f472b6;">Optional support:</span>
-            <span style="color:#cbd5e1;font-weight:600;"> $49</span>
-            <span style="color:#94a3b8;">/month</span>
+            <span style="font-size:1.25rem;font-weight:700;color:var(--bs-accent);">Optional support:</span>
+            <span style="color:var(--bs-text-muted);font-weight:600;"> $97</span>
+            <span style="color:var(--bs-text-muted);">/month</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Everything in Text Receptionist</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> AI answers phone calls 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Natural AI voice (EN/ES)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Takes messages & forwards urgent calls</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> After hours & weekends covered</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Ongoing maintenance & prompt tweaks ($49/mo optional)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Everything in Text Receptionist</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> AI answers phone calls 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Natural AI voice (EN/ES)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Takes messages & forwards urgent calls</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> After hours & weekends covered</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Ongoing maintenance & prompt tweaks (from $97/mo optional)</li>
           </ul>
-          <a href="/products/voice-receptionist" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">More Information</a>
+          <a href="/products/voice-receptionist" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">More Information</a>
         </div>
       </div>
 
       <!-- Note -->
       <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
-        <p style="color:#94a3b8;font-size:0.95rem;">
+        <p style="color:var(--bs-text-muted);font-size:0.95rem;">
           <strong style="color:white;">Bundle both products!</strong> Add a Website + AI Receptionist for the ultimate business setup. <a href="/contact" style="color:white;text-decoration:underline;">Contact us</a> for a custom package.
         </p>
       </div>
@@ -528,143 +534,143 @@ const faqLD = JSON.stringify({
   </section>
 
   <!-- How It Works -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">How It Works</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Three simple steps, no matter which product you choose.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Three simple steps, no matter which product you choose.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;">
         <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">1</div>
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">1</div>
           <h3 style="font-size:1.25rem;color:white;margin-bottom:12px;">Tell Us What You Need</h3>
-          <p style="color:#94a3b8;line-height:1.8;">Share your business details and goals. Whether it's a website, an AI assistant, or both, we'll recommend the right solution.</p>
+          <p style="color:var(--bs-text-muted);line-height:1.8;">Share your business details and goals. Whether it's a website, an AI assistant, or both, we'll recommend the right solution.</p>
         </div>
         
         <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#06b6d4,#6366f1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">2</div>
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">2</div>
           <h3 style="font-size:1.25rem;color:white;margin-bottom:12px;">We Build It For You</h3>
-          <p style="color:#94a3b8;line-height:1.8;">Our AI-powered process creates your solution in just 2-3 days. You review, give feedback, and approve.</p>
+          <p style="color:var(--bs-text-muted);line-height:1.8;">Our AI-powered process creates your solution in just 2-3 days. You review, give feedback, and approve.</p>
         </div>
         
         <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">3</div>
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">3</div>
           <h3 style="font-size:1.25rem;color:white;margin-bottom:12px;">Go Live & Grow</h3>
-          <p style="color:#94a3b8;line-height:1.8;">Your website goes live or your AI agent starts working. Share the link, automate tasks, and start seeing results.</p>
+          <p style="color:var(--bs-text-muted);line-height:1.8;">Your website goes live or your AI agent starts working. Share the link, automate tasks, and start seeing results.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Products Section -->
-  <section id="products" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section id="products" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Our Products</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Four powerful solutions to help your business grow, a professional online presence, smart automation, 24/7 call answering, and real prospects you own.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Four powerful solutions to help your business grow, a professional online presence, smart automation, 24/7 call answering, and real prospects you own.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;max-width:1200px;margin:0 auto;">
         <!-- Product 1: Website Design -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🌐
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18"/><path d="M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg>
           </div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Website Design</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             Professional, mobile-first websites that load fast and convert visitors into customers. Bilingual, SEO &amp; AEO-optimized, with WhatsApp integration, everything your business needs to stand out online, delivered in 2-3 days.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Mobile-First</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Bilingual</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">SEO &amp; AEO</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">WhatsApp</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Fast Loading</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Mobile-First</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingual</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">SEO &amp; AEO</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">WhatsApp</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Fast Loading</span>
           </div>
           <a href="/#pricing-websites" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;">View Website Plans →</a>
         </div>
         
         <!-- Product 2: AI Agent Setup -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#f472b6,#ec4899);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🤖
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4"/><circle cx="9" cy="14" r="1.2"/><circle cx="15" cy="14" r="1.2"/></svg>
           </div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Assistant Setup</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             A dedicated AI assistant for your business, answers customer questions, manages tasks, automates repetitive work, and helps you stay organized. Works across WhatsApp, Telegram, email, and more.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Customer Support</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Task Automation</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Multi-Platform</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Bilingual</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">24/7 Available</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Customer Support</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Task Automation</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Multi-Platform</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingual</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">24/7 Available</span>
           </div>
-          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">View AI Agent Plans →</a>
+          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">View AI Agent Plans →</a>
         </div>
         
         <!-- Product 3: AI Receptionist -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            📞
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6 6L16 12.5l4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3z"/></svg>
           </div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Receptionist</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             Never miss a call again. Our AI receptionist answers your phone 24/7 with a natural voice, speaks English and Spanish, takes messages, and forwards urgent calls, even after hours and weekends.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">24/7 Calls</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">AI Voice</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Bilingual</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Takes Messages</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Urgent Forwarding</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">24/7 Calls</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">AI Voice</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingual</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Takes Messages</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Urgent Forwarding</span>
           </div>
-          <a href="/#pricing-receptionist" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Receptionist Plans →</a>
+          <a href="/#pricing-receptionist" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Receptionist Plans →</a>
         </div>
 
         <!-- Product 4: Lead Generation Pack -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid #e2e8f0;transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🎯
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
+          <div style="width:80px;height:80px;background:var(--bs-bg-raised);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg>
           </div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Lead Generation Pack</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             Real, verified prospects plus the AI to follow them up. We build you a scored, enriched lead list you own forever, with automated outreach and an AI agent + receptionist that catch and qualify replies 24/7.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Verified Prospects</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Any Niche</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">You Own It</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">AI Follow-Up</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">No Lock-In</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Verified Prospects</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Any Niche</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">You Own It</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">AI Follow-Up</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">No Lock-In</span>
           </div>
-          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">View Lead Gen Plans →</a>
+          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">View Lead Gen Plans →</a>
         </div>
       </div>
     </div>
   </section>
 
     <!-- About Me -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+  <section style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Meet Your AI Installer</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">I'm Luna. I build and install AI agents for small businesses. Here's why I started Birky Studio.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">I'm Luna. I build and install AI agents for small businesses. Here's why I started Birky Studio.</p>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:48px;align-items:center;max-width:900px;margin:0 auto;">
         <div>
           <img src="/images/luna-about.jpg" alt="Luna. Birky Studio" style="width:100%;border-radius:24px;box-shadow:0 8px 30px rgba(0,0,0,0.3);">
         </div>
         <div>
-          <p style="color:#94a3b8;font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
-            I'm a real estate agent in Antigua Guatemala who got tired of manual admin work, property searches, listing descriptions, emails, follow-ups, CRM updates. So I built my own AI assistant to handle it all.
+          <p style="color:var(--bs-text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
+            I'm a real estate agent in Antigua Guatemala who got tired of manual admin work, emails, follow-ups, CRM updates. So I built my own AI assistant to handle it all.
           </p>
-          <p style="color:#94a3b8;font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
+          <p style="color:var(--bs-text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
             It worked so well that other agents started asking me to set one up for them too. That's how Birky Studio was born, not a tech company, just someone who found a better way and wants to share it.
           </p>
-          <p style="color:#94a3b8;font-size:1.05rem;line-height:1.8;">
-            Every AI agent I install is the same one I use myself. It's battle-tested, it works, and I personally set it up for you via screen sharing. No middlemen, no faceless support tickets, just me, your computer, and 2-3 hours.
+          <p style="color:var(--bs-text-muted);font-size:1.05rem;line-height:1.8;">
+            Every AI agent I install is the same one I use myself. It's battle-tested, it works, and I personally set it up for you via screen sharing. No middlemen, no faceless support tickets, just me, your computer, and about 15 minutes of build.
           </p>
         </div>
       </div>
@@ -672,44 +678,36 @@ const faqLD = JSON.stringify({
   </section>
 
   <!-- Testimonials + Guarantee -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Trusted by Small Business Owners</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Real results from real clients. No fake reviews, no fluff.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Real results from real clients. No fake reviews, no fluff.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1000px;margin:0 auto 64px;">
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:32px;">
           <div style="display:flex;gap:4px;margin-bottom:16px;">
-            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
+            <span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span>
           </div>
-          <p style="color:#cbd5e1;font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"I had a website live in 3 days and it's beautiful. The bilingual setup means my English and Spanish clients both get the same great experience. Highly recommend."</p>
+          <p style="color:var(--bs-text-muted);font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"I had a website live in 3 days and it's beautiful. The bilingual setup means my English and Spanish clients both get the same great experience. Highly recommend."</p>
           <div style="font-weight:600;color:white;font-size:0.9rem;">- María G., Real Estate Agent</div>
         </div>
         
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:32px;">
           <div style="display:flex;gap:4px;margin-bottom:16px;">
-            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
+            <span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span>
           </div>
-          <p style="color:#cbd5e1;font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"The AI agent handles my WhatsApp messages, property searches, and listing descriptions. I'm saving about 8 hours a week. Best investment I've made for my business."</p>
-          <div style="font-weight:600;color:white;font-size:0.9rem;">- Carlos R., Realtor</div>
-        </div>
-        
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:32px;">
-          <div style="display:flex;gap:4px;margin-bottom:16px;">
-            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
-          </div>
-          <p style="color:#cbd5e1;font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"I was skeptical about AI receptionists, but it answers my calls better than my last assistant ever did. Never miss a lead now, even at 2am."</p>
+          <p style="color:var(--bs-text-muted);font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"I was skeptical about AI receptionists, but it answers my calls better than my last assistant ever did. Never miss a lead now, even at 2am."</p>
           <div style="font-weight:600;color:white;font-size:0.9rem;">- Ana S., Hotel Owner</div>
         </div>
       </div>
       
       <!-- Guarantee Banner -->
-      <div style="text-align:center;padding:40px;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);border-radius:24px;max-width:800px;margin:0 auto;">
-        <div style="font-size:2.5rem;margin-bottom:16px;">🛡️</div>
+      <div style="text-align:center;padding:40px;background:var(--bs-bg-deep);border-radius:24px;max-width:800px;margin:0 auto;">
+        <div style="font-size:2.5rem;margin-bottom:16px;"><svg viewBox="0 0 24 24" style="width:38px;height:38px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin:0 auto;"><path d="M12 3l7 3v6c0 4.2-2.9 7.7-7 9-4.1-1.3-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3 style="font-size:1.5rem;color:white;margin-bottom:12px;">30-Day Satisfaction Guarantee</h3>
-        <p style="color:#94a3b8;font-size:1.05rem;max-width:550px;margin:0 auto;line-height:1.7;">
+        <p style="color:var(--bs-text-muted);font-size:1.05rem;max-width:550px;margin:0 auto;line-height:1.7;">
           If something doesn't work during setup, we'll fix it or your money back. No questions asked. Every project includes 30 days of free support and revisions.
         </p>
       </div>
@@ -717,21 +715,21 @@ const faqLD = JSON.stringify({
   </section>
 
 <!-- FAQ Section -->
-  <section id="faq" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section id="faq" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Straight answers about websites, AI agents, pricing, and delivery.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Straight answers about websites, AI agents, pricing, and delivery.</p>
       </div>
       
       <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             How much does a website cost for a small business?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
               Birky Studio builds websites starting at $499 for a 1-3 page Starter site, $999 for a Professional 4-7 page bilingual site, and $1,999 for a Premium 10+ page site with blog and custom features. All prices are one-time with no hidden fees, and delivery takes 2-3 days.
             </p>
           </div>
@@ -740,11 +738,11 @@ const faqLD = JSON.stringify({
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             What is an AI agent and what can it do for my business?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
-              An AI agent is a dedicated AI assistant installed on your computer that connects to your actual email, files, and CRM. It answers customer questions, automates repetitive tasks, drafts emails, manages your calendar, and works 24/7 in English and Spanish. For realtors, our AI Agent Setup at $1,297 includes the Notion Real Estate System for CRM, commissions, and content planning.
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+              An AI agent is a dedicated AI assistant installed on your computer that connects to your actual email, files, and CRM. It answers customer questions, automates repetitive tasks, drafts emails, manages your calendar, and works 24/7 in English and Spanish. For realtors, our AI Agent Setup at $1,297 includes a Notion CRM built for agents.
             </p>
           </div>
         </div>
@@ -752,11 +750,11 @@ const faqLD = JSON.stringify({
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             How much does an AI receptionist cost?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
-              The AI Text Receptionist for WhatsApp is $297 one-time with optional support at $29/month. The AI Voice Receptionist, which answers phone calls 24/7, is $550 setup, the client pays Vapi directly about $30-50/month for call usage, and optional support is $49/month.
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+              The AI Text Receptionist for WhatsApp is $297 one-time. The AI Voice Receptionist, which answers phone calls 24/7, is $550 setup, the client pays Vapi directly about $30-50/month for call usage. Ongoing support is $97/month (Care & Maintenance) or $197/month (Business AI Partner).
             </p>
           </div>
         </div>
@@ -764,11 +762,11 @@ const faqLD = JSON.stringify({
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             Do I need technical skills to use an AI agent?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
-              No technical skills are needed. Luna personally installs and configures everything for you via a screen-sharing session that takes 2-3 hours, including full training. After setup you just use it through WhatsApp or Telegram like a normal chat. Mac and Linux supported.
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+              No technical skills are needed. Luna personally installs and configures everything with you on a screen-sharing call. The build takes about 15 minutes on her side, and the call covers connecting your accounts and a full walkthrough. After setup you just use it through WhatsApp or Telegram like a normal chat. Mac and Linux supported.
             </p>
           </div>
         </div>
@@ -776,11 +774,11 @@ const faqLD = JSON.stringify({
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             How long does it take to get a website or AI agent?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
-              Websites are delivered in 2-3 days. AI agent setup takes one 2-3 hour remote session. Text receptionists are live in 1-2 days, and voice receptionists in 2-3 days. Every project includes 30 days of free support after launch.
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+              Websites are delivered in 2-3 days. AI agent setup is about 15 minutes of build plus a call to connect your accounts. Text receptionists are live in 1-2 days, and voice receptionists in 2-3 days. Every project includes 30 days of free support after launch.
             </p>
           </div>
         </div>
@@ -788,10 +786,10 @@ const faqLD = JSON.stringify({
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             What is the Lead Generation Pack and how much does it cost?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
               The Lead Generation Pack is a one-time service at $1,997 that gives you real, verified prospects plus the AI to follow them up. It includes a verified, enriched, scored prospect list for any niche, automated outreach setup, an AI agent trained on your niche and pitch, and an AI receptionist that catches and qualifies replies 24/7. You own the list and data forever, no subscription, no lock-in. Prefer just the list? The Starter List is $497 (up to 25 verified prospects) and the Pro List is $997 (up to 100 prospects plus outreach templates).
             </p>
           </div>
@@ -800,10 +798,10 @@ const faqLD = JSON.stringify({
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             What if I don't like the result?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
               You're covered by our 30-day satisfaction guarantee. If something doesn't work during setup, we'll fix it or your money back, no questions asked. You also get free revisions during setup and 30 days of free support, with no lock-in contracts.
             </p>
           </div>
@@ -813,32 +811,21 @@ const faqLD = JSON.stringify({
   </section>
 
 <!-- CTA Section -->
-  <section style="padding:100px 0;background:white;">
+  <section style="padding:100px 0;border-top:1px solid var(--bs-border)">
     <div class="container" style="text-align:center;">
-      <h2 style="font-size:2.5rem;margin-bottom:16px;">Ready to Work Smarter?</h2>
-      <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto 40px;">Whether you need a website, an AI assistant, or both, let's build something great for your business.</p>
+      <h2 style="font-size:2.5rem;margin-bottom:16px;color:var(--bs-text);">Ready to Work Smarter?</h2>
+      <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto 40px;">Whether you need a website, an AI assistant, or both, let's build something great for your business.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">
         <a href="/contact" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
           Start Your Project →
         </a>
-        <a href="/tools/ai-savings-calculator" class="btn btn-outline" style="font-size:1.1rem;padding:18px 36px;border:2px solid #818cf8;color:#818cf8;border-radius:12px;text-decoration:none;font-weight:600;transition:all 0.2s;">
-          💰 Calculate Your Savings
+        <a href="/tools/ai-savings-calculator" class="btn btn-outline" style="font-size:1.1rem;padding:18px 36px;border:2px solid var(--bs-accent);color:var(--bs-accent);border-radius:12px;text-decoration:none;font-weight:600;transition:all 0.2s;">
+          Calculate Your Savings
         </a>
       </div>
     </div>
   </section>
 
-  <style>
-    @media (max-width: 900px) {
-      .hero-grid {
-        grid-template-columns: 1fr !important;
-      }
-      .hero-grid > div:last-child {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-    }
-  </style>
   <script is:inline>
     function toggleFaq(btn) {
       const answer = btn.nextElementSibling;

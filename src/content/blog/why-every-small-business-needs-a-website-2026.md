@@ -39,7 +39,7 @@ More and more people are asking ChatGPT, Perplexity, and Google AI for recommend
 
 ## "But I Can't Afford a Website"
 
-Yes, you can. Professional websites for small businesses start at $195. That's less than a month of Instagram ads, and it works forever.
+Yes, you can. Professional websites for small businesses start at $499. That's less than a month of Instagram ads, and it works forever.
 
 Think about it: if your website brings in just **one new customer per month**, it pays for itself in weeks. Most businesses see results much faster.
 

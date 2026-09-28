@@ -52,7 +52,7 @@ Here is where it gets interesting.
 
 If you need the voice and text combo, that is $847 total, less than what some services charge for a single month of subscription fees.
 
-And if you want ongoing support, troubleshooting, and updates, that is $29/month optional. Not required, the system works on its own. Most clients do not need it after the first month.
+And if you want ongoing support, troubleshooting, and updates, that is $97/month optional. Not required, the system works on its own. Most clients do not need it after the first month.
 
 > "Set it up and forget it. I answer my morning lead report and the rest handles itself.". Birky Studio client
 

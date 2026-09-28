@@ -53,7 +53,7 @@ If you have your content ready (text, photos, logos), the process moves faster. 
 
 A website redesign for a small business typically costs between $200 and $800, depending on the scope. A visual refresh on an existing structure is on the lower end. A complete rebuild with new content and features is higher.
 
-At Birky Studio, our Starter plan at $195 works well for businesses that need a clean, professional refresh. Our Professional plan at $390 covers a more thorough redesign with multiple pages, blog setup, and SEO optimization.
+At Birky Studio, our Starter plan at $499 works well for businesses that need a clean, professional refresh. Our Professional plan at $999 covers a more thorough redesign with multiple pages, blog setup, and SEO optimization.
 
 The important thing is to compare what you're getting, not just the price. A cheap redesign that doesn't fix your mobile experience or SEO problems isn't saving you money, it's delaying the real solution.
 

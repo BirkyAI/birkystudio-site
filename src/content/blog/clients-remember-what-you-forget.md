@@ -61,7 +61,7 @@ If you want to compare it against the other options on the market, we keep an ho
 
 I will be straight about the limits, because this is where a lot of AI vendors oversell. The agent can only remember what it saw. If you had a great conversation in person and it never touched a phone line, a text, or a chat the agent handles, then as far as the record is concerned it did not happen. This removes the "I forgot to write it down" failure. It does not replace your instinct or your relationships, and it should not try to.
 
-The setup is $1,297 one time, and it includes three months of support. The text receptionist starts at $297 and the voice receptionist at $550 with an optional $29 a month support package, so you can start with the piece that hurts most.
+The setup is $1,297 one time, and it includes 30 days of support. The text receptionist starts at $297 and the voice receptionist at $550 with an optional $97 a month support package, so you can start with the piece that hurts most.
 
 ## Try It Today
 

@@ -39,7 +39,7 @@ One payment. No monthly salary. No payroll. No training.
 | Investment | Cost |
 |:--|:--|
 | **AI Agent Setup** (one-time) | **$1,297** |
-| Optional monthly support & maintenance | $29/month |
+| Optional monthly support & maintenance | $97/month (or $197/month Business AI Partner) |
 | WhatsApp / text receptionist add-on | $297 one-time |
 | AI voice receptionist add-on | $550 one-time |
 
@@ -96,13 +96,13 @@ That is the same split a human VA would give you, except the AI agent costs 95% 
 | | Human VA | AI Agent |
 |:--|:--|:--|
 | Setup cost | $0 (but $500–$1,000 in training time) | **$1,297 one-time** |
-| Monthly cost | **$2,000 – $3,500** | $29 (optional) |
-| Works 24/7 | ❌ | ✅ |
+| Monthly cost | **$2,000 – $3,500** | $97 (optional) |
+| Works 24/7 | ✕ | ✅ |
 | Speaks two languages | Maybe | ✅ Always |
-| Never calls in sick | ❌ | ✅ |
-| Never takes vacation | ❌ | ✅ |
-| Scales instantly | ❌ | ✅ |
-| Year-one total | $24,000 – $42,000 | **$1,297 – $1,645** |
+| Never calls in sick | ✕ | ✅ |
+| Never takes vacation | ✕ | ✅ |
+| Scales instantly | ✕ | ✅ |
+| Year-one total | $24,000 – $42,000 | **$1,297 – $2,461** |
 
 The numbers are not close. A human VA is a great choice if you need hands-on, in-person assistance with physical tasks. But for lead management, customer communication, appointment booking, and follow-ups, the AI agent wins by every metric.
 

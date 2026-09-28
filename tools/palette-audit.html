@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Site palette audit</title>
+<style>
+  body { background:#111; color:#eee; font:14px/1.5 ui-monospace,Menlo,monospace; padding:20px; }
+  iframe { width:1200px; height:800px; border:1px solid #444; }
+  .row { margin-bottom:24px; }
+  .lbl { color:#7dd3fc; margin-bottom:6px; }
+  .bad { color:#f87171; }
+  .ok { color:#4ade80; }
+  pre { white-space:pre-wrap; margin:4px 0 0; }
+</style>
+</head>
+<body>
+<h2>Palette / contrast audit</h2>
+<!-- ACCEPTED EXCEPTIONS (do not "fix" these):
+         white text on the solid neon-pink badges and buttons reports ~3.46:1.
+         Luna chose white-on-pink explicitly on 27 Sep 2026 ("I want all white on
+         pink for the buttons, no dark on pink"), knowing it sits below the 4.5
+         guideline. Anything ELSE below threshold is a real defect. -->
+    <div id="out">running…</div>
+<div id="frames"></div>
+
+<script>
+const URLS = [
+  "/", "/products", "/products/text-receptionist", "/blog",
+  "/blog/clients-remember-what-you-forget", "/contact",
+  "/portfolio", "/about", "/partners", "/quick-log-template",
+  "/es/", "/es/contacto", "/es/products", "/es/blog"
+];
+
+function lum(c){
+  const a = c.map(v => { v/=255; return v<=0.03928 ? v/12.92 : Math.pow((v+0.055)/1.055,2.4); });
+  return 0.2126*a[0] + 0.7152*a[1] + 0.0722*a[2];
+}
+function parse(s){
+  const m = s.match(/rgba?\(([^)]+)\)/);
+  if(!m) return null;
+  const p = m[1].split(",").map(x=>parseFloat(x));
+  return { rgb:[p[0],p[1],p[2]], a: p.length>3 ? p[3] : 1 };
+}
+function ratio(a,b){
+  const l1=lum(a), l2=lum(b);
+  return (Math.max(l1,l2)+0.05)/(Math.min(l1,l2)+0.05);
+}
+
+const results = [];
+
+async function audit(){
+  for (const url of URLS){
+    const row = document.createElement("div");
+    row.className = "row";
+    const lbl = document.createElement("div");
+    lbl.className="lbl";
+    lbl.textContent = url;
+    const fr = document.createElement("iframe");
+    fr.src = url;
+    fr.loading = "eager";
+    row.appendChild(lbl);
+    row.appendChild(fr);
+    document.getElementById("frames").appendChild(row);
+
+    await new Promise(res => { fr.onload = res; setTimeout(res, 4000); });
+    await new Promise(res => setTimeout(res, 600));
+
+    let doc;
+    try { doc = fr.contentDocument; } catch(e) { results.push([url,"CROSS-ORIGIN BLOCKED"]); continue; }
+
+    // page background
+    let pageBg = parse(getComputedStyle(doc.body).backgroundColor);
+    const bodyText = parse(getComputedStyle(doc.body).color);
+
+    const bad = [];
+    const all = doc.querySelectorAll("*");
+    for (const el of all){
+      if (el.children.length > 0 && el.textContent.trim().length === 0) continue;
+      // only leaf-ish text holders
+      const ownText = Array.from(el.childNodes)
+        .filter(n => n.nodeType === 3)
+        .map(n => n.textContent.trim())
+        .join("");
+      if (!ownText) continue;
+      const cs = getComputedStyle(el);
+      if (cs.display === "none" || cs.visibility === "hidden" || parseFloat(cs.opacity) < 0.1) continue;
+      const fg = parse(cs.color);
+      if (!fg) continue;
+      // effective background
+      let node = el, bg = null;
+      while (node && node !== doc.documentElement){
+        const b = parse(getComputedStyle(node).backgroundColor);
+        if (b && b.a > 0.6) { bg = b; break; }
+        node = node.parentElement;
+      }
+      if (!bg) bg = pageBg;
+      if (!bg) continue;
+      const r = ratio(fg.rgb, bg.rgb);
+      const fs = parseFloat(cs.fontSize);
+      const bold = parseInt(cs.fontWeight) >= 600;
+      const large = fs >= 24 || (fs >= 18.66 && bold);
+      const need = large ? 3 : 4.5;
+      if (r < need){
+        bad.push({ t: ownText.slice(0,42), r: r.toFixed(2), fs: fs.toFixed(0),
+                   fg: cs.color, bg: `rgb(${bg.rgb.map(Math.round).join(",")})` });
+      }
+    }
+    results.push([url, bad]);
+
+    // annotate in the visible label too
+    if (bad.length === 0){
+      lbl.className = "lbl ok";
+      lbl.textContent = url + "   OK, no low-contrast text";
+    } else {
+      lbl.className = "lbl bad";
+      lbl.textContent = url + "   " + bad.length + " low-contrast text elements";
+    }
+  }
+
+  let txt = "";
+  for (const [url, bad] of results){
+    if (bad === "CROSS-ORIGIN BLOCKED"){ txt += `${url}  BLOCKED\n`; continue; }
+    txt += `\n${url}   ${bad.length} problem element(s)\n`;
+    const seen = new Set();
+    for (const b of bad){
+      const key = b.t + b.fg + b.bg;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      txt += `   ratio ${b.r} (${b.fs}px)  fg ${b.fg}  bg ${b.bg}  "…${b.t}…"\n`;
+      if (seen.size > 6) { txt += `   …and more\n`; break; }
+    }
+  }
+  document.getElementById("out").textContent = txt;
+  window.__auditDone = true;
+}
+audit();
+</script>
+</body>
+</html>

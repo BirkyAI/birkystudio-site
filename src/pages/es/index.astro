@@ -5,211 +5,233 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <BaseLayout title="Recupera Tu Tiempo" description="Automatiza las tareas repetitivas que se comen tu semana. Sitios web, recepcionistas y asistentes para agentes inmobiliarios y negocios locales." image="/images/birky-logo.jpg">
   
   <!-- Hero Section -->
-  <section style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);padding:120px 0 100px;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(99,102,241,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(236,72,153,0.1),transparent 50%);"></div>
-    <div class="container" style="position:relative;z-index:1;text-align:center;">
-      <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.2);margin:0 auto 20px;box-shadow:0 0 40px rgba(99,102,241,0.3);">
-        <img src="/images/birky-mascot.jpg" alt="Luna - fundadora de Birky Studio" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a5b4fc;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
-        ⏰ Recupera Horas Cada Semana
-      </div>
-      <h1 style="font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;color:white;margin-bottom:24px;max-width:900px;margin-left:auto;margin-right:auto;">
-        Recupera Tu<br>
-        <span style="background:linear-gradient(135deg,#818cf8,#f472b6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Tiempo</span>
-      </h1>
-      <p style="font-size:1.25rem;color:#cbd5e1;max-width:600px;margin:0 auto 40px;line-height:1.8;">
-        Automatiza las tareas repetitivas que se comen tu semana. Dedica tus días a hacer crecer tu negocio, no a perseguirlo.
-      </p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">
-        <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;">
-          <span style="color:#94a3b8;font-size:0.9rem;">📍 Para Corredores</span>
-          <span style="color:#94a3b8;font-size:0.9rem;">🏪 Para Negocios Locales</span>
-          <span style="color:#94a3b8;font-size:0.9rem;">🍽️ Restaurantes y Hoteles</span>
+  <section class="hero-sec">
+    <div class="hero-orb o1"></div>
+    <div class="hero-orb o2"></div>
+
+    <div class="hero-wrap">
+      <!-- Left: copy (texto preservado tal cual, por SEO) -->
+      <div>
+        <span class="hero-eyebrow">Recupera Horas Cada Semana</span>
+        <h1 class="hero-h1">
+          Recupera Tu<br>
+          <em>Tiempo</em>
+        </h1>
+        <p class="hero-sub">
+          Automatiza las tareas repetitivas que se comen tu semana. Dedica tus días a hacer crecer tu negocio, no a perseguirlo.
+        </p>
+        <div class="hero-tags">
+          <span>Para Corredores</span>
+          <span>Para Negocios Locales</span>
+          <span>Restaurantes y Hoteles</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="/es/contacto" class="btn hero-btn-primary">Recuperar Mi Tiempo →</a>
+          <a href="#productos" class="btn hero-btn-ghost">Ver Cómo Funciona</a>
         </div>
       </div>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="/es/contacto" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
-          Recuperar Mi Tiempo →
-        </a>
-        <a href="#productos" class="btn btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
-          Ver Cómo Funciona
-        </a>
+
+      <!-- Right: los seis bloques del agente base -->
+      <div class="mod-stage">
+        <div class="mod m1">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <span><span class="mod-label">Captura consultas</span><span class="mod-meta">Web + WhatsApp</span></span>
+        </div>
+        <div class="mod m2">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+          <span><span class="mod-label">Califica al cliente</span><span class="mod-meta">Pregunta lo necesario</span></span>
+        </div>
+        <div class="mod m3">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/></svg></span>
+          <span><span class="mod-label">Guarda en el CRM</span><span class="mod-meta">Notion, incluido</span></span>
+        </div>
+        <div class="mod m4 is-key">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+          <span><span class="mod-label">Te alerta con borrador</span><span class="mod-meta">Resumen + borrador</span></span>
+        </div>
+        <div class="mod m5">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1a8.4 8.4 0 0 1-.9-3.9 8.4 8.4 0 0 1 8.4-8.4 8.4 8.4 0 0 1 8.6 8.4z"/></svg></span>
+          <span><span class="mod-label">Respuesta automática</span><span class="mod-meta">Instantánea, ES/EN</span></span>
+        </div>
+        <div class="mod m6">
+          <span class="mod-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <span><span class="mod-label">Seguimiento a 2 días</span><span class="mod-meta">Nada se enfría</span></span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing: AI Agent -->
-  <section id="precios-ia" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section id="precios-ia" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
-        <div style="display:inline-block;padding:6px 16px;background:rgba(236,72,153,0.2);border-radius:100px;color:#f9a8d4;font-size:0.85rem;font-weight:600;margin-bottom:16px;">🤖 Asistente</div>
+        <div style="display:inline-block;padding:6px 16px;background:rgba(255,45,149,0.16);border-radius:100px;color:var(--bs-accent);font-size:0.85rem;font-weight:600;margin-bottom:16px;"><svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4"/><circle cx="9" cy="14" r="1.2"/><circle cx="15" cy="14" r="1.2"/></svg> Asistente</div>
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Plan de Asistente</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Un asistente de IA instalado en tu computadora, trabaja con tu correo, archivos y CRM. Bilingüe ES/EN, 24/7.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Un asistente de IA instalado en tu computadora, trabaja con tu correo, archivos y CRM. Bilingüe ES/EN, 24/7.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1200px;margin:0 auto;">
         <!-- AI Agent Setup -->
-        <div style="background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(99,102,241,0.2));border:2px solid rgba(236,72,153,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
-          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#f472b6,#ec4899);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Más Popular</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.16),rgba(255,45,149,0.16));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--bs-accent);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Más Popular</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Asistente</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Asistente IA dedicado para tu negocio, incluye CRM de Notion</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Asistente IA dedicado para tu negocio, incluye CRM de Notion</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:3rem;font-weight:800;color:white;">Q9,900</span>
-            <span style="color:#94a3b8;"> configuración única</span>
+            <span style="color:var(--bs-text-muted);"> configuración única</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Responde preguntas de clientes y toma mensajes 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Gestión de correo y seguimientos automáticos</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Automatización de contenido para Google Business</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Multi-plataforma (WhatsApp + Telegram + Email)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN) + integración CRM</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> <strong style="color:white;">Sistema Notion de Bienes Raíces</strong>. CRM, comisiones, planificador</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Búsqueda de propiedades y generador de descripciones</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Responde preguntas de clientes y toma mensajes 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Gestión de correo y seguimientos automáticos</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Automatización de contenido para Google Business</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Multi-plataforma (WhatsApp + Telegram + Email)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Bilingüe (ES/EN) + integración CRM</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> <strong style="color:white;">CRM de Notion para agentes</strong>. CRM, comisiones, planificador</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Captura, califica y da seguimiento a cada lead automáticamente</li>
           </ul>
-          <a href="/es/products/ai-agent-setup" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">Más Información</a>
+          <a href="/es/products/ai-agent-setup" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Más Información</a>
         </div>
 
         <!-- Support & Maintenance -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Soporte y Mantenimiento</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Optimización continua y soporte prioritario</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Optimización continua y soporte prioritario</p>
           <div style="margin-bottom:8px;">
             <span style="font-size:3rem;font-weight:800;color:white;">Q1,500</span>
-            <span style="color:#94a3b8;">/mes</span>
+            <span style="color:var(--bs-text-muted);">/mes</span>
           </div>
-          <p style="color:#f472b6;font-size:0.85rem;font-weight:500;margin-bottom:24px;">Sin contrato, cancela cuando quieras</p>
+          <p style="color:var(--bs-accent);font-size:0.85rem;font-weight:500;margin-bottom:24px;">Sin contrato, cancela cuando quieras</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Llamada mensual de optimización</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Informe de rendimiento mensual</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Ajustes y mejoras continuas</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Mantenimiento y actualizaciones</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Soporte prioritario, sin esperas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Llamada mensual de optimización</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Informe de rendimiento mensual</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Ajustes y mejoras continuas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Mantenimiento y actualizaciones</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Soporte prioritario, sin esperas</li>
           </ul>
           <a href="/es/products/business-ai-partner" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Más Información</a>
         </div>
 
         <!-- Paquete de Generación de Prospectos -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(99,102,241,0.2));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
-          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#6366f1);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Nuevo</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(255,45,149,0.16));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;display:flex;flex-direction:column;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--bs-bg-raised);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Nuevo</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Paquete de Generación de Prospectos</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Prospectos verificados + IA que les da seguimiento. <strong style="color:white;">Tus prospectos son tuyos. Tu código es tuyo. Tu tranquilidad, también.</strong></p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Prospectos verificados + IA que les da seguimiento. <strong style="color:white;">Tus prospectos son tuyos. Tu código es tuyo. Tu tranquilidad, también.</strong></p>
           <div style="margin-bottom:32px;">
             <span style="font-size:3rem;font-weight:800;color:white;">Q15,200</span>
-            <span style="color:#94a3b8;"> pago único, es tuyo para siempre</span>
+            <span style="color:var(--bs-text-muted);"> pago único, es tuyo para siempre</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Lista de prospectos verificada, reales, enriquecidos, puntuados (cualquier nicho)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Configuración de contacto automatizado</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Agente de IA entrenado en tu nicho y tu propuesta</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Recepcionista IA que captura y califica respuestas 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Sin suscripción, sin contratos, nada que cancelar</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Lista de prospectos verificada, reales, enriquecidos, puntuados (cualquier nicho)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Configuración de contacto automatizado</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Agente de IA entrenado en tu nicho y tu propuesta</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Recepcionista IA que captura y califica respuestas 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Sin suscripción, sin contratos, nada que cancelar</li>
           </ul>
-          <a href="/es/products/lead-generation-pack" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Más Información</a>
+          <a href="/es/products/lead-generation-pack" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Más Información</a>
         </div>
       </div>
 
       <!-- Segunda fila: tiles cuadrados -->
       <div style="text-align:center;margin:56px 0 28px;padding-top:40px;border-top:1px solid rgba(255,255,255,0.1);">
-        <p style="color:#94a3b8;font-size:1rem;margin:0;">¿Ya tienes un agente de IA o un proceso de contacto? <strong style="color:white;">Súmale combustible</strong>, una lista de prospectos verificada que es tuya, o un sistema que convierte a tus clientes anteriores en reseñas.</p>
+        <p style="color:var(--bs-text-muted);font-size:1rem;margin:0;">¿Ya tienes un agente de IA o un proceso de contacto? <strong style="color:white;">Súmale combustible</strong>, una lista de prospectos verificada que es tuya, o un sistema que convierte a tus clientes anteriores en reseñas.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1140px;margin:0 auto;">
         <!-- Lista Inicial de Prospectos -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(16,185,129,0.04));border:2px solid rgba(16,185,129,0.4);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;">
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.10),rgba(16,185,129,0.04));border:2px solid rgba(255,45,149,0.35);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;">
           <h3 style="color:white;font-size:1.2rem;margin-bottom:6px;">Lista Inicial de Prospectos</h3>
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:16px;">Hasta ~25 prospectos verificados, un nicho/zona</p>
+          <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:16px;">Hasta ~25 prospectos verificados, un nicho/zona</p>
           <div style="margin-bottom:12px;">
             <span style="font-size:2.4rem;font-weight:800;color:white;">Q3,800</span>
-            <span style="color:#94a3b8;"> pago único</span>
+            <span style="color:var(--bs-text-muted);"> pago único</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;text-align:left;align-self:stretch;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Contactos reales, verificados y enriquecidos</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Puntuados y etiquetados por oportunidad</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Es tuyo para siempre</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Contactos reales, verificados y enriquecidos</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Puntuados y etiquetados por oportunidad</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Es tuyo para siempre</li>
           </ul>
-          <a href="/es/products/lead-generation-starter-list" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Más Información</a>
+          <a href="/es/products/lead-generation-starter-list" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Más Información</a>
         </div>
 
         <!-- Lista Pro de Prospectos -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(99,102,241,0.15));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
-          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#6366f1);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Mejor Valor</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(255,45,149,0.12));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
+          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--bs-bg-raised);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Mejor Valor</div>
           <h3 style="color:white;font-size:1.2rem;margin-bottom:6px;">Lista Pro de Prospectos</h3>
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:16px;">Hasta ~100 prospectos + plantillas de contacto</p>
+          <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:16px;">Hasta ~100 prospectos + plantillas de contacto</p>
           <div style="margin-bottom:12px;">
             <span style="font-size:2.4rem;font-weight:800;color:white;">Q7,600</span>
-            <span style="color:#94a3b8;"> pago único</span>
+            <span style="color:var(--bs-text-muted);"> pago único</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;text-align:left;align-self:stretch;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Todo lo de la Lista Inicial, 4x más prospectos</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Enriquecimiento más profundo</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Plantillas de mensajes incluidas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Todo lo de la Lista Inicial, 4x más prospectos</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Enriquecimiento más profundo</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Plantillas de mensajes incluidas</li>
           </ul>
-          <a href="/es/products/lead-generation-pro-list" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Más Información</a>
+          <a href="/es/products/lead-generation-pro-list" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Más Información</a>
         </div>
 
         <!-- Review Engine -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(99,102,241,0.15));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
-          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#6366f1);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Nuevo</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(255,45,149,0.12));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:center;text-align:center;aspect-ratio:1/1;position:relative;">
+          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--bs-bg-raised);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Nuevo</div>
           <h3 style="color:white;font-size:1.2rem;margin-bottom:6px;">Review Engine</h3>
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:16px;">Convertimos a tus clientes anteriores en tu fuente de reseñas</p>
+          <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:16px;">Convertimos a tus clientes anteriores en tu fuente de reseñas</p>
           <div style="margin-bottom:12px;">
             <span style="font-size:2.4rem;font-weight:800;color:white;">Q3,800</span>
-            <span style="color:#94a3b8;"> configuración + Q740/mes</span>
+            <span style="color:var(--bs-text-muted);"> configuración + Q740/mes</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;text-align:left;align-self:stretch;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Le pide reseña a cada cliente anterior, sin comprar reseñas</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Recupera clientes callados</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Informe mensual de reseñas y calificación</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Le pide reseña a cada cliente anterior, sin comprar reseñas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Recupera clientes callados</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Informe mensual de reseñas y calificación</li>
           </ul>
-          <a href="/es/products/review-engine" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Más Información</a>
+          <a href="/es/products/review-engine" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Más Información</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing: Websites -->
-  <section id="precios-sitios" style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section id="precios-sitios" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
-        <div style="display:inline-block;padding:6px 16px;background:rgba(99,102,241,0.2);border-radius:100px;color:#a5b4fc;font-size:0.85rem;font-weight:600;margin-bottom:16px;">🌐 Diseño de Sitios Web</div>
+        <div style="display:inline-block;padding:6px 16px;background:rgba(255,45,149,0.16);border-radius:100px;color:var(--bs-text-muted);font-size:0.85rem;font-weight:600;margin-bottom:16px;"><svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18"/><path d="M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg> Diseño de Sitios Web</div>
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Planes de Sitios Web</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Sitios web profesionales a precios justos. Sin costos ocultos, sin sorpresas.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Sitios web profesionales a precios justos. Sin costos ocultos, sin sorpresas.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1000px;margin:0 auto;">
         <!-- Starter -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Básico</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Perfecto para negocios nuevos</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Perfecto para negocios nuevos</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:2rem;font-weight:800;color:white;">Q3,800</span>
-            <span style="color:#94a3b8;"> pago único</span>
+            <span style="color:var(--bs-text-muted);"> pago único</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 1-3 páginas</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Responsivo para celular</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Botón de WhatsApp</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Google Maps</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Formulario de contacto</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> 1-3 páginas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Responsivo para celular</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Botón de WhatsApp</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Google Maps</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Formulario de contacto</li>
           </ul>
           <a href="/es/products/website-starter" class="btn btn-secondary" style="width:100%;justify-content:center;">Más Información</a>
         </div>
         
         <!-- Professional -->
-        <div style="background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(236,72,153,0.2));border:2px solid rgba(99,102,241,0.5);border-radius:24px;padding:40px;position:relative;">
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.16),rgba(255,45,149,0.16));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;">
           <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gradient-primary);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Más Popular</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Profesional</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Para negocios en crecimiento</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Para negocios en crecimiento</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:2rem;font-weight:800;color:white;">Q7,600</span>
-            <span style="color:#94a3b8;"> pago único</span>
+            <span style="color:var(--bs-text-muted);"> pago único</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 5-7 páginas</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Todo lo del plan Básico</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Galería de fotos</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Optimización SEO &amp; AEO</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> 5-7 páginas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Todo lo del plan Básico</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Bilingüe (ES/EN)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Galería de fotos</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Optimización SEO &amp; AEO</li>
           </ul>
           <a href="/es/products/website-professional" class="btn btn-primary" style="width:100%;justify-content:center;">Más Información</a>
         </div>
@@ -217,17 +239,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <!-- Premium -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Premium</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Para negocios establecidos</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Para negocios establecidos</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:2rem;font-weight:800;color:white;">Q15,300</span>
-            <span style="color:#94a3b8;"> pago único</span>
+            <span style="color:var(--bs-text-muted);"> pago único</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> 10+ páginas</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Todo lo del plan Profesional</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Blog configurado</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Funciones personalizadas</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Soporte prioritario</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> 10+ páginas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Todo lo del plan Profesional</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Blog configurado</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Funciones personalizadas</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Soporte prioritario</li>
           </ul>
           <a href="/es/products/website-premium" class="btn btn-secondary" style="width:100%;justify-content:center;">Más Información</a>
         </div>
@@ -236,60 +258,60 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <!-- Servicios Adicionales -->
       <div style="margin-top:48px;">
         <div style="text-align:center;margin-bottom:32px;">
-          <p style="color:#94a3b8;font-size:0.95rem;">Agrega estos servicios a cualquier plan de sitio web, mensual o pago único.</p>
+          <p style="color:var(--bs-text-muted);font-size:0.95rem;">Agrega estos servicios a cualquier plan de sitio web, mensual o pago único.</p>
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;max-width:1000px;margin:0 auto;">
         
           <!-- CMS Add-on -->
           <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
-            <div style="font-size:2rem;margin-bottom:10px;">🖥️</div>
+            <div style="font-size:2rem;margin-bottom:10px;"><svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg></div>
             <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Editor CMS</h3>
-            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">Actualiza texto y fotos cuando quieras</p>
+            <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:20px;">Actualiza texto y fotos cuando quieras</p>
             <div style="margin-bottom:16px;">
               <span style="font-size:2rem;font-weight:800;color:white;">Q1,000</span>
-              <span style="color:#94a3b8;font-size:0.9rem;"> pago único</span>
+              <span style="color:var(--bs-text-muted);font-size:0.9rem;"> pago único</span>
             </div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Edita texto e imágenes tú mismo</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Sin saber programar</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Agrega páginas nuevas cuando quieras</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Edita texto e imágenes tú mismo</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Sin saber programar</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Agrega páginas nuevas cuando quieras</li>
             </ul>
             <a href="/es/contacto" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;">Agregar al Sitio →</a>
           </div>
 
           <!-- Content Booster - $149 -> Q1,140 -->
-          <div style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(6,182,212,0.15));border:2px solid rgba(99,102,241,0.4);border-radius:20px;padding:28px;position:relative;display:flex;flex-direction:column;">
-            <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#818cf8,#06b6d4);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Más Vendido</div>
-            <div style="font-size:2rem;margin-bottom:10px;">📝</div>
+          <div style="background:linear-gradient(135deg,rgba(255,45,149,0.12),rgba(6,182,212,0.15));border:2px solid rgba(255,45,149,0.35);border-radius:20px;padding:28px;position:relative;display:flex;flex-direction:column;">
+            <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--bs-accent);color:white;padding:4px 16px;border-radius:100px;font-size:0.75rem;font-weight:600;white-space:nowrap;">Más Vendido</div>
+            <div style="font-size:2rem;margin-bottom:10px;"><svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><path d="M4 20h4l10-10a2.8 2.8 0 0 0-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></div>
             <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Impulso de Contenido</h3>
-            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">Blog diario + publicaciones GBP semanales</p>
+            <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:20px;">Blog diario + publicaciones GBP semanales</p>
             <div style="margin-bottom:8px;">
               <span style="font-size:2rem;font-weight:800;color:white;">Q1,140</span>
-              <span style="color:#94a3b8;font-size:0.9rem;">/mes</span>
+              <span style="color:var(--bs-text-muted);font-size:0.9rem;">/mes</span>
             </div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Blogs diarios escritos y publicados</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> 3 publicaciones semanales en GBP</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Contenido optimizado para SEO &amp; AEO</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN)</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Blogs diarios escritos y publicados</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> 3 publicaciones semanales en GBP</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Contenido optimizado para SEO &amp; AEO</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Bilingüe (ES/EN)</li>
             </ul>
-            <a href="/es/products/content-booster" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;background:linear-gradient(135deg,#818cf8,#6366f1);box-shadow:0 4px 15px rgba(99,102,241,0.3);">Más Información</a>
+            <a href="/es/products/content-booster" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.28);">Más Información</a>
           </div>
 
           <!-- Content Pro - $199 -> Q1,520 -->
           <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:28px;backdrop-filter:blur(10px);display:flex;flex-direction:column;">
-            <div style="font-size:2rem;margin-bottom:10px;">🚀</div>
+            <div style="font-size:2rem;margin-bottom:10px;"><svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><path d="M12 3c3.5 2 5.5 5.5 5.5 9l-3 3h-5l-3-3c0-3.5 2-7 5.5-9z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 18l-1.5 3"/><path d="M15 18l1.5 3"/></svg></div>
             <h3 style="color:white;font-size:1.15rem;margin-bottom:4px;">Contenido Pro</h3>
-            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:20px;">Todo el contenido + cambios mensuales</p>
+            <p style="color:var(--bs-text-muted);font-size:0.85rem;margin-bottom:20px;">Todo el contenido + cambios mensuales</p>
             <div style="margin-bottom:8px;">
               <span style="font-size:2rem;font-weight:800;color:white;">Q1,520</span>
-              <span style="color:#94a3b8;font-size:0.9rem;">/mes</span>
+              <span style="color:var(--bs-text-muted);font-size:0.9rem;">/mes</span>
             </div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Todo lo del plan Impulso</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Hasta 5 cambios de página al mes</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Soporte prioritario</li>
-              <li style="color:#cbd5e1;display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:#10b981;">✓</span> Informe de rendimiento mensual</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Todo lo del plan Impulso</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Hasta 5 cambios de página al mes</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Soporte prioritario</li>
+              <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:10px;font-size:0.9rem;"><span style="color:var(--bs-text);">✓</span> Informe de rendimiento mensual</li>
             </ul>
             <a href="/es/products/content-pro" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;font-size:0.9rem;padding:12px;">Más Información</a>
           </div>
@@ -300,123 +322,123 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <!-- Pricing: AI Receptionist -->
-  <section id="precios-recepcionista" style="padding:100px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+  <section id="precios-recepcionista" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
-        <div style="display:inline-block;padding:6px 16px;background:rgba(16,185,129,0.2);border-radius:100px;color:#6ee7b7;font-size:0.85rem;font-weight:600;margin-bottom:16px;">📞 Recepcionista</div>
+        <div style="display:inline-block;padding:6px 16px;background:rgba(255,45,149,0.16);border-radius:100px;color:var(--bs-accent);font-size:0.85rem;font-weight:600;margin-bottom:16px;">Recepcionista</div>
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Planes de Recepcionista</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Tu recepcionista IA contesta llamadas y mensajes 24/7, para que nunca pierdas un cliente.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Tu recepcionista IA contesta llamadas y mensajes 24/7, para que nunca pierdas un cliente.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:900px;margin:0 auto;">
         <!-- Text Receptionist -->
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;backdrop-filter:blur(10px);">
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Recepción por Texto</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Mensajería WhatsApp con IA</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Mensajería WhatsApp con IA</p>
           <div style="margin-bottom:32px;">
             <span style="font-size:2rem;font-weight:800;color:white;">Q2,300</span>
-            <span style="color:#94a3b8;"> pago único</span>
+            <span style="color:var(--bs-text-muted);"> pago único</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Respuestas automáticas WhatsApp 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Responde preguntas y toma mensajes</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Bilingüe (ES/EN)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Funciona fuera de horario y fines de semana</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Configuración y entrenamiento incluido</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Respuestas automáticas WhatsApp 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Responde preguntas y toma mensajes</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Bilingüe (ES/EN)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Funciona fuera de horario y fines de semana</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Configuración y entrenamiento incluido</li>
           </ul>
           <a href="/es/products/text-receptionist" class="btn btn-secondary" style="width:100%;justify-content:center;">Más Información</a>
         </div>
         
         <!-- Voice Receptionist Bundle -->
-        <div style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.2));border:2px solid rgba(16,185,129,0.5);border-radius:24px;padding:40px;position:relative;">
-          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#10b981,#059669);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Mejor Valor</div>
+        <div style="background:linear-gradient(135deg,rgba(255,45,149,0.16),rgba(6,182,212,0.2));border:2px solid rgba(255,45,149,0.45);border-radius:24px;padding:40px;position:relative;">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--bs-accent);color:white;padding:6px 20px;border-radius:100px;font-size:0.85rem;font-weight:600;">Mejor Valor</div>
           <h3 style="color:white;font-size:1.5rem;margin-bottom:8px;">Recepción por Voz</h3>
-          <p style="color:#94a3b8;margin-bottom:24px;">Recepcionista IA completo, voz + texto</p>
+          <p style="color:var(--bs-text-muted);margin-bottom:24px;">Recepcionista IA completo, voz + texto</p>
           <div style="margin-bottom:8px;">
             <span style="font-size:2rem;font-weight:800;color:white;">Q4,200</span>
-            <span style="color:#94a3b8;"> configuración</span>
+            <span style="color:var(--bs-text-muted);"> configuración</span>
           </div>
-          <p style="color:#94a3b8;font-size:0.95rem;margin-bottom:8px;">Cliente paga Vapi directamente (~$30-50/mes)</p>
+          <p style="color:var(--bs-text-muted);font-size:0.95rem;margin-bottom:8px;">Cliente paga Vapi directamente (~$30-50/mes)</p>
           <div style="margin-bottom:32px;">
-            <span style="font-size:1.25rem;font-weight:700;color:#6ee7b7;">Soporte opcional:</span>
-            <span style="color:#cbd5e1;font-weight:600;"> Q220</span>
-            <span style="color:#94a3b8;">/mes</span>
+            <span style="font-size:1.25rem;font-weight:700;color:var(--bs-accent);">Soporte opcional:</span>
+            <span style="color:var(--bs-text-muted);font-weight:600;"> $97</span>
+            <span style="color:var(--bs-text-muted);">/mes</span>
           </div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Todo lo del plan de Texto</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> IA contesta llamadas telefónicas 24/7</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Voz IA natural (ES/EN)</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Toma mensajes y transfiere llamadas urgentes</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Cubre fuera de horario y fines de semana</li>
-            <li style="color:#cbd5e1;display:flex;align-items:center;gap:12px;"><span style="color:#10b981;">✓</span> Mantenimiento continuo y ajustes (Q220/mes opcional)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Todo lo del plan de Texto</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> IA contesta llamadas telefónicas 24/7</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Voz IA natural (ES/EN)</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Toma mensajes y transfiere llamadas urgentes</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Cubre fuera de horario y fines de semana</li>
+            <li style="color:var(--bs-text-muted);display:flex;align-items:center;gap:12px;"><span style="color:var(--bs-text);">✓</span> Mantenimiento continuo y ajustes (soporte opcional desde $97/mes)</li>
           </ul>
-          <a href="/es/products/voice-receptionist" class="btn btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">Más Información</a>
+          <a href="/es/products/voice-receptionist" class="btn btn-primary" style="width:100%;justify-content:center;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Más Información</a>
         </div>
       </div>
 
       <!-- Note -->
       <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(255,255,255,0.05);border-radius:16px;max-width:700px;margin-left:auto;margin-right:auto;">
-        <p style="color:#94a3b8;font-size:0.95rem;">
-          <strong style="color:white;">¡Combina ambos productos!</strong> Agrega un Sitio Web + Recepcionista IA para la configuración completa de tu negocio. <a href="/es/contacto" style="color:#6ee7b7;text-decoration:underline;">Contáctanos</a> para un paquete personalizado.
+        <p style="color:var(--bs-text-muted);font-size:0.95rem;">
+          <strong style="color:white;">¡Combina ambos productos!</strong> Agrega un Sitio Web + Recepcionista IA para la configuración completa de tu negocio. <a href="/es/contacto" style="color:var(--bs-accent);text-decoration:underline;">Contáctanos</a> para un paquete personalizado.
         </p>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;margin-bottom:16px;color:white;">Cómo Funciona</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Tres pasos simples, sin importar qué producto elijas.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Tres pasos simples, sin importar qué producto elijas.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;">
         <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">1</div>
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">1</div>
           <h3 style="font-size:1.25rem;margin-bottom:12px;color:white;">Cuéntanos Lo Que Necesitas</h3>
-          <p style="color:#94a3b8;line-height:1.8;">Comparte los detalles y objetivos de tu negocio. Ya sea un sitio web, un asistente de IA, o ambos, te recomendaremos la solución correcta.</p>
+          <p style="color:var(--bs-text-muted);line-height:1.8;">Comparte los detalles y objetivos de tu negocio. Ya sea un sitio web, un asistente de IA, o ambos, te recomendaremos la solución correcta.</p>
         </div>
         
         <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#06b6d4,#6366f1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">2</div>
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">2</div>
           <h3 style="font-size:1.25rem;margin-bottom:12px;color:white;">Lo Construimos Para Ti</h3>
-          <p style="color:#94a3b8;line-height:1.8;">Nuestro proceso impulsado por IA crea tu solución en solo 2-3 días. Tú revisas, das feedback y apruebas.</p>
+          <p style="color:var(--bs-text-muted);line-height:1.8;">Nuestro proceso impulsado por IA crea tu solución en solo 2-3 días. Tú revisas, das feedback y apruebas.</p>
         </div>
         
         <div style="text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">3</div>
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:white;margin:0 auto 24px;">3</div>
           <h3 style="font-size:1.25rem;margin-bottom:12px;color:white;">En Línea y Creciendo</h3>
-          <p style="color:#94a3b8;line-height:1.8;">Tu sitio está en vivo o tu agente de IA empieza a trabajar. Comparte el enlace, automatiza tareas y empieza a ver resultados.</p>
+          <p style="color:var(--bs-text-muted);line-height:1.8;">Tu sitio está en vivo o tu agente de IA empieza a trabajar. Comparte el enlace, automatiza tareas y empieza a ver resultados.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Products Section -->
-  <section id="productos" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section id="productos" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;margin-bottom:16px;color:white;">Nuestros Productos</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Cuatro soluciones poderosas para hacer crecer tu negocio, una presencia profesional en línea, automatización inteligente, atención de llamadas 24/7 y prospectos reales que son tuyos.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Cuatro soluciones poderosas para hacer crecer tu negocio, una presencia profesional en línea, automatización inteligente, atención de llamadas 24/7 y prospectos reales que son tuyos.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;max-width:1200px;margin:0 auto;">
         <!-- Product 1: Website Design -->
         <div style="background:rgba(255,255,255,0.05);border-radius:24px;padding:48px;border:1px solid rgba(255,255,255,0.1);text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🌐
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18"/><path d="M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg>
           </div>
           <h3 style="font-size:1.5rem;margin-bottom:16px;color:white;">Diseño de Sitios Web</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             Sitios web profesionales, optimizados para celular, que cargan rápido y convierten visitantes en clientes. Bilingües, con SEO &amp; AEO e integración de WhatsApp, entregados en 2-3 días.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Mobile-First</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Bilingüe</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">SEO &amp; AEO</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">WhatsApp</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Rápido</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Mobile-First</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingüe</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">SEO &amp; AEO</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">WhatsApp</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Rápido</span>
           </div>
           <a href="#precios-sitios" class="btn btn-primary" style="display:inline-flex;">
             Ver Planes de Sitios →
@@ -425,63 +447,63 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         
         <!-- Product 2: AI Agent Setup -->
         <div style="background:rgba(255,255,255,0.05);border-radius:24px;padding:48px;border:1px solid rgba(255,255,255,0.1);text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#f472b6,#ec4899);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🤖
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4"/><circle cx="9" cy="14" r="1.2"/><circle cx="15" cy="14" r="1.2"/></svg>
           </div>
           <h3 style="font-size:1.5rem;margin-bottom:16px;color:white;">Asistente</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             Un asistente de IA dedicado a tu negocio, responde preguntas de clientes, gestiona tareas, automatiza trabajo repetitivo y te ayuda a mantener todo organizado. Funciona en WhatsApp, Telegram, correo y más.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Atención al Cliente</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Automatización</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Multi-Plataforma</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Bilingüe</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">24/7</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Atención al Cliente</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Automatización</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Multi-Plataforma</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingüe</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">24/7</span>
           </div>
-          <a href="#precios-ia" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#f472b6,#ec4899);box-shadow:0 4px 15px rgba(236,72,153,0.4);">
+          <a href="#precios-ia" class="btn btn-primary" style="display:inline-flex;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">
             Ver Planes de IA →
           </a>
         </div>
         
         <!-- Product 3: AI Receptionist -->
         <div style="background:rgba(255,255,255,0.05);border-radius:24px;padding:48px;border:1px solid rgba(255,255,255,0.1);text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#059669);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            📞
+          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6 6L16 12.5l4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3z"/></svg>
           </div>
           <h3 style="font-size:1.5rem;margin-bottom:16px;color:white;">Recepcionista</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             Nunca pierdas una llamada. Nuestro recepcionista IA contesta tu teléfono 24/7 con voz natural, habla español e inglés, toma mensajes y transfiere llamadas urgentes, incluso fuera de horario y fines de semana.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Llamadas 24/7</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Voz IA</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Bilingüe</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Toma Mensajes</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Urgentes</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Llamadas 24/7</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Voz IA</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingüe</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Toma Mensajes</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Urgentes</span>
           </div>
-          <a href="#precios-recepcionista" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+          <a href="#precios-recepcionista" class="btn btn-primary" style="display:inline-flex;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">
             Ver Planes de Recepción →
           </a>
         </div>
 
         <!-- Product 4: Generación de Prospectos -->
         <div style="background:rgba(255,255,255,0.05);border-radius:24px;padding:48px;border:1px solid rgba(255,255,255,0.1);text-align:center;">
-          <div style="width:80px;height:80px;background:linear-gradient(135deg,#10b981,#6366f1);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            🎯
+          <div style="width:80px;height:80px;background:var(--bs-bg-raised);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
+            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg>
           </div>
           <h3 style="font-size:1.5rem;margin-bottom:16px;color:white;">Generación de Prospectos</h3>
-          <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
+          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
             Prospectos reales y verificados más la IA que les da seguimiento. Te armamos una lista puntuada y enriquecida que es tuya para siempre, con contacto automatizado y un agente + recepcionista IA que capturan y califican respuestas 24/7.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Prospectos Verificados</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Cualquier Nicho</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Es Tuyo</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Seguimiento IA</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:#cbd5e1;">Sin Contratos</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Prospectos Verificados</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Cualquier Nicho</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Es Tuyo</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Seguimiento IA</span>
+            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Sin Contratos</span>
           </div>
-          <a href="#precios-ia" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#6366f1);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+          <a href="#precios-ia" class="btn btn-primary" style="display:inline-flex;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">
             Ver Planes de Prospectos →
           </a>
         </div>
@@ -490,24 +512,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
     <!-- Sobre Mí -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0a1628 0%,#0d2818 50%,#1a3a2a 100%);">
+  <section style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;margin-bottom:16px;color:white;">Conoce a Tu Instaladora de IA</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Soy Luna, instalo agentes de IA para pequeños negocios. Así nació Birky Studio.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Soy Luna, instalo agentes de IA para pequeños negocios. Así nació Birky Studio.</p>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:48px;align-items:center;max-width:900px;margin:0 auto;">
         <div>
           <img src="/images/luna-about.jpg" alt="Luna. Birky Studio" style="width:100%;border-radius:24px;box-shadow:0 8px 30px rgba(0,0,0,0.3);">
         </div>
         <div>
-          <p style="color:#94a3b8;font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
-            Soy agente de bienes raíces en Antigua Guatemala y me cansé del trabajo administrativo manual, búsquedas de propiedades, descripciones, correos, seguimientos, actualizaciones de CRM. Así que construí mi propio asistente de IA para encargarse de todo.
+          <p style="color:var(--bs-text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
+            Soy agente de bienes raíces en Antigua Guatemala y me cansé del trabajo administrativo manual, correos, seguimientos, actualizaciones de CRM. Así que construí mi propio asistente de IA para encargarse de todo.
           </p>
-          <p style="color:#94a3b8;font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
+          <p style="color:var(--bs-text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:20px;">
             Funcionó tan bien que otros agentes empezaron a pedirme que les instalara uno también. Así nació Birky Studio, no una empresa de tecnología, solo alguien que encontró una mejor manera y quiere compartirla.
           </p>
-          <p style="color:#94a3b8;font-size:1.05rem;line-height:1.8;">
+          <p style="color:var(--bs-text-muted);font-size:1.05rem;line-height:1.8;">
             Cada agente de IA que instalo es el mismo que uso yo misma. Ha sido probado en batalla, funciona, y lo configuro personalmente para ti mediante compartición de pantalla. Sin intermediarios, sin tickets de soporte anónimos, solo yo, tu computadora y 2-3 horas.
           </p>
         </div>
@@ -515,44 +537,36 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
   <!-- Testimonios + Garantía -->
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;margin-bottom:16px;color:white;">Dueños de Negocios Confían en Nosotros</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Resultados reales de clientes reales. Sin reseñas falsas, sin rodeos.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Resultados reales de clientes reales. Sin reseñas falsas, sin rodeos.</p>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1000px;margin:0 auto 64px;">
         <div style="background:rgba(255,255,255,0.05);border-radius:24px;padding:32px;border:1px solid rgba(255,255,255,0.1);">
           <div style="display:flex;gap:4px;margin-bottom:16px;">
-            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
+            <span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span>
           </div>
-          <p style="color:#cbd5e1;font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"Tuve mi sitio web en vivo en 3 días y es hermoso. La configuración bilingüe significa que mis clientes de habla inglesa y española reciben la misma gran experiencia. Muy recomendado."</p>
+          <p style="color:var(--bs-text-muted);font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"Tuve mi sitio web en vivo en 3 días y es hermoso. La configuración bilingüe significa que mis clientes de habla inglesa y española reciben la misma gran experiencia. Muy recomendado."</p>
           <div style="font-weight:600;color:white;font-size:0.9rem;">- María G., Agente de Bienes Raíces</div>
         </div>
         
         <div style="background:rgba(255,255,255,0.05);border-radius:24px;padding:32px;border:1px solid rgba(255,255,255,0.1);">
           <div style="display:flex;gap:4px;margin-bottom:16px;">
-            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
+            <span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span><span style="color:var(--bs-accent);">★</span>
           </div>
-          <p style="color:#cbd5e1;font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"El agente IA maneja mis mensajes de WhatsApp, búsquedas de propiedades y descripciones. Estoy ahorrando como 8 horas a la semana. La mejor inversión que he hecho para mi negocio."</p>
-          <div style="font-weight:600;color:white;font-size:0.9rem;">- Carlos R., Corredor</div>
-        </div>
-        
-        <div style="background:rgba(255,255,255,0.05);border-radius:24px;padding:32px;border:1px solid rgba(255,255,255,0.1);">
-          <div style="display:flex;gap:4px;margin-bottom:16px;">
-            <span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span>
-          </div>
-          <p style="color:#cbd5e1;font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"Era escéptica sobre los recepcionistas IA, pero contesta mis llamadas mejor que mi último asistente. Nunca pierdo un cliente potencial, ni siquiera a las 2am."</p>
+          <p style="color:var(--bs-text-muted);font-size:1rem;line-height:1.7;margin-bottom:16px;font-style:italic;">"Era escéptica sobre los recepcionistas IA, pero contesta mis llamadas mejor que mi último asistente. Nunca pierdo un cliente potencial, ni siquiera a las 2am."</p>
           <div style="font-weight:600;color:white;font-size:0.9rem;">- Ana S., Dueña de Hotel</div>
         </div>
       </div>
       
       <!-- Garantía Banner -->
-      <div style="text-align:center;padding:40px;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);border-radius:24px;max-width:800px;margin:0 auto;">
-        <div style="font-size:2.5rem;margin-bottom:16px;">🛡️</div>
+      <div style="text-align:center;padding:40px;background:var(--bs-bg-deep);border-radius:24px;max-width:800px;margin:0 auto;">
+        <div style="font-size:2.5rem;margin-bottom:16px;"><svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><path d="M12 3l7 3v6c0 4.2-2.9 7.7-7 9-4.1-1.3-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3 style="font-size:1.5rem;color:white;margin-bottom:12px;">Garantía de Satisfacción de 30 Días</h3>
-        <p style="color:#94a3b8;font-size:1.05rem;max-width:550px;margin:0 auto;line-height:1.7;">
+        <p style="color:var(--bs-text-muted);font-size:1.05rem;max-width:550px;margin:0 auto;line-height:1.7;">
           Si algo no funciona durante la instalación, lo arreglamos o te devolvemos tu dinero. Sin preguntas. Cada proyecto incluye 30 días de soporte y revisiones gratuitas.
         </p>
       </div>
@@ -560,21 +574,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
 <!-- FAQ Section -->
-  <section id="faq" style="padding:100px 0;background:linear-gradient(135deg,#1a0f2e 0%,#2d1b4e 100%);">
+  <section id="faq" style="padding:100px 0">
     <div class="container">
       <div style="text-align:center;margin-bottom:64px;">
         <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Preguntas Frecuentes</h2>
-        <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Respuestas directas sobre sitios web, agentes IA, precios y entrega.</p>
+        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Respuestas directas sobre sitios web, agentes IA, precios y entrega.</p>
       </div>
       
       <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             ¿Cuánto cuesta un sitio web para un negocio pequeño?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
               Birky Studio construye sitios web desde Q3,800 para un sitio Básico de 1-3 páginas, Q7,600 para un sitio Profesional bilingüe de 4-7 páginas, y Q15,300 para un sitio Premium de 10+ páginas con blog y funciones personalizadas. Todos los precios son de pago único, sin cargos ocultos.
             </p>
           </div>
@@ -583,11 +597,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             ¿Qué es un agente de IA y qué puede hacer por mi negocio?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
-              Un agente de IA es un asistente instalado en tu computadora que se conecta a tu correo, archivos y CRM. Responde preguntas de clientes, automatiza tareas repetitivas, redacta correos, gestiona tu calendario y trabaja 24/7 en español e inglés. Nuestro Agente IA por Q9,900 incluye el Sistema Notion de Bienes Raíces con CRM personalizado.
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+              Un agente de IA es un asistente instalado en tu computadora que se conecta a tu correo, archivos y CRM. Responde preguntas de clientes, automatiza tareas repetitivas, redacta correos, gestiona tu calendario y trabaja 24/7 en español e inglés. Nuestro Agente IA por Q9,900 incluye el CRM de Notion para agentes con CRM personalizado.
             </p>
           </div>
         </div>
@@ -595,11 +609,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             ¿Cuánto cuesta un recepcionista IA?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
-              El Recepcionista por Texto para WhatsApp cuesta Q2,300 (pago único). El Recepcionista por Voz, que contesta llamadas 24/7, cuesta Q4,200 de configuración, el cliente paga la empresa de llamadas directamente (~$30-50/mes). El soporte opcional es Q373/mes, sin contrato.
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+              El Recepcionista por Texto para WhatsApp cuesta Q2,300 (pago único). El Recepcionista por Voz, que contesta llamadas 24/7, cuesta Q4,200 de configuración, el cliente paga la empresa de llamadas directamente (~$30-50/mes). El soporte opcional es $97/mes (Cuidado y Mantenimiento) o $197/mes (Socio de IA para Negocios), sin contrato.
             </p>
           </div>
         </div>
@@ -607,10 +621,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             ¿Necesito conocimientos técnicos para usar un agente IA?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
               No necesitas conocimientos técnicos. Luna instala y configura todo personalmente mediante una sesión de compartir pantalla que toma 2-3 horas, incluyendo entrenamiento completo. Después lo usas a través de WhatsApp o Telegram como un chat normal.
             </p>
           </div>
@@ -619,10 +633,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             ¿Cuánto tiempo toma tener un sitio web o agente IA?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
               Los sitios web se entregan en 2-3 días. La instalación del agente IA toma una sesión remota de 2-3 horas. Los recepcionistas de texto están listos en 1-2 días, y los de voz en 2-3 días. Cada proyecto incluye 30 días de soporte gratuito.
             </p>
           </div>
@@ -631,10 +645,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;">
           <button onclick="toggleFaq(this)" style="width:100%;background:none;border:none;color:white;font-size:1.05rem;font-weight:600;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;display:flex;justify-content:space-between;align-items:center;gap:16px;">
             ¿Qué pasa si no me gusta el resultado?
-            <span style="color:#818cf8;font-size:1.2rem;flex-shrink:0;">+</span>
+            <span style="color:var(--bs-accent);font-size:1.2rem;flex-shrink:0;">+</span>
           </button>
           <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
-            <p style="color:#94a3b8;padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
+            <p style="color:var(--bs-text-muted);padding:0 24px 20px;line-height:1.7;font-size:0.95rem;">
               Estás cubierto por nuestra garantía de satisfacción de 30 días. Si algo no funciona durante la instalación, lo arreglamos o te devolvemos tu dinero. También recibes revisiones gratuitas durante la instalación y 30 días de soporte, sin contratos obligatorios.
             </p>
           </div>
@@ -643,7 +657,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 <!-- CTA Section -->
-  <section style="padding:100px 0;background:white;">
+  <section style="padding:100px 0">
     <div class="container" style="text-align:center;">
       <h2 style="font-size:2.5rem;margin-bottom:16px;">¿Listo Para Trabajar Más Inteligente?</h2>
       <p style="color:var(--color-gray);font-size:1.1rem;max-width:600px;margin:0 auto 40px;">Ya sea que necesites un sitio web, un asistente de IA, o ambos, construyamos algo genial para tu negocio.</p>

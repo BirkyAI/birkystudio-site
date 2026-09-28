@@ -12,7 +12,7 @@ You are paying $150, $200, or even $500 every single month for an AI receptionis
 
 What if instead, you paid once and kept the change?
 
-That is exactly what Birky Studio's AI Voice Receptionist does. One flat setup fee of $550. No recurring charges for the software. No monthly minimums. No contracts. Your business gets a 24/7 AI receptionist that answers calls, books appointments, and screens leads. You pay for the Vapi usage (roughly $30 to $50 a month depending on call volume) and the optional $29/month support package. Everything else is yours.
+That is exactly what Birky Studio's AI Voice Receptionist does. One flat setup fee of $550. No recurring charges for the software. No monthly minimums. No contracts. Your business gets a 24/7 AI receptionist that answers calls, books appointments, and screens leads. You pay for the Vapi usage (roughly $30 to $50 a month depending on call volume) and the optional $97/month support package. Everything else is yours.
 
 Let me show you why this matters, especially for small businesses in Guatemala where every dollar counts.
 
@@ -75,9 +75,9 @@ What started as a $99/month plan is suddenly $264/month. And those add-on charge
 
 With Birky Studio's approach, everything is included in the setup. Spanish support, calendar sync, lead capture, custom workflows, call transcripts. It all works on day one. The only recurring cost is the Vapi voice minutes, which average $30 to $50 per month for most small businesses.
 
-## The Optional Support Package ($29/month)
+## The Optional Support Package ($97/month)
 
-Some businesses want ongoing support. They want me to tweak the scripts, add new features, and be available when they need help. That is why the optional $29/month support package exists.
+Some businesses want ongoing support. They want me to tweak the scripts, add new features, and be available when they need help. That is why the optional $97/month support package exists.
 
 But here is the important part: it is optional. Many of my clients set up their AI receptionist, test it for a week, and never need me again. They pay nothing beyond the Vapi usage. The receptionist runs itself.
 

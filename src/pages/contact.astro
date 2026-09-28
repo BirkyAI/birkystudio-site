@@ -4,38 +4,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="Contact" description="Get in touch to start your website project. Fast response, free quotes." image="/images/luna-about.jpg">
   
-  <section style="padding:100px 0;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);">
+  <section style="padding:100px 0">
     <div class="container" style="text-align:center;">
-      <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.2);margin:0 auto 20px;box-shadow:0 0 30px rgba(99,102,241,0.3);">
+      <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.2);margin:0 auto 20px;box-shadow:0 0 30px rgba(255,45,149,0.3);">
         <img src="/images/birky-mascot.jpg" alt="Luna - founder of Birky Studio" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <h1 style="font-size:clamp(2rem,5vw,3.5rem);color:white;margin-bottom:16px;">Let's Build Something Great</h1>
-      <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto;">Tell us about your business and we'll get back to you within an hour with a free quote.</p>
+      <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Tell us about your business and we'll get back to you within an hour with a free quote.</p>
     </div>
   </section>
 
-  <section style="padding:80px 0;background:#f8fafc;">
+  <section style="padding:80px 0">
     <div class="container">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:64px;max-width:1000px;margin:0 auto;">
         <!-- Contact Form -->
-        <div style="background:white;border-radius:24px;padding:48px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+        <div style="background:var(--bs-bg-raised);border-radius:24px;padding:48px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
           <h2 style="font-size:1.5rem;margin-bottom:32px;">Send Us a Message</h2>
           <form id="birky-contact-form" style="display:flex;flex-direction:column;gap:20px;">
             <div>
-              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Your Name</label>
-              <input type="text" id="bs-name" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="John Smith">
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--bs-text);">Your Name</label>
+              <input type="text" id="bs-name" required style="width:100%;padding:14px 16px;border:2px solid var(--bs-border);border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="John Smith">
             </div>
             <div>
-              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Email</label>
-              <input type="email" id="bs-email" required style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="john@business.com">
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--bs-text);">Email</label>
+              <input type="email" id="bs-email" required style="width:100%;padding:14px 16px;border:2px solid var(--bs-border);border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="john@business.com">
             </div>
             <div>
-              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Business Name</label>
-              <input type="text" id="bs-business" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="Your Business Name">
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--bs-text);">Business Name</label>
+              <input type="text" id="bs-business" style="width:100%;padding:14px 16px;border:2px solid var(--bs-border);border-radius:12px;font-size:1rem;transition:border-color 0.2s;" placeholder="Your Business Name">
             </div>
             <div>
-              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">What do you need?</label>
-              <select id="bs-service" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;background:white;">
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--bs-text);">What do you need?</label>
+              <select id="bs-service" style="width:100%;padding:14px 16px;border:2px solid var(--bs-border);border-radius:12px;font-size:1rem;background:var(--bs-bg-raised);">
                 <option value="starter">Starter Website ($499)</option>
                 <option value="professional">Professional Website ($999)</option>
                 <option value="premium">Premium Website ($1,999)</option>
@@ -46,8 +46,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </select>
             </div>
             <div>
-              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--color-dark);">Tell us more</label>
-              <textarea id="bs-message" rows="4" style="width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:12px;font-size:1rem;resize:vertical;" placeholder="What does your business do? Any specific features you need?"></textarea>
+              <label style="display:block;font-weight:500;margin-bottom:8px;color:var(--bs-text);">Tell us more</label>
+              <textarea id="bs-message" rows="4" style="width:100%;padding:14px 16px;border:2px solid var(--bs-border);border-radius:12px;font-size:1rem;resize:vertical;" placeholder="What does your business do? Any specific features you need?"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1.1rem;padding:16px;">
               Send Message →
@@ -63,7 +63,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
           
           <!-- Calendly Booking Widget -->
-          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+          <div style="background:var(--bs-bg-raised);border-radius:16px;padding:24px;border:1px solid var(--bs-border);">
             <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
               <div style="width:48px;height:48px;background:linear-gradient(135deg,#006bff,#0050cc);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
                 📅
@@ -76,7 +76,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="calendly-inline-widget" data-url="https://calendly.com/birky-studio/ai-agent-demo-call" style="min-width:100%;height:600px;border-radius:12px;overflow:hidden;"></div>
           </div>
           
-          <a href="https://wa.me/50234775110" target="_blank" rel="noopener noreferrer" style="display:block;background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='#25d366'" onmouseout="this.style.borderColor='#e2e8f0'">
+          <a href="https://wa.me/50234775110" target="_blank" rel="noopener noreferrer" style="display:block;background:var(--bs-bg-raised);border-radius:16px;padding:24px;border:1px solid var(--bs-border);text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='#25d366'" onmouseout="this.style.borderColor='#e2e8f0'">
             <div style="display:flex;align-items:center;gap:16px;">
               <div style="width:48px;height:48px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
                 💬
@@ -88,7 +88,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </a>
           
-          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+          <div style="background:var(--bs-bg-raised);border-radius:16px;padding:24px;border:1px solid var(--bs-border);">
             <div style="display:flex;align-items:center;gap:16px;">
               <div style="width:48px;height:48px;background:var(--gradient-primary);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
                 📧
@@ -100,9 +100,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </div>
           
-          <div style="background:white;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
+          <div style="background:var(--bs-bg-raised);border-radius:16px;padding:24px;border:1px solid var(--bs-border);">
             <div style="display:flex;align-items:center;gap:16px;">
-              <div style="width:48px;height:48px;background:linear-gradient(135deg,#06b6d4,#0891b2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
+              <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--bs-accent),#0891b2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">
                 ⏰
               </div>
               <div>
@@ -112,7 +112,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </div>
           
-          <div style="background:linear-gradient(135deg,#818cf8,#6366f1);border-radius:16px;padding:24px;color:white;">
+          <div style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:16px;padding:24px;color:white;">
             <h4 style="margin-bottom:8px;">Free Quote</h4>
             <p style="opacity:0.9;line-height:1.6;">Not sure what you need? Tell us about your business and we'll recommend the right package for you. No obligation.</p>
           </div>

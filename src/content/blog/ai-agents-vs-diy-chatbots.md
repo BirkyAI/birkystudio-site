@@ -63,7 +63,7 @@ Let me put this in dollars because that's what actually matters.
 | **Works with email/CRM/files** | No | Yes |
 | **Bilingual (EN/ES)** | Requires custom flow building | Built-in |
 | **Multi-platform** | Usually one channel | WhatsApp, Telegram, email, website |
-| **Maintenance** | You do it | I handle it ($0 for 30 days, then $49/mo optional) |
+| **Maintenance** | You do it | I handle it ($0 for 30 days, then $97/mo optional) |
 
 One installation, a 2–3 hour screen-sharing session, and you're done. You use it through WhatsApp like a normal chat.
 
