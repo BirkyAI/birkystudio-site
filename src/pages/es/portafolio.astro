@@ -89,7 +89,7 @@ const projects = [
             /* ═══ LIVE DEMO CARD ═══ */
             <div>
               <div style="text-align:center;margin-bottom:40px;">
-                <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                   🤖 {project.plan}. Pruébalo en Vivo
                 </div>
                 <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
@@ -125,14 +125,14 @@ const projects = [
             <div>
               <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;" class="project-row">
                 <div style="order:2;">
-                  <div style="background:linear-gradient(rgba(2,6,23,0.55),rgba(2,6,23,0.55)),url('/images/portfolio/luna-portrait.jpg');background-size:cover;background-position:center;border:1px solid rgba(16,185,129,0.3);border-radius:24px;padding:48px;text-align:center;">
+                  <div style="background:linear-gradient(rgba(2,6,23,0.55),rgba(2,6,23,0.55)),url('/images/portfolio/luna-portrait.jpg');background-size:cover;background-position:center;border:1px solid rgba(255,45,149,0.3);border-radius:24px;padding:48px;text-align:center;">
                     <div style="font-size:4rem;margin-bottom:16px;">🤖</div>
-                    <div style="color:#6ee7b7;font-size:0.9rem;font-weight:600;">Instalación de Agente IA</div>
+                    <div style="color:var(--bs-accent);font-size:0.9rem;font-weight:600;">Instalación de Agente IA</div>
                     <div style="color:var(--bs-text);font-size:0.85rem;margin-top:8px;">Cliente Privado. Detalles Confidenciales</div>
                   </div>
                 </div>
                 <div style="order:1;">
-                  <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                  <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                     Plan {project.plan}
                   </div>
                   <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
@@ -143,7 +143,7 @@ const projects = [
                       <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
                     ))}
                   </div>
-                  <a href="/es/contacto" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+                  <a href="/es/contacto" class="btn btn-primary" style="display:inline-flex;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.4);">
                     Obtén una Configuración Similar →
                   </a>
                 </div>
@@ -182,7 +182,7 @@ const projects = [
                     <div style="background:linear-gradient(135deg,rgba(255,45,149,0.1),rgba(255,45,149,0.1));padding:80px 40px;text-align:center;">
                       <div style="font-size:3rem;margin-bottom:12px;">🌐</div>
                       <div style="color:var(--bs-text);font-size:1rem;font-weight:500;">{project.title}</div>
-                      <div style="color:#6ee7b7;font-size:0.85rem;margin-top:8px;">Visitar Sitio →</div>
+                      <div style="color:var(--bs-accent);font-size:0.85rem;margin-top:8px;">Visitar Sitio →</div>
                     </div>
                   </a>
                 )}

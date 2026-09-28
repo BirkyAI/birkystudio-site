@@ -92,10 +92,10 @@ const projects = [
 
   <!-- Try Elliot Banner -->
   <section style="padding:60px 0;position:relative;overflow:hidden">
-    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(16,185,129,0.2),transparent 50%),radial-gradient(circle at 70% 50%,rgba(5,150,105,0.15),transparent 50%);"></div>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(255,45,149,0.22),transparent 50%),radial-gradient(circle at 70% 50%,rgba(255,45,149,0.15),transparent 50%);"></div>
     <div class="container" style="position:relative;z-index:1;text-align:center;">
       <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:#a7f3d0;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
-        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#34d399;animation:pulse 2s infinite;"></span>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--bs-accent);animation:pulse 2s infinite;"></span>
         Live Demo. Try It Now
       </div>
       <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:white;margin-bottom:16px;">
@@ -124,7 +124,7 @@ const projects = [
                          /ai-demo assistant here; Luna asked for the same on the EN side. */
                       <div>
                         <div style="text-align:center;margin-bottom:40px;">
-                          <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                          <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                             {project.plan}. Try It Live
                           </div>
                           <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
@@ -159,7 +159,7 @@ const projects = [
                       /* ═══ LIVE DEMO CARD ═══ */
                       <div>
                         <div style="text-align:center;margin-bottom:40px;">
-                          <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                          <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                             🤖 {project.plan}. Try It Live
                           </div>
                           <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
@@ -171,11 +171,11 @@ const projects = [
                             ))}
                           </div>
                         </div>
-                        <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(16,185,129,0.3);max-width:500px;margin:0 auto;padding:60px 40px;text-align:center;background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(5,150,105,0.05));">
+                        <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,45,149,0.3);max-width:500px;margin:0 auto;padding:60px 40px;text-align:center;background:linear-gradient(135deg,rgba(255,45,149,0.07),rgba(255,45,149,0.05));">
                           <div style="font-size:5rem;margin-bottom:20px;">🎧</div>
                           <h3 style="font-size:1.5rem;color:white;margin-bottom:12px;">Call Elliot Right Now</h3>
                           <p style="color:var(--bs-text-muted);margin-bottom:32px;line-height:1.7;">No login, no signup, no download. One click and Elliot picks up. Try asking about properties, pricing, or just test it with something weird, it handles it.</p>
-                          <a href={project.url} target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;font-size:1.2rem;padding:18px 36px;background:linear-gradient(135deg,#10b981,#059669);">
+                          <a href={project.url} target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;font-size:1.2rem;padding:18px 36px;background:var(--bs-accent);">
                             🎧 Call the Voice Agent →
                           </a>
                         </div>
@@ -190,14 +190,14 @@ const projects = [
             <div>
               <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;" class="project-row">
                 <div style="order:2;">
-                  <div style="background:linear-gradient(rgba(2,6,23,0.55),rgba(2,6,23,0.55)),url('/images/portfolio/luna-portrait.jpg');background-size:cover;background-position:center;border:1px solid rgba(16,185,129,0.3);border-radius:24px;padding:48px;text-align:center;">
+                  <div style="background:linear-gradient(rgba(2,6,23,0.55),rgba(2,6,23,0.55)),url('/images/portfolio/luna-portrait.jpg');background-size:cover;background-position:center;border:1px solid rgba(255,45,149,0.3);border-radius:24px;padding:48px;text-align:center;">
                     <div style="font-size:4rem;margin-bottom:16px;">🤖</div>
-                    <div style="color:#6ee7b7;font-size:0.9rem;font-weight:600;">AI Agent Installation</div>
+                    <div style="color:var(--bs-accent);font-size:0.9rem;font-weight:600;">AI Agent Installation</div>
                     <div style="color:var(--bs-text);font-size:0.85rem;margin-top:8px;">Private Client. Details Confidential</div>
                   </div>
                 </div>
                 <div style="order:1;">
-                  <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,#10b981,#059669);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                  <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                     {project.plan} Plan
                   </div>
                   <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
@@ -208,7 +208,7 @@ const projects = [
                       <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
                     ))}
                   </div>
-                  <a href="/contact" class="btn btn-primary" style="display:inline-flex;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 15px rgba(16,185,129,0.4);">
+                  <a href="/contact" class="btn btn-primary" style="display:inline-flex;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.4);">
                     Get a Similar Setup →
                   </a>
                 </div>
@@ -248,7 +248,7 @@ const projects = [
                     <div style="background:linear-gradient(135deg,rgba(255,45,149,0.1),rgba(255,45,149,0.1));padding:80px 40px;text-align:center;">
                       <div style="font-size:3rem;margin-bottom:12px;">🌐</div>
                       <div style="color:var(--bs-text);font-size:1rem;font-weight:500;">{project.title}</div>
-                      <div style="color:#6ee7b7;font-size:0.85rem;margin-top:8px;">Visit Site →</div>
+                      <div style="color:var(--bs-accent);font-size:0.85rem;margin-top:8px;">Visit Site →</div>
                     </div>
                   </a>
                 )}
