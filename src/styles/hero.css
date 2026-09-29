@@ -104,6 +104,21 @@ main > div > section {
   margin-bottom: 22px;
 }
 .hero-h1 em { font-style: normal; color: var(--bs-accent); }
+
+/* ---------- section headings: hero-headline treatment ----------
+   Luna, 29 Sep 2026: the H2 titles on the homepages now use the same
+   style as the hero headline: uppercase, extra bold, tight tracking,
+   white, with one accent word in pink (.sec-h2 em). */
+.sec-h2 {
+  font-size: clamp(1.9rem, 3.8vw, 2.6rem);
+  line-height: 1.06;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+  color: var(--bs-text);
+  margin-bottom: 16px;
+}
+.sec-h2 em { font-style: normal; color: var(--bs-accent); }
 .hero-sub {
   color: var(--bs-text-muted);
   font-size: 1.05rem;
