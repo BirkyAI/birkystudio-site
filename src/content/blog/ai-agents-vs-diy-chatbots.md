@@ -99,7 +99,7 @@ But if you want to:
 
 The AI Agent Setup from Birky Studio includes:
 
-- A dedicated AI installed on your computer that connects to your email, files, and CRM
+- A dedicated AI that runs on its own always-on server, connected to your website, your email and a Notion CRM
 - Works across WhatsApp, Telegram, email, and your website
 - Bilingual out of the box (English + Spanish)
 - Automates follow-ups, drafts responses, manages your calendar

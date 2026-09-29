@@ -77,6 +77,6 @@ Or poke the **WhatsApp agent** instead. Message it like a real client and see ho
 
 [**Message the WhatsApp AI agent**](https://wa.me/50234775110)
 
-The full AI Agent setup is **$1,297 one time, including 3 months of support**. Text receptionist is **$297**, voice receptionist is **$550**, and optional ongoing support is **$29 a month**. No subscriptions to stack, no per-lead fees, no six month contracts.
+The full AI Agent setup is **$1,297 one time, including 30 days of support**. Text receptionist is **$297**, voice receptionist is **$550**, and optional ongoing care is **$97 a month** (Care & Maintenance) or **$197 a month** (Business AI Partner). No subscriptions to stack, no per-lead fees, no six month contracts.
 
 [**Tell us what you want watched, and we will show you what it finds**](https://birkystudio.com/contact/)

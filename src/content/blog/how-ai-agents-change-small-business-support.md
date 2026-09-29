@@ -44,20 +44,17 @@ And here's the thing: customers prefer a fast, helpful response over no response
 
 Here's what we set up for our clients:
 
-- **Customer support**, instant answers to common questions
-- **Appointment booking**, customers can schedule directly through chat
-- **Lead capture**, collect names, emails, and interests automatically
-- **Order updates**, notify customers about their orders
-- **Task reminders**, keep you organized and on schedule
+- **Lead capture**, every enquiry from your website and WhatsApp, qualified and saved
+- **Instant answers**, a reply the moment someone writes, in English and Spanish
+- **Follow-up**, it chases the lead when they go quiet, so nothing goes cold
+- **A CRM that fills itself**, contacts, history and deals in Notion
+- **Alerts**, a summary and a suggested reply sent straight to you
 
 ## How Much Does It Cost?
 
-Our Starter Agent plan starts at $297 one-time setup. That includes:
-
-- One platform (WhatsApp or Telegram)
-- Custom FAQ responses trained on your business
-- Bilingual support (EN/ES)
-- Setup and training
+The base agent is a one-time **$1,297** setup, and it includes a Notion CRM built for your
+business. Ongoing care after the install is **$97 a month** (Care & Maintenance) or **$197 a
+month** (Business AI Partner). Care is optional, the install is yours either way.
 
 Compare that to hiring a part-time employee, the agent pays for itself in weeks.
 
@@ -67,4 +64,4 @@ Small businesses that adopt AI tools now will have a massive advantage over thos
 
 The question isn't "should I get an AI agent?", it's "how much business am I losing by not having one?"
 
-[Contact us](/contact) to get your AI agent set up in 2-3 days.
+[Contact us](/contact) to get your AI agent set up the same day, the build takes about 15 minutes on our side.
