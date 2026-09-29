@@ -5,7 +5,7 @@ date: 2026-09-18
 image: "/images/blog/ai-generated/cost-of-missed-follow-up.jpg"
 tags: ["Real Estate AI", "Lead Follow-Up", "AI Agent"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Let me walk you through the exact moment most real estate deals die. It isn't the listing. It isn't the negotiation. It isn't even the lead capture.

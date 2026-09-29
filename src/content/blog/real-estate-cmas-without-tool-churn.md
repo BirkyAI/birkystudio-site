@@ -5,7 +5,7 @@ date: 2026-09-24
 image: "/images/blog/ai-generated/real-estate-cmas-without-tool-churn.jpg"
 tags: ["Birky Studio", "AI Agent", "CMA Tools", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 An agent on r/RealEstateTechnology put it better than any marketing team could:

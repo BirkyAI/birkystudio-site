@@ -5,7 +5,7 @@ date: 2026-08-05
 image: "/images/blog/ai-generated/schema-markup-hero.jpg"
 tags: ["SEO", "Small Business", "Web Design"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You have probably noticed that some Google search results show extra details: star ratings, business hours, price ranges, or even a map with directions. Those enhanced listings are not magic. They come from something called schema markup, and adding it to your website is one of the most overlooked ways to get more clicks from Google.

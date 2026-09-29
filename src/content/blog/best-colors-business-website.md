@@ -5,7 +5,7 @@ date: 2026-08-15
 image: "/images/blog/ai-generated/web-design-hero.jpg"
 tags: ["Web Design", "Small Business", "Branding"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 The colors you choose for your business website do more than make it look nice. They shape how visitors feel about your brand, how long they stay on your pages, and whether they trust you enough to buy. Research shows that color increases brand recognition by up to 80%, and 90% of snap judgments about products are based on color alone.

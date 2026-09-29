@@ -5,7 +5,7 @@ date: 2026-08-02
 image: "/images/blog/ai-generated/website-accessibility-hero.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You have probably heard the term "website accessibility" but assumed it was something only big corporations needed to worry about. That assumption could cost you customers, and in some countries, it could land you in legal trouble.

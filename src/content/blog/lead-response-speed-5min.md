@@ -5,7 +5,7 @@ date: 2026-09-05
 image: "/images/blog/ai-generated/lead-response-speed-5min.jpg"
 tags: ["Birky Studio", "AI Agent", "Lead Response", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There is a number every real estate agent should know: **five minutes.**

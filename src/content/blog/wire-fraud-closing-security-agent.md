@@ -5,7 +5,7 @@ date: 2026-09-12
 image: "/images/blog/ai-generated/wire-fraud-closing-security-agent.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Closing Security"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There's a thread on r/RealEstateTechnology that deserves more attention than it got. An agent pointed out something uncomfortable: *wire fraud barely comes up* in real estate tech conversations, *despite losses running into the hundreds of millions annually.*

@@ -5,7 +5,7 @@ date: 2026-09-15
 image: "/images/blog/ai-generated/ai-agents-save-10-hours-week.jpg"
 tags: ["AI Agents", "Business Automation", "Productivity", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # How AI Agents Save Small Businesses 10+ Hours Every Week

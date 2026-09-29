@@ -5,7 +5,7 @@ date: 2026-07-16
 image: "/images/blog/ai-generated/google-business-profile-hero.jpg"
 tags: ["Google Business", "Local SEO", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 When someone searches for your business on Google, what do they see? If you haven't claimed your Google Business Profile, the answer might be: nothing useful, or worse, wrong information.

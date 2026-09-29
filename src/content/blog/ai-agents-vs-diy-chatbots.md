@@ -5,7 +5,7 @@ date: 2026-08-28
 image: "/images/blog/ai-generated/ai-agents-vs-diy-chatbots.jpg"
 tags: ["Birky Studio", "AI Agents", "Chatbots", "Lead Generation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 I get this question at least once a week: *"Can't I just build a chatbot myself with ChatGPT and save the money?"*

@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/wix-vs-wordpress-vs-custom-2026.jpg"
 date: 2026-08-13
 tags: ["Birky Studio", "Web Design", "Website Builders", "WordPress", "Guatemala"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You need a website for your business. You have three options: a drag-and-drop builder like Wix, the open-source powerhouse WordPress, or a custom-built site from a professional studio like Birky Studio. Each has its place. But for a small business in Guatemala in 2026, the answer is not as simple as "just use Wix."

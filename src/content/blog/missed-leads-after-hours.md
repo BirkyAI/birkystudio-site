@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/missed-leads-after-hours.jpg"
 date: 2026-08-17
 tags: ["Birky Studio", "AI Receptionist", "Lead Generation", "Small Business", "WhatsApp", "Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 **Your business operates 24 hours a day. Your team sleeps. Your phone rings, nobody answers, and the caller moves on to the next name on their list. It happens every single night.**

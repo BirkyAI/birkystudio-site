@@ -5,7 +5,7 @@ date: 2026-09-07
 image: "/images/blog/ai-generated/memory-gap-client-trust.jpg"
 tags: ["Birky Studio", "AI Agent", "Client Experience", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You walk into a listing appointment. The homeowner greets you at the door. They remember the conversation you had two weeks ago, the email you sent about market trends, the phone call where you discussed staging options, the text where you said you would follow up with comps.

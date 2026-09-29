@@ -5,7 +5,7 @@ date: 2026-09-08
 image: "/images/blog/ai-generated/ai-agent-buyer-estimates-instant.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Lead Conversion"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every real estate agent knows the script. A buyer asks, "What would my monthly payment be on that $350K listing?" And you say it: "Let me call my lender and get back to you."

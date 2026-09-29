@@ -5,7 +5,7 @@ date: 2026-09-19
 image: "/images/blog/ai-generated/we-refuse-to-sell-ai-agent-mistakes.jpg"
 tags: ["Birky Studio", "AI Agents"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 A real estate agent pulled up a thread from r/RealEstateTechnology the other day and read me one of the top answers to "what's your biggest tech pain in 2026?"

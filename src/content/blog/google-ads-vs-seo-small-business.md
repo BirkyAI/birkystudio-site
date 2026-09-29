@@ -5,7 +5,7 @@ date: 2026-07-25
 image: "/images/blog/ai-generated/google-ads-vs-seo.jpg"
 tags: ["SEO", "Digital Marketing", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every small business owner eventually faces the same question: should I pay for Google Ads or invest in SEO? Both show up when someone searches for your service. Both can bring in customers. But they work in fundamentally different ways, and picking the wrong one (or neglecting the right one) can waste months and thousands of dollars.

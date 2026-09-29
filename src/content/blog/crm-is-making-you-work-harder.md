@@ -5,7 +5,7 @@ date: 2026-09-04
 image: "/images/blog/ai-generated/crm-is-making-you-work-harder.jpg"
 tags: ["Birky Studio", "AI Agent", "CRM", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Ask a real estate agent about their CRM and you will get one of two reactions: a sigh or a shrug. Either they pay monthly for a bloated dashboard they barely open, or they gave up on CRM entirely and track everything in a spreadsheet or a running notes app.

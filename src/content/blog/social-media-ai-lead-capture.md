@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/social-media-ai-leads.jpg"
 date: 2026-08-18
 tags: ["Birky Studio", "AI Agents", "Social Media", "Lead Generation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 **You spend hours creating content, responding to comments, and growing your social media following. But when you check your bank account at the end of the month, nothing has changed. Why?**

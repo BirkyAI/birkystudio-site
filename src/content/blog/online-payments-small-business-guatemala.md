@@ -5,7 +5,7 @@ date: 2026-08-07
 image: "/images/blog/ai-generated/online-payments-small-business.jpg"
 tags: ["Digital Marketing", "E-Commerce", "Small Business Tips"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Picture this: a potential customer messages you on WhatsApp at 9 PM, excited about your product. They want to buy. But when you say "Send me a transfer" or "Pay when you come by the shop," the momentum dies. By the next morning, they have found someone else who made it easier to buy.

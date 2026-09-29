@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/stop-losing-revenue-ai-agent.jpg"
 date: 2026-08-15
 tags: ["Birky Studio", "AI Agents", "ROI", "Lead Generation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # Stop Losing Revenue: The Real Cost of Not Having an AI Agent

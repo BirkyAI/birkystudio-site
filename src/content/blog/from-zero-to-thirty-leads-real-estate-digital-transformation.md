@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/digital-marketing-hero.jpg"
 date: 2026-08-09
 tags: ["Birky Studio", "Case Study", "Real Estate", "AI Agent", "Web Design"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # From Zero Web Presence to 30+ Leads a Month: A Real Estate Agent's Digital Transformation Story

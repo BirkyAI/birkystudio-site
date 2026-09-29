@@ -5,7 +5,7 @@ date: 2026-07-31
 image: "/images/blog/ai-generated/website-hosting-guide.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You have a great website design. You have your content ready. But before anything goes live, you need one thing that trips up most small business owners: hosting.

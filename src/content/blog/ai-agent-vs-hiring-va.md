@@ -5,7 +5,7 @@ date: 2026-08-29
 image: "/images/blog/ai-generated/ai-agent-vs-hiring-va.jpg"
 tags: ["AI Agents", "Business Automation", "Cost Comparison", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # Hire an AI Agent Instead of a VA: Save $2,000/Month and Never Miss a Lead

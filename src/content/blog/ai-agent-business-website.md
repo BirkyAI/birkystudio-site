@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/ai-agent-business-website.jpg"
 date: 2026-08-19
 tags: ["Birky Studio", "AI Agents", "Lead Generation", "Customer Support", "Automation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Most business owners I talk to have the same problem. Their website looks good. It explains what they do. It has nice photos and a contact form. But after that, nothing happens.

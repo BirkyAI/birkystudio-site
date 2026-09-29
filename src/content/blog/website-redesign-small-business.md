@@ -5,7 +5,7 @@ date: 2026-07-18
 image: "/images/blog/ai-generated/website-redesign-small-business.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You built your website three years ago, and it looked great at the time. But lately, something feels off. Visitors aren't staying. Calls aren't coming in like they used to. Your competitor's new site makes yours look outdated. Sound familiar?

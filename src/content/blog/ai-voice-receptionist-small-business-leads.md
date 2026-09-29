@@ -5,7 +5,7 @@ date: 2026-08-10
 image: "/images/blog/ai-generated/ai-voice-receptionist-landscape.jpg"
 tags: ["AI Agents", "Voice AI", "Small Business", "Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # How an AI Voice Receptionist Can Double Your Small Business Leads

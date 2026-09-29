@@ -5,7 +5,7 @@ date: 2026-09-06
 image: "/images/blog/ai-generated/one-property-five-jobs.jpg"
 tags: ["Birky Studio", "AI Agent", "Listing Marketing", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 A property hits the market. You have photos from the photographer. Now the real work begins.

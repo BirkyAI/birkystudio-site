@@ -5,7 +5,7 @@ date: 2026-07-29
 image: "/images/blog/ai-generated/online-booking-tools-blog.jpg"
 tags: ["Small Business", "Digital Marketing"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every time a customer calls your business outside of hours, sends a message that gets buried, or tries to book through your website and gives up, you lose money. Not metaphorically. Literally. That person was ready to buy, and your booking process got in the way.

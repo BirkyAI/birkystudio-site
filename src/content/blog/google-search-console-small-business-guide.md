@@ -5,7 +5,7 @@ date: 2026-08-15
 image: "/images/blog/ai-generated/google-analytics-small-business-2026.jpg"
 tags: ["SEO", "Small Business", "Google Tools"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Most small business owners have heard of Google Analytics. Far fewer have heard of Google Search Console. That is a problem, because Search Console tells you something Analytics cannot: how Google sees your website, which pages it shows in search results, and why some pages rank while others disappear.

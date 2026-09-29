@@ -5,7 +5,7 @@ date: 2026-09-10
 image: "/images/blog/ai-generated/phone-note-chaos-transaction-calls.jpg"
 tags: ["Birky Studio", "AI Agents", "Voice Receptionist", "Real Estate"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Ask any agent what actually kills a deal and they'll usually blame the market, the buyer's financing, or the seller's price. Almost nobody says the real answer out loud: **the deal dies in the information you didn't write down.**

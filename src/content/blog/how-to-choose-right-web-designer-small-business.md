@@ -5,7 +5,7 @@ date: 2026-08-27
 image: "/images/blog/ai-generated/how-to-choose-right-web-designer-small-business.jpg"
 tags: ["Web Design", "Small Business", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You need a website. You Google "web designer near me." You get twenty quotes ranging from $200 to $10,000. How do you choose?

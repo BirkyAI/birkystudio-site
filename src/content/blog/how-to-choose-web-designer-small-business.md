@@ -5,7 +5,7 @@ date: 2026-07-15
 image: "/images/blog/ai-generated/web-design-hero.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You've decided your business needs a website, great call. But now comes the tricky part: finding someone to actually build it.

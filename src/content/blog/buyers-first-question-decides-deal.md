@@ -5,7 +5,7 @@ date: 2026-09-22
 image: "/images/blog/ai-generated/buyers-first-question-decides-deal.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Lead Conversion"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Over on r/RealEstateTechnology, an agent put it plainly: *"Clients can't get quick estimates without calling a lender."*

@@ -5,7 +5,7 @@ date: 2026-09-25
 image: "/images/blog/ai-generated/property-manager-ai-agent-rollout-gap.jpg"
 tags: ["Birky Studio", "AI Agent", "Property Management", "Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 An operator on r/RealEstateTechnology posted a set of numbers that should be taped to every property manager's monitor:

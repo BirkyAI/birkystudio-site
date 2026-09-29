@@ -5,7 +5,7 @@ date: 2026-08-06
 image: "/images/blog/ai-generated/professional-business-email.jpg"
 tags: ["Small Business", "Web Design", "Digital Marketing"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You are a serious business owner. You care about your products, your customers, and your reputation. Now think about the email address you use when someone contacts you through your website or social media.

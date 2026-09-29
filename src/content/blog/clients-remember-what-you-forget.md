@@ -5,7 +5,7 @@ date: 2026-09-27
 image: "/images/blog/ai-generated/clients-remember-what-you-forget.jpg"
 tags: ["Birky Studio", "AI Agents", "Client Trust", "Follow-Up"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There is a comment from a recent r/RealEstateTechnology thread that most agents nod at and then move past:

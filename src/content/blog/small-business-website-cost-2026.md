@@ -5,7 +5,7 @@ date: 2026-07-18
 image: "/images/blog/ai-generated/small-business-website-cost-2026.jpg"
 tags: ["Business Tips", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 "How much does a website cost?" is probably the most common question we hear. The honest answer is: it depends. But that's not helpful, so let's break it down with real numbers and real expectations for 2026.

@@ -5,7 +5,7 @@ date: 2026-09-04
 image: "/images/blog/ai-generated/8-tabs-one-question.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 > *"I should not need 8 tabs and a spreadsheet just to answer one property question."*, r/RealEstateTechnology, 2026

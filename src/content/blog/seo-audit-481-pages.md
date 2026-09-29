@@ -5,7 +5,7 @@ date: 2026-09-16
 image: "/images/blog/ai-generated/seo-audit-481-pages.jpg"
 tags: ["Birky Studio", "SEO", "Case Study", "Website Audit"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You know how the mechanic's own car is always the worst one on the street?

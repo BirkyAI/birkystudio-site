@@ -5,7 +5,7 @@ date: 2026-08-26
 image: "/images/blog/ai-generated/text-receptionist-leads-first-week.jpg"
 tags: ["AI Agents", "Text Receptionist", "Case Study", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # The $297 Monthly Text Receptionist That Handled 143 Customer Questions in Week One

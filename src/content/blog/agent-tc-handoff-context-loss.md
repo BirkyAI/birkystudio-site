@@ -5,7 +5,7 @@ date: 2026-09-15
 image: "/images/blog/ai-generated/agent-tc-handoff-context-loss.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Everyone obsesses over the front of the funnel. Lead capture, ad spend, open house traffic, the first five minutes of response time. And that matters, but it is not where most deals actually die.

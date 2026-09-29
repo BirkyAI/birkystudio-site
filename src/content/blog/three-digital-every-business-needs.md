@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/three-digital-tools-landscape.jpg"
 date: 2026-08-12
 tags: ["Birky Studio", "Web Design", "AI Agent", "Voice Receptionist", "Digital Marketing"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # Three Digital Tools Every Small Business in Guatemala Needs Right Now

@@ -5,7 +5,7 @@ date: 2026-09-23
 image: "/images/blog/ai-generated/stop-buying-leads-grow-sphere-ai.jpg"
 tags: ["Birky Studio", "AI Agents", "Lead Generation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 A realtor on Reddit put the exact thought in my head this week:

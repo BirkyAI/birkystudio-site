@@ -5,7 +5,7 @@ date: 2026-09-03
 image: "/images/blog/ai-generated/call-voice-receptionist-demo.jpg"
 tags: ["Birky Studio", "AI Voice Receptionist", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 > *"Studies show responding within 5 minutes dramatically increases conversion, but agents can't be at their desk 24/7."*, r/RealEstateTechnology, 2026

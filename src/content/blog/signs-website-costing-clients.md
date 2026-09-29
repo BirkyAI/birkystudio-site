@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/signs-website-costing-clients.jpg"
 date: 2026-08-20
 tags: ["Birky Studio", "Web Design", "Small Business", "AI Agent", "Lead Generation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # 5 Signs Your Small Business Website Is Costing You Clients (And How We Fix Each One)

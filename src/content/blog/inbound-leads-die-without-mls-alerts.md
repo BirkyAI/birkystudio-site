@@ -5,7 +5,7 @@ date: 2026-09-17
 image: "/images/blog/ai-generated/inbound-leads-die-without-mls-alerts.jpg"
 tags: ["Real Estate AI", "Lead Generation", "MLS Alerts"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Let me tell you about a lead named Anna.

@@ -5,7 +5,7 @@ date: 2026-07-18
 image: "/images/blog/ai-generated/website-speed-hero.jpg"
 tags: ["SEO", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Website speed directly impacts your bottom line. A one-second delay in page load time can reduce conversions by 7 percent, and 53 percent of mobile visitors leave a site that takes longer than three seconds to load. For small businesses, a slow website means lost customers, lower Google rankings, and wasted ad spend. The good news is that most speed problems have straightforward fixes.

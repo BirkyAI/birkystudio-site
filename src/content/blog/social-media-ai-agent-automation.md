@@ -5,7 +5,7 @@ date: 2026-08-30
 image: "/images/blog/ai-generated/social-media-ai-agent-automation.jpg"
 tags: ["AI Agents", "Social Media", "Automation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # How an AI Agent Can Run Your Social Media (And Free Up 15 Hours a Week)

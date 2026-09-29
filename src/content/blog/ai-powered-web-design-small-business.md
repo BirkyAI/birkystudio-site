@@ -5,7 +5,7 @@ date: 2026-08-06
 image: "/images/blog/ai-generated/web-design-hero.jpg"
 tags: ["Web Design", "AI Agents", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Building a professional website used to mean one of two paths: pay a designer thousands of dollars, or struggle with a DIY builder and end up with a generic template that looks like everyone else. In 2026, there is a third option. AI-powered web design tools and AI agents make it possible for small businesses to get a polished, custom website faster and more affordably than ever.

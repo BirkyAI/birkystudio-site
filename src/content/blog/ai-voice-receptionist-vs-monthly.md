@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/ai-voice-receptionist-vs-monthly.jpg"
 date: 2026-08-16
 tags: ["Birky Studio", "AI Voice Receptionist", "Small Business", "Cost Savings"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You are paying $150, $200, or even $500 every single month for an AI receptionist. And you have been doing it for a year now. That is $1,800 to $6,000 gone. Forever.

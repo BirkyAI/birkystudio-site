@@ -5,7 +5,7 @@ date: 2026-08-25
 image: "/images/blog/ai-generated/website-client-intake-automation.jpg"
 tags: ["AI Agents", "Client Onboarding", "Small Business Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Your website gets inquiries. Then what happens?

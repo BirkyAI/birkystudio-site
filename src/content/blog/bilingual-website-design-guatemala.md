@@ -5,7 +5,7 @@ date: 2026-07-18
 image: "/images/blog/ai-generated/bilingual-website-design-guatemala.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 If you run a small business in Guatemala, you're likely serving two audiences: local Spanish-speaking customers and English-speaking tourists, expats, or international clients. A website in only one language means you're leaving half your potential customers behind.

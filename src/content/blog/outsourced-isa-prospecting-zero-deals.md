@@ -5,7 +5,7 @@ date: 2026-09-11
 image: "/images/blog/ai-generated/outsourced-isa-prospecting-zero-deals.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Prospecting"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There's a thread on r/RealEstateTechnology that I keep coming back to, because it's the most expensive sentence a realtor can type. A fellow agent shared the exact numbers from six months of outsourced cold calling:

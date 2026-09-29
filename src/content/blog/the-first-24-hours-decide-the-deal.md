@@ -5,7 +5,7 @@ date: 2026-09-20
 image: "/images/blog/ai-generated/the-first-24-hours-decide-the-deal.jpg"
 tags: ["Birky Studio", "AI Agent", "Lead Response", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every deal you've ever lost to a "quiet" lead didn't die at the closing table. It died somewhere in the first 24 hours after they reached out, and nobody wrote it down.

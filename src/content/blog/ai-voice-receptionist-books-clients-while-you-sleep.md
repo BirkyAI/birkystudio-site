@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/voice-receptionist-leads.jpg"
 date: 2026-08-08
 tags: ["Birky Studio", "AI Voice Receptionist", "Lead Generation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # Stop Losing Leads at 5 PM: How an AI Voice Receptionist Books Clients While You Sleep

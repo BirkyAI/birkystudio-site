@@ -5,7 +5,7 @@ date: 2026-07-12
 image: "/images/blog/ai-generated/seo-tips-hero.jpg"
 tags: ["SEO", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You built a website for your business. Great! But if nobody can find it on Google, did it really matter? SEO. Search Engine Optimization, sounds complicated, but the basics are surprisingly simple. Here are five things you can do right now to help your business show up when customers search online.

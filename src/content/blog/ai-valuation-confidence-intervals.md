@@ -5,7 +5,7 @@ date: 2026-09-09
 image: "/images/blog/ai-generated/ai-valuation-confidence-intervals.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Client Trust"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Pop an address into any AI home valuation tool and it hands you a number so clean it looks like it was etched in stone: **$487,300.** Precise to the dollar. Confident. Professional.

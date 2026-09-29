@@ -5,7 +5,7 @@ date: 2026-08-01
 image: "/images/blog/ai-generated/website-security-small-business-guide.jpg"
 tags: ["Web Design", "Small Business", "Security"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Small business websites get hacked more often than you might think. About 43 percent of cyberattacks target small businesses, and most owners never see it coming. Website security for small business is not optional or something only big companies need to worry about. If you have a website, you are a target, and a few simple steps can make all the difference.

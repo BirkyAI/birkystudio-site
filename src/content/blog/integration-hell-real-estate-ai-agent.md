@@ -5,7 +5,7 @@ date: 2026-09-13
 image: "/images/blog/ai-generated/integration-hell-real-estate-ai-agent.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 I keep a screenshot of a Reddit comment in my notes because it describes this industry better than any marketing deck ever could. An agent on r/RealEstateTechnology wrote, in plain frustration:

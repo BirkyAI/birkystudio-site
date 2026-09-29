@@ -1,7 +1,7 @@
 ---
 title: "Branding Basics for Small Businesses"
 description: "Learn the essential branding basics every small business owner needs, from logo design to brand voice, to stand out and attract loyal customers."
-author: "Birky Studio"
+author: "Luna Jerney"
 date: 2026-07-17
 image: "/images/blog/ai-generated/branding-essentials-2026.jpg"
 tags: ["branding", "small business", "design", "marketing"]

@@ -5,7 +5,7 @@ date: 2026-07-18
 image: "/images/blog/ai-generated/ai-receptionist-hotels-restaurants-guide.jpg"
 tags: ["AI", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Running a hotel or restaurant means you're always "on." Guests call at midnight asking about availability. Walk-ins want to know your specials. Someone needs directions while you're in the middle of a dinner rush. An AI receptionist handles all of this for you, and it never takes a break.

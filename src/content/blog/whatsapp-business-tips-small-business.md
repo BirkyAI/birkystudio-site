@@ -5,7 +5,7 @@ date: 2026-07-13
 image: "/images/blog/ai-generated/whatsapp-business-hero.jpg"
 tags: ["WhatsApp", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 If you run a small business in Latin America, chances are your customers are already on WhatsApp. Over 2 billion people use it daily, and in countries like Guatemala, Mexico, and Colombia, it's not just a messaging app, it's how business gets done.

@@ -5,7 +5,7 @@ date: 2026-07-18
 image: "/images/blog/ai-generated/website-timeline-hero.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Building a small business website takes anywhere from one day to three months, depending on the complexity of the project. A simple landing page or one-page site can be live within a week, while a full e-commerce store with custom features typically takes four to eight weeks. The biggest factor is not the design or coding, it is how quickly you can provide your content, photos, and feedback.

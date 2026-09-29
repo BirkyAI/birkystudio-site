@@ -5,7 +5,7 @@ date: 2026-08-24
 image: "/images/blog/ai-generated/ai-voice-receptionist-paid-for-itself.jpg"
 tags: ["AI Agents", "Voice AI", "Case Study", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # How an AI Voice Receptionist Paid for Itself in One Month

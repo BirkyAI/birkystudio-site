@@ -5,7 +5,7 @@ date: 2026-09-03
 image: "/images/blog/ai-generated/salon-recovered-missed-appointments-ai-agent.jpg"
 tags: ["AI Agents", "Voice AI", "Case Study", "Small Business", "Lead Generation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # How a Hair Salon Recovered $1,800/Month in Missed Appointments with an AI Agent

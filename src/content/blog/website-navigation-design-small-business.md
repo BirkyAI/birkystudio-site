@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/website-navigation-small-business.jpg"
 date: 2026-08-21
 tags: ["Web Design", "Small Business", "SEO", "User Experience"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You built a website for your small business. It looks good. You have a homepage, an about page, a services page, and a contact form. But people keep emailing you questions that are already answered on the site. Or worse, they leave after a few seconds and never come back.

@@ -5,7 +5,7 @@ date: 2026-09-28
 image: "/images/blog/ai-generated/commercial-development-alerts-ai-agent.jpg"
 tags: ["Birky Studio", "AI Agents", "Automation", "Business Intelligence"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There is a comment from r/RealEstateTechnology that has stayed with me, because it is not really a complaint about technology. It is a complaint about reading the mail:

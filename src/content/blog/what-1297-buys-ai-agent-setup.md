@@ -5,7 +5,7 @@ date: 2026-09-16
 image: "/images/blog/ai-generated/what-1297-buys-ai-agent-setup.jpg"
 tags: ["Birky Studio", "AI Agent", "Pricing", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There is a post on r/RealEstateTechnology that I have not been able to get out of my head. An agent paid an outside ISA service for six months. The final tally, in their own words: **11,216 dials, 54 connections, one lead, zero deals.**

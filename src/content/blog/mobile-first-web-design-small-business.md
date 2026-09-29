@@ -5,7 +5,7 @@ date: 2026-08-01
 image: "/images/blog/ai-generated/mobile-first-web-design-small-business.jpg"
 tags: ["Web Design", "Small Business", "Mobile"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Over 60 percent of all web traffic now comes from mobile devices. When someone searches for a local plumber, restaurant, or boutique shop, they are almost certainly doing it on their phone. Mobile-first web design means building your website for small screens first and then scaling up to larger ones. For small businesses, this approach is no longer a nice trend to follow. It is the standard your customers expect.

@@ -2,7 +2,7 @@
 title: "Great Photos for Your Business Website"
 description: "Your website photos are the first thing visitors notice. Here is a simple guide to taking professional-looking photos for your small business website, even with just a smartphone."
 date: 2026-07-26
-author: "Birky Studio"
+author: "Luna Jerney"
 image: "/images/blog/ai-generated/website-photos-guide.jpg"
 tags: ["web design", "photography", "small business", "branding"]
 lang: "en"

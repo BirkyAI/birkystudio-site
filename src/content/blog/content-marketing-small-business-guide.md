@@ -1,7 +1,7 @@
 ---
 title: "Content Marketing for Small Business"
 description: "Learn how content marketing helps small businesses attract customers for free. A practical guide to blogs, social media, and email content that actually works."
-author: "Birky Studio"
+author: "Luna Jerney"
 date: 2026-08-03
 image: "/images/blog/ai-generated/content-marketing-small-business.jpg"
 tags: ["content marketing", "small business", "digital marketing", "SEO"]

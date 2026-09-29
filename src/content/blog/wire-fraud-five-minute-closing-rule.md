@@ -5,7 +5,7 @@ date: 2026-09-26
 image: "/images/blog/ai-generated/wire-fraud-five-minute-closing-rule.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate", "Closing Security"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There is a line from a recent r/RealEstateTechnology thread I keep coming back to: *wire fraud barely comes up, despite losses running into the hundreds of millions annually.*

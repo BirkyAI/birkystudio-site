@@ -5,7 +5,7 @@ date: 2026-08-07
 image: "/images/blog/ai-generated/cro-website-conversion-tips_00001_.jpg"
 tags: ["web design", "digital marketing", "small business tips", "SEO"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You paid for the ads. You worked on your SEO. People are finally visiting your website. But they are not calling, not filling out your contact form, not buying.

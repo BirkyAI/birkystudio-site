@@ -5,7 +5,7 @@ date: 2026-09-21
 image: "/images/blog/ai-generated/true-cost-of-one-listing.jpg"
 tags: ["Birky Studio", "AI Agent", "Listing Marketing", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You know the feeling. The photographer sends you the shots, and instead of excitement, there's a small dread. Because you know what's coming next, the five jobs that turn one property into an evening of work.

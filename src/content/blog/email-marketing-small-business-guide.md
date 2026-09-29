@@ -5,7 +5,7 @@ date: 2026-07-19
 image: "/images/blog/ai-generated/email-marketing-hero.jpg"
 tags: ["Email Marketing", "Small Business", "Digital Marketing"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You have probably heard that email marketing is dead. It is not. For every $1 spent on email marketing, the average return is $36. That makes it the highest-ROI digital marketing channel available to small businesses, beating social media, paid ads, and SEO.

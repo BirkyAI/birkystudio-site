@@ -5,7 +5,7 @@ date: 2026-08-01
 image: "/images/blog/ai-generated/live-chat-small-business.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Your website looks great. Visitors are finding you on Google. But here's the problem: most of them leave without buying, booking, or even reaching out. Studies show that 79% of website visitors who don't get their questions answered quickly will leave and look somewhere else.

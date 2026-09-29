@@ -5,7 +5,7 @@ date: 2026-09-02
 image: "/images/blog/ai-generated/dentist-booked-18-patients-ai-text-receptionist.jpg"
 tags: ["AI Agents", "Text Receptionist", "Case Study", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # How a Local Dentist Booked 18 New Patients in One Week with an AI Text Receptionist

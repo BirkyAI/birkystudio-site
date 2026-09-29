@@ -5,7 +5,7 @@ date: 2026-07-22
 image: "/images/blog/ai-generated/google-analytics-small-business-2026.jpg"
 tags: ["SEO", "Small Business", "Analytics"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You have a website. People visit it. But do you know what they do once they get there? If the answer is "not really," you are leaving money on the table. Google Analytics 4 (GA4) tells you exactly how people find your site, what they look at, and where they leave. The problem is that most small business owners open GA4, stare at a wall of charts, and close the tab.

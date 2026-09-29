@@ -5,7 +5,7 @@ date: 2026-09-14
 image: "/images/blog/ai-generated/market-data-comps-on-demand.jpg"
 tags: ["Birky Studio", "AI Agent", "Market Data", "Real Estate Tech"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There's a phrase I hear constantly from agents, and it never makes it into a single software sales brochure:

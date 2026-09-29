@@ -5,7 +5,7 @@ date: 2026-07-14
 image: "/images/blog/ai-generated/social-media-vs-website-hero.jpg"
 tags: ["Small Business", "Marketing"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 "I already have a Facebook page, do I really need a website?"

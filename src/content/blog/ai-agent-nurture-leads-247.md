@@ -5,7 +5,7 @@ date: 2026-08-31
 image: "/images/blog/ai-generated/ai-agent-nurture-leads-247.jpg"
 tags: ["AI Agents", "Lead Nurturing", "Sales Automation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # The 24/7 Sales Funnel: How AI Agents Turn Strangers Into Booked Consultations

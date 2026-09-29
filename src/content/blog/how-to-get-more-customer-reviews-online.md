@@ -5,7 +5,7 @@ date: 2026-07-20
 image: "/images/blog/ai-generated/customer-reviews-online.jpg"
 tags: ["Small Business", "Local SEO", "Customer Reviews"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You already know that happy customers are good for business. But did you know that online reviews are one of the most powerful free marketing tools you have? Studies show that 93% of consumers read reviews before buying, and businesses with more positive reviews rank higher on Google.

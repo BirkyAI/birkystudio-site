@@ -5,7 +5,7 @@ date: 2026-07-28
 image: "/images/blog/ai-generated/website-maintenance-guide-blog.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You launched your website months ago and it looks great. But here is the uncomfortable truth: websites are not like billboards. You cannot just put them up and walk away. Without regular maintenance, your site slowly becomes a liability instead of an asset.

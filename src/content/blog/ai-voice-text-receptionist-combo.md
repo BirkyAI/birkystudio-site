@@ -5,7 +5,7 @@ date: 2026-09-01
 image: "/images/blog/ai-generated/ai-voice-text-receptionist-combo.jpg"
 tags: ["Birky Studio", "AI Voice Receptionist", "AI Text Receptionist", "Lead Generation", "Small Business Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # AI Voice vs AI Text Receptionist: Which One Does Your Business Need (And When You Need Both)

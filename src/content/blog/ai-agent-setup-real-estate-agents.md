@@ -5,7 +5,7 @@ date: 2026-09-01
 image: "/images/blog/ai-generated/ai-agent-setup-real-estate-agents.jpg"
 tags: ["Birky Studio", "AI Agent", "Real Estate", "Lead Generation", "Automation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # AI Agent Setup for Real Estate Agents: What It Automates (And What It Doesn't)

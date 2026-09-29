@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/website-without-ai-agent-landscape.jpg"
 date: 2026-08-11
 tags: ["Birky Studio", "AI Agents", "Web Design", "Lead Generation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 You invested in a beautiful website. It loads fast, looks professional, and clearly explains what your business does. Traffic is coming in. People are browsing your services page, reading your about page, clicking through your portfolio.

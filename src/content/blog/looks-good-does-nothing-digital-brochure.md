@@ -5,7 +5,7 @@ image: "/images/blog/ai-generated/digital-brochure-landscape.jpg"
 date: 2026-08-14
 tags: ["Birky Studio", "Web Design", "AI Agents", "Lead Generation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 # A Website That Looks Good But Does Nothing is Just a Digital Brochure
