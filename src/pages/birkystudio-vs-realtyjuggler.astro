@@ -1,0 +1,563 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is RealtyJuggler cheaper than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a pure contact organizer, yes, and honestly it is hard to beat. RealtyJuggler is $179/year ($15/month) with the rate fixed for life and a pro-rated refund at any time. BirkyStudio is not really competing on that axis. If all you want is an affordable real estate CRM you run yourself, RealtyJuggler is excellent value. BirkyStudio costs more because you are buying a different thing: an AI operator that answers your phone, replies on WhatsApp, follows up automatically, and hands you verified prospects, not a database you have to work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does RealtyJuggler answer my phone or reply to leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. RealtyJuggler is a CRM, not an AI agent. It stores your contacts, schedules your follow-up calls, and can send drip emails and letters, but you write and send those yourself. It has no AI voice receptionist and no AI text answering. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30-50/month) and answers calls 24/7 in English and Spanish. The Text Receptionist for WhatsApp is $297 one-time and holds full AI conversations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio include a CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Notion CRM built for agents is included free with The Base Agent ($1,297 solo, from $2,997 for a team). So if you want both the AI operator and a place to store your contacts, you do not pay a separate CRM fee. What you give up versus RealtyJuggler is depth: RealtyJuggler has real estate specific tools like commission splits, rental management, printed flyers and letters, and seven mortgage calculators."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does RealtyJuggler find me leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. RealtyJuggler is a place to organize leads you already have. You import contacts from your MLS, tax records, or a third-party lead service, and it helps you work them. It does not supply leads. BirkyStudio's Verified Prospect List is a real, enriched, scored list of prospects built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does RealtyJuggler have a free trial or a contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RealtyJuggler has the longest free trial in the category: 90 days, no credit card required, and any remaining trial time is added to your paid year. There is no contract. It is a $179/year membership, the price is fixed for life, and you can get a pro-rated refund at any time. That is genuinely customer-friendly. BirkyStudio matches the no-contract part with a 30-day money-back guarantee and no setup fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a CRM and an AI agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. The CRM holds the information. The AI agent is the one picking up the phone at 9pm while you are at dinner."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should choose RealtyJuggler over BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An agent or small team who wants an affordable, feature-deep real estate CRM they are happy to run themselves, who wants printed letters, commission tracking, rental tools, and seven mortgage calculators, and who likes included phone support and one-on-one training. RealtyJuggler is a genuinely great tool at $179/year. BirkyStudio is for agents who do not want to be the one doing all the work, and who want the phone answered and the follow-up handled without them."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs RealtyJuggler (2026 Comparison), Cheap CRM vs an Operator That Works",
+  "description": "Honest head-to-head comparison of BirkyStudio vs RealtyJuggler for real estate agents. RealtyJuggler is a $179/year real estate CRM you run yourself. BirkyStudio is a done-for-you AI operator that answers your phone, replies on WhatsApp, follows up automatically, and hands you verified prospects. Real pricing, real pros and cons, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-09-29",
+  "dateModified": "2026-09-29"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs RealtyJuggler (2026)"
+  description="BirkyStudio vs RealtyJuggler honest comparison for real estate agents. RealtyJuggler is a $179/year CRM you run yourself. BirkyStudio is a done-for-you AI operator that answers your phone, replies on WhatsApp and hands you verified prospects."
+  image="/images/comparison/realtyjuggler.jpg"
+  >
+    <script type="application/ld+json" set:html={faqLD} />
+    <script type="application/ld+json" set:html={articleLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,45,149,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,45,149,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:var(--bs-accent);font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        🔍 Updated September 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs RealtyJuggler<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">A $179/year CRM vs an Operator That Works</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        RealtyJuggler is one of the most loved real estate CRMs there is: $179 a year, fixed for life, with included phone support and a 90-day free trial. It is a genuinely great contact organizer. BirkyStudio is not a contact organizer. We hand you an AI operator that answers your phone and WhatsApp 24/7 in English and Spanish, follows up automatically, and delivers verified prospects you own. One is a tool you sit down and work. The other works while you are out showing. Here is the honest breakdown.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want the phone answered and the follow-up handled without you. You get an AI agent that replies to every enquiry in seconds, an AI receptionist on WhatsApp and voice, verified prospects you own, and a website you control. Best for solo agents and small teams who are drowning in admin, not short of contacts.<br><br>
+          <strong style="color:white;">Choose RealtyJuggler if:</strong> You want an affordable, feature-deep real estate CRM you are happy to run yourself. $179 a year, fixed for life, with printed letters, commission tracking, rental tools, and seven mortgage calculators, all backed by included phone support and one-on-one training. Honestly, for a pure CRM, it is hard to beat.<br><br>
+          <strong style="color:white;">The honest difference:</strong> RealtyJuggler is software you operate. It only does something when you sit down and work it. BirkyStudio is an operator that does the work for you: it answers, it follows up, it qualifies, 24/7. If you only need somewhere to store contacts, buy RealtyJuggler. If you need the work done, that is a different job.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/realtyjuggler-article-1.jpg" alt="Real estate agent writing notes in a planner beside a laptop at a bright modern desk while organizing client contacts" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and RealtyJuggler?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        RealtyJuggler and BirkyStudio get compared because they both promise to reduce the admin that eats a real estate agent's day. RealtyJuggler is a real estate specific CRM built by Geeks on the Beach, running for over twenty years, with a 4.9 out of 5 average across 600+ Google reviews. It tracks prospects, generates daily call lists, prints letters and labels, sends drip emails, calculates commissions, and dials from your phone. All for $179 a year.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes a different route. Instead of giving you software to operate, we build and run an AI operator for you. The Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. Add the AI Receptionist and the phone is answered 24/7. Add the Verified Prospect List and you get real, enriched, scored prospects you own forever.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        Both are answering the same complaint: too much admin, too little selling. But they answer it differently. One hands you a better tool. The other takes the work off your desk. The difference shows up in what you pay, what you own, what you give up, and who does the work at 9pm on a Saturday. That is what this page breaks down.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs RealtyJuggler. Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">RealtyJuggler</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 audit (15 min), projects from $297</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$179/year ($15/month)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Software you operate yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $0</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $0</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 90-day free trial, no credit card required</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, annual membership, pro-rated refund any time</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Ongoing Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">One-time builds, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$179/year, fixed for life</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ No AI, a dialer you operate yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp / Text AI</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> SMS via Twilio, you write every message (&lt;$100/yr)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead Generation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ You import your own leads, no lead supply</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Follow-Up Automation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI agent replies and follows up 24/7 automatically</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Drip emails and letters you set up and manage</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ English-focused</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM built for agents, free with the Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full real estate CRM, its core product</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Real Estate Specific Tools</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> AI and Notion CRM, not a full RE-CRM feature set</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Commissions, rentals, flyers, letters, 7 calculators, MLS import</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Contact and IDX forms, not a website builder</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included phone support and 1-on-1 training</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Does the Work</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers and follows up, we maintain it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ You do, it is a tool you operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Track Record</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Smaller, newer studio</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 4.9/5 from 600+ Google reviews, 20+ years</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/realtyjuggler-article-2.jpg" alt="Real estate agent smiling while talking on a smartphone at a wooden desk with an open laptop" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT WORKS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not a CRM you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a separate subscription for a database.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations. The Voice Receptionist is $550 one-time, plus you pay Vapi directly for usage (about $30-50/month), and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start with real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it wins is time. Nothing waits for you to sit down. A lead that comes in at 9pm gets an answer at 9pm, not the next morning. And everything is one-time or optional, so there is no rental treadmill.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>AI answers your phone and WhatsApp 24/7, EN/ES</li>
+              <li>Follow-up happens automatically, no sitting down to work it</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Notion CRM included free with the Base Agent</li>
+              <li>Websites you own and can edit ($499 / $999 / $1,999)</li>
+              <li>No contract, no setup fee, 30-day money-back guarantee</li>
+              <li>Same person who built it answers your support</li>
+              <li>Works for any niche, not just real estate</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Higher upfront cost than a $179/year CRM</li>
+              <li>No printed letters, commission splits, or MLS import tools</li>
+              <li>Not a full real estate transaction or rental manager</li>
+              <li>Smaller, newer studio than a 20-year established product</li>
+              <li>Prospect list size is fixed by tier, not unlimited</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care &amp; Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/realtyjuggler-article-3.jpg" alt="Modern real estate office desk with a smartphone, open laptop and notebook in soft natural light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: RealtyJuggler -->
+      <div id="realtyjuggler" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">RealtyJuggler</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          RealtyJuggler is a real estate specific CRM from Geeks on the Beach, and it has earned its reputation. It costs $179 a year (about $15 a month), the rate is fixed for life, you can get a pro-rated refund at any time, and there is a 90-day free trial with no credit card required. Onboarding, phone support, and one-on-one training are all included, which is unusual at this price. Its 4.9 out of 5 average across more than 600 Google reviews is the highest in the category.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The features are deep for the money: prospect and deal tracking, auto-generated daily call lists, imports from MLS and tax records, time-release drip letters and emails, a letter and e-card library, listing flyers, showing feedback forms, document storage, commission and expense tracking with splits and referral fees, rental management with work orders, custom follow-up plans, birthday and closing-anniversary reminders, Google Sync with Gmail and Calendar, seven real estate calculators, and a Call Capture feature that turns yard signs into buyer leads. It syncs to iPhone, iPad, and Android.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The honest catch is the same one that applies to every CRM: it is software you operate. It will not answer your phone, reply to a WhatsApp at 9pm, or follow up on its own. The drip emails and letters are real, but you set them up and manage them. There is no AI voice receptionist and no AI text answering, and it supplies no leads, you import the ones you already have. If you like working your own database and want maximum value per dollar, that is not a flaw, it is the deal. If you wanted the work done for you, this is not that.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Unbeatable price: $179/year, fixed for life</li>
+              <li>90-day free trial, no credit card, pro-rated refund any time</li>
+              <li>Phone support and 1-on-1 training included</li>
+              <li>Deep real estate tools: commissions, rentals, flyers, calculators</li>
+              <li>4.9/5 from 600+ Google reviews, 20+ years in market</li>
+              <li>Letter, email, SMS, and dialer in one place</li>
+              <li>Google Sync, mobile apps, MLS and tax-record imports</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>You do all the work, it is a tool not an operator</li>
+              <li>No AI voice receptionist and no AI text answering</li>
+              <li>No lead generation, you import your own leads</li>
+              <li>SMS costs extra via Twilio (about $100/year typical)</li>
+              <li>English-focused, no built-in bilingual handling</li>
+              <li>It is a CRM, not a website, not a front desk</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: $179/year (about $15/month), fixed for life · Pro-rated refund at any time · 90-day free trial, no credit card required · Onboarding, phone support, and training included · Optional SMS via Twilio, typically under $100/year (verified live, September 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">RealtyJuggler (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Just a CRM to organize contacts (DIY)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time (Base Agent, Notion CRM included)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$179 one-time, renews yearly</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (text) or $550 + ~$30-50/mo (voice, about $910-$1,150)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, it does not answer</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI follow-up on autopilot</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included with the Base Agent or the Pack</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, drip emails are manual setup</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospect list</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 (Starter) or $997 (Pro), one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">You import your own list</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Complete done-for-you pipeline</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,997 one-time (Lead Generation Pack)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$179/year plus all the time you put in</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not a website builder</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk fully covered, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent $1,297 + $97/mo care)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$179, but no answering, no AI, no leads</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total (base setup)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time, no recurring build fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$537, renews at $179/year</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💵 You want the cheapest possible CRM and you will run it yourself</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">RealtyJuggler</strong>. At $179 a year, fixed for life, with a 90-day free trial and included phone support, nothing beats it on price. If you like working your own database and want maximum features per dollar, this is the honest recommendation.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 You need the phone answered when you cannot pick up</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. RealtyJuggler has a dialer but no AI answering. BirkyStudio's Voice Receptionist ($550 one-time plus Vapi usage) answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist ($297 one-time) holds full AI conversations while you are showing a property.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">⏰ You do not want to do the follow-up yourself</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Every CRM, RealtyJuggler included, only acts when you sit down to work it. BirkyStudio's AI agent replies and follows up automatically, so no lead goes cold because you were busy. That is the whole difference between a tool and an operator.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You have no leads and need some</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. RealtyJuggler organizes the leads you already have, it does not supply any. BirkyStudio's Verified Prospect List is a real, enriched, scored list you own forever ($497 Starter, $997 Pro), and the $1,997 Lead Generation Pack adds the outreach and the AI that catches the replies.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🧾 You need printed letters, commission tracking, and rental tools</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">RealtyJuggler</strong>. This is where it clearly wins. Commission splits, referral fees, rental and work-order tracking, printed letters and labels, listing flyers, and seven mortgage calculators are all built in, and BirkyStudio does not try to match that depth. If those tools are your day, buy RealtyJuggler.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🌎 You work bilingual clients</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. RealtyJuggler is English-focused. The BirkyStudio AI agent and receptionist handle English and Spanish natively, so a Spanish-speaking enquiry gets the same instant, fluent answer as an English one.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          This is not a fight BirkyStudio wins on price, and we are not going to pretend it is. <strong style="color:white;">RealtyJuggler is an excellent cheap CRM</strong>, $179 a year fixed for life, with real estate tools, included support, and a 90-day free trial that nothing else matches. If all you want is an affordable place to organize your contacts and you are happy to work it yourself, buy it and do not look back.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">BirkyStudio is a different purchase.</strong> You are not buying a database, you are buying the work done. The AI answers your phone and WhatsApp 24/7 in two languages, follows up automatically, and hands you verified prospects you own. If your problem is that you already have contacts but no time to work them, a cheaper CRM does not solve that. An operator does.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          <strong style="color:white;">Choose RealtyJuggler if:</strong> you want the best value CRM in real estate, you like running your own database, and you need printed letters, commissions, and calculators.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want the phone answered, the follow-up handled, and verified prospects you own, without you having to sit down and do it.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://www.realtyjuggler.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore RealtyJuggler →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is RealtyJuggler cheaper than BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            For a pure contact organizer, yes, and it is hard to beat. RealtyJuggler is $179/year ($15/month) with the rate fixed for life and a pro-rated refund at any time. BirkyStudio is not competing on that axis. If you only want an affordable CRM you run yourself, RealtyJuggler is excellent value. BirkyStudio costs more because you are buying a different thing: an AI operator that answers, follows up, and hands you verified prospects, not a database to work.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does RealtyJuggler answer my phone or reply to leads?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. RealtyJuggler is a CRM, not an AI agent. It stores contacts, schedules follow-up calls, and can send drip emails and letters, but you write and send those yourself. It has no AI voice receptionist and no AI text answering. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30-50/month) and answers calls 24/7 in English and Spanish. The WhatsApp Text Receptionist is $297 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does BirkyStudio include a CRM?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Yes. The Notion CRM built for agents is included free with The Base Agent ($1,297 solo, from $2,997 for a team), so you do not pay a separate CRM fee. What you give up versus RealtyJuggler is depth: no commission splits, no rental management, no printed flyers, and no mortgage calculators.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does RealtyJuggler find me leads?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. RealtyJuggler is where you organize leads you already have. You import contacts from your MLS, tax records, or a third-party service, and it helps you work them. It supplies nothing. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does RealtyJuggler have a free trial or a contract?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            RealtyJuggler has the longest free trial in the category: 90 days, no credit card required, and any remaining trial time is added to your paid year. There is no contract. It is a $179/year membership, fixed for life, with a pro-rated refund any time. That is genuinely customer-friendly. BirkyStudio matches the no-contract part with a 30-day money-back guarantee and no setup fee.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>What is the difference between a CRM and an AI agent?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. The CRM holds the information. The AI agent is the one picking up at 9pm while you are at dinner.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Who should choose RealtyJuggler over BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            An agent or small team who wants an affordable, feature-deep real estate CRM they are happy to run themselves, who wants printed letters, commission tracking, rental tools, and mortgage calculators, and who likes included phone support and one-on-one training. RealtyJuggler is a genuinely great tool at $179/year. BirkyStudio is for agents who do not want to be the one doing all the work.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> RealtyJuggler pricing and terms sourced from realtyjuggler.com/Pricing and realtyjuggler.com in September 2026 ($179/year, about $15/month, rate fixed for life, pro-rated refund at any time, 90-day free trial with no credit card, included onboarding, phone support, and one-on-one training, optional SMS via Twilio typically under $100/year). Reputation from RealtyJuggler's published Google review average (4.9 out of 5 across 600+ reviews) and its SoftwareAdvice listing. BirkyStudio pricing from birkystudio.com as of September 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297), the Voice Receptionist ($550 + Vapi ~$30-50/month), the Verified Prospect List ($497/$997), the Lead Generation Pack ($1,997), the Custom Assessment ($349/$999), websites ($499/$999/$1,999), and optional care at $97/month or $197/month. Prices and features may change. This is an honest comparison based on publicly available information, not a sponsored post.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
