@@ -80,7 +80,7 @@ The result is an AI agent that handles 80 to 90 percent of your inbound communic
 
 ## The Cost
 
-A complete AI agent setup for a real estate agent, including website integration, WhatsApp connection, lead qualification, calendar booking, follow-up sequences, and CRM logging, costs **$1,297 one-time**, including three months of support and adjustments.
+A complete AI agent setup for a real estate agent, including website integration, WhatsApp connection, lead qualification, calendar booking, follow-up sequences, and CRM logging, costs **$1,297 one-time**, including 30 days of support and adjustments.
 
 Compare that to a part-time assistant at $800 per month. You break even in two months. After that, every month is savings.
 

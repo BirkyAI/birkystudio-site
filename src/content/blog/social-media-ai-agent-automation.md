@@ -111,7 +111,7 @@ Setting up an AI agent for social media management takes about two to three days
 3. **We define the rules**, what it handles automatically and what gets forwarded to you
 4. **You review and approve**, we test it together and make sure the replies sound like you
 
-The one-time setup is **$1,297**, which includes three months of support and adjustments. After that, you pay only the platform provider costs, typically $50 to $100 per month depending on volume.
+The one-time setup is **$1,297**, which includes 30 days of support and adjustments. After that, you pay only the platform provider costs, typically $50 to $100 per month depending on volume.
 
 Compare that to a part-time social media manager ($1,000–$2,000/month) or a full-time employee ($3,000+/month), and the math speaks for itself.
 

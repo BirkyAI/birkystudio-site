@@ -54,7 +54,7 @@ Let me put both options side by side:
 |:--|:--|:--|
 | Monthly paid leads | $500–$1,500 **every month, forever** | Low-intent contacts, mostly unqualified, keeps costing whether or not they close |
 | Outsourced ISA dialing | Thousands in fees + multi-month contract | 11,216 dials → 0 deals (real agent outcome) |
-| Birky Studio AI Agent | **$1,297 one-time**, incl. 3 months of support | Works your sphere, follows up every lead, logs every conversation, wins back quiet referrals |
+| Birky Studio AI Agent | **$1,297 one-time**, incl. 30 days of support | Works your sphere, follows up every lead, logs every conversation, wins back quiet referrals |
 
 One-time. That's less than **two months** of a mid-range paid-leads budget. And it works forever on leads you already trust, no dialing, no contract, no low-quality names.
 

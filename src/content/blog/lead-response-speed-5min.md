@@ -54,7 +54,7 @@ We wrote last week about auto-logging every call and note, how an AI Agent captu
 
 ## The Numbers That Matter
 
-An AI Agent from Birky Studio starts at **$1,297** with three months of support. That is less than what a single fast-responded deal pays you in commission.
+An AI Agent from Birky Studio starts at **$1,297** with 30 days of support. That is less than what a single fast-responded deal pays you in commission.
 
 Compare that to the alternative: paying $50 per month for a chatbot that sends generic "thanks for your inquiry" messages (nobody replies to those) and another $100 per month for a CRM that still requires you to manually log every follow-up.
 

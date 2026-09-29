@@ -1,6 +1,6 @@
 ---
 title: "AI Voice vs AI Text Receptionist"
-description: "Voice receptionist ($550) answers calls. Text receptionist ($297/mo) handles WhatsApp and website chat. Here is when to use each, and why combining both costs less than one human employee."
+description: "Voice receptionist ($550) answers calls. Text receptionist ($297 one-time) handles WhatsApp and website chat. Here is when to use each, and why combining both costs less than one human employee."
 date: 2026-09-01
 image: "/images/blog/ai-generated/ai-voice-text-receptionist-combo.jpg"
 tags: ["Birky Studio", "AI Voice Receptionist", "AI Text Receptionist", "Lead Generation", "Small Business Automation"]
@@ -10,7 +10,7 @@ author: "Luna Jerney"
 
 # AI Voice vs AI Text Receptionist: Which One Does Your Business Need (And When You Need Both)
 
-**Your business gets leads through two channels: phone calls and messages. An AI voice receptionist handles your calls 24/7 for $550 one-time. An AI text receptionist handles your WhatsApp messages and website chat for $297 monthly. Combined, they cost less than what most businesses pay for one human receptionist, and neither one sleeps, takes lunch, or misses a message.**
+**Your business gets leads through two channels: phone calls and messages. An AI voice receptionist handles your calls 24/7 for $550 one-time. An AI text receptionist handles your WhatsApp messages and website chat for a one-time $297. Combined, they cost less than what most businesses pay for one human receptionist, and neither one sleeps, takes lunch, or misses a message.**
 
 Every small business owner I talk to has the same problem. The phone rings after hours and nobody picks up. A WhatsApp message comes in at 10 PM and sits unread until morning. A website visitor wants to ask a question but sees a contact form and decides it is too much effort.
 
@@ -32,9 +32,9 @@ An AI voice receptionist answers every call that comes to your business phone nu
 
 [Read the full case study on how one business paid for their AI voice receptionist in a single month.](/blog/ai-voice-receptionist-paid-for-itself/)
 
-## The AI Text Receptionist ($297/Month)
+## The AI Text Receptionist ($297, One-Time)
 
-An AI text receptionist lives on your website and WhatsApp. When someone visits your site and types a question, the AI responds instantly. When someone sends a WhatsApp message at midnight, it answers within seconds. It captures leads, qualifies them, books appointments, and sends follow-ups automatically. It costs **$297 per month**.
+An AI text receptionist lives on your website and WhatsApp. When someone visits your site and types a question, the AI responds instantly. When someone sends a WhatsApp message at midnight, it answers within seconds. It captures leads, qualifies them, books appointments, and sends follow-ups automatically. It costs **$297 one-time**.
 
 **Who needs it first:**
 
@@ -57,8 +57,8 @@ Think about your customer's journey. Someone finds you on Google Maps at 8 PM. T
 | Service | What It Handles | Cost |
 |---------|----------------|------|
 | AI Voice Receptionist | Phone calls, 24/7 | $550 one-time |
-| AI Text Receptionist | WhatsApp, website chat, SMS | $297/month |
-| **Both combined** | Every channel, every hour | $847 first month, then $297/month |
+| AI Text Receptionist | WhatsApp, website chat, SMS | $297 one-time |
+| **Both combined** | Every channel, every hour | $847 one-time |
 
 Compare that to a human receptionist at $2,000-$3,000 per month who works 8 hours a day and cannot answer messages.
 
@@ -66,8 +66,8 @@ Compare that to a human receptionist at $2,000-$3,000 per month who works 8 hour
 |--------|-------------|--------------|----------|
 | Human receptionist | $2,000-$3,000 | 8 hours/day, 5 days/week | Phone only, or phone + partial chat |
 | AI Voice only | $0/mo (one-time $550) | 24/7/365 | Phone |
-| AI Text only | $297/mo | 24/7/365 | WhatsApp, website chat, SMS |
-| **Both AI** | **$297/mo (+$550 first month)** | **24/7/365** | **Phone + WhatsApp + website chat** |
+| AI Text only | $0/mo (one-time $297) | 24/7/365 | WhatsApp, website chat, SMS |
+| **Both AI** | **$0/mo (one-time $847)** | **24/7/365** | **Phone + WhatsApp + website chat** |
 
 ## Which One Should You Buy First?
 
@@ -75,9 +75,9 @@ If you had to pick one, the answer depends on where your leads come from.
 
 - **More phone calls than messages?** Start with the AI Voice Receptionist ($550). People are calling you, and some of those calls go unanswered. The voice receptionist plugs that leak immediately.
 
-- **More messages than calls?** Start with the AI Text Receptionist ($297/month). Your customers prefer to text, but your current response time is measured in hours, not seconds. The text receptionist fixes that.
+- **More messages than calls?** Start with the AI Text Receptionist ($297 one-time). Your customers prefer to text, but your current response time is measured in hours, not seconds. The text receptionist fixes that.
 
-- **Both?** Get both. The voice receptionist costs you once and handles calls forever. The text receptionist costs less than most people spend on coffee each month and handles every message. Together, they cover every way a customer can reach you, every hour of every day.
+- **Both?** Get both. The voice receptionist costs you once and handles calls forever. The text receptionist is a one-time $297 and handles every message. Together, they cover every way a customer can reach you, every hour of every day.
 
 ## The Bottom Line
 

@@ -67,7 +67,7 @@ Let's be honest about what actually matters here.
 
 That $324 per listing, the time you spend manually, is about **$8,100 a year**. But the real cost is the listings you *don't* get because you were too busy reformatting to follow up, and the base quality cost: the Zillow version, the one buyers see first, is usually the weakest, because it's the fourth rewrite of the night.
 
-A Birky Studio AI Agent setup starts at **$1,297** with three months of support. That's not five years of payback. That's one and a half listings' worth of reclaimed time. It pays for itself before you've finished your second month's listings.
+A Birky Studio AI Agent setup starts at **$1,297** with 30 days of support. That's not five years of payback. That's one and a half listings' worth of reclaimed time. It pays for itself before you've finished your second month's listings.
 
 [Tell us how many listings you put out a year →](https://birkystudio.com/contact/) and we'll show you the exact version of that receipt for your volume.
 

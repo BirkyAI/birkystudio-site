@@ -68,7 +68,7 @@ It also stops the deferral. A buyer asks "what would this street support?", the 
 
 ## The Cost vs. the Return
 
-An AI Agent build starts at **$1,297** with three months of support included. Compare that to the stack of analytics subscriptions you're paying for every month to do the same job manually, and the hours you lose that you'll never get back.
+An AI Agent build starts at **$1,297** with 30 days of support included. Compare that to the stack of analytics subscriptions you're paying for every month to do the same job manually, and the hours you lose that you'll never get back.
 
 If it saves you from **one** lost listing, or **one** buyer who walked because you said "let me get back to you," it's already paid for. That's the standard we've applied since [one agent's AI voice receptionist paid for itself in two weeks](https://birkystudio.com/blog/ai-voice-receptionist-paid-for-itself/).
 

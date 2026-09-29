@@ -62,7 +62,7 @@ That agent who spent six months and got one worthless lead? They didn't just los
 - **The contract:** call-center retainers for real estate prospecting run roughly **$1,500–$3,000+ per month**. Six months on the low end is **$9,000** gone with zero closings.
 - **The opportunity cost:** during those six months, every warm lead that came in wasn't being worked with the speed the [5-minute response rule](https://birkystudio.com/blog/lead-response-speed-5min/) demands. That's not just lost future business, that's current business going to the agent who picked up faster.
 
-Compare that to a Birky Studio AI Agent at **$1,297/mo**, cancelable, with follow-up and transparency baked in. One saved transaction, one commission between **$8,000 and $12,000**, covers six months of the agent, and you keep the per-lead visibility the entire time.
+Compare that to a Birky Studio Base Agent at **$1,297 one-time**, with follow-up and transparency baked in. One saved transaction, one commission between **$8,000 and $12,000**, pays for the whole build several times over, and you keep the per-lead visibility the entire time.
 
 The difference isn't the monthly number. It's that one model hands you a dashboard and a guaranteed contract. The other hands you results you can *see*, and you decide whether it's working.
 

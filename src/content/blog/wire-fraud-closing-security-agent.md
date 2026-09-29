@@ -78,7 +78,7 @@ Compare that to the tools:
 
 - **AI Text Receptionist, $297.** Answers, qualifies, and logs every inbound message so nothing lives only on your phone.
 - **AI Voice Receptionist, $550.** Picks up the call you can't, captures the details, and writes them down.
-- **Business AI Agent, $1,297.** The full setup: multi-channel communication, automatic logging, and enforcement rules built around how you actually run a transaction.
+- **Base Agent, $1,297.** The full setup: multi-channel communication, automatic logging, and enforcement rules built around how you actually run a transaction.
 
 You don't need the most expensive option to close this gap. You need *one* system that remembers what was said, so a fake email can't pretend it belongs.
 

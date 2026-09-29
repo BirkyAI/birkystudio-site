@@ -66,7 +66,7 @@ The difference isn't incremental. It's structural. Same lead, same budget, same 
 
 Let's be honest about the number. You get maybe one genuinely hot, pre-approved, right-now inquiry like this every couple of weeks, call it 20 to 25 a year. If you lose even half of them in the first 24 hours, which is *generous* for an on-call agent, at an average commission of $10,000, you're walking away from **$100,000 to $200,000 a year** on the single most winnable homepage of your business.
 
-The fix costs less than one of those deals. An AI Agent setup from Birky Studio starts at **$1,297** with three months of support. It answers at 9:47 PM, logs the note it should, and follows up on Day 3 and Day 7, the exact gap where the deal keeps dying.
+The fix costs less than one of those deals. An AI Agent setup from Birky Studio starts at **$1,297** with 30 days of support. It answers at 9:47 PM, logs the note it should, and follows up on Day 3 and Day 7, the exact gap where the deal keeps dying.
 
 It's the difference between a lead that gets a reply *tonight* and one that waits until you've forgotten their budget.
 

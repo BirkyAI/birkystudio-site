@@ -53,9 +53,9 @@ Your average commission is somewhere between **$8,000 and $12,000**. Deals don't
 
 Birky Studio's voice and agent tiers are built to make sure that thread never drops:
 
-- **AI Text Receptionist, $297/mo.** WhatsApp and text coverage, instant response, lead capture.
-- **AI Voice Receptionist, $550/mo.** Elliot (or a voice trained on your business) answers live calls, handles questions, books showings, and logs everything.
-- **Business AI Agent, $1,297/mo.** The full system: voice plus text plus CRM logging, follow-up sequences, and market data on demand, the whole workflow, not just the front door.
+- **AI Text Receptionist, $297 one-time.** WhatsApp and text coverage, instant response, lead capture.
+- **AI Voice Receptionist, $550 one-time.** Elliot (or a voice trained on your business) answers live calls, handles questions, books showings, and logs everything.
+- **Base Agent, $1,297 one-time.** The full system: every enquiry captured, qualified, saved to your CRM, answered instantly, and followed up on its own, the whole workflow, not just the front door.
 
 One saved transaction covers years of the voice tier. One saved *reputation*, a client who trusts you because you remembered what they told you last week, is worth more than that.
 

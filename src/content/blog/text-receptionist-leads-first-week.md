@@ -22,7 +22,7 @@ They knew they were losing leads. They just could not figure out how many.
 
 The owner told us: "I think we are losing three or four potential clients a week. Maybe five."
 
-We installed an AI text receptionist on their website, the Starter Agent at $297 per month. It is a WhatsApp-based AI that answers every question, books consultations, and transfers complex cases to a human. Here is what happened in the first seven days.
+We installed an AI text receptionist on their website, the Text Receptionist at $297 one-time. It is a WhatsApp-based AI that answers every question, books consultations, and transfers complex cases to a human. Here is what happened in the first seven days.
 
 ## Week One: 143 Conversations, 31 Qualified Leads
 
@@ -55,7 +55,7 @@ The AI text receptionist meets them where they already are, on WhatsApp, and ans
 
 ## What the AI Handles vs. When It Escalates
 
-The Starter Agent is designed to handle the first ninety percent of customer interactions without human involvement. Here is what it managed in week one:
+The Text Receptionist is designed to handle the first ninety percent of customer interactions without human involvement. Here is what it managed in week one:
 
 - **Hours and pricing questions**, answered instantly. Seventy-four people asked about accounting package pricing. All got answers immediately.
 - **Service inquiries**. "Do you handle corporate taxes?" "Can you help with my small business accounting?", twenty-three questions answered, ten consultations booked.
@@ -71,15 +71,15 @@ Here is the math the owner ran after week one.
 
 | Cost Item | Amount |
 |-----------|--------|
-| AI Text Receptionist (Starter Agent) | $297/month |
+| AI Text Receptionist | $297 one-time |
 | WhatsApp Business API fees | $0 (included) |
-| **Total monthly cost** | **$297** |
+| **Total one-time cost** | **$297** |
 | Consultations booked in week one | 19 |
 | Average client value (first year) | $1,200 |
 | Revenue from week-one consultations | $22,800 |
-| **Return on monthly investment** | **76x** |
+| **Return on the one-time setup** | **76x** |
 
-Now, not every consultation converts into a client. Even at a fifty percent close rate, those nineteen consultations represent $11,400 in new revenue from a single week. The $297 monthly cost is covered by the first booking.
+Now, not every consultation converts into a client. Even at a fifty percent close rate, those nineteen consultations represent $11,400 in new revenue from a single week. The $297 one-time cost is covered by the first booking.
 
 Compare that to what they were spending before: a part-time admin answering emails and checking the contact form once a day. That position was costing them $400 per month and converting maybe one or two leads per month, when the leads bothered to fill out the form and wait for a reply.
 
@@ -101,7 +101,7 @@ The common thread is not the industry. It is the behavior. Your customers are on
 
 A text receptionist does not replace your human team. It does what humans cannot do: answer every message instantly, in both languages, twenty-four hours a day, without needing a break.
 
-The accounting firm did the math. The $297 per month returned more leads in one week than their contact form generated in six months. They did not fire anyone. They just stopped leaving money on the table.
+The accounting firm did the math. The $297 one-time build returned more leads in one week than their contact form generated in six months. They did not fire anyone. They just stopped leaving money on the table.
 
 If your website has a contact form and nobody checks it every hour, you are losing leads right now. Not tomorrow. Right now, someone is typing a message about your service and waiting for a reply that will not come until tomorrow afternoon.
 

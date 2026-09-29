@@ -62,7 +62,7 @@ The AI agent we build lives on top of the tools you already have, it doesn't ask
 
 I won't dress this up with a fake traffic number, because I don't have one and I won't invent one.
 
-What I can tell you: a Birky Studio AI Agent setup is **$1,297, one time, including three months of support.** Not a monthly subscription that grows as your tool count does. It works with the stack you already run.
+What I can tell you: a Birky Studio AI Agent setup is **$1,297, one time, including 30 days of support.** Not a monthly subscription that grows as your tool count does. It works with the stack you already run.
 
 What it won't do: it won't turn a low-transaction rural ZIP into a tight valuation. No tool can do that honestly. What it will do is tell you when the range is wide, so you know to escalate instead of guessing, and it will keep your comps, your notes, and your client summaries in one place you control, no matter what ATTOM's navigator looks like next year.
 

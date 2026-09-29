@@ -52,7 +52,7 @@ Blind automation, a tool that always sounds 100% sure, is a liability dressed as
 
 ## The Business Case
 
-A single lost deal to a credibility hit costs you your average commission, usually **$8,000 to $12,000**. A Birky Studio AI Agent setup starts at **$297/mo** for the text receptionist tier and **$1,297/mo** for the full Business AI Agent with live market data and confident, range-honest valuations built in.
+A single lost deal to a credibility hit costs you your average commission, usually **$8,000 to $12,000**. A Birky Studio setup starts at **$297 one-time** for the Text Receptionist and **$1,297 one-time** for the full Base Agent, with confident, range-honest valuations built in.
 
 That means the agent pays for itself the moment it protects one listing appointment or wins one negotiation you'd have lost on a fabricated number.
 

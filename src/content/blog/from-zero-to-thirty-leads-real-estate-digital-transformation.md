@@ -41,7 +41,7 @@ Price: **$999 (Professional tier)**
 **2. An AI Agent for Lead Capture**
 We deployed a Birky Studio AI Agent on his website and WhatsApp that answers inquiries 24/7. When a prospect asks "Is this property still available?" at 9 PM, the AI responds instantly with the status, schedule options, and a link to book a viewing.
 
-Price: **$1,297 (Real Estate AI Agent with Notion CRM)**
+Price: **$1,297 (Base Agent, Notion CRM included)**
 
 **3. A Voice Receptionist**
 We added an AI voice receptionist that forwards to Miguel's phone during business hours and handles calls independently after hours. No more missed calls.

@@ -173,6 +173,22 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
       color: #fff;
     }
     
+    /* Purple "ghost" button. Deliberately mirrors the homepage hero's
+       "See How It Works" button (hero.css .hero-btn-ghost) as RENDERED: raised
+       purple ground #241340, off-white text #f5f3f7, no border, no pink glow.
+       Note the hero's own 1px border never applies, because the global
+       .btn { border: none } wins on equal specificity, so it is left off here too.
+       Use this where a call to action should read as secondary instead of pink.
+       Luna, 28 Sep 2026. */
+    .btn-purple {
+      background: var(--bs-bg-raised);
+      color: var(--bs-text);
+    }
+    
+    .btn-purple:hover {
+      transform: translateY(-2px);
+    }
+    
     .gradient-text {
       background: var(--gradient-primary);
       -webkit-background-clip: text;
@@ -261,7 +277,7 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
             <a href="/es/#productos" class="bs-link">Productos</a>
             <a href="/es/blog" class="bs-link">Blog</a>
             <a href="/es/partners" class="bs-link">Socios</a>
-            <a href="/es/#precios-sitios" class="bs-link">Precios</a>
+            <a href="/es/#precios-ia" class="bs-link">Precios</a>
             <a href="/es/contacto" class="bs-link">Contacto</a>
             <a href="/" class="bs-lang">EN</a>
             <a href="/es/contacto" class="bs-cta">Empezar</a>
@@ -272,7 +288,7 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
             <a href="/about" class="bs-link">About</a>
             <a href="/#products" class="bs-link">Products</a>
             <a href="/blog" class="bs-link">Blog</a>
-            <a href="/#pricing-websites" class="bs-link">Pricing</a>
+            <a href="/#pricing-ai" class="bs-link">Pricing</a>
             <a href="/contact" class="bs-link">Contact</a>
             <a href="/partners" class="bs-link">Partner</a>
             <a href="/es/" class="bs-lang">ES</a>
@@ -306,7 +322,7 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
             <a href="/#products" style="color:var(--bs-text-muted);transition:color 0.2s;">Products</a>
             <a href={isSpanish ? "/es/blog" : "/blog"} style="color:var(--bs-text-muted);transition:color 0.2s;">Blog</a>
             <a href="/tools/ai-savings-calculator" style="color:var(--bs-text-muted);transition:color 0.2s;">Free Tools</a>
-            <a href="/#pricing-websites" style="color:var(--bs-text-muted);transition:color 0.2s;">Pricing</a>
+            <a href="/#pricing-ai" style="color:var(--bs-text-muted);transition:color 0.2s;">Pricing</a>
             <a href="/contact" style="color:var(--bs-text-muted);transition:color 0.2s;">Contact</a>
           </div>
         </div>

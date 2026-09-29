@@ -58,7 +58,7 @@ This is the same reason agents running our setup stop losing context between con
 
 I am not going to hand you a made-up "adoption up 47%" number, because I do not have one and I will not invent it.
 
-What I can tell you is what it costs. A Birky Studio AI Agent setup is **$1,297, one time, including three months of support.** Not a per-door fee. Not a monthly subscription that grows with your unit count. One build, running on top of your existing stack.
+What I can tell you is what it costs. A Birky Studio AI Agent setup is **$1,297, one time, including 30 days of support.** Not a per-door fee. Not a monthly subscription that grows with your unit count. One build, running on top of your existing stack.
 
 And the honest limit: the agent cannot offer a product you have not approved, and it cannot fix a policy nobody wrote. If your team has not decided whether deposit alternatives are right for your properties, no software will decide that for you. We will tell you that on the first call instead of selling you a setup you do not need.
 

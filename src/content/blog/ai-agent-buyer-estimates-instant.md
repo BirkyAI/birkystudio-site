@@ -46,7 +46,7 @@ If you want the full breakdown of how response speed converts leads, check out o
 
 A single minute of response delay reduces conversion by 15–20%. Multiply that across every buyer inquiry this month and you're leaving serious money on the table.
 
-Birky Studio's AI Agent setups start at **$297/mo** for the text receptionist tier, which handles SMS, WhatsApp, and web chat, and **$1,297/mo** for the full Business AI Agent with CRM integration, live market data, and automated follow-up sequences.
+Birky Studio's AI Agent setups start at **$297 one-time** for the Text Receptionist, which handles WhatsApp and web chat, and **$1,297 one-time** for the full Base Agent with CRM integration, live market data, and automated follow-up sequences.
 
 Compare that to the cost of one missed deal. If your average commission is $8,000–$12,000, the AI Agent pays for itself the moment it captures one buyer you would have lost to the dead zone.
 

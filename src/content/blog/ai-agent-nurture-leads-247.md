@@ -102,7 +102,7 @@ An AI agent responds in under two seconds. Every time. Even at 2 AM on a Sunday.
 
 ## What It Costs
 
-Setting up a complete AI agent lead nurture pipeline, including website integration, WhatsApp connection, automated qualification, calendar booking, and follow-up sequences, is a one-time setup fee of **$1,297**. That covers the build, training, testing, and three months of support and adjustments.
+Setting up a complete AI agent lead nurture pipeline, including website integration, WhatsApp connection, automated qualification, calendar booking, and follow-up sequences, is a one-time setup fee of **$1,297**. That covers the build, training, testing, and 30 days of support and adjustments.
 
 After setup, the ongoing costs are minimal: typically **$50 to $100 per month** for the AI platform provider, depending on your conversation volume.
 

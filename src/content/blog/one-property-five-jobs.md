@@ -52,7 +52,7 @@ And that is just the listing marketing piece. The same AI Agent handles [auto-lo
 
 Listing marketing fragmentation is one of those costs that creeps. You do not notice it on a single listing, but over a year it adds up to hours of wasted time and thousands of dollars in lost revenue. An AI Agent does not just automate the formatting. It frees you to do the work that pays.
 
-An AI Agent setup from Birky Studio starts at **$1,297** with three months of support. Compare that to one extra deal per year, the math is not close.
+An AI Agent setup from Birky Studio starts at **$1,297** with 30 days of support. Compare that to one extra deal per year, the math is not close.
 
 [Contact Birky Studio](https://birkystudio.com/contact/) and let us show you what happens when you upload photos once and the system handles the rest.
 

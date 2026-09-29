@@ -22,7 +22,7 @@ Here is the receipt.
 
 ## The Line-Item Receipt
 
-An **AI Agent Setup from Birky Studio is $1,297, one time**, and it includes three months of support. No six-month contract. No per-seat charge. No "setup fee" hiding behind a monthly rate that doubles at month four.
+An **AI Agent Setup from Birky Studio is $1,297, one time**, and it includes 30 days of support. No six-month contract. No per-seat charge. No "setup fee" hiding behind a monthly rate that doubles at month four.
 
 Here is what that number actually covers:
 
@@ -34,7 +34,7 @@ Here is what that number actually covers:
 | Lead qualification | Serious buyers surfaced, tire-kickers handled | Paying a VA to ask the same three questions |
 | Calendar booking | Straight into your calendar, no back-and-forth | Six emails to schedule one showing |
 | CRM / Notion system wired in | Every conversation written into a record you can read in 60 seconds | The CRM you pay for and do not use |
-| 3 months of support | Real humans, real fixes, included in the price | "Contact your account manager" |
+| 30 days of support | Real humans, real fixes, included in the price | "Contact your account manager" |
 
 And if you want it narrower, you do not have to buy the whole thing. The **AI Text Receptionist is $297**, the WhatsApp agent alone, catching every inbound message and structuring it into your workflow. The **AI Voice Receptionist is $550**, and both are also available as a bundle. Optional support after the first 30 days is $97/month (Care & Maintenance) or $197/month (Business AI Partner). You pay the voice provider directly, roughly $30-50/month at typical volume.
 

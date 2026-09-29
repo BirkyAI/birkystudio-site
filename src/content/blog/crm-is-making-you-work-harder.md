@@ -52,7 +52,7 @@ The agent on Reddit who said *"I need eight tabs to answer one property question
 
 ## The Money Part
 
-An AI Agent setup from Birky Studio starts at **$1,297** with three months of support included. That replaces the $50–$100 per month you are paying for a CRM that logs nothing, plus the time you spend manually entering data, time worth far more.
+An AI Agent setup from Birky Studio starts at **$1,297** with 30 days of support included. That replaces the $50–$100 per month you are paying for a CRM that logs nothing, plus the time you spend manually entering data, time worth far more.
 
 If one extra closed deal per quarter comes from better follow-ups, the agent pays for itself in the first month. Our clients are seeing exactly that: dentist booked 18 new patients in one week, salon recovered $800 per month in missed appointments, real estate agents closed leads that would have slipped through the cracks.
 

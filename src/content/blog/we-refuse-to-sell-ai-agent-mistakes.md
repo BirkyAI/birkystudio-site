@@ -52,7 +52,7 @@ Stop shopping for the perfect CRM. Use what you have. Let the AI do the work.
 
 An AI agent that's delivered and dropped is a liability wearing a feature badge. If nobody trains it on your listings, your tone, your handoff habits, it's going to say something dumb to a buyer and it becomes *your* problem.
 
-That's why every [AI Agent Setup at Birky Studio](https://birkystudio.com/blog/what-1297-buys-ai-agent-setup/) is **$1,297, one time, and includes three months of support**, no six-month contract, no per-seat charge, no surcharge hiding in month four. In the first month we're shaving the rough edges off together. We don't leave you with a box and a "good luck."
+That's why every [AI Agent Setup at Birky Studio](https://birkystudio.com/blog/what-1297-buys-ai-agent-setup/) is **$1,297, one time, and includes 30 days of support**, no six-month contract, no per-seat charge, no surcharge hiding in month four. In the first month we're shaving the rough edges off together. We don't leave you with a box and a "good luck."
 
 ## What we DO commit to
 
