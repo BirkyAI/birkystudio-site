@@ -170,7 +170,7 @@ const faqLD = JSON.stringify({
           <span>Restaurants &amp; Hotels</span>
         </div>
         <div class="hero-ctas">
-          <a href="/contact" class="btn hero-btn-primary">Get My Time Back →</a>
+          <a href="/products/free-audit" class="btn hero-btn-primary">Get My Time Back →</a>
           <a href="/#products" class="btn hero-btn-ghost">See How It Works</a>
         </div>
       </div>
@@ -206,6 +206,8 @@ const faqLD = JSON.stringify({
   </section>
 
   <!-- AI demo lives on the portfolio page only (Luna, 27 Sep 2026) -->
+
+  <div id="products"></div>
 
   <!-- Pricing: The System (base agent + building blocks) -->
   <section id="pricing-ai" style="padding:100px 0">
@@ -605,93 +607,7 @@ const faqLD = JSON.stringify({
     </div>
   </section>
 
-  <!-- Products Section -->
-  <section id="products" style="padding:100px 0">
-    <div class="container">
-      <div style="text-align:center;margin-bottom:64px;">
-        <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Our Products</h2>
-        <p style="color:var(--bs-text-muted);font-size:1.1rem;max-width:600px;margin:0 auto;">Four powerful solutions to help your business grow, a professional online presence, smart automation, 24/7 call answering, and real prospects you own.</p>
-      </div>
-      
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;max-width:1200px;margin:0 auto;">
-        <!-- Product 1: Website Design -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18"/><path d="M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg>
-          </div>
-          <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Website Design</h3>
-          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Professional, mobile-first websites that load fast and convert visitors into customers. Bilingual, SEO &amp; AEO-optimized, with WhatsApp integration, everything your business needs to stand out online, delivered in 2-3 days.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Mobile-First</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingual</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">SEO &amp; AEO</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">WhatsApp</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Fast Loading</span>
-          </div>
-          <a href="/#pricing-websites" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;">View Website Plans →</a>
-        </div>
-        
-        <!-- Product 2: AI Agent Setup -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4"/><circle cx="9" cy="14" r="1.2"/><circle cx="15" cy="14" r="1.2"/></svg>
-          </div>
-          <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Assistant Setup</h3>
-          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            The machine behind your front desk. It catches every enquiry from your site and WhatsApp, qualifies it, saves it to a Notion CRM built for agents, answers it instantly and follows up on its own. It runs on its own server, so it keeps working when your laptop is shut.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Lead Capture</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Notion CRM</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Auto Follow-Up</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingual</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">You Own It</span>
-          </div>
-          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:var(--bs-accent);box-shadow:0 4px 15px rgba(255,45,149,0.35);">View AI Agent Plans →</a>
-        </div>
-        
-        <!-- Product 3: AI Receptionist -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:var(--bs-accent);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6 6L16 12.5l4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3z"/></svg>
-          </div>
-          <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Receptionist</h3>
-          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Never miss a call again. Our AI receptionist answers your phone 24/7 with a natural voice, speaks English and Spanish, takes messages, and forwards urgent calls, even after hours and weekends.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">24/7 Calls</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">AI Voice</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Bilingual</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Takes Messages</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Urgent Forwarding</span>
-          </div>
-          <a href="/#pricing-receptionist" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">Receptionist Plans →</a>
-        </div>
 
-        <!-- Product 4: Lead Generation Pack -->
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:48px;border:1px solid var(--bs-text);transition:all 0.3s;text-align:center;display:flex;flex-direction:column;">
-          <div style="width:80px;height:80px;background:var(--bs-bg-raised);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 28px;">
-            <svg viewBox="0 0 24 24" style="width:34px;height:34px;stroke:var(--bs-accent);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg>
-          </div>
-          <h3 style="color:white;font-size:1.5rem;margin-bottom:16px;">Lead Generation Pack</h3>
-          <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:28px;">
-            Real, verified prospects plus the AI to follow them up. We build you a scored, enriched lead list you own forever, with automated outreach and an AI agent + receptionist that catch and qualify replies 24/7.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:28px;">
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Verified Prospects</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">Any Niche</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">You Own It</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">AI Follow-Up</span>
-            <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text-muted);">No Lock-In</span>
-          </div>
-          <a href="/#pricing-ai" class="btn btn-primary" style="display:inline-flex;width:100%;max-width:240px;margin:auto;background:var(--bs-bg-raised);box-shadow:0 4px 15px rgba(255,45,149,0.35);">View Lead Gen Plans →</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
     <!-- About Me -->
   <section style="padding:100px 0">
