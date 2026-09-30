@@ -185,6 +185,9 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
     .btn-purple {
       background: var(--bs-bg-raised);
       color: var(--bs-text);
+      /* Luna, 29 Sep 2026: thin white hairline so purple buttons stay visible
+         against the dark backdrop. */
+      border: 1px solid rgba(255, 255, 255, .4);
     }
     
     .btn-purple:hover {
@@ -196,7 +199,7 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
        on the dark theme, with no big block of pink.
        Luna, 29 Sep 2026. */
     .btn-white {
-      background: #ffffff;
+      background: var(--bs-btn-light);
       color: var(--bs-accent);
     }
 

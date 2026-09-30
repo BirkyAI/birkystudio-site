@@ -15,6 +15,9 @@
   --bs-accent: #ff2d95;
   --bs-accent-glow: rgba(255, 45, 149, .35);
   --bs-accent-2: #b0005a;
+  /* Soft light ground for "white" buttons: white, knocked back so it is not the
+     brightest thing on the page. Luna, 29 Sep 2026. */
+  --bs-btn-light: #e6e3ee;
 }
 
 /* ---------- one backdrop and one grid for the whole site ----------
@@ -149,16 +152,21 @@ main > div > section {
   box-shadow: 0 10px 30px rgba(255, 45, 149, .22);
 }
 .hero-btn-primary:hover { transform: translateY(-2px); }
-.hero-btn-ghost {
+/* Note: selector is `.btn.hero-btn-ghost` (not just `.hero-btn-ghost`) to out-
+   rank the global `.btn { border: none }`, which otherwise wins on equal
+   specificity and strips the hairline. Luna, 29 Sep 2026. */
+.btn.hero-btn-ghost {
   background: var(--bs-bg-raised);
   color: var(--bs-text);
-  border: 1px solid var(--bs-border);
+  /* Luna, 29 Sep 2026: purple buttons need a visible hairline or they sink into
+     the backdrop. */
+  border: 1px solid rgba(255, 255, 255, .4);
   padding: 16px 30px;
 }
 .hero-btn-ghost:hover { transform: translateY(-2px); }
-/* Luna, 29 Sep 2026: hero CTA toned down to white ground + pink lettering. */
+/* Luna, 29 Sep 2026: hero CTA toned down to a soft light ground + pink lettering. */
 .hero-btn-white {
-  background: #fff;
+  background: var(--bs-btn-light);
   color: var(--bs-accent);
   border: none;
   font-weight: 700;
@@ -319,7 +327,8 @@ main > div > section {
 .bs-cta {
   background: var(--bs-bg-raised);
   color: var(--bs-text);
-  border: 1px solid var(--bs-border);
+  /* Luna, 29 Sep 2026: same visible hairline as the other purple buttons. */
+  border: 1px solid rgba(255, 255, 255, .4);
   padding: 10px 20px;
   border-radius: 10px;
   font-size: .82rem;
