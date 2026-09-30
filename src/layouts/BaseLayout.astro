@@ -277,6 +277,17 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
     gtag('js', new Date());
     gtag('config', 'G-S4438YL4EK');
   </script>
+  <!-- Microsoft Clarity: heatmaps + session recordings. Project yq8ya9cgfy (Birky Studio).
+       Added 2026-09-29. Clarity filters bot traffic by default, so its session counts run lower
+       than GA4's here and are closer to the truth. Note: the standalone /ai-demo and /es/ai-demo
+       pages do not use BaseLayout, so they are deliberately not covered. -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yq8ya9cgfy");
+  </script>
 </head>
 <body>
   <!-- Navigation -->
