@@ -156,6 +156,16 @@ main > div > section {
   padding: 16px 30px;
 }
 .hero-btn-ghost:hover { transform: translateY(-2px); }
+/* Luna, 29 Sep 2026: hero CTA toned down to white ground + pink lettering. */
+.hero-btn-white {
+  background: #fff;
+  color: var(--bs-accent);
+  border: none;
+  font-weight: 700;
+  padding: 16px 30px;
+  box-shadow: 0 10px 30px rgba(255, 45, 149, .18);
+}
+.hero-btn-white:hover { transform: translateY(-2px); }
 
 /* ---------- the six building blocks ---------- */
 .mod-stage { position: relative; height: 520px; }
