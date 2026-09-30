@@ -15,7 +15,6 @@ export const products = [
     category: 'Para empezar',
     icon: '🔍',
     accent: 'var(--bs-bg-raised)',
-    badge: 'Empezamos aquí',
     name: 'Auditoría Gratis de 15 Minutos',
     tagline: 'Una conversación corta, y le ponemos nombre a lo que más tiempo te está costando',
     price: 'Gratis',

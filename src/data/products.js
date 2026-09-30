@@ -13,7 +13,6 @@ export const products = [
     category: 'Start here',
     icon: '🔍',
     accent: 'var(--bs-bg-raised)',
-    badge: 'Start here',
     name: 'Free 15-Minute Audit',
     tagline: 'One short conversation, and we name the one thing costing you the most time',
     price: 'Free',
