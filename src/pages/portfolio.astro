@@ -81,8 +81,8 @@ const projects = [
       <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:var(--bs-accent);font-size:0.9rem;font-weight:500;margin-bottom:24px;">
         🎨 Real projects, real businesses, real results
       </div>
-      <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;">
-        Our <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Portfolio</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;text-transform:uppercase;">
+        Our <span style="color:var(--bs-accent);">Portfolio</span>
       </h1>
       <p style="font-size:1.2rem;color:var(--bs-text);max-width:650px;margin:0 auto;line-height:1.8;">
         Websites, AI agents, and voice receptionists, built for real businesses. Every solution delivered fast, bilingual, and built to grow.
@@ -98,8 +98,8 @@ const projects = [
         <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--bs-accent);animation:pulse 2s infinite;"></span>
         Live Demo. Try It Now
       </div>
-      <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:white;margin-bottom:16px;">
-        🎧 Call Elliot. Your AI Voice Agent
+      <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:white;margin-bottom:16px;text-transform:uppercase;">
+        🎧 Call Elliot. Your AI <em style="font-style:normal;color:var(--bs-accent);">Voice Agent</em>
       </h2>
       <p style="font-size:1.1rem;color:var(--bs-text-muted);max-width:600px;margin:0 auto 32px;line-height:1.8;">
         No login, no signup. One click and Elliot picks up. Ask about properties, pricing, or just test it, it handles everything.
@@ -127,7 +127,7 @@ const projects = [
                           <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                             {project.plan}. Try It Live
                           </div>
-                          <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
+                          <h2 style="font-size:2rem;color:white;margin-bottom:8px;text-transform:uppercase;">AI <em style="font-style:normal;color:var(--bs-accent);">Assistant</em> Demo</h2>
                           <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
                           <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
                           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
@@ -162,8 +162,8 @@ const projects = [
                           <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                             🤖 {project.plan}. Try It Live
                           </div>
-                          <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
-                          <p style="color:#f9a8d4;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
+                          <h2 style="font-size:2rem;color:white;margin-bottom:8px;text-transform:uppercase;">AI Voice <em style="font-style:normal;color:var(--bs-accent);">Receptionist</em> Demo</h2>
+                          <p style="color:white;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
                           <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
                           <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
                             {project.tags.map(tag => (
@@ -308,12 +308,12 @@ const projects = [
   <section style="padding:100px 0;text-align:center;position:relative;overflow:hidden">
     <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(255,45,149,0.15),transparent 50%);"></div>
     <div class="container" style="position:relative;z-index:1;">
-      <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;">Want a Solution Like These?</h2>
+      <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;text-transform:uppercase;">Want a Solution <em style="font-style:normal;color:var(--bs-accent);">Like These?</em></h2>
       <p style="color:var(--bs-text);font-size:1.15rem;max-width:550px;margin:0 auto 40px;line-height:1.8;">
         Let's build something amazing for your business. Fast delivery, professional design, and affordable pricing.
       </p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="/contact" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px;">
+        <a href="/contact" class="btn btn-purple" style="font-size:1.1rem;padding:18px 36px;">
           Start Your Project →
         </a>
         <a href="/#pricing-websites" class="btn" style="background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
