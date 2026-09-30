@@ -188,6 +188,20 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
     .btn-purple:hover {
       transform: translateY(-2px);
     }
+
+    /* White "toned down" button: white ground, neon pink lettering. The next
+       step down from pink (primary) and purple (secondary) - a light, calm CTA
+       on the dark theme, with no big block of pink.
+       Luna, 29 Sep 2026. */
+    .btn-white {
+      background: #ffffff;
+      color: var(--bs-accent);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 45, 149, 0.25);
+    }
     
     .gradient-text {
       background: var(--gradient-primary);
