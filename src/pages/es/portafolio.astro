@@ -41,13 +41,23 @@ const projects = [
   },
   {
     title: "Demo Recepcionista por Voz IA",
-    subtitle: "Muestra. Sunrise Wellness Center",
-    url: "/ai-demo",
+    subtitle: "Prueba a Elliot. Agente de Voz de Birky Studio",
+    url: "https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1",
     image: null,
     isLiveDemo: true,
-    description: "Demo interactiva en vivo de un recepcionista IA por voz y texto para un centro de bienestar. Responde preguntas sobre servicios, precios, horarios, ubicación, agenda citas y maneja llamadas bilingües 24/7. Construido con la plataforma de voz Vapi.ai.",
-    tags: ["Voz IA", "Bilingüe", "24/7", "Bienestar", "Vapi"],
+    description: "Demo interactiva en vivo de Elliot, un agente de voz IA para bienes raíces y pequeños negocios. Responde preguntas sobre los servicios de Birky Studio, atiende consultas, agenda demos y maneja llamadas bilingües 24/7. Construido con Vapi.ai, 92% de naturalidad.",
+    tags: ["Voz IA", "Bilingüe", "24/7", "Bienes Raíces", "Vapi", "Elliot"],
     plan: "Recepcionista por Voz",
+  },
+  {
+    title: "Demo Asistente IA",
+    subtitle: "Demo en Vivo. Prueba el Asistente de Texto",
+    url: "/es/ai-demo",
+    image: null,
+    isEmbedDemo: true,
+    description: "Demo en vivo del asistente de WhatsApp de Birky Studio para pequeños negocios. Míralo manejar preguntas de precios, reservas y consultas tal como lo haría con tus propios clientes, en inglés o español.",
+    tags: ["Agente IA", "Bilingüe", "24/7", "WhatsApp", "Demo en Vivo"],
+    plan: "Recepcionista de Texto",
   },
   {
     title: "El Agente Base, Comercio",
@@ -85,14 +95,15 @@ const projects = [
     <div class="container">
       <div style="display:flex;flex-direction:column;gap:80px;">
         {projects.map((project, i) => (
-          project.isLiveDemo ? (
-            /* ═══ LIVE DEMO CARD ═══ */
+          project.isEmbedDemo ? (
+            /* ═══ EMBEDDED LIVE DEMO CARD ═══
+               Espejo de la tarjeta EN en portfolio.astro. Embebe /es/ai-demo. */
             <div>
               <div style="text-align:center;margin-bottom:40px;">
                 <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
                   {project.plan}. Pruébalo en Vivo
                 </div>
-                <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
+                <h2 style="font-size:2rem;color:white;margin-bottom:8px;text-transform:uppercase;">Demo de <em style="font-style:normal;color:var(--bs-accent);">Asistente</em> IA</h2>
                 <p style="color:white;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
                 <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
                 <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
@@ -113,6 +124,36 @@ const projects = [
                   </div>
                 </div>
                 <iframe src="/es/ai-demo" style="width:100%;height:920px;border:none;display:block;" title="Demo Agente IA" loading="lazy"></iframe>
+              </div>
+              <div style="text-align:center;margin-top:32px;">
+                <a href="/es/contacto" class="btn btn-purple" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
+                  Obtén Tu Propio Agente IA →
+                </a>
+              </div>
+            </div>
+          ) : project.isLiveDemo ? (
+            /* ═══ LIVE DEMO CARD, Elliot ═══ */
+            <div>
+              <div style="text-align:center;margin-bottom:40px;">
+                <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
+                  {project.plan}. Pruébalo en Vivo
+                </div>
+                <h2 style="font-size:2rem;color:white;margin-bottom:8px;text-transform:uppercase;">Demo de Recepcionista de Voz <em style="font-style:normal;color:var(--bs-accent);">IA</em></h2>
+                <p style="color:white;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
+                <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
+                  {project.tags.map(tag => (
+                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
+                  ))}
+                </div>
+              </div>
+              <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,45,149,0.3);max-width:500px;margin:0 auto;padding:60px 40px;text-align:center;background:linear-gradient(135deg,rgba(255,45,149,0.07),rgba(255,45,149,0.05));">
+                <div style="font-size:5rem;margin-bottom:20px;">🎧</div>
+                <h3 style="font-size:1.5rem;color:white;margin-bottom:12px;">Llama a Elliot Ahora</h3>
+                <p style="color:var(--bs-text-muted);margin-bottom:32px;line-height:1.7;">Sin registro, sin formulario, sin descargas. Un clic y Elliot contesta. Pregúntale sobre los servicios, los precios, o pruébalo con algo raro, lo maneja.</p>
+                <a href={project.url} target="_blank" rel="noopener" class="btn btn-purple" style="display:inline-flex;font-size:1.2rem;padding:18px 36px;">
+                  🎧 Llamar al Agente de Voz →
+                </a>
               </div>
               <div style="text-align:center;margin-top:32px;">
                 <a href="/es/contacto" class="btn btn-purple" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
