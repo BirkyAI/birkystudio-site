@@ -1,40 +1,34 @@
 ---
-// AI Agent Demo. Birky Studio sales bot, real WhatsApp CTA.
-// Standalone document on purpose: it is embedded as an iframe inside the
-// portfolio cards (EN /portfolio and ES /es/portafolio), so it must not carry
-// the site nav. It DOES need the brand tokens, which it did not used to have,
-// so every var(--bs-*) silently collapsed and the page rendered as a plain
-// white sheet with an invisible banner. Luna, 29 Sep 2026.
-//
-// Sep 2026 upgrade: four industry scenarios, bubble-by-bubble playback that
-// reads like a screen recording, and a replay control.
-// Spanish twin lives at src/pages/es/ai-demo.astro. Keep the SCENARIOS data in
-// the two files in sync, and keep the prices matching the live site.
+// Demo de IA. Versión en español de src/pages/ai-demo.astro.
+// Documento independiente: se incrusta como iframe en las tarjetas del portafolio
+// (/es/portafolio), así que no debe llevar el menú del sitio, pero sí necesita los
+// tokens de marca (no hereda hero.css).
+// Los precios deben coincidir con los planes del sitio es (Quetzales).
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birky Studio. Live AI Demo</title>
-  <meta name="description" content="Watch a real AI agent conversation, answered by Birky Studio's WhatsApp assistant in English and Spanish. Realtor, dentist, boutique and restaurant scenarios.">
-  <link rel="canonical" href="https://birkystudio.com/ai-demo/">
+  <title>Birky Studio. Demo de IA en Vivo</title>
+  <meta name="description" content="Mira una conversación real con el asistente de WhatsApp de Birky Studio, en inglés y español. Escenarios de agente inmobiliario, dentista, boutique y restaurante.">
+  <link rel="canonical" href="https://birkystudio.com/es/ai-demo/">
   <link rel="alternate" hreflang="en" href="https://birkystudio.com/ai-demo/">
   <link rel="alternate" hreflang="es" href="https://birkystudio.com/es/ai-demo/">
   <link rel="alternate" hreflang="x-default" href="https://birkystudio.com/ai-demo/">
-  <meta property="og:title" content="Birky Studio. Live AI Demo">
-  <meta property="og:description" content="Watch a real AI agent conversation, answered by Birky Studio's WhatsApp assistant in English and Spanish.">
+  <meta property="og:title" content="Birky Studio. Demo de IA en Vivo">
+  <meta property="og:description" content="Mira una conversación real con el asistente de WhatsApp de Birky Studio, en inglés y español.">
   <meta property="og:image" content="https://birkystudio.com/images/birky-logo.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://birkystudio.com/ai-demo/">
+  <meta property="og:url" content="https://birkystudio.com/es/ai-demo/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style is:inline>
-    /* Brand tokens, mirrored from src/styles/hero.css. This page is a standalone
-       document, so it does not inherit them from BaseLayout. Without this block
-       every var(--bs-*) below resolves to nothing. */
+    /* Tokens de marca, copiados de src/styles/hero.css. Esta página es un
+       documento independiente, así que no los hereda de BaseLayout. Sin este
+       bloque, cada var(--bs-*) se resuelve a nada. */
     :root {
       --bs-bg-deep: #150b26;
       --bs-bg-raised: #241340;
@@ -57,8 +51,6 @@
       flex-direction: column;
     }
 
-    /* the same fixed 64px grid the rest of the site paints, so the embedded
-       copy matches the page it sits in */
     body::before {
       content: "";
       position: fixed;
@@ -124,7 +116,6 @@
       margin: 0 auto;
     }
 
-    /* ---------- scenario switcher ---------- */
     .scenario-row {
       display: flex;
       align-items: center;
@@ -181,9 +172,6 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      /* Must be able to shrink: the portfolio embeds this in a fixed-height
-         iframe, and without this the panel keeps its natural height and the
-         CTA below it gets clipped off the bottom of the frame. */
       flex: 1 1 auto;
       min-height: 0;
       overflow-y: auto;
@@ -263,13 +251,12 @@
     .qr-section img { width: 84px; height: 84px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .1); background: #fff; }
     .qr-section p { font-size: 0.7rem; color: var(--bs-text-muted); }
 
-    /* Do not paint the server-rendered conversation, then blow it away and
-       replay it. The inline script in <head> adds .js before first paint. */
+    /* No pintar la conversación del HTML y luego borrarla para reproducirla.
+       El script del <head> añade .js antes del primer pintado. */
     html.js .phone-mockup > .ssr { visibility: hidden; }
 
-    /* Embedded in the portfolio card: the QR is pointless (the visitor is already
-       on the site) and the header can go tighter, which buys height for the chat
-       inside the fixed-height iframe. */
+    /* Dentro de la tarjeta del portafolio el QR no aporta y la cabecera puede ir
+       más ajustada, lo que gana altura para el chat dentro del iframe fijo. */
     body.embedded .qr-section { display: none; }
     body.embedded .brand p { display: none; }
     body.embedded .brand h1 { font-size: 1.2rem; }
@@ -301,97 +288,93 @@
 </head>
 <body>
 
-<div class="demo-bar">Live demo. This is the real assistant, on WhatsApp.</div>
+<div class="demo-bar">Demo en vivo. Este es el asistente real, en WhatsApp.</div>
 
 <div class="content">
   <div class="brand">
     <div class="wordmark">Birky.Studio</div>
-    <h1>Live AI Agent <em>Demo</em></h1>
-    <p>A real conversation with our WhatsApp assistant, in English or Spanish.</p>
+    <h1>Demo de Agente IA <em>en Vivo</em></h1>
+    <p>Una conversación real con nuestro asistente de WhatsApp, en inglés o español.</p>
   </div>
 
-  <div class="scenario-row" id="scenarios" role="group" aria-label="Choose a business type">
-    <button type="button" class="scenario is-active" data-scenario="realtor" aria-pressed="true">Realtor</button>
-    <button type="button" class="scenario" data-scenario="dentist" aria-pressed="false">Dentist</button>
+  <div class="scenario-row" id="scenarios" role="group" aria-label="Elige un tipo de negocio">
+    <button type="button" class="scenario is-active" data-scenario="realtor" aria-pressed="true">Inmobiliaria</button>
+    <button type="button" class="scenario" data-scenario="dentist" aria-pressed="false">Dentista</button>
     <button type="button" class="scenario" data-scenario="boutique" aria-pressed="false">Boutique</button>
-    <button type="button" class="scenario" data-scenario="restaurant" aria-pressed="false">Restaurant</button>
-    <button type="button" class="replay" id="replay" aria-label="Play the conversation again">
+    <button type="button" class="scenario" data-scenario="restaurant" aria-pressed="false">Restaurante</button>
+    <button type="button" class="replay" id="replay" aria-label="Reproducir la conversación otra vez">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3.2-6.9"/><path d="M21 3.5V9h-5.5"/></svg>
     </button>
   </div>
 
-  <!-- Live conversation preview. Server-rendered with the first scenario so the
-       demo still reads with JavaScript off; the script replaces it and plays. -->
   <div class="phone-mockup" id="phone" aria-live="polite">
     <div class="chat-bubble bot ssr">
-      Hey! I'm Birky Studio's AI assistant. I can help with AI agents, receptionist plans, and websites. What's your business type?
+      ¡Hola! Soy el asistente de IA de Birky Studio. Puedo ayudarte con agentes de IA, planes de recepcionista y sitios web. ¿Qué tipo de negocio tienes?
       <span class="time">10:02 AM</span>
     </div>
     <div class="chat-bubble user ssr">
-      I'm a real estate agent in Antigua
+      Soy agente inmobiliario en Antigua
       <span class="time">10:02 AM</span>
     </div>
     <div class="chat-bubble bot ssr">
-      Great, I work with lots of agents here. For a realtor the <strong>base agent is $1,297</strong>, and it includes a Notion CRM built for agents. Want me to walk you through what is included?
+      Genial, trabajo con muchos agentes de aquí. Para un agente el <strong>agente base cuesta Q9,900</strong> e incluye un CRM en Notion hecho para inmobiliarias. ¿Quieres que te explique qué incluye?
       <span class="time">10:03 AM</span>
     </div>
     <div class="chat-bubble user ssr">
-      Yeah tell me more
+      Sí, cuéntame más
       <span class="time">10:03 AM</span>
     </div>
     <div class="chat-bubble bot ssr">
-      Sure. It catches every enquiry from your website and WhatsApp, qualifies the lead, saves it to your Notion CRM, sends you a summary with a draft reply, and follows up 2 days later if nobody answered. All bilingual EN/ES. Want to try the real thing on WhatsApp?
+      Claro. Atrapa cada consulta de tu sitio web y de WhatsApp, califica al prospecto, lo guarda en tu CRM de Notion, te envía un resumen con un borrador de respuesta, y le da seguimiento 2 días después si nadie contestó. Bilingüe inglés y español. ¿Quieres probar el real en WhatsApp?
       <span class="time">10:04 AM</span>
     </div>
   </div>
 
   <div class="actions">
-    <a href="https://wa.me/50234775110?text=Hi%20Birky%20Studio!%20I%20saw%20the%20demo%20on%20your%20website%20and%20want%20to%20try%20the%20real%20AI." target="_blank" rel="noopener" class="try-btn">
+    <a href="https://wa.me/50234775110?text=Hola%20Birky%20Studio!%20Vi%20la%20demo%20en%20su%20sitio%20web%20y%20quiero%20probar%20la%20IA%20real." target="_blank" rel="noopener" class="try-btn">
       <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Try the Real AI on WhatsApp
+      Probar la IA Real en WhatsApp
     </a>
 
     <div class="qr-section">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://wa.me/50234775110?text=Hi%20Birky%20Studio!%20I%20saw%20the%20demo%20on%20your%20website" alt="QR Code to try BirkyStudio on WhatsApp" loading="lazy">
-      <p>Scan to try it now</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://wa.me/50234775110?text=Hola%20Birky%20Studio!%20Vi%20la%20demo%20en%20su%20sitio%20web" alt="Código QR para probar BirkyStudio en WhatsApp" loading="lazy">
+      <p>Escanea para probarlo</p>
     </div>
   </div>
 </div>
 
 <script is:inline>
-  // Inside the portfolio card the QR is redundant, and the tighter header buys
-  // vertical room for the chat in the fixed-height iframe.
   if (window.self !== window.top) document.body.classList.add('embedded');
 
-  // Conversation data. Prices must match the live site plans.
+  // Los precios deben coincidir con los planes del sitio en Quetzales.
   var SCENARIOS = {
     realtor: [
-      { from: 'bot',  text: "Hey! I'm Birky Studio's AI assistant. I can help with AI agents, receptionist plans, and websites. What's your business type?" },
-      { from: 'user', text: "I'm a real estate agent in Antigua" },
-      { from: 'bot',  text: "Great, I work with lots of agents here. For a realtor the <strong>base agent is $1,297</strong>, and it includes a Notion CRM built for agents. Want me to walk you through what is included?" },
-      { from: 'user', text: "Yeah tell me more" },
-      { from: 'bot',  text: "Sure. It catches every enquiry from your website and WhatsApp, qualifies the lead, saves it to your Notion CRM, sends you a summary with a draft reply, and follows up 2 days later if nobody answered. All bilingual EN/ES. Want to try the real thing on WhatsApp?" }
+      { from: 'bot',  text: "¡Hola! Soy el asistente de IA de Birky Studio. Puedo ayudarte con agentes de IA, planes de recepcionista y sitios web. ¿Qué tipo de negocio tienes?" },
+      { from: 'user', text: "Soy agente inmobiliario en Antigua" },
+      { from: 'bot',  text: "Genial, trabajo con muchos agentes de aquí. Para un agente el <strong>agente base cuesta Q9,900</strong> e incluye un CRM en Notion hecho para inmobiliarias. ¿Quieres que te explique qué incluye?" },
+      { from: 'user', text: "Sí, cuéntame más" },
+      { from: 'bot',  text: "Claro. Atrapa cada consulta de tu sitio web y de WhatsApp, califica al prospecto, lo guarda en tu CRM de Notion, te envía un resumen con un borrador de respuesta, y le da seguimiento 2 días después si nadie contestó. Bilingüe inglés y español. ¿Quieres probar el real en WhatsApp?" }
     ],
     dentist: [
-      { from: 'bot',  text: "Hey! I'm Birky Studio's AI assistant. What kind of business do you run?" },
-      { from: 'user', text: "A dental clinic. Two chairs, front desk only answers in office hours" },
-      { from: 'bot',  text: "Got it. For a clinic the <strong>voice receptionist is $550</strong>. It answers every call 24/7, books appointments straight into your calendar, and flags anything urgent. Want to hear how the booking side works?" },
-      { from: 'user', text: "Yes. We miss a lot of calls over lunch" },
-      { from: 'bot',  text: "That is the usual one. It picks up while the desk is closed, offers the next free slot, and confirms by WhatsApp. You get a daily list of who booked and why. Bilingual EN/ES. Want to try the real thing on WhatsApp?" }
+      { from: 'bot',  text: "¡Hola! Soy el asistente de IA de Birky Studio. ¿Qué tipo de negocio tienes?" },
+      { from: 'user', text: "Una clínica dental. Dos sillas, y la recepción solo contesta en horario de oficina" },
+      { from: 'bot',  text: "Entendido. Para una clínica la <strong>recepcionista de voz cuesta Q4,200</strong>. Contesta cada llamada 24/7, agenda las citas directo en tu calendario y te marca lo urgente. ¿Quieres ver cómo funciona el agendado?" },
+      { from: 'user', text: "Sí. Perdemos muchas llamadas a la hora del almuerzo" },
+      { from: 'bot',  text: "Esa es la típica. Contesta mientras la recepción está cerrada, ofrece el siguiente espacio libre y confirma por WhatsApp. Recibes una lista diaria de quién agendó y por qué. Bilingüe. ¿Quieres probar el real en WhatsApp?" }
     ],
     boutique: [
-      { from: 'bot',  text: "Hey! I'm Birky Studio's AI assistant. What do you sell?" },
-      { from: 'user', text: "A clothing boutique. Most orders come through WhatsApp" },
-      { from: 'bot',  text: "That is a fit for the <strong>text receptionist at $297</strong>. It answers the same sizing and shipping questions all day, takes the order details, and logs every customer in your CRM. Want to see how it handles a sizing question?" },
-      { from: 'user', text: "Yes, that is most of my day" },
-      { from: 'bot',  text: "It replies in seconds with your size guide, asks for the two measurements it needs, and sends you the order summary. Nothing sits unanswered overnight. Bilingual EN/ES. Want to try the real thing on WhatsApp?" }
+      { from: 'bot',  text: "¡Hola! Soy el asistente de IA de Birky Studio. ¿Qué vendes?" },
+      { from: 'user', text: "Una boutique de ropa. Casi todos los pedidos llegan por WhatsApp" },
+      { from: 'bot',  text: "Eso encaja con la <strong>recepcionista de texto, Q2,300</strong>. Contesta las mismas preguntas de tallas y envíos todo el día, toma los datos del pedido y guarda cada cliente en tu CRM. ¿Quieres ver cómo maneja una pregunta de talla?" },
+      { from: 'user', text: "Sí, eso es casi todo mi día" },
+      { from: 'bot',  text: "Responde en segundos con tu guía de tallas, pide las dos medidas que necesita y te manda el resumen del pedido. Nada se queda sin contestar de noche. Bilingüe. ¿Quieres probar el real en WhatsApp?" }
     ],
     restaurant: [
-      { from: 'bot',  text: "Hey! I'm Birky Studio's AI assistant. What is your business type?" },
-      { from: 'user', text: "A restaurant. We get the same calls all day long" },
-      { from: 'bot',  text: "Very common. The <strong>voice receptionist at $550</strong> answers opening hours, the menu and reservations, and books tables into your own calendar. Want to know what happens on a fully booked night?" },
-      { from: 'user', text: "Yeah, that is when it gets messy" },
-      { from: 'bot',  text: "It offers the next available table, adds them to a waiting list, and flags the request for you. No missed calls while the kitchen is busy. Bilingual EN/ES. Want to try the real thing on WhatsApp?" }
+      { from: 'bot',  text: "¡Hola! Soy el asistente de IA de Birky Studio. ¿Cuál es tu tipo de negocio?" },
+      { from: 'user', text: "Un restaurante. Recibimos las mismas llamadas todo el día" },
+      { from: 'bot',  text: "Muy común. La <strong>recepcionista de voz, Q4,200</strong>, contesta horarios, el menú y las reservas, y las agenda en tu propio calendario. ¿Quieres saber qué pasa una noche llena?" },
+      { from: 'user', text: "Sí, ahí es cuando se complica" },
+      { from: 'bot',  text: "Ofrece la siguiente mesa disponible, los pone en lista de espera y te marca la solicitud. No se pierde ninguna llamada mientras la cocina está ocupada. Bilingüe. ¿Quieres probar el real en WhatsApp?" }
     ]
   };
 
@@ -409,9 +392,7 @@
       timers = [];
     }
 
-    function atBottom() {
-      phone.scrollTop = phone.scrollHeight;
-    }
+    function atBottom() { phone.scrollTop = phone.scrollHeight; }
 
     function bubble(msg) {
       var el = document.createElement('div');
@@ -494,8 +475,6 @@
     });
     replay.addEventListener('click', function () { play(active); });
 
-    // Play when the demo is actually on screen. In an iframe this fires as soon
-    // as the frame is visible, which is what makes it read like a recording.
     var started = false;
     function startOnce() {
       if (started) return;
