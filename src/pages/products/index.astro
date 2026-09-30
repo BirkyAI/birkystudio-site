@@ -34,7 +34,6 @@ for (const p of products) {
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;">
           {cat.items.map((p) => (
             <a href={`/products/${p.slug}`} style="text-decoration:none;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:32px;display:flex;flex-direction:column;transition:all 0.2s;">
-              <div style="font-size:2rem;margin-bottom:16px;">{p.icon}</div>
               <h3 style="color:white;font-size:1.3rem;margin-bottom:8px;">{p.name}</h3>
               <p style="color:var(--bs-text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:20px;flex-grow:1;">{p.tagline}</p>
               <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:20px;">
