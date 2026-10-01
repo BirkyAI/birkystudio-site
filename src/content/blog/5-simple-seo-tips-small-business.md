@@ -34,7 +34,7 @@ Think about how a real person would search for what you offer. Then use those ex
 
 ## 3. Make Sure Your Site Loads Fast
 
-Google doesn't want to send people to slow websites. If your page takes more than three seconds to load, visitors leave and Google notices.
+Google doesn't want to send people to slow websites, and since 2024 it measures speed through three Core Web Vitals: Largest Contentful Paint (LCP) under 2.5 seconds, Interaction to Next Paint (INP) under 200 milliseconds, and Cumulative Layout Shift (CLS) under 0.1. Google evaluates them at the 75th percentile of real visits, so your slowest pages are the ones that count.
 
 **Easy wins for faster loading:**
 
@@ -42,7 +42,7 @@ Google doesn't want to send people to slow websites. If your page takes more tha
 - **Use fewer plugins.** Every WordPress plugin adds loading time. If you're not using it, delete it.
 - **Choose good hosting.** Cheap shared hosting often means slow loading. A modern static site loads in under a second.
 
-If you're not sure how fast your site is, run it through [Google PageSpeed Insights](https://pagespeed.web.dev/). It'll tell you exactly what's slowing things down.
+If you're not sure how fast your site is, run it through [Google PageSpeed Insights](https://pagespeed.web.dev/). It'll tell you exactly what's slowing things down, and it now reports INP instead of the retired FID metric.
 
 ## 4. Write for One Page, One Topic
 
@@ -72,6 +72,16 @@ When another website links to yours, Google sees it as a vote of confidence. The
 
 You don't need hundreds of links. Even five or ten from relevant, local websites can make a noticeable difference.
 
+## Core Web Vitals in 2026: What Google Actually Measures
+
+The old advice was "load in under three seconds." That is now only one of three metrics Google uses. Since March 2024, the three Core Web Vitals are:
+
+- **LCP (Largest Contentful Paint):** how fast your biggest element, usually the hero image or headline, loads. Good is under 2.5 seconds.
+- **INP (Interaction to Next Paint):** how fast the page responds when someone taps or clicks. Good is under 200 milliseconds. INP replaced the older FID metric, and it is the one most sites fail, about 43% miss the 200ms mark.
+- **CLS (Cumulative Layout Shift):** how much the page jumps around while loading. Good is under 0.1.
+
+Google scores these at the 75th percentile of real visits, so three out of four of your visitors need to pass, not just one test run. Only about 42% of mobile sites pass all three, which is exactly why passing them is a real advantage for a small business.
+
 ## The Bottom Line
 
 SEO isn't a mystery, it's about making it easy for Google to understand what you do and who you serve. Start with your Google Business Profile, use real words your customers search for, keep your site fast, organize your content clearly, and build a few quality links.
@@ -79,3 +89,11 @@ SEO isn't a mystery, it's about making it easy for Google to understand what you
 You don't need to do everything at once. Pick one tip from this list and work on it this week. Small, consistent improvements add up over time.
 
 If you'd like help making your website more visible on Google, [get in touch with us](/contact). We build fast, SEO-friendly websites for small businesses, and we'd love to help yours get found.
+
+## Frequently asked questions
+
+**What is a good page speed for a small business website?**
+Aim to pass all three Core Web Vitals: LCP under 2.5 seconds, INP under 200 milliseconds, and CLS under 0.1, measured at the 75th percentile of real visits. A static site usually clears all three; a plugin-heavy one often does not.
+
+**Why did Google replace FID with INP?**
+FID only measured the delay before the browser started handling the first interaction. INP measures the full round trip of every interaction on the page, so heavy scripts that passed under FID now fail. It became an official Core Web Vital on March 12, 2024.
