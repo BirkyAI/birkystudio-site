@@ -1,0 +1,572 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Wise Agent cheaper than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On a monthly basis, yes, and it is genuinely good value. Wise Agent is $49/month (or $499/year, about $42/month) for the CRM with up to five team members included, and $69/month (or $699/year) with WiseSocial. There is no setup fee, no contract, and a 14-day free trial. Where it differs is the model: Wise Agent is a subscription you pay every month for as long as you use it, and it is software you operate. BirkyStudio is a one-time build that answers your phone and WhatsApp, follows up automatically, and hands you verified prospects you own. If all you want is an affordable cloud CRM you run yourself, Wise Agent is a strong choice. If you want the front desk handled, that is a different purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent answer my phone or reply to leads on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Wise Agent is a CRM, not an AI agent. It stores your contacts, runs drip email and SMS campaigns, tracks transactions, and gives you landing pages, but it does not answer an inbound phone call and it does not hold an AI conversation on WhatsApp. Its SMS feature (WiseText) sends messages you write or schedule. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30-50/month) and answers calls 24/7 in English and Spanish. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Wise Agent cost per year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wise Agent is $49 per month, or $499 per year (about $42 per month) on the annual plan, for the CRM with up to five team members. The CRM plus WiseSocial plan is $69 per month, or $699 per year (about $59 per month). Add-ons are separate: extra team members are $20 per month per batch of five, additional logins are $20 per month each, WiseText SMS is $11 per month plus a one-time $80 registration, additional landing pages are $5 per month each, and WiseSocial on its own is $20 per month. There is no setup fee. Prices verified on wiseagent.com/pricing in October 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent include a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not a full website. Wise Agent includes landing pages (one is included, additional pages are $5 per month each) for capturing leads, but it is not a website builder. BirkyStudio builds a website you own outright, starting at $499 for a 1-3 page Starter site, $999 for a Professional 4-7 page bilingual site, and $1,999 for a Premium 10+ page site with a blog. You own the code, so nobody can hold your site or your domain to ransom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent find me leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Wise Agent organizes and markets to the leads you already have. It does not supply new prospects. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds automated outreach plus the AI that catches and qualifies the replies around the clock."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent have a contract or a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wise Agent is month to month with no contract, and it has a 14-day free trial. The vendor states there are no setup costs and no hidden fees, and onboarding is included. That is genuinely customer friendly, and we will say so. BirkyStudio matches the no-contract part with a 30-day money-back guarantee and no setup fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a CRM and an AI agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. Wise Agent holds the information and helps you market to it. The AI agent is the one picking up the phone at 9pm while you are at dinner."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Wise Agent (2026 Comparison), a CRM You Rent vs an Operator That Answers",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Wise Agent for real estate agents. Wise Agent is an affordable cloud CRM from $49/month you run yourself. BirkyStudio is a done-for-you AI operator that answers your phone, replies on WhatsApp, follows up automatically, and hands you verified prospects. Real pricing, real reviews, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-10-06",
+  "dateModified": "2026-10-06"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Wise Agent (2026)"
+  description="BirkyStudio vs Wise Agent honest comparison for real estate agents. Wise Agent is an affordable cloud CRM from $49/month you run yourself. BirkyStudio is a done-for-you AI operator that answers your phone, replies on WhatsApp and hands you verified prospects."
+  image="/images/comparison/wiseagent.jpg"
+  >
+    <script type="application/ld+json" set:html={faqLD} />
+    <script type="application/ld+json" set:html={articleLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,45,149,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,45,149,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated October 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Wise Agent<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">A CRM You Rent vs an Operator That Answers</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        Wise Agent is one of the best value real estate CRMs on the market: about $49 a month for up to five team members, no setup fee, no contract, 24/7 human support, and names like Forbes Advisor calling it a best-in-class pick. It is a genuinely good contact database. BirkyStudio is not a contact database. We hand you an AI operator that answers your phone and WhatsApp 24/7 in English and Spanish, follows up automatically, and delivers verified prospects you own. One is software you log into and work. The other works while you are out showing. Here is the honest breakdown.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want the phone answered and the follow-up handled without you. You get an AI agent that replies to every enquiry in seconds, an AI receptionist on WhatsApp and voice, verified prospects you own, and a website you control. Best for solo agents and small teams drowning in admin, not short of contacts.<br><br>
+          <strong style="color:white;">Choose Wise Agent if:</strong> You want an affordable, cloud-based real estate CRM you are happy to run yourself, for roughly $49 a month with up to five team members, no contract, no setup fee, a 14-day free trial, and 24/7 human support on the phone and chat. Honestly, on price and support, it earns its reputation.<br><br>
+          <strong style="color:white;">The honest difference:</strong> Wise Agent is where your leads live. It does not answer them. It stores contacts, runs drip emails, tracks transactions, and gives you landing pages. But it does not pick up the phone, does not hold an AI conversation on WhatsApp, and does not build your website. BirkyStudio does the work: it answers, it follows up, it qualifies, 24/7, and it is a one-time build instead of a subscription you rent forever.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/wiseagent-article-1.jpg" alt="Real estate agent reviewing a CRM contact list on a laptop beside a smartphone at a bright modern desk" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Wise Agent?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        Wise Agent and BirkyStudio get compared because both promise to cut the admin that eats a real estate agent's day, and because Wise Agent is often the CRM an agent already pays for. Wise Agent is a cloud-based real estate CRM from Fountain Hills, Arizona, running for well over a decade, used by solo agents, teams, and brokerages. It centers on contact management: notes, categories, calendar sync, drip email and SMS campaigns, transaction checklists, a commissions tracker, and landing pages to capture leads. It publishes its pricing openly, which is rare in this market, and it is genuinely affordable.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes a different route. Instead of giving you software to operate, we build and run an AI operator for you. The Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. Add the AI Receptionist and the phone is answered 24/7. Add the Verified Prospect List and you get real, enriched, scored prospects you own forever.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        Both are answering the same complaint: too much admin, too little selling. But they answer it differently. One hands you a good, affordable tool and a monthly bill. The other takes the work off your desk for a one-time build. The difference shows up in what you pay over time, what you own, what you give up, and who does the work at 9pm on a Saturday. That is what this page breaks down, honestly, including where Wise Agent wins.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Wise Agent, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Wise Agent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 audit (15 min), projects from $297</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$49/month (or $499/year, about $42/month)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A cloud CRM you log into and operate yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time builds you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Monthly or annual subscription, forever</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $0</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $0 (no setup costs stated)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 14-day free trial</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Month to month, no contract</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ No AI answering, it is a CRM not a receptionist</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp / Text AI</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> WiseText SMS $11/mo, you write every message</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead Generation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ You import your own leads, no lead supply</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Follow-Up Automation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI agent replies and follows up 24/7 automatically</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Drip email and SMS campaigns you set up and manage</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ English-focused</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM built for agents, free with the Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full real estate CRM, its core product</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Real Estate Specific Tools</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> AI and Notion CRM, not a full RE-CRM feature set</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Transaction checklists, commissions tracker, ZipForms, drip campaigns</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Landing pages only ($5/mo each after the first)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 24/7 live phone and chat, staffed by humans</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team Seats</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Scaled in the build (from $2,997 business tier)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Up to 5 included, extras $20/mo per 5</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Does the Work</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers and follows up, we maintain it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ You do, it is a tool you operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Track Record</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Smaller, newer studio</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 10+ years, huge user base, Forbes Advisor pick 3 years running</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/wiseagent-article-2.jpg" alt="Close-up of a real estate CRM dashboard on a laptop screen with a coffee cup on a wooden desk" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT WORKS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not a CRM you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a separate subscription for a database.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations. The Voice Receptionist is $550 one-time, plus you pay Vapi directly for usage (about $30-50/month), and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start with real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it wins is time and ownership. Nothing waits for you to sit down. A lead that comes in at 9pm gets an answer at 9pm, not the next morning. And everything is one-time or optional, so there is no subscription treadmill and nothing to cancel.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>AI answers your phone and WhatsApp 24/7, EN/ES</li>
+              <li>Follow-up happens automatically, no sitting down to work it</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Notion CRM included free with the Base Agent</li>
+              <li>Websites you own and can edit ($499 / $999 / $1,999)</li>
+              <li>One-time builds, no subscription to cancel</li>
+              <li>No contract, no setup fee, 30-day money-back guarantee</li>
+              <li>Same person who built it answers your support</li>
+              <li>Works for any niche, not just real estate</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Higher upfront cost than a $49/month CRM</li>
+              <li>Not a depth real estate transaction manager: no commission splits, no ZipForms, no MLS import</li>
+              <li>No built-in printed letters or drip-letter library</li>
+              <li>No shared-login seats for a five person team out of the box</li>
+              <li>Smaller, newer studio than a 10+ year, thousands-user product</li>
+              <li>Prospect list size is fixed by tier, not unlimited</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care &amp; Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/wiseagent-article-3.jpg" alt="Modern real estate office desk with a smartphone, open laptop and notebook in soft natural light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: Wise Agent -->
+      <div id="wise-agent" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Wise Agent</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Wise Agent is a cloud-based real estate CRM built for independent agents, small teams, and brokerages, and its value story is simple to state. The CRM plan is $49 a month, or $499 a year (about $42 a month), and that includes up to five team members on a shared login. The CRM plus WiseSocial plan is $69 a month, or $699 a year. There is no setup fee, no contract, a 14-day free trial, and 24/7 live support by phone and chat, staffed by humans rather than bots. On price and support, it is one of the strongest offers in the category, and Forbes Advisor has named it a best real estate CRM for three consecutive years.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The feature set centers on contact management and marketing: contacts with notes and categories, calendar sync, drip email and SMS campaigns, transaction checklists, a commissions tracker, and landing pages to capture leads. Real buyers praise it for being quick to learn and easy to add contacts to, and the 24/7 human support comes up again and again as the reason people stay. Its own reviews are largely positive, and we are not going to pretend otherwise.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The honest catch is the same one that applies to every CRM, plus a few of Wise Agent's own. It is software you operate: it will not answer your phone, hold a WhatsApp conversation at 9pm, or follow up on its own beyond the drip campaigns you set up. Some reviewers call it basic, note that the mobile app does less than the web app, and say that major updates have changed the interface in ways they had to relearn. The email tool is capped and some find the templates hard to customize. And because it is a subscription, you keep paying every month for as long as you use it. If you like working your own database and want a cheap, friendly CRM with real support, that model is a fair deal. If you wanted the answering done for you, that is a different job.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Affordable: $49/mo, or $499/year, up to 5 team members</li>
+              <li>No setup fee, no contract, 14-day free trial</li>
+              <li>24/7 live phone and chat support, staffed by humans</li>
+              <li>Transaction checklists, commissions tracker, ZipForms integration</li>
+              <li>Drip email and SMS campaigns, landing pages, calendar sync</li>
+              <li>Publishes pricing openly, which is rare in this market</li>
+              <li>Forbes Advisor best real estate CRM three years running</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>You do all the work, it is a tool not an operator</li>
+              <li>No AI voice receptionist and no AI WhatsApp conversation</li>
+              <li>No lead generation, you import your own leads</li>
+              <li>Monthly subscription forever, no one-time ownership option</li>
+              <li>Reviewers call it basic, with a mobile app that does less than the web app</li>
+              <li>Email tool is capped (500/day) and templates can be hard to customize</li>
+              <li>Landing pages only, no full website, no domain you own</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: CRM $49/month or $499/year (about $42/month, up to 5 team members) · CRM + WiseSocial $69/month or $699/year (about $59/month) · No setup fee · Month to month, no contract · 14-day free trial · 24/7 live support and onboarding included · Add-ons: extra team members $20/month per 5, additional logins $20/month each, WiseText SMS $11/month plus a one-time $80 registration, extra landing pages $5/month each, WiseSocial $20/month (verified live, October 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Wise Agent (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Just a CRM to organize contacts (DIY)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time (Base Agent, Notion CRM included)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499/year, renews every year</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (text) or $550 + ~$30-50/mo (voice, about $910-$1,150)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, it does not answer</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI follow-up on autopilot</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included with the Base Agent or the Pack</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, drip campaigns are manual setup</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospect list</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 (Starter) or $997 (Pro), one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">You import your own list</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Complete done-for-you pipeline</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,997 one-time (Lead Generation Pack)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499/year plus all the time you put in</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Landing pages only, no website builder</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk fully covered, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent $1,297 + $97/mo care)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499, but no answering, no AI, no leads</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total (base setup)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time, no recurring build fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,497, renews at $499/year</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💵 You want an affordable CRM you will run yourself</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Wise Agent</strong>. At about $49 a month for up to five team members, with no setup fee, no contract, a 14-day trial, and 24/7 human support, it is genuinely great value. If you like working your own database and want the lowest monthly cost, this is the honest recommendation.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 You need the phone answered when you cannot pick up</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Wise Agent has no AI answering at all. BirkyStudio's Voice Receptionist ($550 one-time plus Vapi usage) answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist ($297 one-time) holds full AI conversations while you are showing a property.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">⏰ You do not want to do the follow-up yourself</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Wise Agent will send drip campaigns you build, but it only acts on your instructions. BirkyStudio's AI agent replies and follows up automatically, so no lead goes cold because you were busy. That is the whole difference between a tool and an operator.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You have no leads and need some</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Wise Agent organizes the leads you already have, it does not supply any. BirkyStudio's Verified Prospect List is a real, enriched, scored list you own forever ($497 Starter, $997 Pro), and the $1,997 Lead Generation Pack adds the outreach and the AI that catches the replies.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🧾 You need transaction checklists, commissions, and ZipForms</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Wise Agent</strong>. This is where it clearly wins. Transaction checklists, a commissions tracker, ZipForms integration, and a five person shared login for the price of one are all built in, and BirkyStudio does not try to match that depth. If those tools are your day, add Wise Agent.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🌎 You work bilingual clients</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Wise Agent is English-focused. The BirkyStudio AI agent and receptionist handle English and Spanish natively, so a Spanish-speaking enquiry gets the same instant, fluent answer as an English one.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          This is not a fight BirkyStudio wins on monthly price or on support hours, and we are not going to pretend it is. <strong style="color:white;">Wise Agent is a genuinely good, affordable real estate CRM</strong>: about $49 a month for up to five team members, no setup fee, no contract, a 14-day trial, and 24/7 human support that its own users rave about. If all you want is somewhere to organize your contacts and run drip campaigns, and you are happy to work it yourself, add it and do not look back.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">BirkyStudio is a different purchase.</strong> You are not renting a database, you are buying the front desk. The AI answers your phone and WhatsApp 24/7 in two languages, follows up automatically, and hands you verified prospects you own. And because it is a one-time build rather than a subscription, you are not paying a bill in year three for a tool that still will not answer the phone.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: Wise Agent is where your leads live. BirkyStudio is what answers them. For most agents the right answer is both, Wise Agent for the back office records, BirkyStudio for the front desk conversation.<br><br>
+          <strong style="color:white;">Choose Wise Agent if:</strong> you want the best monthly value CRM in real estate and you like running your own database.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want the phone answered, the follow-up handled, and verified prospects you own, without you having to sit down and do it.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://wiseagent.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore Wise Agent →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is Wise Agent cheaper than BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            On a monthly basis, yes, and it is genuinely good value. Wise Agent is $49/month (or $499/year, about $42/month) for the CRM with up to five team members, and $69/month (or $699/year) with WiseSocial, with no setup fee, no contract, and a 14-day free trial. Where it differs is the model: it is a subscription you pay every month for as long as you use it, and it is software you operate. BirkyStudio is a one-time build that answers your phone and WhatsApp, follows up automatically, and hands you verified prospects you own.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Wise Agent answer my phone or reply on WhatsApp?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Wise Agent is a CRM, not an AI agent. It stores contacts, runs drip email and SMS campaigns, tracks transactions, and gives you landing pages, but it does not answer an inbound phone call and it does not hold an AI conversation on WhatsApp. Its SMS feature (WiseText) sends messages you write or schedule. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30-50/month), and the WhatsApp Text Receptionist is $297 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does Wise Agent cost per year?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            The CRM plan is $49/month, or $499/year (about $42/month), including up to five team members. CRM plus WiseSocial is $69/month, or $699/year (about $59/month). Add-ons are separate: extra team members $20/month per batch of five, additional logins $20/month each, WiseText SMS $11/month plus a one-time $80 registration, extra landing pages $5/month each, and WiseSocial on its own $20/month. Prices verified on wiseagent.com/pricing in October 2026.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Wise Agent include a website?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Not a full website. Wise Agent includes landing pages (one is included, additional pages are $5/month each) for capturing leads, but it is not a website builder. BirkyStudio builds a website you own, starting at $499 for a 1-3 page Starter site, $999 for a Professional 4-7 page bilingual site, and $1,999 for a Premium 10+ page site with a blog. You own the code, so nobody can hold your site or your domain to ransom.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Wise Agent find me leads?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Wise Agent organizes and markets to the leads you already have, it does not supply new prospects. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies around the clock.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Wise Agent have a contract or a free trial?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Wise Agent is month to month with no contract, and it has a 14-day free trial. The vendor states there are no setup costs and no hidden fees, and onboarding is included. That is genuinely customer-friendly. BirkyStudio matches the no-contract part with a 30-day money-back guarantee and no setup fee.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>What is the difference between a CRM and an AI agent?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. Wise Agent holds the information and helps you market to it. The AI agent is the one picking up at 9pm while you are at dinner.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> Wise Agent pricing and terms sourced from wiseagent.com/pricing in October 2026 ($49/month or $499/year for the CRM with up to 5 team members, $69/month or $699/year with WiseSocial, no setup fee, month to month with no contract, 14-day free trial, 24/7 live support and onboarding included; add-ons: extra team members $20/month per 5, additional logins $20/month each, WiseText SMS $11/month plus a one-time $80 registration, extra landing pages $5/month each, WiseSocial $20/month). Reputation and reviewer sentiment from Wise Agent's listings and user reviews on Software Advice, Capterra, and G2, and from Forbes Advisor's real estate CRM coverage. BirkyStudio pricing from birkystudio.com as of October 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297), the Voice Receptionist ($550 + Vapi ~$30-50/month), the Verified Prospect List ($497/$997), the Lead Generation Pack ($1,997), the Custom Assessment ($349/$999), websites ($499/$999/$1,999), and optional care at $97/month or $197/month. Prices and features may change. This is an honest comparison based on publicly available information, not a sponsored post.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
