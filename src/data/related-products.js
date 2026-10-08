@@ -59,14 +59,17 @@ export const TAG_TO_PRODUCTS = {
   'google tools': ['gbp-autopilot'],
   'customer reviews': ['review-engine'],
   // web and content
-  'web design': ['free-audit', 'self-editing-cms'],
+  // Web-design posts lead with a website tier. Any of the three is a correct match
+  // (decided 2026-10-08): Professional is the middle one, and the Starter/Premium
+  // labels make the other two obvious once a reader is on the page.
+  'web design': ['website-professional', 'self-editing-cms'],
   'website audit': ['free-audit'],
   'wordpress': ['self-editing-cms'],
   'website builders': ['self-editing-cms'],
   'landing pages': ['content-engine'],
-  'user experience': ['free-audit'],
-  'mobile': ['free-audit'],
-  'design': ['free-audit'],
+  'user experience': ['website-professional', 'self-editing-cms'],
+  'mobile': ['website-professional'],
+  'design': ['website-professional', 'self-editing-cms'],
   'digital marketing': ['content-engine'],
   'marketing': ['content-engine'],
   'content marketing': ['content-engine'],
