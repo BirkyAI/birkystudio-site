@@ -12,6 +12,10 @@ export const TAG_TO_PRODUCTS = {
   'ai voice receptionist': ['voice-receptionist'],
   'voice receptionist': ['voice-receptionist'],
   'voice ai': ['voice-receptionist'],
+  // "AI Receptionist" on its own is ambiguous, but in this catalogue the phone
+  // product is the flagship meaning, so it leads. Text has its own tags below.
+  'ai receptionist': ['voice-receptionist', 'text-receptionist'],
+  'receptionist': ['voice-receptionist', 'text-receptionist'],
   'ai text receptionist': ['text-receptionist'],
   'text receptionist': ['text-receptionist'],
   'whatsapp': ['text-receptionist'],
@@ -82,15 +86,39 @@ export const TAG_TO_PRODUCTS = {
 
 const norm = (t) => t.trim().toLowerCase();
 
-/** Products matching a post's tags, max 3, deduped, with an entry-point fallback. */
+// Tags that describe the audience or the brand rather than the subject. They are
+// still mapped, but a topical tag must always outrank them: a post about voice
+// receptionists tagged ["AI Receptionist", "AI Agents", "Small Business"] has to
+// lead with the voice receptionist, not with the generic base agent.
+const GENERIC_TAGS = new Set([
+  'ai agents',
+  'ai agent',
+  'ai',
+  'automation',
+  'business automation',
+  'sales automation',
+  'small business automation',
+  'birky studio',
+  'small business',
+  'small business tips',
+  'business tips',
+  'case study',
+]);
+
+/** Products matching a post's tags, max 3, deduped, topical first, with an entry-point fallback. */
 export function getRelatedProducts(post, catalog, max = 3) {
-  const slugs = [];
+  const topical = [];
+  const generic = [];
   for (const tag of post.data.tags) {
-    slugs.push(...(TAG_TO_PRODUCTS[norm(tag)] ?? []));
+    const key = norm(tag);
+    const hit = TAG_TO_PRODUCTS[key];
+    if (!hit) continue;
+    (GENERIC_TAGS.has(key) ? generic : topical).push(...hit);
   }
-  // No tag matched the catalog: point at the two entry points rather than nothing.
-  if (slugs.length < 2) slugs.push('free-audit', 'ai-agent-setup');
-  return [...new Set(slugs)]
+  const ordered = [...new Set([...topical, ...generic])];
+  // Nothing topical matched the catalog: point at the two entry points instead.
+  if (ordered.length < 2) ordered.push('free-audit', 'ai-agent-setup');
+  return [...new Set(ordered)]
     .map((slug) => catalog.find((p) => p.slug === slug))
     .filter(Boolean)
     .slice(0, max);
