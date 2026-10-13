@@ -1,0 +1,580 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Top Producer more expensive than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top Producer is priced per user, every month, on an annual contract. The Pro plan is $179 per user per month, which is about $2,148 a year for one agent, and it does not include a website, lead routing, or IDX. Add a website ($35 per user per month) and FiveStreet lead routing ($25 per user per month) and a working stack starts at about $239 per user per month, or roughly $2,868 a year, before any lead package. BirkyStudio is a one-time build: The Base Agent is $1,297 solo (Notion CRM included), the Text Receptionist is $297, and the Voice Receptionist is $550 plus Vapi usage of about $30 to $50 a month. There is no per-seat fee and nothing to renew every year, but the upfront cost is higher than a single month of Top Producer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Top Producer is a real estate CRM and marketing platform, not an AI agent. It stores contacts, sends automated SMS and email lead responses, tracks transactions, and produces branded MLS market reports, but it does not answer an inbound phone call and does not hold an AI conversation on WhatsApp. BirkyStudio's Voice Receptionist is $550 one-time, plus Vapi usage of about $30 to $50 a month, and answers calls 24/7 in English and Spanish. The WhatsApp Text Receptionist is $297 one-time and holds real AI conversations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Top Producer cost per year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top Producer Pro is $179 per user per month, so about $2,148 per user per year. Pro + Leads starts from $479 per month (it varies with lead volume), Pro + Farming starts from $599 per month (it varies with farm size), Pro Teams 5 is $399 per month for up to 5 users, Pro Teams 10 is $699 per month for up to 10 users, and Pro Teams 25 is $1,199 per month for up to 25 users. A website is an extra $35 per user per month and FiveStreet lead routing is about $25 per user per month. Prices verified on topproducer.com/pricing in October 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer have a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Top Producer does not publish a free trial, and reviewers on Capterra and SelectHub confirm that no free trial is offered. Sales reps sometimes offer to let you pay for the first month and cancel within 30 days if you are not satisfied, but reviewers report that cancelling is deliberately hard: no cancel option on the website or in the software, and a cancellation department that calls back days later. BirkyStudio offers a free 15-minute audit up front and a 30-day money-back guarantee on the build, with no contract to escape."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer include a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not in the base plan. Top Producer Pro is the CRM and market snapshot only. A Top Producer website is an add-on at $35 per user per month, and IDX integration is not included and requires third-party tools. BirkyStudio builds a website you own outright, starting at $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site, and $1,999 for a Premium 10+ page site with a blog. You own the code, so nobody can hold your site or your domain to ransom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer find me leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top Producer sells lead packages, but the reviews are brutal. The pattern is the same across Trustpilot, Software Advice, and G2: a guaranteed number of leads that does not arrive, leads outside the requested area, numbers that do not connect, and a contract that locks you in when you try to cancel. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds automated outreach plus the AI that catches and qualifies the replies around the clock. You own the list, so there is nothing to cancel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a CRM and an AI agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. Top Producer holds the information, produces market reports, and helps you market to your database. The AI agent is the one picking up the phone at 9pm while you are at dinner."
+      }
+    }
+  ]
+});
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Top Producer (2026 Comparison), a Per-Seat CRM You Rent vs an Operator That Answers",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Top Producer for real estate agents. Top Producer is an established real estate CRM and marketing platform from $179 per user per month on annual contracts. BirkyStudio is a done-for-you AI operator that answers your phone, replies on WhatsApp, follows up automatically, and hands you verified prospects. Real pricing, real reviews, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com"
+  },
+  "datePublished": "2026-10-13",
+  "dateModified": "2026-10-13"
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Top Producer (2026)"
+  description="BirkyStudio vs Top Producer honest comparison for real estate agents. Top Producer is an established CRM from $179 per user per month on annual contracts. BirkyStudio is a done-for-you AI operator that answers your phone, replies on WhatsApp and hands you verified prospects."
+  image="/images/comparison/topproducer.jpg"
+  >
+    <script type="application/ld+json" set:html={faqLD} />
+    <script type="application/ld+json" set:html={articleLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,45,149,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,45,149,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated October 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Top Producer<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">A Per-Seat CRM You Rent vs an Operator That Answers</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        Top Producer is one of the longest-running names in real estate software, with deep MLS integration across 320+ boards, branded market reports, and built-in transaction management. It is also priced per user, every month, on an annual contract, from $179 a month, and it does not answer your phone. BirkyStudio is not a per-seat CRM. We hand you an AI operator that answers your phone and WhatsApp 24/7 in English and Spanish, follows up automatically, and delivers verified prospects you own. One is software you log into and work, on a contract you cannot easily leave. The other works while you are out showing. Here is the honest breakdown.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want the phone answered and the follow-up handled without you, and you would rather own your tools than rent them per seat. You get an AI agent that replies to every enquiry in seconds, an AI receptionist on WhatsApp and voice, verified prospects you own, and a website you control. Best for solo agents and small teams drowning in admin, not short of contacts.<br><br>
+          <strong style="color:white;">Choose Top Producer if:</strong> Your business runs on MLS data and market reports, you want 320+ MLS board integrations, branded Market Snapshot reports, and built-in transaction management in one place, and your brokerage or team is already standardized on it. It is a real, established platform, and its MLS depth is the strongest card it holds.<br><br>
+          <strong style="color:white;">The honest difference:</strong> Top Producer is where your real estate data lives. It does not answer them. It stores contacts, sends automated SMS and email responses, tracks transactions, and produces market reports. But it does not pick up the phone, does not hold an AI conversation on WhatsApp, and does not build your website. BirkyStudio does the work: it answers, it follows up, it qualifies, 24/7, and it is a one-time build instead of a per-seat contract you rent forever.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/topproducer-article-1.jpg" alt="Real estate agent reviewing a client database on a laptop with a smartphone showing a new lead notification at a bright modern desk" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Top Producer?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        Top Producer and BirkyStudio get compared because both promise to cut the admin that eats a real estate agent's day, and because Top Producer is often the CRM an agent or brokerage already pays for. Top Producer has been in the market for decades, now owned by FiveStreet (Constellation), and it centers on contact management and real estate marketing: notes, categories, calendar sync, automated SMS and email lead response, drip campaigns, transaction management, and patented branded Market Snapshot reports pulled straight from MLS data. It connects to 320+ MLS boards, which is its clearest advantage. The catch is the model: it is priced per user, every month, on annual contracts that reviewers say are hard to cancel.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes a different route. Instead of renting you a seat-based database to operate, we build and run an AI operator for you. The Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. Add the AI Receptionist and the phone is answered 24/7. Add the Verified Prospect List and you get real, enriched, scored prospects you own forever.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        Both are answering the same complaint: too much admin, too little selling. But they answer it differently. One hands you a deep, established real estate platform and a per-seat bill that renews whether you use it or not. The other takes the work off your desk for a one-time build you own. The difference shows up in what you pay over time, what you own, what you give up, and who does the work at 9pm on a Saturday. That is what this page breaks down, honestly, including where Top Producer wins.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Top Producer, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Top Producer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 audit (15 min), projects from $297</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$179/user/month (Pro)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A real estate CRM and marketing platform you operate yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time builds you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Per user, every month, on an annual contract</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Per-Seat Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No per-seat fee, scaled once in the business tier</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> $179/mo per user, team plans $399 to $1,199/mo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $0</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $0 (but annual contract commitment)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free 15-minute audit, 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ No free trial published</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Annual contracts, reviewers report hard-to-cancel</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ No AI answering, it is a CRM not a receptionist</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">WhatsApp / Text AI</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Automated SMS lead response, not a conversation</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead Generation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Paid lead packages, poor quality reported by reviewers</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Follow-Up Automation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI agent replies and follows up 24/7 automatically</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Automated SMS/email and drip campaigns you set up</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ English-focused</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM built for agents, free with the Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full real estate CRM, its core product</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">MLS Integration</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Not an MLS-based platform</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 320+ MLS boards, branded Market Snapshot reports</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Real Estate Specific Tools</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> AI and Notion CRM, not a full RE-CRM feature set</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Transaction management, MLS reports, drip campaigns</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Add-on at $35/user/month, IDX extra via third party</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Phone, chat, and knowledge base, mixed reviews</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Does the Work</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers and follows up, we maintain it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ You do, it is a tool you operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Track Record</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Smaller, newer studio</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 20+ years, huge user base, deep MLS coverage</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/topproducer-article-2.jpg" alt="Close-up of a laptop screen showing a clean CRM contact pipeline with a coffee cup on a wooden desk" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT WORKS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not a CRM you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a per-seat subscription for a database.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations. The Voice Receptionist is $550 one-time, plus you pay Vapi directly for usage (about $30 to $50 a month), and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start with real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it wins is time, ownership, and the shape of the bill. Nothing waits for you to sit down. A lead that comes in at 9pm gets an answer at 9pm, not the next morning. And everything is one-time or optional, so there is no per-seat fee, no annual renewal, and no cancellation maze.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>AI answers your phone and WhatsApp 24/7, EN/ES</li>
+              <li>Follow-up happens automatically, no sitting down to work it</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Notion CRM included free with the Base Agent</li>
+              <li>Websites you own and can edit ($499 / $999 / $1,999)</li>
+              <li>One-time builds, no per-seat fee, no annual contract</li>
+              <li>No setup fee, no contract, 30-day money-back guarantee</li>
+              <li>Same person who built it answers your support</li>
+              <li>Works for any niche, not just real estate</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Higher upfront cost than one month of Top Producer</li>
+              <li>No MLS integration and no branded Market Snapshot reports</li>
+              <li>Not a depth real estate transaction manager: no commission tracking, no MLS import</li>
+              <li>No per-seat shared CRM seats for a large team out of the box</li>
+              <li>Smaller, newer studio than a 20+ year, thousands-user platform</li>
+              <li>Prospect list size is fixed by tier, not unlimited</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care &amp; Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/topproducer-article-3.jpg" alt="Modern real estate office desk with an open laptop, a leather notebook, a smartphone, a house key and a small plant in soft natural light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: Top Producer -->
+      <div id="top-producer" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Top Producer</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Top Producer is one of the oldest names in real estate software, running for well over two decades and now owned by FiveStreet (Constellation). Its core product is a real estate CRM built around MLS data. The Pro plan is $179 per user per month and includes the CRM and Market Snapshot reports, automated SMS and email lead response, built-in transaction management, and direct integration with 320+ MLS boards. Branded Market Snapshot reports and MLS depth are genuinely its strongest cards, and they are hard to match. For an agent whose whole workflow centers on MLS data, or a brokerage already standardized on Top Producer, it does a real job.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The pricing adds up fast, though, and this is where we have to be straight with you. The $179 Pro plan does not include a website, lead routing, or IDX. A website is an extra $35 per user per month and FiveStreet lead routing is about $25 per user per month, so a working stack starts around $239 per user per month before any lead package. Pro + Leads starts from $479 a month (varying with lead volume) and Pro + Farming from $599 a month (varying with farm size). Team plans run $399 to $1,199 a month. It is all per user, all every month, all on annual contracts.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The reviews tell a consistent story, and it is not flattering on three points. First, the lead packages. The same complaints repeat across Trustpilot, Software Advice, and G2: guaranteed leads that do not arrive, leads outside the target area, numbers that do not connect, and no conversion. One Trustpilot reviewer wrote that they paid three months of $300 and got about 16 leads, most of them bad numbers or people who said the call was a scam. Second, the contracts. Reviewers say there is no cancel option on the website or in the software, that cancellation staff take days to call back, and that they were billed for months after they tried to leave. Third, the product itself: Capterra and SelectHub reviewers call the interface dated, clunky, and slow to adapt, with email features that are frequently criticized. Capterra shows 4.0 out of 5 from 323 reviews, but G2 shows just 3.1 out of 5 from 124 reviews. If the MLS data and market reports are your priority, Top Producer earns its place. If you are buying it for the leads, read the reviews first.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Deep MLS integration across 320+ boards</li>
+              <li>Branded Market Snapshot reports from MLS data</li>
+              <li>Built-in transaction management and drip campaigns for real estate</li>
+              <li>Team plans for 5 to 25 users with shared contacts</li>
+              <li>Established platform with a 20+ year track record</li>
+              <li>Automated SMS and email lead response</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Per-seat pricing every month, on annual contracts</li>
+              <li>No free trial, and reviewers report cancellation is deliberately hard</li>
+              <li>Lead packages widely reported as poor quality and non-converting</li>
+              <li>Website ($35/user/mo) and IDX (third party) cost extra</li>
+              <li>Dated interface and unreliable email features per reviewers</li>
+              <li>It does not answer your phone or hold an AI conversation</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Pro $179/user/month · Pro + Leads from $479/month · Pro + Farming from $599/month · Pro Teams 5 $399/month (up to 5 users) · Pro Teams 10 $699/month (up to 10 users) · Pro Teams 25 $1,199/month (up to 25 users) · Website add-on $35/user/month · FiveStreet lead routing about $25/user/month · No free trial (verified live, October 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Top Producer (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Just a CRM to organize contacts (DIY)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time (Base Agent, Notion CRM included)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$2,148/year ($179/mo Pro, one user)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A working stack with a website</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 Base Agent + $999 Pro website = $2,296 once</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,868/year (Pro + website + FiveStreet)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (text) or $550 + ~$30-50/mo (voice, about $910-$1,150)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, it does not answer</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI follow-up on autopilot</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included with the Base Agent or the Pack</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Automated SMS/email, drip campaigns you set up</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospect list</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 (Starter) or $997 (Pro), one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pro + Leads from $479/mo, about $5,748/year</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Complete done-for-you pipeline</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,997 one-time (Lead Generation Pack)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $5,748/year (Pro + Leads) plus the contract</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$35/user/month while you subscribe, $420/year</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk fully covered, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent $1,297 + $97/mo care)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$2,148, but no answering, no AI, no leads closed</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total (base setup)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time, no recurring build fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $6,444, per user, and still renewing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏘️ Your business runs on MLS data and market reports</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Top Producer</strong>. Its 320+ MLS board integration and branded Market Snapshot reports are genuinely best in class, and BirkyStudio does not try to match them. If MLS-driven marketing and client reports are your day, this is the honest recommendation.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 You need the phone answered when you cannot pick up</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Top Producer has no AI answering at all. BirkyStudio's Voice Receptionist ($550 one-time plus Vapi usage) answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist ($297 one-time) holds full AI conversations while you are showing a property.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">⏰ You do not want to do the follow-up yourself</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Top Producer will send automated SMS and email and run drip campaigns you build, but it acts on your instructions. BirkyStudio's AI agent replies and follows up automatically, so no lead goes cold because you were busy. That is the whole difference between a tool and an operator.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You have no leads and need some you actually own</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Top Producer sells lead packages, but reviewers across Trustpilot, Software Advice, and G2 report the same problems: guaranteed leads that do not arrive, out-of-area contacts, and contracts that lock you in. BirkyStudio's Verified Prospect List is a real, enriched, scored list you own forever ($497 Starter, $997 Pro), and the $1,997 Lead Generation Pack adds the outreach and the AI that catches the replies.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🧾 You want transaction management and team oversight in one place</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Top Producer</strong>. Transaction management from contract to close, team plans for 5 to 25 users with shared contacts, and brokerage oversight tools are all built in. If you run a team and need the back office consolidated, that depth is worth paying for.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🧯 You are tired of annual contracts you cannot leave</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Top Producer is an annual contract, and reviewers describe cancellation as deliberately difficult, with billing after cancellation in some cases. BirkyStudio is a one-time build with no contract, no per-seat fee, and a 30-day money-back guarantee. If flexibility matters to you, that is the deciding factor.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          This is not a fight BirkyStudio wins on MLS depth or real estate back-office features, and we are not going to pretend it is. <strong style="color:white;">Top Producer is a deep, established real estate platform</strong>, with 320+ MLS board integrations, branded Market Snapshot reports, and transaction management that BirkyStudio does not match. If your business runs on MLS data and you run a team that needs the back office consolidated, buy it for that.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          But be honest about what it is not. It is per user, every month, on an annual contract. It does not answer your phone or hold an AI conversation. Reviewer sentiment on its lead packages and its cancellation process is among the harshest in the category. <strong style="color:white;">BirkyStudio is a different purchase.</strong> You are not renting a seat, you are buying the front desk. The AI answers your phone and WhatsApp 24/7 in two languages, follows up automatically, and hands you verified prospects you own. And because it is a one-time build rather than a per-seat subscription, you are not paying a bill in year three for a tool that still will not answer the phone.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: Top Producer is where your real estate data and market reports live. BirkyStudio is what answers your leads. For many agents the right answer is both, Top Producer for the MLS-driven back office, BirkyStudio for the front desk conversation.<br><br>
+          <strong style="color:white;">Choose Top Producer if:</strong> your workflow centers on MLS data, market reports, and transaction management, and you are happy on a per-seat annual contract.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want the phone answered, the follow-up handled, and verified prospects you own, without a per-seat fee or a contract to escape.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://www.topproducer.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore Top Producer →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is Top Producer more expensive than BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Top Producer is priced per user, every month, on an annual contract. The Pro plan is $179 per user per month, about $2,148 a year for one agent, and it does not include a website, lead routing, or IDX. Add a website ($35 per user per month) and FiveStreet ($25 per user per month) and a working stack starts around $239 per user per month, or roughly $2,868 a year, before any lead package. BirkyStudio is a one-time build: The Base Agent is $1,297 solo (Notion CRM included), the Text Receptionist is $297, and the Voice Receptionist is $550 plus Vapi usage of about $30 to $50 a month. Higher upfront, no per-seat fee, nothing to renew.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Top Producer answer my phone or reply on WhatsApp?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Top Producer is a real estate CRM and marketing platform, not an AI agent. It stores contacts, sends automated SMS and email lead responses, tracks transactions, and produces branded MLS market reports, but it does not answer an inbound phone call and does not hold an AI conversation on WhatsApp. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30 to $50 a month) and answers calls 24/7 in English and Spanish. The WhatsApp Text Receptionist is $297 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does Top Producer cost per year?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Top Producer Pro is $179 per user per month, so about $2,148 per user per year. Pro + Leads starts from $479 per month (varies with lead volume), Pro + Farming from $599 per month (varies with farm size), Pro Teams 5 is $399 per month for up to 5 users, Pro Teams 10 is $699 per month for up to 10 users, and Pro Teams 25 is $1,199 per month for up to 25 users. A website is $35 per user per month and FiveStreet lead routing is about $25 per user per month. Prices verified on topproducer.com/pricing in October 2026.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Top Producer have a free trial?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Top Producer does not publish a free trial, and reviewers on Capterra and SelectHub confirm none is offered. Sales reps sometimes offer to let you pay for the first month and cancel within 30 days, but reviewers report delays and resistance at cancellation. BirkyStudio offers a free 15-minute audit up front and a 30-day money-back guarantee on the build, with no contract to escape.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Top Producer include a website?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Not in the base plan. Top Producer Pro is the CRM and market snapshot only. A Top Producer website is an add-on at $35 per user per month, and IDX integration is not included and requires third-party tools. BirkyStudio builds a website you own, starting at $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site, and $1,999 for a Premium 10+ page site with a blog. You own the code, so nobody can hold your site or domain to ransom.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Top Producer find me leads?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Top Producer sells lead packages, but the reviews are brutal. The pattern repeats across Trustpilot, Software Advice, and G2: a guaranteed number of leads that does not arrive, leads outside the requested area, numbers that do not connect, and a contract that locks you in when you try to cancel. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies around the clock. You own the list, so there is nothing to cancel.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>What is the difference between a CRM and an AI agent?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. Top Producer holds the information, produces market reports, and helps you market to your database. The AI agent is the one picking up at 9pm while you are at dinner.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> Top Producer pricing and terms sourced from topproducer.com/pricing in October 2026 (Pro $179/user/month, Pro + Leads from $479/month, Pro + Farming from $599/month, Pro Teams 5 $399/month, Pro Teams 10 $699/month, Pro Teams 25 $1,199/month, website add-on $35/user/month, no free trial published). Reviewer sentiment from Top Producer's listings and user reviews on Trustpilot, Software Advice, Capterra, G2, SelectHub, and GetApp, and from LuxuryPresence's 2026 Top Producer review for the add-on cost breakdown (website $35/user/month, FiveStreet about $25/user/month, IDX via third party). BirkyStudio pricing from birkystudio.com as of October 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297), the Voice Receptionist ($550 + Vapi ~$30-50/month), the Verified Prospect List ($497/$997), the Lead Generation Pack ($1,997), the Custom Assessment ($349/$999), websites ($499/$999/$1,999), and optional care at $97/month or $197/month. Prices and features may change. This is an honest comparison based on publicly available information, not a sponsored post.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
