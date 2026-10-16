@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# How a Local Dentist Booked 18 New Patients in One Week with an AI Text Receptionist
-
 **A $297 one-time setup. Seven days. Eighteen new patient appointments.**
 
 If I told you that for less than the cost of a weekend in Tikal you could add a full-time employee who answers every text, WhatsApp message, and web chat inquiry, never sleeps, never takes a day off, and speaks fluent English and Spanish, you would probably ask what the catch is.

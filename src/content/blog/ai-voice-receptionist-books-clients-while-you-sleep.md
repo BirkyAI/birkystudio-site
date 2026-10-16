@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# Stop Losing Leads at 5 PM: How an AI Voice Receptionist Books Clients While You Sleep
-
 **Every missed call after hours is a lead that goes to your competitor. A real human receptionist costs $2,000+ a month. Birky Studio's AI Voice Receptionist costs $550, one time, and answers every call in your brand's voice, 24/7, without overtime or sick days.**
 
 ### The Problem: Small Businesses Bleed Leads After Hours

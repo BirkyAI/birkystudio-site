@@ -131,4 +131,4 @@ The good news? Fixing navigation does not require a full redesign. It is one of 
 
 **Need help organizing your website?** [Contact Birky Studio](https://birkystudio.com/contact/) for a navigation audit and site structure redesign.
 
-Want to see how we approach usability for real businesses? Browse our [case studies](https://birkystudio.com/portfolio/) and [web design services](https://birkystudio.com/services/).
+Want to see how we approach usability for real businesses? Browse our [case studies](https://birkystudio.com/portfolio/) and [web design services](https://birkystudio.com/products/).

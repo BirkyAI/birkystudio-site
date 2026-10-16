@@ -1,68 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is RealtyJuggler cheaper than BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For a pure contact organizer, yes, and honestly it is hard to beat. RealtyJuggler is $179/year ($15/month) with the rate fixed for life and a pro-rated refund at any time. BirkyStudio is not really competing on that axis. If all you want is an affordable real estate CRM you run yourself, RealtyJuggler is excellent value. BirkyStudio costs more because you are buying a different thing: an AI operator that answers your phone, replies on WhatsApp, follows up automatically, and hands you verified prospects, not a database you have to work."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does RealtyJuggler answer my phone or reply to leads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. RealtyJuggler is a CRM, not an AI agent. It stores your contacts, schedules your follow-up calls, and can send drip emails and letters, but you write and send those yourself. It has no AI voice receptionist and no AI text answering. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30-50/month) and answers calls 24/7 in English and Spanish. The Text Receptionist for WhatsApp is $297 one-time and holds full AI conversations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does BirkyStudio include a CRM?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The Notion CRM built for agents is included free with The Base Agent ($1,297 solo, from $2,997 for a team). So if you want both the AI operator and a place to store your contacts, you do not pay a separate CRM fee. What you give up versus RealtyJuggler is depth: RealtyJuggler has real estate specific tools like commission splits, rental management, printed flyers and letters, and seven mortgage calculators."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does RealtyJuggler find me leads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. RealtyJuggler is a place to organize leads you already have. You import contacts from your MLS, tax records, or a third-party lead service, and it helps you work them. It does not supply leads. BirkyStudio's Verified Prospect List is a real, enriched, scored list of prospects built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does RealtyJuggler have a free trial or a contract?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "RealtyJuggler has the longest free trial in the category: 90 days, no credit card required, and any remaining trial time is added to your paid year. There is no contract. It is a $179/year membership, the price is fixed for life, and you can get a pro-rated refund at any time. That is genuinely customer-friendly. BirkyStudio matches the no-contract part with a 30-day money-back guarantee and no setup fee."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between a CRM and an AI agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. The CRM holds the information. The AI agent is the one picking up the phone at 9pm while you are at dinner."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who should choose RealtyJuggler over BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An agent or small team who wants an affordable, feature-deep real estate CRM they are happy to run themselves, who wants printed letters, commission tracking, rental tools, and seven mortgage calculators, and who likes included phone support and one-on-one training. RealtyJuggler is a genuinely great tool at $179/year. BirkyStudio is for agents who do not want to be the one doing all the work, and who want the phone answered and the follow-up handled without them."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -89,7 +28,6 @@ const articleLD = JSON.stringify({
   description="BirkyStudio vs RealtyJuggler honest comparison for real estate agents. RealtyJuggler is a $179/year CRM you run yourself. BirkyStudio is a done-for-you AI operator that answers your phone, replies on WhatsApp and hands you verified prospects."
   image="/images/comparison/realtyjuggler.jpg"
   >
-    <script type="application/ld+json" set:html={faqLD} />
     <script type="application/ld+json" set:html={articleLD} />
 
     <!-- Hero -->

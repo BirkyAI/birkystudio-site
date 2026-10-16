@@ -8,8 +8,6 @@ lang: "en"
 author: "Birky Studio"
 ---
 
-# AI Agent for Auto Repair Shops
-
 Somewhere in your shop right now there is a detail that only exists inside a phone call. A symptom described out loud, a budget mentioned in passing, a warranty date nobody wrote down. By tomorrow it is gone.
 
 A service advisor takes a call at 8:40 in the morning. Cold-start noise, worse on the highway, customer can leave the car Thursday. He writes it on a paper ticket, walks it out to the bay, and gets pulled into the next call. At 3 pm the customer phones back to check on the car, and nobody can find the ticket or remember which vehicle it was for.

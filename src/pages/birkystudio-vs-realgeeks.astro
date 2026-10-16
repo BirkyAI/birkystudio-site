@@ -1,60 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is Real Geeks cheaper than BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Real Geeks' base platform is $399/month plus a one-time $500 setup fee, which is $5,288 in year one before you buy any leads. Add a lead package and it climbs to $8,876-$12,476 per year (Social leads $299/mo, Search or Seller leads $599/mo). BirkyStudio's Verified Prospect List is a one-time $497 (Starter) or $997 (Pro), and the Lead Generation Pack, list plus outreach plus AI agent plus AI receptionist, is $1,997 once. You own it forever with no monthly platform fee."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are Real Geeks leads real?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Agents report mixed results. Reddit reviews describe Real Geeks' website as great but the leads as \"trash,\" with users saying \"half the phone numbers and emails don't work\" and one agent reporting \"$2400 later… still not one good lead.\" Every prospect in a BirkyStudio Verified Prospect List is checked for a real working phone, email, and website, then enriched with tech-stack and opportunity data and scored 0-100 before delivery."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Real Geeks have a contract, setup fee, or free trial?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes on the first two, no on the third. Real Geeks charges a one-time $500 platform setup fee and its lead packages require 12-month or 6-month commitments, the 12-month term is the cheaper rate, and the 6-month term costs more per month. There is no free trial. BirkyStudio has no setup fee, no contract, and a 30-day money-back guarantee."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I customize my Real Geeks website?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Be careful. Real Geeks' own lead guarantee terms state the guarantee is invalidated if the site owner makes changes to the code or content on the templated website, including home search pages, home valuation pages, and lead forms. In other words, editing your own site can void the lead guarantee. BirkyStudio builds you a site you fully own. Starter $499, Professional $999, Premium $1,999, and you can change anything on it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does BirkyStudio generate leads for me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. BirkyStudio builds a real, verified, enriched list of prospects for your niche and area, scored and ranked by opportunity, as a one-time deliverable you own forever. The $1,997 Lead Generation Pack goes further: it adds automated outreach, an AI agent trained on your niche and pitch, and an AI receptionist that catches and qualifies replies 24/7 on WhatsApp and phone. There's no monthly ad budget and no rented platform."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who should choose Real Geeks over BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An agent or team who wants a done-for-you IDX website plus managed paid-ad campaigns and can commit to a 12-month term and a monthly platform fee, and who will actually work the leads. Real Geeks' managed ad packages can scale for teams with an ISA or a lead team behind them. BirkyStudio is better for solo agents and small teams who want verified prospects they own once, plus an AI that does the follow-up."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -81,7 +28,6 @@ const articleLD = JSON.stringify({
   description="BirkyStudio vs Real Geeks honest comparison for real estate agents. Real Geeks charges $399/mo + $500 setup + lead packages, agents report trash leads and ignored support. BirkyStudio delivers verified prospects you own once, with AI follow-up."
   image="/images/comparison/realgeeks.jpg"
   >
-    <script type="application/ld+json" set:html={faqLD} />
     <script type="application/ld+json" set:html={articleLD} />
 
     <!-- Hero -->

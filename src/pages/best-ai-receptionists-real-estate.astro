@@ -1,60 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does an AI receptionist cost for real estate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI receptionists for real estate range from $65/month for basic text-only plans to $700+/month for full voice + human hybrid services. Pure AI voice receptionists like BirkyStudio start at $297 one-time setup with no monthly fee, you pay the voice provider directly (~$30-50/mo). Most agents pay between $150-$400/month for a solution that handles both calls and messages."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can an AI receptionist answer phone calls 24/7?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. AI voice receptionists answer calls around the clock, including nights, weekends, and holidays. They can qualify leads, answer property questions, book appointments, and transfer urgent calls to you. The best ones sound natural and handle interruptions gracefully."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best AI receptionist for real estate agents?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on your needs. BirkyStudio is best for agents who want a custom AI receptionist built specifically for their business with WhatsApp integration. Smith.ai is best if you want a human-AI hybrid with 24/7 live answering. Goodcall is the budget-friendly option at $59/month. Loman AI is purpose-built for real estate with MLS integration."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is an AI receptionist better than a virtual assistant?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An AI receptionist costs $65-$400/month and works 24/7 with no breaks. A human virtual assistant costs $800-$2,500/month and works set hours. AI is better for answering calls, qualifying leads, and handling routine questions. Humans are better for complex negotiations and relationship building. Most successful agents use both: AI for first contact, human for high-value conversations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do AI receptionists work with WhatsApp?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most AI receptionists focus on phone calls only. BirkyStudio is one of the few that builds custom WhatsApp AI agents alongside voice receptionists, so you can handle leads on both channels from one setup. This matters in markets like Latin America where WhatsApp is the primary communication tool."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to set up an AI receptionist?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Self-serve platforms like Goodcall or Dialpad can be set up in 15-30 minutes but require you to configure everything yourself. Custom setups like BirkyStudio take 48-72 hours because they build a receptionist trained on your specific listings, services, and processes. Smith.ai takes about a week for full onboarding."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -81,7 +28,6 @@ const articleLD = JSON.stringify({
   description="Honest comparison of the top AI receptionists for real estate agents. Real prices, real pros and cons. Find out which one fits your business."
   image="/images/blog/ai-generated/best-ai-receptionists-real-estate.jpg"
 >
-  <script type="application/ld+json" set:html={faqLD} />
   <script type="application/ld+json" set:html={articleLD} />
 
   <!-- Hero -->

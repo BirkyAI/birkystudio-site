@@ -1,52 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which is cheaper: BirkyStudio or Goodcall?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on your usage. Goodcall's Starter plan is $66/month (annual) for 100 unique customers, that's $792/year. BirkyStudio's voice receptionist is $550 one-time plus ~$30-50/month for the voice provider (~$910-$1,150/year). For a solo agent, BirkyStudio is comparable or slightly more expensive year one, but cheaper in years 2+. Goodcall is cheaper if you need just basic call handling without custom training."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Goodcall offer WhatsApp integration like BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Goodcall is phone-only. BirkyStudio includes WhatsApp AI alongside phone reception in every voice setup. For agents in markets where WhatsApp is the primary communication channel, especially Latin America, Europe, and parts of Asia. BirkyStudio is the only option that covers both channels."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need technical skills to set up Goodcall or BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Goodcall is self-serve, you configure it yourself through a dashboard. You design your own logic flows and forms. BirkyStudio handles all the setup for you. You tell them about your business, and they build a custom AI trained on your listings and processes. No technical skills needed for either, but BirkyStudio requires no setup effort on your part."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I try Goodcall or BirkyStudio before committing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Goodcall offers a free trial so you can test the platform before paying. BirkyStudio doesn't have a free trial, instead they offer a 30-day satisfaction guarantee. Custom AI setups take 48-72 hours to build, which makes a free trial impractical, but you get personal support from the person who built it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which is better for a real estate agent: BirkyStudio or Goodcall?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For most real estate agents, BirkyStudio is the better fit. Goodcall is a general-purpose platform for any business, you configure it yourself and it doesn't understand real estate terminology. BirkyStudio builds AI specifically for real estate agents, trained on your actual property listings, showing schedules, and qualification criteria. The AI understands what a 'showing' is, what 'pre-approval' means, and how to handle multiple property inquiries without needing you to design a logic flow for every scenario."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -73,7 +28,6 @@ const articleLD = JSON.stringify({
   description="BirkyStudio vs Goodcall head-to-head comparison. Real prices, real pros and cons, WhatsApp support, custom AI training, and which one is better for real estate agents."
   image="/images/comparison/comparison-hero.jpg"
 >
-  <script type="application/ld+json" set:html={faqLD} />
   <script type="application/ld+json" set:html={articleLD} />
 
   <!-- Hero -->

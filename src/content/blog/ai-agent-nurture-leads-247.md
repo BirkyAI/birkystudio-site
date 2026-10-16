@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# The 24/7 Sales Funnel: How AI Agents Turn Strangers Into Booked Consultations
-
 **Most small business websites lose over 95% of visitors without a single follow-up. Someone lands on your page, reads your offer, thinks "I'll come back later", and never does. An AI agent changes that by turning every visit into an opportunity to start a conversation, qualify the lead, and book a call, all while you are handling the parts of your business that only you can do.**
 
 ## The Leaky Bucket Problem

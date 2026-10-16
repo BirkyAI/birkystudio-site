@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# How an AI Agent Can Run Your Social Media (And Free Up 15 Hours a Week)
-
 **Between creating posts, replying to comments, managing DMs, and trying to stay on top of three different platforms, small business owners are spending 15 to 20 hours per week on social media. An AI agent can handle most of it for you. Here is what that looks like in practice and what it costs.**
 
 ## The Real Cost of Doing Social Media Yourself

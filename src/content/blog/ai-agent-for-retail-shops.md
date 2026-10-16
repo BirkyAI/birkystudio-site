@@ -8,8 +8,6 @@ lang: "en"
 author: "Birky Studio"
 ---
 
-# AI Agent for Retail: Nobody Answers at 7pm
-
 It is 7:40 on a Thursday evening in November. A woman stops in front of your shop window on her way home, checks the hours on the door, and calls to ask whether you have the green coat in a medium. The phone rings four times and goes to voicemail. She does not leave a message. On the bus home she finds the same coat online, pays for it, and it arrives in two days.
 
 You will never know she called. You will never know she stood outside your window for thirty seconds.

@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# AI Agent for Accounting Firms: The Chase Is the Real Work
-
 It is the first week of October, which means the extended filing deadline is a week away and every accounting firm I talk to is living in the same place: the follow-up list.
 
 Here is the thing nobody says out loud. The returns are not the bottleneck. The documents are. And the document chase is the one job in the firm that nobody owns.

@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# The $297 Monthly Text Receptionist That Handled 143 Customer Questions in Week One
-
 **A Guatemala accounting firm added an AI text receptionist to their website. One hundred forty-three conversations in seven days. Zero missed messages. Here is exactly what happened, what it cost, and why their clients actually preferred texting over calling.**
 
 ## The Problem: Voicemails That Nobody Returns

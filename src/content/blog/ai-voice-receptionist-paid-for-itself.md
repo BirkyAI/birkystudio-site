@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# How an AI Voice Receptionist Paid for Itself in One Month
-
 **A $550 investment paid back in 28 days. Here is the exact math, the real phone calls captured, and why the question is no longer "should I get one?" but "why did I wait so long?"**
 
 ## The Setup

@@ -86,66 +86,12 @@ const organizationLD = JSON.stringify({
   ]
 });
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does a website cost for a small business?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Birky Studio builds websites starting at $499 for a 1-3 page Starter site, $999 for a Professional 4-7 page bilingual site, and $1,999 for a Premium 10+ page site with blog and custom features. All prices are one-time with no hidden fees."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is an AI agent and what can it do for my business?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The base agent is a lead-catching system that runs on its own server, not your laptop, so it keeps working when you shut down. It reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly and follows up automatically, so no lead goes cold. It works in English and Spanish. The install is $1,297 and the Notion CRM is included. Answering your customers by voice or message is a separate product, the AI Receptionist."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does an AI receptionist cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The AI Text Receptionist for WhatsApp is $297 one-time. The AI Voice Receptionist, which answers phone calls 24/7, is $550 setup, with the client paying Vapi directly about $30-50/month for call usage. Ongoing support is $97/month (Care & Maintenance) or $197/month (Business AI Partner)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need technical skills to use an AI agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No technical skills are needed. Luna sets everything up for you, connects your accounts and walks you through it. The build takes about 15 minutes on her side, and you get 30 days of free support after. You do not need to know anything technical to run it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to get a website or AI agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Websites are delivered in 2-3 days. AI agent setup is about 15 minutes of build plus a call to connect your accounts. Text receptionists are live in 1-2 days, and voice receptionists in 2-3 days. Every project includes 30 days of free support."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the Lead Generation Pack and how much does it cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Lead Generation Pack is a one-time service at $1,997 that gives you real, verified prospects plus the AI to follow them up. It includes a verified, enriched, scored prospect list for any niche, automated outreach setup, an AI agent trained on your niche and pitch, and an AI receptionist that catches and qualifies replies 24/7. You own the list and data forever, no subscription, no lock-in. A Standalone Lead Generation Starter List is $497 (up to 25 verified prospects) and the Pro List is $997 (up to 100 prospects plus outreach templates)."
-      }
-    }
-  ]
-});
+
 ---
 
 <BaseLayout title="Take Back Your Time" description="Automate the repetitive tasks that eat up your workweek. Websites, receptionists and business assistants for real estate agents and small business owners." image="/images/birky-logo.jpg">
   <script type="application/ld+json" set:html={websiteLD} />
   <script type="application/ld+json" set:html={organizationLD} />
-  <script type="application/ld+json" set:html={faqLD} />
 
 
 <!-- Hero Section -->

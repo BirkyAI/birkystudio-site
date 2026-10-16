@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# AI Agent Setup for Real Estate Agents: What It Automates (And What It Doesn't)
-
 **Real estate agents spend 40 to 60 percent of their week on work that does not require a license: answering the same questions, qualifying leads, scheduling showings, sending follow-ups. An AI agent automates that part for $1,297 one-time. It handles the repetitive work so you can focus on listings, negotiations, and closing deals.**
 
 I spent years as a realtor in Guatemala before I built Birky Studio. I know exactly how the day goes. You wake up to 12 WhatsApp messages from people asking the same three questions. You spend the morning on the phone answering "how much does this property cost" and "can a foreigner buy here." You drive to a showing, and while you are in the car, three more leads come in that you will not reply to for another four hours.

@@ -1,52 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which is cheaper: BirkyStudio or Smith.ai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BirkyStudio is significantly cheaper upfront. You pay $550 one-time setup for a voice receptionist, then the voice provider directly (~$30-50/mo). Smith.ai starts at $150/month for 75 AI calls, or $300/month for 30 human-staffed calls. Over 12 months, BirkyStudio costs roughly $910-$1,150/year vs Smith.ai's $1,800-$3,600+/year."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does BirkyStudio offer human backup like Smith.ai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. BirkyStudio is pure AI with personal support from the builder (Luna). Smith.ai offers live human agents as a backup or primary option. If you need a human safety net for complex calls, Smith.ai is the better choice. If you're comfortable with AI handling your calls and want to save money, go with BirkyStudio."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does BirkyStudio or Smith.ai integrate with WhatsApp?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BirkyStudio includes WhatsApp AI alongside phone reception in every setup. Smith.ai does not offer native WhatsApp integration. For agents working with international buyers or in markets where WhatsApp is the primary communication tool, BirkyStudio is the clear winner."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I try Smith.ai or BirkyStudio before committing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Smith.ai offers a free plan with 25 calls per month, letting you test before upgrading. BirkyStudio doesn't have a free plan but offers a 30-day satisfaction guarantee. Custom AI setups take 48-72 hours to build, so a free trial isn't practical, but you get personal support from the person who built it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which is better for a solo real estate agent: BirkyStudio or Smith.ai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For most solo agents, BirkyStudio offers better value. You get a custom AI built for your specific listings and processes, WhatsApp integration, and bilingual support, all for roughly $910-$1,150/year. Smith.ai is better if you need live human backup or prefer an established company with a free trial option."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -73,7 +28,6 @@ const articleLD = JSON.stringify({
   description="BirkyStudio vs Smith.ai head-to-head comparison. Real prices, features, WhatsApp support, and which one is better for real estate agents."
   image="/images/comparison/smithai.jpg"
   >
-    <script type="application/ld+json" set:html={faqLD} />
     <script type="application/ld+json" set:html={articleLD} />
 
     <!-- Hero -->

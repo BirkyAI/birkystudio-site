@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# Stop Losing Revenue: The Real Cost of Not Having an AI Agent
-
 **Your phone rang at 9:47 PM last night. It was a potential customer ready to buy. But you were asleep, eating dinner, or spending time with your family. That call went to voicemail. The customer found someone else by morning. That is not a hypothetical. That is Tuesday.**
 
 Every small business owner knows the feeling of a missed opportunity. But very few have actually calculated what those missed moments cost them over a year. When you do the math, the number is staggering. And when you compare it to the cost of an AI agent that never sleeps, the decision becomes obvious.

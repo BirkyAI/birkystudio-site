@@ -9,8 +9,6 @@ tags: ["e-commerce", "small business", "online store", "selling online"]
 lang: "en"
 ---
 
-# How to Start Selling Online: A Simple E-Commerce Guide for Small Businesses
-
 You've got a great product. Your customers love you. But every week, someone asks: *"Do you have a website where I can order?"*
 
 If you're still taking orders through WhatsApp messages and handwritten notes, you're leaving money on the table. The good news? Setting up an online store is easier and cheaper than you think.

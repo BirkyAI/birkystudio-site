@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# From Zero Web Presence to 30+ Leads a Month: A Real Estate Agent's Digital Transformation Story
-
 **A real estate agent in Antigua was relying entirely on word-of-mouth and a WhatsApp number that went silent after 6 PM. They had no website, no booking system, and no way to capture the 7 PM calls that never came. After working with Birky Studio for a custom website and AI agent, they went from zero online leads to over 30 qualified inquiries per month, and closed three deals they would have otherwise missed.**
 
 ### The Before: Missing the Digital Boat

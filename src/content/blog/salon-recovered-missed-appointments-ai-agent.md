@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# How a Hair Salon Recovered $1,800/Month in Missed Appointments with an AI Agent
-
 **A hair salon in Guatemala City was losing an estimated $1,800 every single month to calls they never answered. Here is how a $550 AI voice receptionist turned that around in under two weeks.**
 
 ## The Problem: A Busy Salon with No Answering Machine

@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# 5 Signs Your Small Business Website Is Costing You Clients (And How We Fix Each One)
-
 Most small business owners believe having a website is enough. You built it. You paid for it. It looks fine. So why aren't the leads rolling in?
 
 The honest answer? Your website might be working against you.

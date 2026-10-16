@@ -1,52 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which is cheaper: BirkyStudio or GoHighLevel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BirkyStudio is dramatically cheaper. A BirkyStudio AI Agent costs $1,297 one-time setup (includes a Notion CRM built for agents), with optional support from $97/month. GoHighLevel starts at $97/month and quickly reaches $297-$497/month as you need features, plus add-ons like WhatsApp ($10/mo), AI ($50-97/mo), and premium support ($500/mo) pile up fast. Over 12 months, BirkyStudio costs roughly $1,297-$2,461/year. GoHighLevel costs $1,164-$5,964+/year depending on your plan."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does BirkyStudio offer CRM like GoHighLevel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. GoHighLevel is a full CRM with marketing automation, pipelines, funnels, email/SMS campaigns, and reporting. BirkyStudio is an AI agent that handles lead conversations, follow-ups, and task automation, but uses Notion as a lightweight CRM layer. If you need a full sales pipeline dashboard with attribution reports, GoHighLevel wins. If you want AI that actually talks to leads and automates daily tasks, BirkyStudio wins."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is GoHighLevel or BirkyStudio easier to set up?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BirkyStudio is dramatically easier. Setup takes about 15 minutes of build, with Luna guiding you on a screen share call. Your AI agent is trained on your specific business, listings, and processes. GoHighLevel has a notoriously steep learning curve, users report spending months figuring out funnels, automations, and the interface. You don't get a dedicated person to help; you get documentation and a help desk."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can GoHighLevel handle WhatsApp calls and messages like BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "GoHighLevel offers WhatsApp integration, but it's a $10/month add-on per sub-account, and it's limited to marketing messages, not AI-powered conversations. BirkyStudio includes WhatsApp AI as standard in every setup. Your AI agent can have full, context-aware conversations with leads on WhatsApp, answer property questions, schedule showings, and follow up, all in English and Spanish."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which is better for a solo real estate agent: BirkyStudio or GoHighLevel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For most solo real estate agents, BirkyStudio offers better value. You get an AI that handles lead conversations, follow-ups, email management, and task automation, all in one setup. GoHighLevel is built for marketing agencies managing multiple clients, not individual agents. It's complex, requires constant configuration, and its features (funnels, email campaigns, attribution) are overkill for someone who just wants leads handled. Choose GoHighLevel if you're running an agency or need a full marketing automation suite."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -73,7 +28,6 @@ const articleLD = JSON.stringify({
   description="BirkyStudio vs GoHighLevel honest comparison for real estate agents. Real pricing, setup time, WhatsApp support, and which one actually saves you time."
   image="/images/comparison/gohighlevel.jpg"
   >
-    <script type="application/ld+json" set:html={faqLD} />
     <script type="application/ld+json" set:html={articleLD} />
 
     <!-- Hero -->

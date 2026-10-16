@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# Three Digital Tools Every Small Business in Guatemala Needs Right Now
-
 **Most small business owners in Guatemala are leaving money on the table. Not because their service is bad, but because their digital setup stops working at 5 PM. A website without an AI agent is a brochure you have to hand-deliver. An AI agent without a voice receptionist misses the calls that come in while you are driving home. Here is the exact stack Birky Studio recommends for any serious business, and what it actually costs.**
 
 ### The Three Pillars of a Modern Small Business

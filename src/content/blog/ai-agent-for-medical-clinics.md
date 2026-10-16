@@ -8,8 +8,6 @@ lang: "en"
 author: "Birky Studio"
 ---
 
-# AI Agent for Clinics: Stop Losing Patients
-
 It is 12:40 on a Tuesday. A new patient calls your clinic for the first time. The front desk is checking someone in, printing a form, and answering the other line. The call rolls to voicemail. The patient does not leave a message. She calls the clinic two streets over, and by 12:45 she has an appointment there.
 
 You never find out it happened.

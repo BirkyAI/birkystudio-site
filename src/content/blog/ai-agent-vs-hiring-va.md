@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# Hire an AI Agent Instead of a VA: Save $2,000/Month and Never Miss a Lead
-
 **A virtual assistant costs you $2,000 to $3,500 every single month. A Birky Studio AI agent costs $1,297 once. Let's talk about what that difference means for your bottom line.**
 
 I talk to business owners every day who tell me the same thing: *"I know I need help, but I can't afford another employee."* And I get it. Hiring is expensive. Payroll taxes, benefits, training time, management overhead. A part-time virtual assistant runs $800–$1,500 a month. A full-time one? $2,000 to $3,500, easy.

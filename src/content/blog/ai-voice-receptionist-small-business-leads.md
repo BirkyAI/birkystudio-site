@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# How an AI Voice Receptionist Can Double Your Small Business Leads
-
 **Every missed call is a potential customer who just went to your competitor. An AI voice receptionist answers your phone 24/7, books appointments, qualifies leads, and never takes a lunch break. Here is how small businesses in Guatemala are using this technology to capture leads they were losing every single day.**
 
 ## The Problem: You Are Missing Half Your Calls

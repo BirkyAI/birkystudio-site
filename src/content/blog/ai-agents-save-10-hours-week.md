@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# How AI Agents Save Small Businesses 10+ Hours Every Week
-
 **Every week, the average small business owner loses more than 10 hours to work that an AI agent could do in minutes.** Not glamorous work, the kind of quiet, draining busywork that never shows up on a to-do list but eats your evenings anyway.
 
 I've sat with owners in real estate, salons, dental clinics, and restaurants, and the story is always the same. They *feel* busy. They are busy. But when we actually trace where the time goes, it disappears into the same three black holes over and over.

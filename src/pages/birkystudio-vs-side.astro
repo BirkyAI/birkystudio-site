@@ -1,60 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is Side cheaper than BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BirkyStudio is significantly cheaper upfront. A custom AI agent costs $1,297 one-time setup (includes a Notion CRM built for agents), with optional support from $97/month. Side does not publish pricing, it's a consultation-based partnership tied to your production volume. Side's model involves creating a new brokerage entity, and costs are based on commission splits. BirkyStudio works with your existing brokerage and charges a fixed one-time fee."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Side offer an AI receptionist or AI agent for leads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Side AI focuses on transaction-level busywork, documents, signatures, compliance checks, and back-office automation within their SideOS platform. It does not answer incoming phone calls, handle WhatsApp messages, or engage with leads. BirkyStudio's AI is purpose-built for lead conversations: answering calls on Vapi, responding on WhatsApp, qualifying prospects, scheduling showings, and following up, all in English and Spanish."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use BirkyStudio if I'm already a Side partner?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. BirkyStudio works alongside Side. Side handles your back office (transaction management, compliance, payments) and BirkyStudio handles your front office (lead conversations, WhatsApp, phone calls, follow-ups). They address different parts of your business and don't conflict."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who should choose Side over BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Choose Side if you're a top-producing agent ($2M+ annual volume) who wants to own your own brokerage company, keep your brand, and have a dedicated back office handling compliance, payments, and transaction coordination. Side is ideal for agents who want to build a real estate company, not just automate their workflow."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who should choose BirkyStudio over Side?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Choose BirkyStudio if you're a solo agent or small team who wants AI to handle lead conversations, calls, WhatsApp messages, and daily admin, without restructuring your business or meeting a minimum production threshold. BirkyStudio works with any brokerage, costs a fixed one-time fee, and is set up in a guided session with about 15 minutes of build."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Side or BirkyStudio offer WhatsApp integration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BirkyStudio includes WhatsApp AI as standard in every setup, full AI-powered conversations in English and Spanish. Side does not offer WhatsApp integration as part of its platform. SideOS focuses on transaction management, compliance, and brokerage operations, not lead communication channels."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -81,7 +28,6 @@ const articleLD = JSON.stringify({
   description="BirkyStudio vs Side honest comparison for real estate agents. Side helps top producers own their own brokerage. BirkyStudio automates lead response, WhatsApp, and calls. Real pricing, real pros and cons."
   image="/images/comparison/side.jpg"
   >
-    <script type="application/ld+json" set:html={faqLD} />
     <script type="application/ld+json" set:html={articleLD} />
 
     <!-- Hero -->

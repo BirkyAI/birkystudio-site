@@ -1,52 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is it cheaper to build a website with Wix/Squarespace or hire BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In year one, Wix ($204-$276/year) or Squarespace ($192-$276/year) are cheaper upfront. But the real cost of DIY is your time, building a professional site takes 20-60 hours. BirkyStudio's starter website is $499 one-time, professional is $999, and premium is $1,999. Over 3 years, a BirkyStudio site costs $499-$1,999 total vs Wix at $612-828 for comparable hosting. If your time is worth more than $15/hour, BirkyStudio is actually cheaper."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I get a real estate website with Wix or Squarespace?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, both Wix and Squarespace have templates for real estate. However, you'll need to manually add IDX/MLS integration, property search, listing pages, and lead capture forms. BirkyStudio builds real estate websites with property listings, lead capture, and AI receptionist built in, all from the start, not as add-ons you piece together yourself."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to build a website with Wix vs BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wix/Squarespace: 20-60 hours of your own time to design, write content, configure SEO, and polish. BirkyStudio: 5-7 days turnaround, done for you. You provide the content and preferences, they build the site. The time difference is the main reason agents choose BirkyStudio, your time is better spent selling properties than wrestling with a drag-and-drop builder."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does BirkyStudio include hosting and domain like Wix and Squarespace?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. BirkyStudio sites include hosting, a custom domain, SSL, and ongoing maintenance. The difference is that BirkyStudio's pricing is one-time, while Wix and Squarespace charge monthly or annually forever. After year one, Wix costs $204-480/year, Squarespace costs $192-276/year, and BirkyStudio costs $0, you already paid once. Over 3 years, a BirkyStudio site is 50-80% cheaper than paying ongoing subscription fees."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I edit my BirkyStudio site after it's built, like Wix or Squarespace?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. BirkyStudio sites include a CMS (Content Management System) add-on for $130 one-time, letting you update content, add listings, and make changes yourself. Without the CMS add-on, BirkyStudio handles updates for you. Wix and Squarespace are fully self-serve, you have complete control over every pixel, but you're also responsible for every pixel."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -73,7 +28,6 @@ const articleLD = JSON.stringify({
   description="Should you build your own website with Wix or Squarespace, or hire BirkyStudio? Real cost comparison, time investment, and what real estate agents actually choose."
   image="/images/comparison/wix-squarespace.jpg"
   >
-    <script type="application/ld+json" set:html={faqLD} />
     <script type="application/ld+json" set:html={articleLD} />
 
     <!-- Hero -->

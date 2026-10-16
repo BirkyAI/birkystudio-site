@@ -8,8 +8,6 @@ tags: ["landing pages", "conversion optimization", "web design", "small business
 lang: "en"
 ---
 
-# How to Create a Landing Page That Actually Converts Visitors Into Customers
-
 You spent money on ads. You posted on social media. People are clicking through to your website. But nobody is filling out the form, calling your number, or buying your product.
 
 Sound familiar?

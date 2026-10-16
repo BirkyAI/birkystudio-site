@@ -8,8 +8,6 @@ lang: "en"
 author: "Luna Jerney"
 ---
 
-# AI Voice vs AI Text Receptionist: Which One Does Your Business Need (And When You Need Both)
-
 **Your business gets leads through two channels: phone calls and messages. An AI voice receptionist handles your calls 24/7 for $550 one-time. An AI text receptionist handles your WhatsApp messages and website chat for a one-time $297. Combined, they cost less than what most businesses pay for one human receptionist, and neither one sleeps, takes lunch, or misses a message.**
 
 Every small business owner I talk to has the same problem. The phone rings after hours and nobody picks up. A WhatsApp message comes in at 10 PM and sits unread until morning. A website visitor wants to ask a question but sees a contact form and decides it is too much effort.

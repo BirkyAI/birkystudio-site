@@ -1,60 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const faqLD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does a traditional agency charge vs BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A traditional web or marketing agency charges $3,000-$15,000 for a website and $2,000-$10,000/month for ongoing marketing, SEO, or phone answering services. BirkyStudio charges $297 one-time for a text receptionist, $550 one-time for a voice+text receptionist, $499-$1,999 one-time for a website, and $1,297 one-time for a custom AI agent. Over 12 months, a traditional agency costs $5,000-$70,000+ while BirkyStudio costs $297-$3,846 total."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can a traditional agency build an AI receptionist?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most traditional agencies do not build AI receptionists or voice agents. They focus on web design, branding, and advertising. Some digital agencies offer phone answering services through outsourced human call centers, but these cost $500-$2,500/month per line. BirkyStudio specializes specifically in AI voice and text receptionists that answer calls 24/7, qualify leads, and handle WhatsApp messages, which most agencies can't do at any price."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is hiring a traditional agency faster than BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. A traditional agency takes 4-12 weeks to design and launch a website, and 2-4 weeks to set up a marketing campaign. BirkyStudio delivers a professional website in 5-7 days, an AI text receptionist in 48-72 hours, and a custom AI agent in 3-5 days. The difference is BirkyStudio uses AI-powered workflows with pre-built components rather than starting from scratch on every project."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need both a traditional agency and BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For most real estate agents and small business owners, BirkyStudio replaces 80% of what they would hire a traditional agency for: professional website, AI phone answering, WhatsApp automation, and custom AI workflows. A traditional agency is still useful for large-scale branding campaigns, TV/radio advertising, and enterprise-level marketing strategy. But for day-to-day digital presence and lead handling, BirkyStudio is faster and more affordable."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does a traditional phone answering service cost per month?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Traditional human answering services cost $500-$2,500/month depending on call volume and hours of coverage. They cover only set business hours, require contracts, and every call is staffed by a human operator. BirkyStudio's AI voice receptionist costs $550 one-time setup plus $30-50/month for the voice provider, roughly 90% cheaper in year one, and it answers calls 24/7 with no breaks, overtime, or scheduling."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What kind of ongoing costs come with a traditional agency vs BirkyStudio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Traditional agencies charge monthly retainers of $1,000-$10,000+ for website maintenance, SEO, content updates, and support. BirkyStudio's optional support is $97/month (Care & Maintenance) or $197/month (Business AI Partner), both optional and cancellable any time. Websites are one-time payments with a CMS add-on ($130) if you want to edit content yourself. There are no ongoing retainers or contracts."
-      }
-    }
-  ]
-});
+
 
 const articleLD = JSON.stringify({
   "@context": "https://schema.org",
@@ -81,7 +28,6 @@ const articleLD = JSON.stringify({
   description="BirkyStudio vs hiring a traditional agency, real cost comparison, delivery speeds, and what you actually get. Websites, AI receptionists, and custom agents vs agency retainers."
   image="/images/comparison/traditional-agency.jpg"
   >
-    <script type="application/ld+json" set:html={faqLD} />
     <script type="application/ld+json" set:html={articleLD} />
 
     <!-- Hero -->

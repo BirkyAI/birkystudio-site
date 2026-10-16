@@ -8,8 +8,6 @@ tags: ["branding", "small business", "design", "marketing"]
 lang: "en"
 ---
 
-# Branding Basics: How to Build a Memorable Small Business Brand
-
 Your brand is more than a logo. It's how customers feel when they hear your name, see your colors, or visit your website. For small businesses in Guatemala and beyond, strong branding is the difference between being remembered and being forgotten.
 
 The good news? You don't need a massive budget to build a brand that works. You just need to understand the basics and apply them consistently.

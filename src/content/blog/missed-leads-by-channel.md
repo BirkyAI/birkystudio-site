@@ -8,8 +8,6 @@ lang: "en"
 author: "Birky Studio"
 ---
 
-# Missed Leads by Channel: Where They Leak
-
 A buyer sends an Instagram DM at 9:14 pm asking if a listing is still available. The next morning a form comes in through the website, and an hour later someone texts the number on your sign. By the time you sit down with coffee, two of those three have cooled off and you honestly cannot remember which one you answered.
 
 Here is the uncomfortable part. You do not have a lead problem. You have a channel problem. Every place a lead can reach you is a separate inbox with its own rules, and each one leaks in a slightly different way.
