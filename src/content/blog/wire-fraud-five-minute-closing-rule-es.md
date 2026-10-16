@@ -91,4 +91,4 @@ Los agentes que ignoran el fraude de transferencias no son descuidados. Están o
 
 ---
 
-*Lecturas relacionadas: [Wire Fraud Is Quietly Eating Closings](/es/blog/wire-fraud-closing-security-agent/) y [The Note You Didn't Write Is Costing You Deals](/es/blog/phone-note-chaos-transaction-calls/). ¿Nuevo en la categoría? Empieza con [Best AI Receptionists for Real Estate](/best-ai-receptionists-real-estate/).*
+*Lecturas relacionadas: [Wire Fraud Is Quietly Eating Closings](/es/blog/wire-fraud-closing-security-agent/) y [La nota que no escribiste te cuesta tratos](/es/blog/phone-note-chaos-transaction-calls/). ¿Nuevo en la categoría? Empieza con [Best AI Receptionists for Real Estate](/best-ai-receptionists-real-estate/).*

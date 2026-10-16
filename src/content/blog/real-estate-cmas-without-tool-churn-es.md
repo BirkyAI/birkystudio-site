@@ -46,7 +46,7 @@ Lo segundo, y aquí es donde de verdad muerde el dolor de las "tres o cuatro her
 
 Si tengo que abrir el MLS, luego un producto de analítica de pago, luego una hoja de cálculo, luego mi correo para buscar el último comparable que un agente me reenvió el mes pasado, no estoy haciendo análisis. Estoy haciendo captura de datos con pasos extra. Cada uno de esos saltos es un lugar donde el número se puede quedar viejo, mal tecleado, o simplemente no terminar antes de que se acabe la paciencia del vendedor.
 
-Una herramienta debería traer ventas recientes, listings activos y tendencias del vecindario a un solo lugar, desde datos en vivo, cuando tú lo pidas. Una pregunta entra, una respuesta defendible sale. Desglosé el costo real del ir y venir entre cuatro pestañas en [The Real Cost of One Comps Check](/es/blog/market-data-comps-on-demand/), el número es más alto de lo que la mayoría de los agentes imagina.
+Una herramienta debería traer ventas recientes, listings activos y tendencias del vecindario a un solo lugar, desde datos en vivo, cuando tú lo pidas. Una pregunta entra, una respuesta defendible sale. Desglosé el costo real del ir y venir entre cuatro pestañas en [El costo real de un chequeo de comps](/es/blog/market-data-comps-on-demand/), el número es más alto de lo que la mayoría de los agentes imagina.
 
 ## No negociable 3: el resultado es tuyo
 
