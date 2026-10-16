@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
+import { getEsBlogPosts } from '../../../utils/es-blog';
 
-const allPosts = (await getCollection('blog'))
-  .filter(post => post.data.lang === 'en')
+// Spanish translation when it exists, English fallback until then. Both are served
+// at /es/blog/<slug>/ so no indexed Spanish URL changes when a translation lands.
+const allPosts = (await getEsBlogPosts())
+  .map(({ entry, slug }) => ({ ...entry, id: slug }))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const POSTS_PER_PAGE = 12;
@@ -120,16 +122,7 @@ function formatDate(date: Date): string {
   </section>
 
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "¿Cuánto cuesta un sitio web con Birky Studio?", "acceptedAnswer": { "@type": "Answer", "text": "Los sitios web completos para pequeños negocios comienzan en $900 y suelen ubicarse entre $1,200 y $3,500 según el alcance. Pagas un depósito para comenzar y el saldo al lanzar." } },
-        { "@type": "Question", "name": "¿Cuánto cuesta una recepcionista de IA o un agente de voz?", "acceptedAnswer": { "@type": "Answer", "text": "Las recepcionistas de IA y agentes de voz son servicios mensuales, generalmente entre $299 y $799 al mes según los minutos, líneas telefónicas e integraciones." } },
-        { "@type": "Question", "name": "¿En cuánto tiempo puede Birky Studio construir mi web o agente de IA?", "acceptedAnswer": { "@type": "Answer", "text": "La mayoría de los sitios web están en línea en 2 a 3 semanas desde el inicio. Los agentes de IA suelen tomar 1 a 2 semanas dependiendo de las integraciones." } },
-        { "@type": "Question", "name": "¿Qué negocios se benefician más de la automatización con IA?", "acceptedAnswer": { "@type": "Answer", "text": "Los negocios que repiten las mismas tareas a diario, responder preguntas, agendar citas, calificar prospectos y dar seguimiento, obtienen el ROI más rápido. Agentes inmobiliarios, clínicas, restaurantes y despachos contables son los primeros." } }
-      ]
-    }
+    
   </script>
 </BaseLayout>
 

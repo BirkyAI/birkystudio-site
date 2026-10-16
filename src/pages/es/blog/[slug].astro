@@ -1,17 +1,16 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { getEsBlogPosts } from '../../../utils/es-blog';
 import { products } from '../../../data/products.js';
 import { getRelatedProducts, getRelatedPosts } from '../../../data/related-products.js';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts
-    .filter(post => post.data.lang === 'en')
-    .map(post => ({
-      params: { slug: post.id },
-      props: post,
-    }));
+  const posts = await getEsBlogPosts();
+  return posts.map(({ entry, slug }) => ({
+    params: { slug },
+    props: entry,
+  }));
 }
 
 const post = Astro.props;
@@ -19,9 +18,8 @@ const { Content } = await render(post);
 
 // Related products and related posts come from src/data/related-products.js so the
 // EN and ES templates cannot drift apart.
-const allPosts = await getCollection('blog');
 const relatedProducts = getRelatedProducts(post, products);
-const relatedPosts = getRelatedPosts(post, allPosts.filter(p => p.data.lang === 'en'));
+const relatedPosts = getRelatedPosts(post, (await getEsBlogPosts()).map(({ entry }) => entry));
 
 const formatDate = (date: Date) => date.toLocaleDateString('es-GT', { year: 'numeric', month: 'long', day: 'numeric' });
 
