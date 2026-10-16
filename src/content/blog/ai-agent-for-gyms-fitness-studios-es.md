@@ -55,7 +55,7 @@ Esto es lo que la configuración maneja de verdad, corriendo en tus propios sist
 
 El embudo de arriba termina en "socio en el día 30", y ese es el momento más valioso que tiene un gimnasio. Es justo el punto en el que un socio contento te escribirá una reseña en Google si alguien se lo pide.
 
-Las reseñas son lo que lee el próximo interesado antes de llamarte, así que dejar la petición a la suerte mata de a poco la parte de arriba del embudo. Nuestro [Review Engine](/es/products/review-engine/) hace esa petición de forma programada, desde el mismo sistema que contesta el teléfono, por $497 más $97 al mes.
+Las reseñas son lo que lee el próximo interesado antes de llamarte, así que dejar la petición a la suerte mata de a poco la parte de arriba del embudo. Nuestro [Motor de Reseñas](/es/products/review-engine/) hace esa petición de forma programada, desde el mismo sistema que contesta el teléfono, por $497 más $97 al mes.
 
 ## Lo que no va a hacer
 
@@ -65,14 +65,14 @@ Tampoco te va a dar un número inventado del tipo "subimos las inscripciones un 
 
 ## Cuánto cuesta
 
-The Base Agent cuesta $1,297 una sola vez para un estudio individual, con el CRM de Notion y 30 días de soporte incluidos. Un negocio más grande con varias sedes empieza en $2,997. Si solo necesitas cubrir el teléfono y los mensajes, el Text Receptionist cuesta $297 y el Voice Receptionist cuesta $550, ambos por única vez.
+El Agente Base cuesta $1,297 una sola vez para un estudio individual, con el CRM de Notion y 30 días de soporte incluidos. Un negocio más grande con varias sedes empieza en $2,997. Si solo necesitas cubrir el teléfono y los mensajes, el Recepcionista de Texto cuesta $297 y el Recepcionista de Voz cuesta $550, ambos por única vez.
 
-El mantenimiento continuo es opcional por $97 al mes, o $197 al mes para el nivel Business AI Partner. Nada de esto es un medidor que apaga tu agente si dejas de pagar. Corre en tu servidor y con tu propia suscripción.
+El mantenimiento continuo es opcional por $97 al mes, o $197 al mes para el nivel Socio de IA para Negocios. Nada de esto es un medidor que apaga tu agente si dejas de pagar. Corre en tu servidor y con tu propia suscripción.
 
 ## Pruébalo
 
 Empieza con la [plantilla Quick Log](https://birkystudio.com/quick-log-template/) gratis si quieres sentir cómo funciona un registro continuo por persona antes de gastar nada.
 
-¿Quieres escucharlo responder la consulta de un socio? Llama a la demo en vivo en [birkystudio.com/voice-demo/](https://birkystudio.com/voice-demo/) o escríbele al agente de WhatsApp en [wa.me/50234775110](https://wa.me/50234775110). Si lo que buscas son más consultas arriba del embudo en lugar de atrapar las que ya tienes, mira el [Lead Generation Pack](/es/products/lead-generation-pack/).
+¿Quieres escucharlo responder la consulta de un socio? Llama a la demo en vivo en [birkystudio.com/voice-demo/](https://birkystudio.com/voice-demo/) o escríbele al agente de WhatsApp en [wa.me/50234775110](https://wa.me/50234775110). Si lo que buscas son más consultas arriba del embudo en lugar de atrapar las que ya tienes, mira el [Paquete de Generación de Prospectos](/es/products/lead-generation-pack/).
 
 ¿Listo para ver cómo se vería esto en tu estudio? [Ponte en contacto](/es/contacto/) y mapearemos tu flujo de consultas antes de darte un precio.

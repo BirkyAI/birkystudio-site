@@ -64,11 +64,11 @@ Tampoco te voy a dar un porcentaje de precisión de emparejamiento. Tu tasa de c
 
 ## Si prefieres no auditar tus propios datos
 
-Algunos equipos no quieren limpiar años de registros divididos. Quieren empezar con una lista que nunca se dividió. Eso es el [Lead Generation Pack](https://birkystudio.com/es/products/lead-generation-pack/): una lista de prospectos verificada, enriquecida y puntuada, hecha para ti, un registro por prospecto, deduplicada antes de llegar siquiera a tu archivo. Cuesta $1,997 por única vez, y la lista y los datos son tuyos para siempre, sin medidor mensual.
+Algunos equipos no quieren limpiar años de registros divididos. Quieren empezar con una lista que nunca se dividió. Eso es el [Paquete de Generación de Prospectos](https://birkystudio.com/es/products/lead-generation-pack/): una lista de prospectos verificada, enriquecida y puntuada, hecha para ti, un registro por prospecto, deduplicada antes de llegar siquiera a tu archivo. Cuesta $1,997 por única vez, y la lista y los datos son tuyos para siempre, sin medidor mensual.
 
 ## Cuánto cuesta
 
-El Base Agent cuesta $1,297 por única vez e incluye tu CRM en Notion y 30 días de soporte mientras se asienta. Si también quieres que maneje el teléfono, el Text Receptionist cuesta $297 y el Voice Receptionist cuesta $550, ambos por única vez. Care and Maintenance cuesta $97 al mes, opcional, para cuando quieres que alguien más lo mantenga al día.
+El Base Agent cuesta $1,297 por única vez e incluye tu CRM en Notion y 30 días de soporte mientras se asienta. Si también quieres que maneje el teléfono, el Recepcionista de Texto cuesta $297 y el Recepcionista de Voz cuesta $550, ambos por única vez. Cuidado y Mantenimiento cuesta $97 al mes, opcional, para cuando quieres que alguien más lo mantenga al día.
 
 ## Pruébalo
 
@@ -76,6 +76,6 @@ Empieza gratis. La [plantilla Quick Log](https://birkystudio.com/quick-log-templ
 
 Luego escúchalo funcionar. [Llama a la demo del agente de voz](https://birkystudio.com/voice-demo/) y pregúntale por una propiedad, una visita o un cambio de precio. Responde en segundos, se mantiene en su papel, y sostiene un solo hilo limpio en lugar de tres. Si prefieres escribir, el [agente de WhatsApp](https://wa.me/50234775110) está en vivo ahora mismo y acepta la versión desordenada de las mismas preguntas.
 
-Si lo que te falta es el lado de prospección y no el de los registros, el [Outreach Engine](https://birkystudio.com/es/products/outreach-engine/) cuesta $797 por única vez, primero por correo y totalmente conforme a la normativa, y funciona con una sola entrada limpia por persona.
+Si lo que te falta es el lado de prospección y no el de los registros, el [Motor de Contacto](https://birkystudio.com/es/products/outreach-engine/) cuesta $797 por única vez, primero por correo y totalmente conforme a la normativa, y funciona con una sola entrada limpia por persona.
 
 ¿Quieres esto conectado a tus propias fuentes? [Cuéntanos de qué sistemas sacas los datos de propiedades](https://birkystudio.com/es/contacto/) y te diremos con honestidad cuánto de eso se puede emparejar.
