@@ -39,7 +39,7 @@ If you shoot products, try this simple light box trick: place a white poster boa
 
 A cluttered background distracts from what you are trying to show. For products, use a plain white surface or a clean wooden table. For team photos, tidy up the space first. Remove random cables, coffee cups, and anything that pulls attention away.
 
-### Use the Rule of Mentally Divide
+### Use the Rule of Thirds
 
 Imagine your screen split into a 3x3 grid. Place your subject where the lines intersect, not dead center. This simple composition trick makes photos look more professional and visually interesting. Most phones have a grid overlay option in the camera settings. Turn it on.
 
