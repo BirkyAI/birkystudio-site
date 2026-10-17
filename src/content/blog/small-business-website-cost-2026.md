@@ -1,6 +1,6 @@
 ---
 title: "What a Small Business Website Costs (2026)"
-description: "Website prices vary wildly, and it's hard to know what you're actually paying for. Here's a honest breakdown of what a small business website costs in 2026."
+description: "Website prices vary wildly, and it's hard to know what you're actually paying for. Here's an honest breakdown of what a small business website costs in 2026."
 date: 2026-07-18
 image: "/images/blog/ai-generated/small-business-website-cost-2026.jpg"
 tags: ["Business Tips", "Small Business"]

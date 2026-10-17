@@ -156,4 +156,4 @@ A high-converting landing page isn't about fancy design tricks. It's about clari
 
 If your current website isn't generating the leads or sales you expected, the landing page is usually the first place to look. Small changes to your headline, CTA, or page layout can make a dramatic difference in results.
 
-At Birky Studio, we build landing pages and complete websites for small businesses across Guatemala that are designed to convert, not just look pretty. If you want a website that actually works for your business, [get in touch with us](https://birkystudio.com/#contact). We would love to help.
+At Birky Studio, we build landing pages and complete websites for small businesses across Guatemala that are designed to convert, not just look pretty. If you want a website that actually works for your business, [get in touch with us](https://birkystudio.com/contact/). We would love to help.

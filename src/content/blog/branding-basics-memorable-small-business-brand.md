@@ -124,4 +124,4 @@ You don't need to hire an expensive agency to start building your brand. Begin w
 
 Every touchpoint with a customer is a chance to reinforce your brand. Make each one count.
 
-**Ready to build a brand that stands out?** At Birky Studio, we help small businesses in Guatemala create professional brands and websites that attract customers. [Contact us today](https://birkystudio.com/#contact) for a free consultation, let's make your business unforgettable.
+**Ready to build a brand that stands out?** At Birky Studio, we help small businesses in Guatemala create professional brands and websites that attract customers. [Contact us today](https://birkystudio.com/contact/) for a free consultation, let's make your business unforgettable.

@@ -94,6 +94,6 @@ Look at your analytics. Open your contact form. Check how many messages you rece
 
 If the number is embarrassingly low, your site is not working for you. It is just sitting there, looking pretty, while your competitors answer the leads you are missing.
 
-**Birky Studio can audit your current site in 30 minutes and show you exactly what is missing.** No pressure, no hard sell, just a honest assessment of what is costing you customers.
+**Birky Studio can audit your current site in 30 minutes and show you exactly what is missing.** No pressure, no hard sell, just an honest assessment of what is costing you customers.
 
 [Book your free website audit](https://birkystudio.com/contact/) and find out what your site is really worth.

@@ -106,4 +106,4 @@ Third, check your conversion events. If nobody is filling out your contact form,
 
 Setting up GA4 is the easy part. Knowing what to do with the data is where most small business owners get stuck. At Birky Studio, we build websites that come with analytics already configured, so you do not have to figure it out alone.
 
-If you want a website that tracks what matters and turns visitors into customers, [get in touch with us](https://birkystudio.com/#contact). We will handle the technical side so you can focus on running your business.
+If you want a website that tracks what matters and turns visitors into customers, [get in touch with us](https://birkystudio.com/contact/). We will handle the technical side so you can focus on running your business.
