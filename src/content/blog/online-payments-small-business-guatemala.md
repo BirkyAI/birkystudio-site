@@ -97,4 +97,4 @@ Here is what to do this week:
 
 Once you see how online payments remove friction from your sales process, you will wonder why you waited so long.
 
-**Need help setting up online payments on your website?** Birky Studio specializes in building websites with integrated payment processing for small businesses in Guatemala. We handle the setup so you can focus on running your business. [Contact us today](/) to get started.
+**Need help setting up online payments on your website?** Birky Studio specializes in building websites with integrated payment processing for small businesses in Guatemala. We handle the setup so you can focus on running your business. [Contact us today](https://birkystudio.com/contact/) to get started.
