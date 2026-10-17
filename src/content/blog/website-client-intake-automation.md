@@ -86,7 +86,7 @@ When a lead completes the intake flow, you get a notification. The lead's detail
 
 ## Getting Started Takes Less Than a Week
 
-We have streamlined the setup process. You share your intake流程, we configure the agent, test it with real scenarios, and deploy it to your site. Most setups are live within 3-5 days.
+We have streamlined the setup process. You share your intake process, we configure the agent, test it with real scenarios, and deploy it to your site. Most setups are live within 3-5 days.
 
 The ongoing cost is a fraction of what you would pay for a full-time assistant. And unlike a human, the agent works 24/7, never calls in sick, and handles unlimited conversations simultaneously.
 
