@@ -21,6 +21,61 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-09-22",
   "dateModified": "2026-09-22"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a human VA cost vs an AI receptionist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A good real estate VA runs $2,000-$3,500/month fully loaded, $24,000-$42,000 in year one, plus recruiting (~$4,700/hire) and training. BirkyStudio's AI receptionist is $550 one-time for the voice line (client pays Vapi ~$30-$50/mo) or $297 one-time for WhatsApp, with optional support at $97-$197/mo. That's roughly $1,461-$2,194 in year one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an AI receptionist replace a human VA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For answering calls, qualifying leads, and handling routine inquiries, yes, an AI receptionist covers 24/7, never calls in sick, works in English and Spanish, and never quits. But a great human VA still beats AI on nuance, empathy, and relationship-heavy conversations. The honest answer: the AI replaces the front-desk answering role, not the strategic relationship work a top VA does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can't an AI receptionist do that a human VA can?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AI receptionist can't build the same personal rapport, read subtle emotional cues, negotiate complex deals, or handle judgment-heavy relationship conversations the way a skilled human VA can. It also can't do broader admin work like scheduling, paperwork, transaction coordination, or social media. If your business depends on deep human relationships, keep a human for that."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does BirkyStudio's AI receptionist cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The AI Voice Receptionist is $550 one-time setup, with the client paying Vapi directly for call usage at roughly $30-$50/month, plus optional support at $97/month. The AI Text Receptionist for WhatsApp is $297 one-time with optional support at $97/month. No contract, no monthly platform fee, you own the setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is an AI receptionist available 24/7?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A BirkyStudio AI receptionist answers calls and WhatsApp messages around the clock, 7 days a week, in English and Spanish, including at 2am, on weekends, and on holidays when a human VA is off the clock. It never calls in sick, never takes vacation, and never misses a lead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should hire a human VA instead of an AI receptionist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hire a human VA if your business runs on deep, relationship-heavy conversations where a warm human touch is the whole point, and you can afford $2,000-$3,500/month plus recruiting and training. Choose an AI receptionist if you need reliable 24/7 answering and lead qualification at a fraction of the cost. Most businesses end up using both."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +84,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/human-va.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">

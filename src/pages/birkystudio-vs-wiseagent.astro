@@ -21,6 +21,69 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-10-06",
   "dateModified": "2026-10-06"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Wise Agent cheaper than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On a monthly basis, yes, and it is genuinely good value. Wise Agent is $49/month (or $499/year, about $42/month) for the CRM with up to five team members, and $69/month (or $699/year) with WiseSocial, with no setup fee, no contract, and a 14-day free trial. Where it differs is the model: it is a subscription you pay every month for as long as you use it, and it is software you operate. BirkyStudio is a one-time build that answers your phone and WhatsApp, follows up automatically, and hands you verified prospects you own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Wise Agent is a CRM, not an AI agent. It stores contacts, runs drip email and SMS campaigns, tracks transactions, and gives you landing pages, but it does not answer an inbound phone call and it does not hold an AI conversation on WhatsApp. Its SMS feature (WiseText) sends messages you write or schedule. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30-50/month), and the WhatsApp Text Receptionist is $297 one-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Wise Agent cost per year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The CRM plan is $49/month, or $499/year (about $42/month), including up to five team members. CRM plus WiseSocial is $69/month, or $699/year (about $59/month). Add-ons are separate: extra team members $20/month per batch of five, additional logins $20/month each, WiseText SMS $11/month plus a one-time $80 registration, extra landing pages $5/month each, and WiseSocial on its own $20/month. Prices verified on wiseagent.com/pricing in October 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent include a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not a full website. Wise Agent includes landing pages (one is included, additional pages are $5/month each) for capturing leads, but it is not a website builder. BirkyStudio builds a website you own, starting at $499 for a 1-3 page Starter site, $999 for a Professional 4-7 page bilingual site, and $1,999 for a Premium 10+ page site with a blog. You own the code, so nobody can hold your site or your domain to ransom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent find me leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Wise Agent organizes and markets to the leads you already have, it does not supply new prospects. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies around the clock."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wise Agent have a contract or a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wise Agent is month to month with no contract, and it has a 14-day free trial. The vendor states there are no setup costs and no hidden fees, and onboarding is included. That is genuinely customer-friendly. BirkyStudio matches the no-contract part with a 30-day money-back guarantee and no setup fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a CRM and an AI agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. Wise Agent holds the information and helps you market to it. The AI agent is the one picking up at 9pm while you are at dinner."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +92,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/wiseagent.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">

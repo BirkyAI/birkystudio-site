@@ -21,6 +21,53 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-08-11",
   "dateModified": "2026-08-11"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or Goodcall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Goodcall's Starter plan at $66/month ($792/year) is the cheapest entry point. BirkyStudio costs roughly $910-$1,150 in year one depending on usage. However, BirkyStudio includes WhatsApp, custom AI training, and real estate expertise, features Goodcall doesn't offer at any price. In year two and beyond, BirkyStudio costs less because there's no setup fee to repeat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Goodcall offer WhatsApp integration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Goodcall is a phone-only platform. BirkyStudio includes WhatsApp AI alongside phone reception in every voice setup. For agents who handle leads through WhatsApp, common in Latin America, Europe, and among international buyers. BirkyStudio is the only option that covers both channels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is easier to set up: BirkyStudio or Goodcall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is easier if you don't want to do the work yourself, you describe your business and Luna builds the AI for you in 48-72 hours. Goodcall is faster to start (15-30 minutes) but you have to configure everything yourself: logic flows, prompts, forms, and responses. For non-technical agents, BirkyStudio's hands-off approach is significantly easier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio or Goodcall integrate with my CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neither has mature native CRM integrations yet. Goodcall offers Zapier connectivity via API for limited integrations. BirkyStudio's CRM integration is basic and coming soon with more robust options. If Zapier-based CRM integration is critical, Goodcall has a slight edge for now."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a non-real-estate business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Goodcall is the better choice for non-real-estate businesses. It's a general-purpose platform that works for any industry, restaurants, service businesses, retail, etc. BirkyStudio is purpose-built for real estate agents, and most of its value comes from industry-specific training. If you don't work in real estate, Goodcall is likely a better fit."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +76,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/comparison-hero.jpg"
 >
   <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
   <!-- Hero -->
   <section style="padding:100px 0 80px;position:relative;overflow:hidden">

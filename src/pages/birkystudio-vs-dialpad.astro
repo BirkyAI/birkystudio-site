@@ -21,6 +21,53 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-08-18",
   "dateModified": "2026-08-18"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or Dialpad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a solo agent, BirkyStudio is cheaper. At $550 setup + ~$30-50/mo, your first year costs ~$910-$1,150. Dialpad's Standard plan is $23/user/mo ($276/year) but doesn't include AI receptionist features, you'd need their Support plan at $75+/user/mo ($900+/year). For teams of 5+, Dialpad's per-user pricing becomes more competitive, but BirkyStudio doesn't scale to multi-user phone systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Dialpad offer WhatsApp integration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Dialpad supports SMS, MMS, and team messaging, but does not offer native WhatsApp integration. If WhatsApp is important for your business, especially if you work with international buyers or in Latin American markets. BirkyStudio is the clear choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can BirkyStudio replace Dialpad for a real estate team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a solo agent or small team, yes. BirkyStudio handles 24/7 call answering, lead qualification, and WhatsApp messaging, the core needs of a real estate agent. For teams of 5+ that need extensions, ring groups, and a full phone system, Dialpad is the better fit. They're complementary tools for different business sizes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio or Dialpad have better AI features?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on what you need. BirkyStudio's AI is purpose-built for real estate, trained on your listings, your process, and your brand voice. Dialpad's AI is more general-purpose: real-time transcription, call summaries, and AI Agents that handle customer service workflows. For a real estate agent, BirkyStudio's custom training is more useful. For a broader business, Dialpad's AI suite is more versatile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a bilingual real estate agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio includes bilingual (EN/ES) support at no extra cost, and the AI is trained on real estate terminology in both languages. Dialpad's AI features are primarily English-focused and not designed for bilingual real estate workflows. For agents serving Spanish-speaking clients, BirkyStudio is the better option."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +76,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/dialpad.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">"

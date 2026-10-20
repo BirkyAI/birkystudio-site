@@ -21,6 +21,69 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-09-15",
   "dateModified": "2026-09-15"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Real Geeks cheaper than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Real Geeks is $399/month plus a one-time $500 setup fee, $5,288 in year one before you buy a single lead. With a lead package it runs $8,876 (Social, $299/mo) to $12,476 (Search or Seller, $599/mo). BirkyStudio is one-time: $497 Starter list, $997 Pro list, or $1,997 Lead Generation Pack with AI follow-up. A full BirkyStudio pipeline costs less than Real Geeks' year-one base platform with no leads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Real Geeks leads real?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agents report mixed results. Reddit reviews call the website great but the leads \"trash,\" note that \"half the phone numbers and emails don't work,\" and one agent said \"$2,400 later… still not one good lead.\" Every BirkyStudio prospect is verified for a working phone, email, and website, then enriched and scored before delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Real Geeks have a contract, setup fee, or free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Setup fee and contract: yes. Free trial: no. Real Geeks charges a one-time $500 platform setup fee, and its lead packages require 12-month or 6-month commitments (12-month terms are cheaper per month). BirkyStudio has no setup fee, no contract, and a 30-day money-back guarantee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my Real Geeks website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Carefully. Real Geeks' own lead guarantee states it's invalidated if the site owner changes the code or content on the templated website, including home search pages, home valuation pages, and lead forms. So editing your own site can void your guarantee. BirkyStudio builds you a site you own ($499 / $999 / $1,999) and you can change anything on it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio generate leads for me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We build a verified, enriched, scored prospect list for your niche and area, as a one-time deliverable you own forever. The $1,997 Lead Generation Pack adds automated outreach, an AI agent trained on your pitch, and an AI receptionist that catches and qualifies replies 24/7 on WhatsApp and phone. No monthly ad budget, no rented platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should choose Real Geeks over BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An agent or team who wants a done-for-you IDX website plus managed paid-ad campaigns, can commit to a 12-month term and a monthly platform fee, and has someone ready to work the leads. Real Geeks' managed ad packages can scale for teams with an ISA. BirkyStudio is better for anyone who wants verified prospects they own once, plus an AI that does the follow-up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio work outside real estate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The prospect list service is niche-agnostic, it works for dentists, plumbers, hotels, law firms, e-commerce, and more. Real estate is where we started, but the verified-list pipeline works for any target market you want to reach."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +92,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/realgeeks.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">

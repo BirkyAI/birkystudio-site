@@ -21,6 +21,53 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-09-01",
   "dateModified": "2026-09-01"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the biggest cost difference between an agency and BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pricing model. Agencies charge ongoing monthly retainers ($1,000-$10,000+ per month) that never end. BirkyStudio charges one-time prices, you pay once and own the result. Over 12 months, a typical agency engagement costs $10,000-$70,000+. BirkyStudio costs $297-$3,846 total for the same core services. The difference is the team overhead: agencies pay designers, developers, account managers, and sales people. BirkyStudio uses AI automation and streamlined delivery to eliminate that overhead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can BirkyStudio handle complex web development like custom APIs or databases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio builds professional sites with lead capture, contact forms, blog/CMS, IDX integration for real estate, and bilingual capability. For custom API integrations, database-driven applications, or complex e-commerce, think a custom booking platform with payment processing, a development agency is still the better choice. BirkyStudio excels at the 80% of business websites that need to look professional, capture leads, and work reliably without custom engineering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio offer ongoing marketing like an agency would?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio's core focus is setup and automation, building the website, AI receptionist, and workflows that run your business. Ongoing support (from $97/month) covers maintenance and minor updates. For ongoing content marketing, SEO campaigns, and advertising management, BirkyStudio is best paired with a freelancer or specialist, you don't need a full agency retainer for bi-weekly blog posts and ad tweaks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I need changes after BirkyStudio builds my site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minor updates are included with the optional support plan (from $97/month). Larger changes, new pages, new features, redesigns, are billed as service upgrades. There's no retainer lock-in and no hourly rate negotiation. You request what you need, get a flat price, and decide. With an agency, changes are billed at $100-$250/hour under the retainer, and they often require a contract amendment for anything outside scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is BirkyStudio suitable for a business that's pre-revenue or just starting out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. BirkyStudio's $499 starter website and $297 text receptionist are designed for businesses that need a professional presence without spending their entire startup budget. A traditional agency won't take a project under $5,000 and typically requires a 3-month minimum commitment. For a pre-revenue business, BirkyStudio is the only option that makes financial sense."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +76,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/traditional-agency.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">"

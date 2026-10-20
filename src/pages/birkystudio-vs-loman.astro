@@ -21,6 +21,53 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-08-24",
   "dateModified": "2026-08-24"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can BirkyStudio handle restaurant calls like Loman AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. BirkyStudio's AI voice receptionist handles restaurant calls, reservations, takeout orders, hours inquiries, and FAQ, just as well as Loman AI. The difference is BirkyStudio is not limited to restaurants: it works for real estate, service businesses, hotels, and any other industry. Loman is restaurant-only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Loman AI integrate with restaurant POS systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Loman AI integrates with Toast, SpotOn, OpenTable, Resy, Clover, Shift4, Square, Aloha by NCR, and Olo, making it ideal for restaurants that need deep POS and reservation system connectivity. BirkyStudio does not offer POS integrations, but handles phone and WhatsApp calls naturally for any business type."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or Loman AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio has transparent pricing: $550 one-time setup for voice + text receptionist, plus ~$30-50/month for the voice provider. Loman AI requires you to \"Contact Us\" for pricing on both plans, no published prices. For restaurants that want predictable costs without negotiating a contract, BirkyStudio is the clearer choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Loman AI offer WhatsApp integration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Loman AI is focused on phone calls for restaurant ordering and reservations. It does not offer WhatsApp AI. BirkyStudio includes WhatsApp text receptionist in every voice setup, making it the better choice for businesses that communicate with customers across both channels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a restaurant: BirkyStudio or Loman AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a restaurant that needs deep POS integration (Toast, Square, OpenTable) and automated takeout order handling, Loman AI is purpose-built for that use case. For a restaurant that wants a simpler setup, lower upfront commitment, or also needs AI for non-restaurant aspects of the business (event booking, partner communications, HR screening), BirkyStudio is more versatile and transparently priced."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +76,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/loman.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">"

@@ -21,6 +21,61 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-09-08",
   "dateModified": "2026-09-08"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is BoldLeads cheaper than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, over a year BoldLeads runs roughly $10,800 to $21,600 ($399-$799/month platform plus $500-$1,000/month ad spend). BirkyStudio is a one-time fee: $497 Starter, $997 Pro, or $1,997 Lead Generation Pack. A full BirkyStudio pipeline costs less than one month of BoldLeads, and you own the prospects forever."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are BoldLeads leads real?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many agents report they are not. Reddit reviews describe BoldLeads leads as \"bots, scams, kids\" and note lead quality \"has fallen off the table and simultaneously gotten 2-3x more expensive.\" Every BirkyStudio prospect is verified for a working phone, email, and website before delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel BoldLeads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Customers report it's difficult, with dozens of 1-star reviews describing post-cancellation billing and losing access to leads, the CRM, and landing pages. BirkyStudio has nothing to cancel, you pay once and the list is delivered to you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio generate leads for me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We build a verified, enriched, scored prospect list for your niche and area. The Lead Generation Pack adds automated outreach, an AI agent trained on your pitch, and an AI receptionist that catches and qualifies replies. No monthly ad budget, no rented platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I own with BirkyStudio vs BoldLeads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With BoldLeads you rent the platform and can lose access on cancel. With BirkyStudio you own the list, the data, and (in the Lead Generation Pack) the automation and AI setup outright. No subscription, no lock-in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio work outside real estate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The prospect list service is niche-agnostic, it works for dentists, plumbers, hotels, law firms, e-commerce, and more. Real estate is where we started, but the verified-list pipeline works for any target market you want to reach."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +84,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/boldleads.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">

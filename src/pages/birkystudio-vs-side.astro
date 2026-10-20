@@ -21,6 +21,61 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-09-08",
   "dateModified": "2026-09-08"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Side cheaper than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is significantly cheaper upfront, $1,297 one-time setup vs Side's undisclosed pricing. Side doesn't publish prices; their model is a consultation-based partnership tied to your production volume, involving commission splits within a new brokerage entity you own. The real question isn't which is cheaper, it's whether you want to invest in AI labor ($1,297) or build a brokerage company (Side)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Side have an AI receptionist like BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Side AI is designed for transaction-level busywork, documents, signatures, compliance checks, and back-office automation within SideOS. It does not answer phone calls, handle WhatsApp messages, or engage with leads. BirkyStudio's AI is built specifically for lead conversations: answering calls via Vapi, responding on WhatsApp, qualifying prospects, and scheduling showings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use BirkyStudio alongside Side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. They address different parts of your business. Side handles back-office operations (transaction management, compliance, payments, brokerage infrastructure). BirkyStudio handles front-office automation (AI lead conversations, WhatsApp, phone calls, email management, follow-ups). They don't conflict, they complement each other. Many Side partners could benefit from adding BirkyStudio's AI receptionist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much production volume do I need for Side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Side's partner application form asks for your annual production volume with options starting at \"Less than $2M\" and going up to $50M+. While there's no explicit minimum, Side is designed for top-producing agents, the platform's value proposition centers on agents who are already doing significant volume and ready to own their own company. BirkyStudio has no minimum production requirement and works for agents at any level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio help me start my own brokerage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. BirkyStudio is an AI automation service, it installs an AI agent that handles lead conversations, calls, and admin tasks. It works with your existing brokerage and doesn't change your business structure. If you want to own your own brokerage company, Side is the solution for that. If you want to keep your current setup and add AI that handles the work, that's BirkyStudio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the setup time for Side vs BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio takes about 15 minutes of build in a guided screen share session. Your AI is trained on your specific listings and processes in that same session. Side's onboarding takes weeks to months, there's a consultation process, compliance setup, broker licensing verification, agent onboarding, and technology implementation across your new company. Side is a structural change to your business; BirkyStudio is an add-on."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +84,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/side.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">

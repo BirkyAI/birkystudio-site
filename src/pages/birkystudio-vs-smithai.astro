@@ -21,6 +21,53 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-08-06",
   "dateModified": "2026-08-06"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper: BirkyStudio or Smith.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is significantly cheaper upfront. You pay $550 one-time for a voice receptionist, then the voice provider directly (~$30-50/mo). Smith.ai starts at $150/month for 75 AI calls. Over 12 months, BirkyStudio costs roughly $910-$1,150 vs Smith.ai's $1,800-$3,600+."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Smith.ai offer WhatsApp integration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Smith.ai focuses on phone calls and does not offer native WhatsApp integration. If WhatsApp is important for your business, especially if you work with international buyers or in Latin American markets. BirkyStudio is the better choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get human backup with BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is pure AI with personal support from the person who built it. If a call is too complex for the AI, it transfers to you directly. Smith.ai offers live human agents as a primary or backup option. If having a human safety net is essential, Smith.ai is the right choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BirkyStudio or Smith.ai integrate with my CRM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smith.ai has mature CRM integrations with Clio, Salesforce, Zapier, and more. BirkyStudio's CRM integration is basic and coming soon. If CRM integration is critical, Smith.ai has the edge for now."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better for a bilingual real estate agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio includes bilingual (EN/ES) support at no extra cost. Smith.ai has a dedicated Spanish line, but it costs an additional $1 per call. For agents who handle bilingual calls regularly, BirkyStudio is more cost-effective."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +76,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/smithai.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">"

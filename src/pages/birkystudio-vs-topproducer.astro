@@ -21,6 +21,69 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-10-13",
   "dateModified": "2026-10-13"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Top Producer more expensive than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top Producer is priced per user, every month, on an annual contract. The Pro plan is $179 per user per month, about $2,148 a year for one agent, and it does not include a website, lead routing, or IDX. Add a website ($35 per user per month) and FiveStreet ($25 per user per month) and a working stack starts around $239 per user per month, or roughly $2,868 a year, before any lead package. BirkyStudio is a one-time build: The Base Agent is $1,297 solo (Notion CRM included), the Text Receptionist is $297, and the Voice Receptionist is $550 plus Vapi usage of about $30 to $50 a month. Higher upfront, no per-seat fee, nothing to renew."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Top Producer is a real estate CRM and marketing platform, not an AI agent. It stores contacts, sends automated SMS and email lead responses, tracks transactions, and produces branded MLS market reports, but it does not answer an inbound phone call and does not hold an AI conversation on WhatsApp. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30 to $50 a month) and answers calls 24/7 in English and Spanish. The WhatsApp Text Receptionist is $297 one-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Top Producer cost per year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top Producer Pro is $179 per user per month, so about $2,148 per user per year. Pro + Leads starts from $479 per month (varies with lead volume), Pro + Farming from $599 per month (varies with farm size), Pro Teams 5 is $399 per month for up to 5 users, Pro Teams 10 is $699 per month for up to 10 users, and Pro Teams 25 is $1,199 per month for up to 25 users. A website is $35 per user per month and FiveStreet lead routing is about $25 per user per month. Prices verified on topproducer.com/pricing in October 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer have a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Top Producer does not publish a free trial, and reviewers on Capterra and SelectHub confirm none is offered. Sales reps sometimes offer to let you pay for the first month and cancel within 30 days, but reviewers report delays and resistance at cancellation. BirkyStudio offers a free 15-minute audit up front and a 30-day money-back guarantee on the build, with no contract to escape."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer include a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not in the base plan. Top Producer Pro is the CRM and market snapshot only. A Top Producer website is an add-on at $35 per user per month, and IDX integration is not included and requires third-party tools. BirkyStudio builds a website you own, starting at $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site, and $1,999 for a Premium 10+ page site with a blog. You own the code, so nobody can hold your site or domain to ransom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Top Producer find me leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top Producer sells lead packages, but the reviews are brutal. The pattern repeats across Trustpilot, Software Advice, and G2: a guaranteed number of leads that does not arrive, leads outside the requested area, numbers that do not connect, and a contract that locks you in when you try to cancel. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies around the clock. You own the list, so there is nothing to cancel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a CRM and an AI agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CRM is where you store and organize contacts. It only does something when you sit down and work it. An AI agent acts on its own. BirkyStudio's Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to the Notion CRM, answers it instantly, and follows up automatically in English and Spanish. Top Producer holds the information, produces market reports, and helps you market to your database. The AI agent is the one picking up at 9pm while you are at dinner."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +92,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/topproducer.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">

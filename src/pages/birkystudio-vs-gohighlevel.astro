@@ -21,6 +21,53 @@ const articleLD = JSON.stringify({
   "datePublished": "2026-09-07",
   "dateModified": "2026-09-07"
 });
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can BirkyStudio replace my GoHighLevel subscription entirely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends. If you use GoHighLevel primarily for CRM and lead management, BirkyStudio's AI agent can handle most of that, conversations, follow-ups, task management, through a simpler Notion-based system. But if you rely on GHL's marketing automation (email campaigns, funnels, attribution), you'd lose those capabilities. Many agents keep a basic GHL subscription for reporting while adding BirkyStudio for the AI that does the daily work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GoHighLevel have AI like BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GoHighLevel offers an \"AI Employee\" add-on ($50-97/month per sub-account), but it's focused on marketing content generation, writing emails, social posts, and SMS. It does NOT handle lead conversations, answer customer questions, or automate daily tasks like BirkyStudio's AI does. The two products complement rather than compete on AI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use BirkyStudio with my existing GoHighLevel account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. BirkyStudio works alongside GoHighLevel. The AI agent handles lead conversations and follow-ups, while GoHighLevel handles campaign reporting and attribution. They don't conflict. BirkyStudio adds the AI layer that GHL is missing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is GoHighLevel or BirkyStudio better for a new agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For new agents, BirkyStudio is the clear winner. You don't have time to learn a complex CRM platform, you need to be out meeting clients and closing deals. BirkyStudio handles the admin work for you from day one, set up in a single afternoon. GoHighLevel would take weeks to configure and months to master."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel either service at any time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BirkyStudio is month-to-month with no contracts. You pay for setup once, and optional support can be cancelled anytime. GoHighLevel offers month-to-month pricing but at higher rates, annual plans lock you in. Users report difficulty cancelling and surprise charges after attempting to cancel. BirkyStudio has flexible, transparent cancellation."
+      }
+    }
+  ]
+});
 ---
 
 <BaseLayout
@@ -29,6 +76,7 @@ const articleLD = JSON.stringify({
   image="/images/comparison/gohighlevel.jpg"
   >
     <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
 
     <!-- Hero -->
     <section style="padding:100px 0 80px;position:relative;overflow:hidden">
