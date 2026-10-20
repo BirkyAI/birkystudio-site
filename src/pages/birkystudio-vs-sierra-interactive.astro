@@ -1,0 +1,623 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Sierra Interactive (2026 Comparison), a Rented IDX Lead Machine vs a Front Desk You Own",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Sierra Interactive for real estate agents. Sierra Interactive is an SEO-built IDX website, CRM and lead generation platform from $299.95 per month on a 12-month agreement. BirkyStudio is a done-for-you AI operator that answers your phone and WhatsApp 24/7, follows up automatically, and hands you verified prospects you own. Real pricing, real reviews, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://birkystudio.com/images/birky-logo.jpg"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20"
+});
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Sierra Interactive more expensive than BirkyStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sierra Interactive is priced per month on a 12-month agreement, and the amount depends on how you pay. Prepay the year and Starter is $299.95 per month for one user, Essential is $399.95 per month for three users, and Growth is $599.95 per month for five users, with no setup fee. Split the same 12-month agreement into monthly payments and it costs $359.95, $474.95, and $724.95 per month plus a one-time $500 setup fee. Adding Lead Engage, Sierra's AI lead nurture add-on, is another $199 per month and is not available on Starter. BirkyStudio is a one-time build: The Base Agent is $1,297 solo (Notion CRM included), the Text Receptionist is $297, and the Voice Receptionist is $550 plus Vapi usage of about $30 to $50 a month. Higher upfront, no per-seat fee, nothing to renew."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sierra Interactive answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Sierra Interactive is a real estate IDX website, CRM, and lead generation platform, not an AI answering service, and its Lead Engage add-on is AI texting rather than a voice agent. It does not pick up an inbound phone call and it does not answer WhatsApp. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30 to $50 a month) and answers calls 24/7 in English and Spanish. The WhatsApp Text Receptionist is $297 one-time and holds full AI conversations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Sierra Interactive cost per year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prepaid annually, Sierra Interactive Starter is $299.95 per month, so about $3,599 per year for one user. Essential is about $4,799 per year for three users and Growth is about $7,199 per year for five users. Paying monthly under the same 12-month agreement adds a $500 setup fee and raises the rates to about $4,319, $5,699, and $8,699 per year. Extra users cost $75 per month on Starter, $60 per month for users 4 to 10 on Essential, and $20 per month for users 6 to 10 on Growth. Lead Engage is $199 per month on Essential and Growth, which brings a small team to about $7,187 per year before any ad spend. Prices verified on sierrainteractive.com/pricing in October 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sierra Interactive include a website, and do I own it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A website is included in the Sierra Interactive subscription, and it is genuinely one of the best ranking IDX websites in the category. What is not included is ownership. The site, its pages, and its search experience live on Sierra's infrastructure, and an industry analysis of all-in-one platforms puts the norm plainly: when you cancel, the site goes dark or gets recycled and you do not walk away with the files, the code, or the hosting. Third party roundups make the SEO point bluntly, that domain authority built on a rented URL restarts at zero. BirkyStudio builds a website you own for $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site, or $1,999 for a Premium 10+ page site with a blog. The code is yours and nobody can hold your site or your domain to ransom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sierra Interactive have a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Sierra Interactive is demo only. There is no published free trial and no self serve signup, you have to schedule a demo and talk to sales. Pricing is published, which is better than most rivals in this category, but there is no way to test the platform first. BirkyStudio offers a free 15-minute audit up front and a 30-day money-back guarantee on the build."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sierra Interactive find me leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sierra Interactive does not sell you a list. Its lead engine is organic search from an SEO-built IDX website plus paid advertising you fund and run. Google ad management costs a 10 percent monthly management fee on top of a minimum $500 monthly ad spend, which is $6,000 a year in ad spend alone, and Facebook management is $75 per month on the Lite pack or $200 per month on the Full pack. BirkyStudio hands you a verified, enriched, scored prospect list for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies around the clock. You own the list, so there is nothing to cancel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my website and SEO if I cancel Sierra Interactive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your contacts can usually be exported as a CSV, though reviewers report that notes, tags, and behavioral history do not come with them cleanly. The bigger loss is the website. Every neighbourhood page, blog post, and landing page you built on a Sierra site lives at a URL Sierra controls. Cancel and the pages go dark, the links pointing at them break, and any SEO traction those specific URLs had accumulated has to be rebuilt from scratch at new addresses. BirkyStudio builds the site on your own account, so the pages stay exactly where they are if you ever stop working with us."
+      }
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Sierra Interactive (2026)"
+  description="Honest 2026 comparison: Sierra Interactive is an SEO-built IDX website, CRM and lead engine from $299.95/month on a 12-month agreement. BirkyStudio answers your phone and hands you a website you own."
+  image="/images/comparison/sierra.jpg"
+  >
+    <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,45,149,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,45,149,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated October 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Sierra Interactive<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">A Rented IDX Lead Machine vs a Front Desk You Own</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        Sierra Interactive builds one of the genuinely best ranking IDX websites in real estate, with published pricing starting at $299.95 a month on a 12-month agreement, an MLS feed included, a dialer on the upper plans, and an AI texting add-on called Lead Engage. What it does not give you is the website itself: cancel and the site, its pages, and the SEO equity you built on those URLs stay behind. BirkyStudio is a one-time build. We answer your phone and WhatsApp 24/7 in English and Spanish, follow up automatically, and hand you verified prospects plus a website whose code you own. Here is the honest breakdown, including the parts where Sierra Interactive wins.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want the phone answered and the follow-up handled without you, and you would rather own your website, your pages and your prospect list than rent them. You get an AI agent that replies in seconds in two languages, an AI receptionist on WhatsApp and voice, verified, enriched, scored prospects you keep forever, and a site built on your own account that stays live even if you stop working with us.<br><br>
+          <strong style="color:white;">Choose Sierra Interactive if:</strong> Organic search is the core of your lead strategy, you have the lead volume to justify $300 to $600 a month indefinitely, and you want a niche real estate CRM with an IDX website that genuinely ranks, lead routing for a team, and a dialer included on the upper plans. Its SEO-built websites are the reason teams talk about it, and we are not going to pretend otherwise.<br><br>
+          <strong style="color:white;">The honest difference:</strong> Sierra Interactive is a platform you rent, and the website only exists while the subscription does. It does not answer your phone, it does not hold a WhatsApp conversation, and its AI follow-up is a $199 a month add-on you cannot even buy on the entry plan. BirkyStudio is an operator we build for you, priced once, doing the answering and the following up, on a website you own outright.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/sierra-article-1.jpg" alt="Real estate agent workspace with a laptop showing a property search and printed neighbourhood brochures on a desk" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Sierra Interactive?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        These two get compared because both promise the same outcome, more qualified conversations with fewer hours of admin, and because they sit at opposite ends of one question: do you rent the machine or own it? Sierra Interactive has been in the market since 2007 and sells an all-in-one platform built around what it calls SEO-driven IDX websites. Every plan includes one MLS feed, IDX property search with saved searches and alerts, a real estate CRM with behavioral automation, lead capture across the site, and email support with 30 to 90 days of onboarding. Essential and Growth add a built-in dialer with monthly SMS, MMS and voice allotments. Growth adds premium website designs and team reporting. Lead Engage, its AI texting for lead nurture, is $199 a month on Essential and Growth.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes the other route. Instead of renting you a platform to operate, we build an AI operator that does the front desk work for you. The Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically in English and Spanish. Add the AI Receptionist and the phone is answered around the clock. Add a Verified Prospect List and you start with real, enriched, scored prospects you own, no bots and no dead numbers.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        The real difference is not features, it is ownership and who does the work. Sierra rents you an excellent website and a CRM on a 12-month agreement that costs roughly $3,599 to $7,199 a year before add-ons. BirkyStudio delivers a one-time build that answers your leads and that you keep. That is what this page breaks down, honestly, including where Sierra Interactive is the better buy.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Sierra Interactive, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Sierra Interactive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 audit (15 min), projects from $297</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$299.95/month (Starter, 1 user, annual prepay)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A self-serve IDX website, CRM and lead-gen platform you operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time builds you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> $299.95 to $599.95/mo, per user tiers on top</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> 12-month agreement, whether you prepay or split it monthly</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $0</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> $0 annual prepay, $500 one-time if you pay monthly</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free 15-minute audit, 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Demo only, no published free trial</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ No AI answering, Lead Engage is AI texting, not voice</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Conversations on WhatsApp / Text</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Lead Engage $199/mo, Essential and Growth only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included in the subscription, genuinely strong SEO build</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Ownership</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Your code, your hosting, your pages stay live</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Vendor owned, cancel and the site goes dark</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">MLS / IDX Integration</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Not an MLS-based platform</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 1 MLS feed included, $25/mo per extra feed, IDX search</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Organic Search Lead Engine</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Bilingual SEO blog, not a niche IDX ranking engine</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Its strongest card, schema-built local pages designed to rank</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Where Your Leads Come From</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own forever</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Organic search plus paid ads you fund and run</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Paid Ad Management</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Not offered as a managed service</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Google PPC 10% of spend ($500/mo minimum spend), Facebook $75 or $200/mo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Dialer and Text Messaging</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI voice and WhatsApp receptionist, 24/7, EN/ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included on Essential and Growth, $100/mo on Starter</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Per-User Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No per-seat fee, scaled once in the business tier</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$75/user/mo (Starter), $60 (Essential 4-10), $20 (Growth 6-10)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ English-focused</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM built for agents, free with the Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full real estate CRM, behavioral automation included</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Does the Work</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers and follows up, we maintain it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✕ You do, it is a platform you operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> 30-90 day onboarding and email support, reviewers report long waits</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Track Record</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Smaller, newer studio</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Since 2007, thousands of agents across the US and Canada</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/sierra-article-2.jpg" alt="Laptop on an oak desk showing a website traffic chart trending upward beside a leather notebook" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT WORKS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not a platform you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a subscription for a database.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations. The Voice Receptionist is $550 one-time, plus you pay Vapi directly for usage (about $30 to $50 a month), and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start with real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it wins is time, ownership, and the shape of the bill. Nothing waits for you to sit down. A lead that comes in at 9pm gets an answer at 9pm, not the next morning. The website we build is on your own account, so the pages and their SEO equity stay with you. And everything is one-time or optional, so there is no monthly platform fee and no 12-month agreement to escape.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>AI answers your phone and WhatsApp 24/7, EN/ES</li>
+              <li>Follow-up happens automatically, no sitting down to work it</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Notion CRM included free with the Base Agent</li>
+              <li>Website you own ($499 / $999 / $1,999), pages stay live</li>
+              <li>One-time builds, no per-seat fee, no 12-month agreement</li>
+              <li>No setup fee, no contract, 30-day money-back guarantee</li>
+              <li>Same person who built it answers your support</li>
+              <li>Works for any niche, not just real estate</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Higher upfront cost than one month of Sierra Interactive</li>
+              <li>No MLS feed, no IDX listing search, no saved-search alerts</li>
+              <li>Our SEO engine is a bilingual blog, not a niche IDX ranking machine</li>
+              <li>No managed ad service, you would run your own PPC</li>
+              <li>No per-seat team routing or agent leaderboard out of the box</li>
+              <li>Smaller, newer studio than a platform running since 2007</li>
+              <li>Prospect list size is fixed by tier, not unlimited</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care &amp; Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/sierra-article-3.jpg" alt="Wooden desk with a house key, a folded neighbourhood map, an open laptop and a coffee mug in warm light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: Sierra Interactive -->
+      <div id="sierra-interactive" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Sierra Interactive</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Sierra Interactive has been building real estate websites and CRMs since 2007 and now powers the pipelines of thousands of agents across the US and Canada. Its core product is an all-in-one platform built around an SEO-driven IDX website: fast pages, schema-structured local content, property search with saved searches and alerts, lead capture throughout the site, and a CRM with behavioral automation on top. Published pricing starts at $299.95 a month on annual prepay for Starter (1 user), $399.95 for Essential (3 users), and $599.95 for Growth (5 users). Every plan includes one MLS feed, additional feeds are $25 a month, and Essential and Growth include a built-in dialer with 1,500 SMS segments and 1,500 voice minutes a month, rising to 15,000 and 5,000 on Growth. Practically every reviewer agrees the websites rank, which is why teams stay on it.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it costs more than the headline, and this is where we have to be straight with you. Monthly billing under the same 12-month agreement is $359.95, $474.95, and $724.95 a month, plus a one-time $500 setup fee that annual prepay waives. It is a 12-month term either way, not month to month. Extra users cost $75 a month on Starter and $60 a month for users 4 to 10 on Essential, so a five-person Starter team is $599.95 a month before add-ons, which is another $3,600 a year for seats alone. The premium website designs (Pinnacle, Exec, Luxury) are $100 to $150 a month extra unless you are on Growth. Lead Engage, the AI lead nurture that actually puts Sierra in the AI conversation, is $199 a month and is not available on Starter at all. And if you want lead volume from ads, Google management is a 10 percent fee on a minimum $500 monthly ad spend, so $6,000 a year in ad spend before the management fee.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The reviews are more mixed than the ratings suggest, and two themes repeat. The first is support. A long-time user on r/realtors wrote that since a private equity acquisition the original founder is no longer involved and that "now, support is handled in India, and direct communication with them is not an option," adding that "the daily support experience is quite poor. You receive automated emails, and then you're left hoping for a timely response or resolution to your issues." A G2 reviewer put it more simply: "There are some glitches with the automations that support has not been great in helping with so I have had to find my own work arounds." A 1-star Trustpilot reviewer said the platform "tanked" in seven months, that "customer service is non-existent," and that the system started sending a badly formatted mass email to their clients that they had never programmed.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The second theme is ownership and cost. The same r/realtors user wrote that "Sierra functions primarily as a lead capture website rather than a true CRM or transaction management platform" and that you then need to buy additional software, which leads to duplicated data. Another long-time user flagged a contract change in the same thread: "My initial agreement indicated that I was on a month-to-month basis after the first year. Now, it seems I must transition my entire business within two weeks or face a higher fee for the annual contract, along with additional costs for various third-party add-ons." An industry analysis of all-in-one platforms is blunt about the structural point: "Who owns the website if I cancel? The answer, for virtually every all-in-one platform, is the vendor. The site goes dark or gets recycled the moment your subscription ends." On the price, even a five-star G2 reviewer conceded that "it's not the cheapest option on the market." If organic search is your engine and you have the volume to justify $300 to $600 a month indefinitely, Sierra Interactive earns its place, especially for teams. If you are buying it expecting AI answering or a website you keep, read the terms first.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>SEO-built IDX websites that genuinely rank in local search</li>
+              <li>Published pricing, unusual in this category</li>
+              <li>1 MLS feed included, extra feeds only $25/month</li>
+              <li>Dialer with SMS, MMS and voice minutes included on Essential and Growth</li>
+              <li>Behavioural lead automation and team lead routing</li>
+              <li>Running since 2007 with thousands of US and Canada agents</li>
+              <li>Inline content editing without paying per page</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>12-month agreement whether you prepay or pay monthly</li>
+              <li>$500 setup fee if you split the year into monthly payments</li>
+              <li>No free trial, demo only, no self-serve signup</li>
+              <li>You never own the website, cancelling takes the pages and their SEO with it</li>
+              <li>AI lead nurture is a $199/month add-on and is barred from the entry plan</li>
+              <li>Per-user fees make larger Starter and Essential teams expensive</li>
+              <li>Reviewers report slow, email-only support and long waits on glitches</li>
+              <li>It does not answer your phone or hold a WhatsApp conversation</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Starter $299.95/month annual or $359.95/month with monthly billing (1 user) · Essential $399.95/month annual or $474.95/monthly (3 users) · Growth $599.95/month annual or $724.95/monthly (5 users) · Setup fee $0 annual, $500 monthly billing · Extra users $75/mo (Starter), $60/mo users 4-10 (Essential), $20/mo users 6-10 (Growth) · Lead Engage AI $199/month, Essential and Growth only · Extra MLS feed $25/month · Premium website designs $100-150/month unless on Growth · Google PPC 10% of spend, $500/month minimum ad spend · Facebook management $75 or $200/month · All plans are a 12-month agreement, no free trial (verified live, October 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Sierra Interactive (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Cheapest entry, one solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (Text Receptionist)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$3,599/year (Starter prepaid annually, 1 user)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Same plan, paid monthly instead of annually</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">No difference, one-time price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$4,819/year (Starter monthly + $500 setup)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A CRM plus a site, one solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 Base Agent + $999 Pro website + $130 CMS = $2,426 once</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$3,599/year (Starter, site included but rented)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7, EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 once + ~$30-50/mo, about $910 to $1,150</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, Sierra does not answer calls or WhatsApp</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A small team of three</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time (Base Agent, business tier)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$4,799/year (Essential prepaid, 3 users included)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team of three plus AI follow-up</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included with the Base Agent, no add-on</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$7,187/year (Essential + Lead Engage $199/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Five seats on the entry plan</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Sized once in the business tier, no per-seat fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$7,199/year ($299.95/mo + 4 extra users at $75/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospects you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 Starter or $997 Pro, one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not sold, you fund ads, $6,000/year minimum spend plus 10% management</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Complete done-for-you pipeline</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,997 one-time (Lead Generation Pack)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">No equivalent, platform only, you build the pipeline</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included in the subscription, not owned, gone if you cancel</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk fully covered, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent $1,297 + $97/mo care)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$3,599, but nothing is answered and nothing is followed up</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time, no recurring build fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $10,798, and still renewing</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, team of three</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time, no recurring build fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $14,398 on Essential, and still renewing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🔍 Organic search is the entire engine of your lead strategy</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Sierra Interactive</strong>. Its SEO-built IDX websites are the strongest organic lead machine in this price band, with schema-structured local pages, fast loads and IDX search built to rank. BirkyStudio does not try to match a niche IDX ranking engine. If organic search is your growth plan, this is the honest recommendation.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 You need the phone answered when you cannot pick up</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Sierra Interactive has no AI voice answering at all, and its AI texting add-on is barred from the entry plan. BirkyStudio's Voice Receptionist is $550 one-time plus Vapi usage and answers calls 24/7 in English and Spanish, while the WhatsApp Text Receptionist ($297 one-time) holds full AI conversations while you are showing a property.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏠 You want to own the website and the SEO you build on it</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. On an all-in-one platform the site belongs to the vendor, and an industry analysis of these platforms states it plainly: the site goes dark or gets recycled the moment your subscription ends, and you do not walk away with the files or the code. With BirkyStudio the site is built on your own account for $499, $999, or $1,999, so your pages and their rankings stay yours whether or not you keep working with us.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">👥 You run a team that needs lead routing and a dialer in one login</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Sierra Interactive</strong>. Essential and Growth include advanced lead routing, a built-in dialer with SMS and voice minutes, behavioral automation, and on Growth an agent leaderboard and premium website designs. If you are managing a team inside one platform, that depth is worth paying for.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You have no leads at all and need some you actually own</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Sierra Interactive does not sell leads. Its engine is organic search plus ads you fund, and Google ad management alone carries a minimum $500 monthly ad spend plus a 10 percent fee. BirkyStudio's Verified Prospect List is a real, enriched, scored list built for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds the outreach and the AI that catches the replies.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🧾 You want to stop paying a platform fee forever</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Sierra is a 12-month agreement either way, and paying monthly adds a $500 setup fee on top of the higher monthly rate. BirkyStudio is a one-time build with no contract, no per-seat fee and a 30-day money-back guarantee. If you dislike a bill that never ends, that is the deciding factor.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          This is not a fight BirkyStudio wins on IDX search or MLS depth, and we are not going to pretend it is. <strong style="color:white;">Sierra Interactive builds one of the best ranking real estate websites in the category</strong>, with a published rate card, an MLS feed included, a dialer on the upper plans, and lead routing that teams rely on. If organic search is your growth engine and you have the volume to justify $300 to $600 a month indefinitely, buy it for that.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          But be clear about what it is not. It does not answer your phone or hold a WhatsApp conversation. Its AI lead nurture, the one feature that puts it in the AI conversation, is a $199 a month add-on you cannot buy on the entry plan. It is a 12-month agreement either way, with a $500 penalty for paying monthly. And the website, the pages, and the SEO you build on those URLs belong to the platform, not to you. Reviewer sentiment on support and on the contract terms is consistent and not flattering. <strong style="color:white;">BirkyStudio is a different purchase.</strong> You are not renting a platform seat, you are buying the front desk. The AI answers your phone and WhatsApp 24/7 in two languages, follows up automatically, and hands you verified prospects you own, on a website whose code is yours.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: Sierra Interactive is an excellent website and CRM that you rent. BirkyStudio is an operator that answers and a site you keep. For many agents the right answer is both, Sierra for the organic IDX engine, BirkyStudio for the conversation that happens when the lead actually calls.<br><br>
+          <strong style="color:white;">Choose Sierra Interactive if:</strong> organic search drives your business, you want a niche IDX website that ranks and a team platform in one login, and you accept a 12-month agreement as the cost of that.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want the phone answered, the follow-up handled, verified prospects you own, and a website that stays yours, without a monthly platform fee or a year-long commitment.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://www.sierrainteractive.com/pricing/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore Sierra Interactive →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is Sierra Interactive more expensive than BirkyStudio?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Sierra Interactive is priced per month on a 12-month agreement, and the amount depends on how you pay. Prepay the year and Starter is $299.95 per month for one user, Essential is $399.95 per month for three users, and Growth is $599.95 per month for five users, with no setup fee. Split the same 12-month agreement into monthly payments and it costs $359.95, $474.95, and $724.95 per month plus a one-time $500 setup fee. Adding Lead Engage, Sierra's AI lead nurture add-on, is another $199 per month and is not available on Starter. BirkyStudio is a one-time build: The Base Agent is $1,297 solo (Notion CRM included), the Text Receptionist is $297, and the Voice Receptionist is $550 plus Vapi usage of about $30 to $50 a month. Higher upfront, no per-seat fee, nothing to renew.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Sierra Interactive answer my phone or reply on WhatsApp?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Sierra Interactive is a real estate IDX website, CRM, and lead generation platform, not an AI answering service, and its Lead Engage add-on is AI texting rather than a voice agent. It does not pick up an inbound phone call and it does not answer WhatsApp. BirkyStudio's Voice Receptionist is $550 one-time (plus Vapi usage of about $30 to $50 a month) and answers calls 24/7 in English and Spanish. The WhatsApp Text Receptionist is $297 one-time and holds full AI conversations.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does Sierra Interactive cost per year?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Prepaid annually, Sierra Interactive Starter is $299.95 per month, so about $3,599 per year for one user. Essential is about $4,799 per year for three users and Growth is about $7,199 per year for five users. Paying monthly under the same 12-month agreement adds a $500 setup fee and raises the rates to about $4,319, $5,699, and $8,699 per year. Extra users cost $75 per month on Starter, $60 per month for users 4 to 10 on Essential, and $20 per month for users 6 to 10 on Growth. Lead Engage is $199 per month on Essential and Growth, which brings a small team to about $7,187 per year before any ad spend. Prices verified on sierrainteractive.com/pricing in October 2026.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Sierra Interactive include a website, and do I own it?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            A website is included in the Sierra Interactive subscription, and it is genuinely one of the best ranking IDX websites in the category. What is not included is ownership. The site, its pages, and its search experience live on Sierra's infrastructure, and an industry analysis of all-in-one platforms puts the norm plainly: when you cancel, the site goes dark or gets recycled and you do not walk away with the files, the code, or the hosting. Third party roundups make the SEO point bluntly, that domain authority built on a rented URL restarts at zero. BirkyStudio builds a website you own for $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site, or $1,999 for a Premium 10+ page site with a blog. The code is yours and nobody can hold your site or your domain to ransom.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Sierra Interactive have a free trial?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Sierra Interactive is demo only. There is no published free trial and no self serve signup, you have to schedule a demo and talk to sales. Pricing is published, which is better than most rivals in this category, but there is no way to test the platform first. BirkyStudio offers a free 15-minute audit up front and a 30-day money-back guarantee on the build.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Sierra Interactive find me leads?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Sierra Interactive does not sell you a list. Its lead engine is organic search from an SEO-built IDX website plus paid advertising you fund and run. Google ad management costs a 10 percent monthly management fee on top of a minimum $500 monthly ad spend, which is $6,000 a year in ad spend alone, and Facebook management is $75 per month on the Lite pack or $200 per month on the Full pack. BirkyStudio hands you a verified, enriched, scored prospect list for your niche and area ($497 Starter, $997 Pro, one-time), and the $1,997 Lead Generation Pack adds outreach plus the AI that catches the replies around the clock. You own the list, so there is nothing to cancel.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>What happens to my website and SEO if I cancel Sierra Interactive?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Your contacts can usually be exported as a CSV, though reviewers report that notes, tags, and behavioral history do not come with them cleanly. The bigger loss is the website. Every neighbourhood page, blog post, and landing page you built on a Sierra site lives at a URL Sierra controls. Cancel and the pages go dark, the links pointing at them break, and any SEO traction those specific URLs had accumulated has to be rebuilt from scratch at new addresses. BirkyStudio builds the site on your own account, so the pages stay exactly where they are if you ever stop working with us.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> Sierra Interactive pricing and terms sourced from sierrainteractive.com/pricing in October 2026 (Starter $299.95/month annual or $359.95/monthly, Essential $399.95/month annual or $474.95/monthly, Growth $599.95/month annual or $724.95/monthly, $500 setup fee on monthly billing only, all packages on a 12-month agreement, extra users $75/$60/$20 per month by tier, 1 MLS feed included and $25/month per extra feed, Lead Engage AI $199/month on Essential and Growth only, Google PPC 10 percent management fee with a $500/month minimum ad spend, Facebook management $75/month Lite or $200/month Full, no published free trial). Note that third party roundups quote figures from around $499.95 a month and Sierra's own real estate CRM page quotes plans from $399 a month, so we used the detailed rate card on the pricing page as the source of truth. Customer quotes are verbatim from public reviews on Trustpilot, G2, and r/realtors. The ownership and SEO points are sourced from an industry analysis of all-in-one real estate platforms published in June 2026, which states that the website belongs to the vendor and the site goes dark or gets recycled on cancellation. BirkyStudio pricing from birkystudio.com as of October 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297), the Voice Receptionist ($550 + Vapi ~$30-50/month), the Verified Prospect List ($497/$997), the Lead Generation Pack ($1,997), the Custom Assessment ($349/$999), websites ($499/$999/$1,999), the CMS add-on ($130), and optional care at $97/month or $197/month. Prices and features may change. This is an honest comparison based on publicly available information, not a sponsored post.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
