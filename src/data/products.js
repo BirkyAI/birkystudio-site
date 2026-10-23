@@ -108,7 +108,8 @@ export const products = [
       { q: 'Does it live on my computer?', a: 'No, and that is on purpose. It runs on its own small always-on server, so it keeps working when your laptop is shut. We set that up for you at the lowest sensible cost.' },
       { q: 'What if I only need the features already in the base agent?', a: 'Then start with the free 15-minute audit. If the base agent fixes your problem, you never need the paid assessment.' },
       { q: 'Does it answer my customers?', a: 'It catches and chases your enquiries. Holding a full conversation with a customer, by phone or message, is the AI Receptionist, a separate product.' },
-    ],
+            { q: 'What is it built on?', a: 'The base agent is built on a Notion CRM we build for your business, connected to your website, your email and your WhatsApp. It runs on your own always-on server, so it keeps working when your computer is off.' },
+          ],
   },
 
   // ─────────────── MONTHLY CARE ───────────────
@@ -205,7 +206,8 @@ export const products = [
       { q: 'Does it handle voice calls?', a: 'No, this is WhatsApp text. For phone calls choose the Voice Receptionist.' },
       { q: 'Do I need the base agent for this to work?', a: 'No. It answers your WhatsApp on its own. The base agent is what catches, stores and chases the leads if you want the full system.' },
       { q: 'Do I need the support plan?', a: 'No, it is optional. Care & Maintenance is $97/month, and Business AI Partner is $197/month for ongoing tweaks and priority help.' },
-    ],
+            { q: 'What is it built on?', a: 'The Text Receptionist runs on your WhatsApp Business number and connects to a Notion CRM we build for you, so every conversation is saved and nothing gets lost.' },
+          ],
   },
   {
     slug: 'voice-receptionist',
@@ -240,7 +242,8 @@ export const products = [
       { q: 'What are the running costs?', a: 'You pay around $30 to $50 a month directly to the phone service for call usage. That is at cost, no markup. Optional care is $97/month (Care & Maintenance) or $197/month (Business AI Partner).' },
       { q: 'Do I need the base agent for this to work?', a: 'No. It answers your calls and messages on its own. The base agent is the optional layer that catches, stores and chases leads.' },
       { q: 'Can it make outbound calls?', a: 'No. Inbound only, cold calling by computer is restricted by law.' },
-    ],
+            { q: 'What is it built on?', a: 'The Voice Receptionist runs on Vapi, the same AI voice platform that powers enterprise call centres, and connects to your phone number, your Google Calendar and a Notion CRM we build for you.' },
+          ],
   },
   {
     slug: 'review-engine',

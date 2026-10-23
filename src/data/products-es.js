@@ -110,7 +110,8 @@ export const products = [
       { q: '¿Vive en mi computadora?', a: 'No, y es a propósito. Vive en su propio servidor pequeño encendido siempre, así sigue trabajando aunque la laptop esté apagada. Se deja listo al costo más bajo posible.' },
       { q: '¿Y si solo se necesitan las funciones que ya trae el agente base?', a: 'Entonces se empieza con la auditoría gratis de 15 minutos. Si el agente base resuelve el problema, la evaluación pagada no hace falta.' },
       { q: '¿Contesta a mis clientes?', a: 'Atrapa y persigue las consultas. Sostener una conversación completa con un cliente, por teléfono o por mensaje, es la Recepcionista de IA, un producto aparte.' },
-    ],
+            { q: '¿Sobre qué está construido?', a: 'El agente base está construido sobre un CRM en Notion que hacemos para tu negocio, conectado a tu sitio web, tu correo y tu WhatsApp. Vive en tu propio servidor encendido siempre, así sigue trabajando aunque tu computadora esté apagada.' },
+          ],
   },
 
   // ─────────────── CUIDADO MENSUAL ───────────────
@@ -206,6 +207,7 @@ export const products = [
       { q: '¿Atiende llamadas de voz?', a: 'No, esto es texto por WhatsApp. Para llamadas telefónicas elige la Recepcionista de Voz.' },
       { q: '¿Hace falta el agente base para que funcione?', a: 'No. Contesta tu WhatsApp por sí solo. El agente base es la capa que atrapa, guarda y persigue los clientes si se quiere el sistema completo.' },
       { q: '¿Hace falta el plan de soporte?', a: 'No, es opcional. Cuidado y Mantenimiento es Q740/mes, y Socio de IA para Negocios es Q1,500/mes para ajustes continuos y ayuda prioritaria.' },
+      { q: '¿Sobre qué está construido?', a: 'La Recepcionista de Texto funciona en tu número de WhatsApp Business y se conecta a un CRM en Notion que hacemos para ti, así cada conversación queda guardada y nada se pierde.' },
     ],
   },
   {
@@ -240,6 +242,7 @@ export const products = [
       { q: '¿Cuáles son los costos de operación?', a: 'Por el uso de las llamadas se le paga aparte unos $30 a $50 al mes a la empresa de llamadas. Eso es a costo, sin margen para nosotros. El cuidado opcional es Q740/mes (Cuidado y Mantenimiento) o Q1,500/mes (Socio de IA para Negocios).' },
       { q: '¿Hace falta el agente base para que funcione?', a: 'No. Contesta llamadas y mensajes por sí solo. El agente base es la capa opcional que atrapa, guarda y persigue los clientes.' },
       { q: '¿Puede hacer llamadas salientes?', a: 'No. Solo atiende las que entran. Las llamadas salientes en frío están prohibidas por ley.' },
+      { q: '¿Sobre qué está construido?', a: 'La Recepcionista de Voz funciona con Vapi, la misma plataforma de voz con IA que usan los centros de llamadas empresariales, y se conecta a tu número de teléfono, tu Google Calendar y un CRM en Notion que hacemos para ti.' },
     ],
   },
   {
