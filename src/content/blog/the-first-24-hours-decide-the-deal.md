@@ -1,6 +1,6 @@
 ---
 title: "Where Deals Die in the First 24 Hours"
-description: "A hot lead goes quiet the night they reach out. A teardown of what happens in the first 24 hours of a new real estate lead, and the exact moments where most deals are lost to slow, unlogged response."
+description: "A hot lead goes quiet the night they reach out. A teardown of a new lead's first 24 hours, hour by hour, and where deals are lost to slow, unlogged response."
 date: 2026-09-20
 image: "/images/blog/ai-generated/the-first-24-hours-decide-the-deal.jpg"
 tags: ["Birky Studio", "AI Agent", "Lead Response", "Real Estate Tech"]
@@ -30,15 +30,15 @@ The research here isn't subtle, we covered the actual numbers in our [five-minut
 
 But here's the part agents actually understand viscerally: **a pre-approved buyer who reached out at night is comparing you in real time.** They didn't send you an email to read tomorrow. They sent a message to get an answer *tonight*. Every minute you're dark, another agent is lit.
 
-## Hour 6–12: The Messy Middle (Morning)
+## Hour 6 to 12: The Messy Middle (Morning)
 
 You wake up and see the message. You write a good reply. But now you've also got three other fires, a closing at 11, a listing appointment at 2, a showing at 4. So you do the thing every agent does:
 
-You answer the buyer. You promise to "pull some comps and get back to you." And you open your CRM to log it... and there it is. The box you've been told to fill out. Deal name. Status. Pipeline stage. Source. Next task. Owner. Priority. Nine fields of data entry just to record that someone asked a question.
+You answer the buyer. You promise to "pull some comps and get back to you." And you open your CRM to log it... and there it is. The box you've been told to fill out. Deal name. Status. Pipeline stage. Source. Next task. Owner. Priority. Date created. Notes. Nine fields of data entry just to record that someone asked a question.
 
 This is pain point #3 in action, and every agent who has ever used a CRM knows it: **the CRM solves the wrong problem.** It's not "smart," it's just *another job*. So the buyer's details go in a scrap of paper. The comps task sits in your head. And the lead, the *actual hottest lead you'll see this month*, is now living in an unstructured phone call and a sticky note.
 
-## Hour 12–24: The Follow-Up That Never Happens
+## Hour 12 to 24: The Follow-Up That Never Happens
 
 You get through the day. You send the comps at 3 PM, better than nothing, but the buyer has already had the conversation elsewhere. You told them you'd circle back, but "circle back" has an email, a missed call, and a text buried in your thread. You don't remember the exact price range they wanted. You don't remember which homes you promised to compare.
 

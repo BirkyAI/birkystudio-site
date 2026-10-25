@@ -34,7 +34,7 @@ Pero aquí está la parte que los agentes entienden de verdad en el cuerpo: **un
 
 Te despiertas y ves el mensaje. Escribes una buena respuesta. Pero ahora también tienes tres incendios más encima: un cierre a las 11, una cita de listing a las 2, una visita a las 4. Así que haces lo que hace todo agente:
 
-Le respondes al comprador. Le prometes que vas a "sacar unos comparables y te aviso". Y abres tu CRM para registrarlo... y ahí está. La caja que te dijeron que llenaras. Nombre del trato. Estado. Etapa del pipeline. Origen. Siguiente tarea. Responsable. Prioridad. Nueve campos de captura solo para dejar constancia de que alguien hizo una pregunta.
+Le respondes al comprador. Le prometes que vas a "sacar unos comparables y te aviso". Y abres tu CRM para registrarlo... y ahí está. La caja que te dijeron que llenaras. Nombre del trato. Estado. Etapa del pipeline. Origen. Siguiente tarea. Responsable. Prioridad. Fecha de creación. Notas. Nueve campos de captura solo para dejar constancia de que alguien hizo una pregunta.
 
 Esto es el punto de dolor #3 en acción, y todo agente que haya usado un CRM lo sabe: **el CRM resuelve el problema equivocado.** No es "inteligente", es solo *otro trabajo*. Así que los datos del comprador terminan en un pedazo de papel. La tarea de los comparables se queda en tu cabeza. Y el prospecto, *el prospecto más caliente que vas a ver este mes*, ahora vive en una llamada telefónica sin estructura y en un papelito adhesivo.
 
