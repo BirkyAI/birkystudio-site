@@ -111,6 +111,36 @@ const productSchema = JSON.stringify({
     </div>
   </section>
 
+  <!-- AI-Ready by default (website plans) -->
+  {product.aiReady && (
+    <section style="padding:64px 0">
+      <div class="container" style="max-width:900px;">
+        <h2 style="font-size:1.8rem;color:white;margin-bottom:20px;text-transform:uppercase;">AI-Ready by <em style="font-style:normal;color:var(--bs-accent);">default</em></h2>
+        <p style="color:var(--bs-text);font-size:1.08rem;line-height:1.9;">
+          Buyers now start their search in ChatGPT, Perplexity and Google's AI answers. Your site is built so those AI search engines can read it and mention you. Six things make that happen, and all six are included:
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:24px;">
+          {[
+            'AI search engines allowed in, so they can read every page',
+            'A file we give the AI that maps your best pages to the right purpose',
+            'Every key page opens with a quick, direct answer that AI quotes',
+            'One page per question, so more of your pages match what buyers ask',
+            'Structured data so search engines trust and label your content',
+            'Tracking so you can see when an AI engine sends you a visitor',
+          ].map((item) => (
+            <li style="color:var(--bs-text);display:flex;align-items:flex-start;gap:12px;font-size:1.02rem;line-height:1.7;">
+              <span style="color:var(--bs-accent);flex-shrink:0;font-weight:700;">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p style="color:var(--bs-text-muted);font-size:0.98rem;line-height:1.8;margin-top:20px;">
+          It does not change overnight, it compounds: the more places that name you, the more the AI treats you as an answer. You own all of it, and we will show you how it looks on your site before you go live.
+        </p>
+      </div>
+    </section>
+  )}
+
   <!-- FAQ -->
   {product.faqs?.length && (
     <section style="padding:64px 0">

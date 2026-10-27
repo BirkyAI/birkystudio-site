@@ -109,6 +109,36 @@ const productSchema = JSON.stringify({
     </div>
   </section>
 
+  <!-- Listo para IA de serie (planes de sitio web) -->
+  {product.aiReady && (
+    <section style="padding:64px 0">
+      <div class="container" style="max-width:900px;">
+        <h2 style="font-size:1.8rem;color:white;margin-bottom:20px;text-transform:uppercase;">Listo para <em style="font-style:normal;color:var(--bs-accent);">IA</em>, de serie</h2>
+        <p style="color:var(--bs-text);font-size:1.08rem;line-height:1.9;">
+          Hoy los compradores empiezan su búsqueda en ChatGPT, Perplexity y las respuestas de Google. Tu sitio se hace para que esos buscadores de IA puedan leerte y mencionarte. Hay seis cosas que lo hacen posible, y las seis vienen incluidas:
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:24px;">
+          {[
+            'Los buscadores de IA pueden entrar y leer todas tus páginas',
+            'Un archivo que le damos a la IA para que conecte tus mejores páginas con lo correcto',
+            'Cada página clave abre con una respuesta rápida y directa que la IA cita',
+            'Una página por pregunta, para que más de tus páginas coincidan con lo que preguntan',
+            'Datos estructurados para que los buscadores confíen y etiqueten tu contenido',
+            'Seguimiento para que veas cuándo un buscador de IA te envía un visitante',
+          ].map((item) => (
+            <li style="color:var(--bs-text);display:flex;align-items:flex-start;gap:12px;font-size:1.02rem;line-height:1.7;">
+              <span style="color:var(--bs-accent);flex-shrink:0;font-weight:700;">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p style="color:var(--bs-text-muted);font-size:0.98rem;line-height:1.8;margin-top:20px;">
+          No cambia de un día para otro, va sumando: cuantos más lugares te nombren, más te trata la IA como una respuesta. Todo es tuyo, y te mostramos cómo se ve en tu sitio antes de que salga en línea.
+        </p>
+      </div>
+    </section>
+  )}
+
   <!-- FAQ -->
   {product.faqs?.length && (
     <section style="padding:64px 0">
