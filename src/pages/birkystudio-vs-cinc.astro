@@ -1,0 +1,646 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs CINC (2026 Comparison), a Quoted Lead Machine You Rent vs a Front Desk You Own",
+  "description": "Honest head-to-head comparison of BirkyStudio vs CINC for real estate agents. CINC is a managed real estate lead generation and CRM platform with quote-only pricing, reported from $899 per month for a solo agent plus a mandatory ad budget and a 6 to 12 month agreement. BirkyStudio is a done-for-you AI operator that answers your phone and WhatsApp 24/7, follows up automatically, and hands you verified prospects you own. Real pricing, real reviews, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://birkystudio.com/images/birky-logo.jpg"
+    }
+  },
+  "datePublished": "2026-10-27",
+  "dateModified": "2026-10-27"
+});
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does CINC cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CINC does not publish its plan prices. On its own pricing page all four tiers, Solo, Ramp, Pro and Select, say Request Pricing, and CINC's FAQ answers the cost question with an invitation to contact the team. What is published are the add-ons: CINC AI starts at $200 a month and a dialer is 3 lines for $75 a month. Third party reporting is consistent that the platform starts around $899 a month for a solo agent and $1,299 to $1,500 a month for a team, with buyer leads included, plus a mandatory co-managed ad budget that typically starts near $500 a month. By contrast BirkyStudio publishes every price: The Base Agent is $1,297 solo (Notion CRM included), the Text Receptionist is $297, the Voice Receptionist is $550 plus Vapi usage of about $30 to $50 a month, and websites are $499, $999 or $1,999 one-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CINC answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. CINC is a lead generation and CRM platform. It captures leads on an IDX website CINC builds and runs paid Google and Facebook ads to fill, then routes those leads into its CRM. It does not pick up an inbound phone call and it does not hold a WhatsApp conversation, and CINC AI is an add-on for AI assisted follow up inside the platform rather than a voice receptionist. BirkyStudio's Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CINC require a long term contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CINC is reported to require a minimum commitment of 6 months, and agreements commonly run 6 to 12 months or a full year. Industry reporting says the terms generally require paying out the remainder of the term rather than cancelling at will, so if you want out at month four you may owe the balance. CINC does not publish the term either, so it lives on the order form. BirkyStudio has no contract and no commitment: you pay once for a build, and there is a 30 day money back guarantee on it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are CINC's leads good?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CINC's own reviews are the fairest answer, and they split sharply. Capterra rates it 4.1 out of 5 from 249 reviews, and happy users describe consistent volume and closed deals, with one long time customer writing that CINC is the main reason their commissions have almost tripled. The recurring complaint is lead quality. A reviewer who stayed more than two years wrote that the cost is significant and simply was not worth it, another said the leads are almost all duds while over $1300 a month left the business, and a one star reviewer said the phone numbers, emails and even the names were wrong. CINC's public reply to those reviews points out that paid search and paid social leads need training, fast calling and time to warm up, which is a fair description of how the channel works. BirkyStudio's answer is a verified, enriched, scored prospect list you own, $497 Starter or $997 Pro one-time, with no bots and no dead numbers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CINC include a website, and do I own it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, a branded IDX website with property search, saved searches and alerts is part of the CINC subscription, and it is genuinely one of the reasons teams buy. What you do not get is ownership. The site is hosted and managed by CINC, so the pages, the search experience and the SEO equity built on those URLs belong to the platform, and cancelling takes the site with it. BirkyStudio builds a website you own for $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site, or $1,999 for a Premium 10+ page site with a blog. The code is yours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is BirkyStudio cheaper than CINC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On a realistic all in basis, yes, by a wide margin. Third party reporting puts a properly run solo CINC setup at $1,800 to $3,500 a month once the platform fee, the mandatory $500 a month ad budget and the usual add-ons are stacked, which is $21,600 to $42,000 in year one. BirkyStudio has no monthly platform fee at all: the Base Agent is $1,297 one-time with the Notion CRM included, the Voice Receptionist is $550 one-time plus about $30 to $50 a month in Vapi usage, and the only recurring line is optional care at $97 a month (Care and Maintenance) or $197 a month (Business AI Partner). Year one with the Base Agent and the care plan is about $2,461, and year two is only the care plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my leads and my website if I cancel CINC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contacts can usually be exported, though reviewers report that notes, tags and behavioural history do not come across cleanly, and because CINC does not sell the platform without its lead generation, cancelling also ends the lead flow. The bigger loss is the website: every neighbourhood page, blog post and landing page you built on a CINC site sits at a URL CINC controls, so when the subscription ends the pages go dark, the links pointing at them break, and any search traction those specific URLs earned has to be rebuilt at new addresses. BirkyStudio builds the site on your own account, and the prospect list is a file you keep, so both stay with you if you ever stop working with us."
+      }
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs CINC (2026 Comparison)"
+  description="Honest 2026 comparison: CINC is a real estate lead platform with quote-only pricing, reported from $899/month plus a $500/month ad budget and a 6-month contract. BirkyStudio gives you prospects you own and answers your phone."
+  image="/images/comparison/cinc.jpg"
+  >
+    <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,45,149,0.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,45,149,0.1),transparent 50%);"></div>
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated October 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs CINC<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">A Quoted Lead Machine You Rent vs a Front Desk You Own</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        CINC, short for Commissions Inc., is the platform high volume real estate teams talk about when they want leads rather than software. It builds you a branded IDX website, runs paid Google and Facebook ads to fill it, and routes the leads into a CRM with behavioural automation, and it bundles buyer leads into every plan. Two things are harder to find: the price, which is quote only on CINC's own site, and a way out, since agreements are reported to run 6 to 12 months with the balance owed if you leave early. BirkyStudio is a one-time build. We answer your phone and WhatsApp 24/7 in English and Spanish, follow up automatically, and hand you verified prospects plus a website whose code you own. Here is the honest breakdown, including the parts where CINC wins.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want to know what you are paying before you get on a call, you would rather own your website, your pages and your prospect list than rent them, and you need the phone and the WhatsApp answered by something other than you. You get an AI agent that replies in seconds in two languages, an AI receptionist on WhatsApp and voice, verified, enriched, scored prospects you keep forever, and a site built on your own account that stays live even if you stop working with us.<br><br>
+          <strong style="color:white;">Choose CINC if:</strong> Paid advertising is how you want to meet strangers, you have a defined farm area, you can carry a $500 a month ad budget on top of the platform fee, and you have a team with somebody whose job is answering the phone fast. CINC's hyperlocal ad targeting, IDX website and team routing are real, and buyer leads are included in the price rather than sold on top. For an established team, that is a legitimate business.<br><br>
+          <strong style="color:white;">The honest difference:</strong> CINC is a lead machine you rent, and you cannot read its price tag without a sales call. It does not answer your phone, it does not hold a WhatsApp conversation, and it does not sell you the software without the lead generation attached. BirkyStudio is an operator we build for you, priced once and published, doing the answering and the following up, on a website and a prospect list you own outright.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/cinc-article-1.jpg" alt="Wide view of a bright open plan real estate office with a team working at desks across the room and natural light through tall windows" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and CINC?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        These two get compared because both promise the same outcome, more qualified conversations without hiring, and because they sit at opposite ends of one question: do you rent the machine or own it? CINC is an all in one real estate lead generation platform. Every plan includes a CRM with behavioural automation and lead scoring, a branded IDX website with property search, saved searches and alerts, landing pages, a Seller Suite, mobile apps, video messaging, mass messaging, database imports and integrations such as Zapier, BombBomb and the Mojo dialer. It runs managed Google and Facebook campaigns, including cash offer ads and Google Local Service Ads for seller leads, and it markets itself on hyperlocal targeting by neighbourhood, school district and property type. Its four tiers are Solo for 1 user, Ramp for up to 4, Pro for up to 49 and Select for 50 or more.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes the other route. Instead of renting you a platform to operate, we build an AI operator that does the front desk work for you. The Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically in English and Spanish. Add the AI Receptionist and the phone is answered around the clock. Add a Verified Prospect List and you start with real, enriched, scored prospects you own, no bots and no dead numbers.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        The real difference is not features, it is the price tag, the contract and who does the work. CINC does not publish its plan prices, is reported to start around $899 a month for a solo agent, requires a co-managed ad budget that typically starts near $500 a month, and is reported to lock you in for 6 to 12 months. BirkyStudio publishes every price, has no contract at all, and delivers a one-time build that answers your leads and that you keep. That is what this page breaks down, honestly, including where CINC is the better buy.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs CINC, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">CINC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 audit (15 min), projects from $297 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Quote only, third party reports from $899/month solo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A managed lead-gen and CRM platform you rent and operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Price Visible Before a Sales Call</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, every price is published on our site</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No, all four plans say Request Pricing</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time builds you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Monthly subscription plus a mandatory ad budget</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Reported 6 to 12 months, exit means paying the balance</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Mandatory Ad Spend</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Not offered as a managed service</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> $500/month minimum co-managed ad spend, on top of the fee</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free 15-minute audit, 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Demo only, no free trial, no self-serve signup</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Leads Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own forever</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Buyer leads included in every plan, not sold separately</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No AI answering, callers reach you or voicemail</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Conversations on WhatsApp / Text</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> CINC AI $200/month add-on on every plan</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Branded IDX website built and managed by CINC</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Ownership</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Your code, your hosting, your pages stay live</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Vendor managed, cancel and the site stays behind</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">MLS / IDX Property Search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Not an MLS-based platform</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ IDX search, saved searches and property alerts on your site</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Where Your Leads Come From</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ A list you own, plus AI that answers every reply</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Paid Google and Facebook ads CINC runs for you</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Answers the Lead at 9pm</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers in seconds, 24/7, EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> You do, the platform routes and nudges, it does not talk</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Per-Seat Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No per-seat fee, scaled once in the business tier</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Tiered by users: Solo 1, Ramp 4, Pro 49, Select 50+</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> English-focused</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM built for agents, free with the Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Full real estate CRM, behavioural automation and lead scoring</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team Tools</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No per-agent routing or team leaderboard</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Advanced lead routing, team management, roster visibility</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Does the Work</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers and follows up, we maintain it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> You do, CINC runs the ads and hands you the leads</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Account manager and support queue, reviewers report day-long waits</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Track Record</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Smaller, newer studio</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Capterra 4.1/5 from 249 reviews, thousands of US agents</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/cinc-article-2.jpg" alt="Wide interior of a modern business lounge with armchairs around a low table, tall windows and plants in warm afternoon light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT WORKS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not a platform you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a subscription for a database.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations. The Voice Receptionist is $550 one-time, plus you pay Vapi directly for usage (about $30 to $50 a month), and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start with real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it wins is clarity, ownership and the shape of the bill. You know the price before you talk to anyone, because it is on the site. Nothing waits for you to sit down, so a lead that arrives at 9pm gets an answer at 9pm. The website we build is on your own account, so the pages and their SEO equity stay with you. And everything is one-time or optional, so there is no monthly platform fee, no mandatory ad budget and no 6 month agreement to escape.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Every price published, nothing hidden behind a sales call</li>
+              <li>AI answers your phone and WhatsApp 24/7, EN/ES</li>
+              <li>Follow-up happens automatically, no sitting down to work it</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Notion CRM included free with the Base Agent</li>
+              <li>Website you own ($499 / $999 / $1,999), pages stay live</li>
+              <li>One-time builds, no per-seat fee, no contract, no ad spend required</li>
+              <li>30-day money-back guarantee on the build</li>
+              <li>Same person who built it answers your support</li>
+              <li>Works for any niche, not just real estate</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Higher upfront cost than one month of CINC</li>
+              <li>No MLS feed, no IDX listing search, no saved-search alerts</li>
+              <li>No managed ad service, we do not run your Google or Facebook budget</li>
+              <li>No per-agent lead routing or team leaderboard</li>
+              <li>Lead volume is not a monthly subscription stream, the list is fixed by tier</li>
+              <li>Smaller, newer studio than a platform serving thousands of agents</li>
+              <li>No onboarding programme as deep as a formal training academy</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · CMS add-on $130 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care &amp; Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/cinc-article-3.jpg" alt="Wide view of a quiet suburban residential street at golden hour with mature trees, neat lawns and modern houses" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: CINC -->
+      <div id="cinc" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">CINC</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          CINC is an all in one real estate lead generation and CRM platform, and it is the platform teams graduate to when they want bought leads rather than another database. Every plan bundles buyer leads from managed Google and Facebook campaigns, a branded IDX website with property search, saved searches and alerts, landing pages, a Seller Suite, video messaging, mass messaging, database imports and integrations including Zapier, BombBomb and the Mojo dialer. Its advertising is genuinely specialised: hyperlocal targeting by neighbourhood, school district and property type, shifting up to cash offer ads and Google Local Service Ads for seller leads, and it reports managing more than $30 million a year in ad spend. Capterra rates it 4.1 out of 5 from 249 reviews, and the happy reviews are concrete about why teams stay. One 10 year customer wrote that "CINC is the main reason that my commissions have almost tripled since I began with them." Another, on the CRM itself, said: "Great dashboard on the CRM and easy to navigate. Very consistent lead flow month over month."
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it costs more than the headline, and this is where we have to be straight with you. CINC does not publish its plan prices at all, so what follows are third party reports rather than vendor confirmed figures. On CINC's own pricing page the four tiers, Solo for 1 user, Ramp for up to 4, Pro for up to 49 and Select for 50 or more, all say Request Pricing, and CINC's FAQ answers how much it costs with an invitation to contact the team. The only prices on that page are add-ons: CINC AI from $200 a month and a dialer at 3 lines for $75 a month. Independent roundups and pricing indexes agree closely on the rest, starting near $899 a month for a solo agent and $1,299 to $1,500 a month for a team, with buyer leads included and the software not sold separately from lead generation. On top of that sits a mandatory co-managed ad budget, typically starting around $500 a month, and a reported 6 month minimum commitment that commonly runs 6 to 12 months. One industry review calculated true out of pocket costs at $1,500 to $3,000 or more per month, and another put a properly run solo setup at $1,800 to $3,500 a month. Annual contracts, onboarding fees and an early exit that requires paying out the remaining term are all reported parts of the deal, so the number that matters is the one on your order form.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The reviews split hard, and the fault line is lead quality. Capterra's lower rated reviews are blunt. A reviewer with more than two years on the platform wrote that "The cost of CINC is significant, and for me, it simply wasn't worth it," and added: "My advice: Don't Do It! Don't Sign the Contract! Put Your Efforts, Energy, Time &amp; Money elsewhere!!" A broker from a 10 year relationship said the platform alone had reached $1450 a month and that "The pricing is too high when there are a hundred other services offering the same thing for half the price." On the leads themselves, one reviewer said: "They brag about scrubbing leads and only supplying valid emails and phone numbers. However, well over 20% of the phone numbers are for non-existent people," and concluded that "The leads are almost all duds, I purchased the CINC program to increase my business, but the only thing it has done is draw over $1300 per month out of my business." A one star reviewer put it plainly: "Its hard to do when the phone numbers and emails and even the names are wrong. I would never ever suggest Cinc." Smaller frictions repeat too, including "The mobile app is limited and then using the CINC website on Safari is even worse" and a complaint that "any suggestions for improvements or constructive criticism on changes which have been made are simply ignored." It is only fair to record CINC's side: in public replies the company points out that paid search and paid social leads are not referrals, that they need training, fast calling and time to warm up, and that agents who work the system well do convert. That is an honest description of how bought leads behave. It is also the reason CINC is a poor fit for an agent with no time to call, because the platform hands you a lead and a script, not a conversation.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The structural point is ownership. Everything you build on CINC, the IDX website, its pages, its search experience and whatever search traction those URLs earn, sits on infrastructure CINC controls. Cancel and the site goes dark, the pages and their rankings go with it, and because CINC does not sell the platform without its lead generation, the lead flow stops at the same moment. If paid advertising is how you want to meet strangers, you have a defined farm area, you can carry the ad budget comfortably for twelve months and you have someone whose job is answering the phone fast, CINC is a real business and its training and ad targeting are genuinely good. If you want the phone answered, the follow-up handled and a website and prospect list you actually own, read the order form carefully before you sign one.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Buyer leads included in the price, not sold as an extra</li>
+              <li>Hyperlocal ad targeting by neighbourhood, school district and property type</li>
+              <li>Branded IDX website with property search, saved searches and alerts</li>
+              <li>Full real estate CRM with behavioural automation and lead scoring</li>
+              <li>Advanced lead routing and team management for 4 to 50+ users</li>
+              <li>Seller Suite, cash offer ads and Google Local Service Ads for listings</li>
+              <li>Deep integrations including Zapier, BombBomb and the Mojo dialer</li>
+              <li>Capterra 4.1/5 from 249 reviews, with long tenured, happy customers</li>
+              <li>Substantial training programme and dedicated account management</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Plan prices are quote only, you cannot price it without a sales call</li>
+              <li>Reported $899 a month solo entry before ads, $1,299 to $1,500 for teams</li>
+              <li>Mandatory co-managed ad budget, typically $500 a month minimum</li>
+              <li>Reported 6 to 12 month agreement, leaving early can mean paying the balance</li>
+              <li>No free trial and no self-serve signup, demo only</li>
+              <li>Lead quality is the single most repeated complaint in the reviews</li>
+              <li>You never own the website or the pages you build on it</li>
+              <li>CINC AI is a $200/month add-on and it is not a voice receptionist</li>
+              <li>It does not answer your phone or hold a WhatsApp conversation</li>
+              <li>Tenured reviewers describe annual price increases and template limits</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Solo / Ramp / Pro / Select, all quote only, no published plan price · Third party reports: from $899/month solo, $1,299 to $1,500/month teams · Mandatory co-managed ad spend typically from $500/month · CINC AI from $200/month · Dialer 3 lines $75/month · No free trial, demo only · Reported 6 to 12 month commitment with the balance owed on early exit (verified on CINC's pricing page and third party reporting, October 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">CINC (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Cheapest entry, one solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (Text Receptionist)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $10,788 (reported $899/mo platform fee)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The same plan once ads are counted</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">No ad spend required, that line does not exist</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $16,788 ($899/mo + $500/mo minimum ad spend)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A CRM plus a site, one solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 Base Agent + $999 Pro website + $130 CMS = $2,426 once</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $10,788, site included but rented and quote only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7, EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 once + ~$30-50/mo, about $910 to $1,150</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, CINC does not answer calls or WhatsApp</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI follow-up on the platform</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included with the Base Agent, no add-on</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">CINC AI from $200/mo, about $2,400 in year one</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A dialer for the team</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included in the AI receptionist, no per-line fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$75/mo for 3 lines, about $900 in year one</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A small team of four</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time (Base Agent, business tier)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Ramp tier, quote only, reported about $15,588 ($1,299/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team of four plus AI follow-up and a dialer</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included, no add-on to buy</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $19,188 ($1,299/mo + CINC AI + dialer)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Realistic all-in monthly, solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $108/mo if you take the $97 care plan, nothing else required</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Reported $1,800 to $3,500/mo once ads and add-ons stack</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospects you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 Starter or $997 Pro, one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not sold separately, leads are bundled and stop when you cancel</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Complete done-for-you pipeline</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,997 one-time (Lead Generation Pack)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">No equivalent, you work the platform yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included in the subscription, vendor managed, gone if you cancel</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk fully covered, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent $1,297 + $97/mo care)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $10,788, but nothing is answered and nothing is followed up</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What you owe if you quit in month four</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0, no contract, 30-day money-back on the build</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Reported as the balance of the 6 to 12 month term</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time, no recurring build fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $32,364 on the platform fee alone, and still renewing</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, team of four</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time, no recurring build fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $46,764 at $1,299/mo, and still renewing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🧾 You will not sign anything you cannot price first</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. CINC's four plans all say Request Pricing, and its FAQ answers the cost question by asking you to contact the team. The only published numbers on the page are the add-ons. BirkyStudio puts every price on the website: The Base Agent is $1,297 solo, the Text Receptionist $297, the Voice Receptionist $550 plus Vapi usage, and websites from $499. If you dislike discovering the price on a call, that settles it.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📣 Paid ads are how you want to meet strangers</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">CINC</strong>. Its managed Google and Facebook campaigns, hyperlocal targeting and seller lead products are the real product, and buyer leads are included rather than sold on top. If you have a defined farm area and a working ad budget, this is the honest recommendation. Just go in knowing paid leads are cold by nature and need fast calling.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 You need the phone answered when you cannot pick up</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. CINC has no AI voice answering at all, so a lead calling you at 9pm reaches voicemail while a competitor picks up. BirkyStudio's Voice Receptionist is $550 one-time plus Vapi usage and answers calls 24/7 in English and Spanish, while the WhatsApp Text Receptionist ($297 one-time) holds full AI conversations while you are showing a property.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏠 You want to own the website, the pages and the prospect list</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. On CINC the IDX site is hosted and managed by the vendor, so cancelling takes the pages and the search traction you built on those URLs with it, and the lead flow stops at the same moment. With BirkyStudio the site is built on your own account for $499, $999 or $1,999 and the prospect list is a file you keep, so both stay yours whether or not you keep working with us.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">👥 You run a large team that needs seats, routing and roster visibility</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">CINC</strong>. Pro covers up to 49 users and Select is built for 50 or more, with advanced lead routing, team management, video messaging, a formal training programme and an account manager. If steering dozens of agents inside one platform is the job, that depth is worth paying for, and BirkyStudio has no equivalent.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You need the billing to end</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. CINC is reported as a 6 to 12 month commitment with the balance owed if you leave early, before you count the mandatory ad budget that keeps running every month. BirkyStudio is a one-time build with no contract, no per-seat fee, no ad spend requirement, and a 30-day money-back guarantee. Year two costs you nothing unless you choose a care plan.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          This is not a fight BirkyStudio wins on MLS depth, IDX search or paid lead volume, and we are not going to pretend it is. <strong style="color:white;">CINC runs one of the most serious managed ad operations in real estate</strong>, bundles buyer leads into the price, builds teams a genuine IDX website, and carries a 4.1 out of 5 rating from 249 Capterra reviews with long tenured customers who would say the same. If paid advertising is your growth engine, you have a farm area and a real ad budget, buy it for that.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          But be clear about what it is not. You cannot see the price without a call. It is reported to start around $899 a month before a minimum $500 a month ad budget, on a 6 to 12 month agreement that can leave you owing the balance if you quit. It does not answer your phone or hold a WhatsApp conversation, and CINC AI is a $200 a month add-on rather than a front desk. The website and every page you build on it belong to the platform, and lead quality is the complaint that repeats most often in its own reviews. <strong style="color:white;">BirkyStudio is a different purchase.</strong> You are not renting a lead machine, you are buying the front desk. The AI answers your phone and WhatsApp 24/7 in two languages, follows up automatically, and hands you verified prospects you own, on a website whose code is yours, for a price you can read on the page before you talk to anyone.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: CINC is an advertising operation with a CRM attached, rented by the month. BirkyStudio is an operator that answers and a list you keep. For a team with an ad budget and callers who can work leads fast, the right answer may be both, CINC for bought volume and BirkyStudio for the conversation that happens when the lead actually calls.<br><br>
+          <strong style="color:white;">Choose CINC if:</strong> you want bought leads, hyperlocal ad targeting and a team platform with routing and seats, and you accept a 6 to 12 month agreement and a mandatory ad budget as the cost of that.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want the price published, the phone answered, the follow-up handled, verified prospects you own and a website that stays yours, without a monthly platform fee or a year-long commitment.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://www.cincpro.com/pricing" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore CINC →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does CINC cost?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            CINC does not publish its plan prices. On its own pricing page all four tiers, Solo, Ramp, Pro and Select, say Request Pricing, and CINC's FAQ answers the cost question with an invitation to contact the team. What is published are the add-ons: CINC AI starts at $200 a month and a dialer is 3 lines for $75 a month. Third party reporting is consistent that the platform starts around $899 a month for a solo agent and $1,299 to $1,500 a month for a team, with buyer leads included, plus a mandatory co-managed ad budget that typically starts near $500 a month. By contrast BirkyStudio publishes every price: The Base Agent is $1,297 solo (Notion CRM included), the Text Receptionist is $297, the Voice Receptionist is $550 plus Vapi usage of about $30 to $50 a month, and websites are $499, $999 or $1,999 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does CINC answer my phone or reply on WhatsApp?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. CINC is a lead generation and CRM platform. It captures leads on an IDX website CINC builds and runs paid Google and Facebook ads to fill, then routes those leads into its CRM. It does not pick up an inbound phone call and it does not hold a WhatsApp conversation, and CINC AI is an add-on for AI assisted follow up inside the platform rather than a voice receptionist. BirkyStudio's Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does CINC require a long term contract?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            CINC is reported to require a minimum commitment of 6 months, and agreements commonly run 6 to 12 months or a full year. Industry reporting says the terms generally require paying out the remainder of the term rather than cancelling at will, so if you want out at month four you may owe the balance. CINC does not publish the term either, so it lives on the order form. BirkyStudio has no contract and no commitment: you pay once for a build, and there is a 30 day money back guarantee on it.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Are CINC's leads good?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            CINC's own reviews are the fairest answer, and they split sharply. Capterra rates it 4.1 out of 5 from 249 reviews, and happy users describe consistent volume and closed deals, with one long time customer writing that CINC is the main reason their commissions have almost tripled. The recurring complaint is lead quality. A reviewer who stayed more than two years wrote that the cost is significant and simply was not worth it, another said the leads are almost all duds while over $1300 a month left the business, and a one star reviewer said the phone numbers, emails and even the names were wrong. CINC's public reply to those reviews points out that paid search and paid social leads need training, fast calling and time to warm up, which is a fair description of how the channel works. BirkyStudio's answer is a verified, enriched, scored prospect list you own, $497 Starter or $997 Pro one-time, with no bots and no dead numbers.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does CINC include a website, and do I own it?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Yes, a branded IDX website with property search, saved searches and alerts is part of the CINC subscription, and it is genuinely one of the reasons teams buy. What you do not get is ownership. The site is hosted and managed by CINC, so the pages, the search experience and the SEO equity built on those URLs belong to the platform, and cancelling takes the site with it. BirkyStudio builds a website you own for $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site, or $1,999 for a Premium 10+ page site with a blog. The code is yours.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is BirkyStudio cheaper than CINC?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            On a realistic all in basis, yes, by a wide margin. Third party reporting puts a properly run solo CINC setup at $1,800 to $3,500 a month once the platform fee, the mandatory $500 a month ad budget and the usual add-ons are stacked, which is $21,600 to $42,000 in year one. BirkyStudio has no monthly platform fee at all: the Base Agent is $1,297 one-time with the Notion CRM included, the Voice Receptionist is $550 one-time plus about $30 to $50 a month in Vapi usage, and the only recurring line is optional care at $97 a month (Care and Maintenance) or $197 a month (Business AI Partner). Year one with the Base Agent and the care plan is about $2,461, and year two is only the care plan.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>What happens to my leads and my website if I cancel CINC?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Contacts can usually be exported, though reviewers report that notes, tags and behavioural history do not come across cleanly, and because CINC does not sell the platform without its lead generation, cancelling also ends the lead flow. The bigger loss is the website: every neighbourhood page, blog post and landing page you built on a CINC site sits at a URL CINC controls, so when the subscription ends the pages go dark, the links pointing at them break, and any search traction those specific URLs earned has to be rebuilt at new addresses. BirkyStudio builds the site on your own account, and the prospect list is a file you keep, so both stay with you if you ever stop working with us.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> CINC's plan structure, published add-ons and policy positions were taken from cincpro.com/pricing in October 2026, where Solo (1 user), Ramp (up to 4), Pro (up to 49) and Select (50 or more) are all listed as Request Pricing, the only published figures being CINC AI from $200/month and a dialer at 3 lines for $75/month, and where the FAQ answers the cost question by directing buyers to the sales team. Because CINC publishes no plan prices, the figures used here are third party reports and are labelled as such: from $899/month for a solo agent and $1,299 to $1,500/month for teams, buyer leads included and the software not sold separately from lead generation, a mandatory co-managed ad spend typically starting around $500/month, a reported 6 month minimum commitment commonly running 6 to 12 months with the balance owed on early exit, and true out of pocket costs reported at $1,500 to $3,000 or more per month, with one analysis putting a properly run solo setup at $1,800 to $3,500 per month. Sources include HousingWire's 2026 real estate lead generation and real estate software roundups, TechRadar's Cinc CRM review 2026, Realty Tech Hub's CINC review, and published real estate CRM pricing indexes. Customer quotes are verbatim from public Capterra reviews of CINC, where the product holds 4.1 out of 5 from 249 reviews (page last updated October 19, 2026). Nothing in the CINC pricing section is vendor confirmed, and we say so plainly rather than dressing an estimate up as a rate card. BirkyStudio pricing from birkystudio.com as of October 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297), the Voice Receptionist ($550 + Vapi ~$30-50/month), the Verified Prospect List ($497/$997), the Lead Generation Pack ($1,997), the Custom Assessment ($349/$999), websites ($499/$999/$1,999), the CMS add-on ($130), and optional care at $97/month or $197/month. Prices and features may change. This is an honest comparison based on publicly available information, not a sponsored post.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
