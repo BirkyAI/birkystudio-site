@@ -1,0 +1,45 @@
+# Birky Studio
+
+> Birky Studio sells and installs done-for-you AI automation for small businesses: a base AI agent that catches and qualifies leads from website and WhatsApp, saves them to a Notion CRM, answers instantly in English and Spanish and follows up on its own, plus add-on blocks (text and voice AI receptionists, review engine, lead generation, outreach, Google Business Profile autopilot, content engine) and professional bilingual websites. Luna Jerney builds and installs everything herself.
+
+## Products (AI automation)
+
+- [Base Agent](https://birkystudio.com/products/ai-agent-setup/): Catches every enquiry from your site and WhatsApp, qualifies it, saves it to Notion, answers instantly and follows up. Notion CRM included, bilingual EN/ES, live in about 15 minutes. One-time from $1,297 solo, from $2,997 with a team.
+- [AI Text Receptionist](https://birkystudio.com/products/text-receptionist/): Answers your WhatsApp day and night. One-time $297. Works on its own.
+- [AI Voice Receptionist](https://birkystudio.com/products/voice-receptionist/): Answers your phone in a natural voice 24/7. One-time $550, plus Vapi call usage paid by the client.
+- [Free 15-Minute Audit](https://birkystudio.com/products/free-audit/): One short call and we name the one thing costing you the most time. Free.
+- [Custom Assessment](https://birkystudio.com/products/custom-assessment/): A 45-minute interview and a written plan, measured in hours saved. Solo $349, business $999. Fee credits against your blocks.
+- [Review Engine](https://birkystudio.com/products/review-engine/): Turns past clients into Google reviews. One-time $497 plus $97/mo.
+- [Lead Generation Starter List](https://birkystudio.com/products/lead-generation-starter-list/): A real, scored list of prospects you own forever, from $497.
+- [Lead Generation Pack](https://birkystudio.com/products/lead-generation-pack/): Verified prospects plus the outreach and follow-up that work them. One-time $1,997.
+- [Outreach Engine](https://birkystudio.com/products/outreach-engine/): Sends the compliant email follow-up for you. One-time $797.
+- [GBP Autopilot](https://birkystudio.com/products/gbp-autopilot/): Keeps your Google Business Profile posting. One-time $397.
+- [Content Engine](https://birkystudio.com/products/content-engine/): Blog and SEO content written and published for you. One-time $497.
+
+## Products (websites)
+
+- [Starter Website](https://birkystudio.com/products/website-starter/): 1 to 3 pages, new businesses. $499.
+- [Professional Website](https://birkystudio.com/products/website-professional/): Growing businesses, bilingual EN/ES. $999.
+- [Premium Website](https://birkystudio.com/products/website-premium/): Established businesses, 10+ pages with a blog. $1,999.
+- [Self-Editing CMS](https://birkystudio.com/products/self-editing-cms/): Update text and photos yourself, no coding. $130.
+
+## Care and support
+
+- [Care and Maintenance](https://birkystudio.com/products/care-maintenance/): Ongoing support after install, $97/mo.
+- [Business AI Partner](https://birkystudio.com/products/business-ai-partner/): Full ongoing partnership, $197/mo.
+
+## Comparison pages
+
+- [Best AI Receptionists for Real Estate Agent](https://birkystudio.com/best-ai-receptionists-real-estate/): Honest roundup with real prices, includes Birky Studio among competitors.
+- [AI Receptionist Buyers Guide](https://birkystudio.com/ai-receptionist-buyers-guide/): What to look for and what it should cost.
+- [BirkyStudio vs Smith.ai](https://birkystudio.com/birkystudio-vs-smithai/), [vs Goodcall](https://birkystudio.com/birkystudio-vs-goodcall/), [vs Side](https://birkystudio.com/birkystudio-vs-side/), [vs RealGeeks](https://birkystudio.com/birkystudio-vs-realgeeks/), [vs Sierra Interactive](https://birkystudio.com/birkystudio-vs-sierra-interactive/), [vs GoHighLevel](https://birkystudio.com/birkystudio-vs-gohighlevel/), [vs CINC](https://birkystudio.com/birkystudio-vs-cinc/), [vs Dialpad](https://birkystudio.com/birkystudio-vs-dialpad/), [vs BoldLeads](https://birkystudio.com/birkystudio-vs-boldleads/), [vs Human VA](https://birkystudio.com/birkystudio-vs-human-va/), [vs Traditional Agency](https://birkystudio.com/birkystudio-vs-traditional-agent/) and [vs Wix/Squarespace](https://birkystudio.com/birkystudio-vs-wix-squarespace/): honest, balanced comparisons with real pricing.
+
+## Tools and resources
+
+- [AI Readiness Quiz](https://birkystudio.com/ai-readiness-quiz/): A short quiz that shows where AI can save you time.
+- [AI Savings Calculator](https://birkystudio.com/tools/ai-savings-calculator/): Estimate hours and money an AI agent could save your business.
+- [Quick Log Post-Call Entry Template](https://birkystudio.com/quick-log-template/): A free Notion template for agents to log post-call notes.
+- [Portfolio](https://birkystudio.com/portfolio/): Recent websites and AI agents delivered to clients.
+- [About](https://birkystudio.com/about/): Luna Jerney, real estate agent in Antigua Guatemala and founder of Birky Studio.
+- [Partners](https://birkystudio.com/partners/): White-label partnership program for agencies.
+- [Contact](https://birkystudio.com/contact/): Get in touch, or message on WhatsApp at 50234775110.
