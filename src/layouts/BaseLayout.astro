@@ -23,6 +23,7 @@ const enSlugMap: Record<string, string> = {
   '/sobre-mi': '/about',
   '/portafolio': '/portfolio',
   '/contacto': '/contact',
+  '/privacidad': '/privacy',
 };
 const pathForMap = pathWithoutLang.replace(/\/$/, '') || '/';
 const enPathForPage = isSpanish ? (enSlugMap[pathForMap] || pathForMap) : pathForMap;
@@ -36,6 +37,7 @@ const esSlugMap = {
   '/portfolio': '/es/portafolio',
   '/about': '/es/sobre-mi',
   '/contact': '/es/contacto',
+  '/privacy': '/es/privacidad',
 };
 
 const currentPathRaw = isSpanish ? pathWithoutLang : Astro.url.pathname;
@@ -426,6 +428,7 @@ const correctedEsURL = currentPathForCheck === '/' ? esURL :
       </div>
       <div style="border-top:1px solid var(--bs-bg-raised);padding-top:24px;text-align:center;color:var(--bs-text-muted);font-size:0.9rem;">
         <p>&copy; {new Date().getFullYear()} Birky Studio. All rights reserved.</p>
+        <p style="margin-top:8px;"><a href={isSpanish ? '/es/privacidad' : '/privacy'} style="color:var(--bs-text-muted);text-decoration:underline;">{isSpanish ? 'Política de Privacidad' : 'Privacy Policy'}</a></p>
       </div>
     </div>
   </footer>
