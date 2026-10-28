@@ -95,18 +95,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div style="max-width:500px;margin:0 auto;padding:0 32px;text-align:center;">
       <div style="font-size:2.5rem;margin-bottom:16px;">🎯</div>
       <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:12px;">Get Your Free Sample</h2>
-      <p style="color:var(--bs-text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:32px;">
-        Drop your email below and get the sample list link. See the exact format and scoring before you decide anything.
-      </p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <input type="email" id="lead-email" placeholder="your@email.com" style="flex:1;min-width:200px;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;" />
-        <input type="text" id="lead-name" placeholder="First name" style="flex:1;min-width:140px;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;" />
-        <button onclick="submitLead()" class="btn btn-primary" style="flex-shrink:0;padding:14px 28px;font-size:1rem;">
-          Get the Sample →
-        </button>
-      </div>
-      <p id="form-message" style="color:var(--bs-accent);font-size:0.9rem;margin-top:16px;display:none;"></p>
-      <p style="color:var(--bs-text-muted);font-size:0.8rem;margin-top:12px;">No spam. Ever. Unsubscribe anytime.</p>
+            <p style="color:var(--bs-text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:32px;">
+              Tell us your market and we'll send a sample list built for it. See the exact format and scoring before you decide anything.
+            </p>
+            <div style="display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto;">
+              <input type="text" id="lead-name" placeholder="First name" style="width:100%;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;box-sizing:border-box;" />
+              <input type="email" id="lead-email" placeholder="your@email.com" style="width:100%;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;box-sizing:border-box;" />
+              <input type="text" id="lead-area" placeholder="Your market, e.g. Austin TX" style="width:100%;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;box-sizing:border-box;" />
+              <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;">
+                <button type="button" onclick="setLeadType('seller')" id="type-seller" style="flex:1;min-width:90px;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:0.9rem;cursor:pointer;">Seller leads</button>
+                <button type="button" onclick="setLeadType('buyer')" id="type-buyer" style="flex:1;min-width:90px;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:0.9rem;cursor:pointer;">Buyer leads</button>
+                <button type="button" onclick="setLeadType('both')" id="type-both" style="flex:1;min-width:90px;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:0.9rem;cursor:pointer;">Both</button>
+              </div>
+              <button onclick="submitLead()" class="btn btn-primary" style="width:100%;padding:14px 28px;font-size:1rem;">
+                Get the Sample →
+              </button>
+            </div>
+            <p id="form-message" style="color:var(--bs-accent);font-size:0.9rem;margin-top:16px;display:none;"></p>
+            <p style="color:var(--bs-text-muted);font-size:0.8rem;margin-top:12px;">No spam. Ever. Unsubscribe anytime.</p>
     </div>
   </section>
 
@@ -124,38 +130,53 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <script is:inline>
-    window.submitLead = function() {
-      const email = document.getElementById('lead-email').value.trim();
-      const name = document.getElementById('lead-name').value.trim();
-      const msg = document.getElementById('form-message');
+      let leadType = 'both';
+      window.setLeadType = function(t) {
+        leadType = t;
+        ['seller','buyer','both'].forEach(function(k) {
+          var b = document.getElementById('type-' + k);
+          if (b) {
+            b.style.background = (k === t) ? 'rgba(255,45,149,0.35)' : 'rgba(255,255,255,0.05)';
+            b.style.borderColor = (k === t) ? 'var(--bs-accent)' : 'rgba(255,255,255,0.2)';
+          }
+        });
+      };
+      window.submitLead = function() {
+        const email = document.getElementById('lead-email').value.trim();
+        const name = document.getElementById('lead-name').value.trim();
+        const area = document.getElementById('lead-area').value.trim();
+        const msg = document.getElementById('form-message');
       
-      if (!email) {
-        msg.style.color = '#f87171';
-        msg.textContent = 'Please enter your email';
+        if (!email) {
+          msg.style.color = '#f87171';
+          msg.textContent = 'Please enter your email';
+          msg.style.display = 'block';
+          return;
+        }
+      
+        // Send to the lead capture webhook
+        fetch('https://script.google.com/macros/s/AKfycbyY6p6a7Mpve8MsSBx5R6RU1JbuNctGJHWC827dpbjpMeQOwXZlW8Bu01RXk8N0mvHr/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name || 'Sample List Lead',
+            email: email,
+            phone: '',
+            interest: 'Free Sample Prospect List',
+            source: 'free-sample-list',
+            area: area,
+            leadType: leadType
+          })
+        });
+      
+        msg.style.color = 'var(--bs-accent)';
         msg.style.display = 'block';
-        return;
+        msg.innerHTML = '✅ Thanks! Here is your sample list:<br><br><a href="/sample-prospect-list.csv" target="_blank" style="color:var(--bs-accent);font-weight:600;font-size:1.2rem;">📄 Download the Sample List →</a><br><br><small style="color:var(--bs-text-muted);">Names and contacts are placeholders to show the format. Your real list is verified against public records.</small>';
+      
+        document.getElementById('lead-email').value = '';
+        document.getElementById('lead-name').value = '';
+        document.getElementById('lead-area').value = '';
       }
-      
-      // Send to the lead capture webhook
-      fetch('https://script.google.com/macros/s/AKfycbyY6p6a7Mpve8MsSBx5R6RU1JbuNctGJHWC827dpbjpMeQOwXZlW8Bu01RXk8N0mvHr/exec', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name || 'Sample List Lead',
-          email: email,
-          phone: '',
-          interest: 'Free Sample Prospect List',
-          source: 'free-sample-list'
-        })
-      });
-      
-      msg.style.color = 'var(--bs-accent)';
-      msg.style.display = 'block';
-      msg.innerHTML = '✅ Thanks! Here is your sample list:<br><br><a href="/sample-prospect-list.csv" target="_blank" style="color:var(--bs-accent);font-weight:600;font-size:1.2rem;">📄 Download the Sample List →</a><br><br><small style="color:var(--bs-text-muted);">Names and contacts are placeholders to show the format. Your real list is verified against public records.</small>';
-      
-      document.getElementById('lead-email').value = '';
-      document.getElementById('lead-name').value = '';
-    }
-  </script>
+    </script>
 </BaseLayout>
