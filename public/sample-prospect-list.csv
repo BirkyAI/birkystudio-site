@@ -1,0 +1,12 @@
+Sample Verified Prospect List
+Generated for demonstration. Names, addresses and contact details are placeholders to show the format and scoring. Real lists are verified against public records and delivered CRM-ready.
+
+Prospect,Address,City,State,Phone,Email,Equity Estimate,Motivation Score (0-100),Signal,Source
+J. Alvarez,1420 Maple Ave,Orlando,FL,(407) 555-0142,j.alvarez@example.com,$312,000,87,High equity + absentee owner,Public records + skip-trace
+M. Chen,88 Birchwood Ln,Austin,TX,(512) 555-0177,m.chen@example.com,$198,000,74,Expired listing 45 days ago,MLS expired + owner match
+R. Okafor,7 Cedar Ct,Charlotte,NC,(704) 555-0119,r.okafor@example.com,$265,000,81,Free and clear + vacant,Public records + utility flags
+S. Delgado,301 Palm St,Miami,FL,(305) 555-0163,s.delgado@example.com,$154,000,68,Refinance window open,Equity + rate signal
+T. Nguyen,55 Willow Way,Denver,CO,(720) 555-0138,t.nguyen@example.com,$340,000,90,High equity + no mortgage,Public records
+L. Brooks,19 Oak Hill Dr,Nashville,TN,(615) 555-0125,l.brooks@example.com,$221,000,72,Probate filed,Probate records + owner match
+P. Rossi,240 Harbor Rd,Tampa,FL,(813) 555-0151,p.rossi@example.com,$187,000,65,FSBO 3 weeks,FSBO listing + owner match
+A. Whitfield,6 Juniper Ave,Atlanta,GA,(404) 555-0184,a.whitfield@example.com,$276,000,79,High equity + out of state owner,Public records + tax records
