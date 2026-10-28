@@ -13,7 +13,6 @@
   --bs-text: #f5f3f7;
   --bs-text-muted: #a79fbb;
   --bs-accent: #ff2d95;
-  --bs-accent-glow: rgba(255, 45, 149, .35);
   --bs-accent-2: #b0005a;
   /* Soft light ground for "white" buttons: white, knocked back so it is not the
      brightest thing on the page. Luna, 29 Sep 2026. */
@@ -71,7 +70,6 @@ main > div > section {
   opacity: .55;
   pointer-events: none;
 }
-.hero-orb.o1 { width: 520px; height: 520px; background: var(--bs-accent-glow); top: -140px; right: 6%; }
 .hero-orb.o2 { width: 420px; height: 420px; background: rgba(99, 102, 241, .28); bottom: -120px; left: -80px; }
 
 .hero-wrap {
