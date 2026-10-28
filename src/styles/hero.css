@@ -63,14 +63,6 @@ main > div > section {
   background: transparent;
   border-bottom: 1px solid var(--bs-border);
 }
-.hero-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: .55;
-  pointer-events: none;
-}
-.hero-orb.o2 { width: 420px; height: 420px; background: rgba(99, 102, 241, .28); bottom: -120px; left: -80px; }
 
 .hero-wrap {
   position: relative;
