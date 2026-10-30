@@ -9,7 +9,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <section style="padding:100px 0 80px;position:relative;overflow:hidden">
     <div style="max-width:700px;margin:0 auto;padding:0 32px;position:relative;z-index:1;text-align:center;">
-      <div style="font-size:3rem;margin-bottom:20px;">🎯</div>
+      <div style="display:flex;justify-content:center;margin-bottom:24px;">
+        <img src="/images/luna-headshot.jpg" alt="Luna Jerney, founder of Birky Studio" width="164" height="164" style="width:164px;height:164px;border-radius:50%;object-fit:cover;border:2px solid var(--bs-accent);box-shadow:0 10px 30px rgba(0,0,0,0.45);" />
+      </div>
       <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:white;margin-bottom:16px;line-height:1.15;">
         See the Exact List Before You Pay a Cent
       </h1>
@@ -66,21 +68,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">What's in the Sample</h2>
       <div style="display:grid;gap:20px;">
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
-          <div style="font-size:1.8rem;flex-shrink:0;">✅</div>
           <div>
             <h3 style="color:white;font-weight:600;margin-bottom:6px;font-size:1.05rem;">Verified Owner Data</h3>
             <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.6;margin:0;">Name, address, phone, and email, matched against public records. Not a scraped guess.</p>
           </div>
         </div>
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
-          <div style="font-size:1.8rem;flex-shrink:0;">📊</div>
           <div>
             <h3 style="color:white;font-weight:600;margin-bottom:6px;font-size:1.05rem;">Equity Estimate</h3>
             <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.6;margin:0;">How much equity each owner holds, so you know who can actually afford to sell.</p>
           </div>
         </div>
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
-          <div style="font-size:1.8rem;flex-shrink:0;">🔥</div>
           <div>
             <h3 style="color:white;font-weight:600;margin-bottom:6px;font-size:1.05rem;">Motivation Score</h3>
             <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.6;margin:0;">A 0-100 score ranking who's most likely to sell, from signals like high equity, absentee owners, and expired listings.</p>
@@ -92,7 +91,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <section id="get-sample" style="padding:80px 0">
     <div style="max-width:500px;margin:0 auto;padding:0 32px;text-align:center;">
-      <div style="font-size:2.5rem;margin-bottom:16px;">🎯</div>
       <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:12px;">Get Your Free Sample</h2>
             <p style="color:var(--bs-text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:32px;">
               Tell us your market and we'll send a sample list built for it. See the exact format and scoring before you decide anything.
@@ -117,7 +115,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <section style="padding:60px 0;text-align:center">
     <div style="max-width:600px;margin:0 auto;padding:0 32px;">
-      <div style="font-size:1.8rem;margin-bottom:12px;">📦</div>
       <h2 style="font-size:1.5rem;color:white;margin-bottom:12px;">Want the Full List?</h2>
       <p style="color:var(--bs-text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">
         The sample is a taste. The full Verified Prospect List is a scored, owned list for your market, delivered CRM-ready, with compliant outreach and an AI that answers the replies. One-time, yours forever.
@@ -171,7 +168,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       
         msg.style.color = 'var(--bs-accent)';
         msg.style.display = 'block';
-        msg.innerHTML = '✅ Thanks! Here is your sample list:<br><br><a href="/sample-prospect-list.csv" target="_blank" style="color:var(--bs-accent);font-weight:600;font-size:1.2rem;">📄 Download the Sample List →</a><br><br><small style="color:var(--bs-text-muted);">Names and contacts are placeholders to show the format. Your real list is verified against public records.</small>';
+        msg.innerHTML = 'Thanks! Here is your sample list:<br><br><a href="/sample-prospect-list.csv" target="_blank" style="color:var(--bs-accent);font-weight:600;font-size:1.2rem;">Download the Sample List →</a><br><br><small style="color:var(--bs-text-muted);">Names and contacts are placeholders to show the format. Your real list is verified against public records.</small>';
       
         document.getElementById('lead-email').value = '';
         document.getElementById('lead-name').value = '';
