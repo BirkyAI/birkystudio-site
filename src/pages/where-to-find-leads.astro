@@ -1,0 +1,302 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// One source for the visible FAQ and the FAQPage schema, so they can never drift apart.
+const faqs = [
+  {
+    q: 'Are these qualified leads?',
+    a: 'They are verified contacts, scored by opportunity. Every entry is a real business with working contact details, and each one carries a score and a tag telling you what they most plausibly need and how to approach them. They are not inbound leads. Nobody on the list raised their hand and asked to hear from you, so nobody can promise you a reply, a meeting or a sale.',
+  },
+  {
+    q: 'How many leads will I get for the money?',
+    a: 'You are buying verified contacts, not a number of leads. The Starter List is up to about 25 contacts for one niche and one market, the Pro List is up to about 100, and the list size for the Pack is agreed with you up front. We do not sell by volume, and we never promise a lead count per month.',
+  },
+  {
+    q: 'Is this a subscription?',
+    a: 'No. You pay once and the file is yours to keep forever. There is no monthly fee, no login to rent, no per-lead pricing and nothing to cancel. A subscription stops working the day you stop paying. A file you own does not.',
+  },
+  {
+    q: 'Can you build a list for any business type?',
+    a: 'For any business that sells to other businesses, yes. A bookkeeper who serves dental practices, an agency that serves law firms, a supplier, a recruiter, a commercial cleaner. It does not work for a business whose customers are local consumers, such as a salon, a restaurant or a dentist. A list of local businesses is not their customer base, and we will not sell one pretending that it is.',
+  },
+  {
+    q: 'What does the file look like?',
+    a: 'A spreadsheet you own with the business name and type, city and state, Google rating and review count, phone, website, opening hours, a pass over their website (platform, whether they already run a chat or AI tool, SSL, analytics, social, contact form), a live or dead status, and the opportunity tag. You can download a sample of the format above.',
+  },
+  {
+    q: 'How long does it take, and who does the outreach?',
+    a: 'The list is delivered in 3 to 7 business days after a short scoping call. The Starter and Pro lists are yours to contact, and the Pro list includes outreach templates to start from. If you want the outreach sent for you and every reply caught and qualified, that is the Lead Generation Pack.',
+  },
+];
+
+const serviceLD = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Verified Prospect List',
+  description: 'A one-time verified contact list for one business niche and one market, built for businesses that sell to other businesses. Every contact is verified, enriched and scored by opportunity, and the file is owned by the client forever. Not a subscription.',
+  serviceType: 'B2B prospect list research',
+  provider: {
+    '@type': 'Organization',
+    name: 'Birky Studio',
+    url: 'https://birkystudio.com',
+  },
+  areaServed: 'US',
+  offers: [
+    { '@type': 'Offer', name: 'Starter List, up to about 25 verified contacts', price: '497', priceCurrency: 'USD' },
+    { '@type': 'Offer', name: 'Pro List, up to about 100 verified contacts with outreach templates', price: '997', priceCurrency: 'USD' },
+    { '@type': 'Offer', name: 'Lead Generation Pack, list plus outreach and receptionist', price: '1997', priceCurrency: 'USD' },
+  ],
+});
+
+const faqLD = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+});
+
+const breadcrumbLD = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://birkystudio.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Where to find leads', item: 'https://birkystudio.com/where-to-find-leads/' },
+  ],
+});
+---
+
+<BaseLayout
+  title="Where to Find Leads: Verified Contacts You Own"
+  description="Where to find leads when you sell to other businesses: verified contacts for your niche and market, scored by opportunity, in a file you own. No subscription."
+  image="/images/where-to-find-leads-og.jpg"
+>
+  <script type="application/ld+json" set:html={serviceLD} />
+  <script type="application/ld+json" set:html={faqLD} />
+  <script type="application/ld+json" set:html={breadcrumbLD} />
+
+  <!-- Hero -->
+  <section style="padding:100px 0 60px;position:relative;overflow:hidden">
+    <div style="max-width:800px;margin:0 auto;padding:0 32px;position:relative;z-index:1;text-align:center;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.08);border-radius:100px;color:var(--bs-text);font-size:0.85rem;font-weight:500;margin-bottom:22px;">
+        One-time. You own the file. No subscription.
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.9rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        Where to Find Leads When You Sell to Other Businesses
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:640px;margin:0 auto 32px;">
+        Most advice about where to find leads tells you to post more, spend more, or rent a subscription. If your customers are other businesses, the faster answer is a verified contact list built for one niche and one market: real businesses with working phone, email and website, each one scored by how good a prospect it is, delivered as a file you own outright.
+      </p>
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+        <a href="#sample" class="btn btn-primary" style="font-size:1.05rem;padding:15px 32px;">
+          Get a Free Sample List →
+        </a>
+        <a href="#who" class="btn hero-btn-ghost" style="font-size:1.05rem;padding:15px 32px;">
+          See Who It Is For →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct answer -->
+  <section style="padding:20px 0 60px">
+    <div style="max-width:820px;margin:0 auto;padding:0 32px;">
+      <div style="background:var(--bs-bg-raised);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:28px;">
+        <h2 style="color:white;font-size:1.15rem;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.04em;">The short answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+          Appearing on Google Trends does not make a lead appear. Businesses that sell to other businesses find leads in a researched list: a defined niche, a defined market, and every contact verified before it reaches you. No bots, no recycled numbers, no rented login. You get the file, you own it, and the only recurring cost is what you choose to spend on reaching out.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it is for / not for -->
+  <section id="who" style="padding:40px 0 60px">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:28px;">Who this is for, and who it is not for</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:26px;">
+          <h3 style="color:var(--bs-accent);font-weight:700;margin-bottom:14px;font-size:1.05rem;text-transform:uppercase;letter-spacing:0.03em;">It is for you if</h3>
+          <ul style="color:var(--bs-text);line-height:1.9;margin:0;padding-left:20px;">
+            <li>You sell to other businesses, not to the general public</li>
+            <li>You have a defined market: one niche and one area</li>
+            <li>Your offer already works, you just need people to send it to</li>
+            <li>You are tired of paying monthly for a login you do not own</li>
+          </ul>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:26px;">
+          <h3 style="color:var(--bs-text-muted);font-weight:700;margin-bottom:14px;font-size:1.05rem;text-transform:uppercase;letter-spacing:0.03em;">It is not for you if</h3>
+          <ul style="color:var(--bs-text-muted);line-height:1.9;margin:0;padding-left:20px;">
+            <li>Your customers are local consumers, such as a salon, a restaurant or a dentist</li>
+            <li>You want warm inbound leads who already asked for a call</li>
+            <li>You want a guaranteed number of leads per month, or a promise of deals</li>
+            <li>You want someone to cold call or cold message the list for you</li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:24px;padding:22px 26px;background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.25);border-radius:14px;">
+        <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+          <strong style="color:white;">The line, plainly:</strong> the list is a list of businesses in a niche. So whoever buys it has to be selling to that niche. A bookkeeper whose clients are dental practices is a perfect fit. A salon whose clients are local people is not, because a list of local businesses is not their customer base.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What you get -->
+  <section style="padding:60px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:20px;">Verified contacts, scored by opportunity</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+        That phrase is the product, so here is exactly what sits behind it. Every row in your file carries the business details, a pass over their website, and the column that does the actual work.
+      </p>
+      <div style="display:grid;gap:18px;">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:22px 26px;">
+          <h3 style="color:white;font-weight:600;margin-bottom:8px;font-size:1.05rem;">Verified</h3>
+          <p style="color:var(--bs-text-muted);line-height:1.7;margin:0;">Real business, real working phone, email and website, checked one by one. Dead businesses, abandoned listings and bot noise are dropped before delivery. This is the part everyone else skips and it is the whole reason the file is worth having.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:22px 26px;">
+          <h3 style="color:white;font-weight:600;margin-bottom:8px;font-size:1.05rem;">Enriched</h3>
+          <p style="color:var(--bs-text-muted);line-height:1.7;margin:0;">Google rating and review count, city and state, opening hours, plus a look at their site: platform, whether they already run a chat or AI tool, SSL, analytics, social profiles, contact form. You know something about each one before you write to them.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:22px 26px;">
+          <h3 style="color:white;font-weight:600;margin-bottom:8px;font-size:1.05rem;">Scored by opportunity</h3>
+          <p style="color:var(--bs-text-muted);line-height:1.7;margin:0;">A site health score out of 100, plus a plain tag telling you what each one most plausibly needs: no website at all, a site that is down, an old site with no booking, or a business that already runs a chatbot and knows the value of one. That column tells you who to approach first and what to say when you do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Criteria -->
+  <section style="padding:60px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:20px;">How a list gets built, step by step</h2>
+      <ol style="color:var(--bs-text);line-height:2;margin:0;padding-left:22px;">
+        <li><strong style="color:white;">Target.</strong> Niche, area and size agreed with you on a short scoping call.</li>
+        <li><strong style="color:white;">Sources.</strong> Google Maps, business directories and public listings.</li>
+        <li><strong style="color:white;">Enrichment.</strong> A visit to each website for platform, chat and AI presence, SSL, analytics, social and contact form.</li>
+        <li><strong style="color:white;">Verification, on every single row.</strong> Contact details confirmed working, duplicates, closed businesses and bots removed.</li>
+        <li><strong style="color:white;">Scoring.</strong> Site health out of 100, plus the opportunity tag you will use to prioritise.</li>
+        <li><strong style="color:white;">Delivery.</strong> The file in 3 to 7 business days, with a one page guide on how to work it.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Ownership -->
+  <section style="padding:60px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:20px;">Not a subscription. You own the list.</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        One payment, one file, yours forever. No monthly fee, no rented login, no per-lead charge and nothing to cancel. You can keep it, sort it, import it into your CRM, hand it to a helper, or come back in a year and work it again.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+        The difference matters more than the price. A subscription stops the day you stop paying, and the database you were working was never yours. A file you own is still yours when the invoice is long forgotten.
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:24px;">
+          <div style="color:white;font-weight:800;font-size:1.5rem;margin-bottom:6px;">$497</div>
+          <div style="color:var(--bs-accent);font-weight:600;margin-bottom:10px;">Starter List</div>
+          <p style="color:var(--bs-text-muted);line-height:1.7;margin:0;">Up to about 25 verified contacts, one niche and one market, plus the one page guide. One time.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:24px;">
+          <div style="color:white;font-weight:800;font-size:1.5rem;margin-bottom:6px;">$997</div>
+          <div style="color:var(--bs-accent);font-weight:600;margin-bottom:10px;">Pro List</div>
+          <p style="color:var(--bs-text-muted);line-height:1.7;margin:0;">Up to about 100 contacts, deeper detail on every one, and outreach templates to start from. One time.</p>
+        </div>
+        <div style="background:rgba(255,45,149,0.1);border:1px solid rgba(255,45,149,0.3);border-radius:14px;padding:24px;">
+          <div style="color:white;font-weight:800;font-size:1.5rem;margin-bottom:6px;">$1,997</div>
+          <div style="color:var(--bs-accent);font-weight:600;margin-bottom:10px;">Lead Generation Pack</div>
+          <p style="color:var(--bs-text-muted);line-height:1.7;margin:0;">The list, the compliant email outreach set up for you, and a receptionist that catches and qualifies every reply. One time.</p>
+        </div>
+      </div>
+      <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.7;margin-top:18px;">
+        Full detail on each: <a href="/products/lead-generation-starter-list/" style="color:var(--bs-accent);">the Starter List</a>, <a href="/products/lead-generation-pro-list/" style="color:var(--bs-accent);">the Pro List</a> and <a href="/products/lead-generation-pack/" style="color:var(--bs-accent);">the Lead Generation Pack</a>. If you want the sending handled, that block is the <a href="/products/outreach-engine/" style="color:var(--bs-accent);">Outreach Engine</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sample + form -->
+  <section id="sample" style="padding:60px 0 80px">
+    <div style="max-width:520px;margin:0 auto;padding:0 32px;text-align:center;">
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:12px;">See the format before you spend anything</h2>
+      <p style="color:var(--bs-text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:28px;">
+        A sample of a verified contact list, so you can judge the columns and the scoring yourself. Tell us who you sell to and where, and we will build the real one for your niche.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto;">
+        <input type="text" id="lead-name" placeholder="First name" style="width:100%;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;box-sizing:border-box;" />
+        <input type="email" id="lead-email" placeholder="your@email.com" style="width:100%;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;box-sizing:border-box;" />
+        <input type="text" id="lead-niche" placeholder="Who do you sell to? e.g. dental practices" style="width:100%;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;box-sizing:border-box;" />
+        <input type="text" id="lead-area" placeholder="Your market, e.g. Austin TX" style="width:100%;padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:1rem;outline:none;box-sizing:border-box;" />
+        <button onclick="submitLead()" class="btn btn-primary" style="width:100%;padding:14px 28px;font-size:1rem;">
+          Send Me the Sample →
+        </button>
+      </div>
+      <p id="form-message" style="color:var(--bs-accent);font-size:0.9rem;margin-top:16px;display:none;"></p>
+      <p style="color:var(--bs-text-muted);font-size:0.8rem;margin-top:12px;">No spam. Ever. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:40px 0 90px">
+    <div style="max-width:820px;margin:0 auto;padding:0 32px;">
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:28px;">Questions people actually ask</h2>
+      <div style="display:grid;gap:16px;">
+        {faqs.map((f) => (
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:22px 26px;">
+            <h3 style="color:white;font-weight:600;margin-bottom:10px;font-size:1.05rem;">{f.q}</h3>
+            <p style="color:var(--bs-text-muted);line-height:1.75;margin:0;">{f.a}</p>
+          </div>
+        ))}
+      </div>
+      <div style="margin-top:36px;text-align:center;">
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:18px;">
+          Not sure whether your niche qualifies? Ask first, before you pay anything.
+        </p>
+        <a href="/contact/" class="btn btn-primary" style="font-size:1rem;padding:14px 30px;">Ask Me Directly →</a>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    window.submitLead = function() {
+      const email = document.getElementById('lead-email').value.trim();
+      const name = document.getElementById('lead-name').value.trim();
+      const niche = document.getElementById('lead-niche').value.trim();
+      const area = document.getElementById('lead-area').value.trim();
+      const msg = document.getElementById('form-message');
+
+      if (!email) {
+        msg.style.color = '#f87171';
+        msg.textContent = 'Please enter your email';
+        msg.style.display = 'block';
+        return;
+      }
+
+      // Same lead capture endpoint as the free sample page, tagged with its own source
+      fetch('https://script.google.com/macros/s/AKfycbyY6p6a7Mpve8MsSBx5R6RU1JbuNctGJHWC827dpbjpMeQOwXZlW8Bu01RXk8N0mvHr/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: name || 'Where to find leads',
+          email: email,
+          phone: '',
+          interest: 'Where to find leads. Sells to: ' + (niche || 'not given'),
+          source: 'where-to-find-leads',
+          area: area,
+          leadType: ''
+        })
+      });
+
+      msg.style.color = 'var(--bs-accent)';
+      msg.style.display = 'block';
+      msg.innerHTML = 'Thanks! Here is the sample format:<br><br><a href="/sample-verified-contacts.csv" target="_blank" style="color:var(--bs-accent);font-weight:600;font-size:1.2rem;">Download the sample list →</a><br><br><small style="color:var(--bs-text-muted);">Every business and contact in the sample is a placeholder showing the columns and the scoring. Your real list is built for your niche and market, and verified.</small>';
+
+      document.getElementById('lead-email').value = '';
+      document.getElementById('lead-name').value = '';
+      document.getElementById('lead-niche').value = '';
+      document.getElementById('lead-area').value = '';
+    }
+  </script>
+</BaseLayout>
