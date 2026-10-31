@@ -5,7 +5,7 @@ date: 2026-10-03
 image: "/images/blog/ai-generated/real-estate-video-content-time-trap.jpg"
 tags: ["Agentes de IA", "Bienes Raíces", "Contenido"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Un agente de 58 años que se está mudando a un mercado nuevo publicó esto en r/RealEstateTechnology la semana pasada:

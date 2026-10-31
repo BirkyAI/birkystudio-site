@@ -5,7 +5,7 @@ date: 2026-10-12
 image: "/images/blog/ai-generated/what-happens-after-your-ai-agent-goes-live.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Cuidado y Mantenimiento"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Hay un comentario en r/RealEstateTechnology al que siempre vuelvo. Un agente escribió que las herramientas con las que la gente de verdad se queda son las aburridas. Firmas electrónicas, cajas de seguridad digitales, calendarios compartidos, formularios que se llenan solos. Nada de eso era emocionante. Todo eso quitaba en silencio unas horas por trato. Como él lo dijo, "el verdadero progreso suele ser una cosa pequeña que elimina un paso molesto y simplemente funciona".

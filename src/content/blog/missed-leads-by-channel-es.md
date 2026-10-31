@@ -5,7 +5,7 @@ date: 2026-10-04
 image: "/images/blog/ai-generated/missed-leads-by-channel.jpg"
 tags: ["Birky Studio", "Respuesta a Clientes", "Agente de IA"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Un comprador te manda un DM de Instagram a las 9:14 de la noche preguntando si un listing sigue disponible. A la mañana siguiente llega un formulario por el sitio web, y una hora después alguien le escribe al número de tu rótulo. Para cuando te sientas con un café, dos de esos tres ya se enfriaron y la verdad no recuerdas a cuál le contestaste.

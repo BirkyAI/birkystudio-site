@@ -5,7 +5,7 @@ date: 2026-10-18
 image: "/images/blog/ai-generated/what-297-buys-before-1297.jpg"
 tags: ["Birky Studio", "AI Agent", "Pricing"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every week somebody asks me a version of the same question, and I have learned to hear it coming. "I know I need AI in my business. I just do not know where to start."

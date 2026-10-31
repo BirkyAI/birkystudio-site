@@ -5,7 +5,7 @@ date: 2026-10-16
 image: "/images/blog/ai-generated/ai-agent-for-veterinary-clinics.jpg"
 tags: ["AI Agent", "Veterinary Clinics", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 *This is a composite, drawn from the same week I have watched play out across more than a dozen clinics. The times and details are illustrative. The pattern is not.*

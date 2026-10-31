@@ -5,7 +5,7 @@ date: 2026-10-04
 image: "/images/blog/ai-generated/ai-intake-agent-for-law-firms.jpg"
 tags: ["Agentes de IA", "Bufetes de Abogados", "Pequeñas Empresas"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Los agentes inmobiliarios lo dijeron primero. En un hilo sobre lo que de verdad rompe su negocio, uno de ellos lo escribió sin rodeos:

@@ -5,7 +5,7 @@ date: 2026-10-01
 image: "/images/blog/ai-generated/ai-agent-for-contractors-trades.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Pequeños Negocios"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Si trabajas en un oficio, ya conoces ese momento. Estás debajo de un lavamanos, en un techo o metido hasta el codo en un tablero eléctrico. Suena el teléfono. No puedes contestar, y cuando llamas de vuelta dos horas después, el trabajo ya está agendado con alguien más.

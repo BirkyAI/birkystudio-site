@@ -5,7 +5,7 @@ date: 2026-10-11
 image: "/images/blog/ai-generated/ai-agent-for-home-services.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Servicios del Hogar", "Pequeños Negocios"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Es un sábado por la mañana en plena temporada alta. Una propietaria quiere que le limpien los canalones, que le corten el césped y una cotización más para comparar con las dos que ya tiene. Llama a tres empresas antes de las diez.

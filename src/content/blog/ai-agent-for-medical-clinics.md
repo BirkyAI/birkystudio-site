@@ -5,7 +5,7 @@ date: 2026-10-09
 image: "/images/blog/ai-generated/ai-agent-for-medical-clinics.jpg"
 tags: ["Birky Studio", "AI Agent", "Medical Clinics", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 It is 12:40 on a Tuesday. A new patient calls your clinic for the first time. The front desk is checking someone in, printing a form, and answering the other line. The call rolls to voicemail. The patient does not leave a message. She calls the clinic two streets over, and by 12:45 she has an appointment there.

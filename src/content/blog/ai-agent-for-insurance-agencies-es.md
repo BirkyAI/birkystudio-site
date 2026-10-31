@@ -5,7 +5,7 @@ date: 2026-10-21
 image: "/images/blog/ai-generated/ai-agent-for-insurance-agencies.jpg"
 tags: ["Agente de IA", "Agencias de Seguros", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 > *"Is there one (or a few) CRMs that are best for realtors in the US, in 2026? I'm looking for one and wondering which ones are most recommended, and why."*

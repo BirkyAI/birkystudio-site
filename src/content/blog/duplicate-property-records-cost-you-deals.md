@@ -5,7 +5,7 @@ date: 2026-10-15
 image: "/images/blog/ai-generated/duplicate-property-records-cost-you-deals.jpg"
 tags: ["AI Agent", "Property Data", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 This one arrived in r/RealEstateTechnology this week and it sounds like a database detail until you read it twice:

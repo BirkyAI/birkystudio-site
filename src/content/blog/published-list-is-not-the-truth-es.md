@@ -5,7 +5,7 @@ date: 2026-10-19
 image: "/images/blog/ai-generated/published-list-is-not-the-truth.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Datos", "Automatización"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Un agente en r/RealEstateTechnology lo dijo mejor que cualquier presentación de proveedor:

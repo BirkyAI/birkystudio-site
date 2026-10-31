@@ -5,7 +5,7 @@ date: 2026-10-29
 image: "/images/blog/ai-generated/one-valuation-number-is-a-guess.jpg"
 tags: ["Birky Studio", "AI Agent", "Valuation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 An agent on Reddit put the whole problem in one line: the 2 to 3 percent accuracy everyone advertises only holds up on standard properties. In low transaction ZIP codes, the confidence interval widens past 15 percent, and most tools do not show you that difference. They show you a clean number either way.

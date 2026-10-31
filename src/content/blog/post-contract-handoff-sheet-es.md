@@ -5,7 +5,7 @@ date: 2026-10-22
 image: "/images/blog/ai-generated/post-contract-handoff-sheet.jpg"
 tags: ["Agente de IA", "Bienes Raíces", "Automatización", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Cada trato tiene una costura, y se abre justo en el momento en que todos se relajan. El contrato queda firmado, el agente de listing suelta el aire, y el expediente cambia de manos. Nadie llama a eso un paso. No tiene dueño ni fecha límite en ninguna lista, así que pasa en el hueco que sobra, casi siempre en un carro con el teléfono en altavoz.

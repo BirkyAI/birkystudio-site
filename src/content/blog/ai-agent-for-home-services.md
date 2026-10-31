@@ -5,7 +5,7 @@ date: 2026-10-11
 image: "/images/blog/ai-generated/ai-agent-for-home-services.jpg"
 tags: ["Birky Studio", "AI Agents", "Home Services", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 It is a Saturday morning in the middle of a busy season. A homeowner wants her gutters cleared, her lawn done, and one more quote to compare against the two she already has. She calls three companies before ten.

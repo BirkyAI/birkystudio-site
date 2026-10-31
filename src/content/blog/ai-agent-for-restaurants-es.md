@@ -5,7 +5,7 @@ date: 2026-10-26
 image: "/images/blog/ai-generated/ai-agent-for-restaurants.jpg"
 tags: ["Agente de IA", "Restaurantes", "Recepcionista", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 El teléfono timbra a las 7:40 un viernes por la noche y no hay nadie en el local que pueda contestar.

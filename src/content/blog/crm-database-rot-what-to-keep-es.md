@@ -5,7 +5,7 @@ date: 2026-10-17
 image: "/images/blog/ai-generated/crm-database-rot-what-to-keep.jpg"
 tags: ["Agentes de IA", "CRM", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Cada pocos meses, alguien en r/RealEstateTechnology publica una versión de la misma pregunta: *"I need some advice for cleaning up my database."* La más reciente vino de un agente con unas 140 transacciones en cartera, una década de contactos y ninguna idea de cuáles de esos registros seguían siendo personas.

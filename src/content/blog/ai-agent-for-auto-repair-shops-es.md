@@ -5,7 +5,7 @@ date: 2026-10-05
 image: "/images/blog/ai-generated/ai-agent-for-auto-repair-shops.jpg"
 tags: ["Birky Studio", "Agente de IA", "Taller Mecánico", "Pequeño Negocio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 En algún lugar de tu taller, ahora mismo, hay un detalle que solo existe dentro de una llamada telefónica. Un síntoma descrito en voz alta, un presupuesto mencionado de paso, una fecha de garantía que nadie anotó. Para mañana ya no está.

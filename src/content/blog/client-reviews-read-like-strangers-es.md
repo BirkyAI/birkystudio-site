@@ -5,7 +5,7 @@ date: 2026-10-24
 image: "/images/blog/ai-generated/client-reviews-read-like-strangers.jpg"
 tags: ["Agente de IA", "Reseñas de Clientes", "Automatización", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 > "Longer listing appointments to compensate."

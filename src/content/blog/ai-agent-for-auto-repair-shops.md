@@ -5,7 +5,7 @@ date: 2026-10-05
 image: "/images/blog/ai-generated/ai-agent-for-auto-repair-shops.jpg"
 tags: ["Birky Studio", "AI Agent", "Auto Repair", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Somewhere in your shop right now there is a detail that only exists inside a phone call. A symptom described out loud, a budget mentioned in passing, a warranty date nobody wrote down. By tomorrow it is gone.

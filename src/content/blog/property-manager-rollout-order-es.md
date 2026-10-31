@@ -5,7 +5,7 @@ date: 2026-10-14
 image: "/images/blog/ai-generated/property-manager-rollout-order.jpg"
 tags: ["Administración de Propiedades", "Agente de IA", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 De vez en cuando un conjunto de números aparece en un hilo de Reddit y hace el argumento por ti. Este salió de r/RealEstateTechnology, de un operador que miraba la brecha entre lo que los inquilinos piden y lo que realmente reciben:

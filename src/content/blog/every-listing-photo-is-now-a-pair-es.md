@@ -5,7 +5,7 @@ date: 2026-10-27
 image: "/images/blog/ai-generated/every-listing-photo-is-now-a-pair.jpg"
 tags: ["Agente de IA", "Bienes Raíces", "Fotos de Listing", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Una foto de listing solía ser un solo archivo. La tomabas, te gustaba, la ponías en el listing, y esa era toda la historia.

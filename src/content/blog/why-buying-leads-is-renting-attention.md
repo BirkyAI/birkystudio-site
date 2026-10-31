@@ -5,7 +5,7 @@ date: 2026-10-27
 image: "/images/blog/ai-generated/why-buying-leads-is-renting-attention.jpg"
 tags: ["Birky Studio", "Lead Generation", "Real Estate"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 A solo agent on r/RealEstateTechnology put it plainly: *"I've been a solo agent for the last 5 years and haven't paid for any leads. The market has been tough and I'm considering paying for leads again."*

@@ -5,7 +5,7 @@ date: 2026-10-27
 image: "/images/blog/ai-generated/every-listing-photo-is-now-a-pair.jpg"
 tags: ["AI Agent", "Real Estate", "Listing Photos", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 A listing photo used to be one file. You took it, you liked it, you put it on the listing, and that was the whole story.

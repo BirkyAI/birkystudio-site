@@ -5,7 +5,7 @@ date: 2026-10-12
 image: "/images/blog/ai-generated/what-happens-after-your-ai-agent-goes-live.jpg"
 tags: ["Birky Studio", "AI Agents", "Care and Maintenance"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 There is a comment on r/RealEstateTechnology I keep coming back to. An agent wrote that the tools people actually stick with are the boring ones. E-signatures, digital lockboxes, shared calendars, forms that fill themselves in. None of it was exciting. All of it quietly removed a few hours per deal. As he put it, "the real progress is usually a small thing that removes one annoying step and just works."

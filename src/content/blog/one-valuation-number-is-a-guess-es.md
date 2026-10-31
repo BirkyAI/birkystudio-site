@@ -5,7 +5,7 @@ date: 2026-10-29
 image: "/images/blog/ai-generated/one-valuation-number-is-a-guess.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Valuación"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Un agente en Reddit resumió todo el problema en una línea: la precisión de 2 a 3 por ciento que todos anuncian solo se sostiene en propiedades estándar. En códigos postales con pocas transacciones, el intervalo de confianza se abre más allá del 15 por ciento, y la mayoría de las herramientas no te muestra esa diferencia. Te muestran un número limpio de todas formas.

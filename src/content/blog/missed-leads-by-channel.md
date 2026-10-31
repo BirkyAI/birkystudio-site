@@ -5,7 +5,7 @@ date: 2026-10-04
 image: "/images/blog/ai-generated/missed-leads-by-channel.jpg"
 tags: ["Birky Studio", "Lead Response", "AI Agent"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 A buyer sends an Instagram DM at 9:14 pm asking if a listing is still available. The next morning a form comes in through the website, and an hour later someone texts the number on your sign. By the time you sit down with coffee, two of those three have cooled off and you honestly cannot remember which one you answered.

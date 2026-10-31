@@ -5,7 +5,7 @@ date: 2026-10-13
 image: "/images/blog/ai-generated/listing-week-before-after-ai-agent.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Bienes Raíces"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 *Una nota antes de empezar: esto es un compuesto. No es un cliente con nombre. Son los mismos siete días que he visto repetirse en docenas de propiedades, anotados una sola vez para que veas la forma.*

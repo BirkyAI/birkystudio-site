@@ -5,7 +5,7 @@ date: 2026-10-10
 image: "/images/blog/ai-generated/ai-agent-for-retail-shops.jpg"
 tags: ["Birky Studio", "Agente de IA", "Tiendas", "Pequeños negocios"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Son las 7:40 de una tarde de jueves en noviembre. Una mujer se detiene frente a la vitrina de tu tienda de camino a casa, revisa el horario en la puerta y llama para preguntar si tienes el abrigo verde en talla mediana. El teléfono timbra cuatro veces y se va al buzón de voz. Ella no deja mensaje. En el bus de regreso encuentra el mismo abrigo en línea, lo paga y le llega en dos días.

@@ -5,7 +5,7 @@ date: 2026-10-02
 image: "/images/blog/ai-generated/stop-shopping-for-the-perfect-crm.jpg"
 tags: ["Birky Studio", "AI Agents", "CRM"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 An agent posted this on r/RealEstateTechnology a couple of weeks ago:

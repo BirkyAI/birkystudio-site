@@ -5,7 +5,7 @@ date: 2026-10-28
 image: "/images/blog/ai-generated/isa-exit-interview-after-11000-dials.jpg"
 tags: ["Birky Studio", "AI Agent", "Lead Generation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 *This is a composite. The wording and the timeline are illustrative. The numbers and the pattern come from threads agents have posted in public and from conversations we have had with agents in the month their contract ended.*

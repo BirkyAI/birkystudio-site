@@ -5,7 +5,7 @@ date: 2026-10-01
 image: "/images/blog/ai-generated/first-30-days-ai-agent-setup.jpg"
 tags: ["Birky Studio", "AI Agents", "Lead Response"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Agents on r/RealEstateTechnology put it about as plainly as it can be put:

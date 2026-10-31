@@ -5,7 +5,7 @@ date: 2026-10-08
 image: "/images/blog/ai-generated/ai-receptionist-objections-answered.jpg"
 tags: ["Birky Studio", "AI Receptionist", "AI Agents", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Last week a business owner told me, flatly: "I don't want a robot answering my phone."

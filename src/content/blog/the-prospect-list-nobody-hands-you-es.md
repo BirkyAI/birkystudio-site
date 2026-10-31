@@ -5,7 +5,7 @@ date: 2026-10-25
 image: "/images/blog/ai-generated/the-prospect-list-nobody-hands-you.jpg"
 tags: ["Agente de IA", "Generación de Prospectos", "Prospección", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 > *"I've been a solo agent for the last 5 years and haven't paid for any leads. The market has been tough and I'm considering paying for leads again."*

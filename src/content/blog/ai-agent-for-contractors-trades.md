@@ -5,7 +5,7 @@ date: 2026-10-01
 image: "/images/blog/ai-generated/ai-agent-for-contractors-trades.jpg"
 tags: ["Birky Studio", "AI Agents", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 If you run a trade, you already know the moment. You are under a sink, on a roof, or elbow deep in a panel. Your phone rings. You cannot answer it, and by the time you call back two hours later, the job is booked with someone else.

@@ -5,7 +5,7 @@ date: 2026-10-20
 image: "/images/blog/ai-generated/planning-agenda-commercial-leads.jpg"
 tags: ["Birky Studio", "AI Agents", "Commercial Real Estate", "Lead Generation"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Somebody in r/RealEstateTechnology asked for something that sounds simple:

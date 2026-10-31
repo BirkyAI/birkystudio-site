@@ -5,7 +5,7 @@ date: 2026-10-09
 image: "/images/blog/ai-generated/ai-agent-for-medical-clinics.jpg"
 tags: ["Birky Studio", "Agente de IA", "Clínicas Médicas", "Pequeño Negocio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Son las 12:40 de un martes. Una paciente nueva llama a tu clínica por primera vez. La recepción está registrando a alguien, imprimiendo un formulario y contestando la otra línea. La llamada se va al buzón de voz. La paciente no deja mensaje. Llama a la clínica que está dos calles más allá, y para las 12:45 ya tiene cita allá.

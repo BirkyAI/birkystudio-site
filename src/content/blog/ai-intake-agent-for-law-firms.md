@@ -5,7 +5,7 @@ date: 2026-10-04
 image: "/images/blog/ai-generated/ai-intake-agent-for-law-firms.jpg"
 tags: ["AI Agents", "Law Firms", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Real estate agents said it first. In a thread about what actually breaks their business, one of them wrote it plainly:

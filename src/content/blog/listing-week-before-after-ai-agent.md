@@ -5,7 +5,7 @@ date: 2026-10-13
 image: "/images/blog/ai-generated/listing-week-before-after-ai-agent.jpg"
 tags: ["Birky Studio", "AI Agents", "Real Estate"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 *A note before we start: this is a composite. It is not one named client. It is the same seven days I have watched play out across dozens of listings, written down once so you can see the shape.*

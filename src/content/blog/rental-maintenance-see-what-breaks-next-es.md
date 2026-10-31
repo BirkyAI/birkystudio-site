@@ -5,7 +5,7 @@ date: 2026-10-23
 image: "/images/blog/ai-generated/rental-maintenance-see-what-breaks-next.jpg"
 tags: ["Agente de IA", "Administración de Propiedades", "Automatización", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 > "I feel like I have very little visibility into my rentals other than knowing how much I spent each year and it feels like I'm losing money somewhere. I have invoices, repair records, etc organized in my Google drive but it's annoying trying to look through them all. I don't really have a good way to track the age and condition of major things like furnaces, water heaters, roofs, etc. I think I would want to know what might need replacing soon."

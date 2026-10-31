@@ -5,7 +5,7 @@ date: 2026-10-16
 image: "/images/blog/ai-generated/ai-agent-for-veterinary-clinics.jpg"
 tags: ["Agente de IA", "Clínicas Veterinarias", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 *Este es un compuesto, basado en la misma semana que he visto repetirse en más de una docena de clínicas. Las horas y los detalles son ilustrativos. El patrón no lo es.*

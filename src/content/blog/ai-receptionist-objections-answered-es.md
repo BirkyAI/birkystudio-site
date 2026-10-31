@@ -5,7 +5,7 @@ date: 2026-10-08
 image: "/images/blog/ai-generated/ai-receptionist-objections-answered.jpg"
 tags: ["Birky Studio", "Recepcionista de IA", "Agentes de IA", "Pequeños Negocios"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 La semana pasada, un dueño de negocio me dijo, sin rodeos: "No quiero que un robot conteste mi teléfono."

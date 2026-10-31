@@ -5,7 +5,7 @@ date: 2026-10-15
 image: "/images/blog/ai-generated/ai-agent-for-gyms-fitness-studios.jpg"
 tags: ["AI Agent", "Gyms", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Someone calls your studio at 6:40pm to ask about the 6am class and the monthly price. Nobody picks up, because you are running a session and the front desk has gone home. They call the place two blocks over. You never know they existed.

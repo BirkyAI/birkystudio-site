@@ -5,7 +5,7 @@ date: 2026-10-03
 image: "/images/blog/ai-generated/real-estate-video-content-time-trap.jpg"
 tags: ["AI Agents", "Real Estate", "Content"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 A 58 year old agent moving into a new market posted this on r/RealEstateTechnology last week:

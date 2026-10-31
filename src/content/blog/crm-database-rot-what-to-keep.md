@@ -5,7 +5,7 @@ date: 2026-10-17
 image: "/images/blog/ai-generated/crm-database-rot-what-to-keep.jpg"
 tags: ["AI Agent", "CRM", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every few months, someone in r/RealEstateTechnology posts a version of the same question: *"I need some advice for cleaning up my database."* The most recent one came from an agent with about 140 transactions on the books, a decade of contacts, and no idea which of those records were still people.

@@ -5,7 +5,7 @@ date: 2026-10-26
 image: "/images/blog/ai-generated/ai-agent-for-restaurants.jpg"
 tags: ["AI Agent", "Restaurants", "Receptionist", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 The phone rings at 7:40 on a Friday night and there is nobody in the building who can pick it up.

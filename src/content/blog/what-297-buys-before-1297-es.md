@@ -5,7 +5,7 @@ date: 2026-10-18
 image: "/images/blog/ai-generated/what-297-buys-before-1297.jpg"
 tags: ["Birky Studio", "Agente de IA", "Precios"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Cada semana alguien me pregunta una versión de la misma cosa, y ya he aprendido a verla venir. "Sé que necesito IA en mi negocio. Solo que no sé por dónde empezar."

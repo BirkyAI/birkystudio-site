@@ -5,7 +5,7 @@ date: 2026-10-14
 image: "/images/blog/ai-generated/property-manager-rollout-order.jpg"
 tags: ["Property Management", "AI Agent", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every so often a set of numbers lands in a Reddit thread and does the arguing for you. This one came out of r/RealEstateTechnology, from an operator looking at the gap between what renters ask for and what they actually get:

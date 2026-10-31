@@ -5,7 +5,7 @@ date: 2026-10-07
 image: "/images/blog/ai-generated/ai-agent-setup-nobody-demos.jpg"
 tags: ["Birky Studio", "AI Agents", "Automation", "Small Business"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 I read a comment this week from an operator watching a software update land. The new feature was plain-language workflow setup: you describe a rule in a sentence, the system builds it. His reaction was not excitement. It was this:

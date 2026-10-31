@@ -5,7 +5,7 @@ date: 2026-10-22
 image: "/images/blog/ai-generated/post-contract-handoff-sheet.jpg"
 tags: ["AI Agent", "Real Estate", "Automation", "Birky Studio"]
 lang: "en"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Every transaction has a seam in it, and it opens at the exact moment everybody relaxes. The contract is signed, the listing agent exhales, and the file changes hands. Nobody calls that a step. It has no owner and no deadline on any checklist, so it happens in whatever gap is left over, usually in a car with the phone on speaker.

@@ -5,7 +5,7 @@ date: 2026-10-20
 image: "/images/blog/ai-generated/planning-agenda-commercial-leads.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Bienes Raíces Comerciales", "Generación de Prospectos"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Alguien en r/RealEstateTechnology pidió algo que suena simple:

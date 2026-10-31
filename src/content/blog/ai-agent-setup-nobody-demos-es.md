@@ -5,7 +5,7 @@ date: 2026-10-07
 image: "/images/blog/ai-generated/ai-agent-setup-nobody-demos.jpg"
 tags: ["Birky Studio", "Agentes de IA", "Automatización", "Negocio pequeño"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Esta semana leí el comentario de un operador que veía llegar una actualización de software. La función nueva era la configuración de flujos en lenguaje natural: describes una regla en una frase y el sistema la arma. Su reacción no fue entusiasmo. Fue esto:

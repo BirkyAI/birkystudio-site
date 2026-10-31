@@ -5,7 +5,7 @@ date: 2026-10-28
 image: "/images/blog/ai-generated/isa-exit-interview-after-11000-dials.jpg"
 tags: ["Birky Studio", "Agente de IA", "Generación de Prospectos"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 *Esto es un compuesto. Las palabras y la cronología son ilustrativas. Los números y el patrón vienen de hilos que los agentes han publicado en público y de conversaciones que hemos tenido con agentes en el mes en que terminó su contrato.*

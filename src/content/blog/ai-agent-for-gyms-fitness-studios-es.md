@@ -5,7 +5,7 @@ date: 2026-10-15
 image: "/images/blog/ai-generated/ai-agent-for-gyms-fitness-studios.jpg"
 tags: ["Agente de IA", "Gimnasios", "Birky Studio"]
 lang: "es"
-author: "Birky Studio"
+author: "Luna Jerney"
 ---
 
 Alguien llama a tu estudio a las 6:40 de la tarde para preguntar por la clase de las 6 de la mañana y el precio mensual. Nadie contesta, porque estás dando una clase y la recepción ya se fue a casa. Llaman al local que está a dos cuadras. Tú nunca te enteras de que existieron.
