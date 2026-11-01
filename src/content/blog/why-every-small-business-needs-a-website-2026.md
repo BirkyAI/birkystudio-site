@@ -5,6 +5,7 @@ date: 2026-07-12
 image: "/images/blog/ai-generated/website-2026-hero.jpg"
 tags: ["Web Design", "Small Business"]
 lang: "en"
+author: "Luna Jerney"
 ---
 
 If you're running a small business in 2026 and you don't have a website, you're leaving money on the table. Period.
@@ -45,11 +46,22 @@ Think about it: if your website brings in just **one new customer per month**, i
 
 ## What You Need (At Minimum)
 
-- **Mobile-friendly design**, 70%+ of your visitors are on phones
+- **Mobile-friendly design**, about 60% of global web traffic is on phones (StatCounter, September 2026)
 - **WhatsApp button**, because that's how people contact businesses in Latin America
 - **Google Maps**, so people can find your location
 - **Fast loading**, under 2 seconds, or visitors leave
 - **Basic SEO**, so Google actually shows your site
+
+## Frequently asked questions
+
+**How much does a small business website cost in 2026?**
+At Birky Studio a Starter website is $499 one-time, Professional is $999, and Premium is $1,999, with no monthly fee for the site itself. Content and care plans are optional add-ons.
+
+**How long does it take to build a website?**
+Most small business sites go live in 2 to 3 days once we have your content and logo.
+
+**Do I still need a website if I have an Instagram page?**
+Yes. You do not own your Instagram account, you cannot rank on Google with it, and AI assistants pull from websites, not profiles. A website is the one channel you control.
 
 ## The Bottom Line
 

@@ -8,7 +8,7 @@ lang: "es"
 author: "Luna Jerney"
 ---
 
-Si tienes un negocio pequeño en América Latina, lo más probable es que tus clientes ya estén en WhatsApp. Más de 2 mil millones de personas lo usan a diario, y en países como Guatemala, México y Colombia no es solo una app de mensajes: es así como se hacen los negocios.
+Si tienes un negocio pequeño en América Latina, lo más probable es que tus clientes ya estén en WhatsApp. Más de 3 mil millones de personas lo usan cada mes y más de 2 mil millones a diario, y en países como Guatemala, México y Colombia no es solo una app de mensajes: es así como se hacen los negocios.
 
 Pero la mayoría de los negocios apenas rasguña la superficie de lo que WhatsApp puede hacer. Aquí van siete consejos para sacarle más provecho.
 
@@ -98,6 +98,17 @@ No hagas que la gente ande buscando tu número. Agrega un enlace o un botón de 
 - **Materiales impresos**. Código QR en menús, tarjetas y volantes
 
 El formato de enlace `wa.me` funciona sin guardar tu número primero. Solo usa: `https://wa.me/502XXXXXXXX`
+
+## Preguntas frecuentes
+
+**¿WhatsApp Business es realmente gratis?**
+Sí. La app es gratis de descargar y usar, incluidos el perfil de negocio, las etiquetas, las respuestas rápidas y el catálogo de productos. Solo pagas si subes a la API de WhatsApp Business para automatización de alto volumen.
+
+**¿Cuántas personas usan WhatsApp?**
+Más de 3 mil millones de personas usan WhatsApp cada mes y más de 2 mil millones a diario (Meta, abril de 2025 y enero de 2026). En Guatemala, México y Colombia es el canal por defecto para hablar con los clientes.
+
+**¿Cuál es la diferencia entre WhatsApp Business y la API de WhatsApp Business?**
+La app gratuita está pensada para una persona o un equipo pequeño que responde a mano. La API es para automatización a escala, conectando WhatsApp con un CRM o un agente de IA para que los prospectos se respondan y se registren sin que toques el teléfono.
 
 ## En resumen
 

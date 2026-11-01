@@ -5,6 +5,7 @@ date: 2026-07-12
 image: "/images/blog/ai-generated/website-2026-hero.jpg"
 tags: ["Diseño Web", "Pequeños Negocios"]
 lang: "es"
+author: "Luna Jerney"
 ---
 
 Si tienes un pequeño negocio en 2026 y no tienes un sitio web, estás dejando dinero sobre la mesa. Punto.
@@ -45,11 +46,22 @@ Piensa en esto: si tu sitio web te trae solo **un cliente nuevo al mes**, se pag
 
 ## Lo mínimo que necesitas
 
-- **Diseño adaptable a móviles**, más del 70% de tus visitantes están en el teléfono
+- **Diseño adaptable a móviles**, cerca del 60% del tráfico web mundial está en el teléfono (StatCounter, septiembre de 2026)
 - **Botón de WhatsApp**, porque así contacta la gente a los negocios en Latinoamérica
 - **Google Maps**, para que la gente encuentre tu ubicación
 - **Carga rápida**, menos de 2 segundos, o los visitantes se van
 - **SEO básico**, para que Google realmente muestre tu sitio
+
+## Preguntas frecuentes
+
+**¿Cuánto cuesta un sitio web para un negocio pequeño en 2026?**
+En Birky Studio un sitio Starter cuesta $499 por única vez, el Professional $999 y el Premium $1,999, sin mensualidad por el sitio en sí. Los planes de contenido y de soporte son adicionales opcionales.
+
+**¿Cuánto tarda construir un sitio web?**
+La mayoría de los sitios para negocios pequeños quedan en línea en 2 o 3 días, una vez que tenemos tu contenido y tu logo.
+
+**¿Sigo necesitando un sitio web si tengo una página de Instagram?**
+Sí. No eres dueño de tu cuenta de Instagram, no puedes posicionar en Google con ella, y los asistentes de IA toman información de sitios web, no de perfiles. Un sitio web es el único canal que tú controlas.
 
 ## La conclusión
 
