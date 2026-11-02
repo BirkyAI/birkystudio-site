@@ -60,7 +60,7 @@ Clean Up, Set Up, Level Up, in that order.
 
 The smallest change did most of the work: the note after the call. It is the piece we automate first, because it is the only one a person reliably skips at 6pm on a Friday. Our AI agent writes the running note after every call, text and inquiry straight into the contact record, so the field that made the cleanup painful gets filled in without anyone being asked twice. We wrote about the filter we use for the keep-or-delete decision in [Your CRM Database Is Rotting: What To Keep](https://birkystudio.com/blog/crm-database-rot-what-to-keep/), and that piece is the first half of this one.
 
-The privacy objection deserves a straight answer, since it is the first thing half the thread raised. Your contacts stay yours. The agent works inside your own CRM, and the [Base Agent](https://birkystudio.com/products/ai-agent-setup/) ships with a Notion CRM included, so nothing is harvested, pooled or resold. A list you do not own is not a list you can clean.
+The privacy objection deserves a straight answer, since it is the first thing half the thread raised. Your contacts stay yours. The agent works inside your own CRM, and the Base Agent ships with a Notion CRM included, so nothing is harvested, pooled or resold. A list you do not own is not a list you can clean.
 
 If you do need new names, buy fewer and better ones. A verified list of 200 current, real contacts beats 2,000 scraped rows every time, and the difference is whether you are holding a database or a liability. That is what the [Lead Generation Pack](https://birkystudio.com/products/lead-generation-pack/) is for.
 
@@ -77,5 +77,7 @@ Start with the free one. The **Quick Log template** is the one-page running reco
 Want to hear what the note-taking actually sounds like on a live call? Call the demo and talk to Elliot for a minute. It answers, qualifies and writes the record while you listen: [voice demo](https://birkystudio.com/voice-demo/). No login, no sales call.
 
 And if you want the full system for keeping a contact file alive, including the pipeline and the next-step fields, it is the same one we use with clients: [THE REAL ESTATE SYSTEM](https://notionforrealestate.gumroad.com/l/ocuwss).
+
+Or, if the smarter move is to never let the pile rebuild in the first place, that is the [Business AI Partner](https://birkystudio.com/products/business-ai-partner/) at $197/mo: the same agent, plus the monthly hygiene pass and the changes, handled for you.
 
 If you would rather have someone clean the list and wire the automations for you, that is what we do. Tell us what your database looks like and we will tell you honestly whether it is worth saving: [get in touch](https://birkystudio.com/contact/).

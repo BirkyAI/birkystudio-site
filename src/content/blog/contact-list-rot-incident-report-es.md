@@ -60,7 +60,7 @@ Limpia, Configura, Sube de Nivel, en ese orden.
 
 El cambio más pequeño hizo la mayor parte del trabajo: la nota después de la llamada. Es la pieza que automatizamos primero, porque es la única que una persona se salta de forma confiable a las 6 de la tarde de un viernes. Nuestro agente de IA escribe la nota acumulativa después de cada llamada, mensaje de texto y consulta directamente en el registro de contacto, así que el campo que hacía dolorosa la limpieza se llena sin que nadie tenga que pedirlo dos veces. Escribimos sobre el filtro que usamos para la decisión de conservar o borrar en [Tu base de datos de CRM se está pudriendo](https://birkystudio.com/es/blog/crm-database-rot-what-to-keep/), y ese artículo es la primera mitad de este.
 
-La objeción sobre la privacidad merece una respuesta directa, ya que es lo primero que planteó la mitad del hilo. Tus contactos siguen siendo tuyos. El agente trabaja dentro de tu propio CRM, y el [Agente Base](https://birkystudio.com/es/products/ai-agent-setup/) viene con un CRM de Notion incluido, así que nada se recolecta, se junta ni se revende. Una lista que no es tuya no es una lista que puedas limpiar.
+La objeción sobre la privacidad merece una respuesta directa, ya que es lo primero que planteó la mitad del hilo. Tus contactos siguen siendo tuyos. El agente trabaja dentro de tu propio CRM, y el Agente Base viene con un CRM de Notion incluido, así que nada se recolecta, se junta ni se revende. Una lista que no es tuya no es una lista que puedas limpiar.
 
 Si de verdad necesitas nombres nuevos, compra menos y mejores. Una lista verificada de 200 contactos reales y vigentes le gana a 2,000 filas extraídas de internet todas las veces, y la diferencia está en si sostienes una base de datos o un pasivo. Para eso sirve el [Paquete de Generación de Prospectos](https://birkystudio.com/es/products/lead-generation-pack/).
 
@@ -77,5 +77,7 @@ Empieza por la gratis. La **plantilla Quick Log** es el registro acumulativo de 
 ¿Quieres escuchar cómo suena de verdad tomar notas en una llamada en vivo? Llama a la demo y habla con Elliot por un minuto. Contesta, califica y escribe el registro mientras escuchas: [demo de voz](https://birkystudio.com/voice-demo/). Sin inicio de sesión, sin llamada de ventas.
 
 Y si quieres el sistema completo para mantener vivo un archivo de contactos, incluidos el pipeline y los campos de paso siguiente, es el mismo que usamos con clientes: [THE REAL ESTATE SYSTEM](https://notionforrealestate.gumroad.com/l/ocuwss).
+
+O, si lo más inteligente es no dejar que el montón se vuelva a formar, eso es el [Socio de IA para Negocios](https://birkystudio.com/es/products/business-ai-partner/) a $197/mes: el mismo agente, más la limpieza mensual y los cambios, hechos por nosotros.
 
 Si prefieres que alguien más limpie la lista y arme las automatizaciones por ti, eso es lo que hacemos. Cuéntanos cómo se ve tu base de datos y te diremos con honestidad si vale la pena salvarla: [contáctanos](https://birkystudio.com/es/contacto/).
