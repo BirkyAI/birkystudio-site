@@ -1,0 +1,653 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Placester (2026 Comparison), a Website You Rent vs a Front Desk You Own",
+  "description": "Honest head-to-head comparison of BirkyStudio vs Placester for real estate agents. Placester is an IDX website platform from $59 per month plus a $25 per month IDX fee per active MLS contract, with no contract and a 14 day free trial. BirkyStudio answers your phone and WhatsApp 24/7, follows up automatically, and builds a website you own. Real pricing, real reviews, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://birkystudio.com/images/birky-logo.jpg"
+    }
+  },
+  "datePublished": "2026-11-03",
+  "dateModified": "2026-11-03"
+});
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Placester cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Placester publishes its prices, and they are the lowest entry point among real estate specific website builders. Agent plans are Agent Essential at $59 a month or $566 billed annually, Agent Plus at $79 a month or $758 annually, and Agent Premier at $129 a month or $1,238 annually. Team and brokerage plans are Team at $199 a month, Broker Standard at $399 a month and Broker Plus at $599 a month. IDX is charged separately at $25 a month per active MLS contract on every plan, and your local MLS access fee is separate again. Setup services are $300 for Professional, $500 for Semi-Custom or $1,200 for Custom, each one-time, with additional creative hours at $40 to $50 each. Add-ons include an extra website at $25 a month, Content Automation from $15 a month and the Do It For Me editing service from $75 a month. A solo agent on Agent Essential with one IDX connection pays about $866 in year one on annual billing, or $1,008 on monthly billing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Placester answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Placester is a website and IDX platform. It builds you a real estate site, connects it to your MLS so buyers can search listings, and captures leads through forms, popups, landing pages, home valuation pages and live chat. It does not pick up an inbound phone call and it does not hold a WhatsApp conversation. When a lead comes in at 9pm, Placester stores it and can email you about it, and then the lead waits until you are free. BirkyStudio's Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Placester's AI a receptionist or a website builder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a website builder. Every Placester plan now includes AI Website Builder and Editor, an AI Content Assistant, an AI ready SEO foundation and an automatically generated llms.txt file. That AI writes and edits the site, generates marketing content, landing pages and area guides, and gets the pages ready for Google and AI search. It is a genuinely useful set of tools for building a site fast, and it is not a voice agent. Placester's AI does not talk to your leads, does not answer a call and does not hold a conversation. BirkyStudio's AI is the opposite: The Base Agent is $1,297 solo with the Notion CRM included and answers and follows up with every enquiry automatically, and the AI Receptionist covers the phone and WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I own my website if I build it on Placester?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You own your domain and your content, and you do not own the platform the site runs on. Placester includes secure unlimited hosting and bandwidth on all plans, so the site lives inside a rented, managed environment rather than on infrastructure you hold. Placester is explicit that you can cancel at any time, that a monthly plan ends on your last billing day and that an annual plan runs until the paid portion is used up, and that the subscription cost is not refundable. So the practical answer is that the pages, the templates and the search experience belong to the platform, and the site stops when the subscription does. BirkyStudio builds the website on your own account for $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site or $1,999 for a Premium 10+ page site with a blog, and you own the code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Placester include IDX, and is it extra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Placester is built around IDX and it is charged on top of the plan, not included. The Placester IDX Support Fee is $25 a month for every approved MLS contract on every plan, and your local MLS access fee is separate from that again, so a two MLS agent pays $50 a month before the plan fee is counted. Agent Essential covers a single MLS integration and Agent Plus and above cover unlimited MLS integrations, both at the same $25 a month per IDX. That brings the real monthly cost of an IDX website to about $84 to $154 depending on tier, or $866 in year one on Agent Essential with one MLS connection. BirkyStudio does not include an MLS feed or IDX property search at all, and we say so plainly instead of pretending it does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is BirkyStudio cheaper than Placester?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and this is the part where Placester wins. If all you need is a real estate IDX website and you are willing to build and edit it yourself, Placester is cheaper: Agent Essential with one IDX connection is about $866 in year one on annual billing, and about $3,024 over three years on monthly billing. BirkyStudio charges more because it does more. The Base Agent is $1,297 one-time with the Notion CRM included, and with optional care at $97 a month that is about $2,461 in year one and about $4,789 over three years. The difference buys two things Placester does not sell: something that answers your phone and WhatsApp 24/7 in two languages, and a verified, enriched, scored prospect list you own ($497 Starter or $997 Pro, one-time). If you do not need those, buy Placester and keep the difference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Placester have a contract or a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Placester is unusually clean on both counts, and it is genuinely better than most of its competitors here. There are no contracts, you can cancel any time, and there is a 14 day free trial that does not require a credit card, with the pricing page also noting up to 21 days of trial access. Annual billing takes 20 percent off and a monthly plan simply ends on your last billing day, while an annual plan continues until the paid portion runs out. The one catch is that the subscription cost is not refundable. BirkyStudio is also contract free: there is no minimum term, no per-seat fee, no cancellation fee, and there is a 30 day money back guarantee on the build itself."
+      }
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Placester (2026)"
+  description="Honest 2026 comparison: Placester rents you an IDX website from $59/mo plus $25/mo per MLS. BirkyStudio answers your phone and builds a site you own."
+  image="/images/comparison/placester.jpg"
+  >
+    <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated November 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Placester<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">A Website You Rent vs a Front Desk You Own</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        Placester is the easiest real estate website to buy. It publishes every price, starts at $59 a month, has no contract, gives you a 14 day free trial without a credit card, and its AI writes and edits the site for you. It is a strong product, and it is a website platform rather than a front desk: its AI builds pages, it does not answer your phone and it does not hold a WhatsApp conversation. BirkyStudio is a one-time build. We answer your phone and WhatsApp 24/7 in English and Spanish, follow up automatically, and hand you verified prospects plus a website whose code you actually own. Here is the honest breakdown, including the places where Placester is clearly the better buy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> You want the phone and the WhatsApp answered by something other than you, at 9pm and on a Sunday and in Spanish, and you would rather own your website and your prospect list than rent them. You get an AI agent that replies in seconds in two languages, an AI receptionist on voice and WhatsApp, verified, enriched, scored prospects you keep forever, and a site built on your own account that stays live even if you stop working with us.<br><br>
+          <strong style="color:white;">Choose Placester if:</strong> You want a real estate specific IDX website with live listing search, and you are happy to build and edit it yourself. Placester publishes its prices, starts at $59 a month, charges $25 a month per MLS for IDX, locks you into no contract at all, and throws in a 14 day free trial with no credit card. For a solo agent whose bottleneck is having a professional site with property search, that is the cheapest credible answer in the category.<br><br>
+          <strong style="color:white;">The honest difference:</strong> Placester's AI is AI for building and editing a website. BirkyStudio's AI is AI for answering your leads. One is a tool you operate, the other is an operator that works. If your problem is that you do not have a site, Placester solves it cheaply. If your problem is that your leads go cold because nobody answers fast enough, a website builder does not solve that, no matter how good its AI editor is.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/placester-article-1.jpg" alt="Wide view of the reception area of a small modern real estate office with two armchairs, a reception counter, large windows and potted plants" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Placester?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        These two get compared because both promise the same headline, more leads without hiring, and because they sit on opposite sides of one question: do you want a tool to operate or an operator that works? Placester is a real estate website platform. It gives you an IDX ready site with live listing search, saved searches and alerts, lead capture through popups, forms, landing pages and home valuation pages, a CRM, email marketing, open house and mortgage calculator modules, and deep integrations including Follow Up Boss, Cloze, Rechat and hundreds more through Zapier. Its agent plans run $59, $79 and $129 a month, its team and brokerage plans run $199 to $599 a month, and IDX costs $25 a month per active MLS contract on top.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes the other route. Instead of handing you a site builder to work on, we build an AI operator that does the front desk for you. The Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically in English and Spanish. Add the AI Receptionist and the phone is answered around the clock. Add a Verified Prospect List and you start with real, enriched, scored prospects you own, no bots and no dead numbers.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        The real difference is not who has the better website. Placester has the better website, and it costs less. The difference is what happens in the ninety seconds after a lead arrives, and whether the thing you paid for is still yours when you stop paying. That is what this page breaks down, honestly, including the parts where Placester wins.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Placester, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Placester</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 audit (15 min), projects from $297 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$59/month, or $566 billed annually, plus $25/month per MLS</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A real estate IDX website platform you build and operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Price Visible Before a Sales Call</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, every price is published on our site</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, the full rate card is published and self-serve</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time builds you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Monthly subscription forever, plus $25/mo per MLS for IDX</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, cancel any time, annual billing is non-refundable</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free 15-minute audit, 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 14-day free trial, no credit card required</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Does the Work</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers and follows up, we maintain it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> You do, unless you pay for setup or the $75/mo editing service</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ IDX website included in every plan, hosted by Placester</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Ownership</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Your code, your hosting, your pages stay live</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Rented and managed, the site stops when the subscription does</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">MLS / IDX Property Search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Not an MLS-based platform</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ IDX search, saved searches and listing alerts, single MLS on Essential</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">IDX Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No IDX product to buy</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> $25/month per active MLS contract, plus the MLS access fee</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No AI answering, callers reach you or voicemail</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Conversations on WhatsApp / Text</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No WhatsApp agent, leads are captured and stored</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What the AI Is Actually For</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Answering and following up with your leads</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Building and editing the website, on every plan</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Blog / Content Publishing</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Content Engine $497, or Content Booster $149/mo</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Content Automation from $15/mo, plus an AI Content Assistant</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM built for agents, free with the Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Simple CRM on Essential, lead activity and saved searches on Plus</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Leads Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own forever</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> None, Placester supplies no leads and runs no ads</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Answers the Lead at 9pm</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The AI answers in seconds, 24/7, EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> You do, or nobody does until the morning</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Hosting and Bandwidth</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included on your own account</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Secure unlimited hosting and bandwidth on all plans</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Per-Seat Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No per-seat fee, scaled once in the business tier</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> No per-agent fee, you pay for agents with a launched website</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included, agent and website both</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> English-focused</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team Tools</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No per-agent routing or team leaderboard</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Agent rosters, agent subpages and microsites on broker plans</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Integrations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM, Google Calendar, WhatsApp, Vapi</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Follow Up Boss, Cloze, Rechat, plus Zapier for hundreds more</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Phone, email and live chat, and support is its most praised feature</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Track Record</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Smaller, newer studio</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 25,000+ businesses, 4.9/5 on Google, G2 3.5/5 from 84 reviews</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/placester-article-2.jpg" alt="Wide view of a quiet suburban residential street with neat craftsman houses, mature trees and green lawns in soft afternoon light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT WORKS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not a platform you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a subscription for a database.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations. The Voice Receptionist is $550 one-time, plus you pay Vapi directly for usage (about $30 to $50 a month), and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start with real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The website side is deliberately the opposite of Placester. You are not buying a site builder, you are buying a built site. Starter is $499 for 1 to 3 pages, Professional is $999 for a 4 to 7 page bilingual site and Premium is $1,999 for 10+ pages with a blog, all one-time, delivered in days, on your own account with the code in your hands. There is a $130 CMS add-on if you want to edit it yourself. The trade is that this is a general business website rather than an MLS connected one, so if live listing search is the point, Placester is the better product and we are not going to pretend otherwise.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>AI answers your phone and WhatsApp 24/7, EN/ES</li>
+              <li>Follow-up happens automatically, no sitting down to work it</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Notion CRM included free with the Base Agent</li>
+              <li>Website you own ($499 / $999 / $1,999), pages stay live</li>
+              <li>One-time builds, no monthly platform fee, no per-seat fee, no contract</li>
+              <li>30-day money-back guarantee on the build</li>
+              <li>Same person who built it answers your support</li>
+              <li>Works for any niche, not just real estate</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>No MLS feed, no IDX listing search, no saved-search alerts</li>
+              <li>Higher upfront cost than Placester, by design</li>
+              <li>No self-serve free trial, entry is a 15 minute audit</li>
+              <li>Lead volume is a fixed list rather than a monthly stream</li>
+              <li>No agent rosters or per-agent microsites</li>
+              <li>Smaller, newer studio than a platform serving 25,000 businesses</li>
+              <li>No live chat widget or email marketing suite built in</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · CMS add-on $130 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care and Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/placester-article-3.jpg" alt="Wide view of a bright modern coworking lounge with long shared wooden tables, tall windows, warm pendant lighting and people working at a distance" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: Placester -->
+      <div id="placester" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Placester</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Placester has been building real estate websites since 2010 and it is the rare vendor in this category that publishes a straight rate card and lets you buy without a demo. Agent Essential is $59 a month or $566 a year, Agent Plus is $79 a month or $758 a year, Agent Premier is $129 a month or $1,238 a year, and team and brokerage tiers run $199, $399 and $599 a month. Annual billing takes 20 percent off, there is no contract, there is a 14 day free trial that does not ask for a credit card, hosting and bandwidth are unlimited and included, and teams are not charged per agent, only for agents who actually launch a website. Support is the thing its customers write about most, and it shows: Placester's own reviews page quotes customers saying "Never had this kind of support from other websites" and "Changes requested were made within half an hour." It reports 4.9 out of 5 across more than 1,800 Google reviews, and it says more than 25,000 businesses use it.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The product is a genuine real estate website, not a generic builder with an IDX plugin bolted on. Listings, quick search, saved searches and alerts, area and community pages, home valuation pages, custom landing pages, open house and mortgage calculator modules, lead capture popups and forms, email marketing with lead scoring, a CRM that deepens by tier, and integrations with Follow Up Boss, Cloze, Rechat and hundreds more through Zapier. Since 2026 every plan also carries AI tools: an AI Website Builder and Editor, an AI Content Assistant, an AI ready SEO foundation and an automatically generated llms.txt file, which is a more modern setup than most of its competitors. If you want a professional real estate site with live property search, this is one of the cheapest credible ways to get one.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Now the limits, and there are three that matter. First, the AI is for the website, not for your leads. Every dollar of "built-in AI" here writes and edits pages and content; nothing in the product answers a phone call, and nothing holds a WhatsApp conversation. A lead that fills in a form at 9pm is captured, stored and emailed to you, and then sits there. Second, IDX is not included in the headline number. The Placester IDX Support Fee is $25 a month for every approved MLS contract on every plan, and your local MLS access fee is separate from that again, so the "$59 a month" website is realistically about $84 a month before setup, and a two MLS agent is closer to $109. Add a $300 Professional setup and an Agent Essential plan with one MLS, and year one is about $1,308 on monthly billing or $1,166 on annual billing. Third, you are renting the site. It lives on Placester's managed hosting, so it exists for as long as the subscription does, and Placester says plainly that the subscription cost is not refundable.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          On reputation, the honest picture is more mixed than the Google rating suggests. The Google score is very strong at 4.9 out of 5 from more than 1,800 reviews, and those reviews are overwhelmingly about fast, human support. The other platforms tell a different story: G2 rates Placester 3.5 out of 5 across 84 reviews, the lowest score in a six tool roundup published in 2026, and Trustpilot holds just two reviews in total, both old and both negative, with Trustpilot noting the company has not invited customers so its sample may not be representative. In the same 2026 roundup, a reviewer testing the platform hands-on found that "The AI website builder looped for more than 30 minutes during testing and never produced a finished draft, despite Placester's own marketing promising minutes, not days." That is one person's test rather than a pattern, but it is worth knowing that the AI builder is not always the five minute experience the marketing implies. None of this makes Placester a bad product. It makes it a website platform, bought for a website problem, and that is exactly how it should be judged.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Lowest published entry price among real estate specific builders ($59/mo)</li>
+              <li>Full rate card published, no demo required to see the price</li>
+              <li>Genuine real estate IDX website with live listing search and alerts</li>
+              <li>No contract, cancel any time, 14 day free trial with no credit card</li>
+              <li>20 percent off on annual billing, first year about $866 with one MLS</li>
+              <li>Unlimited hosting and bandwidth included, no per-agent fee for teams</li>
+              <li>Built-in AI for site building, content and an auto generated llms.txt</li>
+              <li>Integrations with Follow Up Boss, Cloze, Rechat and Zapier</li>
+              <li>Support is genuinely its strongest reviewed attribute</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Its AI is for the website, not for answering your leads</li>
+              <li>Does not answer a phone call or hold a WhatsApp conversation</li>
+              <li>IDX costs $25/month per active MLS contract on top of the plan</li>
+              <li>Your MLS access fee is charged separately again</li>
+              <li>DIY by default, setup is $300 / $500 / $1,200 and editing is $75/mo</li>
+              <li>The site is rented, so it stops when the subscription does</li>
+              <li>Subscription cost is not refundable</li>
+              <li>G2 rates it 3.5/5 from 84 reviews, and Trustpilot has only two old reviews</li>
+              <li>A 2026 hands-on test found the AI builder looped for 30+ minutes without finishing</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Agent Essential $59/month or $566/year · Agent Plus $79/month or $758/year · Agent Premier $129/month or $1,238/year · Team $199/month · Broker Standard $399/month · Broker Plus $599/month · IDX Support Fee $25/month per active MLS contract, plus your MLS access fee · Setup $300 Professional / $500 Semi-Custom / $1,200 Custom, one-time · Do It For Me from $75/month · Content Automation from $15/month · Extra website $25/month · No contract, 14 day free trial, 20% off annual (verified on placester.com pricing and services pages, November 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Placester (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Cheapest entry, one solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (Text Receptionist)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$866 on annual billing (Essential $566 + one IDX $300)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The same plan billed monthly</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">No monthly platform fee at all</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,008 (Essential $59/mo + IDX $25/mo)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A professional real estate website</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$999 one-time (Professional) or $499 Starter</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included in the plan, IDX extra at $25/mo per MLS</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Nobody has to build or edit the site for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included, we build it, CMS add-on is $130 if you want control</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">+$300 Professional setup, or $900 a year for Do It For Me at $75/mo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Live MLS listing search on the site</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, no MLS feed, no saved search alerts</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$300 a year (one MLS at $25/mo), plus the MLS access fee</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7, EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 once + ~$30-50/mo, about $910 to $1,150</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, Placester does not answer calls or WhatsApp</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI follow-up on your leads</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included with the Base Agent, no add-on</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, its AI edits the website instead</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Fresh blog content published for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Content Engine $497 once, or Content Booster $149/mo</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Content Automation from $15/mo, about $180 a year</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospects you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 Starter or $997 Pro, one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not sold, Placester supplies no leads</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk fully covered, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent $1,297 + $97/mo care)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not possible, the platform answers nothing</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A small team of five</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time (Base Agent, business tier)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team $199/mo, about $2,210 a year with one IDX connection</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Realistic all-in monthly, solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $108/mo if you take the $97 care plan, nothing else required</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $84/mo for Essential with one MLS, before setup or add-ons</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What you owe if you walk away in month four</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0, no contract, 30-day money-back on the build</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 to cancel, but the website stops and annual fees are not refundable</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, website only</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,129 once (Professional site $999 + CMS $130), then nothing</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $3,024 on monthly billing, $3,624 with a setup, then still paying</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, front desk plus website</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $4,789 (Base Agent + care for 3 years), website separate</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $3,024, and the phone still rings unanswered</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏠 You need a real estate website with live listing search, cheaply</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Placester</strong>. This is its home turf and it is a fair fight to lose. $59 a month, $25 a month per MLS for IDX, no contract, 14 day free trial with no credit card, and an AI editor to build the pages. If a professional IDX site is the whole problem, buy Placester and get on with your day.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 Leads go cold because nobody answers fast enough</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Placester's AI builds and edits its website, it does not talk to your leads. A lead that arrives at 9pm is captured and emailed to you, and then it waits. BirkyStudio's Voice Receptionist ($550 one-time plus Vapi usage) answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist ($297 one-time) holds full AI conversations while you are showing a property.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💬 Your leads message you on WhatsApp, not through a form</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Placester captures leads through website forms, popups, landing pages and live chat, and it has no WhatsApp agent. In markets where WhatsApp is how buyers actually write to agents, that is a gap. BirkyStudio's Text Receptionist ($297 one-time) lives in WhatsApp and answers in both languages, then hands you a sorted, saved conversation in the CRM.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🔑 You want to own the website and stop paying monthly</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. On Placester the site is hosted and managed by the vendor, the subscription is not refundable, and the site exists for as long as the subscription does. A BirkyStudio website is $499, $999 or $1,999 one-time, built on your own account, with the code in your hands, so the pages and whatever search traction they earn stay yours. Placester is honestly cheaper over three years if you only need a website, so this choice is about ownership rather than price.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🧑‍💻 You want to build and edit it yourself, today, without talking to anyone</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Placester</strong>. It is the lowest friction signup in the category: published prices, a free trial with no credit card, an AI builder and a codeless editor. BirkyStudio is a done-for-you service, which means a conversation, a build and a delivery, not a dashboard you log into at 11pm. If you enjoy the tinkering, Placester is the better energy match, with the caveat that one 2026 hands-on reviewer watched its AI builder loop for over 30 minutes without producing a finished draft.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You want prospects to talk to, not just a website to show them</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Placester supplies no leads and runs no ads, so a beautiful site with no traffic is still a site with no traffic. BirkyStudio's Verified Prospect List ($497 Starter or $997 Pro, one-time) is a verified, enriched, scored set of prospects you own forever with no bots and no dead numbers, and the $1,997 Lead Generation Pack adds the outreach and the receptionist that catches every reply.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          This is not a fight BirkyStudio wins on websites, and we are not going to pretend it is. <strong style="color:white;">Placester is a genuinely good, genuinely cheap real estate website platform.</strong> It publishes its prices, starts at $59 a month, has no contract, gives a 14 day free trial without a credit card, connects to your MLS, throws in AI for building and editing the site, and reports 4.9 out of 5 across more than 1,800 Google reviews. If your problem is that you do not have a professional IDX website, it solves that for less than almost anyone else, and we would tell you to buy it.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          But be clear about what it is not, because the marketing blurs this. Placester's AI is AI for the website, not AI for your leads. It does not answer a phone call, it does not hold a WhatsApp conversation, and a lead arriving at 9pm is captured and stored rather than spoken to. IDX is charged on top at $25 a month per active MLS contract, and your MLS access fee is separate again, so the real entry cost is closer to $84 a month before setup. The site is hosted and managed by the platform, the subscription is not refundable, and the pages exist only as long as the payments do. The ratings split too: excellent on Google, 3.5 out of 5 on G2 across 84 reviews, and only two old reviews on Trustpilot. <strong style="color:white;">BirkyStudio is a different purchase.</strong> You are not renting a website builder, you are buying the front desk. The AI answers your phone and WhatsApp 24/7 in two languages, follows up automatically, and hands you verified prospects you own, on a website whose code is yours and whose pages stay live whether or not we ever speak again.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: Placester is the cheapest way to own a real estate website, and BirkyStudio is the cheapest way to stop losing leads who call when you are busy. If you only have one budget, buy the one that matches the problem you actually have. If you have both problems, they stack neatly, Placester for the IDX site and BirkyStudio for the conversation that happens when the lead calls.<br><br>
+          <strong style="color:white;">Choose Placester if:</strong> you want a real estate specific IDX website from $59 a month, you are happy to build and edit it yourself, and your leads are already reaching you fast enough.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want the phone and the WhatsApp answered 24/7 in two languages, automatic follow-up, verified prospects you own and a website that stays yours, without a monthly platform fee.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://placester.com/pricing" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore Placester →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does Placester cost?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Placester publishes its prices, and they are the lowest entry point among real estate specific website builders. Agent plans are Agent Essential at $59 a month or $566 billed annually, Agent Plus at $79 a month or $758 annually, and Agent Premier at $129 a month or $1,238 annually. Team and brokerage plans are Team at $199 a month, Broker Standard at $399 a month and Broker Plus at $599 a month. IDX is charged separately at $25 a month per active MLS contract on every plan, and your local MLS access fee is separate again. Setup services are $300 for Professional, $500 for Semi-Custom or $1,200 for Custom, each one-time, with additional creative hours at $40 to $50 each. Add-ons include an extra website at $25 a month, Content Automation from $15 a month and the Do It For Me editing service from $75 a month. A solo agent on Agent Essential with one IDX connection pays about $866 in year one on annual billing, or $1,008 on monthly billing.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Placester answer my phone or reply on WhatsApp?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Placester is a website and IDX platform. It builds you a real estate site, connects it to your MLS so buyers can search listings, and captures leads through forms, popups, landing pages, home valuation pages and live chat. It does not pick up an inbound phone call and it does not hold a WhatsApp conversation. When a lead comes in at 9pm, Placester stores it and can email you about it, and then the lead waits until you are free. BirkyStudio's Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is Placester's AI a receptionist or a website builder?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            It is a website builder. Every Placester plan now includes AI Website Builder and Editor, an AI Content Assistant, an AI ready SEO foundation and an automatically generated llms.txt file. That AI writes and edits the site, generates marketing content, landing pages and area guides, and gets the pages ready for Google and AI search. It is a genuinely useful set of tools for building a site fast, and it is not a voice agent. Placester's AI does not talk to your leads, does not answer a call and does not hold a conversation. BirkyStudio's AI is the opposite: The Base Agent is $1,297 solo with the Notion CRM included and answers and follows up with every enquiry automatically, and the AI Receptionist covers the phone and WhatsApp.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Do I own my website if I build it on Placester?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            You own your domain and your content, and you do not own the platform the site runs on. Placester includes secure unlimited hosting and bandwidth on all plans, so the site lives inside a rented, managed environment rather than on infrastructure you hold. Placester is explicit that you can cancel at any time, that a monthly plan ends on your last billing day and that an annual plan runs until the paid portion is used up, and that the subscription cost is not refundable. So the practical answer is that the pages, the templates and the search experience belong to the platform, and the site stops when the subscription does. BirkyStudio builds the website on your own account for $499 for a 1 to 3 page Starter site, $999 for a Professional 4 to 7 page bilingual site or $1,999 for a Premium 10+ page site with a blog, and you own the code.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Placester include IDX, and is it extra?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Placester is built around IDX and it is charged on top of the plan, not included. The Placester IDX Support Fee is $25 a month for every approved MLS contract on every plan, and your local MLS access fee is separate from that again, so a two MLS agent pays $50 a month before the plan fee is counted. Agent Essential covers a single MLS integration and Agent Plus and above cover unlimited MLS integrations, both at the same $25 a month per IDX. That brings the real monthly cost of an IDX website to about $84 to $154 depending on tier, or $866 in year one on Agent Essential with one MLS connection. BirkyStudio does not include an MLS feed or IDX property search at all, and we say so plainly instead of pretending it does.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is BirkyStudio cheaper than Placester?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No, and this is the part where Placester wins. If all you need is a real estate IDX website and you are willing to build and edit it yourself, Placester is cheaper: Agent Essential with one IDX connection is about $866 in year one on annual billing, and about $3,024 over three years on monthly billing. BirkyStudio charges more because it does more. The Base Agent is $1,297 one-time with the Notion CRM included, and with optional care at $97 a month that is about $2,461 in year one and about $4,789 over three years. The difference buys two things Placester does not sell: something that answers your phone and WhatsApp 24/7 in two languages, and a verified, enriched, scored prospect list you own ($497 Starter or $997 Pro, one-time). If you do not need those, buy Placester and keep the difference.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Placester have a contract or a free trial?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Placester is unusually clean on both counts, and it is genuinely better than most of its competitors here. There are no contracts, you can cancel any time, and there is a 14 day free trial that does not require a credit card, with the pricing page also noting up to 21 days of trial access. Annual billing takes 20 percent off and a monthly plan simply ends on your last billing day, while an annual plan continues until the paid portion runs out. The one catch is that the subscription cost is not refundable. BirkyStudio is also contract free: there is no minimum term, no per-seat fee, no cancellation fee, and there is a 30 day money back guarantee on the build itself.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> Placester's plans, rates and policies were taken from placester.com/pricing in November 2026, where Agent Essential ($59/month or $566 annually), Agent Plus ($79/month or $758 annually), Agent Premier ($129/month or $1,238 annually), Team ($199/month), Broker Standard ($399/month) and Broker Plus ($599/month) are all published, where the IDX Support Fee is stated as $25/month per active MLS contract regardless of subscription, where the FAQ confirms no contracts, cancellable subscriptions, non-refundable fees, a 14 day trial without a credit card, unlimited hosting and bandwidth, and no per-agent seat fee for teams, and where Do It For Me is listed from $75/month and Content Automation from $15/month. Setup prices ($300 Professional, $500 Semi-Custom, $1,200 Custom, one-time) come from Placester's website setups page and its marketplace, and note that some older Placester pages still list an Express Setup at $100 and a Custom Setup at $700, so the newer rate card is the one used here. Placester's own first-year figure of $866 for Agent Essential with one IDX connection on annual billing matches our calculation. Customer quotes come from Placester's public reviews page, and its rating of 4.9/5 from 1,800+ Google reviews and claim of 25,000+ businesses are Placester's own published figures. Independent comparison data used: a 2026 real estate website builders roundup which rates Placester 3.5/5 on G2 across 84 reviews and records a hands-on test in which the AI website builder looped for over 30 minutes without producing a finished draft, a 2026 broker guide to real estate website costs which puts Placester Agent Essential first year at $1,108 with Express Setup or $1,708 with Custom Setup, and Trustpilot, where Placester holds only two reviews, both negative and both several years old. BirkyStudio pricing from birkystudio.com as of November 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297), the Voice Receptionist ($550 + Vapi ~$30-50/month), the Verified Prospect List ($497/$997), the Lead Generation Pack ($1,997), the Custom Assessment ($349/$999), websites ($499/$999/$1,999), the CMS add-on ($130), the Content Engine ($497), Content Booster ($149/month) and optional care at $97/month or $197/month. Prices and features change; check both vendors' own pages before you buy.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
