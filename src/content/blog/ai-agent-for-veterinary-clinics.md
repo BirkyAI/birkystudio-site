@@ -63,7 +63,7 @@ This runs on your own systems, in your clinic's name, and it is set up around yo
 - Flags anything clinical immediately and hands it to a person rather than guessing
 - Routes an after-hours emergency to your stated instructions, whether that is your on-call line or the nearest 24-hour hospital
 
-The message side is the part most clinics start with, because that is where the enquiries actually arrive. Our [Text Receptionist](/products/text-receptionist/) covers text and WhatsApp for $297 one-time, and the voice side is [here](/products/voice-receptionist/) if you want the phone answered too.
+The message side is the part most clinics start with, because that is where the inquiries actually arrive. Our [Text Receptionist](/products/text-receptionist/) covers text and WhatsApp for $297 one-time, and the voice side is [here](/products/voice-receptionist/) if you want the phone answered too.
 
 ## What it will not do
 
@@ -85,4 +85,4 @@ Start with the free [Quick Log template](https://birkystudio.com/quick-log-templ
 
 Then hear it for yourself. Call the live demo at [birkystudio.com/voice-demo/](https://birkystudio.com/voice-demo/) and ask it the price of a dental, or message the WhatsApp agent at [wa.me/50234775110](https://wa.me/50234775110) and watch how it handles a question it has never seen. If the after-hours phone is your biggest leak, the [Voice Receptionist](/products/voice-receptionist/) is the piece that fixes it first.
 
-Want to see what this looks like for your practice? [Get in touch](/contact/) and we will map your enquiry flow before we quote anything.
+Want to see what this looks like for your practice? [Get in touch](/contact/) and we will map your inquiry flow before we quote anything.

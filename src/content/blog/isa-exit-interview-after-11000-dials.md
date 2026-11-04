@@ -20,7 +20,7 @@ I have this conversation constantly, so this time I wrote it as an interview. Th
 
 Because the offer was built so that saying no felt stupid.
 
-There was a guarantee. A set number of dials every month. A dedicated caller, not a call centre pool. A script written for my market. And a six month term, which is the part I now understand properly. Not one line of that contract promised a conversation with a human being who wanted to sell a house. It promised activity, and activity is the easiest thing in the world to manufacture.
+There was a guarantee. A set number of dials every month. A dedicated caller, not a call center pool. A script written for my market. And a six month term, which is the part I now understand properly. Not one line of that contract promised a conversation with a human being who wanted to sell a house. It promised activity, and activity is the easiest thing in the world to manufacture.
 
 An agent on Reddit put his own six month version in a thread: 11,216 dials, 54 connections, a 0.48% connection rate, one lead, no deals. Read the middle two numbers again. That is one connection per two hundred attempts.
 
@@ -56,7 +56,7 @@ I did not lose that lead because the caller was bad. I lost it because everythin
 
 ## When did you stop blaming the caller?
 
-Around month four, when I realised the caller was not the problem.
+Around month four, when I realized the caller was not the problem.
 
 The calls were reaching people. Slowly, expensively, with a lot of wasted dials in between, but they were reaching them. What was not happening was any kind of record. Nothing connected a Monday phone call to a Thursday follow up. Nothing remembered that Mark had mentioned a rental he also owned. Nothing showed me that the same three streets were being called by three different services because the list had been sold more than once.
 

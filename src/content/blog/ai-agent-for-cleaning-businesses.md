@@ -16,15 +16,15 @@ That is the whole business. Cleaning companies almost never lose work because th
 
 ## The line that sounds like your Tuesday
 
-In a thread about why agents keep losing enquiries, one commenter summed up the whole problem:
+In a thread about why agents keep losing inquiries, one commenter summed up the whole problem:
 
 > *"First responder wins, but agents can't be at their desk 24/7."*
 
 Swap "desk" for "the job" and it is your week. You are not at a desk. You are on your knees in a shower, on a ladder cleaning a gutter, or driving between two jobs. The phone rings while your hands are wet, which is precisely when it rings most, because that is when homeowners are free to call.
 
-## One week of enquiries, written down
+## One week of inquiries, written down
 
-Here is what a real week looks like when somebody finally writes it down. Five enquiries, one week, one cleaning company:
+Here is what a real week looks like when somebody finally writes it down. Five inquiries, one week, one cleaning company:
 
 ```
 Thu 7:12pm   Deep clean before guests, Saturday deadline    voicemail              booked a competitor
@@ -38,7 +38,7 @@ One in five. And the four that got away were not lost on price, because price wa
 
 ## Why nobody counts this
 
-Not because anyone is careless. Because you are three people in one body: the person cleaning, the person quoting, and the person doing the books. The quote falls to the end of the day, the end of the day belongs to the crew and the invoices, and the 7:12pm enquiry sits in a voicemail nobody listens to until Thursday.
+Not because anyone is careless. Because you are three people in one body: the person cleaning, the person quoting, and the person doing the books. The quote falls to the end of the day, the end of the day belongs to the crew and the invoices, and the 7:12pm inquiry sits in a voicemail nobody listens to until Thursday.
 
 Nobody decided to let it go three days. It happens because the step with no deadline is the step that quietly does not happen.
 
@@ -64,7 +64,7 @@ Two rules we will not bend on. It asks every client, not only the happy ones, be
 
 - It will not clean anything, obviously, and it will not pretend to be your best cleaner on the phone.
 - It will not price a job it has not seen. It gives a range and books the walkthrough.
-- It cannot chase enquiries that arrive on a channel you have not connected, so we wire up every channel you actually use rather than the ones that look good on a list.
+- It cannot chase inquiries that arrive on a channel you have not connected, so we wire up every channel you actually use rather than the ones that look good on a list.
 - It will not write down a schedule you have not authorised, so if the crew is full on Saturday, it says so.
 - It will not promise you a capture rate. Anyone who gives you a single percentage for every cleaning business made it up.
 
@@ -74,6 +74,6 @@ The Base Agent is $1,297 one-time, which includes 30 days of support and the Not
 
 ## Start with one thing
 
-If the list above looks like your week, the honest first step is the free one. Grab the [Quick Log template](https://birkystudio.com/quick-log-template/) and write down a week of enquiries by hand. You will see the four that got away, and you will see exactly which channel they came in on.
+If the list above looks like your week, the honest first step is the free one. Grab the [Quick Log template](https://birkystudio.com/quick-log-template/) and write down a week of inquiries by hand. You will see the four that got away, and you will see exactly which channel they came in on.
 
 Then hear it for yourself without a sales call. Call the [voice agent demo](https://birkystudio.com/voice-demo/) and try to trip it up, or message the [WhatsApp agent](https://wa.me/50234775110) at 9pm and watch it answer. If you want customers coming back rather than just arriving, the [Outreach Engine](/products/outreach-engine/) is what handles the follow-up work. And when you are ready to talk, [get in touch](/contact/).

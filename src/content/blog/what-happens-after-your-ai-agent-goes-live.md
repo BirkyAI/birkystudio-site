@@ -34,7 +34,7 @@ Here is what actually drifts, and what it looks like when nobody is watching.
 | The world changes | The same question keeps arriving in a shape you never prepared for | The agent sounds vague right when someone is deciding | New questions get folded into the answers, and the old ones get retired |
 | A channel changes | A message stops arriving, or starts landing in spam | Leads that quietly never exist, which is the worst kind of lead loss | Someone is watching delivery, not just replies |
 | Two rules start to disagree | A reply that is technically correct and completely wrong for the situation | Trust, usually one customer at a time | Rules get re-read against each other, and the disagreement gets decided |
-| Volume grows | The answers that felt warm at twenty enquiries a month feel thin at two hundred | You start sounding like everyone else exactly when you have the most to lose | The wording gets tightened as the volume climbs |
+| Volume grows | The answers that felt warm at twenty inquiries a month feel thin at two hundred | You start sounding like everyone else exactly when you have the most to lose | The wording gets tightened as the volume climbs |
 | The transcript pile | Nobody has read a real conversation in a month | You stop learning from the thing that talks to your customers all day | A monthly report and a skim of what people actually asked |
 
 Read the middle column again. Not one of those is a dramatic failure. Every one of them is a slow one. That is the trouble with a system that removes a step: it removes it so quietly that you stop noticing the thing it is doing, and the day you notice again is the day it stopped. It is the same reason the [boring tools are the ones that survive](/blog/the-ai-you-forget-youre-using/).
@@ -81,6 +81,6 @@ It just does not happen by itself. Somebody has to answer the six questions abou
 
 Want to see the difference rather than hear about it? Start free. Download our Quick Log template, a one-page way to see how much of your week is admin you did not choose: [grab the Quick Log template](https://birkystudio.com/quick-log-template/). It is free and it takes about a minute.
 
-Then, if you want to see what a system that does this looks like in practice, [call our AI agent Elliot](https://birkystudio.com/voice-demo/). No form, no login, it picks up and it works. Or [message our WhatsApp agent](https://wa.me/50234775110) and try to trip it up, which is honestly my favourite way to show people how far this has come.
+Then, if you want to see what a system that does this looks like in practice, [call our AI agent Elliot](https://birkystudio.com/voice-demo/). No form, no login, it picks up and it works. Or [message our WhatsApp agent](https://wa.me/50234775110) and try to trip it up, which is honestly my favorite way to show people how far this has come.
 
 If you would rather talk it through, [tell us the one thing that eats your week](https://birkystudio.com/contact/) and we will tell you plainly whether an AI agent fixes it or not.

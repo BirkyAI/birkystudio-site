@@ -54,7 +54,7 @@ Not a new dashboard. A short, boring loop that runs whether or not you remember 
 3. Compare it to what you had yesterday and surface only what **changed**.
 4. When two sources disagree, flag the conflict and keep the link back to each original, do not silently pick a winner.
 
-Step three is the one everybody skips, and it is the only step that saves you a trip. A list you have to re-read from scratch every morning is not verification, it is homework. What you want is the difference: this one moved, that one was cancelled, this one is new since yesterday.
+Step three is the one everybody skips, and it is the only step that saves you a trip. A list you have to re-read from scratch every morning is not verification, it is homework. What you want is the difference: this one moved, that one was canceled, this one is new since yesterday.
 
 Step four is where most tools quietly do damage. Fuzzy matching a conflict away feels clean and produces a record that is confidently wrong, which is a worse outcome than a duplicate. I would rather see a flag than a guess.
 

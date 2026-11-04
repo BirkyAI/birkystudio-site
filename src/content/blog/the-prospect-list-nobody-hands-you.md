@@ -22,7 +22,7 @@ A lead is an event. Someone filled in a form at 11pm because a photo looked nice
 
 A prospect is a record. A person, the facts that make them a candidate right now, the reason they are on your list at all, and a way to reach them that was still true the last time somebody checked.
 
-Per-lead programs sell you events. In most of them the same enquiry is also offered to whoever else bought the programme that month, so you are paying to race people you have never met to a phone number that is already lukewarm. Nobody is being dishonest about that, it is simply the model: an introduction is rented and then rented again.
+Per-lead programs sell you events. In most of them the same inquiry is also offered to whoever else bought the program that month, so you are paying to race people you have never met to a phone number that is already lukewarm. Nobody is being dishonest about that, it is simply the model: an introduction is rented and then rented again.
 
 Which means the honest question is not "how many leads a month". It is "what do I have on my desk in March".
 
@@ -59,7 +59,7 @@ If a vendor is happy to put your business name on automated cold calls and promi
 
 ## You own the file, you do not rent the introductions
 
-Here is the difference in one line. The month you stop paying a per-lead programme, you are holding nothing, and the leads you were promised stop arriving. There is no month to stop paying here, because there is no subscription: the [Lead Generation Pack](https://birkystudio.com/products/lead-generation-pack/) is **$1,997 one-time**, and the file is a file you keep forever.
+Here is the difference in one line. The month you stop paying a per-lead program, you are holding nothing, and the leads you were promised stop arriving. There is no month to stop paying here, because there is no subscription: the [Lead Generation Pack](https://birkystudio.com/products/lead-generation-pack/) is **$1,997 one-time**, and the file is a file you keep forever.
 
 What is in it:
 
@@ -88,7 +88,7 @@ That is why a list on its own is not the product. The pack includes a receptioni
 
 ## Do the arithmetic with your own numbers
 
-A lead programme of the kind most agents end up on runs several hundred to well over a thousand dollars every month, for as long as you keep it, and it leaves you with no file at the end. $1,997 once, with a list you can export and keep, is a different shape of purchase: it is an asset rather than a meter.
+A lead program of the kind most agents end up on runs several hundred to well over a thousand dollars every month, for as long as you keep it, and it leaves you with no file at the end. $1,997 once, with a list you can export and keep, is a different shape of purchase: it is an asset rather than a meter.
 
 The Base Agent is **$1,297 one-time**, and that includes the Notion CRM and 30 days of support. The Text Receptionist is **$297**, the Voice Receptionist is **$550**, and Care & Maintenance is **$97/mo** if you would rather we keep it running and keep the records clean.
 

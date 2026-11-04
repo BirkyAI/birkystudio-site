@@ -53,7 +53,7 @@ The same shape shows up on the front end of the firm.
 
 Someone calls in February wanting to move their books away from a firm they are unhappy with. They get a good call. They say they will send their last two returns. Then March arrives, nobody calls back, and the person who was ready to pay you becomes a note in a spreadsheet.
 
-The drop-off was never the enquiry. It was the gap between someone showing interest and someone actually being booked in. I wrote a whole post about that gap after watching it kill deals in real estate, and it is the same gap here: see [what a missed follow-up actually costs](/blog/cost-of-missed-follow-up/).
+The drop-off was never the inquiry. It was the gap between someone showing interest and someone actually being booked in. I wrote a whole post about that gap after watching it kill deals in real estate, and it is the same gap here: see [what a missed follow-up actually costs](/blog/cost-of-missed-follow-up/).
 
 ## What the Agent Actually Does
 
@@ -71,7 +71,7 @@ If you want the detail of what the first month looks like, I walked through it w
 
 ## What We Will Not Pretend
 
-I am not going to tell you an AI agent prepares returns, gives tax advice, or replaces your review. It does not sign anything, it does not make a judgment call on a grey accounting question, and it will never pretend to be you.
+I am not going to tell you an AI agent prepares returns, gives tax advice, or replaces your review. It does not sign anything, it does not make a judgment call on a gray accounting question, and it will never pretend to be you.
 
 It also cannot chase a client who only communicates through a channel it does not touch, or produce a document nobody ever sent. What it does is make sure the ask happens, on time, every time, and that every answer lands in a file you can find later. The judgment stays with you. The chasing does not have to.
 

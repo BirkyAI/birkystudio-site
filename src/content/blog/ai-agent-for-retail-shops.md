@@ -25,8 +25,8 @@ Swap the nouns and it is your shop. Someone showed interest. Nobody answered the
 | Phase | What walks in the door | What usually happens | What it costs |
 |:--|:--|:--|:--|
 | Mid October | Early gift research, first "do you have this" calls | The phone rings while someone restocks the rail | One unanswered call, one lost customer list |
-| Late October | Sizing and colour questions, hold requests | DMs sit unread until after closing | The item sells to somebody else |
-| Early November | Bulk and corporate gift enquiries | One person on the floor, three channels live | The big order goes to whoever replies first |
+| Late October | Sizing and color questions, hold requests | DMs sit unread until after closing | The item sells to somebody else |
+| Early November | Bulk and corporate gift inquiries | One person on the floor, three channels live | The big order goes to whoever replies first |
 | Black Friday week | Peak volume, holiday hours | Every available hand is with a customer | The phone becomes a wall of voicemail |
 | December | Shipping panic, "is it in stock" | The same four questions, forty times a day | Staff answer and serve nobody |
 | Late December | Exchanges, "in another size", gift receipts | Nothing gets written down | Patterns never surface for next year |

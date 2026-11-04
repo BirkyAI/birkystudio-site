@@ -45,7 +45,7 @@ And here's the thing: customers prefer a fast, helpful response over no response
 
 Here's what we set up for our clients:
 
-- **Lead capture**, every enquiry from your website and WhatsApp, qualified and saved
+- **Lead capture**, every inquiry from your website and WhatsApp, qualified and saved
 - **Instant answers**, a reply the moment someone writes, in English and Spanish
 - **Follow-up**, it chases the lead when they go quiet, so nothing goes cold
 - **A CRM that fills itself**, contacts, history and deals in Notion

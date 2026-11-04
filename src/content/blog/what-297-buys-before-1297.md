@@ -58,7 +58,7 @@ You learn your own traffic first. You find out how many people actually call, wh
 
 And the upgrade is additive, not a restart. When you move up the ladder, the thing you already own keeps working. Nothing gets ripped out and rebuilt. That is the opposite of how most software switches feel, and it is deliberate.
 
-If you want to see how a first month actually runs, week by week, I wrote that out separately in [the 30-day build](/blog/first-30-days-ai-agent-setup/). And if you want the maths behind the top rung, it is spelled out in [what $1,297 buys](/blog/what-1297-buys-ai-agent-setup/).
+If you want to see how a first month actually runs, week by week, I wrote that out separately in [the 30-day build](/blog/first-30-days-ai-agent-setup/). And if you want the math behind the top rung, it is spelled out in [what $1,297 buys](/blog/what-1297-buys-ai-agent-setup/).
 
 ## What comes next, if you want it
 

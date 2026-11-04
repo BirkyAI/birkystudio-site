@@ -51,7 +51,7 @@ A Birky Studio AI agent takes over the part that keeps falling through:
 - It handles the routine questions a front desk repeats all day: hours, location, directions, insurance accepted, whether you are taking new patients, how to prepare for a visit.
 - It books the appointment and sends a confirmation and a reminder, so fewer people simply do not show up.
 - It keeps one running record per patient. Every call, every question, what was answered, what needs a callback.
-- It follows up with people who enquired and went quiet, on day one, day three, and day seven. A patient who did not book this week is not always a no. Sometimes it is a "not yet."
+- It follows up with people who inquired and went quiet, on day one, day three, and day seven. A patient who did not book this week is not always a no. Sometimes it is a "not yet."
 - It flags anything clinical for a human. It routes, it does not decide.
 
 None of that replaces your staff. It protects the ninety seconds at the front desk that keeps costing you patients.

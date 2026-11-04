@@ -1,6 +1,6 @@
 ---
 title: "The Note You Didn't Write Is Costing Deals"
-description: "Lender calls with a rate change, the inspector calls with a finding, title calls with a new date, and none of it gets logged. Here's how agents stop losing the thread."
+description: "The lender calls with a rate change, the inspector with a finding, title with a new date, and none of it gets logged. How agents stop losing the thread."
 date: 2026-09-10
 image: "/images/blog/ai-generated/phone-note-chaos-transaction-calls.jpg"
 tags: ["Birky Studio", "AI Agents", "Voice Receptionist", "Real Estate"]
@@ -55,7 +55,7 @@ Birky Studio's voice and agent tiers are built to make sure that thread never dr
 
 - **AI Text Receptionist, $297 one-time.** WhatsApp and text coverage, instant response, lead capture.
 - **AI Voice Receptionist, $550 one-time.** Elliot (or a voice trained on your business) answers live calls, handles questions, books showings, and logs everything.
-- **Base Agent, $1,297 one-time.** The full system: every enquiry captured, qualified, saved to your CRM, answered instantly, and followed up on its own, the whole workflow, not just the front door.
+- **Base Agent, $1,297 one-time.** The full system: every inquiry captured, qualified, saved to your CRM, answered instantly, and followed up on its own, the whole workflow, not just the front door.
 
 One saved transaction covers years of the voice tier. One saved *reputation*, a client who trusts you because you remembered what they told you last week, is worth more than that.
 
