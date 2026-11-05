@@ -157,7 +157,10 @@ main > div > section {
 /* Luna, 29 Sep 2026: hero CTA toned down to a soft light ground + pink lettering. */
 .hero-btn-white {
   background: var(--bs-btn-light);
-  color: var(--bs-accent);
+  /* FreeScan 2026-11-04: #ff2d95 (var(--bs-accent)) on soft-white #e6e3ee = 2.71:1,
+     below WCAG 4.5:1 for normal text. #BF2270 measures 4.51:1 on the same ground.
+     Note: token left untouched; only this hero CTA lettering darkened. */
+  color: #bf2270;
   border: none;
   font-weight: 700;
   padding: 16px 30px;

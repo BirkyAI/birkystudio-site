@@ -7,14 +7,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const websiteLD = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://birkystudio.com/#website",
   "name": "Birky Studio",
   "alternateName": "Birky",
-  "url": "https://birkystudio.com/"
+  "url": "https://birkystudio.com/",
+  "publisher": { "@id": "https://birkystudio.com/#organization" }
 });
 
 const organizationLD = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://birkystudio.com/#organization",
   "name": "Birky Studio",
   "url": "https://birkystudio.com",
   "logo": "https://birkystudio.com/images/birky-logo.jpg",

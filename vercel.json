@@ -20,5 +20,24 @@
       "destination": "https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1",
       "permanent": false
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://script.google.com https://vapi.ai; frame-src 'self' https://vapi.ai; frame-ancestors 'self'; base-uri 'self'"
+        }
+      ]
+    }
   ]
 }
