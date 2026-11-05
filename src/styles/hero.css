@@ -97,7 +97,6 @@ main > div > section {
   margin-bottom: 22px;
 }
 .hero-h1 em { font-style: normal; color: var(--bs-accent); }
-.hero-h1-sub { display: block; margin-top: 14px; font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--bs-text-muted); }
 
 /* ---------- section headings: hero-headline treatment ----------
    Luna, 29 Sep 2026: the H2 titles on the homepages now use the same
