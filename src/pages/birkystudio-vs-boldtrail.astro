@@ -1,0 +1,653 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs BoldTrail (kvCORE), a Platform You Rent vs a Front Desk That Answers",
+  "description": "Honest head-to-head comparison of BirkyStudio vs BoldTrail, formerly kvCORE, for real estate agents. BoldTrail publishes no prices, routes every visitor to a demo form and sells on annual contracts, with agent-reported costs around $499 per month plus a reported setup fee near $999 and ad spend billed separately. BirkyStudio answers your phone and WhatsApp 24/7 in English and Spanish, follows up automatically, and sells once instead of monthly. Real pricing, real reviews, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://birkystudio.com/images/birky-logo.jpg"
+    }
+  },
+  "datePublished": "2026-11-10",
+  "dateModified": "2026-11-10"
+});
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does BoldTrail (kvCORE) cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BoldTrail publishes no prices at all. The pricing link on boldtrail.com opens a demo request form rather than a rate card, and directory listings describe it as a custom quote with pricing available upon request. Third party 2026 reviews report solo agent packages around $499 a month, setup fees somewhere near $999 one time, and ad spend billed separately, while team and brokerage quotes are reported anywhere from $1,200 to $2,500 a month. None of those figures is confirmed by the vendor, so treat them as rough and get a quote. What is published in BoldTrail's own terms is the shape of the bill: an implementation fee billed on the signing date, monthly communication and AI token fees, and MLS fees billed as incurred, with no amounts shown. Reviewers putting real numbers on the page include one paying $427.50 to $475 a month, one paying $1,600 a month plus add-ons, and one paying $1,500 a month for the managed advertising service. Many agents pay nothing directly because their brokerage covers it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BoldTrail answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. BoldTrail is an all-in-one real estate platform, not a receptionist. It bundles an IDX website, a smart CRM, lead generation, behavioural marketing automation, transaction management, back office and recruiting, and inside that stack it includes AI lead scoring, HomeSearch AI for natural language property search, and Smart Campaigns that fire on behaviour. None of it picks up a phone call and none of it holds a WhatsApp conversation. A lead that calls at 9pm reaches your voicemail. BirkyStudio answers instead: the Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is BoldTrail the same as kvCORE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Inside Real Estate rebranded its platform from kvCORE to BoldTrail in June 2024, and BoldTrail now covers the former kvCORE, BoomTown and Brokermint products. So a page or a video about kvCORE pricing, kvCORE alternatives or kvCORE login is describing the same platform, and most agents still search for it under the old name. One practical consequence is that older reviews, older comparison content and older videos all still describe BoldTrail, so a lot of what you will read about kvCORE online is really about this current product."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I keep my BoldTrail database if I leave my brokerage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually not, and this is the part worth checking before you sign anything. When a brokerage pays for BoldTrail, the account belongs to the brokerage, and when you change firms your login typically stops working. What you can take with you depends on your independent contractor agreement and on whether you exported your contacts beforehand. The inquiries the brokerage paid to generate may reasonably belong to the brokerage, while your own past clients are a different matter, which is why agents who care about their sphere keep it somewhere they control. BirkyStudio's Notion CRM sits in your own workspace and the verified prospect list is a file you own, so nothing we build leaves with us if you stop working with us."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BoldTrail have a contract or a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no free trial and no free plan, and the demo is a sales conversation rather than a sandbox. Annual contracts are reported as the default, with month to month rarely offered, and several reviewers describe being told they remained responsible for the rest of the term after asking to cancel. One G2 reviewer put it as holding me hostage in a contract, and another wrote that when they tried to cancel several times they were told they were stuck in a contract. BirkyStudio is contract free: no minimum term, no per-seat fee, no cancellation fee, and a 30 day money back guarantee on the build itself. Placester, Wise Agent and RealtyJuggler are all cleaner than BoldTrail on this one point as well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is BirkyStudio a cheaper alternative to BoldTrail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are different purchases, so the honest answer is yes for the front desk and no for the platform. If what you need is an IDX website, a team lead routing engine, back office commissions and a recruiting module, BoldTrail does things BirkyStudio does not do at any price, and if your brokerage gives it to you at no direct cost then the value question is over. If what you need is somebody to answer the phone and the WhatsApp at 9pm in two languages, BirkyStudio is dramatically cheaper: The Base Agent is $1,297 one-time with the Notion CRM included, and with optional care at $97 a month that is about $2,461 in year one and about $4,789 over three years, against about $5,988 in year one and about $17,964 over three years at the reported BoldTrail rate of $499 a month, before the reported setup fee and add-ons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does BoldTrail include IDX and lead generation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It includes both, and this is where BoldTrail is genuinely strong. IDX consumer websites are included in the base subscription with no separate IDX fee, which is better than most of its competitors who charge for IDX on top. Lead generation is available as an option rather than being mandatory, drawing from Google, Facebook and portal capture, and managed advertising packages are also sold. The catch is that lead generation is where the money and the complaints both live. Third party and reviewer reported ad spend runs separately from the platform fee, one reviewer paid $1,500 a month for managed advertising, and the most repeated criticism across Capterra, G2 and Software Advice is that the leads do not match the service area or the volume promised. BirkyStudio does not sell portal leads at all; its Verified Prospect List is a one-time file of verified, enriched, scored prospects you own."
+      }
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs BoldTrail kvCORE (2026)"
+  description="Honest 2026 comparison: BoldTrail (kvCORE) hides its prices behind a demo form and sells annual contracts. BirkyStudio answers your phone and WhatsApp 24/7."
+  image="/images/comparison/boldtrail.jpg"
+  >
+    <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated November 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs BoldTrail (kvCORE)<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">A Platform You Rent vs a Front Desk That Answers</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        BoldTrail, which used to be called kvCORE, is one of the biggest real estate platforms in the business. It bundles an IDX website, a smart CRM, lead generation, behavioural automation, transaction management, back office and recruiting, it includes IDX with no separate fee, and a large number of agents get it free through their brokerage. It is also sold on a quote only basis, with no published prices, no free trial and annual contracts as the default, and nothing in it answers a phone call or a WhatsApp message. BirkyStudio is a one-time build that answers your phone and WhatsApp 24/7 in English and Spanish, follows up automatically, and hands you prospects you own. Here is the honest breakdown, including the parts where BoldTrail is clearly the right buy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose BirkyStudio if:</strong> Nobody answers your phone and your leads go cold. You want something that replies in seconds at 9pm, on a Sunday and in Spanish, you want to see the price before you speak to a salesperson, and you would rather pay once than pay $499 a month forever. You get an AI agent that answers and follows up automatically, an AI receptionist on voice and WhatsApp, verified prospects you keep, and a website whose code is yours.<br><br>
+          <strong style="color:white;">Choose BoldTrail if:</strong> You run a team or a brokerage and you need one system for the front office and the back office, with IDX websites included, behavioural Smart Campaigns, lead routing, performance dashboards, commissions and recruiting. Especially if your brokerage already pays for it, in which case the value question is settled and you should just use it.<br><br>
+          <strong style="color:white;">The honest difference:</strong> BoldTrail is a platform your business runs on. BirkyStudio is an operator that answers your leads. BoldTrail has the broader machine and the deeper real estate plumbing, at a price you cannot see until you get on a call. BirkyStudio is narrower, much cheaper over time, and it does the one thing a CRM structurally will not do: pick up.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/boldtrail-article-1.jpg" alt="Wide view of the front desk and lobby of a modern real estate office with a wooden reception counter, armchairs, tall windows and warm natural light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and BoldTrail?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        These two get compared because agents keep asking the same question: do I need a big paid platform, or do I need somebody to answer the phone? BoldTrail is the platform. Inside Real Estate rebranded kvCORE to BoldTrail in June 2024, and the suite now covers the former kvCORE, BoomTown and Brokermint products in one system, so a single login can hold your IDX websites, your CRM, your lead generation, your marketing automation, your transaction management, your back office and your recruiting. It includes IDX consumer websites in the base subscription with no separate IDX fee, it runs Smart Campaigns that trigger on buyer behaviour, and it offers AI lead scoring and natural language property search. For a team or a brokerage generating a lot of online inquiries, that is a serious machine.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes the other route. Instead of handing you a platform to operate, we build an operator that works. The Base Agent reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically in English and Spanish. Add the AI Receptionist and the phone is answered around the clock. Add a Verified Prospect List and you start with real, enriched, scored prospects you own, no bots and no dead numbers.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        The real difference is not who has the better platform. BoldTrail has the better platform, and it is the only one of the two that can run a brokerage. The difference is what happens in the ninety seconds after a lead arrives, what you can see about the price before you commit, and whether the thing you paid for is still yours when you stop paying. That is what this page breaks down, honestly, including the parts where BoldTrail wins.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs BoldTrail, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BoldTrail (kvCORE)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 15-minute audit, projects from $297 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> No public pricing, quote only via a demo form</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">An all-in-one real estate platform you operate</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Price Visible Before a Sales Call</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, every price is published on our site</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No, the pricing link opens a demo request form</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time builds you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Monthly subscription, annual contracts standard</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no minimum term</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Annual is the default, month to month rarely offered</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free 15-minute audit, 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No free trial, no free plan, demo only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Reported Solo Agent Cost</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $1,297 one-time for The Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Agent-reported around $499/mo, about $5,988 a year</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Reported Setup Fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None, the price is the price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Agent-reported near $999 one-time implementation fee</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo), 24/7 EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No AI answering, callers reach you or voicemail</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Conversations on WhatsApp / Text</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No WhatsApp agent, and AI text messaging is reported as an add-on</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Follow-Up on Leads</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included with The Base Agent, no extra charge</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Smart Campaigns automation included, behaviour triggered</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">IDX Website and MLS Search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Not an MLS platform, no listing search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ IDX consumer websites included, no separate IDX fee</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead Generation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own ($497 Starter / $997 Pro)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Optional, ad spend billed separately, managed ads reported at $1,500/mo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Back Office and Commissions</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No commissions or accounting module</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ BoldTrail BackOffice sold as a separate module</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team Lead Routing and Reporting</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> No per-agent routing or team dashboards</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Agent rosters, lead distribution and performance dashboards</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM Included</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM built for agents, free with The Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Smart CRM with behavioural lead scoring included</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Owns the Data</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Your list, your Notion workspace, yours forever</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> If your brokerage pays, access usually ends when you leave</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website Ownership</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Website included in the subscription, hosted by the platform</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN/ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included, agent and website both</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> English focused</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Learning Curve</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Nothing to learn, we build it and it runs itself</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> G2 pricing insights report 2 months average implementation</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Same person who built it, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Chat and phone, reviewers report slow responses at times</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Integrations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM, Google Calendar, WhatsApp, Vapi</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">⚠️</span> Large marketplace, but the public API is described as closed and limited</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Track Record</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;"><span class="mark-soft">✕</span> Smaller, newer studio</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ G2 4.5/5 from 1,561 reviews, Capterra 4.4/5 from 564</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/boldtrail-article-2.jpg" alt="Wide view of a tidy home office room with a desk by a large window, a laptop with the screen switched off, a bookshelf and soft morning light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT ANSWERS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not a platform you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a subscription for a database.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real AI conversations. The Voice Receptionist is $550 one-time, plus you pay Vapi directly for usage (about $30 to $50 a month), and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start with real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The website side is deliberately the opposite of a platform. You are not buying a builder, you are buying a built site. Starter is $499 for 1 to 3 pages, Professional is $999 for a 4 to 7 page bilingual site and Premium is $1,999 for 10+ pages with a blog, all one-time, delivered in days, on your own account with the code in your hands. There is a $130 CMS add-on if you want to edit it yourself. What we do not have is the real estate plumbing: no IDX feed, no MLS search, no back office, no commissions, no lead routing for a team, and no managed ad service. If you are running a brokerage, that is a real gap and BoldTrail fills it.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>AI answers your phone and WhatsApp 24/7, EN/ES</li>
+              <li>Every price published, no demo required to see a number</li>
+              <li>One-time pricing instead of a monthly platform fee</li>
+              <li>No contract, no minimum term, no cancellation fee</li>
+              <li>30-day money-back guarantee on the build</li>
+              <li>Follow-up happens automatically, you do not work a pipeline</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Notion CRM included free with The Base Agent</li>
+              <li>Website you own ($499 / $999 / $1,999), pages stay live</li>
+              <li>Same person who built it answers your support</li>
+              <li>Live in days, not after a two month implementation</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>No IDX, no MLS feed, no listing search, no saved search alerts</li>
+              <li>No back office, no commissions, no recruiting module</li>
+              <li>No team lead routing or per-agent dashboards</li>
+              <li>We do not run your Google or Facebook ads</li>
+              <li>Lead volume is a fixed list rather than a monthly stream</li>
+              <li>Smaller, newer studio than a vendor with 1,500+ public reviews</li>
+              <li>No free trial, entry is a 15 minute audit</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · CMS add-on $130 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care and Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/boldtrail-article-3.jpg" alt="Wide view of a bright open-plan living room during a real estate open house with a few people browsing at a distance and large windows" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BoldTrail -->
+      <div id="boldtrail" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">BoldTrail (formerly kvCORE)</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BoldTrail is a serious product, and the very first thing to say is that for a lot of agents it costs nothing at all, because their brokerage pays for it. When that is your situation, use it and stop reading this section. When you are paying yourself, the experience starts somewhere else: with the price. BoldTrail publishes no prices. The pricing link on boldtrail.com opens a demo request form that asks for your name, phone, email and company, and directory listings describe the product simply as a custom quote with pricing available upon request. Third party 2026 reviews report solo agent packages around $499 a month, setup fees somewhere near $999 one-time, and ad spend billed separately, while team and brokerage quotes are reported from $1,200 to $2,500 a month. None of that is confirmed by the vendor. What BoldTrail's own terms do publish is the shape of the bill: an implementation fee billed on the signing date, monthly communication and AI token fees, and MLS fees billed as incurred, with no amounts shown anywhere.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Where it is genuinely strong is breadth. IDX consumer websites are included in the base subscription with no separate IDX fee, which is better than most competitors who charge IDX on top. Add a smart CRM with behavioural lead scoring, Smart Campaigns that fire on what a buyer actually did on your site, HomeSearch AI for natural language property search, lead generation from Google, Facebook and portal capture, transaction management, BoldTrail BackOffice for commissions and accounting, and a recruiting module, and you have one system where competitors sell you three. Teams get lead distribution, rosters and performance dashboards. Training and onboarding resources are widely praised and the API marketplace is large. G2 rates it 4.5 out of 5 from 1,561 reviews and Capterra rates it 4.4 out of 5 from 564, so this is a well regarded platform, not a fringe one.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Now the limits, and there are four that matter. First, nothing in it answers your phone or your WhatsApp. The AI in BoldTrail scores leads, searches listings and triggers campaigns; it does not pick up. A lead who calls at 9pm reaches voicemail, and a lead who writes on WhatsApp is not being answered by the platform at all. Second, the buying terms are the opposite of transparent. There is no free trial and no free plan, annual contracts are reported as the default with month to month rarely offered, and several reviewers describe being told they remained responsible for the rest of the term after asking to cancel. One G2 reviewer titled their review about being held hostage in a contract, and another wrote that when they tried to cancel several times they were told they were stuck in a contract. Third, the numbers reviewers put on the page are high and the results behind them are contested. One agent paying $1,600 a month plus add-ons wrote that on the sales demo they may say they have certain items like AI text messaging or video text messaging, but everything is an Addon, and costs extra on top. Another paying $427.50 to $475 a month wrote that had they been told they might receive only 4 to 5 Facebook leads per month and no Concierge appointments, they would never have agreed to the price. One reviewer paid $1,500 a month for managed real estate advertising and, after eight months and $12,000, reported receiving no data access, an undisclosed ad suspension, and being denied campaign transparency in writing by the company's own General Counsel. Fourth, it is heavy. G2's own pricing insights put average time to implement at 2 months and average return on investment at 16 months, an independent review scores ease of use 3.4 out of 5 and integrations 3.3 out of 5, and Software Advice lists email and text messaging and customer support as the two most common complaints. The public API is also described as closed and limited, so custom connections are harder than they look. None of this makes BoldTrail a bad product. It makes it a platform, bought for a platform problem, and worth the money only if you actually use the machine.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Genuinely all-in-one: CRM, IDX websites, lead gen, automation, back office, recruiting</li>
+              <li>IDX consumer websites included with no separate IDX fee</li>
+              <li>Behaviour triggered Smart Campaigns, AI lead scoring and HomeSearch AI</li>
+              <li>Strong fit for teams and brokerages needing lead routing and dashboards</li>
+              <li>Well regarded training library and onboarding resources</li>
+              <li>Often free to the agent because the brokerage pays</li>
+              <li>Large integration marketplace</li>
+              <li>G2 4.5/5 from 1,561 reviews, Capterra 4.4/5 from 564</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>No published pricing, the pricing link is a demo form</li>
+              <li>No free trial and no free plan</li>
+              <li>Annual contracts standard, reviewers report being held to the full term</li>
+              <li>Pays nothing, and answers nothing: no AI voice call handling</li>
+              <li>No WhatsApp agent, and AI text messaging is reported as an add-on</li>
+              <li>Agent-reported costs around $499/mo, setup near $999, ad spend separate</li>
+              <li>G2 reports 2 months to implement and 16 months to ROI on average</li>
+              <li>Support and API limits flagged by independent reviewers</li>
+              <li>If your brokerage pays, access usually ends when you leave</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: No published rate card, quote only via boldtrail.com/pricing (which redirects to a demo request form) · Agent-reported around $499/month solo, setup reported near $999, ad spend billed separately · Team and brokerage quotes reported from $1,200 to $2,500/month · Reviewer-reported plans include $427.50 to $475/month, $1,600/month plus add-ons, and $1,500/month for managed advertising · Terms published without amounts include an implementation fee, monthly communication and AI token fees, and MLS fees billed as incurred · Annual contracts the reported default, no free trial, no free plan (verified on boldtrail.com, Software Advice, Capterra and G2, November 2026; all dollar figures other than the $59 style published prices are third party or reviewer reported and unconfirmed by the vendor)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BoldTrail (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Cheapest entry, one solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (Text Receptionist)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Nothing published, a quote requires a sales call</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The core product, one solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297 one-time (The Base Agent, CRM included)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $5,988 at the reported $499 a month</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The same purchase with setup</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$1,297, no setup fee, the price is the price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $6,987 with the reported $999 implementation fee</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Real numbers that reviewers published</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 to $1,997 one-time, every option on our site</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$427.50 to $475/mo on one plan, $1,600/mo plus add-ons on another</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7, EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 once + ~$30-50/mo, about $910 to $1,150</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, the platform answers no calls and no WhatsApp</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI follow-up on your leads</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included with The Base Agent, no add-on</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included as Smart Campaigns, AI text messaging reported as an add-on</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">IDX website with MLS listing search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, no MLS feed and no listing search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included in the subscription, no separate IDX fee</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Back office and commissions</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">BoldTrail BackOffice, priced separately, quote only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Managed ad spend</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, we do not run your ads</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Billed separately, one reviewer paid $1,500/mo for it</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospects you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 Starter or $997 Pro, one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead packages sold separately, ad spend on top</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk fully covered, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent $1,297 + $97/mo care)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not possible, the platform answers nothing</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A small team of five</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time (Base Agent, business tier)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Quote only, third party team estimates $1,200 to $2,500/mo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Realistic all-in monthly, solo agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $108/mo if you take the $97 care plan</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $499/mo at the reported rate, plus add-ons and ad spend</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What you owe if you walk away in month four</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0, no contract, 30-day money-back on the build</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Reported as the rest of the term, reviewers say they were held to it</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Time to get value</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Days, the build is live in 2 to 3 days</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">G2 reports 2 months to implement, 16 months to ROI</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, front desk plus website</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $4,789 (Base Agent + care for 3 years), website separate</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $17,964 at the reported $499/mo, before setup and add-ons</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏢 You run a team or a brokerage</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BoldTrail</strong>, and this is not close. Lead routing, agent rosters, performance dashboards, commission and back office, recruiting, IDX websites for every agent with no separate IDX fee. BirkyStudio does not sell that and would not pretend to. If your brokerage covers the cost, the answer is simply to use it.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 Leads go cold because nobody answers fast enough</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Nothing in BoldTrail picks up a phone. It scores leads, searches listings and fires campaigns, and it does not answer a call or hold a WhatsApp conversation. A lead who rings at 9pm reaches voicemail. BirkyStudio's Voice Receptionist ($550 one-time plus Vapi usage) answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist ($297 one-time) holds full AI conversations while you are showing a property.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💬 Your leads message you on WhatsApp, not through a form</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. BoldTrail captures leads from Google, Facebook and portals and follows up by email and text, and it has no WhatsApp agent. In markets where WhatsApp is how buyers actually write to agents, that is a real gap. BirkyStudio's Text Receptionist ($297 one-time) lives in WhatsApp, answers in both languages, and hands you a sorted, saved conversation in the CRM.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🔑 You want to know the price before you talk to a salesperson</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. BoldTrail's pricing link opens a demo request form. There is no rate card, no free trial and no free plan, and annual contracts are reported as the default. Every BirkyStudio price is on this page and on our site, and you can buy without a demo. Placester, Wise Agent, Top Producer and RealtyJuggler all publish numbers too, so if transparency is your deciding factor there is no shortage of alternatives to a quote.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏠 You need a real estate IDX website with live listing search</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BoldTrail</strong>. IDX consumer websites are included in the base subscription with no separate IDX fee, which is better than most of the market. BirkyStudio builds general business websites ($499 / $999 / $1,999 one-time) and we say plainly that we have no MLS feed and no listing search. If live property search is the point, a BirkyStudio site is not the answer.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🎯 You want prospects to call, not just a website to show them</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. BoldTrail's lead generation is optional and ad spend is billed separately, with reviewers reporting leads that did not match their service area. BirkyStudio's Verified Prospect List ($497 Starter or $997 Pro, one-time) is a verified, enriched, scored set of prospects you own forever with no monthly spend, and the $1,997 Lead Generation Pack adds the outreach and the receptionist that catches every reply.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">⏱️ You want it working this week, not this quarter</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. G2's own pricing insights put average time to implement at 2 months and average return on investment at 16 months, an independent review scores BoldTrail 3.4 out of 5 on ease of use, and one reviewer wrote that the implementation took almost a month even though everything could have been done in a week or less. A BirkyStudio build is live in 2 to 3 days. The honest counterpoint is that a big platform takes time because it does more, so this only favours us if speed is the thing you actually need.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          This is not a fight BirkyStudio wins on breadth, and we are not going to pretend it is. <strong style="color:white;">BoldTrail is a genuinely serious platform and the only product of the two that can run a brokerage.</strong> IDX websites included with no separate IDX fee, behavioural Smart Campaigns, AI lead scoring, natural language property search, transaction management, back office, recruiting, lead routing and dashboards, at G2 4.5 out of 5 from 1,561 reviews and Capterra 4.4 out of 5 from 564. If you run a team, or you need one system for the whole front and back office, or your brokerage already pays for it, this is an easy recommendation to make on its behalf.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          But be clear about the trade, because the marketing blurs it. You cannot see the price before you get on a call, there is no free trial, annual contracts are the reported default, and reviewers describe being held to the full term after asking to cancel. Agent-reported costs sit around $499 a month, about $5,988 a year before setup and add-ons, and the reviewers who published their own numbers report $427.50 to $475 a month, $1,600 a month plus add-ons, and $1,500 a month for managed advertising that one agent says produced no data access and no transparency after $12,000. G2's own pricing insights report 2 months to implement and 16 months to ROI. And after all of that, it still does not answer your phone. <strong style="color:white;">BirkyStudio is a different purchase.</strong> You are not renting a platform, you are buying the front desk. The AI answers your phone and WhatsApp 24/7 in two languages, follows up automatically, and hands you verified prospects you own, on a website whose code is yours and whose pages stay live whether or not we ever speak again, for $1,297 once instead of $499 a month.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: BoldTrail is what you buy when you need a machine to run your business on. BirkyStudio is what you buy when the problem is that nobody picks up. If your brokerage gives you BoldTrail, use it and add us for the answering. If you are paying for BoldTrail yourself and what you actually wanted was for the leads to be answered, you are buying a very large platform for a very small problem.<br><br>
+          <strong style="color:white;">Choose BoldTrail if:</strong> you run a team or brokerage, you need IDX, back office, lead routing and reporting in one place, or your brokerage already pays for it.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want your phone and WhatsApp answered 24/7 in two languages, automatic follow-up, verified prospects you own and a website that stays yours, without a monthly platform fee or an annual contract.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://boldtrail.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Explore BoldTrail →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does BoldTrail (kvCORE) cost?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            BoldTrail publishes no prices at all. The pricing link on boldtrail.com opens a demo request form rather than a rate card, and directory listings describe it as a custom quote with pricing available upon request. Third party 2026 reviews report solo agent packages around $499 a month, setup fees somewhere near $999 one time, and ad spend billed separately, while team and brokerage quotes are reported anywhere from $1,200 to $2,500 a month. None of those figures is confirmed by the vendor, so treat them as rough and get a quote. What is published in BoldTrail's own terms is the shape of the bill: an implementation fee billed on the signing date, monthly communication and AI token fees, and MLS fees billed as incurred, with no amounts shown. Reviewers putting real numbers on the page include one paying $427.50 to $475 a month, one paying $1,600 a month plus add-ons, and one paying $1,500 a month for the managed advertising service. Many agents pay nothing directly because their brokerage covers it.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does BoldTrail answer my phone or reply on WhatsApp?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. BoldTrail is an all-in-one real estate platform, not a receptionist. It bundles an IDX website, a smart CRM, lead generation, behavioural marketing automation, transaction management, back office and recruiting, and inside that stack it includes AI lead scoring, HomeSearch AI for natural language property search, and Smart Campaigns that fire on behaviour. None of it picks up a phone call and none of it holds a WhatsApp conversation. A lead that calls at 9pm reaches your voicemail. BirkyStudio answers instead: the Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is BoldTrail the same as kvCORE?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Yes. Inside Real Estate rebranded its platform from kvCORE to BoldTrail in June 2024, and BoldTrail now covers the former kvCORE, BoomTown and Brokermint products. So a page or a video about kvCORE pricing, kvCORE alternatives or kvCORE login is describing the same platform, and most agents still search for it under the old name. One practical consequence is that older reviews, older comparison content and older videos all still describe BoldTrail, so a lot of what you will read about kvCORE online is really about this current product.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Do I keep my BoldTrail database if I leave my brokerage?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Usually not, and this is the part worth checking before you sign anything. When a brokerage pays for BoldTrail, the account belongs to the brokerage, and when you change firms your login typically stops working. What you can take with you depends on your independent contractor agreement and on whether you exported your contacts beforehand. The inquiries the brokerage paid to generate may reasonably belong to the brokerage, while your own past clients are a different matter, which is why agents who care about their sphere keep it somewhere they control. BirkyStudio's Notion CRM sits in your own workspace and the verified prospect list is a file you own, so nothing we build leaves with us if you stop working with us.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does BoldTrail have a contract or a free trial?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            There is no free trial and no free plan, and the demo is a sales conversation rather than a sandbox. Annual contracts are reported as the default, with month to month rarely offered, and several reviewers describe being told they remained responsible for the rest of the term after asking to cancel. One G2 reviewer put it as holding me hostage in a contract, and another wrote that when they tried to cancel several times they were told they were stuck in a contract. BirkyStudio is contract free: no minimum term, no per-seat fee, no cancellation fee, and a 30 day money back guarantee on the build itself. Placester, Wise Agent and RealtyJuggler are all cleaner than BoldTrail on this one point as well.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is BirkyStudio a cheaper alternative to BoldTrail?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            They are different purchases, so the honest answer is yes for the front desk and no for the platform. If what you need is an IDX website, a team lead routing engine, back office commissions and a recruiting module, BoldTrail does things BirkyStudio does not do at any price, and if your brokerage gives it to you at no direct cost then the value question is over. If what you need is somebody to answer the phone and the WhatsApp at 9pm in two languages, BirkyStudio is dramatically cheaper: The Base Agent is $1,297 one-time with the Notion CRM included, and with optional care at $97 a month that is about $2,461 in year one and about $4,789 over three years, against about $5,988 in year one and about $17,964 over three years at the reported BoldTrail rate of $499 a month, before the reported setup fee and add-ons.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does BoldTrail include IDX and lead generation?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            It includes both, and this is where BoldTrail is genuinely strong. IDX consumer websites are included in the base subscription with no separate IDX fee, which is better than most of its competitors who charge for IDX on top. Lead generation is available as an option rather than being mandatory, drawing from Google, Facebook and portal capture, and managed advertising packages are also sold. The catch is that lead generation is where the money and the complaints both live. Third party and reviewer reported ad spend runs separately from the platform fee, one reviewer paid $1,500 a month for managed advertising, and the most repeated criticism across Capterra, G2 and Software Advice is that the leads do not match the service area or the volume promised. BirkyStudio does not sell portal leads at all; its Verified Prospect List is a one-time file of verified, enriched, scored prospects you own.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> BoldTrail's lack of published pricing was verified directly on 10 November 2026: boldtrail.com/pricing redirects to boldtrail.com/pricing-demo, a form that asks for job title, team size, name, phone, email and company before offering a demo and pricing, and Software Advice lists the product as custom quote, one plan, pricing available upon request. BoldTrail's bill structure (an implementation fee billed on the signing date, monthly communication and AI token fees, and MLS fees billed as incurred, with no amounts published) comes from its own terms dated 30 October 2025 as quoted in a 2026 Lofty versus BoldTrail comparison. Third party cost estimates (solo agents around $499 a month, setup near $999, ad spend billed separately, teams reported at $1,200 to $2,500 a month) come from a 2026 CRM comparison by Dex and a 2026 real estate CRM review roundup, and are labelled as reported and unconfirmed throughout this page. Reviewer-reported figures are verbatim from public reviews: $427.50 to $475 a month and double billing (Paul S., G2), $1,600 a month plus add-ons (Jarrett S., G2), $1,500 a month for managed advertising and $12,000 paid over eight months (Barbara G., G2 and Capterra), contract and cancellation complaints (Desiree Sunshine D. and a verified G2 reviewer), and a Capterra reviewer reporting that BoldTrail has almost no customization and is so one size fits all. Platform facts (kvCORE rebranded to BoldTrail in June 2024, covering kvCORE, BoomTown and Brokermint; IDX consumer websites included with no separate IDX fee; Smart CRM with behavioural lead scoring, Smart Campaigns, HomeSearch AI, lead generation from Google, Facebook and portal capture, transaction management, BoldTrail BackOffice and recruiting) come from BoldTrail's own site and a July 2026 independent review which scores the product 3.6 out of 5 overall, with ease of use 3.4, integrations 3.3 and support 3.4. Ratings and the implementation and ROI figures are as published: G2 4.5 out of 5 from 1,561 reviews with pricing insights of 2 months average time to implement and 16 months average return on investment, Capterra 4.4 out of 5 from 564 reviews, and Software Advice 4.4 out of 5 with email and text messaging and customer support listed as the two most common complaints. The point about brokerage-owned accounts ending when you leave comes from a 2026 explanation of what happens to a brokerage CRM when an agent changes firms. BirkyStudio pricing from birkystudio.com as of November 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297 one-time), the Voice Receptionist ($550 one-time plus Vapi usage of about $30 to $50 a month), the Verified Prospect List ($497 Starter / $997 Pro one-time), the Lead Generation Pack ($1,997 one-time), websites ($499 / $999 / $1,999), the CMS add-on ($130), the Custom Assessment ($349 solo / $999 business) and optional care at $97 or $197 a month. All prices were checked in November 2026 and may change; confirm current figures with each vendor before you buy.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
