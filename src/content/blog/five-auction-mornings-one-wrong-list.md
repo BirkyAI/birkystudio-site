@@ -1,6 +1,6 @@
 ---
 title: "Five Auction Mornings, One Wrong List"
-description: "Twelve dated rows on the county auction calendar, four of them wrong and two sales nobody ever published. Here is what verification really costs."
+description: "Twelve dated rows on the county auction calendar, four of them wrong and two sales that never made the sheet. Here is what verification really costs."
 date: 2026-11-13
 image: "/images/blog/ai-generated/five-auction-mornings-one-wrong-list.jpg"
 tags: ["Birky Studio", "AI Agent", "Real Estate Data", "Workflow"]
