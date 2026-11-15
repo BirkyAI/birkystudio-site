@@ -81,7 +81,7 @@ Every product we ship publishes the rules it runs under, and the rules are usual
 ## What the agent does
 
 - **Sends the logistics itself.** Availability, viewing times, the fee that lives in the listing notes. Four of the nine in that week never needed a human in the first place, and they leave in seconds, at 08:12 on a Monday, when nobody is awake to approve anything.
-- **Parks the grey zone and the advice.** Anything that touches price, condition, contingencies or what the buyer should do gets drafted, flagged and held, with the source notes attached.
+- **Parks the gray zone and the advice.** Anything that touches price, condition, contingencies or what the buyer should do gets drafted, flagged and held, with the source notes attached.
 - **Writes down what the human saw.** Not that approval happened, but which question and which notes were on the screen when it did.
 - **Keeps one running record per client**, so the thread is a file you can read and not a scroll you have to reconstruct.
 - **Exports on request.** If a broker, a client or a regulator asks for a week, you hand over a list rather than a memory.
