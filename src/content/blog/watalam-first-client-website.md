@@ -34,9 +34,9 @@ Prices are the part I am most careful about. Sellers hate "contact for pricing",
 
 When the site was live and working, she left this on Google without me even asking:
 
-> Luna built the website for our ecotourism project, Watalam Guatemala. She understood what we do from the first conversation and never made it technical. The site is in English and Spanish, our adventures show prices in Quetzales, and travelers can book us straight on WhatsApp. It looks professional and it finally feels like us.
+> Luna built the website for our ecotourism project, Watalam Guatemala. She understood what we do from the first conversation and never made it technical. The site is in English and Spanish, our adventures show prices in Quetzales, and travelers can book us straight on WhatsApp. It looks professional and it finally feels like us. If you need a website for a small business here, talk to her.
 
-That last line, "it finally feels like us", is the whole job. A website is not decoration. It is how a small business shows who it is to people who have never met them.
+That line, "it finally feels like us", is the whole job. A website is not decoration. It is how a small business shows who it is to people who have never met them.
 
 ## Why this case matters for your business
 

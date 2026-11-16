@@ -34,9 +34,9 @@ Los precios son la parte en la que tengo más cuidado. A los vendedores les mole
 
 Cuando el sitio estaba en línea y funcionando, ella dejó esto en Google sin que yo siquiera se lo pidiera:
 
-> Luna construyó la web para nuestro proyecto de ecoturismo, Watalam Guatemala. Entendió lo que hacemos desde la primera conversación y nunca lo volvió técnico. El sitio está en inglés y en español, nuestras aventuras muestran los precios en quetzales y los viajeros pueden reservar directo por WhatsApp. Se ve profesional y por fin se siente nuestro.
+> Luna built the website for our ecotourism project, Watalam Guatemala. She understood what we do from the first conversation and never made it technical. The site is in English and Spanish, our adventures show prices in Quetzales, and travelers can book us straight on WhatsApp. It looks professional and it finally feels like us. If you need a website for a small business here, talk to her.
 
-Esa última línea, "por fin se siente nuestro", es el trabajo entero. Una web no es decoración. Es la forma en que un pequeño negocio le muestra quién es a gente que nunca lo ha conocido.
+Esa frase, "it finally feels like us", es el trabajo entero. Una web no es decoración. Es la forma en que un pequeño negocio le muestra quién es a gente que nunca lo ha conocido.
 
 ## Por qué este caso importa para tu negocio
 
