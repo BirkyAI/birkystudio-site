@@ -1,342 +1,258 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const projects = [
-  {
-    title: "Antigua Real Estate Development",
-    subtitle: "Agencia de Bienes Raíces",
-    url: "https://antiguarealestatedevelopment.com",
-    image: "/images/portfolio/ard-screenshot.png",
-    description: "Sitio web completo para una agencia de bienes raíces enfocada en expatriados en Antigua Guatemala. Bilingüe (EN/ES), listados de propiedades con galerías, blog con artículos SEO, reseñas de clientes, integración WhatsApp y lightbox para fotos.",
-    tags: ["Bienes Raíces", "Bilingüe", "Blog", "SEO", "WhatsApp"],
-    plan: "Profesional",
-  },
-  {
-    title: "Watalam Guatemala",
-    subtitle: "Ecoturismo y Aventuras Comunitarias",
-    url: "https://watalam-site.vercel.app",
-    image: "/images/portfolio/watalam-screenshot.png",
-    description: "Sitio web de ecoturismo comunitario cerca de Antigua Guatemala. Bilingüe (EN/ES) con selector de idioma, tours de aventura con precios en Quetzales, galería de fotos, reseñas de viajeros y reservas por WhatsApp.",
-    tags: ["Ecoturismo", "Bilingüe", "Galería", "WhatsApp", "Comunidad"],
-    plan: "Profesional",
-  },
-  {
-    title: "Birky Studio",
-    subtitle: "Agencia Digital. Sitios Web y Agentes IA",
-    url: "https://birkystudio.com",
-    image: "/images/portfolio/birkystudio-screenshot.png",
-    description: "Nuestro propio sitio web que muestra los tres productos, diseño web, instalación de agentes IA y recepcionista IA. Incluye demo de IA en vivo, soporte bilingüe completo, precios detallados y blog con contenido SEO diario.",
-    tags: ["Agencia", "Demo IA", "Bilingüe", "Blog", "SEO"],
-    plan: "Profesional",
-  },
-  {
-    title: "El Agente Base, Inmobiliaria",
-    subtitle: "Cliente Privado. Automatización Completa",
-    url: "/es/contacto",
-    image: null,
-    isAgentCase: true,
-    description: "Instalación completa de asistente IA para un agente de bienes raíces en EE.UU. Incluye un CRM de Notion hecho para agentes, gestión de correo con seguimientos, automatización de Google Business Profile y WhatsApp + Telegram bilingüe. Ahorra aproximadamente 8 horas por semana.",
-    tags: ["Agente IA", "CRM Notion", "Automatización", "Bilingüe", "Bienes Raíces"],
-    plan: "El Agente Base",
-  },
-  {
-    title: "Demo Recepcionista por Voz IA",
-    subtitle: "Prueba a Elliot. Agente de Voz de Birky Studio",
-    url: "https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1",
-    image: null,
-    isLiveDemo: true,
-    description: "Demo interactiva en vivo de Elliot, un agente de voz IA para bienes raíces y pequeños negocios. Responde preguntas sobre los servicios de Birky Studio, atiende consultas, agenda demos y maneja llamadas bilingües 24/7. Construido con Vapi.ai, 92% de naturalidad.",
-    tags: ["Voz IA", "Bilingüe", "24/7", "Bienes Raíces", "Vapi", "Elliot"],
-    plan: "Recepcionista por Voz",
-  },
-  {
-    title: "Demo Asistente IA",
-    subtitle: "Demo en Vivo. Prueba el Asistente de Texto",
-    url: "/es/ai-demo",
-    image: null,
-    isEmbedDemo: true,
-    description: "Demo en vivo del asistente de WhatsApp de Birky Studio para pequeños negocios. Míralo manejar preguntas de precios, reservas y consultas tal como lo haría con tus propios clientes, en inglés o español.",
-    tags: ["Agente IA", "Bilingüe", "24/7", "WhatsApp", "Demo en Vivo"],
-    plan: "Recepcionista de Texto",
-  },
-  {
-    title: "El Agente Base, Comercio",
-    subtitle: "Muestra. Automatización de Atención al Cliente",
-    url: "/es/contacto",
-    image: null,
-    isAgentCase: true,
-    description: "Instalación de agente IA para una boutique local en Antigua. Maneja consultas de clientes por WhatsApp 24/7 en español e inglés, automatiza respuestas a preguntas frecuentes, gestiona consultas de pedidos, agenda citas y redacta respuestas de correo. Configuración única, funciona a través de WhatsApp estándar.",
-    tags: ["Agente IA", "Atención al Cliente", "Bilingüe", "WhatsApp", "Automatización"],
-    plan: "El Agente Base",
-  },
-];
 ---
+<BaseLayout title="Casos de Estudio y Portafolio" description="Casos de estudio de Birky Studio construidos operando nuestra propia agencia de bienes raíces en Antigua Guatemala. Agentes de IA, sitios web bilingües y una recepcionista de voz IA. Trabajo real, contado con honestidad." image="/images/portfolio/og-portfolio-es.jpg">
 
-<BaseLayout title="Portafolio" description="Mira nuestros proyectos recientes, sitios web, agentes IA y recepcionistas virtuales. Soluciones reales, resultados reales." image="/images/portfolio/og-portfolio-es.jpg">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Casos de estudio de Birky Studio",
+    "description": "Casos de estudio construidos operando Birky Studio y Antigua Real Estate Development día a día: una agencia dirigida con IA, un flujo real de prospecto a listados, un sitio web bilingüe para un cliente y un asistente de voz IA interno.",
+    "url": "https://birkystudio.com/es/portafolio/",
+    "isPartOf": { "@type": "WebSite", "name": "Birky Studio", "url": "https://birkystudio.com/" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Antigua Real Estate Development: operando toda la agencia con IA", "url": "https://antiguarealestatedevelopment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Un formulario de prospecto, tres listados: captura de prospectos con IA hasta cerrar" },
+        { "@type": "ListItem", "position": 3, "name": "Watalam Guatemala: sitio web bilingüe de ecoturismo comunitario", "url": "https://watalamguatemala.com/" },
+        { "@type": "ListItem", "position": 4, "name": "Elliot: asistente de voz IA interno de Birky Studio" }
+      ]
+    }
+  })}></script>
 
   <!-- Hero -->
-  <section style="padding:100px 0 80px;position:relative;overflow:hidden">
-    <div class="container" style="position:relative;z-index:1;text-align:center;">
-      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
-        Proyectos reales, negocios reales, resultados reales
-      </div>
-      <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;color:white;margin-bottom:20px;text-transform:uppercase;">
-        Nuestro <span style="color:var(--bs-accent);">Portafolio</span>
-      </h1>
-      <p style="font-size:1.2rem;color:var(--bs-text);max-width:650px;margin:0 auto;line-height:1.8;">
-        Sitios web, agentes IA y recepcionistas virtuales, construidos para negocios reales. Cada solución entregada rápido, bilingüe y diseñada para crecer.
-      </p>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>Construido desde mi propia agencia</div>
+      <h1 class="h1">Pruebas, no <em>promesas.</em></h1>
+      <p class="lead"><b>Birky Studio crea e instala agentes de IA y sitios web bilingües para pequeños negocios, listos para usar.</b> Este portafolio de casos de estudio viene de operar mi propia agencia, Antigua Real Estate Development, día a día. Aún tengo pocos clientes de pago, y seré honesta al respecto. Todo lo de aquí es real: clientes reales, productos en vivo y flujo de prospectos real, no un discurso de ventas.</p>
     </div>
   </section>
 
-  <!-- Try Elliot Banner. Espejo del banner EN en portfolio.astro.
-       Se mantiene aunque la pagina ya tenga la tarjeta de voz mas abajo:
-       las dos paginas deben tener la misma estructura. -->
-  <section style="padding:60px 0;position:relative;overflow:hidden">
-
-    <div class="container" style="position:relative;z-index:1;text-align:center;">
-      <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.9rem;font-weight:500;margin-bottom:24px;">
-        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--bs-accent);animation:pulse 2s infinite;"></span>
-        Demo en Vivo. Pruébalo Ahora
-      </div>
-      <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:white;margin-bottom:16px;text-transform:uppercase;">
-        🎧 Llama a Elliot. Tu <em style="font-style:normal;color:var(--bs-accent);">Agente de Voz</em>
-      </h2>
-      <p style="font-size:1.1rem;color:var(--bs-text-muted);max-width:600px;margin:0 auto 32px;line-height:1.8;">
-        Sin registro, sin formulario. Un clic y Elliot contesta. Pregúntale sobre los servicios, los precios, o pruébalo con algo raro, lo maneja todo.
-      </p>
-      <a href="https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1" target="_blank" rel="noopener" class="btn" style="display:inline-flex;align-items:center;gap:12px;font-size:1.2rem;padding:18px 40px;background:var(--bs-btn-light);color:var(--bs-accent);border-radius:100px;font-weight:700;box-shadow:0 8px 30px rgba(0,0,0,0.3);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.4)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.3)'">
-        <span style="font-size:1.5rem;">🎧</span>
-        Llamar a Elliot Ahora
-        <span style="font-size:0.85rem;color:var(--bs-accent);">(gratis, llamada de 2 min)</span>
-      </a>
-      <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;margin-top:16px;">92% de naturalidad · Bilingüe EN/ES · Disponible 24/7</p>
-    </div>
-  </section>
-
-  <!-- Projects Grid -->
-  <section style="padding:100px 0">
-    <div class="container">
-      <div style="display:flex;flex-direction:column;gap:80px;">
-        {projects.map((project, i) => (
-          project.isEmbedDemo ? (
-            /* ═══ EMBEDDED LIVE DEMO CARD ═══
-               Espejo de la tarjeta EN en portfolio.astro. Embebe /es/ai-demo. */
-            <div>
-              <div style="text-align:center;margin-bottom:40px;">
-                <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
-                  {project.plan}. Pruébalo en Vivo
-                </div>
-                <h2 style="font-size:2rem;color:white;margin-bottom:8px;text-transform:uppercase;">Demo de <em style="font-style:normal;color:var(--bs-accent);">Asistente</em> IA</h2>
-                <p style="color:white;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
-                <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
-                <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
-                  {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
-                  ))}
-                </div>
-              </div>
-              <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);max-width:440px;margin:0 auto;">
-                <div style="background:var(--bs-bg-raised);padding:12px 16px;display:flex;align-items:center;gap:8px;">
-                  <div style="display:flex;gap:6px;">
-                    <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
-                    <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
-                    <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
-                  </div>
-                  <div style="flex:1;background:var(--bs-bg-raised);border-radius:6px;padding:4px 12px;color:var(--bs-text-muted);font-size:0.75rem;font-family:monospace;text-align:center;">
-                    birkystudio.com/es/ai-demo
-                  </div>
-                </div>
-                <iframe src="/es/ai-demo" style="width:100%;height:920px;border:none;display:block;" title="Demo Agente IA" loading="lazy"></iframe>
-              </div>
-              <div style="text-align:center;margin-top:32px;">
-                <a href="/es/contacto" class="btn btn-purple" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
-                  Obtén Tu Propio Agente IA →
-                </a>
-              </div>
-            </div>
-          ) : project.isLiveDemo ? (
-            /* ═══ LIVE DEMO CARD, Elliot ═══ */
-            <div>
-              <div style="text-align:center;margin-bottom:40px;">
-                <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
-                  {project.plan}. Pruébalo en Vivo
-                </div>
-                <h2 style="font-size:2rem;color:white;margin-bottom:8px;text-transform:uppercase;">Demo de Recepcionista de Voz <em style="font-style:normal;color:var(--bs-accent);">IA</em></h2>
-                <p style="color:white;font-weight:600;font-size:1.05rem;margin-bottom:16px;">{project.subtitle}</p>
-                <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;max-width:700px;margin:0 auto 24px;">{project.description}</p>
-                <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;">
-                  {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
-                  ))}
-                </div>
-              </div>
-              <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,45,149,0.3);max-width:500px;margin:0 auto;padding:60px 40px;text-align:center;background:linear-gradient(135deg,rgba(255,45,149,0.07),rgba(255,45,149,0.05));">
-                <div style="font-size:5rem;margin-bottom:20px;">🎧</div>
-                <h3 style="font-size:1.5rem;color:white;margin-bottom:12px;">Llama a Elliot Ahora</h3>
-                <p style="color:var(--bs-text-muted);margin-bottom:32px;line-height:1.7;">Sin registro, sin formulario, sin descargas. Un clic y Elliot contesta. Pregúntale sobre los servicios, los precios, o pruébalo con algo raro, lo maneja.</p>
-                <a href={project.url} target="_blank" rel="noopener" class="btn btn-purple" style="display:inline-flex;font-size:1.2rem;padding:18px 36px;">
-                  🎧 Llamar al Agente de Voz →
-                </a>
-              </div>
-              <div style="text-align:center;margin-top:32px;">
-                <a href="/es/contacto" class="btn btn-purple" style="display:inline-flex;font-size:1.05rem;padding:16px 32px;">
-                  Obtén Tu Propio Agente IA →
-                </a>
-              </div>
-            </div>
-          ) : project.isAgentCase ? (
-            /* ═══ AGENT CASE STUDY CARD ═══ */
-            <div>
-              <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;" class="project-row">
-                <div style="order:2;">
-                  <div style="background:linear-gradient(rgba(2,6,23,0.55),rgba(2,6,23,0.55)),url('/images/portfolio/luna-portrait.jpg');background-size:cover;background-position:center;border:1px solid rgba(255,45,149,0.3);border-radius:24px;padding:48px;text-align:center;">
-                    <div style="color:var(--bs-accent);font-size:0.9rem;font-weight:600;">Instalación de Agente IA</div>
-                    <div style="color:var(--bs-text);font-size:0.85rem;margin-top:8px;">Cliente Privado. Detalles Confidenciales</div>
-                  </div>
-                </div>
-                <div style="order:1;">
-                  <div style="display:inline-block;padding:6px 14px;background:var(--bs-accent);border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
-                    Plan {project.plan}
-                  </div>
-                  <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
-                  <p style="color:white;font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
-                  <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
-                  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
-                    {project.tags.map(tag => (
-                      <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
-                    ))}
-                  </div>
-                  <a href="/es/contacto" class="btn btn-purple" style="display:inline-flex;">
-                    Obtén una Configuración Similar →
-                  </a>
-                </div>
-              </div>
-            </div>
-          ) : (
-            /* ═══ WEBSITE CARD ═══ */
-            <div style={`display:grid;grid-template-columns:${i % 2 === 0 ? '1.2fr 1fr' : '1fr 1.2fr'};gap:48px;align-items:center;`} class="project-row">
-              <div style={`${i % 2 !== 0 ? 'order:2;' : ''}`}>
-                {project.image ? (
-                  <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);transition:transform 0.3s,box-shadow 0.3s;" class="project-image">
-                    <div style="background:var(--bs-bg-raised);padding:12px 16px;display:flex;align-items:center;gap:8px;">
-                      <div style="display:flex;gap:6px;">
-                        <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
-                        <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
-                        <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
-                      </div>
-                      <div style="flex:1;background:var(--bs-bg-raised);border-radius:6px;padding:4px 12px;color:var(--bs-text-muted);font-size:0.75rem;font-family:monospace;">
-                        {project.url.replace('https://', '')}
-                      </div>
-                    </div>
-                    <img src={project.image} alt={`Vista previa de ${project.title}`} style="width:100%;height:320px;object-fit:cover;display:block;" loading="lazy" />
-                  </a>
-                ) : (
-                  <a href={project.url} target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);">
-                    <div style="background:var(--bs-bg-raised);padding:12px 16px;display:flex;align-items:center;gap:8px;">
-                      <div style="display:flex;gap:6px;">
-                        <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
-                        <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
-                        <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
-                      </div>
-                      <div style="flex:1;background:var(--bs-bg-raised);border-radius:6px;padding:4px 12px;color:var(--bs-text-muted);font-size:0.75rem;font-family:monospace;">
-                        {project.url.replace('https://', '')}
-                      </div>
-                    </div>
-                    <div style="background:linear-gradient(135deg,rgba(255,45,149,0.1),rgba(255,45,149,0.1));padding:80px 40px;text-align:center;">
-                      <div style="font-size:3rem;margin-bottom:12px;">🌐</div>
-                      <div style="color:var(--bs-text);font-size:1rem;font-weight:500;">{project.title}</div>
-                      <div style="color:var(--bs-accent);font-size:0.85rem;margin-top:8px;">Visitar Sitio →</div>
-                    </div>
-                  </a>
-                )}
-              </div>
-
-              <div style={`${i % 2 !== 0 ? 'order:1;' : ''}`}>
-                <div style="display:inline-block;padding:6px 14px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;font-size:0.8rem;font-weight:600;margin-bottom:16px;">
-                  Plan {project.plan}
-                </div>
-                <h2 style="font-size:2rem;color:white;margin-bottom:8px;">{project.title}</h2>
-                <p style="color:white;font-weight:600;font-size:1.05rem;margin-bottom:20px;">{project.subtitle}</p>
-                <p style="color:var(--bs-text-muted);line-height:1.8;font-size:1.05rem;margin-bottom:24px;">{project.description}</p>
-                
-                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
-                  {project.tags.map(tag => (
-                    <span style="padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:100px;font-size:0.82rem;font-weight:500;color:var(--bs-text);">{tag}</span>
-                  ))}
-                </div>
-
-                <a href={project.url} target="_blank" rel="noopener" class="btn btn-purple" style="display:inline-flex;">
-                  Ver Sitio en Vivo →
-                </a>
-              </div>
-            </div>
-          )
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats -->
-  <section style="padding:80px 0">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;">
-        <div>
-          <div style="font-size:2.5rem;font-weight:800;color:white;">10+</div>
-          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Soluciones Implementadas</div>
+  <div class="wrap">
+    <!-- Case 1 · ARD -->
+    <div class="sec-label">Caso de estudio 01 · <b>En operación</b></div>
+    <article class="case">
+      <span class="kind"><span class="pk">●</span> Antigua Real Estate Development · Proyecto insignia</span>
+      <h2 class="h2">Operando toda la agencia sobre el Agente Base.</h2>
+      <div class="lead">
+        <div class="pb">
+          <h3>El problema</h3>
+          <p>Una agencia de bienes raíces nueva y enfocada en expatriados en Antigua Guatemala no tenía <b>presencia en línea, ni flujo de listados,</b> ni forma de responder consultas lo bastante rápido para ganar vendedores.</p>
         </div>
-        <div>
-          <div style="font-size:2.5rem;font-weight:800;color:white;">100%</div>
-          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Satisfacción del Cliente</div>
-        </div>
-        <div>
-          <div style="font-size:2.5rem;font-weight:800;color:white;">ES/EN</div>
-          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Bilingüe</div>
-        </div>
-        <div>
-          <div style="font-size:2.5rem;font-weight:800;color:white;">2-3</div>
-          <div style="color:var(--bs-text-muted);font-size:0.95rem;margin-top:4px;">Días de Entrega</div>
+        <div class="sol">
+          <h3>Lo que construí</h3>
+          <p>Un sitio bilingüe (EN/ES) con listados de propiedades, galerías de fotos, un blog SEO diario, captura de prospectos por WhatsApp y datos estructurados para Google, todo operado con el sistema de Notion que <b>dirige mi agencia.</b></p>
+          <ul>
+            <li>Listados de propiedades bilingües en vivo</li>
+            <li>Motor de contenido SEO diario</li>
+            <li>Pipeline de prospectos en Notion de punta a punta</li>
+            <li>Un agente de voz IA en vivo atendiendo llamadas 24/7</li>
+          </ul>
         </div>
       </div>
+      <div class="metrics">
+        <div class="metric"><div class="n">EN/ES</div><div class="l">Sitio bilingüe</div></div>
+        <div class="metric"><div class="n">24/7</div><div class="l">Agente de voz en vivo</div></div>
+        <div class="metric"><div class="n">100%</div><div class="l">Operado en Notion</div></div>
+      </div>
+      <div class="tools">
+        <span class="tool">Astro</span><span class="tool">Vercel</span><span class="tool">Notion</span><span class="tool">Voz Vapi</span><span class="tool">WhatsApp</span><span class="tool">GA4</span><span class="tool">SEO / AEO</span>
+      </div>
+      <div class="cfoot">
+        <a class="visit" href="https://antiguarealestatedevelopment.com" target="_blank" rel="noopener">Ver el sitio en vivo →</a>
+        <span class="note">Este es el negocio del que vive este portafolio.</span>
+      </div>
+    </article>
+
+    <!-- Case 2 · Juan -->
+    <div class="sec-label">Caso de estudio 02 · <b>Prospecto real</b></div>
+    <article class="case">
+      <span class="kind"><span class="pk">●</span> De prospecto a cerrado · El Agente Base</span>
+      <h2 class="h2">Un formulario de prospecto, tres listados.</h2>
+      <div class="lead">
+        <div class="pb">
+          <h3>El problema</h3>
+          <p>Los vendedores le dan su listado a quien <b>responde primero y con constancia.</b> Una respuesta lenta pierde el trato antes de la primera llamada.</p>
+        </div>
+        <div class="sol">
+          <h3>Lo que pasó</h3>
+          <p>Un vendedor envió el formulario del sitio. La consulta cayó en el pipeline de Notion y respondí <b>en menos de 5 minutos.</b> Tras una visita en persona, había comprometido tres propiedades para vender a través de ARD.</p>
+          <ul>
+            <li>Del formulario a la captura y a la respuesta inmediata</li>
+            <li>Seguimiento del CRM al día</li>
+            <li>Una visita convirtió la consulta en listados</li>
+          </ul>
+        </div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="n">5 min</div><div class="l">Primera respuesta</div></div>
+        <div class="metric"><div class="n">1</div><div class="l">Visita en persona</div></div>
+        <div class="metric"><div class="n">3</div><div class="l">Listados ganados</div></div>
+      </div>
+      <div class="tools">
+        <span class="tool">Formulario de prospecto</span><span class="tool">WhatsApp</span><span class="tool">CRM Notion</span><span class="tool">El Agente Base</span>
+      </div>
+      <div class="cfoot">
+        <span class="note">Un caso real, no una métrica inventada. Así está diseñado el sistema para comportarse cada vez.</span>
+      </div>
+    </article>
+
+    <!-- Case 3 · Watalam -->
+    <div class="sec-label">Caso de estudio 03 · <b>Sitio de cliente</b></div>
+    <article class="case">
+      <span class="kind"><span class="pk">●</span> Watalam Guatemala · Primer cliente</span>
+      <h2 class="h2">Un sitio de ecoturismo comunitario que habla con los viajeros.</h2>
+      <div class="lead">
+        <div class="pb">
+          <h3>El problema</h3>
+          <p>Una iniciativa de ecoturismo comunitario cerca de Antigua necesitaba una <b>presencia web seria</b> para llegar a viajeros internacionales que no leen español, y para facilitar las reservas.</p>
+        </div>
+        <div class="sol">
+          <h3>Lo que construí</h3>
+          <p>Un sitio bilingüe (EN/ES), con paquetes de aventura con precios en Quetzales, galería de fotos, reseñas de viajeros y reservas directas por WhatsApp.</p>
+          <ul>
+            <li>Selector de idioma EN/ES completo</li>
+            <li>Paquetes y precios en Quetzales</li>
+            <li>Reserva por WhatsApp con un toque</li>
+          </ul>
+        </div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="n">EN/ES</div><div class="l">Sitio bilingüe</div></div>
+        <div class="metric"><div class="n">Q</div><div class="l">Precios locales</div></div>
+        <div class="metric"><div class="n">1 toque</div><div class="l">Reserva por WhatsApp</div></div>
+      </div>
+      <div class="tools">
+        <span class="tool">Astro</span><span class="tool">Vercel</span><span class="tool">WhatsApp</span><span class="tool">i18n</span>
+      </div>
+
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p class="q">"Luna construyó el sitio web de nuestro proyecto de ecoturismo, Watalam Guatemala. Entendió lo que hacemos desde la primera conversación y nunca lo hizo técnico. El sitio está en inglés y español, nuestras aventuras muestran precios en Quetzales y los viajeros pueden reservarnos directo por WhatsApp. Se ve profesional y al fin se siente como nosotros."</p>
+        <div class="who"><b>Lesli Tahón</b>, dueña de Watalam Guatemala · 5 estrellas en Google
+          <a href="https://www.google.com/maps/search/?api=1&query=Birky%20Studio%20Antigua%20Guatemala&query_place_id=ChIJ9-RD-HRNkQARtg1Z7VtB2zM" target="_blank" rel="noopener">Ver en Google →</a>
+        </div>
+      </div>
+      <div class="cfoot">
+        <a class="visit" href="https://watalamguatemala.com" target="_blank" rel="noopener">Ver el sitio en vivo →</a>
+        <span class="note">Mi primer cliente de pago. La reseña es genuina y sin que la pidiera.</span>
+      </div>
+    </article>
+
+    <!-- Case 4 · Elliot -->
+    <div class="sec-label">Caso de estudio 04 · <b>Interno</b></div>
+    <article class="case">
+      <span class="kind"><span class="pk">●</span> Birky Studio · Elliot, nuestro propio asistente</span>
+      <h2 class="h2">Construimos a Elliot para atender nuestra propia recepción.</h2>
+      <div class="lead">
+        <div class="pb">
+          <h3>El problema</h3>
+          <p>Birky Studio es una agencia de una sola persona. Cuando estoy en un desarrollo o de visita, las llamadas y consultas por WhatsApp quedaban sin responder, sobre todo <b>fuera de horario y en español.</b></p>
+        </div>
+        <div class="sol">
+          <h3>Lo que construí</h3>
+          <p>Elliot, un agente de voz IA en vivo de Vapi, ahora atiende nuestra propia recepción. Responde preguntas sobre nuestros servicios y precios, confirma los datos del llamante con precisión y sabe cuándo terminar la llamada.</p>
+          <ul>
+            <li>Atiende nuestra propia recepción</li>
+            <li>Bilingüe, EN y español, 24/7</li>
+            <li>Cada actualización se prueba primero en nosotros</li>
+          </ul>
+        </div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="n">24/7</div><div class="l">Siempre disponible</div></div>
+        <div class="metric"><div class="n">EN/ES</div><div class="l">Bilingüe</div></div>
+        <div class="metric"><div class="n">1º</div><div class="l">Nuestro propio cliente</div></div>
+      </div>
+      <div class="tools">
+        <span class="tool">Vapi</span><span class="tool">Línea telefónica EE. UU.</span><span class="tool">Prompt de voz afinado</span>
+      </div>
+      <div class="cfoot">
+        <a class="visit" href="https://vapi.ai?demo=true&shareKey=60d98cd1-2e54-45ca-adb0-393aa7fa8091&assistantId=90c9ce2b-461e-4b8e-b20f-bae3cf05a5e1" target="_blank" rel="noopener">Llamar ahora a Elliot →</a>
+        <span class="note">Nuestro propio asistente, en vivo. Sin registro, un clic.</span>
+      </div>
+    </article>
+
+    <!-- Capability strip -->
+    <div class="sec-label">Lo que hago</div>
+    <div class="caps">
+      <div class="cap"><h4>Configuración de agentes de IA</h4><p>CRM en Notion, seguimientos por correo, WhatsApp y Telegram, contenido de Google Business Profile. El Agente Base.</p></div>
+      <div class="cap"><h4>Sitios web bilingües</h4><p>Construcción EN/ES con SEO y AEO listos desde el inicio. Sin necesidad de programar de tu lado.</p></div>
+      <div class="cap"><h4>Recepcionistas de voz IA</h4><p>Agentes de voz bilingües 24/7 que atienden llamadas reales, no solo demos.</p></div>
+      <div class="cap"><h4>Motor de contenido</h4><p>Un blog SEO diario y publicaciones en Google Business que mantienen tus sitios trabajando por ti.</p></div>
     </div>
-  </section>
+
+    <!-- Honesty -->
+    <div class="honest">
+      <h3>Dónde estoy hoy</h3>
+      <p>Estoy empezando y no pienso esconderlo. Birky Studio es una operación pequeña y los clientes de pago hasta ahora son uno. Lo que ves arriba no es un muro de logotipos de clientes. Es <b>experiencia real de operar mi propia agencia de bienes raíces</b>, más los clientes reales y productos en vivo que tengo. Eso vale más para mí, y para ti, que un historial inventado.</p>
+    </div>
+  </div>
 
   <!-- CTA -->
-  <section style="padding:100px 0;text-align:center;position:relative;overflow:hidden">
-    <div class="container" style="position:relative;z-index:1;">
-      <h2 style="font-size:2.5rem;color:white;margin-bottom:16px;text-transform:uppercase;">¿Quieres una Solución <em style="font-style:normal;color:var(--bs-accent);">Como Estas?</em></h2>
-      <p style="color:var(--bs-text);font-size:1.15rem;max-width:550px;margin:0 auto 40px;line-height:1.8;">
-        Construyamos algo increíble para tu negocio. Entrega rápida, diseño profesional y precios accesibles.
-      </p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="/es/contacto" class="btn btn-purple" style="font-size:1.1rem;padding:18px 36px;">
-          Empezar Tu Proyecto →
-        </a>
-        <a href="/es/#precios-sitios" class="btn" style="background:transparent;color:white;border:2px solid rgba(255,255,255,0.3);font-size:1.1rem;padding:18px 36px;">
-          Ver Planes →
-        </a>
-      </div>
-    </div>
+  <section class="cta">
+    <h2 class="cta-h">¿Quieres una configuración <em>como estas?</em></h2>
+    <p>Cuéntame qué hace tu negocio y te mostraré, con honestidad, qué ayudaría y qué no.</p>
+    <a href="/es/contacto" class="btn btn-white">Empezar la conversación →</a>
   </section>
 
   <style>
-    /* La pagina EN define esta animacion para el punto pulsante del banner de
-       Elliot. Sin ella el punto se queda quieto y las dos paginas se ven distintas. */
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.3); }
-    }
-    .project-image:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 24px 70px rgba(0,0,0,0.4) !important;
-    }
-    @media (max-width: 768px) {
-      .project-row {
-        grid-template-columns: 1fr !important;
-      }
-      .project-row > div {
-        order: unset !important;
-      }
+    .wrap{max-width:1080px;margin:0 auto;padding:0 48px}
+    .hero{padding:110px 0 70px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bs-accent);border:1px solid rgba(255,45,149,.35);background:rgba(255,45,149,.07);border-radius:999px;padding:7px 15px;margin-bottom:28px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--bs-accent)}
+    .h1{font-size:clamp(38px,5vw,56px);font-weight:900;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;margin-bottom:26px}
+    .h1 em,.h2 em,.cta-h em{font-style:normal;color:var(--bs-accent)}
+    .hero .lead{color:var(--bs-text-muted);font-size:17px;max-width:660px;line-height:1.8}
+    .hero .lead b{color:var(--bs-text);font-weight:600}
+    .sec-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bs-text-muted);margin:72px 0 8px}
+    .sec-label b{color:var(--bs-accent)}
+    .case{background:rgba(255,255,255,.03);border:1px solid var(--bs-border);border-radius:22px;padding:40px 44px;margin-top:16px;margin-bottom:48px}
+    .kind{display:inline-block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--bs-text-muted);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:5px 12px;margin-bottom:18px}
+    .kind .pk{color:var(--bs-accent)}
+    .h2{font-size:clamp(26px,3vw,34px);font-weight:800;line-height:1.15;letter-spacing:-.01em;margin-bottom:30px}
+    .lead{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:30px}
+    .pb h3,.sol h3{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--bs-accent);margin-bottom:8px;font-weight:700}
+    .pb p,.sol p{color:var(--bs-text-muted);font-size:15px}
+    .pb p b,.sol p b{color:var(--bs-text);font-weight:600}
+    .sol ul{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+    .sol li{color:var(--bs-text-muted);font-size:15px;list-style:none;display:flex;gap:10px}
+    .sol li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--bs-accent);margin-top:9px}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:26px}
+    .metric{background:rgba(255,45,149,.06);border:1px solid rgba(255,45,149,.18);border-radius:14px;padding:16px 18px}
+    .metric .n{font-size:26px;font-weight:900;letter-spacing:-.02em;line-height:1}
+    .metric .l{font-size:12px;color:var(--bs-text-muted);margin-top:6px;text-transform:uppercase;letter-spacing:.05em}
+    .tools{display:flex;flex-wrap:wrap;gap:8px}
+    .tool{font-size:12px;font-weight:500;color:var(--bs-text-muted);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:5px 12px}
+    .cfoot{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+    .visit{color:var(--bs-accent);font-size:14px;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:.04em}
+    .visit:hover{color:var(--bs-accent-2)}
+    .note{font-size:12.5px;color:var(--bs-text-muted);font-style:italic}
+    .review{background:rgba(255,255,255,.04);border:1px solid rgba(255,45,149,.2);border-left:3px solid var(--bs-accent);border-radius:16px;padding:26px 30px;margin-top:26px}
+    .review .stars{color:var(--bs-accent);font-size:15px;letter-spacing:2px;margin-bottom:10px}
+    .review .q{font-size:15px;font-style:italic;line-height:1.8;margin-bottom:12px}
+    .review .who{font-size:13px;color:var(--bs-text-muted)}
+    .review .who b{color:var(--bs-text);font-weight:600}
+    .review .who a{color:var(--bs-accent);font-size:12.5px;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:.04em;margin-left:8px}
+    .caps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px}
+    .cap{background:rgba(255,255,255,.02);border:1px solid var(--bs-border);border-radius:14px;padding:18px 22px}
+    .cap h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-weight:700}
+    .cap p{font-size:13.5px;color:var(--bs-text-muted);line-height:1.6}
+    .honest{background:rgba(255,255,255,.03);border:1px solid var(--bs-border);border-radius:20px;padding:34px 38px;margin:52px 0 0}
+    .honest h3{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--bs-accent);margin-bottom:12px;font-weight:700}
+    .honest p{color:var(--bs-text-muted);font-size:15px;line-height:1.85;max-width:820px}
+    .honest p b{color:var(--bs-text);font-weight:600}
+    .cta{padding:110px 0;text-align:center}
+    .cta-h{font-size:32px;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;margin-bottom:14px}
+    .cta p{color:var(--bs-text-muted);max-width:520px;margin:0 auto 32px;font-size:16px}
+    @media(max-width:760px){
+      .wrap{padding:0 24px}
+      .lead{grid-template-columns:1fr;gap:28px}
+      .metrics{grid-template-columns:1fr;gap:12px}
+      .caps{grid-template-columns:1fr}
+      .hero{padding:80px 0 50px}
     }
   </style>
 </BaseLayout>

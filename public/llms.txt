@@ -40,7 +40,7 @@
 - [AI Readiness Quiz](https://birkystudio.com/ai-readiness-quiz/): A short quiz that shows where AI can save you time.
 - [AI Savings Calculator](https://birkystudio.com/tools/ai-savings-calculator/): Estimate hours and money an AI agent could save your business.
 - [Quick Log Post-Call Entry Template](https://birkystudio.com/quick-log-template/): A free Notion template for agents to log post-call notes.
-- [Portfolio](https://birkystudio.com/portfolio/): Recent websites and AI agents delivered to clients.
+- [Portfolio](https://birkystudio.com/portfolio/): Case studies built from running Birky Studio and Antigua Real Estate Development day to day: an AI-runs-the-agency setup, a real lead-to-listings flow, a bilingual client website, and an in-house AI voice assistant.
 - [About](https://birkystudio.com/about/): Luna Jerney, real estate agent in Antigua Guatemala and founder of Birky Studio.
 - [Partners](https://birkystudio.com/partners/): White-label partnership program for agencies.
 - [Contact](https://birkystudio.com/contact/): Get in touch, or message on WhatsApp at 50234775110.
