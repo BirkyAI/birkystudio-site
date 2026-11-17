@@ -1,0 +1,649 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs B.Claw (Bounti): An AI That Drafts Your Inbox vs a Front Desk That Answers",
+  "description": "Honest head-to-head comparison of BirkyStudio vs B.Claw by Bounti for real estate agents. B.Claw publishes every price, from a free trial to Start $99, Light $219, Medium $349 and Heavy $599 a month, month to month with no lock-in, but it works inside your inbox, calendar and CRM and it does not answer a phone call or a WhatsApp message. BirkyStudio answers your phone and WhatsApp 24/7 in English and Spanish, follows up automatically, and sells once instead of monthly. Real pricing, real limits, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://birkystudio.com/images/birky-logo.jpg"
+    }
+  },
+  "datePublished": "2026-11-17",
+  "dateModified": "2026-11-17"
+});
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does B.Claw cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B.Claw publishes all of its prices, which is better than most of its competitors. The free plan runs about a week of real use with no credit card, and then Start is $99 a month for roughly 100 actions, Light is $219 a month for roughly 240 actions, Medium is $349 a month for 40 or more actions a day, and Heavy is $599 a month for 80 or more actions a day. Every plan includes every feature, and the only difference is how much the agent runs. Plans are month to month with no annual lock-in and no setup fee, upgrades are prorated, downgrades take effect at the next cycle, and top-ups come in $5 increments inside a comfort zone you set, which defaults to your plan plus $50. Year one on Light is about $2,628, and Medium, the plan described as most popular for agents doing three to five deals a month, is about $4,188."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does B.Claw answer my phone or reply on WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and this is the single most important thing to understand about it. B.Claw is an AI agent that works inside your Gmail, your calendar and your CRM. It drafts replies for your approval, pulls MLS comps for a CMA, writes listing content, stages listing photos, runs a morning briefing and keeps a memory of every promise you made. What it does not do is pick up a phone call or hold a WhatsApp conversation, and Bounti does not claim otherwise. Its own pricing page says every plan gets the whole agent: briefings, triage, CMAs, listing prep, memory and standing orders. Answering calls and messages is a different product, and that product is BirkyStudio's: the Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is B.Claw different from BirkyStudio's The Base Agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are both an AI layer that works across your tools, which is why this page pairs them. The difference is who does the work and when it stops. B.Claw is a subscription you operate: it drafts, you approve, you send, and the bill continues for as long as you want it. It runs from $99 to $599 a month forever, so $1,188 to $7,188 a year, every year. The Base Agent is a build we do for you one time for $1,297, with the Notion CRM included free, and after that the only optional cost is care at $97 a month. On the plans an agent actually runs daily, Light at $2,628 a year and Medium at $4,188 a year each cost more in year one than The Base Agent plus a year of care at about $2,461, and unlike a one-time build the subscription never ends."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is B.Claw (Bounti) the same as OpenClaw or other Claw tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and the names do get mixed up. B.Claw is the name of the AI agent sold by Bounti, a company whose product is built specifically around the real estate agent workflow: Gmail, Google Calendar, MLS comps, CMAs, listings and 250 or more connected tools. OpenClaw is an unrelated open-source project that runs on a server you host and maintain yourself, which is why the agents discussing it in forums talk about VPS and AWS upkeep and about rebuilding integrations that established automation platforms already provide. So when you read a forum thread about Claw, check which product is actually being discussed before you take the opinion as a review of Bounti. The two are not the same purchase and the support experience is not comparable either, because one is a hosted product with a vendor behind it and the other is software you run."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does B.Claw have a contract, a setup fee or a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is where B.Claw is genuinely clean, and it is worth saying clearly. There is a free trial of about a week with no credit card and every feature included, there is no setup fee, every plan is month to month with no annual lock-in, upgrades are prorated, and there is no cancellation penalty. Its own pricing page states there are no annual or volume discounts because pricing is the same month to month for everyone, with no negotiated rates. That is a fairer buying experience than BoldTrail, CINC or Sierra Interactive, all of which hide the price or lock you into twelve months. BirkyStudio is also contract free with no minimum term and a 30 day money back guarantee on the build, and the pattern across both products is that the cheapest thing to compare is not the monthly number but the exit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does B.Claw include an IDX website or lead generation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. B.Claw rides on the real estate stack you already pay for rather than replacing it, and its own comparison page is explicit that it has no IDX website, describing it as riding on your existing IDX. It also does not supply leads. What it does is work the leads and the listings you already have: it drafts every reply for approval, triggers instant response on a new lead, prepares CMAs from your MLS comps, and updates a pipeline sheet from your inbox. If you need an IDX site, that comes from a platform such as BoldTrail, Sierra Interactive or Placester, or from your MLS website vendor. BirkyStudio is in a third category again: we build general business websites at $499, $999 and $1,999 one-time, and our Verified Prospect List at $497 or $997 one-time is a file of verified, enriched, scored prospects you own, not an IDX feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is B.Claw a good fit for a team or a brokerage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not today, and Bounti says so itself. Its pricing FAQ answers the team question directly: not yet, B.Claw is a single-agent product today, each agent runs their own subscription with their own Gmail, calendar and CRM connections, and multi-agent, shared inbox and brokerage tiers are on the roadmap but not shipping. So a five person team is five subscriptions at $99 to $599 each per month, which is $5,940 to $35,940 a year, with no shared inbox and no brokerage roll-up. BirkyStudio's business tier starts at $2,997 one-time for The Base Agent and does not multiply by seat. For a brokerage that wants one system for IDX, lead routing, commissions and recruiting, neither of these is the answer and a platform such as BoldTrail is."
+      }
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs B.Claw (Bounti) 2026"
+  description="Honest 2026 comparison: B.Claw publishes every price but works in your inbox and never answers a call. BirkyStudio answers your phone and WhatsApp 24/7."
+  image="/images/comparison/bclaw.jpg"
+  >
+    <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated November 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs B.Claw (Bounti)<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">An AI That Drafts Your Inbox vs a Front Desk That Answers</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        B.Claw by Bounti is the most transparent AI agent in real estate right now. It publishes a free trial with no card, four plans from $99 to $599 a month, month to month with no lock-in and no setup fee, and it genuinely does the work: morning briefings, inbox triage, replies drafted in your voice, CMAs from your MLS comps, listing content, virtual staging, and 250 or more connected tools riding on top of the CRM you already pay for. It is also the competitor we agree with most, which is exactly why the limit matters: nothing in it picks up a phone call or holds a WhatsApp conversation, and you are the one who approves and sends everything. BirkyStudio is the other half. Here is the honest breakdown, including every place B.Claw is the better buy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose B.Claw if:</strong> You want an AI working across the software you already pay for, you want to see every price before you speak to anyone, and you want a free trial with no card. Especially if you already live in Gmail and you want your email replies drafted, your CMAs prepared from your MLS comps, your listings written and staged, and a briefing on your phone at 6:30am. Entry is $99 a month, the whole agent is on every plan, and you can leave whenever you like.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> The problem is that nobody answers. A lead calls at 9pm and reaches voicemail. A buyer writes on WhatsApp on a Sunday and hears nothing until Tuesday. You want the phone and the messages answered in seconds, in English and Spanish, around the clock, you want follow-up to happen without you working a list, and you would rather pay $297 to $1,297 once than $99 to $599 a month forever.<br><br>
+          <strong style="color:white;">The honest difference:</strong> B.Claw makes you faster at the work you already do. BirkyStudio does the work nobody is awake for. B.Claw is cheaper to try and easier to walk away from. BirkyStudio is cheaper after the first year, and it is the only one of the two that answers a ringing phone, which is the moment most leads are actually won or lost.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/bclaw-article-1.jpg" alt="Wide view of a bright modern real estate brokerage office interior with several empty workstations, tall windows, plants and warm morning light" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and B.Claw?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        Most comparison pages on this site weigh a platform against a front desk. This one is different, because B.Claw is the closest product to what we build: an AI agent that reads your real inbox, your calendar, your MLS and your CRM and takes actions across them. Bounti sells it to real estate agents with a working pitch, published prices and a free trial, and it connects to 250 or more tools so you do not have to rip out the stack you already run. Bounti also sells the visual side of the same platform, which is how a lot of agents first meet the company: photo tools that turn empty room shots into staged listings, listing videos with voiceover, and marketing kits with flyers and social posts.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes a narrower route. The Base Agent, at $1,297 one time with a Notion CRM for agents included free, reads every website and WhatsApp enquiry, sorts it, saves it, answers it instantly and follows up automatically in English and Spanish. Add the AI Receptionist and the phone itself is answered around the clock: $297 one time for WhatsApp, $550 one time for voice plus Vapi usage of about $30 to $50 a month. Add a Verified Prospect List at $497 or $997 one time and you start from real, enriched, scored prospects you own rather than a rented stream.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        So the real question is not which product is better built. Both are well built, and B.Claw is the more transparent of the two on price. The question is what kind of help you actually need: a faster version of you, or somebody standing at the door while you sleep. That is what the tables below compare, and we have written down the parts where B.Claw wins, because there are several.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs B.Claw, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">B.Claw (Bounti)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 15-minute audit, projects from $297 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free trial about a week, no card, then $99/mo (Start)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">An AI agent you subscribe to and operate in your own tools</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Price Visible Before a Sales Call</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, every price is published on our site</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, every plan and every limit is published</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time build you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Monthly subscription forever, $99 to $599/mo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no minimum term, 30-day money-back on the build</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Month to month, no annual lock-in, upgrades prorated</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free 15-minute audit, 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ About a week of full use, every feature, no credit card</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone (AI Voice)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Voice Receptionist $550 one-time (Vapi ~$30-50/mo), 24/7 EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No, it does not answer calls at all</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Conversations on WhatsApp</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No WhatsApp agent</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Follow-Up on Leads</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included with The Base Agent, sends without you touching it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Yes, but as drafts you approve and send yourself</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Email Inbox Triage and Draft Replies</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Enquiries are read, sorted, answered and saved, not drafted for approval</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, drafts in your voice, one-tap approval, nothing sends without you</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Morning Briefing</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not a scheduled daily brief</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, a 6:30am brief with calendar, urgent mail and pipeline</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CMA Preparation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not offered</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, MLS comps pulled and adjusted into a branded CMA</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Listing Content and Photo Staging</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not offered</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, descriptions, virtual staging and listing video are core products</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Works With the CRM You Already Pay For</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ We install a Notion CRM for agents, included free</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, 250+ integrations, sits on top of Follow Up Boss, kvCORE, HubSpot</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Owns What You Paid For</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Your CRM, your list and your website code, yours forever</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ The agent is rented, access ends when the subscription ends</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">IDX Website and MLS Listing Search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not an MLS platform, no listing search</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No, its own comparison calls it riding on your existing IDX</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead Generation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own ($497 / $997 one-time)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No leads supplied, it works the leads you already have</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team and Brokerage Plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Business tier from $2,997 one-time, not priced per seat</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Single-agent only today, each agent subscribes separately</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Usage Metering</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None, the build runs without an action counter</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Plans are sized by monthly actions, top-ups in $5 increments</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Live in 2 to 3 days, we build it for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Connect Gmail and calendar in about five minutes for Level 1</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN / ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included, agent and website both</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ English-language workflow, drafts in your own voice</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Independent Review Base</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Smaller, newer studio, no large review count yet</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ G2's 4.9/5 is 7 reviews of a 2024 B2B product, Capterra shows 0</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The person who built it answers, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Email, help desk and knowledge base, no review base to judge it on</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Is It For</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Agents and small businesses losing leads to missed calls and messages</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agents who live in their inbox and want it faster</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/bclaw-article-2.jpg" alt="Wide view of an elegantly staged living room in a home for sale with a neutral sofa, coffee table, rug and large windows" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT ANSWERS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not software you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a subscription for a database, and there is no action counter watching how much it runs.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Add the AI Receptionist and the front desk is covered around the clock. The Text Receptionist for WhatsApp is $297 one-time and holds real conversations. The Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month, and it answers calls 24/7 in both languages. Add a Verified Prospect List ($497 Starter, $997 Pro, one-time) and you start from real, enriched, scored prospects you own forever, no bots and no dead numbers. The $1,997 Lead Generation Pack ties it together: the list, automated outreach, an AI agent trained on your pitch, and the receptionist that catches every reply.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Websites are the other half of what we sell, and they are deliberately the opposite of a platform: Starter $499 for 1 to 3 pages, Professional $999 for a 4 to 7 page bilingual site, Premium $1,999 for 10+ pages with a blog, all one-time, delivered in days, on your own account with the code in your hands. There is a $130 CMS add-on if you want to edit it yourself. What we do not have is the productivity layer B.Claw excels at. We do not draft your email replies for one-tap approval, we do not pull comps into a branded CMA, we do not write your listing descriptions at the push of a button, and we do not run a 6:30am briefing across your whole pipeline. If that is the work that is drowning you, B.Claw is the better product for it and we say so in the How to Choose section below.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>AI answers your phone and WhatsApp 24/7, EN and ES</li>
+              <li>Every price published, no demo needed to see a number</li>
+              <li>One-time pricing instead of a monthly subscription</li>
+              <li>No contract, no minimum term, 30-day money-back on the build</li>
+              <li>Follow-up happens automatically, you do not approve each send</li>
+              <li>Notion CRM included free with The Base Agent</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Website you own ($499 / $999 / $1,999), pages stay live</li>
+              <li>Business tier from $2,997, not multiplied by seat</li>
+              <li>Live in 2 to 3 days, no onboarding programme to attend</li>
+              <li>The person who built it answers your support</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>No email drafting for one-tap approval</li>
+              <li>No CMA generation and no MLS comp pulling</li>
+              <li>No listing writing, no virtual staging, no listing video</li>
+              <li>No morning briefing across your calendar and pipeline</li>
+              <li>No IDX, no MLS feed, no listing search</li>
+              <li>No team lead routing, no commissions, no back office</li>
+              <li>Lead volume is a one-time list rather than a monthly stream</li>
+              <li>Smaller, newer studio with no large public review count</li>
+              <li>Entry is a 15 minute audit rather than an instant free trial</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · CMS add-on $130 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care and Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/bclaw-article-3.jpg" alt="Wide view of a quiet suburban residential street at golden hour with detached houses, front lawns and long soft shadows" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: B.Claw -->
+      <div id="bclaw" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">B.Claw, by Bounti</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Start with the thing B.Claw does better than almost anyone in this category: it tells you the price. Bounti publishes a free plan that runs about a week of real use with no credit card, then Start at $99 a month, Light at $219, Medium at $349 and Heavy at $599, all month to month, no setup fee, no annual lock-in, upgrades prorated, top-ups in $5 increments inside a comfort zone that defaults to your plan plus $50. Its own pricing page says it plainly: every plan gets the whole agent, with briefings, triage, CMAs, listing prep, memory and standing orders included, and the only difference is how much it runs in a month. Compare that with BoldTrail, CINC or Sierra Interactive, all of which either hide the price behind a demo form or lock you into twelve months, and Bounti is playing a fairer game than most of its competitors. Bounti also answers the team question honestly instead of dodging it: not yet, B.Claw is a single-agent product today, each agent runs their own subscription, and multi-agent, shared inbox and brokerage tiers are on the roadmap but not shipping.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Then look at what it actually does, because it is substantial. B.Claw connects to Gmail and Google Calendar through OAuth rather than by storing passwords, then works across 250 or more tools and, in Bounti's own words, sits on top of whatever CRM you already pay for. Mornings start with a briefing that lands on your phone, with the calendar, the urgent mail and the pipeline already sorted. Every client, lead, lender and attorney reply is drafted in your voice and left in Gmail for one-tap approval, and Bounti is explicit that nothing sends unless you told a job to, so the send button stays yours. CMAs are pulled from your MLS comps using NAR PSA methodology and generated as branded PDFs. Listings get descriptions, virtual staging and video, which is where Bounti started. Standing orders are listed with what they do and when they fire, and you can pause any of them. It is a real product with a real product idea behind it, and the agents who like it like it a lot.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Now the limits, and the honest ones are three. First, and this is the one that matters most, B.Claw does not answer a phone call and it does not hold a WhatsApp conversation. Nothing in the product does. Its AI reads, drafts, summarises and prepares, all inside your own tools, and a lead who rings at 9pm or messages on a Sunday still reaches nobody. For an agent whose leads arrive by email, that is fine. For an agent whose leads call, it means the fastest part of the funnel is still unanswered. Second, B.Claw is a layer you operate, not an operator that replaces you. Every reply is a draft you approve, so if you have a busy week and you do not work the queue, the drafts just sit there, and the value you get out of the subscription is proportional to the attention you put in. That is a deliberate safety design rather than a flaw, but it is a real difference in what you are buying: we build something that sends the follow-up without asking you, and B.Claw builds something that writes it and waits. Third, the subscription runs forever. On the plans an agent actually runs daily, Light is $2,628 a year and Medium is $4,188 a year, year after year, and Heavy is $7,188, on top of whatever CRM, IDX platform and MLS access you are already paying for. Medium for three years is about $12,564 and Heavy is about $21,564, and cancelling takes the agent with it.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          One more honest note, on reviews. There is no independent review base for the real estate product yet. Bounti's G2 page shows 4.9 out of 5 from 7 reviews, but those written reviews are from 2024 and they describe a general B2B prospecting and messaging tool, not today's B.Claw real estate workflow, and Capterra, TrustRadius and GetApp all show zero written user reviews for the real estate listing. A third party review profile checked on 12 November 2026 put it well: the small G2 base describes a 2024 general B2B prospecting product and is not clear evidence for today's B.Claw real-estate workflows. That is not a criticism of the product, it is a statement about how young it is, and it cuts both ways: it means you are early, which is why the free trial matters so much. Take it, connect your Gmail, and see for yourself rather than trusting a page like this one.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Every price, every limit published, no demo required</li>
+              <li>Free trial of about a week with no credit card</li>
+              <li>Month to month, no annual lock-in, no setup fee</li>
+              <li>250+ integrations, rides on the stack you already pay for</li>
+              <li>Email replies drafted in your voice for one-tap approval</li>
+              <li>CMAs from your MLS comps, branded, in minutes</li>
+              <li>Morning briefing with calendar and pipeline on your phone</li>
+              <li>Virtual staging and listing video from the same platform</li>
+              <li>Draft-before-send safety and readable, correctable memory</li>
+              <li>OAuth connections, revocable from your Google account</li>
+              <li>Cheap entry at $99 a month and easy to leave</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Does not answer phone calls or WhatsApp conversations</li>
+              <li>You must work the draft queue for it to deliver value</li>
+              <li>Subscription forever, $1,188 to $7,188 a year, every year</li>
+              <li>Nothing is owned, the agent stops when the plan stops</li>
+              <li>Single-agent only, no shared inbox or brokerage tier yet</li>
+              <li>Plans metered by monthly actions, busy months cost more</li>
+              <li>No IDX website and no leads supplied</li>
+              <li>No meaningful independent review base for the real estate product</li>
+              <li>Young company, roadmap items such as team tiers not shipping</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free plan about a week of real use, no credit card · Start $99/month (~100 actions) · Light $219/month (~240 actions) · Medium $349/month (40+ actions a day, described as most popular) · Heavy $599/month (80+ actions a day) · Every plan includes every feature, only volume differs · Month to month, no setup fee, no annual or volume discounts, upgrades prorated, downgrades at next cycle · Comfort zone defaults to plan + $50, top-ups in $5 increments · Single-agent product today, multi-agent and brokerage tiers on the roadmap (verified on bounti.ai/pricing, November 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">B.Claw (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Cheapest entry</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (Text Receptionist for WhatsApp)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 for the first week, then $99/mo on Start</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Entry plan for a year</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 once, and it is yours</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Start, about $1,188 a year at $99/mo</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The plan you would actually run daily</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">The Base Agent $1,297 one-time, CRM included free</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Light about $2,628 a year, Medium about $4,188 a year</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The same purchase with ongoing care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent + $97/mo care for 12 months)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Light is about $167 more, Medium is about $1,727 more, and it renews</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">High-volume plan for a year</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time for the business tier, not per seat</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Heavy about $7,188 a year, one agent</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every enquiry 24/7, EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 once + ~$30-50/mo, about $910 to $1,150 for the year</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, no calls and no WhatsApp at any plan</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Front desk plus a working agent, year 1</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent + care), voice receptionist about $1,150 more</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,016 on Bounti's own example (Start $99 plus Follow Up Boss $69, $168 a month)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospects you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 Starter or $997 Pro, one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, it works the leads you already have</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Listing content and staging</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Included in Bounti's platform plans, no separate line item published</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A small team of five</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time, not priced per seat</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not available today, five separate subscriptions if it were</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Realistic all-in monthly after year one</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $108/mo if you take the $97 care plan, or $0 to just keep it</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$219 to $599/mo, unchanged, forever</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What you owe if you walk away in month four</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0, no contract, 30-day money-back on the build</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0, month to month, no cancellation penalty</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, agent plus care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $4,789 (Base Agent plus $97/mo care for three years)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $7,884 on Light or $12,564 on Medium, and still running</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What you still have if you stop paying</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Everything: the agent, the CRM, the list, the website and its pages</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Nothing, the agent stops and the drafts stop with it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📥 Your bottleneck is email, not the phone</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">B.Claw</strong>, without much hesitation. If your leads arrive by email and your problem is that replies take you an hour each and you write them at 11pm, B.Claw drafts them in your voice for one-tap approval, prepares the CMA from your comps, writes the listing and briefs you at 6:30am. At $99 to $349 a month, with a free trial and no lock-in, that is a reasonable price for hours back. BirkyStudio does not draft your email for approval and we are not going to pretend otherwise.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 Your leads call or message and nobody answers</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. This is the whole reason this page exists. B.Claw does not answer calls and does not hold WhatsApp conversations at any price, so a lead who rings at 9pm reaches voicemail and a buyer who writes on a Sunday waits until you are free. The Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time. Plenty of agents run both products: B.Claw for the paperwork, us for the door.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💸 You want the lowest risk way to test AI this month</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">B.Claw</strong>. A free week with every feature and no credit card, then $99 a month you can cancel at any time, is the least committed way to find out whether an AI agent fits your business. BirkyStudio's entry is a free 15-minute audit followed by a build from $297, which is cheap and refundable within 30 days, but it is a build rather than a trial. If you are testing the whole category, test it with the product that lets you leave on Friday.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🔑 You are tired of paying monthly for something you will never own</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. This is the honest arithmetic rather than a preference. Light runs about $2,628 a year and Medium about $4,188, every year, and stopping the payment stops the agent. The Base Agent is $1,297 once with the Notion CRM included, and with care at $97 a month that is about $2,461 in year one and about $4,789 over three years, after which the build is still yours. If you plan to still be selling in three years, the one-time purchase is simply the cheaper one on comparable plans. If you are not sure you will still be running it in six months, B.Claw is the better bet.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">👥 You are buying for a team, not just yourself</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Neither</strong>, and Bounti agrees with us. Its own pricing FAQ says B.Claw is a single-agent product today, with multi-agent, shared inbox and brokerage tiers on the roadmap but not shipping, so a five person team is five subscriptions with five separate inboxes and no shared view. BirkyStudio's business tier starts at $2,997 one-time and is not multiplied by seat, but we do not sell lead routing, commissions or back office either. For a team or a brokerage the platform pages on this site are the right reading, starting with BoldTrail and Sierra Interactive.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🏠 You need to win listings, not just answer them</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">B.Claw</strong>, on this one. CMAs built from your MLS comps using NAR PSA methodology, listing descriptions in your brand voice, empty rooms staged into furnished photos and a listing video with voiceover, all from one platform, is a genuinely strong listing-side toolkit at $349 a month on Medium. BirkyStudio has nothing comparable. Our lead side is different: a Verified Prospect List at $497 or $997 one-time is verified, enriched, scored prospects you own, which is about who to call rather than what to show them.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Of every product compared on this site, B.Claw is the one we would recommend without any caveat to a certain kind of agent. It publishes its prices, it gives you a free week with no card, it charges month to month with no lock-in, it connects to the tools you already pay for instead of demanding you replace them, and it does real work: drafts in your voice, CMAs from your comps, listing content, staging, and a briefing on your phone every morning. Its reviews are thin because the real estate product is young, and it says so itself rather than hiding behind a 4.9 average from a different product. If your inbox is the bottleneck, <strong style="color:white;">buy B.Claw and use the free trial before you trust anything on this page, including us</strong>.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          But be equally clear about what it is not. B.Claw is an assistant that makes you faster at work you still have to do. Every reply is a draft you approve, every standing order is something you configured, and when the subscription stops the agent stops. It does not pick up the phone. It does not hold a WhatsApp conversation. It does not supply a single lead. And on the plans an agent actually runs daily it is $2,628 to $4,188 a year, every year, on top of the CRM, the IDX platform and the MLS access you are already paying for, which over three years is about $7,884 to $12,564 for something you will never own. <strong style="color:white;">BirkyStudio is the opposite shape of purchase.</strong> The Base Agent is $1,297 once with the Notion CRM included, the voice and WhatsApp receptionists answer around the clock in two languages for $550 and $297 one-time, the follow-up sends itself without waiting for your approval, and the website and its pages stay yours whether or not we ever speak again.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: B.Claw is what you buy when you need a faster version of yourself in the inbox. BirkyStudio is what you buy when the phones are ringing and there is nobody to answer them. If both are true, run both, because they do not overlap and the honest answer is that most agents who last do exactly that.<br><br>
+          <strong style="color:white;">Choose B.Claw if:</strong> you live in email, you want drafts, CMAs, listing content and staging in one cheap month-to-month agent, and you want to test the whole idea free before you pay.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want your phone and WhatsApp answered 24/7 in two languages, follow-up that sends itself, verified prospects you own, and a one-time price instead of a subscription that never ends.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://bounti.ai/pricing" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Try B.Claw Free →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does B.Claw cost?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            B.Claw publishes all of its prices, which is better than most of its competitors. The free plan runs about a week of real use with no credit card, and then Start is $99 a month for roughly 100 actions, Light is $219 a month for roughly 240 actions, Medium is $349 a month for 40 or more actions a day, and Heavy is $599 a month for 80 or more actions a day. Every plan includes every feature, and the only difference is how much the agent runs. Plans are month to month with no annual lock-in and no setup fee, upgrades are prorated, downgrades take effect at the next cycle, and top-ups come in $5 increments inside a comfort zone you set, which defaults to your plan plus $50. Year one on Light is about $2,628, and Medium, the plan described as most popular for agents doing three to five deals a month, is about $4,188.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does B.Claw answer my phone or reply on WhatsApp?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No, and this is the single most important thing to understand about it. B.Claw is an AI agent that works inside your Gmail, your calendar and your CRM. It drafts replies for your approval, pulls MLS comps for a CMA, writes listing content, stages listing photos, runs a morning briefing and keeps a memory of every promise you made. What it does not do is pick up a phone call or hold a WhatsApp conversation, and Bounti does not claim otherwise. Its own pricing page says every plan gets the whole agent: briefings, triage, CMAs, listing prep, memory and standing orders. Answering calls and messages is a different product, and that product is BirkyStudio's: the Voice Receptionist is $550 one-time plus Vapi usage of about $30 to $50 a month and answers calls 24/7 in English and Spanish, and the WhatsApp Text Receptionist is $297 one-time.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How is B.Claw different from BirkyStudio's The Base Agent?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            They are both an AI layer that works across your tools, which is why this page pairs them. The difference is who does the work and when it stops. B.Claw is a subscription you operate: it drafts, you approve, you send, and the bill continues for as long as you want it. It runs from $99 to $599 a month forever, so $1,188 to $7,188 a year, every year. The Base Agent is a build we do for you one time for $1,297, with the Notion CRM included free, and after that the only optional cost is care at $97 a month. On the plans an agent actually runs daily, Light at $2,628 a year and Medium at $4,188 a year each cost more in year one than The Base Agent plus a year of care at about $2,461, and unlike a one-time build the subscription never ends.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is B.Claw (Bounti) the same as OpenClaw or other Claw tools?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No, and the names do get mixed up. B.Claw is the name of the AI agent sold by Bounti, a company whose product is built specifically around the real estate agent workflow: Gmail, Google Calendar, MLS comps, CMAs, listings and 250 or more connected tools. OpenClaw is an unrelated open-source project that runs on a server you host and maintain yourself, which is why the agents discussing it in forums talk about VPS and AWS upkeep and about rebuilding integrations that established automation platforms already provide. So when you read a forum thread about Claw, check which product is actually being discussed before you take the opinion as a review of Bounti. The two are not the same purchase and the support experience is not comparable either, because one is a hosted product with a vendor behind it and the other is software you run.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does B.Claw have a contract, a setup fee or a free trial?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            This is where B.Claw is genuinely clean, and it is worth saying clearly. There is a free trial of about a week with no credit card and every feature included, there is no setup fee, every plan is month to month with no annual lock-in, upgrades are prorated, and there is no cancellation penalty. Its own pricing page states there are no annual or volume discounts because pricing is the same month to month for everyone, with no negotiated rates. That is a fairer buying experience than BoldTrail, CINC or Sierra Interactive, all of which hide the price or lock you into twelve months. BirkyStudio is also contract free with no minimum term and a 30 day money back guarantee on the build, and the pattern across both products is that the cheapest thing to compare is not the monthly number but the exit.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does B.Claw include an IDX website or lead generation?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. B.Claw rides on the real estate stack you already pay for rather than replacing it, and its own comparison page is explicit that it has no IDX website, describing it as riding on your existing IDX. It also does not supply leads. What it does is work the leads and the listings you already have: it drafts every reply for approval, triggers instant response on a new lead, prepares CMAs from your MLS comps, and updates a pipeline sheet from your inbox. If you need an IDX site, that comes from a platform such as BoldTrail, Sierra Interactive or Placester, or from your MLS website vendor. BirkyStudio is in a third category again: we build general business websites at $499, $999 and $1,999 one-time, and our Verified Prospect List at $497 or $997 one-time is a file of verified, enriched, scored prospects you own, not an IDX feed.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Is B.Claw a good fit for a team or a brokerage?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Not today, and Bounti says so itself. Its pricing FAQ answers the team question directly: not yet, B.Claw is a single-agent product today, each agent runs their own subscription with their own Gmail, calendar and CRM connections, and multi-agent, shared inbox and brokerage tiers are on the roadmap but not shipping. So a five person team is five subscriptions at $99 to $599 each per month, which is $5,940 to $35,940 a year, with no shared inbox and no brokerage roll-up. BirkyStudio's business tier starts at $2,997 one-time for The Base Agent and does not multiply by seat. For a brokerage that wants one system for IDX, lead routing, commissions and recruiting, neither of these is the answer and a platform such as BoldTrail is.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> B.Claw pricing was verified directly on bounti.ai/pricing on 17 November 2026: a free plan of about a week with no credit card, then Start $99/month for about 100 actions, Light $219/month for about 240 actions, Medium $349/month for 40 or more actions a day, and Heavy $599/month for 80 or more actions a day, with every feature on every plan, month to month terms with no annual or volume discounts, prorated upgrades, downgrades at the next cycle, and a comfort zone defaulting to plan plus $50 with top-ups in $5 increments. The statement that every plan gets the whole agent, covering briefings, triage, CMAs, listing prep, memory and standing orders, and that the only difference is how much it runs in a month, is from the same pricing page. The description of the product (Gmail and Google Calendar by OAuth, drafts left for one-tap approval with nothing sent unless a job was told to send, morning briefing, MLS comps pulled with NAR PSA methodology into branded CMA PDFs, listing content, virtual staging, listing video, 250 or more integrations, standing orders that can be paused) comes from Bounti's own site, its skills and pricing pages and Bounti's comparison page, which is also where the no IDX website point comes from, described as riding on your existing IDX. The single-agent limitation and the roadmap status of multi-agent, shared inbox and brokerage tiers are quoted from Bounti's own pricing FAQ, as is the absence of annual and volume discounts. Reported cost context for other platforms (BoldTrail quote-only with agent-reported costs around $499 a month, CINC quote-only with a mandatory co-managed ad budget, Sierra Interactive from $299.95 a month on annual prepay with a twelve month agreement) is from those vendors' own pricing pages and the third party reviews cited on our other comparison pages. On reviews, we are deliberately careful: Bounti's G2 listing shows 4.9 out of 5 from 7 reviews, but the written reviews are from 2024 and describe a general B2B prospecting and messaging product rather than today's real estate workflow, while Capterra, TrustRadius and GetApp show no written user reviews for the real estate listing. The independent assessment quoted in the detailed review, that G2's small review base describes a 2024 general B2B prospecting product and is not clear evidence for today's B.Claw real-estate workflows, is from a third party review profile checked on 12 November 2026. BirkyStudio pricing from birkystudio.com as of November 2026, including The Base Agent ($1,297 solo / from $2,997 business, Notion CRM included), the Text Receptionist ($297 one-time), the Voice Receptionist ($550 one-time plus Vapi usage of about $30 to $50 a month), the Verified Prospect List ($497 Starter / $997 Pro one-time), the Lead Generation Pack ($1,997 one-time), websites ($499 / $999 / $1,999), the CMS add-on ($130), the Custom Assessment ($349 solo / $999 business) and optional care at $97 or $197 a month. All prices were checked in November 2026 and may change; confirm current figures with each vendor before you buy.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
