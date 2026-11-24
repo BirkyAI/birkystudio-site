@@ -1,0 +1,669 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const articleLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BirkyStudio vs Allo: An AI Receptionist You Rent by the Seat vs a Front Desk That Answers",
+  "description": "Honest 2026 comparison of BirkyStudio vs Allo for real estate agents. Allo is the cheapest unlimited AI call answering in the category, a flat $32 a seat plus $32 for the AI receptionist, with numbers, porting and SMS included and no contracts. But it is a phone system you operate by the seat, it never holds a WhatsApp conversation, its AI does not place outbound calls and it is English-first. BirkyStudio answers your phone and WhatsApp 24/7 in English and Spanish, follows up automatically and sells once instead of monthly. Real pricing, real limits, no bias.",
+  "author": {
+    "@type": "Person",
+    "name": "Luna Jerney",
+    "url": "https://birkystudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Birky Studio",
+    "url": "https://birkystudio.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://birkystudio.com/images/birky-logo.jpg"
+    }
+  },
+  "datePublished": "2026-11-24",
+  "dateModified": "2026-11-24"
+});
+
+const faqLD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Allo cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Allo publishes its prices, which already puts it ahead of most vendors in this category. A Business seat is $32 a month billed yearly, or $45 month to month, and the AI Receptionist is an add-on that costs one more seat per agent, $32 a month billed yearly or $45 month to month. So one agent with the receptionist pays the equivalent of about $64 a month billed yearly, or about $90 a month on monthly billing, which is $768 and $1,080 for the year. There is no per minute meter, so a busy week costs the same as a quiet one. An extra phone number starts at $5 a month, the Power Dialer is a flat $50 a month for the whole team, and a HIPAA Business Associate Agreement is $50 a month for the whole workspace. There are no setup fees and no contracts, seat changes are prorated, and every plan starts with a 3 day free trial with the AI add-on enabled."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Allo answer WhatsApp messages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Allo is a phone system and its AI receptionist answers inbound calls, sends an SMS text back to a missed call and updates your CRM after every call, but it does not hold an AI conversation on WhatsApp. For a lot of real estate buyers, especially in Latin America, the United States and Europe, WhatsApp is where the first message actually arrives, and a chat that waits until someone picks it up is a lead that waits. BirkyStudio's Text Receptionist is $297 one time and holds full WhatsApp conversations 24/7 in English and Spanish, so it answers the channel Allo does not cover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Allo's AI make outbound calls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and Allo is unusually honest about it. Its own comparison page states that today the AI receptionist answers calls and does not place them, so outbound calling stays with the people on your team, helped by the $50 a month Power Dialer and the Ultra plan's AI SDR. BirkyStudio is not a dialer either, and we are not going to pretend otherwise. What we do place is the follow-up: The Base Agent reads every website and WhatsApp enquiry, saves it and answers it instantly, then follows up automatically without you approving each send, in English and Spanish. The $1,997 Lead Generation Pack pairs that with a verified prospect list and outreach, which is about who to contact rather than how fast the phone dials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Allo different from BirkyStudio's AI Receptionist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They both answer the phone around the clock, which is why this page pairs them. The difference is the shape of the purchase and the width of the answer. Allo is a phone system you operate, sold per seat, on subscription every month, where the AI receptionist is an add-on and stopping the payment stops the number. BirkyStudio builds it for you once: the Voice Receptionist is $550 one time plus Vapi usage of about $30 to $50 a month, and it answers calls 24/7 in English and Spanish, not English first. Add the $297 WhatsApp Text Receptionist and the $1,297 Base Agent and one operator covers phone, WhatsApp and website enquiries into a Notion CRM included free. Allo wins on being a complete phone system with porting, SMS and an IVR at the lowest unlimited price in the category. We win on covering the inbox as well as the phone line, in two languages, for a one time price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Allo have a contract, a setup fee or a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a place where Allo is genuinely clean and worth saying plainly. There are no setup fees and no contracts, you can upgrade, downgrade or cancel whenever you want, changes to seats are prorated so you never pay for seats you do not use, and every plan starts with a 3 day free trial with the AI add-on enabled for the length of the trial, though a card is required. That is a fairer buying experience than Sierra Interactive's twelve month agreement or CINC's quoted pricing. BirkyStudio is also contract free, with no minimum term and a 30 day money back guarantee on the build."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Allo include a website or lead generation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No to both. Allo is a business phone system, so it supplies none of its own leads and it does not build a website. What it does is answer and log the calls you already get, sync them to the CRM you already pay for through HubSpot, Pipedrive, Attio, Salesforce or Zapier, and text back the ones you miss. If you want leads to call, BirkyStudio's Verified Prospect List at $497 or $997 one time is a file of verified, enriched, scored prospects you own, not a rented stream, and our websites at $499, $999 and $1,999 one time are yours with the code in your hands. If you need an IDX listing site, that comes from a platform such as BoldTrail, Sierra Interactive or Placester."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do Allo's own reviewers say?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mostly good, with two honest gaps. G2 shows roughly 4.6 to 4.7 out of 5 across about 200 reviews, and the things reviewers praise are the flat unlimited price, the mobile first design, the CRM sync and the AI receptionist itself. G2's own summary of the downsides lists a lack of picture messaging, SMS features reviewers miss, some call quality and app lag, and a desktop app that several users call weaker than the mobile app. One reviewer wrote that it was a shame SMS messages are no longer unlimited, and another described terrible call quality with no update for over a month. Trustpilot is thinner: 4.2 out of 5 across 24 reviews, positive on call clarity and support, with a few 1 star reviews about being charged after cancelling. None of that changes the value case, but it is the same lesson as always: use the free trial rather than trusting a page like this one, including ours."
+      }
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="BirkyStudio vs Allo (2026 Comparison)"
+  description="Honest 2026 comparison: Allo is the cheapest unlimited AI call answering, but it never holds a WhatsApp conversation. BirkyStudio answers calls and WhatsApp 24/7 EN and ES."
+  image="/images/comparison/allo.jpg"
+  >
+    <script type="application/ld+json" set:html={articleLD} />
+    <script type="application/ld+json" set:html={faqLD} />
+
+    <!-- Hero -->
+    <section style="padding:100px 0 80px;position:relative;overflow:hidden">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+      <div style="display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;font-size:0.85rem;font-weight:500;margin-bottom:20px;">
+        Updated November 2026 • Honest comparison
+      </div>
+      <h1 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:white;margin-bottom:20px;line-height:1.15;">
+        BirkyStudio vs Allo<br>
+        <span style="background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">An AI Receptionist You Rent by the Seat vs a Front Desk That Answers</span>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--bs-text);line-height:1.8;max-width:700px;">
+        Allo is the most honest price in the AI receptionist market right now. One Business seat is $32 a month billed yearly and the AI receptionist is one more seat at $32, so a solo agent pays about $64 a month, all in, with unlimited minutes and no per minute meter, on top of a real phone system with numbers in 80 or more countries, free porting, SMS, call recording and the IVR. There is no setup fee, no contract and a 3 day free trial. If all you need is a call answered, that is hard to beat and we say so on this page. The limit is what it does not do: Allo never holds a WhatsApp conversation, its own page states the AI answers calls and does not place them, it is English first, and it is a phone line you rent by the seat forever. BirkyStudio is the other half of the front desk. Here is the honest breakdown, including every place Allo is the better buy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding:80px 0">
+    <div style="max-width:900px;margin:0 auto;padding:0 32px;">
+
+      <!-- Quick Answer -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">⚡ Quick Answer</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          <strong style="color:white;">Choose Allo if:</strong> You want the cheapest unlimited AI call answering in the category, you want a full phone system rather than just an answering add-on, and you want to see every price before you speak to anyone. A seat plus the receptionist is about $64 a month billed yearly, the minutes are unlimited, the number is yours to port, SMS and call recording are in, and it syncs to the CRM you already pay for. It is genuinely good value, ships in minutes, and you can leave whenever you like.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> The problem is wider than the phone line. A buyer writes on WhatsApp on a Sunday and hears nothing until Tuesday. Half your clients would rather speak Spanish. You want the calls, the WhatsApp chats and the website enquiries all answered and followed up in seconds, around the clock, in both languages, and you would rather pay $297 to $1,297 once than $64 a month forever.<br><br>
+          <strong style="color:white;">The honest difference:</strong> Allo is the cheapest way to stop missing phone calls, and it wins that fight. BirkyStudio covers the channels a phone system cannot reach, the message apps and the inbox, and it is cheaper after the first year because you buy it once. If the only thing going unanswered is the phone, Allo is the better buy. If leads arrive by message and by call and nobody is awake for either, that is the job we built for.
+        </p>
+      </div>
+
+      <!-- Article Image 1 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/allo-article-1.jpg" alt="Wide view of a bright modern real estate office reception area with a front desk, guest seating, plants and tall windows in warm daylight" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Why Compare -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Why compare BirkyStudio and Allo?</h2>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        Most pages on this site weigh a platform against a front desk. This one is the closest to a true head to head, because Allo and BirkyStudio both sell an AI that answers the phone. Allo is a business phone system built for small teams, mobile first, with the AI receptionist as an add-on, and it is the one product in this category that publishes a flat, unlimited price with no per minute meter. Its own roundups put it first for solo agents and small real estate teams, and on price that ranking is fair: a seat plus the receptionist is about $64 a month, which is cheaper than Smith.ai, Goodcall, RingCentral, Nextiva and CloudTalk on the lines we have compared on this site.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+        BirkyStudio takes a different route. The Voice Receptionist is $550 one time plus Vapi usage of about $30 to $50 a month, and it answers calls 24/7 in English and Spanish. Add the WhatsApp Text Receptionist at $297 one time and the AI also holds real conversations on the channel a lot of buyers actually use. Add The Base Agent at $1,297 one time, with a Notion CRM for agents included free, and every website and WhatsApp enquiry is read, sorted, saved, answered and followed up automatically. Add a Verified Prospect List at $497 or $997 one time and you start from real, enriched, scored prospects you own rather than calls you have to wait for.
+      </p>
+      <p style="color:var(--bs-text);line-height:1.8;margin-bottom:40px;">
+        So the real question is not which product is well built. Both are, and Allo is the cheaper one on the phone line. The question is how wide your front desk needs to be: one line answered well, or every channel answered in two languages by something you own. That is what the tables below compare, and we have written down the parts where Allo wins, because there are several.
+      </p>
+
+      <!-- Comparison Table -->
+      <h2 id="comparison" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">BirkyStudio vs Allo, Side by Side</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Feature</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Allo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Starting Price</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 15-minute audit, projects from $297 one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $32 per seat per month billed yearly, 3-day free trial</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What It Is</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A done-for-you AI operator we build and run for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">A business phone system you subscribe to and operate per seat</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Price Visible Before a Sales Call</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, every price is published on our site</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Yes, seats and every add-on are published</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Pricing Model</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ One-time build you own, optional $97/mo or $197/mo care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Monthly subscription per seat, forever</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Free Trial</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Free 15-minute audit, 30-day money-back guarantee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ 3-day free trial, AI add-on enabled, card required</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Fee</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Contract Commitment</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, no minimum term, 30-day money-back on the build</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ No contract, cancel anytime, seat changes prorated</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answers Your Phone with AI</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Voice Receptionist $550 one-time (Vapi ~$30-50/mo), 24/7 EN and ES</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ AI Receptionist $32 per agent per month on top of a seat, 24/7, unlimited minutes</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Per-Minute Meter</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None, you pay Vapi usage only</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ None, unlimited AI minutes on the flat add-on</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Extra Cost Per Person</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ None, the build is not priced per seat</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Every agent needs a seat, and the receptionist adds one more</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Makes Outbound Calls</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Follow-up and WhatsApp replies are automatic, outbound dialing is not the core</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No, Allo says its AI answers calls and does not place them</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">AI Conversations on WhatsApp</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Text Receptionist $297 one-time, full AI conversations 24/7</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No WhatsApp agent, SMS text-back only</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Bilingual (EN / ES)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included, receptionist and website both</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ English first, a French voice is advertised, no Spanish claim</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Full Phone System (numbers, porting, SMS, IVR)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ We answer the line, you keep your carrier and number</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Numbers in 80+ countries, free porting, SMS, IVR, call recording</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Call Recording and Transcripts</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Included with the receptionist</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Every call recorded, transcribed and summarised</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Books Appointments</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Into your calendar, in English and Spanish</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Google Calendar, Outlook, Cal.com or Calendly</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Missed-Call Text Back</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Reply and follow-up are automatic</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Sends the SMS follow-up automatically</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">CRM</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Notion CRM for agents included free with The Base Agent</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Syncs to HubSpot, Pipedrive, Attio, Salesforce or Zapier, your CRM</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Team Plans and Seats</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Business tier from $2,997 one-time, not priced per seat</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Built for teams, unlimited seats, each billed per seat</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Lead Generation</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Verified, enriched, scored prospect list you own ($497 / $997 one-time)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ No leads supplied, it answers the calls you already get</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ $499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Not a website product</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">HIPAA and Compliance Add-on</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Not offered</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ HIPAA BAA $50 per month for the whole workspace</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">SMS Sending</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ WhatsApp messages included, no per-message meter</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ US sending included, $5 credit per seat then pay as you go, $24 A2P once</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Setup Time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Live in 2 to 3 days, we build it for you</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ A number in about 10 minutes, receptionist configured in about 15</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Independent Review Base</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ Smaller, newer studio, no large review count yet</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">⚠️ G2 about 4.6 to 4.7/5 across roughly 200 reviews, Trustpilot 4.2/5 on 24</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Support</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The person who built it answers, plus optional care plans</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ Live chat and priority support, 99.94% uptime claimed</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What You Own If You Stop Paying</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">✅ The agent, the CRM, the list and the website, yours forever</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">❌ Nothing, the number and the receptionist stop with the plan</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Who Is It For</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Agents and small businesses losing leads to missed calls and messages</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Solo agents and small teams who just want every phone call answered</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Article Image 2 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/allo-article-2.jpg" alt="Wide view of an open-plan small business coworking lounge with soft seating, a long table, plants and large windows in daylight" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: BirkyStudio -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:32px;">Detailed Reviews</h2>
+
+      <div id="birky-studio" style="background:rgba(255,45,149,0.08);border:1px solid rgba(255,45,149,0.3);border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span style="background:var(--bs-accent);color:white;padding:4px 12px;border-radius:100px;font-size:0.75rem;font-weight:600;">IT ANSWERS FOR YOU</span>
+          <h3 style="color:white;font-size:1.3rem;margin:0;">BirkyStudio</h3>
+        </div>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          BirkyStudio is not software you log into and work. It is an operator that runs in the background. The Base Agent ($1,297 solo, from $2,997 for a team) reads every website and WhatsApp enquiry, sorts it, saves it to a Notion CRM built for agents, answers it instantly, and follows up automatically, in English and Spanish. The CRM is included free, so you are not paying a subscription for a database, and there is no call meter or action counter watching how much it runs.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The front desk is the part that overlaps with Allo, and here is exactly what you get. The Voice Receptionist is $550 one time plus Vapi usage of about $30 to $50 a month, and it answers calls 24/7 in English and Spanish, qualifies the caller, takes the message and books the showing into your calendar. The Text Receptionist is $297 one time and holds full AI conversations on WhatsApp, which is the channel Allo does not cover at all. Voice plus text together is $847 once, which is less than a year of Allo's $64 a month, and after that there is no monthly fee to answer anything, only the Vapi usage on the calls themselves. That is the honest arithmetic and it is the whole reason this page exists: we are not the cheapest way to answer a phone in year one, we are the cheapest way to answer both a phone and a WhatsApp for as long as you sell.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Websites are the other half of what we sell, and they are deliberately the opposite of a platform: Starter $499 for 1 to 3 pages, Professional $999 for a 4 to 7 page bilingual site, Premium $1,999 for 10+ pages with a blog, all one-time, delivered in days, on your own account with the code in your hands. There is a $130 CMS add-on if you want to edit it yourself. What we do not have is the telephony layer Allo is good at: we are not a phone system, we do not supply the numbers or the IVR or the porting, and we do not run an SDR or a parallel dialer. If you need a business phone system, buy one, and Allo is a reasonable one. We sit in front of it as the answering layer that also covers the message apps.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Answers your phone and WhatsApp 24/7, EN and ES</li>
+              <li>WhatsApp conversations included, which Allo does not offer</li>
+              <li>Every price published, no demo needed to see a number</li>
+              <li>One-time pricing instead of a monthly subscription</li>
+              <li>No contract, no minimum term, 30-day money-back on the build</li>
+              <li>Follow-up happens automatically, you do not approve each send</li>
+              <li>Notion CRM included free with The Base Agent</li>
+              <li>Verified, enriched, scored prospects you own forever</li>
+              <li>Website you own ($499 / $999 / $1,999), pages stay live</li>
+              <li>Not priced per seat, so a team does not multiply the bill</li>
+              <li>The person who built it answers your support</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Not a phone system, no numbers, IVR or porting of our own</li>
+              <li>Year one costs more than Allo's flat $64 a month</li>
+              <li>No parallel dialer, no AI SDR for outbound calling</li>
+              <li>No HIPAA Business Associate Agreement</li>
+              <li>No IDX, no MLS feed, no listing search</li>
+              <li>No team lead routing, commissions or back office</li>
+              <li>Lead volume is a one-time list rather than a monthly stream</li>
+              <li>Smaller, newer studio with no large public review count</li>
+              <li>Bilingual is baked in, but other languages are not on offer</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Free 15-minute audit · The Base Agent $1,297 solo / from $2,997 business (Notion CRM included) · Text Receptionist $297 one-time · Voice Receptionist $550 one-time + Vapi ~$30-50/month · Verified Prospect List $497 / $997 one-time · Lead Generation Pack $1,997 one-time · Websites $499 / $999 / $1,999 · CMS add-on $130 · Custom Assessment $349 solo / $999 business · Optional care $97/month (Care and Maintenance) or $197/month (Business AI Partner)
+        </p>
+      </div>
+
+      <!-- Article Image 3 -->
+      <div style="text-align:center;margin-bottom:64px;">
+        <img src="/images/comparison/allo-article-3.jpg" alt="Wide view of a quiet suburban residential street at golden hour with detached houses, front lawns and long soft shadows" style="width:100%;max-width:800px;border-radius:12px;height:auto;box-shadow:0 4px 24px rgba(0,0,0,0.3);" loading="lazy">
+      </div>
+
+      <!-- Detailed Review: Allo -->
+      <div id="allo" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;margin-bottom:64px;">
+        <h3 style="color:white;font-size:1.3rem;margin-bottom:16px;">Allo, by The Mobile-First Company</h3>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Start with the thing Allo does better than almost anyone in this category: it tells you the price, and the price is low. A Business seat is $32 a month billed yearly, or $45 month to month, and the AI Receptionist is one more seat at the same rate, so a solo agent pays the equivalent of about $64 a month annually or about $90 monthly. There is no per minute fee, so a busy Monday costs the same as a quiet Sunday, and that single fact puts Allo ahead of Smith.ai, Goodcall, RingCentral, Nextiva and CloudTalk, all of which either meter calls or charge a standalone per-agent rate. Around the answering you also get a real phone system, which is more than some of the vendors on this site offer: numbers in 80 or more countries, free number porting, SMS send and receive, call recording and transcription, an IVR, a shared inbox, a mobile app that is actually the product rather than a cut-down copy, and live chat and priority support. Add $50 a month for the Power Dialer and your team gets a parallel dialer for the whole office, and $50 a month more buys a HIPAA business associate agreement if you handle anything sensitive. There is no setup fee, no contract, changes to seats are prorated, and every plan starts with a 3 day free trial with the AI switched on. For a solo agent who loses deals to missed calls, this is the cheapest credible fix on the market and we are not going to argue otherwise.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          The provider is also refreshingly honest about a limitation that most competitors hide. Allo states that today its AI receptionist answers calls and does not place them, so outbound calling stays with your team. That is the right thing to say out loud, and it is the same shape as our own product: we answer, we follow up, we do not cold call for you. Its real estate receptionist is set up the way ours is, too, answering sign and listing calls from the listing details you supply, asking the buyer questions you would ask (budget, timeline, pre-approval, pets), booking the showing into Google Calendar, Outlook, Cal.com or Calendly, and handing off to the listing agent, with a standing rule never to negotiate price or comment on schools and safety. Calls are logged to your CRM, which Allo reaches through HubSpot, Pipedrive, Attio, Salesforce or Zapier, so it works with the database you already pay for rather than asking you to change it.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          Now the limits, and the honest ones are four. First, and this is the one that matters most in real estate, Allo does not hold a WhatsApp conversation. It answers calls, it sends an SMS text back when you miss a call, and it has a shared SMS inbox, but a buyer who opens WhatsApp on a Sunday still does not get an AI reply. Plenty of markets run most of their first contact through WhatsApp, which is exactly why we sell the WhatsApp receptionist as its own $297 product. Second, the AI is English first. Allo advertises a French voice among its options but makes no Spanish claim, so a Spanish speaking buyer calling after hours gets an English greeting unless you have a person on the line, and Spanish is the language of a large share of the buyers a United States agent meets. Third, it is a phone line you rent by the seat. Every agent needs a seat, the receptionist adds one more, and the meter never stops: $64 a month for one person becomes about $2,304 a year for a five person team with the receptionist, and it renews. Fourth, it is narrower than the word "AI" suggests. It answers and it logs. It does not build your website, it does not supply a single lead, and it does not run your follow-up as a campaign.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          One more honest note, on reviews, because Allo's review base is real and worth reading rather than hiding. G2 shows roughly 4.6 to 4.7 out of 5 across about 200 reviews, and G2's own summary of the negatives lists a lack of picture messaging, SMS features reviewers miss, intermittent call quality and app lag, some difficulty with call forwarding, and a desktop app several users call weaker than the mobile one. Two quotes capture it: one reviewer wrote that it was a shame SMS messages are no longer unlimited, and another described inconsistent call quality and said they had reached out to the team with no update for over a month. Trustpilot is thinner at 4.2 out of 5 across 24 reviews, warm on call clarity and support, with a handful of 1 star reviews about being charged after cancelling and support that went quiet. An independent test of 47 calls over three weeks reported latency under 200ms with no dropped calls and the receptionist routing correctly around 87 percent of the time. None of that is damning, and most of it is better than the average vendor on this site, but it is the reason we tell every reader the same thing: use the free trial before you trust a page like this one, ours included.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:16px;">
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Pros</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>Cheapest unlimited AI call answering in the category</li>
+              <li>Flat price, no per minute meter, busy weeks cost the same</li>
+              <li>Every seat and add-on price published before a sales call</li>
+              <li>Full phone system, numbers in 80+ countries, free porting, IVR</li>
+              <li>SMS send and receive, call recording and transcripts included</li>
+              <li>Mobile first, the app is the product rather than a cut-down copy</li>
+              <li>3 day free trial with the AI enabled, card required</li>
+              <li>No setup fee, no contract, seat changes prorated</li>
+              <li>Syncs to HubSpot, Pipedrive, Attio, Salesforce or Zapier</li>
+              <li>Honest that its AI answers calls and does not place them</li>
+              <li>HIPAA BAA available, live chat and priority support</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color:white;font-weight:600;font-size:0.9rem;margin-bottom:8px;">Cons</p>
+            <ul style="color:var(--bs-text);line-height:1.8;padding-left:20px;">
+              <li>No WhatsApp agent, so message-first buyers still wait</li>
+              <li>English first, no Spanish claim for the AI receptionist</li>
+              <li>Every agent needs a seat, and the receptionist adds one more</li>
+              <li>Subscription per seat forever, nothing is owned</li>
+              <li>AI does not place outbound calls, your team still dials</li>
+              <li>No website and no leads supplied</li>
+              <li>SMS sending is metered with a per-seat credit after the change</li>
+              <li>Desktop app weaker than mobile, some call quality and lag reports</li>
+              <li>Thin Trustpilot base with a few billing-after-cancel complaints</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color:var(--bs-accent);font-weight:600;">
+          Pricing: Business seat $32/seat/month billed yearly ($45 monthly) · Ultra seat $100/seat/month yearly ($120 monthly) · AI Receptionist add-on $32/agent/month yearly ($45 monthly), one more seat, unlimited minutes, requires a paid seat · Power Dialer $50/month for the whole team · HIPAA BAA $50/month per workspace · Extra phone number from $5/month · SMS receiving unlimited, sending to US included, $5 credit per seat then pay as you go, $24 A2P registration once · No setup fee, no contract, cancel anytime, seat changes prorated · 3-day free trial with the AI add-on enabled (verified on withallo.com/pricing and its real estate page, November 2026)
+        </p>
+      </div>
+
+      <!-- Cost Comparison -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">Cost Comparison, 12 Month View</h2>
+      <div style="overflow-x:auto;margin-bottom:64px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--bs-accent);">
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Scenario</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">BirkyStudio (Year 1)</th>
+              <th style="text-align:left;padding:14px 12px;color:var(--bs-accent);font-weight:600;">Allo (Year 1)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Cheapest entry</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$297 one-time (Text Receptionist for WhatsApp)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0 for the 3-day trial, then about $64/mo for a seat plus receptionist</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every call 24/7, billed yearly</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$550 once + ~$30-50/mo, about $910 to $1,150 for the year</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $768 a year ($32 seat + $32 receptionist, 12 months)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Answer every call 24/7, billed monthly</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Same $550 once + usage, no monthly lock</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $1,080 a year ($45 seat + $45 receptionist)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Both channels, calls and WhatsApp</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$847 one-time ($550 voice + $297 WhatsApp), then Vapi only</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, no WhatsApp agent at any plan</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The plan you would actually run daily</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">The Base Agent $1,297 one-time, CRM included free</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $768 a year on one seat plus the receptionist</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">The same purchase with ongoing care</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,461 (Base Agent + $97/mo care for 12 months)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$768 and it renews every year, unchanged</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">A team of five</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $2,997 one-time, not priced per seat</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,304 a year (five seats plus receptionist, yearly)</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Verified prospects you own</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$497 Starter or $997 Pro, one-time</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered, it answers the calls you already get</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Website</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$499 / $999 / $1,999 one-time, you own the code</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not offered</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Extra phone number</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Not applicable, you keep your own carrier and number</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">From $5 per month each</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Realistic all-in monthly after year one</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $108/mo if you take $97 care, or $0 to just keep it, plus Vapi usage</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$64/mo for a seat plus receptionist, unchanged, forever</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What you owe if you walk away in month four</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0, no contract, 30-day money-back on the build</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">$0, no contract, cancel anytime</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">Three-year total, calls and WhatsApp</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $1,990 (voice $550 + Vapi ~$40/mo for three years, plus $297 WhatsApp once)</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">About $2,304 for the calls, with no WhatsApp, and still running</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);">
+              <td style="padding:14px 12px;color:white;font-weight:600;">What you still have if you stop paying</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Everything: the agent, the CRM, the list, the website and its pages</td>
+              <td style="padding:14px 12px;color:white;font-weight:600;">Nothing, the number and the receptionist stop with the plan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- How to Choose -->
+      <h2 style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:24px;">How to Choose</h2>
+      <div style="display:grid;gap:16px;margin-bottom:64px;">
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📞 Your calls go unanswered and nothing else is broken</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Allo</strong>, and it is not close on price. A seat plus the AI receptionist is about $64 a month billed yearly with unlimited minutes, no per minute meter, and a full phone system behind it: numbers in 80 or more countries, free porting, SMS, call recording, call booking into your calendar. If the only leak is the phone, that is the cheapest credible fix in the category, and BirkyStudio is more than you need.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💬 Your leads message on WhatsApp as much as they call</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. This is the clearest difference between the two products. Allo answers calls, texts back a missed call and keeps a shared SMS inbox, but it holds no WhatsApp conversation at any plan. A buyer who opens WhatsApp on a Sunday evening still gets silence. The Text Receptionist is $297 one time and answers that channel in seconds, in English and Spanish, 24/7. If your first contact happens in a chat app, that is the product the phone system cannot replace.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">🌎 Half your clients speak Spanish</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. Bilingual English and Spanish is standard in both the receptionist and the website, not an upgrade. Allo is English first: it advertises a French voice among its receptionist options but makes no Spanish claim, so an after-hours call in Spanish gets an English greeting unless a person picks up. In real estate, where a large share of buyers are Spanish speaking, that is the difference between a booked showing and a missed one.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">📱 You want a proper business phone system, not just an answering layer</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Allo</strong>. We are not a phone system and we do not pretend to be one. Allo hands you the numbers, the porting, the IVR, the shared inbox, the SMS, the call recording and, on the add-on, a parallel dialer for the whole team, all in a mobile app that is genuinely the product rather than a cut-down copy. If you want one place for every line in the business, buy Allo. BirkyStudio sits in front of it as the answering layer that also covers the message apps.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">💸 You are tired of paying monthly for something you will never own</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">BirkyStudio</strong>. This is arithmetic rather than preference. Allo is about $64 a month for one agent and the receptionist, every month, and stopping the payment stops the number. Voice plus WhatsApp with us is $847 once, and with Vapi usage of about $40 a month that is roughly level with Allo over three years, after which the build is still yours and there is no phone bill to answer anything. If you plan to still be selling in three years, the one-time purchase is the cheaper one. If you are not sure you will still be running AI in six months, Allo is the better bet and easier to leave.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:24px;">
+          <h3 style="color:white;font-size:1.1rem;margin-bottom:8px;">👥 You are buying for a team, not just yourself</h3>
+          <p style="color:var(--bs-text);line-height:1.8;margin:0;">
+            → <strong style="color:white;">Allo</strong>, on the phone system, and neither of us on the rest. Allo is built for teams: unlimited seats, each with its own number, a shared inbox, the AI receptionist on the shared line, and per-seat billing that scales from one to two hundred and fifty people. For a five person team with the receptionist that is about $2,304 a year, which is fair. BirkyStudio's business tier starts at $2,997 one-time and is not multiplied by seat, but we do not sell lead routing, commissions or back office either. For a brokerage that wants one system for IDX, routing and recruiting, read the BoldTrail and Sierra Interactive pages on this site instead.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Final Recommendation -->
+      <div style="background:linear-gradient(135deg,var(--bs-bg-raised),var(--bs-bg-raised));border-radius:16px;padding:32px;margin-bottom:64px;border:1px solid rgba(255,45,149,0.3);">
+        <h2 style="color:white;font-size:1.3rem;margin-bottom:16px;">🏆 The Bottom Line</h2>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          If all you need is your phone answered, <strong style="color:white;">buy Allo, use the 3 day free trial, and do not look back</strong>. It is the cheapest unlimited AI call answering in the category, the price is published before you speak to anyone, the minutes are flat with no per minute meter, the number is yours to port, SMS and recording are included, the app is mobile first, and there is no setup fee and no contract. It is honest that the AI answers rather than dials. Our pricing pages on competitors such as Smith.ai, Goodcall, RingCentral and CloudTalk charge more for less on the lines that matter, and this page says so on purpose. For a solo agent whose only leak is the phone, Allo is the right buy and we would be lying to claim otherwise.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:16px;">
+          But be equally clear about the four things a phone system cannot do. Allo holds no WhatsApp conversation, so the buyer who messages on Sunday still waits. It is English first, with no Spanish claim for the AI receptionist. It meters the meters you forgot about, because every agent needs a seat and the receptionist adds one more, so a five person team with the receptionist is about $2,304 a year, every year, and stopping the payment stops the number. And it is narrower than the word AI suggests: no website, no leads, no campaign. <strong style="color:white;">BirkyStudio is a different shape of purchase.</strong> The Voice Receptionist answers calls 24/7 in English and Spanish for $550 once plus Vapi usage, the WhatsApp Text Receptionist is $297 once and covers the channel Allo cannot reach, The Base Agent is $1,297 once with the Notion CRM included free, and the website and its pages stay yours whether or not we ever speak again.
+        </p>
+        <p style="color:var(--bs-text);line-height:1.8;margin-bottom:24px;">
+          The cleanest way to see it: Allo is what you buy when your problem is the phone line. BirkyStudio is what you buy when your problem is every way a lead can arrive, in two languages, and you would rather own the operator than rent it. If both are true, run both, because a phone system and an answering operator do not overlap and plenty of agents who last run exactly that.<br><br>
+          <strong style="color:white;">Choose Allo if:</strong> you want the cheapest unlimited call answering, a complete phone system with numbers and SMS, and a flat published price you can leave any month.<br><br>
+          <strong style="color:white;">Choose BirkyStudio if:</strong> you want your phone and WhatsApp answered 24/7 in English and Spanish, follow-up that sends itself, verified prospects you own, and a one-time price instead of a seat you rent forever.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="/contact" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:linear-gradient(135deg,var(--bs-accent),var(--bs-accent));border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Get Your Free 15-Minute Audit →
+          </a>
+          <a href="https://www.withallo.com/pricing" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:rgba(255,255,255,0.1);border-radius:100px;color:white;text-decoration:none;font-weight:600;">
+            Try Allo Free →
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq" style="font-size:1.6rem;font-weight:700;color:white;margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:48px;">
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How much does Allo cost?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Allo publishes its prices, which already puts it ahead of most vendors in this category. A Business seat is $32 a month billed yearly, or $45 month to month, and the AI Receptionist is an add-on that costs one more seat per agent, $32 a month billed yearly or $45 month to month. So one agent with the receptionist pays the equivalent of about $64 a month billed yearly, or about $90 a month on monthly billing, which is $768 and $1,080 for the year. There is no per minute meter, so a busy week costs the same as a quiet one. An extra phone number starts at $5 a month, the Power Dialer is a flat $50 a month for the whole team, and a HIPAA Business Associate Agreement is $50 a month for the whole workspace. There are no setup fees and no contracts, seat changes are prorated, and every plan starts with a 3 day free trial with the AI add-on enabled.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Allo answer WhatsApp messages?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No. Allo is a phone system and its AI receptionist answers inbound calls, sends an SMS text back to a missed call and updates your CRM after every call, but it does not hold an AI conversation on WhatsApp. For a lot of real estate buyers, especially in Latin America, the United States and Europe, WhatsApp is where the first message actually arrives, and a chat that waits until someone picks it up is a lead that waits. BirkyStudio's Text Receptionist is $297 one time and holds full WhatsApp conversations 24/7 in English and Spanish, so it answers the channel Allo does not cover.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Allo's AI make outbound calls?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No, and Allo is unusually honest about it. Its own comparison page states that today the AI receptionist answers calls and does not place them, so outbound calling stays with the people on your team, helped by the $50 a month Power Dialer and the Ultra plan's AI SDR. BirkyStudio is not a dialer either, and we are not going to pretend otherwise. What we do place is the follow-up: The Base Agent reads every website and WhatsApp enquiry, saves it and answers it instantly, then follows up automatically without you approving each send, in English and Spanish. The $1,997 Lead Generation Pack pairs that with a verified prospect list and outreach, which is about who to contact rather than how fast the phone dials.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>How is Allo different from BirkyStudio's AI Receptionist?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            They both answer the phone around the clock, which is why this page pairs them. The difference is the shape of the purchase and the width of the answer. Allo is a phone system you operate, sold per seat, on subscription every month, where the AI receptionist is an add-on and stopping the payment stops the number. BirkyStudio builds it for you once: the Voice Receptionist is $550 one time plus Vapi usage of about $30 to $50 a month, and it answers calls 24/7 in English and Spanish, not English first. Add the $297 WhatsApp Text Receptionist and the $1,297 Base Agent and one operator covers phone, WhatsApp and website enquiries into a Notion CRM included free. Allo wins on being a complete phone system with porting, SMS and an IVR at the lowest unlimited price in the category. We win on covering the inbox as well as the phone line, in two languages, for a one time price.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Allo have a contract, a setup fee or a free trial?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            This is a place where Allo is genuinely clean and worth saying plainly. There are no setup fees and no contracts, you can upgrade, downgrade or cancel whenever you want, changes to seats are prorated so you never pay for seats you do not use, and every plan starts with a 3 day free trial with the AI add-on enabled for the length of the trial, though a card is required. That is a fairer buying experience than Sierra Interactive's twelve month agreement or CINC's quoted pricing. BirkyStudio is also contract free, with no minimum term and a 30 day money back guarantee on the build.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>Does Allo include a website or lead generation?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            No to both. Allo is a business phone system, so it supplies none of its own leads and it does not build a website. What it does is answer and log the calls you already get, sync them to the CRM you already pay for through HubSpot, Pipedrive, Attio, Salesforce or Zapier, and text back the ones you miss. If you want leads to call, BirkyStudio's Verified Prospect List at $497 or $997 one time is a file of verified, enriched, scored prospects you own, not a rented stream, and our websites at $499, $999 and $1,999 one time are yours with the code in your hands. If you need an IDX listing site, that comes from a platform such as BoldTrail, Sierra Interactive or Placester.
+          </div>
+        </details>
+
+        <details style="padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;margin-bottom:12px;">
+          <summary style="color:white;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            <span>What do Allo's own reviewers say?</span>
+            <span style="font-size:0.9rem;">▼</span>
+          </summary>
+          <div style="margin-top:12px;color:var(--bs-text);line-height:1.8;">
+            Mostly good, with two honest gaps. G2 shows roughly 4.6 to 4.7 out of 5 across about 200 reviews, and the things reviewers praise are the flat unlimited price, the mobile first design, the CRM sync and the AI receptionist itself. G2's own summary of the downsides lists a lack of picture messaging, SMS features reviewers miss, some call quality and app lag, and a desktop app that several users call weaker than the mobile app. One reviewer wrote that it was a shame SMS messages are no longer unlimited, and another described terrible call quality with no update for over a month. Trustpilot is thinner: 4.2 out of 5 across 24 reviews, positive on call clarity and support, with a few 1 star reviews about being charged after cancelling. None of that changes the value case, but it is the same lesson as always: use the free trial rather than trusting a page like this one, including ours.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Sources -->
+      <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:24px;margin-bottom:48px;border:1px solid rgba(255,255,255,0.1);">
+        <p style="color:var(--bs-text-muted);font-size:0.9rem;line-height:1.8;margin:0;">
+          <strong>How we evaluated:</strong> Allo pricing was verified directly on withallo.com/pricing, withallo.com/ai-receptionist/real-estate, and Allo's billing help pages on 24 November 2026: Business seat $32/seat/month billed yearly or $45 monthly, Ultra seat $100/seat/month yearly or $120 monthly, AI Receptionist add-on $32/agent/month yearly or $45 monthly and requiring a paid seat, Power Dialer $50/month for the whole team, HIPAA BAA $50/month per workspace, extra phone number from $5/month, no setup fee, no contract, seat changes prorated, and a 3-day free trial with the AI add-on enabled. The unlimited minutes and no per-minute fee, the SMS terms (receiving unlimited, US sending included, $5 credit per seat then pay as you go, $24 A2P registration once), the number of countries, and the statement that the AI receptionist answers calls and does not place them all come from Allo's own pricing page, its AI receptionist pages and its comparison material. The real-estate receptionist behaviour (answering sign and listing calls from your listing details, asking budget, timeline, pre-approval and pet questions, booking into Google Calendar, Outlook, Cal.com or Calendly, handing off to the listing agent, and never negotiating price or commenting on schools and safety) is described on Allo's own AI receptionist for real estate page. Review data is from G2's Allo listing and its published pros and cons summary (about 4.6 to 4.7 out of 5 across roughly 200 reviews, with the reported downsides listed), and Trustpilot's withallo.com profile (4.2 out of 5 across 24 reviews). The independent call test (47 calls over three weeks, latency under 200ms with no dropped calls, and about 87 percent correct routing) is reported by a third party and attributed as such. BirkyStudio prices are the ones live on our own site in November 2026. Competitor context referenced on this page (Smith.ai, Goodcall, RingCentral, Nextiva, CloudTalk, Sierra Interactive, CINC) is from the pricing pages and third party reviews cited on our other comparison pages. We are not affiliated with Allo and receive nothing for this page.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { list-style: none; }
+    details[open] > summary span:last-child { transform: rotate(180deg); }
+    details > summary span:last-child { transition: transform 0.2s; }
+  </style>
+
+</BaseLayout>
