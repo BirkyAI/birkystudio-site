@@ -55,7 +55,7 @@ The system we build is not another dashboard to check. It is a set of runs that 
 - **Sends matching listings without being asked.** The lead's criteria are turned into a search the moment the inquiry lands, instead of waiting for an agent to remember.
 - **Keeps one running record per client.** Every call, text and showing lands in a single Notion page that any agent on the team can read in sixty seconds.
 - **Answers the status question before it is asked.** A short weekly note goes to the client automatically, and the same note is what the TC reads at hand-off.
-- **Flags the step that stopped.** When a message fails, a booking is cancelled, or a lead goes quiet for fourteen days, the agent says so out loud instead of waiting to be noticed.
+- **Flags the step that stopped.** When a message fails, a booking is canceled, or a lead goes quiet for fourteen days, the agent says so out loud instead of waiting to be noticed.
 
 That is the [Base Agent setup](/products/ai-agent-setup/), and it is the piece that makes ownership visible, because an unowned step is a step that visibly stops.
 
@@ -69,7 +69,7 @@ That is the [Base Agent setup](/products/ai-agent-setup/), and it is the piece t
 
 ## The honest order of operations
 
-Start with the shared record, not the outreach. The Base Agent is $1,297 one time for a solo agent and from $2,997 for a business with staff, including the Notion workspace and 30 days of support while it beds in. If you want the follow-up clock run across a bigger pipeline, the [Outreach Engine](/products/outreach-engine/) is $797 one time. Keeping any of it tuned is $97 a month, and the Business AI Partner at $197 a month is the tier for a team that wants a monthly optimisation call.
+Start with the shared record, not the outreach. The Base Agent is $1,297 one time for a solo agent and from $2,997 for a business with staff, including the Notion workspace and 30 days of support while it beds in. If you want the follow-up clock run across a bigger pipeline, the [Outreach Engine](/products/outreach-engine/) is $797 one time. Keeping any of it tuned is $97 a month, and the Business AI Partner at $197 a month is the tier for a team that wants a monthly optimization call.
 
 For the channel questions: a shared text and WhatsApp line is the $297 Text Receptionist, and your own line answered and logged is the $550 Voice Receptionist.
 

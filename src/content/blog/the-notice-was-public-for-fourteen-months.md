@@ -102,7 +102,7 @@ If you want to see how the reading works before you buy it, [Read the Planning A
 
 ## The honest order of operations
 
-The Base Agent starts at $1,297 one time for a solo practice, including the Notion workspace that holds the record, and from $2,997 for a business with staff, with 30 days of support while it beds in. Keeping it running is $97 a month. The [Business AI Partner](https://birkystudio.com/products/business-ai-partner/) is $197 a month, which is the tier for exactly this kind of job: a monthly optimisation call and priority support, because a monitoring job is only useful while somebody keeps tuning what it watches.
+The Base Agent starts at $1,297 one time for a solo practice, including the Notion workspace that holds the record, and from $2,997 for a business with staff, with 30 days of support while it beds in. Keeping it running is $97 a month. The [Business AI Partner](https://birkystudio.com/products/business-ai-partner/) is $197 a month, which is the tier for exactly this kind of job: a monthly optimization call and priority support, because a monitoring job is only useful while somebody keeps tuning what it watches.
 
 If the prospect wants to reach you on text or WhatsApp, that is the $297 Text Receptionist. If you want your own line answered and logged, that is the $550 Voice Receptionist.
 

@@ -28,7 +28,7 @@ I put together a [professional bilingual website](https://birkystudio.com/produc
 - Traveller reviews up front
 - WhatsApp booking in one tap, so ghosting a booking is not an option
 
-Prices are the part I am most careful about. Sellers hate "contact for pricing", and travellers do too. Showing the actual cost on the page builds trust and filters for serious enquiries.
+Prices are the part I am most careful about. Sellers hate "contact for pricing", and travellers do too. Showing the actual cost on the page builds trust and filters for serious inquiries.
 
 ## The review she left unprompted
 
@@ -42,7 +42,7 @@ That line, "it finally feels like us", is the whole job. A website is not decora
 
 You do not run an ecotourism venture, maybe. The takeaway is the same for any owner who serves customers in more than one language or relies on easy bookings.
 
-If your site is English-only while your customers think in Spanish, or Spanish-only while they think in English, you are invisible to half of them. If your prices are hidden behind a contact form, you are paying for friction that shuts down serious enquiries.
+If your site is English-only while your customers think in Spanish, or Spanish-only while they think in English, you are invisible to half of them. If your prices are hidden behind a contact form, you are paying for friction that shuts down serious inquiries.
 
 The good news is this does not require a big redesign. It can be one focused build, [a professional bilingual site](https://birkystudio.com/products/website-professional/) that puts your offer in front of the right readers and makes the next step obvious.
 
@@ -50,7 +50,7 @@ The good news is this does not require a big redesign. It can be one focused bui
 
 **Look first.** This same project, with the review, is one of the four case studies on the [portfolio](https://birkystudio.com/portfolio/), told honestly.
 
-**Start free.** Grab the [Quick Log post-call entry template](https://birkystudio.com/quick-log-template/) if you take enquiries at all, it keeps every one from slipping.
+**Start free.** Grab the [Quick Log post-call entry template](https://birkystudio.com/quick-log-template/) if you take inquiries at all, it keeps every one from slipping.
 
 **See the website.** Watalam is live at [watalamguatemala.com](https://watalamguatemala.com/), or [message me](https://wa.me/50234775110) to talk about yours.
 

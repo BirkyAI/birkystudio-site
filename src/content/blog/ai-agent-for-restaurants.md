@@ -80,7 +80,7 @@ The [Review Engine](https://birkystudio.com/products/review-engine/) is **$497 s
 
 Two honest ways in. The Voice Receptionist is **$550 setup** and answers the phone 24/7 in English and Spanish, taking messages and forwarding anything urgent; you also pay roughly $30 to $50 a month directly to the phone service for call usage, at cost, with no markup from us. The Text Receptionist, if your customers mostly message rather than call, is **$297 one-time** and answers your WhatsApp around the clock.
 
-Behind both of them, the Base Agent is **$1,297 one-time** for a solo operator, from **$2,997** for a business with staff, and it is the layer that catches every inquiry, saves it to a Notion CRM built for your business and follows up when someone goes quiet. It includes 30 days of support. Care & Maintenance is **$97/mo** if you would rather we keep it monitored and keep the records clean, and the Business AI Partner at **$197/mo** adds a monthly optimisation call.
+Behind both of them, the Base Agent is **$1,297 one-time** for a solo operator, from **$2,997** for a business with staff, and it is the layer that catches every inquiry, saves it to a Notion CRM built for your business and follows up when someone goes quiet. It includes 30 days of support. Care & Maintenance is **$97/mo** if you would rather we keep it monitored and keep the records clean, and the Business AI Partner at **$197/mo** adds a monthly optimization call.
 
 [Book the free 15-minute audit](https://birkystudio.com/contact/) and have a look at last Friday's call log before you do. The unanswered entries at 7:40 are the whole argument, and they are already sitting in your phone.
 

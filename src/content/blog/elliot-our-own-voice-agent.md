@@ -1,6 +1,6 @@
 ---
 title: "We Put Our Voice Agent on Our Own Front Desk"
-description: "Elliot is Birky Studio's own AI voice receptionist, answering enquiries in English and Spanish at all hours. Why we use him on ourselves before any client does."
+description: "Elliot is Birky Studio's own AI voice receptionist, answering inquiries in English and Spanish at all hours. Why we use him on ourselves before any client does."
 date: 2026-11-16
 image: "/images/blog/ai-generated/elliot-our-own-voice-agent.jpg"
 tags: ["Birky Studio", "AI Voice", "Voice Receptionist", "Case Study"]
@@ -16,7 +16,7 @@ Want to judge him for yourself instead of reading about him? [Call Elliot right 
 
 ## The problem: a one-person agency still needs a front desk
 
-Birky Studio is small. When I am deep in a build or away from the phone, enquiries still come in. They do not wait. And they arrive in two languages, because I serve clients worldwide.
+Birky Studio is small. When I am deep in a build or away from the phone, inquiries still come in. They do not wait. And they arrive in two languages, because I serve clients worldwide.
 
 Before Elliot, the leaks were obvious. Calls at odd hours went to voice mail. A Spanish speaker got an English answer or none at all. Every missed call was a maybe-customer I would never meet. This is the exact pain a voice agent solves, so I put mine to work on myself.
 
@@ -47,7 +47,7 @@ The whole point is that you should hear him, not trust my word.
 
 **Message the text agent instead.** If you would rather type, the [WhatsApp agent](https://wa.me/50234775110) answers the same way in a chat.
 
-**Start with the free tool.** The [Quick Log template](https://birkystudio.com/quick-log-template/) ties every enquiry and follow-up together if you want the logging half before the answering half.
+**Start with the free tool.** The [Quick Log template](https://birkystudio.com/quick-log-template/) ties every inquiry and follow-up together if you want the logging half before the answering half.
 
 **Prefer typing to talking?** The [Text Receptionist](https://birkystudio.com/products/text-receptionist/) answers your WhatsApp the same way, one-time at $297.
 
