@@ -35,6 +35,7 @@
       --bs-border: rgba(255, 255, 255, .08);
       --bs-text: #f5f3f7;
       --bs-text-muted: #f5f3f7;
+      --bs-text-dim: #a89d91;
       --bs-accent: #ff2d95;
       --bs-accent-2: #b0005a;
       --bs-btn-light: #e6e3ee;
@@ -95,7 +96,7 @@
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--bs-text-muted);
+      color: var(--bs-text-dim);
       margin-bottom: 6px;
     }
     .brand h1 {
@@ -111,7 +112,7 @@
     .brand p {
       font-size: 0.85rem;
       line-height: 1.55;
-      color: var(--bs-text-muted);
+      color: var(--bs-text-dim);
       max-width: 360px;
       margin: 0 auto;
     }
@@ -129,7 +130,7 @@
       font-size: 0.76rem;
       font-weight: 600;
       letter-spacing: 0.02em;
-      color: var(--bs-text-muted);
+      color: var(--bs-text-dim);
       background: rgba(255, 255, 255, .06);
       border: 1px solid rgba(255, 255, 255, .1);
       border-radius: 100px;
@@ -153,7 +154,7 @@
       border-radius: 50%;
       background: rgba(255, 255, 255, .06);
       border: 1px solid rgba(255, 255, 255, .12);
-      color: var(--bs-text-muted);
+      color: var(--bs-text-dim);
       cursor: pointer;
       transition: all .16s ease;
     }
@@ -201,7 +202,7 @@
       align-self: flex-end;
     }
     .chat-bubble strong { font-weight: 700; }
-    .chat-bubble .time { display: block; font-size: 0.65rem; color: var(--bs-text-muted); margin-top: 4px; text-align: right; }
+    .chat-bubble .time { display: block; font-size: 0.65rem; color: var(--bs-text-dim); margin-top: 4px; text-align: right; }
     .chat-bubble.user .time { color: rgba(255, 255, 255, 0.65); }
 
     .typing-dots {
@@ -216,7 +217,7 @@
       flex-shrink: 0;
       animation: popIn .2s ease both;
     }
-    .typing-dots span { width: 6px; height: 6px; background: var(--bs-text-muted); border-radius: 50%; animation: bounce 1.4s infinite; }
+    .typing-dots span { width: 6px; height: 6px; background: var(--bs-text-dim); border-radius: 50%; animation: bounce 1.4s infinite; }
     .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
     .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
 
@@ -249,7 +250,7 @@
 
     .qr-section { display: flex; flex-direction: column; align-items: center; gap: 6px; }
     .qr-section img { width: 84px; height: 84px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .1); background: #fff; }
-    .qr-section p { font-size: 0.7rem; color: var(--bs-text-muted); }
+    .qr-section p { font-size: 0.7rem; color: var(--bs-text-dim); }
 
     /* No pintar la conversación del HTML y luego borrarla para reproducirla.
        El script del <head> añade .js antes del primer pintado. */

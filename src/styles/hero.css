@@ -12,6 +12,7 @@
   --bs-border: rgba(255, 255, 255, .08);
   --bs-text: #f5f3f7;
   --bs-text-muted: #f5f3f7;
+  --bs-text-dim: #a89d91;
   --bs-accent: #ff2d95;
   --bs-accent-2: #b0005a;
   /* Soft light ground for "white" buttons: white, knocked back so it is not the
@@ -48,7 +49,7 @@ body::before {
    mark is muted (--bs-text-muted) so it recedes, the hard "not available"
    mark stays white. Plain text glyph (U+2715), not an emoji, so it takes
    the cell's colour and cannot render in colour on any platform. */
-.mark-soft { color: var(--bs-text-muted); }
+.mark-soft { color: var(--bs-text-dim); }
 
 /* sections carry no background of their own any more; the page does */
 main section,
@@ -126,7 +127,7 @@ main > div > section {
   margin-bottom: 30px;
 }
 .hero-tags span {
-  color: var(--bs-text-muted);
+  color: var(--bs-text-dim);
   font-size: .85rem;
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -200,7 +201,7 @@ main > div > section {
 .mod-meta {
   display: block; margin-top: 3px;
   font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
-  color: var(--bs-text-muted);
+  color: var(--bs-text-dim);
 }
 .mod.m1 .mod-ic { background: rgba(129, 140, 248, .16); border-color: rgba(129, 140, 248, .45); }
 .mod.m1 .mod-ic svg { stroke: #818cf8; }
@@ -267,7 +268,7 @@ main > div > section {
   background: rgba(255, 255, 255, .06);
   border-radius: 6px;
   padding: 4px 10px;
-  color: var(--bs-text-muted);
+  color: var(--bs-text-dim);
   font-size: .7rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   text-align: center;
@@ -303,7 +304,7 @@ main > div > section {
   font-weight: 500;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--bs-text-muted);
+  color: var(--bs-text-dim);
   transition: color .2s;
 }
 .bs-link:hover { color: var(--bs-text); }
